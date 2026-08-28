@@ -1,0 +1,44 @@
+1. C [Type: MCQ]
+2. B [Type: MCQ]
+3. B [Type: MCQ]
+4. C [Type: MCQ]
+5. B [Type: MCQ]
+6. C [Type: MCQ]
+7. B [Type: MCQ]
+8. B [Type: MCQ]
+9. B [Type: MCQ]
+10. B [Type: MCQ]
+11. C [Type: MCQ]
+12. B [Type: MCQ]
+13. cm$^3$/min or mL/s [Type: Hybrid]
+14. 5.0 s$^{-1}$ $\times 10^{-3}$ [Type: Hybrid]
+15. Quantitative data [Type: Hybrid]
+16. 5 [Type: Hybrid]
+17. Thermal variation / Temperature increase [Type: Hybrid]
+18. As temperature increases from 10$^\circ$C to 37$^\circ$C, the reaction rate will increase proportionally due to higher kinetic energy. [Type: Hybrid]
+19. To establish a negative control ensuring reagents do not spontaneously change color without reducing sugars. [Type: Hybrid]
+20. Secondary data [Type: Hybrid]
+21. Percentage Change = $\frac{\text{Final Mass} - \text{Initial Mass}}{\text{Initial Mass}} \times 100$ [Type: Hybrid]
+22. Double-blind study [Type: Hybrid]
+23. Scientific theory [Type: Hybrid]
+24. 8.0% [Type: Hybrid]
+25. Reduces standard error ($SEM = s/\sqrt{n}$) [Type: Hybrid]
+26. (a) Independent: Carbon source type; Dependent: Volume of CO$_2$ produced (cm$^3$). [Type: Theory]
+    (b) Temperature, pH, initial bacterial cell density.
+    (c) $H_0$: Carbon source type has no significant effect on CO$_2$ volume.
+    (d) Setup broth with bacterial cells but no carbon source; expected outcome is zero gas evolution.
+27. (a) Falsifiability requires that an empirical observation could disprove the statement. [Type: Theory]
+    (b) Prediction 1: Mitochondria possess circular cDNA; Prediction 2: Mitochondrial ribosomes show structural sensitivity to bacterial antibiotics.
+    (c) A hypothesis is a tentative proposal; a theory is an overarching framework supported by vast empirical data.
+    (d) Self-correction occurs as contradictory phylogenomic data force the modification or replacement of existing models.
+28. (a) Accuracy: closeness to true value; Reliability: consistency upon repetition; Validity: extent to which assay measures intended variable. [Type: Theory]
+    (b) Reaction time delay in stopwatch, parallax error in meniscus reading; resolve using digital gas pressure sensors and automated data loggers.
+    (c) Minimizes impact of random anomalies and allows mean calculation.
+    (d) Competitive inhibitor reduces substrate affinity without altering $V_{max}$; calculated $V_0$ will be lower at sub-saturating [S].
+29. (a) Assumes rate of water uptake equals rate of transpiration. [Type: Theory]
+    (b) Temperature and relative humidity; both directly modify water potential gradient and stomatal aperture.
+    (c) Open capillary reservoir tap, allow water to push bubble back past zero mark, close tap, record initial baseline position.
+30. (a) Eliminates subjective selection bias; generate coordinate pairs using a random number generator assigned to a Cartesian grid overlaying the forest map. [Type: Theory]
+    (b) Qualitative: binary presence/absence; Quantitative: numerical counts yielding density per unit area.
+    (c) Larger sample sizes reduce sampling error and SEM, narrowing confidence intervals.
+    (d) Peer review critically evaluates experimental methodology, while independent replication confirms whether findings are reproducible.

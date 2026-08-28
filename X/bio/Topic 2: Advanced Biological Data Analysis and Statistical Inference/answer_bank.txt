@@ -1,0 +1,44 @@
+1. B [Type: MCQ]
+2. C [Type: MCQ]
+3. B [Type: MCQ]
+4. A [Type: MCQ]
+5. B [Type: MCQ]
+6. B [Type: MCQ]
+7. A [Type: MCQ]
+8. B [Type: MCQ]
+9. B [Type: MCQ]
+10. A [Type: MCQ]
+11. B [Type: MCQ]
+12. B [Type: MCQ]
+13. 13.0 g [Type: Hybrid]
+14. 1.0 mg/dL [Type: Hybrid]
+15. 10 offspring [Type: Hybrid]
+16. 20 df [Type: Hybrid]
+17. 4.0 [Type: Hybrid]
+18. Decreases the probability of Type I error. [Type: Hybrid]
+19. 2.2 mL O$_2$/g/h [Type: Hybrid]
+20. 3 df [Type: Hybrid]
+21. 4.0 L/min [Type: Hybrid]
+22. Reject the null hypothesis ($H_0$). [Type: Hybrid]
+23. $\chi^2 = \sum \frac{(O-E)^2}{E}$ [Type: Hybrid]
+24. 0.5 [Type: Hybrid]
+25. Beta ($\beta$) [Type: Hybrid]
+26. (a) $H_0$: Traits segregate independently according to a 9:3:3:1 Mendelian ratio. [Type: Theory]
+    (b) Expected: 900, 300, 300, 100.
+    (c) $\chi^2 = 7.11$.
+    (d) df = 3. Since $\chi^2 = 7.11 < 7.815$, fail to reject $H_0$. Genes segregate independently.
+27. (a) $H_0$: $\mu_1 = \mu_2$; $H_1$: $\mu_1 \ne \mu_2$. [Type: Theory]
+    (b) SED $\approx 1.235$.
+    (c) $t \approx 4.86$.
+    (d) df = 18. Since $t_{calc} = 4.86 > 2.101$, reject $H_0$. Mutant exhibits significantly lower nitrate uptake.
+28. (a) Multiple t-tests inflate Type I error rate ($\alpha$). ANOVA maintains overall $\alpha = 0.05$. [Type: Theory]
+    (b) Between-group: variance caused by canopy differences; Within-group: random variability within groups.
+    (c) i. $MS_{between} = 60.0$; ii. $MS_{within} = 4.0$; iii. $F = 15.0$.
+    (d) Since $F = 15.0 > 3.89$, reject $H_0$. Canopy type significantly affects soil organic matter.
+29. (a) Pop A: $s^2 = 4.0$ cm$^2$, SEM = 0.4 cm. Pop B: $s^2 = 25.0$ cm$^2$, SEM = 1.0 cm. [Type: Theory]
+    (b) Standard deviation measures variability of data points around sample mean; SEM measures precision of sample mean.
+    (c) Error bars extend $\pm 2 \times SEM$; overlapping bars indicate non-significant differences between means.
+30. (a) Contingency Table: High SO$_2$ (20 Pres, 80 Abs, Tot 100); Low SO$_2$ (70 Pres, 30 Abs, Tot 100); Column Totals: Present 90, Absent 110, Grand Total 200. [Type: Theory]
+    (b) Expected: High/Pres = 45, High/Abs = 55, Low/Pres = 45, Low/Abs = 55.
+    (c) $\chi^2 = 50.50$.
+    (d) df = 1. Since $\chi^2 = 50.50 > 3.841$, reject $H_0$. Lichen occurrence is significantly dependent on SO$_2$ pollution level.

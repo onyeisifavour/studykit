@@ -1,0 +1,95 @@
+1. In classical two-dimensional projectile motion in a vacuum, which kinematic parameter remains strictly constant throughout the flight path? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2021]
+   A. Vertical velocity component $v_y$
+   B. Horizontal velocity component $v_x$
+   C. Instantaneous speed v
+   D. Elevation height y
+2. A projectile is launched with initial velocity u at an angle $\theta$ above the horizontal over flat ground. What is its theoretical horizontal range R? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+   A. $R = \frac{u^2 \sin\theta}{g}$
+   B. $R = \frac{u^2 \sin(2\theta)}{g}$
+   C. $R = \frac{u^2 \cos(2\theta)}{2g}$
+   D. $R = \frac{2u\sin\theta}{g}$
+3. At what launch angle $\theta$ above the horizontal is the maximum horizontal range achieved over flat, level terrain in a vacuum? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: NECO 2020]
+   A. $30^\circ$
+   B. $45^\circ$
+   C. $60^\circ$
+   D. $90^\circ$
+4. A cannonball is fired horizontally at 100 m·s$^{-1}$ from a cliff top of height $h = 80$ m. Ignoring air resistance, how long does it take to strike the sea below ($g = 10$ m·s$^{-2}$)? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: AP Physics 1]
+   A. 2.83 s
+   B. 4.00 s
+   C. 8.00 s
+   D. 16.00 s
+5. How does the presence of significant aerodynamic drag affect the trajectory of a projectile compared to its vacuum parabola? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: IB Physics]
+   A. The flight path remains symmetrical, but range increases.
+   B. Peak height increases, and launch angle decreases.
+   C. Trajectory becomes asymmetric, peak height decreases, and descent angle becomes steeper.
+   D. Range increases, and impact speed exceeds launch speed.
+6. A projectile is launched at speed $u = 20$ m·s$^{-1}$ at $\theta = 30^\circ$ above the horizontal. Calculate its initial vertical velocity component $u_y$. [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2019]
+   A. 10.0 m·s$^{-1}$
+   B. 17.3 m·s$^{-1}$
+   C. 20.0 m·s$^{-1}$
+   D. 8.66 m·s$^{-1}$
+7. For a projectile launched over level ground with flight time T, at what time instant does it reach maximum height $H_{max}$? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+   A. $\frac{T}{4}$
+   B. $\frac{T}{2}$
+   C. $\frac{T}{\sqrt{2}}$
+   D. T
+8. When a projectile is launched from an elevated cliff to target a point on lower ground, how does the optimal launch angle $\theta_{opt}$ for maximum range compare to 45$^\circ$? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: AP Physics C]
+   A. $\theta_{opt} = 45^\circ$
+   B. $\theta_{opt} < 45^\circ$
+   C. $\theta_{opt} > 45^\circ$
+   D. $\theta_{opt} = 90^\circ$
+9. The parabolic trajectory equation of a vacuum projectile is given by $y(x) = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta}$. What mathematical function defines the trajectory shape? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: IB Physics]
+   A. Linear equation
+   B. Inverted quadratic polynomial
+   C. Exponential decay function
+   D. Logarithmic spiral
+10. A sphere falling vertically through a viscous liquid eventually reaches terminal velocity $v_t$. At this point, what is the net external force acting on the sphere? [Type: MCQ; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: NECO A-Level]
+    A. Equal to its weight mg
+    B. Equal to fluid drag $F_d$
+    C. Zero
+    D. Equal to buoyant force minus weight
+11. A stone is launched at $u = 25$ m·s$^{-1}$ at $\theta = 53.1^\circ$ ($\sin(53.1^\circ) = 0.8$, $\cos(53.1^\circ) = 0.6$). Calculate maximum height H ($g = 10$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+12. Calculate the total flight time T for the stone in Question 11 over level ground. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+13. Calculate horizontal range R for the stone in Question 11. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+14. A dart is fired horizontally at 15 m·s$^{-1}$ from a height of 1.8 m. Compute its horizontal displacement prior to striking the floor ($g = 9.81$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: AP Physics 1]
+15. Two projectiles launched at equal speeds u cover identical horizontal ranges over flat ground. If the first angle is $\theta_1 = 35^\circ$, calculate $\theta_2$. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: IB Physics]
+16. Calculate the horizontal speed component $v_x$ of a mortar shell fired at 120 m·s$^{-1}$ at 60$^\circ$ to the horizontal. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2020]
+17. Compute vertical velocity component $v_y$ at apex for any projectile trajectory. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: null]
+18. A projectile achieves $R = 100$ m when fired at 45$^\circ$. Compute R when fired at 15$^\circ$ with identical initial speed. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: NECO 2021]
+19. Calculate the impact speed of a package dropped from an aircraft flying horizontally at 50 m·s$^{-1}$ after falling vertically for $t = 3$ s ($g = 10$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+20. State the direction angle of acceleration for a projectile in mid-flight in a vacuum. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: null]
+21. Compute terminal velocity $v_t$ of a 0.1 kg sphere experiencing fluid drag force $F_d = 0.2v^2$ ($g = 9.8$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: AP Physics C]
+22. A projectile is launched at $u = 30$ m·s$^{-1}$ at $\theta = 90^\circ$. Calculate flight time to return to launch elevation ($g = 10$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2022]
+23. Calculate maximum height H for a projectile launched at $u = 10$ m·s$^{-1}$ at angle $\theta = 30^\circ$ ($g = 10$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: null]
+24. Calculate ratio of horizontal displacement to vertical displacement for launch angle $\theta = 45^\circ$ at $t = T_{flight}$. [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: IB Physics]
+25. Compute horizontal displacement of a ball thrown at 12 m·s$^{-1}$ horizontally from a window height of 5 m ($g = 10$ m·s$^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: NECO 2019]
+26. **Complete Analytical Derivation of Projectile Kinematic Parameters** [Type: Theory; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: CAIE A-Level]
+    A projectile is launched from origin (0,0) with initial speed u at elevation angle $\theta$ above horizontal terrain in a vacuum.
+    (a) Resolve initial velocity vector u into horizontal $u_x$ and vertical $u_y$ components.
+    (b) Derive time-dependent position functions x(t) and y(t) using fundamental calculus integrations.
+    (c) Eliminate time t to derive the trajectory equation $y(x) = x\tan\theta - \frac{gx^2}{2u^2\cos^2\theta}$.
+    (d) Derive explicit expressions for time of flight T, maximum height H, and horizontal range R.
+27. **Elevated Launch Boundary Dynamics and Range Optimization** [Type: Theory; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: IB Physics]
+    A rescue projectile is fired from a cliff top at height $h = 45$ m above sea level with speed $u = 40$ m·s$^{-1}$ at angle $\theta = 30^\circ$ above the horizontal.
+    [DIAGRAM: Trajectory curve originating at height y=h on vertical cliff edge, rising to peak height H, and descending past initial height level to strike ocean surface at horizontal distance R]
+    (a) Calculate vertical and horizontal components of initial velocity.
+    (b) Calculate maximum height $H_{max}$ achieved above the ocean surface ($g = 9.81$ m·s$^{-2}$).
+    (c) Set up the quadratic vertical displacement equation and calculate total flight time $T_{impact}$ prior to ocean impact.
+    (d) Calculate total horizontal distance R covered from the cliff base.
+28. **Vector Velocity Dynamics and Impact Angle Resolution** [Type: Theory; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: AP Physics 1]
+    A projectile is launched over flat ground with initial velocity vector $u = (20\hat{i} + 29.4\hat{j})$ m·s$^{-1}$ ($g = 9.8$ m·s$^{-2}$).
+    (a) Determine launch angle $\theta$ and initial magnitude speed u.
+    (b) Compute velocity vector v(t) at time $t = 2.0$ s in unit vector notation.
+    (c) Calculate speed v and direction angle $\phi$ at $t = 2.0$ s.
+    (d) Determine magnitude and vector orientation of velocity immediately prior to landing at $t = T_{flight}$.
+29. **Quantitative Aerodynamic Drag Perturbation and Trajectory Distortion** [Type: Theory; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: AP Physics C]
+    In real atmospheric conditions, a projectile experiences linear drag force $F_d = -bv$.
+    (a) Write vector differential equations of motion for horizontal acceleration $a_x = \frac{dv_x}{dt}$ and vertical acceleration $a_y = \frac{dv_y}{dt}$.
+    (b) Integrate $a_x(t)$ to prove that horizontal velocity decays exponentially: $v_x(t) = u_x e^{-\frac{b}{m}t}$.
+    (c) Explain qualitatively how exponential horizontal speed decay deforms classical parabolic trajectory symmetry.
+    (d) Define horizontal terminal velocity limit and explain why descent angle approaches 90$^\circ$ asymptotically.
+30. **Comparative Synthesis of Vacuum vs Drag Trajectories** [Type: Theory; Subject: Physics; Topic: L1.5 Two-Dimensional Projectile Trajectories and Fluid Resistance; Format: Non-Sim; Exam: NECO A-Level]
+    Two identical projectiles A and B are launched simultaneously with identical velocity u at angle $\theta$. Projectile A travels in a vacuum chamber, while Projectile B moves through atmospheric air.
+    (a) Compare flight time, peak height, and total horizontal range between Projectiles A and B.
+    (b) Sketch comparative trajectory curves on a single set of coordinate axes (y vs x).
+    (c) Explain energy dissipation mechanics along Projectile B's path using the Work-Energy Theorem.

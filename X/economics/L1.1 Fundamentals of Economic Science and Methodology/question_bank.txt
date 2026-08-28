@@ -1,0 +1,110 @@
+1. Which statement correctly characterizes the methodological approach of positive economics compared to normative economics? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: IB Economics]
+   A. Positive economics incorporates ethical value judgments to prescribe optimal fiscal interventions.
+   B. Positive economics focuses exclusively on objective, empirically verifiable hypotheses regarding economic behavior.
+   C. Positive economics seeks to establish moral imperatives regarding how national income ought to be distributed.
+   D. Positive economics avoids empirical testing and relies entirely on normative political consensus.
+2. In microeconomic modeling, what is the fundamental purpose of invoking the ceteris paribus assumption? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: Cambridge IGCSE 0455]
+   A. To ensure that all exogenous variables fluctuate simultaneously during empirical observations.
+   B. To isolate the functional causal relationship between a single independent variable and a dependent variable.
+   C. To guarantee that economic models perfectly mirror every complex detail of macro economies.
+   D. To eliminate the need for mathematical equations in economic theory construction.
+3. An economic researcher observes that during five consecutive interest rate hikes, commercial bank lending declined. The researcher concludes that raising interest rates universally curtails lending. What type of reasoning does this reflect? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AP Microeconomics]
+   A. Deductive reasoning, moving from general axioms to specific empirical instances.
+   B. Inductive reasoning, generalizing a broader principle from specific empirical observations.
+   C. Normative reasoning, applying moral parameters to banking regulations.
+   D. Dynamic optimization, utilizing recursive algorithms to model central bank choices.
+4. Which of the following represents a positive economic statement? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AQA A-Level Economics]
+   A. The government ought to raise the statutory minimum wage to improve living standards.
+   B. High corporate tax rates are morally unacceptable in a free market system.
+   C. An increase in the excise duty on gasoline leads to a reduction in quantity demanded, ceteris paribus.
+   D. Income inequality should be minimized through progressive wealth taxation.
+5. When an economist moves from theoretical model building based on basic axioms to deriving specific testable predictions, the logical process being utilized is: [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: Cambridge International A-Level 9708]
+   A. Inductive inference based on preliminary survey sampling.
+   B. Deductive reasoning proceeding from premise to logical consequence.
+   C. Normative policy evaluation incorporating ethical considerations.
+   D. Qualitative ethnographic field data collection.
+6. A research institute samples 10,000 households by selecting every 20th name from a centralized national registry after a random starting point. What sampling method is being implemented? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: NECO A-Level]
+   A. Simple random sampling
+   B. Stratified random sampling
+   C. Systematic sampling
+   D. Cluster sampling
+7. Which sampling flaw occurs when certain groups within a target population are systematically underrepresented due to the data collection mechanism itself? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: WAEC SC]
+   A. High standard error of the mean
+   B. Sampling bias
+   C. Hypothesis falsification
+   D. Normative deviation
+8. What is the primary limitation of utilizing secondary data sources in empirical economic research? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: IB Economics]
+   A. Secondary data cannot be analyzed using mathematical or statistical tools.
+   B. The researcher lacks direct control over the original data collection standards, definitions, and potential biases.
+   C. Secondary data is exclusively qualitative and lacks numerical measurements.
+   D. Secondary data automatically invalidates the ceteris paribus assumption in micro models.
+9. In the functional linear demand equation Q$_d$ = $\alpha$ $-$ $\beta$P, where Q$_d$ is quantity demanded and P is price, which variable is classified as the independent variable? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: null]
+   A. Q$_d$
+   B. P
+   C. $\alpha$
+   D. $\beta$
+10. Which institutional role requires an economist to strictly maintain scientific objectivity by keeping policy recommendations distinct from empirical facts? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AP Microeconomics]
+    A. Legislative lobbyist
+    B. Campaign policy advocate
+    C. Independent academic researcher
+    D. Corporate public relations officer
+11. Why are economic models constructed using abstract assumptions rather than total real-world complexity? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: Cambridge International A-Level 9708]
+    A. To ensure that economic theories remain completely immune to empirical testing.
+    B. To simplify complex reality into manageable analytical frameworks that highlight key causal mechanisms.
+    C. To enable economists to substitute positive facts with normative value judgments.
+    D. To guarantee that microeconomic findings apply identically to macroeconomic phenomena.
+12. A policy brief claims: "To promote fairness, public expenditure on tertiary education must be doubled immediately." How should this statement be classified? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AQA A-Level Economics]
+    A. A positive economic statement supported by empirical data.
+    B. A normative economic statement reflecting value judgments.
+    C. A mathematical deduction derived from a structural model.
+    D. An objective description of public sector fiscal dynamics.
+13. Which sampling technique involves dividing a heterogeneous population into sub-groups based on income brackets and then sampling randomly within each bracket? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: IB Economics]
+    A. Simple random sampling
+    B. Stratified sampling
+    C. Systematic sampling
+    D. Convenience sampling
+14. What primary challenge arises when applying the ceteris paribus assumption to macroeconomic research? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AP Macroeconomics]
+    A. Macroeconomic variables are interdependent and react simultaneously to systemic shocks, making complete isolation difficult.
+    B. Macroeconomic data cannot be quantified using national income accounting.
+    C. Macroeconomic analysis relies exclusively on normative value judgments.
+    D. Central bank policy rates are completely isolated from inflation and output data.
+15. What role does empirical evidence play in the refutation or confirmation of economic hypotheses? [Type: MCQ; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: Cambridge IGCSE 0455]
+    A. It provides absolute proof that an economic model will hold under every historic condition.
+    B. It serves to test predictions against real-world observations to refine, accept, or reject economic theories.
+    C. It replaces deductive logic entirely in formal theoretical proofs.
+    D. It eliminates value judgments from public political debates.
+16. State whether the following statement is Positive or Normative: "Imposing a 15% tariff on imported steel increases domestic steel production by 8% over two years." [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: IB Economics]
+17. Given the linear consumption function C = 100 + 0.75Y$_d$, where C is aggregate consumption and Y$_d$ is disposable income, calculate the value of C when Y$_d$ = 800, assuming ceteris paribus. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: null]
+18. A research survey targets a total population of 20,000 workers divided into two strata: 15,000 low-income and 5,000 high-income workers. Using proportional stratified sampling for a total sample size of 800 workers, calculate the number of high-income workers that must be sampled. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: null]
+19. Identify the term defined as: "The methodological assumption that all other exogenous variables remain unchanged while analyzing the specific relation between two selected economic variables." [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: Cambridge IGCSE 0455]
+20. Out of 1,200 survey questionnaires distributed to evaluate consumer sentiment, 840 fully completed responses were recovered. Calculate the survey response rate as a percentage. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: null]
+21. Identify whether the logical progression from specific field observations of agricultural yields to constructing a general law of diminishing returns represents Inductive or Deductive reasoning. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AQA A-Level Economics]
+22. A statistical study on labor markets sampled exclusively urban tech workers to estimate national average manufacturing wages. Name the explicit source of statistical error introduced by this methodology. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: null]
+23. Calculate the percentage change in quantity demanded if a product's price elasticity of demand is $-$1.5 and the price increases by 4%, assuming ceteris paribus. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AP Microeconomics]
+24. State whether an institutional recommendation by an economic advisory council to "mandate free universal childcare to enhance gender equity" is categorized under Positive Economics or Normative Economics. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: IB Economics]
+25. Identify the term for primary numerical information gathered directly by an economic researcher through custom-designed field experiments or household surveys, as opposed to pre-published census reports. [Type: Hybrid; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: NECO A-Level]
+26. **Methodological Foundations and Epistemology in Economic Science** [Type: Theory; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: IB Economics]
+    An economic research institute is examining how empirical data is utilized to formulate national tax policies.
+    (a) Distinguish clearly between inductive reasoning and deductive reasoning as utilized in economic methodology.
+    (b) Explain how inductive and deductive methods interact during the cycle of economic theory construction, empirical testing, and model refinement.
+    (c) Evaluate the methodological challenges economists encounter when attempting to conduct controlled laboratory experiments relative to natural scientists.
+27. **Positive vs. Normative Analysis in Fiscal Policy Evaluation** [Type: Theory; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: Cambridge International A-Level 9708]
+    Consider the following statement from a ministerial budget speech: "A reduction in the corporate tax rate from 30% to 22% will stimulate private capital investment by $1.2 billion over three years, and therefore the government should immediately lower corporate taxes to foster a fairer business environment."
+    (a) Deconstruct the ministerial statement by identifying the specific positive component and the specific normative component. Justify your classification of each.
+    (b) Explain why value judgments frequently enter economic decision-making when policy advisors move from positive diagnosis to normative policy formulation.
+    (c) Discuss how an economist can present objective, evidence-based policy advice without allowing personal ethical parameters to compromise research integrity.
+28. **Empirical Sampling Techniques and Research Design** [Type: Theory; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AP Microeconomics]
+    A team of development economists intends to survey 2,000 micro-enterprises across a developing nation to evaluate the impact of microfinance loans on rural business productivity. The national enterprise registry lists 50,000 businesses across four distinct sectors: Agriculture (25,000), Retail (15,000), Manufacturing (7,500), and Services (2,500).
+    (a) Calculate the exact number of micro-enterprises that must be selected from each sector if the research team employs a proportional stratified sampling design for the total sample of 2,000 businesses.
+    (b) Contrast the methodological advantages and operational limitations of proportional stratified sampling against simple random sampling in this specific research context.
+    (c) Explain how selection bias and non-response bias could systematically distort the validity of the empirical findings, and recommend two field strategies to minimize these errors.
+29. **The Mechanics and Limits of Ceteris Paribus in Economic Modeling** [Type: Theory; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: AQA A-Level Economics]
+    Economists utilize the ceteris paribus abstraction to isolate variables within microeconomic and macroeconomic models.
+    (a) Define the concept of ceteris paribus and demonstrate its mathematical application in isolating the impact of a price change within a multi-variable demand function Q$_d$ = f(P, Y, P$_s$, P$_c$, T).
+    (b) Explain the specific operational limitations of relying on ceteris paribus assumptions when constructing short-run macroeconomic stabilization models during a global supply shock.
+    (c) Assess whether the inability to achieve strict ceteris paribus conditions in observational field data undermines the status of economics as a legitimate social science.
+30. **Data Integrity, Primary Collection, and Professional Ethics** [Type: Theory; Subject: Economics; Topic: L1.1 Fundamentals of Economic Science and Methodology; Format: Non-Sim; Exam: NECO A-Level]
+    A public policy unit is investigating urban informal labor markets using a combination of primary survey data and secondary administrative census records.
+    (a) Differentiate between primary data and secondary data, highlighting the relative trade-offs regarding cost, timeliness, and reliability.
+    (b) Explain the concepts of reliability and validity in empirical economic measurement, providing an example of a survey design flaw that yields high reliability but low validity.
+    (c) Outline the institutional and ethical responsibilities of professional economists when presenting data findings that contradict the political objectives of their funding institutions.

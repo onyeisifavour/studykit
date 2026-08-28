@@ -1,0 +1,88 @@
+1. Let $\mathbb{N}$ denote the set of natural numbers $\{1, 2, 3, \dots\}$, $\mathbb{Z}$ the set of integers, $\mathbb{Q}$ the set of rational numbers, and $\mathbb{R}$ the set of real numbers. Which of the following statements regarding boundary conditions and closure properties is universally TRUE? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+   A. The set $\mathbb{Z} \setminus \mathbb{N}$ is closed under subtraction.
+   B. The set of irrational numbers $\mathbb{R} \setminus \mathbb{Q}$ is closed under multiplication.
+   C. The set $\mathbb{Q}$ forms a field under standard addition and multiplication because every non-zero element possesses a multiplicative inverse in $\mathbb{Q}$.
+   D. The set of non-zero integers $\mathbb{Z}^*$ possesses a multiplicative identity and every element has a multiplicative inverse in $\mathbb{Z}^*$.
+2. Consider the complex number $z = \frac{(1 + i)^4}{(1 - i)^2} + \sqrt{-25}$. Expressing $z$ in standard form $a + bi$ where $a, b \in \mathbb{R}$, what is the value of the real part $\text{Re}(z)$? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: IB DP Mathematics HL]
+   A. $-2$
+   B. $0$
+   C. $2$
+   D. $5$
+3. Which of the following numbers is strictly IRRATIONAL? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+   A. $0.345345345\dots$
+   B. $\sqrt{2.25}$
+   C. $\frac{\pi + 1}{3\pi + 3}$
+   D. $\sqrt{2} + \frac{1}{\sqrt{2}}$
+4. Let $S = \{x \in \mathbb{R} \mid x^2 - 5x + 6 = 0\}$ and $T = \{x \in \mathbb{C} \mid x^2 + 4 = 0\}$. Which set relationship correctly defines the union $S \cup T$? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: NECO A-Level 2020]
+   A. $S \cup T \subset \mathbb{R}$
+   B. $S \cup T \subset \mathbb{Q}$
+   C. $S \cup T \subset \mathbb{C}$ and $(S \cup T) \cap (\mathbb{C} \setminus \mathbb{R}) \neq \emptyset$
+   D. $S \cup T = \mathbb{Z}$
+5. Which set is NOT closed under the indicated binary operation? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: AP Calculus BC]
+   A. Odd integers under multiplication
+   B. Rational numbers under addition
+   C. Non-zero rational numbers under division
+   D. Irrational numbers under addition
+6. If $x = 0.\bar{27} = 0.272727\dots$ and $y = 0.\bar{18} = 0.181818\dots$, evaluate $x + y$ as a simplified rational fraction $\frac{p}{q}$ in lowest terms. [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: Cambridge IGCSE 0580/41]
+   A. $\frac{5}{11}$
+   B. $\frac{45}{99}$
+   C. $\frac{9}{22}$
+   D. $\frac{1}{2}$
+7. In the hierarchy of number systems, which of the following set inclusion chains is entirely correct using proper subset notation? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: null]
+   A. $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$
+   B. $\mathbb{Z} \subset \mathbb{N} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$
+   C. $\mathbb{N} \subset \mathbb{Q} \subset \mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$
+   D. $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R} \subset \mathbb{Q} \subset \mathbb{C}$
+8. Which statement correctly describes the density of numbers on the real number line? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: IB DP Mathematics SL]
+   A. Between any two distinct rational numbers, there exists at least one rational number, but not necessarily an irrational number.
+   B. Between any two distinct real numbers, there exist infinitely many rational numbers and infinitely many irrational numbers.
+   C. Integers are dense on the real line because every interval $(a, b)$ contains an integer.
+   D. Irrational numbers are discrete points spaced at intervals of $\pi$.
+9. Identify the additive inverse and multiplicative inverse of the complex number $z = 3 - 4i$ in $\mathbb{C}$. [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: NECO 2019]
+   A. Additive inverse: $-3 + 4i$; Multiplicative inverse: $\frac{3}{25} + \frac{4}{25}i$
+   B. Additive inverse: $3 + 4i$; Multiplicative inverse: $\frac{3}{25} - \frac{4}{25}i$
+   C. Additive inverse: $-3 - 4i$; Multiplicative inverse: $-\frac{3}{5} + \frac{4}{5}i$
+   D. Additive inverse: $-3 + 4i$; Multiplicative inverse: $3 + 4i$
+10. What is the identity element for the operation $a \ast b = a + b - 5$ defined over the set of real numbers $\mathbb{R}$? [Type: MCQ; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: WAEC WASSCE 2018]
+    A. $0$
+    B. $1$
+    C. $5$
+    D. $-5$
+11. Convert the recurring decimal $2.1\bar{36} = 2.1363636\dots$ into an irreducible fraction $\frac{p}{q}$ where $p, q \in \mathbb{Z}^+$ and $\gcd(p, q) = 1$. Show the complete algebraic setup. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+12. Find all real values of $x$ and $y$ that satisfy the complex equality $(2x - 3y) + (x + 4y)i = 7 - 2i$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: IB DP Mathematics HL]
+13. State whether the set $S = \{a + b\sqrt{3} \mid a, b \in \mathbb{Q}\}$ is closed under division (excluding division by zero). Justify your answer mathematically by evaluating $\frac{1}{a + b\sqrt{3}}$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: null]
+14. Determine whether the integer $0$ is an element of the set of Natural Numbers $\mathbb{N}$ under ISO 80000-2 standard convention, and explain the historical evolutionary motivation for creating the set of Whole Numbers $\mathbb{W} = \mathbb{N} \cup \{0\}$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: null]
+15. Evaluate the modulus $\vert{}z\vert{}$ and principal argument $\text{Arg}(z)$ of the complex number $z = -1 - i\sqrt{3}$, expressing the argument in radians in the interval $(-\pi, \pi]$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: AP Calculus BC]
+16. Prove by counterexample that the set of negative integers $\mathbb{Z}^-$ is NOT closed under multiplication. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: NECO 2022]
+17. Determine the multiplicative inverse of $z = 1 + 2i$ in standard form $a + bi$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: WAEC WASSCE 2020]
+18. Classify the number $x = \sqrt{12} \times \sqrt{3}$ into its most restrictive fundamental number set ($\mathbb{N}, \mathbb{Z}, \mathbb{Q}$, or $\mathbb{R} \setminus \mathbb{Q}$). [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+19. Solve for $x \in \mathbb{R}$ in the equation $\vert{}x - 4\vert{} = -2$, and state which number set contains the solution set. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: null]
+20. Simplify $(i^{15} + i^{22} + i^{101})$ to standard form $a + bi$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: IB DP Mathematics HL]
+21. Given the binary operation $a \circ b = a^2 + b^2$ on $\mathbb{R}$, determine if an identity element exists in $\mathbb{R}$ for $\circ$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: WAEC WASSCE 2017]
+22. Show that between $a = 0.12$ and $b = 0.13$, the number $c = 0.121010010001\dots$ is irrational. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: null]
+23. Calculate the distance on the complex plane between $z_1 = 3 - 2i$ and $z_2 = -1 + 4i$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: NECO A-Level]
+24. Express the pure imaginary number $z = -16i$ in polar form $r(\cos \theta + i \sin \theta)$ with $\theta \in (-\pi, \pi]$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: AP Calculus BC]
+25. Identify which algebraic property (Closure, Commutative, Associative, Identity, or Inverse) is violated when dividing real numbers by $0$. [Type: Hybrid; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+26. **Irrationality Proof and Set Partitioning** [Type: Theory; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: IB DP Mathematics HL]
+    (a) Prove by contradiction that $\sqrt{2}$ is an irrational number. State explicitly every assumption made regarding common factors.
+    (b) Using your result from part (a), prove that $3 + 2\sqrt{2}$ is irrational.
+    (c) Show that the real number line $\mathbb{R}$ can be partitioned into two disjoint subsets $A$ and $B$ such that $A = \mathbb{Q}$ and $B = \mathbb{R} \setminus \mathbb{Q}$. Explain how the density property applies to both $A$ and $B$.
+27. **Algebraic Structure and Field Axioms of Number Sets** [Type: Theory; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: NECO A-Level 2021]
+    Consider the following sets: $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$.
+    (a) Construct a formal algebraic comparison table analyzing each set against the four basic operations ($+, -, \times, \div$) regarding closure.
+    (b) Explain why $\mathbb{Z}$ fails to form a field under standard arithmetic, identifying the specific axiom(s) violated.
+    (c) Prove that $\mathbb{C}$ satisfies the existence of multiplicative inverses for all non-zero elements $z = a + bi \neq 0 + 0i$.
+28. **Complex Number Extension and Geometric Dynamics** [Type: Theory; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: AP Calculus BC]
+    (a) Explain the fundamental mathematical limitation in $\mathbb{R}$ that necessitates the construction of the complex number set $\mathbb{C}$.
+    (b) Let $z = x + iy$. Solve the quadratic equation $z^2 + 2z + 5 = 0$ for $z \in \mathbb{C}$.
+    (c) Plot the solutions obtained in part (b) on an Argand diagram, state their moduli and arguments, and describe their geometric relationship to each other.
+29. **Equivalence Classes of Recurring Decimals** [Type: Theory; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: Cambridge IGCSE 0580/42]
+    (a) Prove algebraically that $0.\bar{9} = 0.9999\dots$ is exactly equal to $1$.
+    (b) Explain why any terminating decimal in base 10 can be represented in two equivalent recurring decimal forms.
+    (c) Generalize this result to determine whether $0.\bar{4}_5$ (in base 5) is equal to $1_5$. Show full base-conversion working.
+30. **Foundations of Real Analysis and Identity/Inverse Dynamics** [Type: Theory; Subject: Maths; Topic: L1.1 Hierarchy and Classification of the Number System; Format: Non-Sim; Exam: WAEC WASSCE 2019]
+    Let a set $G = \mathbb{R} \setminus \{-1\}$ be equipped with an operation $\star$ defined by $a \star b = a + b + ab$.
+    (a) Prove that $G$ is closed under the operation $\star$.
+    (b) Show that the operation $\star$ is associative on $G$.
+    (c) Find the identity element $e \in G$ for $\star$.
+    (d) Determine the inverse $a^{-1}$ for any element $a \in G$ and explain why $a = -1$ must be excluded.

@@ -1,0 +1,93 @@
+1. Which of the following sets contains exclusively fundamental (base) SI physical quantities? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+   A. Mass, length, electric current, temperature, amount of substance
+   B. Length, time, force, electric charge, luminous intensity
+   C. Displacement, velocity, mass, electric potential, temperature
+   D. Time, mass, acceleration, energy, amount of substance
+2. Following the 2019 modern redefinition of the International System of Units (SI), which physical constant is fixed to define the base unit of mass, the kilogram (kg)? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: IB Physics]
+   A. The speed of light in vacuum (c)
+   B. The Planck constant (h)
+   C. The elementary charge (e)
+   D. The Avogadro constant ($N_A$)
+3. The dimensions of dynamic viscosity $\eta$ in the expression for Stokes' Drag Force $F = 6\pi\eta rv$ are given by: [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: WAEC 2021]
+   A. $[ML^{-1}T^{-1}]$
+   B. $[MLT^{-2}]$
+   C. $[ML^{-2}T^{-1}]$
+   D. $[ML^{-1}T^{-2}]$
+4. Express the derived unit of electrical resistance, the Ohm ($\Omega$), strictly in terms of SI base units. [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+   A. $kg \cdot m^2 \cdot s^{-3} \cdot A^{-2}$
+   B. $kg \cdot m \cdot s^{-2} \cdot A^{-1}$
+   C. $kg^{-1} \cdot m^{-2} \cdot s^3 \cdot A^2$
+   D. $kg \cdot m^2 \cdot s^{-2} \cdot A^{-1}$
+5. A student proposes the empirical formula for the speed v of a transverse wave on a stretched string as $v = \sqrt{\frac{T}{\mu}}$, where T is tension and $\mu$ is linear mass density. What are the base dimensions of the quantity $\frac{T}{\mu}$? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: AP Physics C]
+   A. $[LT^{-1}]$
+   B. $[L^2T^{-2}]$
+   C. $[MLT^{-2}]$
+   D. $[ML^{-1}T^{-1}]$
+6. Convert a capacitance measurement of 4.7 pF into gigafarads (GF) expressed in normalized scientific notation. [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+   A. $4.7 \times 10^{-21}$ GF
+   B. $4.7 \times 10^{-15}$ GF
+   C. $4.7 \times 10^{-3}$ GF
+   D. $4.7 \times 10^{-18}$ GF
+7. Which fundamental physical constant is assigned an exact fixed numerical value of 9192631770 Hz to define the SI base unit of time, the second (s)? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: IB Physics]
+   A. The caesium-133 hyperfine transition frequency ($\Delta\nu_{Cs}$)
+   B. The luminous efficacy constant ($K_{cd}$)
+   C. The Boltzmann constant (k)
+   D. The fine-structure constant ($\alpha$)
+8. The Stefan-Boltzmann law states that radiative power per unit area is $P = \sigma T^4$. What is the dimensional formula of the Stefan-Boltzmann constant $\sigma$? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: NECO A-Level]
+   A. $[MT^{-3}\Theta^{-4}]$
+   B. $[ML^2T^{-3}\Theta^{-4}]$
+   C. $[ML^{-1}T^{-2}\Theta^{-1}]$
+   D. $[LT^{-3}\Theta^{-4}]$
+9. What is the ratio of 1 GW (gigawatt) to 1 fW (femtowatt)? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+   A. $10^{24}$
+   B. $10^{21}$
+   C. $10^{18}$
+   D. $10^{15}$
+10. Which of the following physical equations is dimensionally inconsistent? [Type: MCQ; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+    A. $s = ut + \frac{1}{2}at^2$
+    B. $v^2 = u^2 + 2as$
+    C. $P = Fv + mat$
+    D. $E = pc + mv^2$
+11. Determine the fundamental dimensions $[M^aL^bT^cI^d]$ of the universal magnetic permeability of free space $\mu_0$, derived from the force per unit length equation between two parallel current-carrying conductors $\frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d}$. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+12. A theoretical particle physics model predicts that the decay lifetime $\tau$ of a heavy meson depends on the Planck constant h, gravitational constant G, and speed of light c according to $\tau = Ch^xG^yc^z$, where C is a dimensionless constant. Calculate the numerical value of the exponent x. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: AP Physics C]
+13. Express the specific heat capacity unit $J \cdot kg^{-1} \cdot K^{-1}$ entirely in terms of SI base units. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: IB Physics]
+14. Calculate the base unit magnitude of 1 kWh (kilowatt-hour) expressed in SI mega-joules (MJ). [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: WAEC 2020]
+15. Convert a density value of 13.6 g·cm$^{-3}$ into standard SI units (kg·m$^{-3}$) using scientific notation. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: NECO 2019]
+16. State the SI base unit associated with the fundamental constant $N_A = 6.02214076 \times 10^{23}$ mol$^{-1}$. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+17. Determine the dimensional exponent n of length $[L]^n$ in the dimensional formula for electrical potential difference (voltage). [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+18. Calculate the value of $\frac{1 \text{ nanometre}}{1 \text{ Terametre}}$ as a power of ten. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+19. A micro-actuator displaces by 450 nm in 1.5 $\mu$s. Compute its average drift velocity in millimetres per second (mm·s$^{-1}$). [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+20. Identify the dimensionless constant term in the theoretical pendulum period formula $T = 2\pi\sqrt{\frac{L}{g}}$. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: IB Physics]
+21. Compute the equivalent value of $1.602 \times 10^{-19}$ J expressed in electron-volts (eV). [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+22. Evaluate the dimensional consistency of $F = \frac{d}{dt}(mv)$ by writing the base dimensions of both sides. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: AP Physics C]
+23. Express 0.000000000089 A in microamperes ($\mu$A) using normalized scientific notation. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+24. A star emits radiation with peak intensity at frequency $f = 5.8 \times 10^{14}$ Hz. Convert this frequency into terahertz (THz). [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: null]
+25. Calculate the exponent a for mass $[M]^a$ in the dimensional formula of universal gravitational constant G. [Type: Hybrid; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: IB Physics]
+26. **Redefinition of the Kilogram and Planck Constant Metrology** [Type: Theory; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: IB Physics]
+    Prior to May 2019, the kilogram was defined by the mass of the International Prototype Kilogram (IPK), a platinum-iridium cylinder kept in Sèvres, France.
+    (a) Explain two major physical vulnerabilities associated with defining a base SI unit using a manufactured material artifact.
+    (b) Describe how the modern SI redefinition links the kilogram directly to the Planck constant $h = 6.62607015 \times 10^{-34}$ J·s via Kibble balance electro-dynamic measurements.
+    (c) Prove that the units of the Planck constant (J·s) are dimensionally equivalent to angular momentum $[ML^2T^{-1}]$.
+    (d) Derive the exact combination of base units (kg, m, s) that constitutes one Joule-second.
+27. **Dimensional Analysis of Fluid Dynamic Drag and Rayleigh's Equation** [Type: Theory; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: CAIE A-Level]
+    A sphere of radius r moves at high speed v through a fluid of density $\rho$. The fluid resistance force $F_d$ is modeled by the relationship:
+    $F_d = Ck^a r^b \rho^c v^d$ where C and k are dimensionless constants.
+    (a) Express the fundamental dimensions of force $F_d$, radius r, fluid density $\rho$, and velocity v.
+    (b) Apply the Principle of Dimensional Homogeneity to construct a system of linear equations for exponents b, c, and d.
+    (c) Solve the system to prove that $F_d \propto r^2 \rho v^2$.
+    (d) Explain why dimensional analysis alone cannot determine the exact value of the numerical constant C.
+28. **SI Coherence and Base Unit Derivation of Electromagnetic Quantities** [Type: Theory; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: NECO A-Level]
+    The electromagnetic spectrum and circuit theory rely on coherent relationships between electric and magnetic field constants.
+    (a) Define what is meant by a coherent system of units, citing the relationship between the Newton, Joule, and Watt.
+    (b) Starting from the electrostatic Coulomb force law $F = \frac{1}{4\pi\varepsilon_0}\frac{q_1 q_2}{r^2}$, derive the base SI units of vacuum permittivity $\varepsilon_0$.
+    (c) Maxwell's equations establish that the speed of light in vacuum is given by $c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}}$. Show quantitatively that the dimensional combination $\frac{1}{\sqrt{\varepsilon_0 \mu_0}}$ simplifies to $[LT^{-1}]$.
+29. **Metric Scaling, Prefix Transformations, and Micro-Fluidic Volume Calculations** [Type: Theory; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: WAEC 2022]
+    A biomedical micro-channel delivers an enzyme solution into a reaction chamber. The channel has a square cross-section of side length $w = 250$ nm and length $L = 1.2$ mm.
+    (a) Calculate the cross-sectional area A in square metres (m$^2$), expressing your answer in scientific notation.
+    (b) Calculate the total internal volume V of the micro-channel in cubic metres (m$^3$) and convert this volume into picolitres (pL).
+    (c) The fluid flows through the channel with a volumetric flow rate of $Q = 4.5$ fL·s$^{-1}$. Calculate the time required in seconds to fill the entire channel volume.
+30. **Limitations of Dimensional Analysis and Dimensionless Groups** [Type: Theory; Subject: Physics; Topic: L1.1 Fundamental Quantities and the SI Metric System; Format: Non-Sim; Exam: AP Physics C]
+    While dimensional analysis is a powerful verification tool, it exhibits intrinsic mathematical limitations.
+    (a) Explain why trigonometric functions ($\sin(\omega t)$), exponential terms ($e^{-kt}$), and logarithmic arguments must be strictly dimensionless.
+    (b) A student attempts to derive an equation for the damped oscillation displacement: $x(t) = Ae^{-\gamma t}\cos(\omega t + \phi)$. Verify the dimensional consistency of each individual term in this equation.
+    (c) Disprove by counterexample the assertion that "any dimensionally consistent equation is guaranteed to be physically correct."

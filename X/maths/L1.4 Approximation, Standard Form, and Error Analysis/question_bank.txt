@@ -1,0 +1,90 @@
+1. Round the speed of light $c = 299{,}792{,}458$ m/s to 3 significant figures and express in standard form $A \times 10^n$. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+   A. $3.00 \times 10^8$ m/s
+   B. $2.99 \times 10^8$ m/s
+   C. $3.00 \times 10^9$ m/s
+   D. $2.998 \times 10^8$ m/s
+2. A true mass of $X_A = 12.50$ g is measured as $X_E = 12.35$ g on a digital balance. Calculate the absolute error $\Delta X$ and percentage error $\delta X$. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+   A. $\Delta X = 0.15$ g, $\delta X = 1.20\%$
+   B. $\Delta X = 0.15$ g, $\delta X = 1.22\%$
+   C. $\Delta X = -0.15$ g, $\delta X = 1.20\%$
+   D. $\Delta X = 0.15$ g, $\delta X = 1.15\%$
+3. Evaluate $\frac{(4.2 \times 10^5) \times (3.0 \times 10^{-2})}{1.4 \times 10^{-4}}$ in standard form $A \times 10^n$. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: NECO 2020]
+   A. $9.0 \times 10^7$
+   B. $9.0 \times 10^6$
+   C. $9.0 \times 10^8$
+   D. $9.0 \times 10^5$
+4. The side length of a square is measured as $L = 5.0$ cm $\pm 0.1$ cm. Using error propagation rules, what is the absolute error in the calculated area A of the square? [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: IB DP Physics SL]
+   A. $0.01$ cm$^2$
+   B. $0.2$ cm$^2$
+   C. $1.0$ cm$^2$
+   D. $0.5$ cm$^2$
+5. How many significant figures are present in the measurement $0.004050$ kg? [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+   A. 3
+   B. 4
+   C. 6
+   D. 7
+6. If the radius of a sphere r has a measurement error of $\pm 2\%$, calculate the percentage error in the calculated volume $V = \frac{4}{3}\pi r^3$. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: AP Physics C]
+   A. $\pm 2\%$
+   B. $\pm 4\%$
+   C. $\pm 6\%$
+   D. $\pm 8\%$
+7. Perform the calculation $1.23 \times 10^4 + 4.5 \times 10^2$ and express the answer normalized in proper standard form. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: NECO 2019]
+   A. $1.275 \times 10^4$
+   B. $5.73 \times 10^4$
+   C. $12.75 \times 10^3$
+   D. $1.275 \times 10^6$
+8. Truncating the number 8.6784 to 2 decimal places yields T, while rounding it to 2 decimal places yields R. Calculate $|R - T|$. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: null]
+   A. 0.01
+   B. 0.0084
+   C. 0.0016
+   D. 0.00
+9. A rectangle has measured dimensions $w = 10 \pm 0.5$ m and $h = 20 \pm 0.8$ m. Calculate the maximum possible relative error in the calculated perimeter P. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: IB DP Mathematics SL]
+   A. 2.17%
+   B. 4.33%
+   C. 6.50%
+   D. 1.30%
+10. Express $0.0000000456$ F in standard form. [Type: MCQ; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: WAEC WASSCE 2018]
+    A. $4.56 \times 10^{-8}$ F
+    B. $4.56 \times 10^{-7}$ F
+    C. $45.6 \times 10^{-9}$ F
+    D. $4.56 \times 10^{-9}$ F
+11. Express 458,900,000 in standard form rounded to 3 significant figures. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+12. A student estimates the height of a building as 25 m, but the true height is 24.2 m. Calculate the percentage error to 2 decimal places. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+13. Compute $\frac{8.4 \times 10^{-5}}{2.1 \times 10^3}$ and leave the final value in standard form $A \times 10^n$. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: NECO 2022]
+14. Identify the number of significant figures in 0.05040. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+15. The edge L of a cube is measured with a percentage error of 1.5%. Calculate the percentage error in its computed volume $V = L^3$. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: AP Physics 1]
+16. Round 0.003996 to 3 decimal places and to 3 significant figures. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: null]
+17. If $X = 5.0 \pm 0.2$ and $Y = 2.0 \pm 0.1$, determine the absolute error in $Z = X - Y$. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: IB DP Physics SL]
+18. Calculate $(3.5 \times 10^8) - (8.0 \times 10^7)$ and give the normalized standard form. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: WAEC WASSCE 2020]
+19. A resistance $R = \frac{V}{I}$. If $V = 100$ V $\pm 2$ V and $I = 10$ A $\pm 0.5$ A, calculate the percentage error in R. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: AP Physics C]
+20. Convert $6.022 \times 10^{23}$ into ordinary decimal representation form description. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: null]
+21. Find the upper bound and lower bound for the perimeter of a rectangle with length 8 cm and width 5 cm, each measured to the nearest centimeter. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: Cambridge IGCSE 0580/41]
+22. A speed is calculated as $v = \frac{d}{t}$. Given $d = 100$ m $\pm 1$ m and $t = 20$ s $\pm 0.4$ s, evaluate the relative error $\frac{\Delta v}{v}$. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: IB DP Physics HL]
+23. Approximate $\sqrt{100.4}$ using differential calculus / binomial approximation $(1+x)^n \approx 1 + nx$. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: AP Calculus AB]
+24. Calculate the percentage error in area if the radius of a circle is measured with a 3% error. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: NECO 2020]
+25. Convert $3.14159 \times 10^{-3}$ to ordinary representation. [Type: Hybrid; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: WAEC WASSCE 2019]
+26. **Multi-Step Propagation of Errors in Engineering Calculations** [Type: Theory; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: IB DP Physics HL]
+    The gravitational acceleration g is determined using a simple pendulum via the relation $g = \frac{4\pi^2 L}{T^2}$. In an experiment, the measured length is $L = 1.00 \pm 0.01$ m and the measured period is $T = 2.00 \pm 0.02$ s.
+    (a) Calculate the nominal value of g.
+    (b) Derive the formula for the relative error $\frac{\Delta g}{g}$ in terms of $\frac{\Delta L}{L}$ and $\frac{\Delta T}{T}$ using differential calculus.
+    (c) Calculate the absolute error $\Delta g$ and percentage error in g, expressing g in the standard experimental format $g \pm \Delta g$.
+27. **Error Bounds and Accumulation in Financial/Scientific Arithmetic** [Type: Theory; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: Cambridge IGCSE 0580/42]
+    (a) A metal cylinder has measured height $h = 12.4$ cm and radius $r = 4.5$ cm, both given to 1 decimal place.
+        (i) State the upper and lower bounds for h and r.
+        (ii) Calculate the maximum possible value (upper bound) and minimum possible value (lower bound) for the volume $V = \pi r^2 h$.
+    (b) Calculate the absolute difference between the nominal volume calculated from measured values and the upper bound volume.
+    (c) Explain the effect of repeated rounding at each intermediate calculation step versus rounding only the final result.
+28. **Binomial Approximation and Numerical Calculus Methods** [Type: Theory; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: AP Calculus BC]
+    (a) Derive the first-order binomial approximation formula $(1+x)^r \approx 1 + rx$ for $|x| \ll 1$ using Taylor series expansion centered at $x = 0$.
+    (b) Use the result from part (a) to approximate $10001^3$ without using a calculator, showing all steps.
+    (c) Compute the exact value of $10001^3$, determine the absolute error of the binomial approximation, and calculate its percentage error.
+29. **Standard Form Operations and Astronomical Scale Arithmetic** [Type: Theory; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: WAEC WASSCE 2022]
+    The distance from Earth to the Sun is $d_1 = 1.496 \times 10^8$ km, and the distance from Sun to Neptune is $d_2 = 4.495 \times 10^9$ km.
+    (a) Calculate the total distance from Earth to Neptune when Earth, Sun, and Neptune are collinear with Earth and Neptune on opposite sides of the Sun. Express your answer in normalized standard form $A \times 10^n$.
+    (b) Calculate how many times further Neptune is from the Sun compared to Earth's distance from the Sun, rounding to 3 significant figures.
+    (c) If light travels at $c = 3.00 \times 10^5$ km/s, calculate the time taken in minutes for light to travel from the Sun to Neptune.
+30. **Comparative Error Propagation in Ideal Gas Physics** [Type: Theory; Subject: Maths; Topic: L1.4 Approximation, Standard Form, and Error Analysis; Format: Non-Sim; Exam: NECO A-Level 2021]
+    The ideal gas law is given by $P = \frac{nRT}{V}$, where R is a constant. Suppose temperature T has an error of $\pm 1.5\%$, volume V has an error of $\pm 2.0\%$, and moles n has an error of $\pm 0.5\%$.
+    (a) Derive the expression for the fractional error $\frac{\Delta P}{P}$ using natural logarithms and differentials.
+    (b) Calculate the maximum possible percentage error in pressure P.
+    (c) Compare the worst-case error bound with the quadrature (statistical) error propagation $\frac{\Delta P}{P} = \sqrt{\left(\frac{\Delta n}{n}\right)^2 + \left(\frac{\Delta T}{T}\right)^2 + \left(\frac{\Delta V}{V}\right)^2}$ and interpret the difference.

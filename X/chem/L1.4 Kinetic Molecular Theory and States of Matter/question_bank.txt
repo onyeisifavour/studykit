@@ -1,0 +1,122 @@
+1. According to Kinetic Molecular Theory, the absolute temperature of an ideal gas sample in Kelvin (T) is directly proportional to: [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: AP Chemistry]
+   A. The total potential energy of its intermolecular bonds
+   B. The average kinetic energy of its constituent particles (E$_k$ $\propto$ T)
+   C. The volume occupied by individual gas molecules
+   D. The total mass of the gas container
+2. Converting a temperature of 27.0$^\circ$C into absolute Kelvin units yields: [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. 246.15 K
+   B. 300.15 K
+   C. 327.00 K
+   D. 540.30 K
+3. Which empirical observation provides direct physical evidence supporting the Kinetic Molecular Theory postulate that gas particles undergo constant, random, rapid motion? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: IB Chemistry]
+   A. High density of solid lead
+   B. Brownian motion of smoke particles suspended in air and rapid diffusion of bromine vapor
+   C. Incompressibility of liquid water
+   D. Fixed crystalline geometry of quartz
+4. Why are gases highly compressible compared to liquids and solids at ambient conditions? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: WAEC 2022]
+   A. Gas particles are bound together by rigid directional covalent bonds
+   B. Gas molecules undergo elastic collisions with container walls
+   C. Enormous empty spaces exist between gas particles relative to their individual particle size
+   D. Gas particles possess lower average kinetic energy than solid particles
+5. Smoke particles viewed under a microscope exhibit erratic, random, zig-zag motion. What causes this Brownian motion? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. Thermal convection currents within the glass slide
+   B. Unequal, continuous collisions between microscopic smoke particles and invisible, fast-moving air molecules
+   C. Electrostatic repulsion between negatively charged smoke particles
+   D. Gravitational pull acting on smoke clusters
+6. Which row correctly contrasts particle order, spacing, and movement in solids versus gases? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: null]
+   A. Solid: Random order, wide spacing, free translational movement; Gas: Regular order, close spacing, vibration only
+   B. Solid: Regular lattice order, closely packed, vibrational motion about fixed positions; Gas: Completely random, widely separated, rapid continuous translational motion
+   C. Solid: Liquid-like flow, moderate spacing; Gas: Rigid fixed positions
+   D. Solid: No intermolecular forces; Gas: Infinite intermolecular forces
+7. If the absolute Kelvin temperature of a fixed mass of ideal gas is doubled from 300 K to 600 K at constant volume, what happens to the average kinetic energy of the gas particles? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: AP Chemistry]
+   A. It drops to one-half its initial value
+   B. It quadruples
+   C. It doubles
+   D. It remains unchanged
+8. On a heating curve plot of temperature versus thermal energy added for a pure substance, what physical event occurs along a horizontal, zero-gradient temperature plateau? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: NECO A-Level]
+   A. Kinetic energy increases rapidly while potential energy remains constant
+   B. Thermal energy supplied is consumed entirely as latent heat to overcome intermolecular forces during a phase transition
+   C. Particle velocity increases exponentially
+   D. The substance decomposes into constituent chemical elements
+9. When a liquid cools and freezes into a crystalline solid, what energy change occurs at the microscopic level during the freezing plateau? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: IB Chemistry]
+   A. Average kinetic energy decreases while potential energy remains constant
+   B. Potential energy decreases as attractive intermolecular forces form, releasing latent heat while average kinetic energy remains constant
+   C. Both kinetic and potential energy increase simultaneously
+   D. Absolute temperature drops to absolute zero
+10. A Maxwell-Boltzmann distribution curve shows the spread of particle speeds in a gas. How does raising the temperature affect the distribution curve? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: AP Chemistry]
+    A. The peak shifts to the left and becomes taller
+    B. The peak shifts to the right and becomes lower/broader
+    C. The total area under the curve decreases significantly
+    D. The curve remains completely unchanged
+11. Concentrated ammonia solution (NH$_3$, M$_r$ = 17.0) and concentrated hydrochloric acid (HCl, M$_r$ = 36.5) are placed on cotton wool plugs at opposite ends of a 1.0 m glass tube simultaneously. Where does the white ring of ammonium chloride (NH$_4$Cl) solid form? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A. Exactly in the middle of the tube
+    B. Closer to the ammonia end, because NH$_3$ diffuses slower
+    C. Closer to the hydrochloric acid end, because lighter NH$_3$ molecules diffuse faster than heavier HCl molecules
+    D. At the hydrochloric acid cotton plug directly
+12. Why do liquids possess a definite volume but an indefinite shape that conforms to their container? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: null]
+    A. Intermolecular forces are strong enough to keep particles close together, but weak enough to permit sliding motion past one another
+    B. Intermolecular forces are completely absent
+    C. Liquid particles are locked into a rigid three-dimensional crystal lattice
+    D. Liquid particles possess zero kinetic energy
+13. What is the theoretical physical significance of Absolute Zero (0 K or $-$273.15$^\circ$C)? [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: WAEC 2020]
+    A. Water freezes at standard atmospheric pressure
+    B. All translational molecular kinetic energy reaches its minimum possible theoretical value
+    C. Gas volume expands to infinity
+    D. Intermolecular attractive forces drop to zero
+14. Thermal expansion of a solid metal bar upon heating is explained by Kinetic Molecular Theory as: [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: null]
+    A. An increase in the physical diameter of individual metal atoms
+    B. Increased particle vibrational amplitude about fixed lattice positions, pushing neighboring particles slightly further apart
+    C. Chemical decomposition yielding gaseous products
+    D. Rapid creation of additional metal atoms within the lattice
+15. According to Graham's Law of Effusion/Diffusion, the rate of diffusion of a gas (r) is inversely proportional to: [Type: MCQ; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: IB Chemistry]
+    A. The square root of its molar mass ($\sqrt{M_r}$)
+    B. Its absolute Kelvin temperature
+    C. Its volumetric concentration
+    D. The container surface area
+16. Convert a temperature of $-$73.0$^\circ$C into absolute Kelvin units (K). [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+17. If the absolute temperature of a gas sample is quadrupled from 200 K to 800 K, state the numerical factor by which the average kinetic energy of its particles increases. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: AP Chemistry]
+18. State the scientific term given to the continuous, unceasing, random motion of microscopic particles suspended in a fluid driven by subatomic/molecular collisions. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+19. Calculate the ratio of the rate of diffusion of helium gas (He, M$_r$ = 4.0 g/mol) to sulfur dioxide gas (SO$_2$, M$_r$ = 64.0 g/mol) at identical temperature and pressure: r$_{He}$/r$_{SO_2}$. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: IB Chemistry]
+20. Identify the state of matter characterized by high density, fixed volume, indefinite shape, and the ability to flow. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: WAEC 2021]
+21. State whether kinetic energy increases, decreases, or remains constant along a phase transition plateau on a heating curve. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: NECO A-Level]
+22. Convert 500.0 K to degrees Celsius ($^\circ$C). [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: null]
+23. State the term defining the net passive movement of gas particles from a region of higher concentration to a region of lower concentration driven by random kinetic motion. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+24. Calculate the ratio of average particle speed for methane gas (CH$_4$, M$_r$ = 16.0) relative to oxygen gas (O$_2$, M$_r$ = 32.0) at the same temperature: v$_{CH_4}$/v$_{O_2}$. [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: AP Chemistry]
+25. State what happens to potential energy when a vapor condenses into a liquid at constant temperature (Increases, Decreases, or Remains Unchanged). [Type: Hybrid; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: WAEC 2019]
+26. **Kinetic Molecular Postulates, Gaseous Diffusion Dynamics, and Graham's Law** [Type: Theory; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: IB Chemistry]
+    The Kinetic Molecular Theory (KMT) models idealized gas behavior.
+    (a) State four fundamental postulates of Kinetic Molecular Theory regarding particle volume, intermolecular forces, motion, and collision elasticity.
+    (b) Using KMT postulates, explain why real gases deviate from ideal behavior at high pressures and extremely low temperatures.
+    (c) Calculate the relative rate of diffusion between ammonia gas (NH$_3$, M$_r$ = 17.03 g/mol) and hydrogen chloride gas (HCl, M$_r$ = 36.46 g/mol).
+    (d) If an NH$_3$ molecule travels 60.0 cm down a diffusion tube in 120 seconds, calculate the distance traveled by an HCl molecule in the same tube over identical time.
+27. **Thermal Analysis of Heating Curves and Microscopic Energy Partitioning** [Type: Theory; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A 100.0 g solid sample of pure water ice at $-$20.0$^\circ$C is heated continuously at a constant rate of 2.00 kJ/min until completely converted into steam at 120.0$^\circ$C.
+    Data provided:
+    Specific heat capacity of ice c$_{ice}$ = 2.09 J/g$^\circ$C
+    Specific heat capacity of liquid water c$_{water}$ = 4.18 J/g$^\circ$C
+    Specific heat capacity of steam c$_{steam}$ = 2.01 J/g$^\circ$C
+    Latent heat of fusion $\Delta$H$_{fus}$ = 334 J/g
+    Latent heat of vaporization $\Delta$H$_{vap}$ = 2260 J/g
+    (a) Describe the Heating Curve profile (Temperature vs Time) for this process, indicating regions where solid, liquid, gas, and phase mixtures exist.
+    (b) Calculate the heat required (Q$_1$) to raise the ice temperature from $-$20.0$^\circ$C to 0.0$^\circ$C.
+    (c) Calculate the time duration (in minutes) of the melting plateau at 0.0$^\circ$C.
+    (d) Differentiate between kinetic energy changes and potential energy changes during:
+    (i) Heating liquid water from 0.0$^\circ$C to 100.0$^\circ$C.
+    (ii) Vaporizing water at 100.0$^\circ$C.
+28. **Maxwell-Boltzmann Velocity Distributions and Temperature Dependence** [Type: Theory; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: AP Chemistry]
+    The Maxwell-Boltzmann distribution describes particle speed distributions in gases.
+    (a) Describe the shapes of Maxwell-Boltzmann distribution curves for 1.0 mole of nitrogen gas (N$_2$) at two different temperatures: T$_1$ = 300 K and T$_2$ = 600 K.
+    (b) Explain why the peak of the curve shifts to the right and flattens out as temperature increases, while total area under the curve remains constant.
+    (c) Explain using KMT why raising the temperature significantly increases the rate of a chemical reaction, referring to activation energy (E$_a$).
+29. **Microscopic Mechanisms of Phase Transitions and State-Dependent Compressibility** [Type: Theory; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: NECO A-Level]
+    The three principal states of matter exhibit distinct physical behaviors.
+    (a) Explain why solids exhibit fixed shapes and high resistance to shear stress, whereas liquids flow and conform to their containers.
+    (b) Derive the mathematical relation demonstrating that E$_k$ $\propto$ T based on average root-mean-square speed v$_{rms}$ = $\sqrt{\frac{3RT}{M}}$.
+    (c) Account for the macroscopic difference in density between liquid water (1.00 g/cm$^3$) and water vapor at 100$^\circ$C (0.000598 g/cm$^3$) using particle spacing models.
+30. **Brownian Motion, Diffusion Apparatus Design, and Quantitative Kinetic Energy Modeling** [Type: Theory; Subject: Chem; Topic: L1.4 Kinetic Molecular Theory and States of Matter; Format: Non-Sim; Exam: WAEC 2021]
+    An experiment is set up to measure gas kinetics and particle behavior.
+    (a) Describe the experimental setup and procedures required to demonstrate Brownian motion using a smoke cell, illuminated glass chamber, and microscope.
+    (b) State the fundamental conclusion drawn from Brownian motion regarding sub-microscopic air particles.
+    (c) Two gas samples, Krypton (Kr, M$_r$ = 83.8) and Neon (Ne, M$_r$ = 20.2), are at the same temperature 300 K. Compare their:
+    (i) Average kinetic energy per mole.
+    (ii) Root-mean-square molecular velocity.

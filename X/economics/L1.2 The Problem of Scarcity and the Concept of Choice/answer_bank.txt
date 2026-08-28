@@ -1,0 +1,40 @@
+1. B — Scarcity of resources relative to unlimited wants is the central economic problem [Type: MCQ]
+2. B — Human wants are unlimited, recurring, competing, and vary in intensity [Type: MCQ]
+3. C — Opportunity cost is the value of the next best alternative foregone [Type: MCQ]
+4. C — Ambient air requires zero resource sacrifice [Type: MCQ]
+5. B — Free goods involve no scarce inputs and thus zero opportunity cost [Type: MCQ]
+6. B — The concert ticket is the second-ranked option foregone [Type: MCQ]
+7. C — Rational consumers maximize total utility subject to income constraints [Type: MCQ]
+8. B — Foregone sedan output represents the real opportunity cost [Type: MCQ]
+9. B — Pervasive resource scarcity requires prioritized preferences [Type: MCQ]
+10. B — Foregone utility from the public park represents the opportunity cost [Type: MCQ]
+11. B — Constant opportunity cost arises when factors are perfectly adaptable across uses [Type: MCQ]
+12. A — Monetary cost is financial payment; real cost reflects foregone real alternatives [Type: MCQ]
+13. B — Scarcity due to population growth or depletion introduces opportunity costs [Type: MCQ]
+14. B — 3 hours $\times$ $15/hr = $45 foregone gross income [Type: MCQ]
+15. A — Rationality dictates undertaking activities where MPB $\geq$ MPC [Type: MCQ]
+16. 3 metric tons of maize per 1 ton of wheat [Type: Hybrid]
+17. $-$$15,000 (Economic loss of $15,000) [Type: Hybrid]
+18. 3 oranges [Type: Hybrid]
+19. Economic Good [Type: Hybrid]
+20. Studying for microeconomics (second-ranked option) [Type: Hybrid]
+21. 2 units of Product B per 1 unit of Product A [Type: Hybrid]
+22. The good must involve resource scarcity and carry an opportunity cost in production [Type: Hybrid]
+23. Yes ($\frac{MU_X}{P_X}$ = 6 = $\frac{MU_Y}{P_Y}$) [Type: Hybrid]
+24. $620 million in expected social returns foregone [Type: Hybrid]
+25. Scale of Preference [Type: Hybrid]
+26. (a) Budget Equation: 6F + 12C = 120. Max F = 20, Max C = 10. [Type: Theory]
+    (b) Opportunity Cost = 2 units of Food.
+    (c) New relative price ratio = 1.5 units of Food per unit of Clothing.
+27. (a) Explicit Costs = $70,000; Accounting Profit = $110,000. [Type: Theory]
+    (b) Implicit Costs = $93,000; Economic Profit = $17,000.
+    (c) Advise launching consultancy because economic profit is positive (+$17,000).
+28. (a) Free goods carry zero opportunity cost; Economic goods utilize scarce inputs. [Type: Theory]
+    (b) Pollution or depletion renders pristine water scarce, requiring filtration capital.
+    (c) Taxpayer funded zero-price goods are Economic Goods because public resources are consumed.
+29. (a) Scale of preference orders choices under fixed budget. [Type: Theory]
+    (b) Selects Project 1; Opportunity cost is $260 million from Project 2.
+    (c) Shifts in priorities re-order ranks, reallocating capital to the new top project.
+30. (a) Wants dynamically expand with technological growth, exceeding finite inputs. [Type: Theory]
+    (b) Price mechanism uses rationing, signaling, and incentive functions.
+    (c) AI cannot eliminate finite raw materials, land, energy limits, or human desires.

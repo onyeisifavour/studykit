@@ -1,0 +1,40 @@
+1. B [Type: MCQ]
+2. A [Type: MCQ]
+3. A [Type: MCQ]
+4. B [Type: MCQ]
+5. A [Type: MCQ]
+6. D [Type: MCQ]
+7. A [Type: MCQ]
+8. A [Type: MCQ]
+9. A [Type: MCQ]
+10. A [Type: MCQ]
+11. x = −9 [Type: Hybrid]
+12. 5 [Type: Hybrid]
+13. $\frac{83}{27}$ [Type: Hybrid]
+14. $5 + 2\sqrt{6}$ [Type: Hybrid]
+15. x = 8, x = 27 [Type: Hybrid]
+16. $9\sqrt{2}$ [Type: Hybrid]
+17. $\frac{2x^3}{y^2}$ [Type: Hybrid]
+18. $x = \log_5 2$, $x = \log_5 3$ [Type: Hybrid]
+19. 1 [Type: Hybrid]
+20. $\frac{ab}{(a + b)^2}$ [Type: Hybrid]
+21. $x = \frac{3 \pm \sqrt{21}}{3}$ [Type: Hybrid]
+22. $x^2 - y^2$ [Type: Hybrid]
+23. $\sqrt{7} + \sqrt{5}$ [Type: Hybrid]
+24. x = 1 [Type: Hybrid]
+25. 73 [Type: Hybrid]
+26. (a) Repeated multiplication over indices. [Type: Theory]
+    (b) Quotient law identity $a^0 = a^{n-n} = 1$.
+    (c) Radical equivalence $a^{p/q} = \sqrt[q]{a^p}$.
+27. (a) $\frac{2\sqrt{3} + 3\sqrt{2} - \sqrt{30}}{12}$. [Type: Theory]
+    (b) Difference of squares simplification yields $2\sqrt{3}$.
+    (c) $5 \leq x \leq 10$.
+28. (a) $x = \frac{\ln 12}{\ln 2}$, $y = 3$. [Type: Theory]
+    (b) $x = \pm 1$.
+    (c) $x \in \{1, 2, 3, 4, 5\}$.
+29. (a) Suprema of rational sequences. [Type: Theory]
+    (b) Derivative $f'(x) = a^x \ln a > 0$.
+    (c) $4^{2/3} < 2^{\sqrt{3}} < \left(\frac{1}{2}\right)^{-\sqrt{5}} < 3^{\sqrt{2}}$.
+30. (a) $x^{-1}y^{3/2}$. [Type: Theory]
+    (b) Exponents sum to 0.
+    (c) Cubing x gives $2x^3 - 6x - 5 = 0$.

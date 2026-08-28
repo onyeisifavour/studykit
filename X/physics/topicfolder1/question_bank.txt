@@ -1,0 +1,199 @@
+No-options Objective Questions
+
+MATHEMATICS (15 Questions)
+
+1. Express the recurring decimal 0.4̄7̄ (where both 4 and 7 repeat) as a rational number in simplest form. Show all working.
+
+2. Convert the binary number 1011011₂ to hexadecimal using the nibble-grouping method directly (without intermediate conversion to base 10).
+
+3. Determine the base b such that the numeral 234ᵦ equals 46 in base 10.
+
+4. Classify each of the following as rational, irrational, or complex. Justify your classification in one sentence per number:
+   (a) √(16/81)
+   (b) ∛7
+   (c) (3 + 4i)/(1 - 2i)
+
+5. A number x in base 5 reads "342₅". Calculate the numerical value in base 3 of this same quantity.
+
+6. Between the rational numbers 1/7 and 1/6, identify an irrational number. Express it algebraically and verify your claim.
+
+7. The maximum decimal value that can be represented using exactly 10 binary digits is X. Express X in both hexadecimal and as a power of 2.
+
+8. Prove or disprove: The product of two irrational numbers is always irrational. Use a specific counterexample in your response.
+
+9. Convert the fractional binary number 0.1101₂ to its base-10 decimal equivalent. Express your answer as both a fraction and a decimal.
+
+10. In base 8, a fractional quantity reads "0.54₈". Convert this to base 10, accurate to 4 decimal places.
+
+11. Represent using a nested-set diagram the relationships: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ. Then classify these five numbers into their smallest containing set:
+    −13, 22/7, √(-9), 4.141592..., 0
+
+12. A quantity measured in base 12 (duodecimal) reads "A7₁₂" where A represents 10. Express this in base 10, then in base 2.
+
+13. Determine the closure properties of the set of odd integers under:
+    (a) Addition
+    (b) Multiplication
+    (c) Division
+    For each, state whether the set is closed or not, with a counterexample if not closed.
+
+14. The set of all irrational numbers between 0 and 1 can be written as {x ∈ ℝ | 0 < x < 1, x ∉ ℚ}. Is this set bounded above? Explain your reasoning, referencing density of rationals in the reals.
+
+15. Convert the octal number 756₈ directly to hexadecimal without first converting to base 10. Show the intermediate step(s) clearly.
+
+---
+
+PHYSICS (15 Questions)
+
+1. The SI unit of force is the newton (N). Using the modern definition of the kilogram in terms of Planck's constant, explain conceptually how the SI base units underpinning the newton have been redefined.
+
+2. A measurement of electrical current is recorded as 2.47 mA. Express this quantity in:
+   (a) SI base units (amperes)
+   (b) Scientific notation
+   (c) Using an appropriate metric prefix within the pico- to giga- range
+
+3. The molar mass of a substance is 1.2 × 10⁻² kg/mol. Rewrite this using the most appropriate metric prefix, then state which SI base unit is NOT involved in this derived quantity.
+
+4. A distance of 4.2 femtometres is observed. Express this in:
+   (a) Metres in scientific notation
+   (b) Nanometres
+   Justify why such small distances require precise notational systems in quantum physics.
+
+5. The speed of light is defined as exactly 299,792,458 m/s in modern SI. Why is the metre now defined in terms of this constant rather than a physical standard, as it was historically?
+
+6. Perform a dimensional analysis check on the equation: v = u + at, where v and u are velocities, a is acceleration, and t is time. Verify dimensional consistency.
+
+7. The density of a substance is 8.9 × 10³ kg/m³. A sample has a volume of 2.5 × 10⁻⁴ m³. Calculate the mass of the sample using scientific notation, then express the result with a metric prefix.
+
+8. State the seven SI base units and their symbols. Then identify which base unit is defined using the elementary charge as a fundamental constant.
+
+9. A frequency is measured as 1.5 GHz (gigahertz). Convert this to:
+   (a) Hertz in scientific notation
+   (b) Millihertz
+   (c) Terahertz (THz)
+
+10. The Boltzmann constant k_B is approximately 1.381 × 10⁻²³ J/K. Identify the two SI base units embedded in this constant's dimensions and state their physical meanings.
+
+11. An acceleration of 9.81 m/s² can be expressed as 9.81 × 10⁰ m/s². Explain why we do not typically write gravitational acceleration in scientific notation, and comment on when scientific notation becomes mandatory for clarity.
+
+12. The elementary charge is e ≈ 1.602 × 10⁻¹⁹ coulombs. In the modern SI redefinition, explain conceptually why fixing the elementary charge to an exact value allows us to redefine the kilogram.
+
+13. A length measurement is 5.37 × 10⁻⁸ m. Using dimensional analysis, verify that this quantity divided by a time interval of 3.2 × 10⁻⁹ s yields a velocity. State the result with appropriate units and precision.
+
+14. The power output of a device is 2.4 kW. Express this in:
+    (a) Watts
+    (b) Megawatts
+    (c) Joules per second (to verify dimensional consistency with the watt)
+
+15. Compare the relative magnitudes of the following quantities using metric prefixes and scientific notation:
+    4.5 × 10⁻³ km
+    3.2 × 10² mm
+    1.1 × 10⁴ μm
+    Which is largest? Show all conversions to a common unit (metres).
+
+---
+
+STRUCTURED THEORY: QUESTIONS
+
+MATHEMATICS (4 Questions)
+
+1. Number Sets and Density Properties
+
+(a) Prove that between any two distinct rational numbers p and q (where p < q), there always exists at least one irrational number.
+
+(b) Use your proof to construct an irrational number lying strictly between 0.3 and 0.4. Show that your answer is indeed irrational. 
+
+---
+
+2. Base Conversion via Multiple Pathways (12 marks)
+
+A digital sensor outputs the binary string 110110101₂.
+
+(a) Convert this directly to hexadecimal using 4-bit nibble grouping (do not convert through base 10). 
+
+(b) Verify your answer from (a) by converting the same binary number to base 10, then to hexadecimal. 
+
+(c) Explain, using place-value notation, why the grouping of four binary digits corresponds exactly to one hexadecimal digit.
+
+---
+
+3. Non-Decimal Fractions and Positional Notation 
+
+A fractional measurement in base 7 is recorded as 0.35₇ metres.
+
+(a) Convert 0.35₇ to base 10, expressing your answer as a simplified fraction and as a decimal to 4 significant figures. 
+
+(b) Re-express your base-10 answer from (a) in base 5. 
+
+(c) State one practical reason why fractional notation in non-decimal bases (e.g., base 5 or base 7) is mathematically valid but rarely used in everyday scientific measurement, despite their theoretical elegance. 
+
+---
+
+4. Algebraic Properties and Set Closure 
+
+(a) Disprove the following claim by providing a specific counterexample: "The quotient of any two non-zero rational numbers is always a rational number." Then state the correct general rule. 
+
+(b) Construct a nested-set diagram showing the complete hierarchy: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ. 
+
+(c) Classify each of the following into the smallest set to which it belongs: 
+   −42
+   7/3
+   √(-16)
+   √2
+   0.101001000100001...
+
+
+
+---
+
+PHYSICS (4 Questions)
+
+1. SI Base Units and Fundamental Constants 
+
+(a) Name the seven SI base units and their symbols. For each, state whether it has been redefined in terms of a fundamental constant (post-2018 SI revision). 
+
+(b) The kilogram was historically defined by a physical platinum-iridium cylinder. Explain, in no more than 60 words, why the modern definition using Planck's constant is superior in principle, even though both yield the same practical measurements. 
+
+---
+
+2. Dimensional Analysis and Unit Consistency 
+
+The equation of motion in a uniform gravitational field is given as:
+s = ut + 1/2 gt^2
+
+where:
+- s = displacement (metres)
+- u = initial velocity (m/s)
+- g = gravitational acceleration (m/s²)
+- t = time (seconds)
+
+(a) Perform a complete dimensional analysis on each term of this equation, showing that all terms have the same dimensions.
+
+(b) If an engineer incorrectly writes s = ut + 1/2 g^2 t (replacing gt^2 with g^2t), use dimensional analysis to explain why this equation is invalid. 
+
+(c) Hence, discuss why dimensional analysis is a powerful tool for catching algebraic errors in physics before numerical computation. 
+
+---
+
+3. Metric Prefixes, Scientific Notation, and Magnitude Comparison 
+
+(a) A nanotechnology laboratory measures a particle diameter as 7.3 × 10⁻⁸ m. Express this measurement using:
+    (i) Appropriate metric prefix in metres 
+    (ii) Scientific notation in kilometres 
+    (iii) Nanometres (plain decimal form) 
+
+(b) Three distances are recorded as:
+    Distance A: 2.4 × 10³ mm
+    Distance B: 1.8 m
+    Distance C: 3.2 × 10⁻⁴ km
+
+    Convert all three to a common unit (metres) and arrange in ascending order of magnitude. 
+
+---
+
+4. Constants, Redefinition, and Practical Implications 
+
+(a) The elementary charge is defined as exactly e = 1.602176634 × 10⁻¹⁹ coulombs. State which SI base unit depends on this definition, and explain the conceptual link between fixing e and redefining that base unit. 
+
+(b) The speed of light is fixed at c = 299,792,458 m/s exactly. Discuss how this affects the definition of the metre and second in the modern SI system. Are they now independent, or is one now defined in terms of the other? Explain your reasoning. 
+
+(c) Suggest one advantage and one disadvantage of basing fundamental units on universal physical constants rather than on reproducible human-made standards.

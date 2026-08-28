@@ -1,0 +1,120 @@
+1. What is the fundamental root cause of the central economic problem facing all human societies? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: IB Economics]
+   A. Excess monetary printing by central banking authorities leading to hyperinflation.
+   B. The structural mismatch between finite productive resources and virtually unlimited human wants.
+   C. Market failure caused by monopolistic price gouging in essential industries.
+   D. Inefficient trade barriers restricting the global flow of consumer commodities.
+2. Which characteristic is an inherent property of human wants in economic analysis? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: Cambridge IGCSE 0455]
+   A. They are strictly limited in volume and easily satisfied permanently.
+   B. They are recurring, competing, and vary in intensity across individuals.
+   C. They are completely identical across different geographic regions and income classes.
+   D. They only arise in free-market capitalist economies.
+3. Opportunity cost is mathematically defined as: [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AP Microeconomics]
+   A. The total explicit financial outlay incurred when purchasing a commodity.
+   B. The accounting cost minus the implicit capital depreciation of physical assets.
+   C. The value of the next best alternative foregone when an economic decision is executed.
+   D. The sum of all alternative choices available in a market economy.
+4. Which of the following commodities is categorized as a free good? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AQA A-Level Economics]
+   A. Publicly provided municipal tap water.
+   B. Solar energy captured by commercial photovoltaic panels.
+   C. Ambient atmospheric air available at sea level without resource sacrifice.
+   D. Standard health services provided free of charge by state hospitals.
+5. Why does a free good carry an opportunity cost of zero? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: Cambridge International A-Level 9708]
+   A. Because its market price is fixed by government price ceiling regulations.
+   B. Because it is abundant in nature relative to demand, requiring no scarce productive factors to obtain.
+   C. Because it is manufactured using recycled intermediate inputs.
+   D. Because consumers derive no subjective marginal utility from its consumption.
+6. An individual possesses $100 and can purchase either a textbook, a pair of shoes, or a concert ticket, each priced at $100. The consumer ranks their scale of preference as: (1) Textbook, (2) Concert ticket, (3) Shoes. If the individual purchases the textbook, what is the opportunity cost? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: WAEC SC]
+   A. The concert ticket and the pair of shoes combined.
+   B. The concert ticket only.
+   C. The pair of shoes only.
+   D. $100 in cash.
+7. A rational consumer allocates their limited monthly household budget to maximize which of the following objective functions? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AP Microeconomics]
+   A. Total accounting revenue
+   B. Marginal cost of consumption
+   C. Total utility or satisfaction derived from consumption
+   D. The volume of physical goods accumulated
+8. When a firm decides to reallocate its factory machinery from manufacturing passenger sedans to manufacturing commercial trucks, the opportunity cost to the firm is represented by: [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: IB Economics]
+   A. The monetary profit earned from expanding commercial truck sales.
+   B. The foregone net revenue and output of passenger sedans that could have been produced.
+   C. The wages paid to the assembly line manufacturing labor.
+   D. The depreciation cost incurred on the factory machinery.
+9. What force necessitates that households, firms, and governments establish a scale of preference? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: NECO A-Level]
+   A. Government statutory legislation mandating consumption priorities.
+   B. Pervasive scarcity of time, income, and productive factors requiring prioritized decision-making.
+   C. The absence of competitive price signals in private commodity markets.
+   D. Deflationary pressures within the macroeconomy.
+10. A municipality possesses a vacant plot of land. It can construct a public park, a community hospital, or a sports complex. If the municipality decides to build the community hospital and its second-ranking choice was the public park, what is the opportunity cost of this public sector policy? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: Cambridge IGCSE 0455]
+    A. The financial budget allocated to construct the hospital building.
+    B. The social benefits and utility foregone by not constructing the public park.
+    C. The combined value of both the public park and the sports complex.
+    D. The tax revenue collected from municipal commercial property owners.
+11. Under what condition would the opportunity cost of producing additional units of a good remain constant across all output levels? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AQA A-Level Economics]
+    A. When resources are specialized and poorly suited for alternative production processes.
+    B. When productive factors are perfectly adaptable and substitutable between alternative uses.
+    C. When diminishing marginal returns affect all production sectors simultaneously.
+    D. When total consumer demand exceeds aggregate domestic supply.
+12. Which of the following best describes the difference between monetary cost and real economic cost? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: NECO A-Level]
+    A. Monetary cost measures financial expenditure, whereas real cost reflects the underlying opportunity cost in terms of foregone alternatives.
+    B. Monetary cost includes implicit costs, while real cost includes only explicit out-of-pocket costs.
+    C. Monetary cost is calculated by governments, whereas real cost is calculated exclusively by commercial banks.
+    D. Monetary cost applies only to capital goods, whereas real cost applies only to consumer goods.
+13. How can a commodity that was historically categorized as a free good transition into an economic good over time? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: IB Economics]
+    A. By passing legislation that declares the commodity to be a public right.
+    B. Through population growth, pollution, or resource depletion that renders the good scarce relative to demand, requiring productive resources to clean or extract.
+    C. By granting government subsidies to the private suppliers of the commodity.
+    D. By reducing the indirect taxes imposed on the retail distribution of the commodity.
+14. A student spends 3 hours studying economics for an upcoming assessment rather than working at a part-time job that pays $15 per hour. What is the explicit economic opportunity cost of the study time? [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AP Microeconomics]
+    A. The academic grade score earned on the economics test.
+    B. $45 in lost gross earned income.
+    C. $15 in lost hourly compensation.
+    D. Zero, because studying carries no formal monetary price ticket.
+15. Rational choice theory assumes that an economic agent will undertake an additional unit of an activity as long as: [Type: MCQ; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: Cambridge International A-Level 9708]
+    A. Marginal Private Benefit exceeds or equals Marginal Private Cost (MPB $\geq$ MPC).
+    B. Total Private Benefit is minimized relative to Total Private Cost.
+    C. Average Private Cost is equal to zero.
+    D. Marginal Opportunity Cost is strictly increasing.
+16. A farmer owns 10 hectares of land and can produce either 50 metric tons of wheat or 150 metric tons of maize. Calculate the opportunity cost of producing 1 metric ton of wheat in terms of maize. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: Cambridge IGCSE 0455]
+17. An entrepreneur leaves a managerial post paying $70,000 annually to launch a start-up. In the first year, explicit operating costs total $40,000 and gross revenue totals $95,000. Calculate the entrepreneur's Economic Profit (or Loss) for Year 1. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AP Microeconomics]
+18. A consumer has $20 to spend on apples ($2 each) and oranges ($4 each). If the consumer purchases 4 apples, calculate the maximum number of oranges they can purchase with their remaining budget. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: null]
+19. Classify clean desalinated drinking water in an arid desert region as either a Free Good or an Economic Good. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: IB Economics]
+20. A student ranks four mutually exclusive weekend activities in order of preference: (1) Attending a football match, (2) Studying for microeconomics, (3) Working a paid shift, (4) Going to the cinema. Identify the exact opportunity cost if the student attends the football match. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AQA A-Level Economics]
+21. A firm faces a production trade-off. Reallocating capital allows it to increase output of Product A from 200 units to 280 units, but causes production of Product B to drop from 500 units to 340 units. Calculate the average opportunity cost per additional unit of Product A. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: null]
+22. State the fundamental condition required for a good to be classified as an Economic Good rather than a Free Good. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: NECO A-Level]
+23. A consumer's marginal utility from consuming Good X is 30 units (priced at $5), and from Good Y is 48 units (priced at $8). Is the consumer currently maximizing total utility across these two goods? State "Yes" or "No". [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AP Microeconomics]
+24. A state government allocates $500 million to build a new highway bypass. The alternative competing proposal was funding a renewable energy grid project valued at $500 million, which was expected to generate $620 million in lifetime economic welfare. Calculate the net opportunity cost of choosing the highway over the energy grid project. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: null]
+25. State the economic term for a structured list generated by an economic agent that ranks available wants in descending order of relative importance or preference. [Type: Hybrid; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: WAEC SC]
+26. **Mathematical Evaluation of Opportunity Cost and Consumer Choice** [Type: Theory; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: IB Economics]
+    A household has a weekly disposable income constraint of I = $120 to spend on two goods: Food (F) priced at P$_F$ = $6 per unit, and Clothing (C) priced at P$_C$ = $12 per unit.
+    (a) Construct the algebraic linear budget equation representing the household's consumption possibilities, and solve for the maximum quantity obtainable of each good.
+    (b) Calculate the marginal opportunity cost of consuming one additional unit of Clothing in terms of foregone Food units.
+    (c) Suppose the price of Food increases to P$_F'$ = $8 per unit while income and clothing price remain unchanged. Calculate the new marginal opportunity cost of Clothing and analyze how this relative price shift alters the consumer's trade-off space.
+27. **Resource Allocation, Accounting vs. Economic Profit, and Entrepreneurial Choice** [Type: Theory; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AP Microeconomics]
+    A commercial software engineer currently earning a salary of $90,000 annually is considering opening an independent consultancy. To launch the business, the engineer must deposit $50,000 of personal savings (which currently earns 6% annual interest in a fixed bank deposit) into an operational business account. Estimated Year 1 revenues and explicit costs are detailed below:
+    Financial Item | Amount ($)
+    Projected Gross Revenue | 180,000
+    Office Rent & Equipment Leasing | 35,000
+    Administrative Wages & Marketing | 25,000
+    Software Licensing & Utilities | 10,000
+    (a) Calculate the total explicit costs and the calculated Accounting Profit for the prospective consultancy in Year 1.
+    (b) Calculate the total implicit costs (including foregone salary and foregone interest income) and derive the Economic Profit (or Loss) earned by the firm.
+    (c) Based on your economic profit calculation, advise the software engineer on whether establishing the consultancy represents a rational allocation of scarce personal resources. Justify your answer using opportunity cost theory.
+28. **Classification of Goods, Scarcity Shifts, and Market Dynamics** [Type: Theory; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: Cambridge International A-Level 9708]
+    The categorization of goods into Free Goods and Economic Goods depends on resource scarcity and opportunity cost parameters.
+    (a) Contrast a Free Good with an Economic Good using relevant examples, explicit reference to resource availability, and opportunity cost criteria.
+    (b) Explain a scenario in which an economic commodity initially considered a free good (such as pristine river water) transitions into an economic good over time. Identify the primary structural causes driving this shift.
+    (c) Evaluate the common misconception that "goods provided at a price of zero by a national government (such as public healthcare or state education) constitute free goods in economic terms."
+29. **Public Sector Scarcity, Scale of Preference, and Policy Trade-offs** [Type: Theory; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: AQA A-Level Economics]
+    A regional government receives a fixed capital development grant of $200 million. The public planning council formulates four mutually exclusive capital expenditure projects, ranked by the planning committee as shown in the table:
+    Rank | Project Proposal | Capital Cost (Millions) | Expected Lifetime Social Return (Millions)
+    1 | Regional General Hospital Expansion | 200
+    2 | High-Speed Rail Corridor Phase 1 | 200
+    3 | Municipal Water Treatment Modernization | 200
+    4 | Clean Energy Grid Infrastructure | 200
+    (a) Define the concept of a Scale of Preference and explain why public sector bodies must establish prioritized preferences under scarcity.
+    (b) Identify which project the government will select if it acts as a rational utility-maximizing decision-maker. Calculate the explicit opportunity cost of this policy choice in terms of foregone social returns.
+    (c) Evaluate how a structural shift in societal priorities (e.g., an acute public health epidemic vs. an environmental climate crisis) would alter the scale of preference, and analyze the resulting re-allocation of public capital resources.
+30. **Theoretical Synthesis: Scarcity as the Fundamental Economic Problem** [Type: Theory; Subject: Economics; Topic: L1.2 The Problem of Scarcity and the Concept of Choice; Format: Non-Sim; Exam: NECO A-Level]
+    Economic science asserts that scarcity is a universal, permanent condition affecting low-income, middle-income, and high-income nations alike.
+    (a) Prove why material scarcity persists even in highly affluent, technologically advanced economies with high GDP per capita levels.
+    (b) Explain how the price mechanism in a market economy attempts to resolve the allocation of scarce resources among competing wants.
+    (c) Disprove the assertion that "advancements in industrial automation and artificial intelligence will eventually eliminate economic scarcity entirely."

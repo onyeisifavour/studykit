@@ -1,0 +1,40 @@
+1. B [Type: MCQ]
+2. B [Type: MCQ]
+3. B [Type: MCQ]
+4. B [Type: MCQ]
+5. B [Type: MCQ]
+6. B [Type: MCQ]
+7. B [Type: MCQ]
+8. B [Type: MCQ]
+9. B [Type: MCQ]
+10. B [Type: MCQ]
+11. B [Type: MCQ]
+12. B [Type: MCQ]
+13. B [Type: MCQ]
+14. A [Type: MCQ]
+15. C [Type: MCQ]
+16. 16.7 kJ [Type: Hybrid]
+17. Endothermic [Type: Hybrid]
+18. 22.6 kJ [Type: Hybrid]
+19. Closed System AND Equal Rates (Rate$_{evap}$ = Rate$_{cond}$) [Type: Hybrid]
+20. Deposition [Type: Hybrid]
+21. 22.39$^\circ$C [Type: Hybrid]
+22. Vapor pressure equals atmospheric pressure at boiling point [Type: Hybrid]
+23. 80.2$^\circ$C [Type: Hybrid]
+24. Formed [Type: Hybrid]
+25. Increases [Type: Hybrid]
+26. (a) Evaporation occurs at all temperatures at the liquid surface; boiling occurs throughout the bulk at a fixed boiling point where vapor pressure equals atmospheric pressure. [Type: Theory]
+    (b) Pressure exerted by vapor in dynamic equilibrium with liquid in a closed container.
+    (c) Water forms stronger intermolecular hydrogen bonds than ethanol, requiring higher latent heat.
+27. (a) Evaporation rate initially exceeds condensation until equal rates are reached at dynamic equilibrium. [Type: Theory]
+    (b) Evaporation rate remains constant while condensation rate increases to meet it at equilibrium.
+    (c) (i) Vapor pressure remains unchanged; (ii) Vapor pressure increases exponentially with temperature.
+28. (a) High-energy surface molecules escape, reducing the average kinetic energy and temperature of remaining sweat molecules. [Type: Theory]
+    (b) Mass sweat = 207.5 g.
+    (c) High ambient humidity increases condensation rate, suppressing net surface evaporation.
+29. (a) Q$_1$ = 418 J. [Type: Theory]
+    (b) Q$_2$ = 6680 J.
+    (c) Thermal energy balance yields final equilibrium temperature T$_{final}$ = 34.1$^\circ$C.
+30. (a) Sample is frozen solid and ambient pressure dropped below triple point in a vacuum chamber; gentle thermal input sublimates ice directly to gas. [Type: Theory]
+    (b) CO$_2$ triple point pressure (5.1 atm) exceeds 1 atm, preventing liquid phase existence at standard pressure; H$_2$O triple point is 0.006 atm.
+    (c) Contaminated iodine in beaker covered with ice-filled flask is heated; pure iodine sublimates into gas and deposits onto the cold flask surface.

@@ -1,0 +1,44 @@
+1. B [Type: MCQ]
+2. A [Type: MCQ]
+3. A [Type: MCQ]
+4. A [Type: MCQ]
+5. B [Type: MCQ]
+6. A [Type: MCQ]
+7. B [Type: MCQ]
+8. B [Type: MCQ]
+9. A [Type: MCQ]
+10. B [Type: MCQ]
+11. A [Type: MCQ]
+12. B [Type: MCQ]
+13. C$_n$(H$_2$O)$_n$ or C$_n$H$_{2n}$O$_n$ [Type: Hybrid]
+14. C2 position [Type: Hybrid]
+15. $\alpha(1 \to 6)$ glycosidic bond [Type: Hybrid]
+16. 249 water molecules [Type: Hybrid]
+17. Up [Type: Hybrid]
+18. Chitin [Type: Hybrid]
+19. Every 8 to 12 glucose residues [Type: Hybrid]
+20. Maize (Zea mays) / Sorghum [Type: Hybrid]
+21. 2:1 ratio [Type: Hybrid]
+22. Amyloplast [Type: Hybrid]
+23. Glucose [Type: Hybrid]
+24. Benedict's reagent [Type: Hybrid]
+25. Yam (Dioscorea) [Type: Hybrid]
+26. (a) $\alpha$-glucose: C1 hydroxyl points down; $\beta$-glucose: C1 hydroxyl points up relative to pyranose ring. [Type: Theory]
+    (b) $\alpha(1 \to 4)$ bonds enforce angular bends creating a tight helix; $\beta(1 \to 4)$ bonds require alternating 180$^\circ$ monomer flipping, creating a straight ribbon.
+    (c) Ring opening to linear aldehyde followed by re-closure establishes equilibrium between $\alpha$ and $\beta$ forms.
+    (d) Parallel alignment allows inter-chain hydrogen bonding across hundreds of chains, forming rigid microfibrils.
+27. (a) Amylose: $\alpha$-glucose, $\alpha(1 \to 4)$, unbranched, plant storage; Amylopectin: $\alpha$-glucose, $\alpha(1 \to 4)$+$\alpha(1 \to 6)$, moderately branched, plant storage; Glycogen: $\alpha$-glucose, $\alpha(1 \to 4)$+$\alpha(1 \to 6)$, highly branched, animal storage; Cellulose: $\beta$-glucose, $\beta(1 \to 4)$, unbranched, plant cell walls. [Type: Theory]
+    (b) Polymeric glycogen maintains low solute concentration, preventing hyper-osmotic water influx and cell lysis.
+    (c) Glycogen phosphorylase cleaves terminal $\alpha(1 \to 4)$ bonds, while debranching enzyme removes $\alpha(1 \to 6)$ branches.
+28. (a) Amylase active sites fit $\alpha$-linkage geometry but cannot bind 180$^\circ$ flipped $\beta(1 \to 4)$ monomers. [Type: Theory]
+    (b) Symbiotic microbes produce cellulase enzymes that ferment cellulose into short-chain fatty acids absorbed by host.
+    (c) Cellulose is a polymer of $\beta$-glucose; chitin is a polymer of N-acetylglucosamine.
+    (d) Molar mass = 162.141 g/mol. %C = 44.45%; %H = 6.22%; %O = 49.33%.
+29. (a) Photosynthate (sucrose) transported to endosperm is converted into ADP-glucose and polymerized into starch within amyloplasts. [Type: Theory]
+    (b) Cereal starch is stored in seed endosperm for germination; tuber starch accumulates in subterranean parenchymal tissues for vegetative propagation.
+    (c) Water uptake triggers gibberellin release, stimulating aleurone synthesis of $\alpha$-amylase to mobilize starch.
+    (d) Cassava synthesizes starch in roots under high heat/drought where cereals fail, providing an essential caloric buffer.
+30. (a) Salivary/pancreatic $\alpha$-amylase cleaves starch into maltose; brush-border maltase hydrolyzes maltose into glucose, absorbed via SGLT1 transporters. [Type: Theory]
+    (b) Monosaccharides induce rapid glucose spikes (high GI); unrefined amylose starch releases glucose slowly (low GI).
+    (c) Glucose isomerase converts $\alpha$-glucose into fructose, which binds human sweetness receptors with higher affinity.
+    (d) Excess blood glucose triggers insulin, stimulating glycogen synthesis; once glycogen capacity is saturated, excess glucose is converted into fatty acids via lipogenesis.

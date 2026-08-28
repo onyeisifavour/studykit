@@ -1,0 +1,42 @@
+{
+  "type": "study_concept_block",
+  "sections": [
+    {
+      "heading": "No-options Objective Questions",
+      "content": "These questions target conceptual fluency and procedural mastery. Work through each systematically:",
+      "instructions": [
+        "State your method before calculating.",
+        "Double-check dimensional consistency in physics.",
+        "Verify base conversions by reverse conversion."
+      ]
+    },
+    {
+      "heading": "STRUCTURED THEORY: QUESTIONS",
+      "content": "These demand rigorous reasoning and proof:",
+      "instructions": [
+        "Always show every logical step.",
+        "Distinguish between counterexamples (disproving universal claims) and proofs (establishing general truths).",
+        "Link algebraic manipulations back to conceptual understanding (e.g., why nibble grouping works)."
+      ]
+    }
+  ],
+  "preparation_strategy": {
+    "title": "Preparation Strategy for Elite Performance",
+    "steps": [
+      "Master Section A first: Ensure automatic recall of conversion methods, set properties, and dimensional analysis.",
+      "Study Section B answers deeply: Understand not just the final answer, but why each step is necessary.",
+      "Practice explaining: Write out solutions as if teaching someone; gaps in understanding surface immediately.",
+      "Test Students: Attempt these under timed conditions mimicking real exams."
+    ]
+  },
+  "exam_timing": {
+    "section_a": {
+      "duration": "1 hour",
+      "pace": "4 minutes per question"
+    },
+    "section_b": {
+      "duration": "1.5 hours",
+      "pace": "3-4 minutes per mark"
+    }
+  }
+}

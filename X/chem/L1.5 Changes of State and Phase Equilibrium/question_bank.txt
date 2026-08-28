@@ -1,0 +1,113 @@
+1. Which fundamental distinction separates surface evaporation from bulk boiling in liquid water? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. Evaporation absorbs heat, whereas boiling releases heat
+   B. Evaporation occurs at any temperature below the boiling point strictly at the liquid surface, whereas boiling occurs throughout the liquid bulk at a fixed boiling temperature where vapor pressure equals atmospheric pressure
+   C. Evaporation involves breaking intramolecular covalent bonds, whereas boiling breaks intermolecular forces
+   D. Evaporation occurs only at high ambient pressures
+2. Which of the following compounds undergoes direct sublimation from solid to gas phase at standard atmospheric pressure upon gentle heating? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: WAEC 2022]
+   A. Sodium Chloride (NaCl)
+   B. Solid Carbon Dioxide (CO$_2$ / Dry Ice) and Iodine crystals (I$_2$)
+   C. Calcium Carbonate (CaCO$_3$)
+   D. Sucrose (C$_{12}$H$_{22}$O$_{11}$)
+3. What state of dynamic phase equilibrium exists inside a sealed glass vessel containing liquid water and water vapor at constant temperature? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: IB Chemistry]
+   A. The evaporation process stops completely once the air becomes saturated
+   B. The rate of liquid evaporation equals the rate of vapor condensation (Rate$_{evap}$ = Rate$_{cond}$)
+   C. The total mass of liquid water decreases continuously over time
+   D. Condensation occurs twice as fast as evaporation
+4. Why is the molar enthalpy of vaporization ($\Delta$H$_{vap}$) of pure water significantly larger than its molar enthalpy of fusion ($\Delta$H$_{fus}$)? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: AP Chemistry]
+   A. Melting breaks covalent bonds within H$_2$O molecules, whereas boiling breaks nuclear bonds
+   B. Vaporization requires separating water molecules completely against intermolecular hydrogen bonds, whereas melting requires only partial disruption of crystalline order
+   C. Ice has a higher temperature than liquid water
+   D. Vaporization is an exothermic process, whereas fusion is endothermic
+5. Which set of environmental conditions maximizes the rate of liquid water evaporation from an open basin? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. Low temperature, small surface area, high ambient humidity, zero airflow
+   B. High temperature, large surface area, low ambient humidity, strong airflow
+   C. High pressure, freezing temperature, saturated air humidity
+   D. Low surface area, cold temperature, humid still air
+6. On a single-component phase diagram, what specific thermodynamic point represents the exact temperature and pressure co-existence condition where solid, liquid, and gas phases exist simultaneously in dynamic equilibrium? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: NECO A-Level]
+   A. Critical Point
+   B. Triple Point
+   C. Normal Boiling Point
+   D. Eutectic Composition
+7. Which phase transitions are classified strictly as exothermic thermal processes? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: WAEC 2020]
+   A. Melting, Vaporization, Sublimation
+   B. Freezing, Condensation, Deposition
+   C. Boiling, Sublimation, Melting
+   D. Dissolving, Evaporation, Fusion
+8. Why does the temperature of a pure liquid remain completely constant during its boiling phase transition despite continuous heat input? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: IB Chemistry]
+   A. The added thermal energy increases kinetic energy while potential energy decreases
+   B. All added energy is consumed as latent heat to overcome attractive intermolecular forces and perform expansion work against atmospheric pressure
+   C. Heat loss to surroundings exactly balances energy input
+   D. Boiling turns liquid molecules into solid particles
+9. Frost formation on a freezing window pane during winter (direct phase change from water vapor gas to solid ice) is an example of: [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: null]
+   A. Sublimation
+   B. Deposition
+   C. Condensation
+   D. Vaporization
+10. What condition must be met for a liquid to boil at a specified temperature? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: AP Chemistry]
+    A. The liquid density must equal the surrounding air density
+    B. The equilibrium vapor pressure of the liquid must equal the external atmospheric pressure acting on its surface
+    C. The liquid volume must expand by 100%
+    D. All hydrogen bonds in the liquid must be broken before heating starts
+11. Why does pure water boil at a lower temperature (90$^\circ$C) on top of high mountain peaks than at sea level (100$^\circ$C)? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A. Mountain air contains zero oxygen gas
+    B. Atmospheric pressure is significantly lower at high altitudes, requiring less thermal energy for vapor pressure to match ambient pressure
+    C. Gravity is stronger at high altitudes
+    D. Solar radiation cools the boiling vessel
+12. What role do intermolecular hydrogen bonds play during the melting of ice crystal lattices? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: AP Chemistry]
+    A. They expand into double covalent bonds
+    B. Heat energy partially disrupts the rigid open hexagonal hydrogen-bonded framework, allowing molecules to collapse into a denser liquid arrangement
+    C. They prevent ice from ever turning into liquid
+    D. They convert H$_2$O into elemental hydrogen and oxygen gases
+13. Evaporation causes a pronounced cooling effect on the remaining unevaporated liquid because: [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: WAEC 2019]
+    A. Low-energy particles escape first, raising average kinetic energy
+    B. The highest kinetic energy particles escape the liquid surface first, lowering the average kinetic energy of the remaining liquid molecules
+    C. Thermal energy is generated by particle collisions
+    D. The container absorbs coldness from the surrounding atmosphere
+14. According to Le Chatelier's Principle, what occurs when the volume of a closed liquid-vapor equilibrium system at constant temperature is suddenly expanded? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: IB Chemistry]
+    A. Liquid evaporates temporarily to restore equilibrium vapor pressure
+    B. Vapor condenses into liquid indefinitely
+    C. Vapor pressure doubles permanently
+    D. Temperature drops to absolute zero
+15. How much thermal heat energy is required to melt 100 g of pure ice at 0$^\circ$C given a latent heat of fusion L$_f$ = 334 J/g? [Type: MCQ; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: NECO A-Level]
+    A. 3.34 J
+    B. 334 J
+    C. 33.4 kJ
+    D. 334 kJ
+16. Calculate the thermal energy in kilojoules (kJ) absorbed when 50.0 g of ice at 0.0$^\circ$C melts completely into liquid water at 0.0$^\circ$C (L$_f$ = 334 J/g). [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: IB Chemistry]
+17. State whether the phase transition from solid iodine to iodine gas (sublimation) is an endothermic or exothermic thermal process. [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+18. Calculate the heat energy in kilojoules (kJ) released when 10.0 g of steam at 100.0$^\circ$C condenses into liquid water at 100.0$^\circ$C (L$_v$ = 2260 J/g). [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: AP Chemistry]
+19. State the two essential criteria required to establish dynamic phase equilibrium between a liquid and its vapor. [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: WAEC 2021]
+20. State the term describing the direct phase transformation of a gas into a solid without passing through the liquid phase. [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: NECO A-Level]
+21. Calculate the final equilibrium temperature in degrees Celsius ($^\circ$C) when 100.0 J of heat energy is added to 10.0 g of liquid water initially at 20.0$^\circ$C (c = 4.18 J/g$^\circ$C). [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: AP Chemistry]
+22. State why bulk boiling occurs at a fixed temperature while surface evaporation occurs across a range of temperatures. [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+23. Identify the plateau freezing temperature in degrees Celsius ($^\circ$C) on a cooling curve for naphthalene when liquid naphthalene solidifies at standard atmospheric pressure. [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: IB Chemistry]
+24. State whether intermolecular forces are broken or formed during the deposition of carbon dioxide gas into dry ice. [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: null]
+25. State the effect of increasing liquid surface area on the rate of surface evaporation (Increases, Decreases, or Remains Unchanged). [Type: Hybrid; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: WAEC 2018]
+26. **Thermodynamic Modeling of Vaporization, Latent Heat, and Vapor Pressure** [Type: Theory; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: IB Chemistry]
+    Vaporization processes depend on molecular energy distributions and atmospheric pressure.
+    (a) Compare evaporation and boiling across four parameters: temperature requirements, location within liquid, bubble formation, and energy source.
+    (b) Define equilibrium vapor pressure of a liquid and explain how it varies exponentially with temperature according to kinetic theory.
+    (c) Water has a latent heat of vaporization L$_v$ = 2260 J/g, whereas ethanol has L$_v$ = 841 J/g. Explain this disparity in terms of relative intermolecular force strength.
+27. **Dynamic Phase Equilibrium and Reversible Transitions in Closed Systems** [Type: Theory; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    Consider a closed glass container partially filled with pure liquid ethanol at 25$^\circ$C.
+    (a) Describe the establishment of dynamic liquid-vapor phase equilibrium from the instant liquid is introduced into an evacuated container until equilibrium is reached.
+    (b) Describe a rate-versus-time graph showing the evaporation rate and condensation rate curves approaching equilibrium.
+    (c) Predict the effect on equilibrium vapor pressure if:
+    (i) The surface area of liquid ethanol is doubled.
+    (ii) The temperature of the system is increased to 40$^\circ$C.
+28. **Comparative Analysis of Evaporation and Boiling via Kinetic Theory** [Type: Theory; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: AP Chemistry]
+    A student investigates the cooling effect of sweating.
+    (a) Explain using Kinetic Molecular Theory why the evaporation of sweat (aqueous solution) from human skin extracts thermal energy from the body.
+    (b) Calculate the mass of sweat (in grams) that must evaporate from an athlete's skin to dissipate 500.0 kJ of metabolic heat energy ($\Delta$H$_{vap}$ = 2.41 kJ/g at skin temperature 37$^\circ$C).
+    (c) Explain why high atmospheric humidity severely reduces the efficiency of sweating as a cooling mechanism.
+29. **Quantitative Calorimetry Across Multiple Phase Boundaries** [Type: Theory; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: NECO A-Level]
+    A 20.0 g block of ice at $-$10.0$^\circ$C is dropped into an insulated copper calorimeter containing 150.0 g of warm water at 50.0$^\circ$C.
+    Data: c$_{ice}$ = 2.09 J/g$^\circ$C, c$_{water}$ = 4.18 J/g$^\circ$C, L$_f$ = 334 J/g.
+    (a) Calculate the heat energy (Q$_{ice, warming}$) required to heat the ice block from $-$10.0$^\circ$C to 0.0$^\circ$C.
+    (b) Calculate the heat energy (Q$_{ice, melting}$) required to melt the ice completely at 0.0$^\circ$C.
+    (c) Determine the final thermal equilibrium temperature T$_{final}$ of the entire water mixture, neglecting calorimeter thermal capacity.
+30. **Sublimation Phenomena, Phase Diagrams, and Industrial Applications** [Type: Theory; Subject: Chem; Topic: L1.5 Changes of State and Phase Equilibrium; Format: Non-Sim; Exam: WAEC 2021]
+    Phase behavior determines separation and preservation technologies.
+    (a) Outline the industrial process of freeze-drying (lyophilization) used to preserve biological pharmaceuticals and food, explaining how sublimation under vacuum preserves molecular structure.
+    (b) Explain why solid carbon dioxide (CO$_2$) sublimates directly into gas at 1 atm (T$_{sub}$ = $-$78.5$^\circ$C), whereas water ice melts into liquid water under standard pressure, referring to phase diagram triple points.
+    (c) Describe a practical laboratory setup using a cold finger apparatus to purify crude iodine crystals contaminated with non-volatile sand via sublimation and deposition.

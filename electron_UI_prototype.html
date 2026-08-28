@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>StudyKit</title>
+<style>
+/* ══════════════════════════════════════
+   TOKENS
+══════════════════════════════════════ */
+:root {
+  /* Surfaces */
+  --bg-app:       #F1F2F7;
+  --bg-surface:   #FFFFFF;
+  --bg-raised:    #F7F8FC;
+  --bg-hover:     #F0F1F8;
+  --bg-sidebar:   #0B0D18;
+  /* Text */
+  --t1: #111320;
+  --t2: #5B6070;
+  --t3: #9BA3B6;
+  --t-inv: #E8EAFF;
+  --t-inv2: #7A84AA;
+  /* Borders */
+  --bd: #E5E7ED;
+  --bd2: #CDD0DB;
+  /* Violet — primary accent */
+  --v:     #7061E8;
+  --v-str: #5748D4;
+  --v-tnt: #EDEAFF;
+  --v-txt: #4B3CC9;
+  --v-glo: rgba(112,97,232,.25);
+  /* Jade — success / correct */
+  --ja:    #10B981;
+  --ja-t:  #ECFDF5;
+  --ja-tx: #065F46;
+  /* Ember — warning / attention */
+  --em:    #F59E0B;
+  --em-t:  #FFFBEB;
+  --em-tx: #78350F;
+  /* Rose — danger / wrong */
+  --ro:    #F43F5E;
+  --ro-t:  #FFF1F2;
+  --ro-tx: #881337;
+  /* Info */
+  --in:    #3B82F6;
+  --in-t:  #EFF6FF;
+  /* Flashcard */
+  --fc:    #8B5CF6;
+  --fc-t:  #F5F3FF;
+  /* Layout */
+  --nav-w:   220px;
+  --nav-col: 62px;
+  --qsp-w:   284px;
+  --qsp-col: 44px;
+  /* Radii */
+  --r-xs: 5px;
+  --r-sm: 9px;
+  --r-md: 13px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-full: 9999px;
+  /* Shadows */
+  --sh-xs: 0 1px 2px rgba(17,19,32,.04);
+  --sh-sm: 0 2px 8px rgba(17,19,32,.06), 0 1px 3px rgba(17,19,32,.04);
+  --sh-md: 0 6px 20px rgba(17,19,32,.08), 0 2px 6px rgba(17,19,32,.05);
+  --sh-lg: 0 16px 48px rgba(17,19,32,.12), 0 6px 16px rgba(17,19,32,.06);
+  --sh-v:  0 4px 20px rgba(112,97,232,.30);
+  --ease: 170ms cubic-bezier(.4,0,.2,1);
+}
+/* ══════════════════════════════════════
+   RESET
+══════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:14px;line-height:1.5;
+  background:var(--bg-app);color:var(--t1);
+  -webkit-font-smoothing:antialiased;
+}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,textarea,select{font-family:inherit;font-size:14px;color:var(--t1)}
+a{color:var(--v);text-decoration:none}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--bd2);border-radius:99px}
+/* ══════════════════════════════════════
+   TYPOGRAPHY SCALE
+══════════════════════════════════════ */
+.f-display{font-size:28px;font-weight:800;letter-spacing:-.6px;line-height:1.2}
+.f-h1{font-size:20px;font-weight:800;letter-spacing:-.4px}
+.f-h2{font-size:16px;font-weight:700;letter-spacing:-.3px}
+.f-h3{font-size:13.5px;font-weight:700}
+.f-body{font-size:14px;font-weight:400;line-height:1.65}
+.f-label{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--t3)}
+.f-mono{font-family:'SF Mono','Fira Code',monospace;font-size:12.5px;background:var(--bg-raised);border-radius:3px;padding:1px 5px;color:var(--v-txt)}
+.c2{color:var(--t2)}.c3{color:var(--t3)}
+/* ══════════════════════════════════════
+   APP SHELL
+══════════════════════════════════════ */
+.app-shell{display:flex;height:100vh;width:100vw;min-width:760px;overflow:hidden}
+/* ══════════════════════════════════════
+   NAV RAIL
+══════════════════════════════════════ */
+.nav-rail{
+  width:var(--nav-w);min-width:var(--nav-w);flex-shrink:0;
+  background:var(--bg-sidebar);
+  display:flex;flex-direction:column;
+  transition:width 220ms cubic-bezier(.4,0,.2,1),min-width 220ms cubic-bezier(.4,0,.2,1);
+  overflow:hidden;position:relative;z-index:10;
+}
+/* dot grid texture */
+.nav-rail::before{
+  content:'';position:absolute;inset:0;
+  background-image:radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:22px 22px;pointer-events:none;z-index:0;
+}
+.nav-rail>*{position:relative;z-index:1}
+.nav-rail.collapsed{width:var(--nav-col);min-width:var(--nav-col)}
+/* Brand */
+.nav-brand{
+  display:flex;align-items:center;gap:10px;
+  padding:16px 14px;
+}
+.nav-rail.collapsed .nav-brand{flex-direction:column;gap:12px;padding:16px 0 12px}
+.nav-logo{
+  width:32px;height:32px;flex-shrink:0;border-radius:9px;
+  background:linear-gradient(135deg,var(--v) 0%,var(--v-str) 100%);
+  display:grid;place-items:center;
+  font-size:14px;font-weight:900;color:#fff;letter-spacing:-.5px;
+  box-shadow:0 2px 10px rgba(112,97,232,.45);
+}
+.nav-brand-name{
+  font-size:15px;font-weight:800;letter-spacing:-.3px;
+  color:var(--t-inv);white-space:nowrap;
+  opacity:1;transition:opacity 180ms ease;
+}
+.nav-rail.collapsed .nav-brand-name{display:none}
+/* Items */
+.nav-items{flex:1;min-height:0;padding:4px 10px;display:flex;flex-direction:column;gap:1px;overflow-y:auto}
+.nav-item{
+  display:flex;align-items:center;gap:11px;
+  padding:10px 12px;border-radius:var(--r-sm);
+  color:var(--t-inv2);font-size:13px;font-weight:500;
+  transition:background var(--ease),color var(--ease),box-shadow var(--ease);
+  white-space:nowrap;cursor:pointer;position:relative;
+}
+.nav-item:hover{background:rgba(255,255,255,.07);color:var(--t-inv)}
+.nav-item.active{
+  background:rgba(112,97,232,.18);color:var(--t-inv);font-weight:600;
+  box-shadow:inset 0 0 0 1px rgba(112,97,232,.25);
+}
+.nav-item.active::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:3px;height:22px;background:var(--v);border-radius:0 3px 3px 0;
+}
+.nav-icon{width:20px;height:20px;flex-shrink:0;font-size:15px;line-height:1;display:grid;place-items:center}
+.nav-label{opacity:1;transition:opacity 170ms ease;flex:1}
+.nav-rail.collapsed .nav-label{display:none}
+.nav-rail.collapsed .nav-item{justify-content:center;gap:0;padding:10px 0}
+.nav-rail.collapsed .nav-item.active::before{display:none}
+/* Bottom */
+.nav-bottom{
+  padding:8px 10px 12px;
+  border-top:1px solid rgba(255,255,255,.07);
+  display:flex;flex-direction:column;gap:2px;
+}
+.nav-version{
+  font-size:10.5px;color:var(--t-inv2);letter-spacing:.05em;
+  padding:4px 12px;white-space:nowrap;
+}
+.nav-rail.collapsed .nav-bottom{border-top:none;padding:8px 10px 12px}
+.nav-rail.collapsed .nav-version{display:none}
+.nav-collapse-btn{
+  width:26px;height:26px;margin-left:auto;border-radius:6px;flex-shrink:0;
+  display:grid;place-items:center;
+  color:var(--t-inv2);
+  transition:background var(--ease),color var(--ease),transform 220ms ease;
+}
+.nav-collapse-btn:hover{background:rgba(255,255,255,.09);color:var(--t-inv)}
+.nav-rail.collapsed .nav-collapse-btn{margin-left:0;transform:scaleX(-1)}
+/* ══════════════════════════════════════
+   CONTENT REGION
+══════════════════════════════════════ */
+.content-region{flex:1;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.screen{display:none;height:100%;flex-direction:column;overflow:hidden}
+.screen.active{display:flex}
+/* ══════════════════════════════════════
+   SHARED COMPONENTS
+══════════════════════════════════════ */
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 16px;border-radius:var(--r-sm);
+  font-size:13px;font-weight:600;
+  transition:all var(--ease);white-space:nowrap;cursor:pointer;
+  border:1.5px solid transparent;
+}
+.btn-primary{background:var(--v);color:#fff;box-shadow:0 1px 4px rgba(112,97,232,.25)}
+.btn-primary:hover{background:var(--v-str);box-shadow:var(--sh-v)}
+.btn-secondary{background:var(--bg-surface);color:var(--t1);border-color:var(--bd2);box-shadow:var(--sh-xs)}
+.btn-secondary:hover{background:var(--bg-raised);border-color:var(--bd2)}
+.btn-danger{background:var(--ro);color:#fff}
+.btn-danger:hover{background:#DC2626}
+.btn-ghost{color:var(--t2)}
+.btn-ghost:hover{background:var(--bg-hover);color:var(--t1)}
+.btn-jade{background:var(--ja);color:#fff}
+.btn-jade:hover{background:#059669}
+.btn-sm{padding:5px 12px;font-size:12px;border-radius:var(--r-xs)}
+.btn-lg{padding:11px 24px;font-size:15px}
+.btn:disabled{opacity:.4;pointer-events:none}
+/* Badges */
+.badge{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:3px 9px;border-radius:var(--r-full);
+  font-size:11px;font-weight:700;letter-spacing:.04em;
+}
+.b-violet{background:var(--v-tnt);color:var(--v-txt)}
+.b-amber{background:var(--em-t);color:var(--em-tx)}
+.b-jade{background:var(--ja-t);color:var(--ja-tx)}
+.b-rose{background:var(--ro-t);color:var(--ro-tx)}
+.b-neutral{background:var(--bg-raised);color:var(--t2);border:1px solid var(--bd)}
+.b-pulse::before{
+  content:'';display:inline-block;width:5px;height:5px;border-radius:50%;
+  background:currentColor;animation:pdot 1.4s ease infinite;
+}
+@keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.65)}}
+/* Segmented control */
+.seg{
+  display:inline-flex;background:var(--bg-raised);
+  border:1.5px solid var(--bd2);border-radius:var(--r-sm);
+  padding:3px;gap:2px;
+}
+.seg-btn{
+  padding:5px 13px;border-radius:6px;font-size:12.5px;font-weight:500;
+  color:var(--t2);transition:all var(--ease);
+}
+.seg-btn.on{background:var(--bg-surface);color:var(--t1);box-shadow:var(--sh-xs);font-weight:700}
+.seg-btn:hover:not(.on){color:var(--t1)}
+/* Cards */
+.card{background:var(--bg-surface);border-radius:var(--r-md);box-shadow:var(--sh-sm);border:1px solid var(--bd)}
+.card-p{padding:20px}
+/* Skeleton */
+@keyframes shim{0%{background-position:-500px 0}100%{background-position:500px 0}}
+.skel{
+  background:linear-gradient(90deg,var(--bg-raised) 25%,var(--bd) 50%,var(--bg-raised) 75%);
+  background-size:1000px 100%;animation:shim 1.6s ease infinite;border-radius:var(--r-xs);
+}
+/* Input */
+.inp{
+  width:100%;outline:none;
+  border:1.5px solid var(--bd2);border-radius:var(--r-sm);
+  padding:9px 13px;background:var(--bg-surface);color:var(--t1);
+  transition:border-color var(--ease),box-shadow var(--ease);font-size:14px;
+}
+.inp:focus{border-color:var(--v);box-shadow:0 0 0 3px rgba(112,97,232,.12)}
+textarea.inp{resize:vertical;line-height:1.6}
+/* Divider */
+.divider{border:none;border-top:1px solid var(--bd);margin:0}
+/* Empty state */
+.empty{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;padding:64px 24px;text-align:center;
+}
+.empty-ico{font-size:36px;opacity:.4}
+.empty h3{font-size:15px;font-weight:700;color:var(--t2)}
+.empty p{font-size:13px;color:var(--t3);max-width:300px;line-height:1.55}
+/* MCQ options */
+.mcq-opt{
+  display:flex;align-items:flex-start;gap:11px;
+  padding:12px 15px;border-radius:var(--r-sm);
+  border:1.5px solid var(--bd);background:var(--bg-raised);
+  cursor:pointer;transition:all var(--ease);font-size:14px;line-height:1.5;
+}
+.mcq-opt:hover:not(.locked){border-color:var(--v);background:var(--v-tnt);color:var(--v-txt)}
+.mcq-opt.sel{border-color:var(--v);background:var(--v-tnt);color:var(--v-txt)}
+.mcq-opt.correct-a{border-color:var(--ja);background:var(--ja-t);color:var(--ja-tx)}
+.mcq-opt.wrong-a{border-color:var(--ro);background:var(--ro-t);color:var(--ro-tx)}
+.opt-circle{
+  width:18px;height:18px;border-radius:50%;border:2px solid var(--bd2);
+  flex-shrink:0;display:grid;place-items:center;margin-top:1px;
+  transition:all var(--ease);
+}
+.mcq-opt.sel .opt-circle,.mcq-opt.correct-a .opt-circle{border-color:currentColor;background:currentColor}
+.mcq-opt.sel .opt-circle::after,.mcq-opt.correct-a .opt-circle::after{
+  content:'';width:7px;height:7px;border-radius:50%;background:#fff;
+}
+.mcq-opt.wrong-a .opt-circle{border-color:var(--ro);background:var(--ro);display:grid;place-items:center}
+.mcq-opt.wrong-a .opt-circle::after{content:'✕';color:#fff;font-size:8px;line-height:1}
+/* ══════════════════════════════════════
+   SCREEN: DASHBOARD
+══════════════════════════════════════ */
+#s-dash .scroll-area{flex:1;overflow-y:auto;padding:28px}
+.dash-hero{
+  background:linear-gradient(135deg,var(--bg-sidebar) 0%,#1A1040 55%,#251460 100%);
+  border-radius:var(--r-lg);padding:28px 32px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;margin-bottom:20px;
+  box-shadow:var(--sh-lg);position:relative;overflow:hidden;
+}
+.dash-hero::before{
+  content:'';position:absolute;right:-40px;top:-40px;
+  width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(112,97,232,.24) 0%,transparent 70%);
+  pointer-events:none;animation:heroPulse 6s ease-in-out infinite;
+}
+.dash-hero::after{
+  content:'';position:absolute;left:36%;bottom:-100px;
+  width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+@keyframes heroPulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+.dash-hero-greet{font-size:26px;font-weight:800;letter-spacing:-.5px;color:#fff;line-height:1.2}
+.dash-hero-stats{font-size:13px;color:rgba(255,255,255,.5);margin-top:6px}
+.dash-hero-stats strong{color:rgba(255,255,255,.85)}
+.dash-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+.dash-full{grid-column:1/-1}
+@media(max-width:780px){.dash-grid{grid-template-columns:1fr}}
+.dash-section-label{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--t3);margin-bottom:12px}
+#s-dash .card{transition:transform var(--ease),box-shadow var(--ease),border-color var(--ease)}
+#s-dash .card:hover{transform:translateY(-2px);box-shadow:var(--sh-md);border-color:var(--bd2)}
+/* Subject bars */
+.subj-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.subj-row:last-child{margin-bottom:0}
+.subj-name{font-size:12.5px;font-weight:600;width:52px;flex-shrink:0;color:var(--t2)}
+.subj-track{flex:1;height:7px;background:var(--bg-raised);border-radius:99px;overflow:hidden}
+.subj-fill{height:100%;border-radius:99px;transition:width 800ms cubic-bezier(.4,0,.2,1)}
+.fill-ja{background:var(--ja)}
+.fill-em{background:var(--em)}
+.fill-ro{background:var(--ro)}
+.fill-v{background:var(--v)}
+.subj-pct{font-size:12px;font-weight:800;width:34px;text-align:right}
+/* Weak topic cards */
+#weak-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.weak-item{
+  position:relative;padding:13px 15px;border-radius:var(--r-md);
+  background:linear-gradient(135deg,var(--bg-surface),var(--bg-raised));
+  border:1px solid var(--bd);
+  display:flex;flex-direction:column;align-items:stretch;gap:9px;min-width:0;
+  transition:all var(--ease);overflow:hidden;
+}
+.weak-item:hover{border-color:var(--bd2);transform:translateY(-1px);box-shadow:var(--sh-sm)}
+.weak-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--bd2)}
+.weak-item.w-ro::before{background:var(--ro)}
+.weak-item.w-em::before{background:var(--em)}
+.weak-topic{font-size:13px;font-weight:600;line-height:1.45;overflow-wrap:anywhere}
+.weak-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.weak-pct{font-size:16px;font-weight:800;flex-shrink:0}
+.weak-actions{display:flex;gap:6px;flex-shrink:0}
+/* Activity list */
+.act-row{
+  display:flex;align-items:center;gap:12px;
+  padding:11px 0;border-bottom:1px solid var(--bd);
+  cursor:pointer;transition:background var(--ease);
+}
+.act-row:last-child{border-bottom:none}
+.act-row:hover{background:var(--bg-hover);margin:0 -14px;padding:11px 14px;border-radius:var(--r-sm)}
+.act-date{font-size:11.5px;color:var(--t3);width:56px;flex-shrink:0}
+.act-topic{font-size:13px;font-weight:600;flex:1}
+.act-score{font-size:13px;font-weight:800;flex-shrink:0}
+.act-tags{display:flex;gap:4px;flex-shrink:0}
+/* ══════════════════════════════════════
+   SCREEN: QUIZ  (state machine)
+══════════════════════════════════════ */
+#s-quiz{position:relative}
+/* Quiz workspace splits based on active state */
+.quiz-workspace{
+  flex:1;display:flex;overflow:hidden;
+}
+.quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+.qstate{display:none;flex-direction:column;flex:1;overflow:hidden}
+.qstate.active{display:flex}
+/* ── Shared quiz header ── */
+.qhdr{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 22px;background:var(--bg-surface);border-bottom:1px solid var(--bd);
+  flex-shrink:0;gap:12px;position:relative;
+}
+.qhdr-l{display:flex;align-items:center;gap:10px}
+.qhdr-r{display:flex;align-items:center;gap:8px}
+.q-page-title{font-size:14px;font-weight:800;letter-spacing:-.2px}
+/* Question navigator popover */
+.qmap-wrap{position:relative}
+.qmap-pop{
+  position:absolute;right:0;top:calc(100% + 8px);z-index:60;
+  width:288px;background:var(--bg-surface);border:1px solid var(--bd);
+  border-radius:var(--r-md);box-shadow:var(--sh-lg);padding:14px;
+}
+.qmap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:8px}
+.qmap-chip{
+  height:38px;border-radius:8px;border:1.5px solid var(--bd);background:var(--bg-raised);
+  color:var(--t2);font-weight:800;font-size:13px;cursor:pointer;transition:all var(--ease);
+}
+.qmap-chip:hover{border-color:var(--v);color:var(--v);transform:translateY(-1px)}
+.qmap-chip.cur{border-color:var(--v);background:var(--v);color:#fff;box-shadow:var(--sh-v)}
+.qmap-chip.ans{background:var(--v-tnt);color:var(--v-txt);border-color:var(--v)}
+.qmap-chip.ok{background:var(--ja);border-color:var(--ja);color:#fff}
+.qmap-chip.wrong{background:var(--ro);border-color:var(--ro);color:#fff}
+.qmap-chip.skip{background:#3A3F55;border-color:#3A3F55;color:#fff}
+/* Auto-next is only meaningful when evaluation is off */
+.auto-locked{opacity:.45;pointer-events:none;filter:saturate(.4)}
+/* In-quiz auto-next quick toggle */
+.auto-quick{border:1px solid var(--bd);background:var(--bg-raised);color:var(--t2);border-radius:var(--r-xs);padding:5px 12px;font-size:12px;font-weight:700;cursor:pointer;transition:all var(--ease);line-height:1}
+.auto-quick:hover:not(.on){color:var(--t1);border-color:var(--t3)}
+.auto-quick.on{background:var(--v);color:#fff;border-color:var(--v)}
+/* Per-question countdown timer chip */
+.q-timer{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:800;background:var(--bg-raised);border:1px solid var(--bd);color:var(--t2);border-radius:99px;padding:5px 11px;line-height:1;white-space:nowrap}
+.q-timer.low{color:var(--ro);border-color:var(--ro);animation:tpulse 1s ease-in-out infinite}
+@keyframes tpulse{0%,100%{opacity:1}50%{opacity:.45}}
+/* ══════════════════════════════════════
+   QUIZ SETTINGS PANEL (right sidebar)
+══════════════════════════════════════ */
+.qsp{
+  width:var(--qsp-w);flex-shrink:0;
+  background:var(--bg-surface);border-left:1px solid var(--bd);
+  display:flex;flex-direction:column;overflow:hidden;
+  transition:width 200ms cubic-bezier(.4,0,.2,1);
+  position:relative;
+}
+.qsp.collapsed{width:var(--qsp-col)}
+.qsp-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 16px 12px;border-bottom:1px solid var(--bd);
+  flex-shrink:0;min-width:var(--qsp-w);
+}
+.qsp.collapsed .qsp-header{min-width:0;justify-content:flex-end}
+.qsp-title{font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--t3)}
+.qsp.collapsed .qsp-title{display:none}
+.qsp-toggle-btn{
+  width:26px;height:26px;border-radius:6px;display:grid;place-items:center;
+  color:var(--t3);font-size:13px;flex-shrink:0;
+  transition:background var(--ease),color var(--ease),transform 200ms ease;
+}
+.qsp-toggle-btn:hover{background:var(--bg-hover);color:var(--t1)}
+.qsp.collapsed .qsp-toggle-btn{transform:scaleX(-1)}
+.qsp-body{
+  flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:18px;
+  min-width:var(--qsp-w);
+}
+.qsp.collapsed .qsp-body{opacity:0;pointer-events:none;min-width:0}
+.qsp-section-title{
+  font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--t3);margin-bottom:8px;
+}
+/* Collapsed icon strip */
+.qsp-icon-strip{
+  display:none;flex-direction:column;align-items:center;gap:10px;padding:16px 0;
+  position:absolute;top:52px;left:0;right:0;
+}
+.qsp.collapsed .qsp-icon-strip{display:flex}
+.qsp-strip-ico{
+  width:28px;height:28px;border-radius:7px;display:grid;place-items:center;
+  font-size:14px;color:var(--t3);cursor:pointer;
+  transition:background var(--ease),color var(--ease);
+}
+.qsp-strip-ico:hover{background:var(--bg-hover);color:var(--v)}
+.qsp-strip-ico.has-setting{color:var(--v);background:var(--v-tnt)}
+/* Topic pills */
+.topic-pills{display:flex;flex-wrap:wrap;gap:5px}
+.topic-pill{
+  font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:var(--r-full);
+  background:var(--v-tnt);color:var(--v-txt);border:1px solid rgba(112,97,232,.2);
+  cursor:pointer;transition:all var(--ease);
+}
+.topic-pill:hover{background:var(--v);color:#fff}
+/* Type checkboxes */
+.type-cb{display:flex;align-items:center;gap:8px;font-size:13px;padding:4px 0;cursor:pointer}
+.type-cb input{accent-color:var(--v);width:15px;height:15px;cursor:pointer}
+/* ══════════════════════════════════════
+   QUIZ — CHAT STATE
+══════════════════════════════════════ */
+.chat-body{
+  flex:1;overflow-y:auto;padding:20px 22px;
+  display:flex;flex-direction:column;
+}
+.chat-start-screen{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:14px;text-align:center;
+}
+.chat-messages{display:flex;flex-direction:column;gap:9px}
+.chat-bubble{
+  max-width:75%;padding:10px 14px;border-radius:12px;
+  font-size:14px;line-height:1.55;
+}
+.bubble-user{background:var(--v);color:#fff;align-self:flex-end;border-bottom-right-radius:3px}
+.bubble-ai{
+  background:var(--bg-surface);border:1px solid var(--bd);
+  align-self:flex-start;border-bottom-left-radius:3px;
+}
+.bubble-dots span{
+  display:inline-block;width:5px;height:5px;border-radius:50%;
+  background:var(--t3);margin:0 1.5px;
+  animation:bdot 1.2s ease infinite;
+}
+.bubble-dots span:nth-child(2){animation-delay:.15s}
+.bubble-dots span:nth-child(3){animation-delay:.3s}
+@keyframes bdot{0%,100%{transform:translateY(0)}40%{transform:translateY(-5px)}}
+.chat-footer{
+  padding:12px 22px 16px;background:var(--bg-surface);
+  border-top:1px solid var(--bd);flex-shrink:0;
+}
+.chat-row{display:flex;gap:8px;align-items:flex-end}
+.chat-inp{
+  flex:1;min-height:42px;max-height:120px;padding:10px 13px;
+  border:1.5px solid var(--bd2);border-radius:var(--r-sm);
+  font-size:14px;line-height:1.5;resize:none;overflow-y:auto;
+  background:var(--bg-raised);color:var(--t1);outline:none;
+  transition:border-color var(--ease),background var(--ease);
+}
+.chat-inp:focus{border-color:var(--v);background:var(--bg-surface);box-shadow:0 0 0 3px rgba(112,97,232,.10)}
+/* ══════════════════════════════════════
+   QUIZ — PIPELINE STATE
+══════════════════════════════════════ */
+.pipeline-body{
+  flex:1;overflow-y:auto;
+  display:flex;align-items:center;justify-content:center;padding:32px 24px;
+}
+.pipeline-card{
+  width:100%;max-width:520px;
+  background:var(--bg-surface);border-radius:var(--r-lg);
+  box-shadow:var(--sh-lg);border:1px solid var(--bd);
+  overflow:hidden;
+}
+.pipeline-card-head{
+  padding:24px 28px 20px;
+  border-bottom:1px solid var(--bd);
+  background:linear-gradient(135deg,var(--bg-raised) 0%,var(--bg-surface) 100%);
+}
+.pipeline-stage-label{
+  font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--v);margin-bottom:5px;
+}
+.pipeline-main-msg{font-size:17px;font-weight:800;letter-spacing:-.3px;margin-bottom:4px}
+.pipeline-sub-msg{font-size:13px;color:var(--t2)}
+/* Stage list */
+.pipeline-stages{display:flex;flex-direction:column}
+.p-stage{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 28px;border-bottom:1px solid var(--bd);
+  transition:all 280ms ease;
+  position:relative;overflow:hidden;
+}
+.p-stage:last-child{border-bottom:none}
+.p-stage.idle{opacity:.4}
+.p-stage.active{
+  background:var(--v-tnt);padding:18px 28px;
+}
+.p-stage.active::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--v);
+  animation:shimmer-bar 1.8s ease infinite;
+}
+@keyframes shimmer-bar{
+  0%,100%{opacity:1;box-shadow:0 0 6px rgba(112,97,232,.6)}
+  50%{opacity:.6;box-shadow:0 0 12px rgba(112,97,232,.9)}
+}
+.p-stage.done{background:var(--bg-raised)}
+.p-stage-node{
+  width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  display:grid;place-items:center;font-size:13px;
+  border:2px solid var(--bd2);color:var(--t3);background:var(--bg-surface);
+  transition:all 280ms ease;
+}
+.p-stage.active .p-stage-node{
+  border-color:var(--v);background:var(--v);color:#fff;
+  box-shadow:0 0 0 4px rgba(112,97,232,.2);
+  animation:node-spin 1.6s linear infinite;
+}
+@keyframes node-spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+.p-stage.done .p-stage-node{border-color:var(--ja);background:var(--ja);color:#fff}
+.p-stage-text{flex:1}
+.p-stage-name{font-size:13.5px;font-weight:700;color:var(--t1)}
+.p-stage.idle .p-stage-name{color:var(--t3)}
+.p-stage.done .p-stage-name{color:var(--t2)}
+.p-stage.active .p-stage-name{color:var(--v-txt);font-size:14.5px}
+.p-stage-detail{font-size:12px;color:var(--t2);margin-top:2px;display:none}
+.p-stage.active .p-stage-detail{display:block}
+.p-stage-time{font-size:11px;color:var(--t3);font-weight:600;flex-shrink:0;font-family:'SF Mono',monospace}
+.p-stage.active .p-stage-time{display:none}
+.pipeline-footer{
+  padding:16px 28px;border-top:1px solid var(--bd);
+  display:flex;align-items:center;gap:10px;background:var(--bg-raised);
+}
+/* Peek banner */
+.peek-banner{
+  background:var(--v);color:#fff;padding:11px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  flex-shrink:0;
+}
+.peek-banner-txt{font-size:13px;font-weight:600}
+/* Cancelled */
+.cancelled-body{flex:1;display:flex;align-items:center;justify-content:center;padding:40px}
+.cancelled-inner{text-align:center;max-width:360px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.cancelled-ico{font-size:44px;opacity:.45}
+/* ══════════════════════════════════════
+   QUIZ — ACTIVE STATE
+══════════════════════════════════════ */
+.quiz-active-layout{flex:1;display:flex;min-height:0;overflow:hidden}
+/* Question pane */
+.q-pane{
+  flex:1;min-width:0;overflow-y:auto;padding:24px;
+  display:flex;flex-direction:column;gap:16px;
+}
+/* Sim banner */
+.sim-banner{
+  background:var(--em-t);border:1.5px solid var(--em);
+  border-radius:var(--r-md);padding:14px 16px;
+  display:flex;align-items:flex-start;gap:12px;
+}
+.sim-ico{font-size:20px;flex-shrink:0;margin-top:1px}
+/* Question card */
+.q-card{
+  border:1.5px solid var(--bd);border-radius:var(--r-md);
+  overflow:hidden;box-shadow:var(--sh-sm);flex-shrink:0;
+}
+.q-card-bar{
+  background:var(--v);padding:8px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.q-card-body{padding:18px 22px;font-size:15px;line-height:1.7;overflow-wrap:anywhere}
+.q-card-pacing{
+  padding:6px 18px 12px;
+  display:flex;align-items:center;gap:6px;
+}
+.ans-label{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--t3)}
+.ans-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ans-err{font-size:12px;color:var(--ro);display:none;font-weight:600}
+.written-area{
+  width:100%;font-family:'SF Mono','Fira Code',monospace;font-size:13.5px;
+  border:1.5px solid var(--bd2);border-radius:var(--r-sm);padding:13px 15px;
+  min-height:120px;resize:vertical;line-height:1.65;
+  background:var(--bg-surface);color:var(--t1);outline:none;
+  transition:border-color var(--ease),box-shadow var(--ease);
+}
+.written-area:focus{border-color:var(--v);box-shadow:0 0 0 3px rgba(112,97,232,.10)}
+/* Progress indicator in quiz header */
+.q-progress{display:flex;flex-direction:column;gap:3px;min-width:120px}
+.q-prog-track{height:5px;background:var(--bg-raised);border-radius:99px;overflow:hidden}
+.q-prog-fill{height:100%;background:var(--v);border-radius:99px;transition:width 500ms cubic-bezier(.4,0,.2,1)}
+.q-prog-lbl{font-size:11px;color:var(--t3);text-align:right}
+/* Feedback panel (dark) */
+.fb-panel{
+  width:300px;flex-shrink:0;
+  background:#111323;border-left:1px solid rgba(255,255,255,.06);
+  display:flex;flex-direction:column;overflow:hidden;
+  transition:width 200ms cubic-bezier(.4,0,.2,1);
+}
+.fb-panel.collapsed{width:44px}
+.fb-head{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:18px 20px 0;flex-shrink:0;min-width:300px;
+}
+.fb-panel.collapsed .fb-head{min-width:0;justify-content:center;padding:14px 0}
+.fb-toggle{
+  width:26px;height:26px;border-radius:6px;display:grid;place-items:center;
+  color:rgba(255,255,255,.7);font-size:15px;cursor:pointer;border:none;background:none;
+  transition:transform 200ms ease,background var(--ease);
+}
+.fb-toggle:hover{background:rgba(255,255,255,.1);color:#fff}
+.fb-panel.collapsed .fb-toggle{transform:scaleX(-1)}
+.fb-panel.collapsed .fb-panel-title{display:none}
+.fb-body{
+  flex:1;overflow-y:auto;padding:14px 20px 22px;
+  display:flex;flex-direction:column;gap:14px;min-width:300px;
+}
+.fb-panel.collapsed .fb-body{opacity:0;pointer-events:none}
+.fb-panel-title{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.fb-mode-line{font-size:12px;color:rgba(255,255,255,.7);line-height:1.5}
+.fb-evalseg{display:flex;gap:6px;background:rgba(255,255,255,.06);padding:4px;border-radius:8px}
+.fb-eval-btn{
+  flex:1;padding:6px 8px;border:none;border-radius:6px;background:transparent;
+  color:rgba(255,255,255,.65);font-size:11.5px;font-weight:700;cursor:pointer;
+  transition:all var(--ease);
+}
+.fb-eval-btn.on{background:var(--v);color:#fff}
+.fb-verdict{
+  display:flex;align-items:center;gap:8px;
+  font-size:15px;font-weight:800;padding:12px 14px;border-radius:var(--r-sm);
+}
+.fv-correct{background:rgba(16,185,129,.15);color:#6EE7B7}
+.fv-wrong{background:rgba(244,63,94,.15);color:#FDA4AF}
+.fv-score{background:rgba(112,97,232,.18);color:#A5B4FC}
+.fv-neutral{background:rgba(255,255,255,.09);color:rgba(255,255,255,.92)}
+.fv-loading{background:rgba(255,255,255,.07);color:rgba(255,255,255,.8)}
+.fb-text{font-size:13px;color:rgba(255,255,255,.82);line-height:1.7}
+.fb-placeholder{font-size:13px;color:rgba(255,255,255,.55);font-style:italic}
+.fb-next-btn{
+  margin-top:auto;background:var(--v);color:#fff;border:none;
+  padding:11px;border-radius:var(--r-sm);font-size:14px;font-weight:700;
+  cursor:pointer;transition:all var(--ease);width:100%;
+}
+.fb-next-btn:hover{background:var(--v-str);box-shadow:var(--sh-v)}
+/* ══════════════════════════════════════
+   QUIZ — REPORT
+══════════════════════════════════════ */
+.report-body{
+  flex:1;overflow-y:auto;padding:36px;
+  max-width:700px;margin:0 auto;width:100%;
+  display:flex;flex-direction:column;gap:24px;
+}
+.report-stats{display:flex;gap:12px;flex-wrap:wrap}
+.report-stat{
+  flex:1;min-width:140px;
+  background:var(--bg-surface);border:1px solid var(--bd);
+  border-radius:var(--r-md);padding:18px 22px;
+  display:flex;flex-direction:column;gap:3px;
+  box-shadow:var(--sh-xs);
+}
+.rs-val{font-size:32px;font-weight:900;letter-spacing:-.8px;line-height:1}
+.rs-lbl{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:4px}
+.rs-note{font-size:11.5px;color:var(--t3)}
+.report-summary{
+  background:var(--bg-surface);border:1px solid var(--bd);
+  border-radius:var(--r-md);padding:22px 26px;
+  line-height:1.75;font-size:14px;color:var(--t1);
+  box-shadow:var(--sh-xs);
+}
+.report-actions{display:flex;gap:10px;flex-wrap:wrap}
+.report-times{background:var(--bg-surface);border:1px solid var(--bd);border-radius:var(--r-md);padding:18px 22px;box-shadow:var(--sh-xs)}
+.rep-time-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--bd);font-size:12.5px;color:var(--t2)}
+.rep-time-row:last-child{border-bottom:none}
+.rep-time-slow{color:var(--em-tx);font-weight:800}
+/* ══════════════════════════════════════
+   SCREEN: HISTORY
+══════════════════════════════════════ */
+.hist-layout{flex:1;display:flex;min-height:0;overflow:hidden}
+.hist-list{
+  width:245px;flex-shrink:0;min-width:0;background:var(--bg-surface);
+  border-right:1px solid var(--bd);overflow-y:auto;
+}
+.hist-list-hdr{
+  padding:14px 18px;border-bottom:1px solid var(--bd);
+  background:var(--bg-raised);position:sticky;top:0;z-index:2;
+}
+.hist-qz-row{
+  padding:13px 18px;border-bottom:1px solid var(--bd);cursor:pointer;
+  transition:background var(--ease);min-width:0;
+}
+.hist-qz-row:hover{background:var(--bg-raised)}
+.hist-qz-row.active{background:var(--v-tnt);border-left:3px solid var(--v)}
+.hist-qz-title{font-size:13.5px;font-weight:700;margin-bottom:2px;overflow-wrap:anywhere}
+.hist-qz-meta{font-size:11.5px;color:var(--t3)}
+.hist-q-rail{
+  width:280px;flex-shrink:0;min-width:0;background:var(--bg-raised);
+  border-left:1px solid var(--bd);
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.hist-q-rail-title{
+  padding:14px 16px 12px;flex-shrink:0;
+  font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--t3);
+}
+#hist-q-list{flex:1;overflow-y:auto;min-height:0}
+.hist-q-row{
+  display:flex;align-items:center;gap:9px;padding:11px 14px;
+  border-bottom:1px solid var(--bd);cursor:pointer;
+  transition:background var(--ease);font-size:12.5px;line-height:1.45;
+}
+.hist-q-row>div:last-child{flex:1;min-width:0;overflow-wrap:anywhere}
+.hist-q-time{flex:none;font-size:11px;color:var(--t3);font-weight:700;white-space:nowrap}
+.hist-q-row:hover{background:var(--bg-surface)}
+.hist-q-row.active{background:var(--bg-surface);border-left:3px solid var(--v)}
+.q-mark{
+  width:20px;height:20px;border-radius:50%;display:grid;place-items:center;
+  font-size:10px;font-weight:800;flex-shrink:0;
+}
+.qm-ok{background:var(--ja-t);color:var(--ja-tx)}
+.qm-bad{background:var(--ro-t);color:var(--ro-tx)}
+.qm-skip{background:var(--bg-raised);color:var(--t3);border:1px solid var(--bd)}
+.qm-score{background:var(--v-tnt);color:var(--v-txt)}
+.q-detail-pane{flex:1;min-width:0;overflow-y:auto;padding:22px;display:flex;flex-direction:column;gap:14px}
+.hist-ans-block{background:var(--bg-raised);border-radius:var(--r-md);padding:14px 18px;min-width:0}
+.hist-ans-lbl{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--t3);margin-bottom:5px}
+.hist-ans-val{font-size:13.5px;line-height:1.6;overflow-wrap:anywhere}
+/* ══════════════════════════════════════
+   SCREEN: TUTOR
+══════════════════════════════════════ */
+.tutor-layout{flex:1;display:flex;min-height:0;overflow:hidden}
+.tutor-ql{
+  width:230px;flex-shrink:0;min-width:0;background:var(--bg-surface);
+  border-right:1px solid var(--bd);
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.tutor-ql-top{flex-shrink:0;border-bottom:1px solid var(--bd);background:var(--bg-surface)}
+.tutor-ql-hdr{padding:13px 15px 4px;font-size:12.5px;font-weight:700}
+.tutor-quiz-picker{
+  margin:8px 12px 12px;width:calc(100% - 24px);
+  padding:8px 10px;border:1.5px solid var(--bd2);border-radius:var(--r-sm);
+  background:var(--bg-surface);color:var(--t1);font-size:12.5px;font-weight:600;
+  outline:none;cursor:pointer;transition:border-color var(--ease);
+}
+.tutor-quiz-picker:focus{border-color:var(--v)}
+#tutor-q-items{flex:1;overflow-y:auto;min-height:0}
+.tutor-qi{
+  padding:11px 15px;border-bottom:1px solid var(--bd);cursor:pointer;
+  transition:background var(--ease);
+}
+.tutor-qi:hover{background:var(--bg-raised)}
+.tutor-qi.active{background:var(--v-tnt);border-left:3px solid var(--v)}
+.tutor-qi-num{font-size:10.5px;font-weight:800;color:var(--t3);margin-bottom:2px}
+.tutor-qi-prev{font-size:12.5px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tutor-main{flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.tutor-ctx{padding:14px 22px;border-bottom:1px solid var(--bd);background:var(--bg-raised);flex-shrink:0}
+.tutor-ctx-card{
+  background:var(--bg-surface);border:1px solid var(--bd);border-radius:var(--r-md);
+  padding:13px 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;
+}
+.tutor-fld-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--t3);margin-bottom:3px}
+.tutor-fld-val{font-size:13px;line-height:1.5}
+.tutor-chat{flex:1;overflow-y:auto;padding:16px 22px;display:flex;flex-direction:column;gap:9px}
+.tutor-footer{padding:11px 22px 14px;border-top:1px solid var(--bd);background:var(--bg-surface);flex-shrink:0}
+/* ══════════════════════════════════════
+   SCREEN: FLASHCARDS
+══════════════════════════════════════ */
+#s-flash .deck-area{flex:1;overflow-y:auto;padding:24px 28px;display:flex;flex-direction:column;gap:22px}
+.deck-section-lbl{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--t3);padding-bottom:8px;border-bottom:1px solid var(--bd);margin-bottom:10px}
+.deck-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:11px}
+.deck-card{
+  background:var(--bg-surface);border:1.5px solid var(--bd);
+  border-radius:var(--r-lg);padding:18px 16px 14px;
+  cursor:pointer;transition:all var(--ease);
+  display:flex;flex-direction:column;gap:7px;
+}
+.deck-card:hover{border-color:var(--fc);box-shadow:var(--sh-md);transform:translateY(-2px)}
+.deck-src{
+  display:inline-flex;align-items:center;gap:3px;
+  font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--fc);background:var(--fc-t);padding:2px 8px;border-radius:var(--r-full);
+}
+.deck-title{font-size:14px;font-weight:700}
+.deck-meta{font-size:11.5px;color:var(--t3)}
+/* Study view */
+.fc-study{display:none;flex-direction:column;flex:1;overflow:hidden}
+.fc-study.active{display:flex}
+.fc-study-hdr{
+  padding:14px 24px;border-bottom:1px solid var(--bd);
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--bg-surface);flex-shrink:0;
+}
+.fc-study-body{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:22px;padding:32px;overflow-y:auto;
+}
+/* Card flip */
+.fc-scene{width:100%;max-width:520px;perspective:1000px}
+.fc-card{
+  width:100%;min-height:210px;position:relative;
+  transform-style:preserve-3d;
+  transition:transform 450ms cubic-bezier(.4,0,.2,1);
+  cursor:pointer;
+}
+.fc-card.flipped{transform:rotateY(180deg)}
+.fc-face{
+  position:absolute;inset:0;border-radius:var(--r-lg);
+  padding:32px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;backface-visibility:hidden;border:1.5px solid var(--bd);
+  box-shadow:var(--sh-md);
+}
+.fc-front{background:var(--bg-surface)}
+.fc-back{background:var(--fc-t);border-color:var(--fc);transform:rotateY(180deg)}
+.fc-face-hint{font-size:11.5px;color:var(--t3);margin-bottom:10px}
+.fc-face-text{font-size:16px;font-weight:700;line-height:1.55;color:var(--t1)}
+.fc-rating{display:flex;gap:12px}
+.fc-complete{
+  display:none;flex:1;flex-direction:column;align-items:center;justify-content:center;
+  gap:14px;text-align:center;padding:40px;
+}
+/* ══════════════════════════════════════
+   SCREEN: SETTINGS
+══════════════════════════════════════ */
+#s-settings .settings-layout{flex:1;min-height:0;display:grid;grid-template-columns:212px 1fr}
+.settings-nav{background:var(--bg-surface);border-right:1px solid var(--bd);padding:18px 12px;display:flex;flex-direction:column;gap:6px;overflow-y:auto}
+.set-nav-btn{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:var(--r-sm);font-size:13px;font-weight:700;color:var(--t2);text-align:left;cursor:pointer;transition:all var(--ease)}
+.set-nav-btn:hover{background:var(--bg-hover);color:var(--t1)}
+.set-nav-btn.active{background:var(--v-tnt);color:var(--v-txt)}
+.sn-ico{font-size:15px;width:22px;text-align:center;flex-shrink:0}
+.settings-content{flex:1;min-width:0;overflow-y:auto;padding:24px 28px}
+.set-pane{display:flex;flex-direction:column;gap:18px;max-width:760px}
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.set-row-lbl{flex:1;min-width:200px}
+.set-row-title{font-size:13px;font-weight:700;color:var(--t1)}
+.set-row-sub{font-size:12px;color:var(--t3);margin-top:2px}
+.set-hint{font-size:12.5px;color:var(--t2);background:var(--bg-raised);border:1px dashed var(--bd);border-radius:var(--r-sm);padding:9px 12px;line-height:1.5}
+.settings-sect{background:var(--bg-surface);border:1px solid var(--bd);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-xs);flex-shrink:0}
+.settings-hdr{padding:15px 22px;border-bottom:1px solid var(--bd);background:var(--bg-raised)}
+.settings-hdr-title{font-size:14px;font-weight:800;letter-spacing:-.2px}
+.settings-hdr-desc{font-size:12.5px;color:var(--t2);margin-top:2px}
+.settings-body2{padding:20px 22px;display:flex;flex-direction:column;gap:16px}
+.sf{display:flex;flex-direction:column;gap:4px}
+.sf label{font-size:12.5px;font-weight:700;color:var(--t1)}
+.sf .hint{font-size:11.5px;color:var(--t3)}
+.sk-row{display:flex;gap:8px;align-items:center}
+.sk-row input{flex:1}
+.saved-note{font-size:12px;color:var(--ja-tx);font-weight:700;display:none}
+.saved-note.show{display:inline}
+.cb-row{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
+.cb-row input{accent-color:var(--v);cursor:pointer;width:15px;height:15px}
+.lib-tree{border:1.5px solid var(--bd);border-radius:var(--r-sm);overflow:hidden;flex-shrink:0}
+.tree-subj{background:var(--bg-raised);padding:9px 13px;font-size:12.5px;font-weight:700;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:7px;cursor:pointer}
+.tree-topic{padding:8px 13px 8px 28px;border-bottom:1px solid var(--bd);font-size:12.5px;display:flex;align-items:center;gap:7px}
+.tree-topic:last-child{border-bottom:none}
+.tree-warn{font-size:10.5px;color:var(--em-tx);background:var(--em-t);padding:1px 6px;border-radius:var(--r-full);margin-left:auto;font-weight:700}
+/* ══════════════════════════════════════
+   UTILITY
+══════════════════════════════════════ */
+.flex-r{display:flex;align-items:center}
+.flex-c{display:flex;flex-direction:column}
+.g4{gap:4px}.g6{gap:6px}.g8{gap:8px}.g10{gap:10px}.g12{gap:12px}.g16{gap:16px}.g20{gap:20px}
+.mt4{margin-top:4px}.mt8{margin-top:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}
+.w100{width:100%}
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+<div class="app-shell">
+  <!-- ════════ NAV RAIL ════════ -->
+    <nav class="nav-rail" id="nav-rail">
+      <div class="nav-brand">
+        <div class="nav-logo">SK</div>
+        <span class="nav-brand-name">StudyKit</span>
+        <button class="nav-collapse-btn" id="nav-collapse-btn" aria-label="Toggle sidebar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17-5-5 5-5"/><path d="m18 17-5-5 5-5"/></svg>
+        </button>
+      </div>
+      <div class="nav-items">
+        <button class="nav-item active" data-screen="s-dash">
+          <span class="nav-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+          <span class="nav-label">Dashboard</span>
+        </button>
+        <button class="nav-item" data-screen="s-quiz">
+          <span class="nav-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></span>
+          <span class="nav-label">Quiz</span>
+        </button>
+        <button class="nav-item" data-screen="s-flash">
+          <span class="nav-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2-10 5 10 5 10-5-10-5z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span>
+          <span class="nav-label">Flashcards</span>
+        </button>
+        <button class="nav-item" data-screen="s-hist">
+          <span class="nav-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l3 2"/></svg></span>
+          <span class="nav-label">History</span>
+        </button>
+        <button class="nav-item" data-screen="s-tutor">
+          <span class="nav-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <span class="nav-label">Tutor</span>
+        </button>
+      </div>
+      <div class="nav-bottom">
+        <button class="nav-item" data-screen="s-settings">
+          <span class="nav-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+          <span class="nav-label">Settings</span>
+        </button>
+        <span class="nav-version">v0.3 — Electron preview</span>
+      </div>
+    </nav>
+  <!-- ════════ CONTENT ════════ -->
+  <main class="content-region">
+    <!-- ══════════════════════════════════
+         DASHBOARD
+    ══════════════════════════════════ -->
+    <section class="screen active" id="s-dash">
+      <div class="scroll-area" style="flex:1;overflow-y:auto;padding:24px 28px">
+        <!-- Hero -->
+        <div class="dash-hero">
+          <div>
+            <div class="dash-hero-greet">Good evening, Favour 👋</div>
+            <div class="dash-hero-stats mt8"><strong>7</strong> quizzes · <strong>64</strong> questions answered · <strong>71%</strong> average</div>
+          </div>
+          <button class="btn btn-primary btn-lg" onclick="navigate('s-quiz')">Start New Quiz →</button>
+        </div>
+        <!-- Setup banner (hidden by default) -->
+        <div id="setup-banner" style="display:none;background:var(--in-t);border:1.5px solid var(--in);border-radius:var(--r-md);padding:14px 18px;align-items:center;gap:12px;margin-bottom:16px">
+          <span style="font-size:20px">📂</span>
+          <div style="flex:1"><div style="font-weight:700;font-size:14px;color:var(--in)">Set up your learning library</div><div style="font-size:12.5px;color:var(--t2);margin-top:2px">Go to Settings to scan your library and select topics.</div></div>
+          <button class="btn btn-sm btn-secondary" onclick="navigate('s-settings')">Open Settings →</button>
+        </div>
+        <!-- 3-column grid -->
+        <div class="dash-grid">
+          <!-- Subjects -->
+          <div class="card card-p">
+            <div class="dash-section-label">Subject mastery</div>
+            <div id="subj-list"></div>
+          </div>
+          <!-- Activity -->
+          <div class="card card-p">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+              <div class="dash-section-label" style="margin-bottom:0">Recent activity</div>
+              <button class="btn btn-ghost btn-sm" onclick="navigate('s-hist')">All →</button>
+            </div>
+            <div id="act-list"></div>
+          </div>
+          <!-- Needs attention -->
+          <div class="card card-p dash-full">
+            <div class="dash-section-label">Needs attention</div>
+            <div id="weak-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════
+         QUIZ WORKSPACE
+    ══════════════════════════════════ -->
+    <section class="screen" id="s-quiz">
+      <div class="quiz-workspace">
+        <!-- Main area: quiz states live here -->
+        <div class="quiz-main">
+          <!-- STATE: CHAT -->
+          <div class="qstate active" id="qs-chat">
+            <div class="qhdr">
+              <div class="qhdr-l">
+                <span class="q-page-title">Let's plan your quiz</span>
+                <span class="badge b-violet b-pulse" id="badge-chat">CHAT</span>
+              </div>
+              <div class="qhdr-r">
+                <span style="font-size:12px;color:var(--t3)">Configure your quiz in the panel →</span>
+              </div>
+            </div>
+            <div class="chat-body" id="chat-body">
+              <div class="chat-start-screen" id="chat-start">
+                <div style="font-size:42px;opacity:.35">💬</div>
+                <div class="f-h2">Ready when you are</div>
+                <div style="font-size:13.5px;color:var(--t2);max-width:320px;line-height:1.6">Tell the AI your topics, question count, and any weak areas to prioritise.</div>
+                <button class="btn btn-primary btn-lg" onclick="startChat()" style="margin-top:4px">Start Chat</button>
+              </div>
+              <div class="chat-messages" id="chat-msgs" style="display:none"></div>
+            </div>
+            <div class="chat-footer" id="chat-footer" style="display:none">
+              <div class="chat-row">
+                <textarea class="chat-inp" id="chat-inp" placeholder="Type a message…" rows="1" onkeydown="chatKey(event)" oninput="autoGrow(this)"></textarea>
+                <button class="btn btn-secondary" id="chat-send" onclick="sendMsg()">Send</button>
+                <button class="btn btn-primary" onclick="beginPipeline()">Generate Quiz →</button>
+              </div>
+            </div>
+          </div>
+          <!-- STATE: PIPELINE -->
+          <div class="qstate" id="qs-pipeline">
+            <div class="qhdr">
+              <div class="qhdr-l">
+                <span class="q-page-title">Generating your quiz</span>
+                <span class="badge b-amber b-pulse" id="badge-pipeline">PLANNING</span>
+              </div>
+              <div class="qhdr-r">
+                <button class="btn btn-ghost btn-sm" onclick="doPeek()">← Back to Chat</button>
+                <button class="btn btn-secondary btn-sm" onclick="doCancel()">✕ Cancel</button>
+              </div>
+            </div>
+            <div class="pipeline-body">
+              <div class="pipeline-card">
+                <div class="pipeline-card-head">
+                  <div class="pipeline-stage-label" id="p-stage-lbl">Stage 2 of 4</div>
+                  <div class="pipeline-main-msg" id="p-main-msg">Finding your questions…</div>
+                  <div class="pipeline-sub-msg" id="p-sub-msg">Searching question banks for your selected topics</div>
+                </div>
+                <div class="pipeline-stages" id="pipeline-stages">
+                  <div class="p-stage done" id="ps-0">
+                    <div class="p-stage-node">✓</div>
+                    <div class="p-stage-text">
+                      <div class="p-stage-name">Planning</div>
+                    </div>
+                    <div class="p-stage-time">2.1s</div>
+                  </div>
+                  <div class="p-stage active" id="ps-1">
+                    <div class="p-stage-node">↻</div>
+                    <div class="p-stage-text">
+                      <div class="p-stage-name">Finding questions</div>
+                      <div class="p-stage-detail" id="ps-1-detail">Searching for candidates in Newton's Laws and Stoichiometry…</div>
+                    </div>
+                  </div>
+                  <div class="p-stage idle" id="ps-2">
+                    <div class="p-stage-node">3</div>
+                    <div class="p-stage-text"><div class="p-stage-name">Ordering</div></div>
+                  </div>
+                  <div class="p-stage idle" id="ps-3">
+                    <div class="p-stage-node">4</div>
+                    <div class="p-stage-text"><div class="p-stage-name">Final checks</div></div>
+                  </div>
+                </div>
+                <div class="pipeline-footer">
+                  <div style="font-size:12.5px;color:var(--t2);flex:1">Running in the background — peek at your chat any time.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- STATE: PEEK -->
+          <div class="qstate" id="qs-peek">
+            <div class="qhdr">
+              <div class="qhdr-l">
+                <span class="q-page-title">Your chat</span>
+                <span class="badge b-amber b-pulse">PLANNING</span>
+              </div>
+              <div class="qhdr-r">
+                <button class="btn btn-secondary btn-sm" onclick="doCancel()">✕ Cancel</button>
+              </div>
+            </div>
+            <div class="chat-body" id="peek-body" style="flex:1"></div>
+            <div class="peek-banner">
+              <span class="peek-banner-txt" id="peek-status">Still finding your questions…</span>
+              <button class="btn btn-sm" style="background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.28)" onclick="resumePipeline()">Continue →</button>
+            </div>
+          </div>
+          <!-- STATE: CANCELLED -->
+          <div class="qstate" id="qs-cancelled">
+            <div class="qhdr">
+              <div class="qhdr-l">
+                <span class="q-page-title">Cancelled</span>
+                <span class="badge b-neutral">CANCELLED</span>
+              </div>
+            </div>
+            <div class="cancelled-body">
+              <div class="cancelled-inner">
+                <div class="cancelled-ico">🚫</div>
+                <div class="f-h1">Cancelled.</div>
+                <p style="font-size:14px;color:var(--t2);line-height:1.65;max-width:340px">The quiz generation was stopped. You can retry from where it left off, or go back to revise your chat.</p>
+                <div class="flex-r g10 mt8">
+                  <button class="btn btn-primary" onclick="doRetry()">Retry →</button>
+                  <button class="btn btn-secondary" onclick="showQState('qs-chat')">← Back to Chat</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- STATE: QUIZ ACTIVE -->
+          <div class="qstate" id="qs-active">
+            <div class="qhdr">
+              <div class="qhdr-l">
+                <span class="q-page-title">Quiz</span>
+                <span class="badge b-violet" id="badge-q">Q 1 / 6</span>
+              </div>
+              <div class="qhdr-r">
+                <div class="q-progress">
+                  <div class="q-prog-track"><div class="q-prog-fill" id="q-prog" style="width:16%"></div></div>
+                  <div class="q-prog-lbl" id="q-prog-lbl">1 of 6</div>
+                </div>
+                <div class="q-timer" id="q-timer" style="display:none" title="Time left for this question">⏱ <span id="q-timer-val">0:60</span><span id="q-timer-total" style="display:none"></span></div>
+                <div class="qmap-wrap">
+                  <button class="btn btn-secondary btn-sm" onclick="toggleQMap()">Questions</button>
+                  <div class="qmap-pop" id="qmap-pop" style="display:none">
+                    <div class="qmap-grid" id="qmap-grid"></div>
+                  </div>
+                </div>
+                <button class="btn btn-danger btn-sm" onclick="endQuiz()">■ End & Get Report</button>
+              </div>
+            </div>
+            <div class="quiz-active-layout">
+              <!-- Question pane -->
+              <div class="q-pane" id="q-pane">
+                <!-- Sim banner -->
+                <div class="sim-banner" id="sim-banner" style="display:none">
+                  <span class="sim-ico">🧪</span>
+                  <div style="flex:1">
+                    <div style="font-weight:800;color:var(--em-tx);font-size:13.5px;margin-bottom:3px">SIMULATION REQUIRED</div>
+                    <div style="font-size:13px;color:var(--t2)" id="sim-instr">Run the simulation, then answer below.</div>
+                  </div>
+                  <button class="btn btn-sm btn-secondary" onclick="alert('Simulation would launch as an external process.')">▶ Launch Simulation</button>
+                </div>
+                <!-- Question card -->
+                <div class="q-card" id="q-card">
+                  <div class="q-card-bar">
+                    <span style="color:#fff;font-size:11.5px;font-weight:800;letter-spacing:.05em" id="q-type-bar">MCQ · Section A</span>
+                    <span class="badge" style="background:rgba(255,255,255,.18);color:#fff;font-size:10.5px" id="q-pacing-bar">Warm-up</span>
+                  </div>
+                  <div class="q-card-body" id="q-text">Which of the following best describes Newton's First Law of Motion?</div>
+                </div>
+                <!-- Answer area -->
+                <div class="flex-c g8">
+                  <div class="ans-label">Your answer</div>
+                  <div class="flex-c g7" id="mcq-opts"></div>
+                  <div id="written-area" style="display:none;flex-direction:column;gap:6px">
+                    <textarea class="written-area" id="written-inp" placeholder="Write your answer here… Markdown and $…$ math notation are fine." oninput="saveWritten(this)"></textarea>
+                  </div>
+                  <div id="no-opts-warn" style="display:none">
+                    <div class="flex-r g6" style="color:var(--em-tx);font-size:13px;margin-bottom:8px"><span>⚠</span><span>No answer options were available for this question.</span></div>
+                    <textarea class="written-area" id="fallback-inp" placeholder="Type your answer…" oninput="saveWritten(this)"></textarea>
+                  </div>
+                  <div class="ans-actions mt4">
+                    <button class="btn btn-primary" id="submit-btn" onclick="submitAns()">Submit Answer</button>
+                    <button class="btn btn-secondary" id="skip-btn" onclick="skipQ()">Skip →</button>
+                    <button class="btn btn-primary" id="next-btn" style="display:none" onclick="nextQ()">Next →</button>
+                    <button class="btn btn-ghost btn-sm" id="back-btn" style="display:none" onclick="prevQ()">← Back</button>
+                    <button class="auto-quick" id="auto-quick" style="display:none" onclick="setAutoNext(!QSET.autoNext)" title="Auto-advance to the next question after answering">Auto Next: Off</button>
+                    <span class="ans-err" id="ans-err">Please select an option, or use Skip.</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Feedback panel (dark) -->
+              <div class="fb-panel" id="fb-panel">
+                <div class="fb-head">
+                  <div class="fb-panel-title">Feedback</div>
+                  <button class="fb-toggle" onclick="toggleFB()" title="Toggle feedback panel">›</button>
+                </div>
+                <div class="fb-body">
+                  <div class="fb-evalseg">
+                    <button class="fb-eval-btn on" id="fbeval-on" onclick="setEval(true)" title="Mark answers immediately">Live</button>
+                    <button class="fb-eval-btn" id="fbeval-off" onclick="setEval(false)" title="Mark everything at the end">End of quiz</button>
+                  </div>
+                  <div class="fb-mode-line" id="fb-mode">Live evaluation ON — feedback appears after each answer.</div>
+                  <div id="fb-verdict" style="display:none" class="fb-verdict fv-neutral">—</div>
+                  <div class="fb-text" id="fb-text"></div>
+                  <div class="fb-placeholder" id="fb-placeholder">Answer a question to see AI feedback here.</div>
+                  <div style="margin-top:auto">
+                    <button class="fb-next-btn" id="fb-next" style="display:none" onclick="nextQ()">Next Question →</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- STATE: REPORT -->
+          <div class="qstate" id="qs-report">
+            <div class="qhdr">
+              <div class="qhdr-l">
+                <span class="q-page-title">Quiz complete</span>
+                <span class="badge b-jade">REPORT</span>
+              </div>
+            </div>
+            <div class="report-body">
+              <div class="f-h1">Your results</div>
+              <div class="report-stats">
+                <div class="report-stat">
+                  <div class="rs-lbl">MCQ Score</div>
+                  <div class="rs-val" style="color:var(--v)">3<span style="font-size:18px;color:var(--t3)">/4</span></div>
+                </div>
+                <div class="report-stat">
+                  <div class="rs-lbl">Written Score</div>
+                  <div class="rs-val" style="color:var(--em)">62<span style="font-size:18px;color:var(--t3)">%</span></div>
+                </div>
+                <div class="report-stat">
+                  <div class="rs-lbl">Skipped</div>
+                  <div class="rs-val" style="color:var(--t3)">1</div>
+                  <div class="rs-note">excluded from score</div>
+                </div>
+                <div class="report-stat">
+                  <div class="rs-lbl">Time used</div>
+                  <div class="rs-val" style="color:var(--t2)" id="report-time">—</div>
+                </div>
+              </div>
+              <div class="report-summary">
+                <div class="f-h3" style="margin-bottom:12px">Summary</div>
+                <p>You showed solid command of Newton's Laws — correctly identifying the First and Third Laws under pressure. Your written answer on F = ma was strong in concept but lacked the explicit proportionality statement and a labelled real-world example, which cost you marks.</p>
+                <p style="margin-top:10px">Stoichiometry continues to be a gap: both mole-ratio questions were skipped. A focused 20-minute review of limiting reagents and molar mass calculation would likely push your accuracy above 70% on your next attempt.</p>
+              </div>
+              <div class="report-times">
+                <div class="f-h3" style="margin-bottom:4px">Time per question</div>
+                <div id="report-times-list"></div>
+              </div>
+              <div class="report-actions">
+                <button class="btn btn-primary btn-lg" onclick="newQuiz()">Start New Quiz</button>
+                <button class="btn btn-secondary btn-lg" onclick="navigate('s-hist')">Review This Quiz →</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- end .quiz-main -->
+        <!-- QUIZ SETTINGS PANEL -->
+        <div class="qsp" id="qsp">
+          <div class="qsp-header">
+            <span class="qsp-title">Quiz settings</span>
+            <button class="qsp-toggle-btn" onclick="toggleQSP()" title="Toggle settings panel">›</button>
+          </div>
+          <!-- Collapsed icon strip -->
+          <div class="qsp-icon-strip">
+            <div class="qsp-strip-ico has-setting" title="Skip mode" onclick="expandQSP()">⏭</div>
+            <div class="qsp-strip-ico has-setting" title="Question types" onclick="expandQSP()">📝</div>
+            <div class="qsp-strip-ico has-setting" title="Topics" onclick="expandQSP()">📚</div>
+          </div>
+          <div class="qsp-body">
+            <!-- Skip mode -->
+            <div>
+              <div class="qsp-section-title">If I skip a question</div>
+              <div class="seg" style="width:100%">
+                <button class="seg-btn on w100" id="skip-0" onclick="setSkip(0)" style="flex:1">Count as 0</button>
+                <button class="seg-btn w100" id="skip-1" onclick="setSkip(1)" style="flex:1">Exclude</button>
+              </div>
+            </div>
+            <!-- Question types -->
+            <div>
+              <div class="qsp-section-title">Question types</div>
+              <div class="flex-c g8">
+                <div style="font-size:11.5px;font-weight:700;color:var(--t2);margin-bottom:2px">Section A — Objective</div>
+                <label class="type-cb"><input type="checkbox" checked> Simulation</label>
+                <label class="type-cb"><input type="checkbox" checked> Non-simulation</label>
+                <div style="font-size:11.5px;font-weight:700;color:var(--t2);margin-top:6px;margin-bottom:2px">Section B — Theory</div>
+                <label class="type-cb"><input type="checkbox" checked> Simulation</label>
+                <label class="type-cb"><input type="checkbox" checked> Non-simulation</label>
+              </div>
+            </div>
+            <!-- Topics -->
+            <div>
+              <div class="qsp-section-title">Selected topics</div>
+              <div class="topic-pills">
+                <span class="topic-pill">Newton's Laws</span>
+                <span class="topic-pill">Kinematics</span>
+                <span class="topic-pill">Acids & Bases</span>
+                <span class="topic-pill">Stoichiometry</span>
+                <span class="topic-pill">Calculus</span>
+              </div>
+              <div style="font-size:11.5px;color:var(--t3);margin-top:8px">Manage in <a onclick="navigate('s-settings')" href="javascript:void(0)">Settings</a></div>
+            </div>
+            <!-- Evaluation mode -->
+            <div>
+              <div class="qsp-section-title">Evaluation mode</div>
+              <div class="seg" style="width:100%">
+                <button class="seg-btn on" id="eval-on" onclick="setEval(true)" style="flex:1">Live</button>
+                <button class="seg-btn" id="eval-off" onclick="setEval(false)" style="flex:1">End of quiz</button>
+              </div>
+              <div style="font-size:11.5px;color:var(--t3);margin-top:6px;line-height:1.5" id="eval-hint">Live: answers are marked and feedback shown after each question.</div>
+            </div>
+            <!-- Auto next -->
+            <div id="auto-next-row">
+              <div class="qsp-section-title">Auto next</div>
+              <div class="seg" style="width:100%">
+                <button class="seg-btn on" id="auto-on" onclick="setAutoNext(true)" style="flex:1">On</button>
+                <button class="seg-btn" id="auto-off" onclick="setAutoNext(false)" style="flex:1">Off</button>
+              </div>
+              <div style="font-size:11.5px;color:var(--t3);margin-top:6px;line-height:1.5" id="auto-hint">Jump to the next question automatically after answering. Only used when evaluation is off.</div>
+            </div>
+            <!-- Timing -->
+            <div id="timer-row">
+              <div class="qsp-section-title">Timing</div>
+              <div class="seg" style="width:100%">
+                <button class="seg-btn on" id="qsp-tmode-off" onclick="setTimerMode('off')" style="flex:1">Off</button>
+                <button class="seg-btn" id="qsp-tmode-perq" onclick="setTimerMode('perQ')" style="flex:1">Per Q</button>
+                <button class="seg-btn" id="qsp-tmode-total" onclick="setTimerMode('total')" style="flex:1">Total</button>
+              </div>
+              <div id="qsp-perq-row" style="display:none">
+                <div class="seg" style="width:100%;margin-top:8px">
+                  <button class="seg-btn on" id="qsp-tperq-30" onclick="setTimerPerQ(30)" style="flex:1">30s</button>
+                  <button class="seg-btn" id="qsp-tperq-60" onclick="setTimerPerQ(60)" style="flex:1">60s</button>
+                  <button class="seg-btn" id="qsp-tperq-90" onclick="setTimerPerQ(90)" style="flex:1">90s</button>
+                </div>
+              </div>
+              <div id="qsp-total-row" style="display:none">
+                <div class="seg" style="width:100%;margin-top:8px">
+                  <button class="seg-btn on" id="qsp-ttotal-5" onclick="setTimerTotal(5)" style="flex:1">5m</button>
+                  <button class="seg-btn" id="qsp-ttotal-10" onclick="setTimerTotal(10)" style="flex:1">10m</button>
+                  <button class="seg-btn" id="qsp-ttotal-15" onclick="setTimerTotal(15)" style="flex:1">15m</button>
+                </div>
+              </div>
+              <div id="qsp-exp-row" style="display:none">
+                <div style="font-size:11px;font-weight:700;color:var(--t2);margin-top:10px">When time runs out</div>
+                <div class="seg" style="width:100%;margin-top:6px">
+                  <button class="seg-btn on" id="qsp-texp-end" onclick="setTotalExpiry('end')" style="flex:1">End quiz</button>
+                  <button class="seg-btn" id="qsp-texp-keep" onclick="setTotalExpiry('continue')" style="flex:1">Keep going</button>
+                </div>
+              </div>
+              <div style="font-size:11.5px;color:var(--t3);margin-top:6px;line-height:1.5" id="qsp-timer-hint">No time limit. Time per question is still recorded.</div>
+            </div>
+          </div>
+        </div><!-- end .qsp -->
+      </div><!-- end .quiz-workspace -->
+    </section>
+    <!-- ══════════════════════════════════
+         HISTORY
+    ══════════════════════════════════ -->
+    <section class="screen" id="s-hist">
+      <div class="qhdr">
+        <div class="qhdr-l"><span class="q-page-title">History</span></div>
+      </div>
+      <div class="hist-layout">
+        <div class="hist-list">
+          <div class="hist-list-hdr"><span class="f-label">Recent quizzes</span></div>
+          <div id="hist-quiz-list"></div>
+        </div>
+        <div class="q-detail-pane" id="hist-q-detail">
+          <div class="empty">
+            <div class="empty-ico">📋</div>
+            <h3>Select a quiz to review</h3>
+            <p>Choose a quiz from the list to see your answers and feedback.</p>
+          </div>
+        </div>
+        <div class="hist-q-rail" id="hist-q-rail" style="display:none">
+          <div class="hist-q-rail-title">Questions</div>
+          <div id="hist-q-list"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════
+         TUTOR
+    ══════════════════════════════════ -->
+    <section class="screen" id="s-tutor">
+      <div class="qhdr">
+        <div class="qhdr-l"><span class="q-page-title">Tutor</span></div>
+      </div>
+      <div class="tutor-layout">
+        <div class="tutor-ql">
+          <div class="tutor-ql-top">
+            <div class="tutor-ql-hdr">Tutoring on</div>
+            <select class="tutor-quiz-picker" id="tutor-quiz-picker" onchange="setTutorQuiz(this.value)"></select>
+          </div>
+          <div id="tutor-q-items"></div>
+        </div>
+        <div class="tutor-main">
+          <div class="tutor-ctx" id="tutor-ctx" style="display:none">
+            <div class="tutor-ctx-card" id="tutor-ctx-card"></div>
+          </div>
+          <div class="tutor-chat" id="tutor-chat">
+            <div class="empty" id="tutor-empty">
+              <div class="empty-ico">💬</div>
+              <h3>Select a question to start tutoring</h3>
+              <p>Choose from the list to open a dedicated tutoring thread.</p>
+            </div>
+          </div>
+          <div class="tutor-footer" id="tutor-footer" style="display:none">
+            <div class="chat-row">
+              <textarea class="chat-inp" id="tutor-inp" placeholder="Ask anything about this question…" rows="1" onkeydown="chatKey(event)" oninput="autoGrow(this)"></textarea>
+              <button class="btn btn-secondary" onclick="sendTutor()">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════
+         FLASHCARDS
+    ══════════════════════════════════ -->
+    <section class="screen" id="s-flash">
+      <!-- Deck list -->
+      <div id="fc-list-view" style="display:flex;flex-direction:column;flex:1;overflow:hidden">
+        <div class="qhdr">
+          <div class="qhdr-l"><span class="q-page-title">Flashcards</span></div>
+        </div>
+        <div class="deck-area">
+          <div>
+            <div class="deck-section-lbl">From your quizzes</div>
+            <div class="deck-grid" id="fc-quiz-decks"></div>
+          </div>
+          <div>
+            <div class="deck-section-lbl">From your library</div>
+            <div class="deck-grid" id="fc-lib-decks"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Study view -->
+      <div class="fc-study" id="fc-study">
+        <div class="fc-study-hdr">
+          <button class="btn btn-ghost btn-sm" onclick="fcBack()">← All Decks</button>
+          <div style="font-size:14px;font-weight:800" id="fc-study-title">Newton's Laws</div>
+          <div style="font-size:12.5px;color:var(--t2)" id="fc-prog-lbl">Card 1 / 7 · Got it: 0</div>
+        </div>
+        <div class="fc-study-body">
+          <div class="fc-scene">
+            <div class="fc-card" id="fc-card" onclick="flipCard()">
+              <div class="fc-face fc-front">
+                <div class="fc-face-hint">Question — click to reveal answer</div>
+                <div class="fc-face-text" id="fc-front-text">What does Newton's First Law state?</div>
+              </div>
+              <div class="fc-face fc-back">
+                <div class="fc-face-hint" style="color:var(--fc)">Answer</div>
+                <div class="fc-face-text" id="fc-back-text">An object at rest stays at rest, and an object in motion continues at constant velocity, unless a net external force acts on it.</div>
+              </div>
+            </div>
+          </div>
+          <div class="fc-rating" id="fc-rating" style="display:none">
+            <button class="btn btn-secondary" onclick="fcRate(false)">↻ Still learning</button>
+            <button class="btn btn-jade" onclick="fcRate(true)">✓ Got it</button>
+          </div>
+        </div>
+      </div>
+      <!-- Deck complete -->
+      <div class="fc-complete" id="fc-complete">
+        <div style="font-size:48px">🎉</div>
+        <div class="f-h1">Deck complete!</div>
+        <div style="font-size:14px;color:var(--t2)" id="fc-complete-stats">7 cards · 5 got it · 71%</div>
+        <div class="flex-r g10 mt8">
+          <button class="btn btn-secondary" onclick="fcRestart()">↻ Review again</button>
+          <button class="btn btn-ghost" onclick="fcBack()">All Decks</button>
+        </div>
+      </div>
+    </section>
+    <!-- ══════════════════════════════════
+         SETTINGS
+    ══════════════════════════════════ -->
+    <section class="screen" id="s-settings">
+      <div class="qhdr">
+        <div class="qhdr-l"><span class="q-page-title">Settings</span></div>
+      </div>
+      <div class="settings-layout">
+        <nav class="settings-nav">
+          <button class="set-nav-btn active" data-set="quiz" onclick="setPane('quiz')"><span class="sn-ico">🎯</span>Quiz experience</button>
+          <button class="set-nav-btn" data-set="lib" onclick="setPane('lib')"><span class="sn-ico">📚</span>Content library</button>
+          <button class="set-nav-btn" data-set="ai" onclick="setPane('ai')"><span class="sn-ico">🧠</span>AI provider</button>
+        </nav>
+        <div class="settings-content">
+          <!-- ══ QUIZ EXPERIENCE ══ -->
+          <div class="set-pane" id="set-pane-quiz">
+            <!-- Question types -->
+            <div class="settings-sect">
+              <div class="settings-hdr">
+                <div class="settings-hdr-title">Question types</div>
+                <div class="settings-hdr-desc">At least one type must remain enabled.</div>
+              </div>
+              <div class="settings-body2">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+                  <div class="flex-c g8">
+                    <div style="font-size:12px;font-weight:700;color:var(--t2)">Section A — Objective</div>
+                    <label class="cb-row"><input type="checkbox" checked> Simulation questions</label>
+                    <label class="cb-row"><input type="checkbox" checked> Non-simulation questions</label>
+                  </div>
+                  <div class="flex-c g8">
+                    <div style="font-size:12px;font-weight:700;color:var(--t2)">Section B — Theory</div>
+                    <label class="cb-row"><input type="checkbox" checked> Simulation questions</label>
+                    <label class="cb-row"><input type="checkbox" checked> Non-simulation questions</label>
+                  </div>
+                </div>
+                <div style="border-top:1px solid var(--bd);padding-top:14px" class="flex-c g8">
+                  <label class="cb-row"><input type="checkbox" id="shuffle-tog" onchange="toggleShuffle(this)"> Shuffle questions</label>
+                  <div id="shuffle-sub" style="display:none;padding-left:24px" class="flex-c g8 mt4">
+                    <label class="cb-row" style="padding-left:22px"><input type="radio" name="shuf" checked> Keep simulation questions together</label>
+                    <label class="cb-row" style="padding-left:22px"><input type="radio" name="shuf"> Shuffle all questions</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Default eval mode -->
+            <div class="settings-sect">
+              <div class="settings-hdr">
+                <div class="settings-hdr-title">Evaluation</div>
+                <div class="settings-hdr-desc">When written answers get scored by AI.</div>
+              </div>
+              <div class="settings-body2">
+                <div class="set-row">
+                  <div class="set-row-lbl">
+                    <div class="set-row-title">Default evaluation mode</div>
+                    <div class="set-row-sub">Live marks each answer as you go; Off scores everything at the end.</div>
+                  </div>
+                  <div class="seg">
+                    <button class="seg-btn on" id="set-eval-on" onclick="setEval(true)">ON</button>
+                    <button class="seg-btn" id="set-eval-off" onclick="setEval(false)">OFF</button>
+                  </div>
+                </div>
+                <div class="set-hint" id="set-eval-hint">Evaluation ON: AI scores each written answer immediately. Evaluation OFF: all answers are evaluated together at the end of the quiz.</div>
+              </div>
+            </div>
+            <!-- Timing -->
+            <div class="settings-sect">
+              <div class="settings-hdr">
+                <div class="settings-hdr-title">Timing</div>
+                <div class="settings-hdr-desc">Auto-advance countdown — per question, or a total test time split across questions.</div>
+              </div>
+              <div class="settings-body2">
+                <div class="set-row">
+                  <div class="set-row-lbl">
+                    <div class="set-row-title">Time limit</div>
+                    <div class="set-row-sub">A countdown that moves the quiz on when it runs out</div>
+                  </div>
+                  <div class="seg">
+                    <button class="seg-btn on" id="tmode-off" onclick="setTimerMode('off')">Off</button>
+                    <button class="seg-btn" id="tmode-perq" onclick="setTimerMode('perQ')">Per question</button>
+                    <button class="seg-btn" id="tmode-total" onclick="setTimerMode('total')">Overall test</button>
+                  </div>
+                </div>
+                <div id="set-perq-row" style="display:none">
+                  <div class="set-row">
+                    <div class="set-row-lbl">
+                      <div class="set-row-title">Seconds per question</div>
+                      <div class="set-row-sub">The budget resets on every question</div>
+                    </div>
+                    <div class="seg">
+                      <button class="seg-btn on" id="tperq-30" onclick="setTimerPerQ(30)">30s</button>
+                      <button class="seg-btn" id="tperq-60" onclick="setTimerPerQ(60)">60s</button>
+                      <button class="seg-btn" id="tperq-90" onclick="setTimerPerQ(90)">90s</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="set-total-row" style="display:none">
+                  <div class="set-row">
+                    <div class="set-row-lbl">
+                      <div class="set-row-title">Total test time</div>
+                      <div class="set-row-sub">Split across questions as you go</div>
+                    </div>
+                    <div class="seg">
+                      <button class="seg-btn on" id="ttotal-5" onclick="setTimerTotal(5)">5 min</button>
+                      <button class="seg-btn" id="ttotal-10" onclick="setTimerTotal(10)">10 min</button>
+                      <button class="seg-btn" id="ttotal-15" onclick="setTimerTotal(15)">15 min</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="set-exp-row" style="display:none">
+                  <div class="set-row">
+                    <div class="set-row-lbl">
+                      <div class="set-row-title">When overall time runs out</div>
+                      <div class="set-row-sub">What happens at the deadline</div>
+                    </div>
+                    <div class="seg">
+                      <button class="seg-btn on" id="texp-end" onclick="setTotalExpiry('end')">End quiz</button>
+                      <button class="seg-btn" id="texp-keep" onclick="setTotalExpiry('continue')">Keep going</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="set-hint" id="timer-hint">No time limit. Time spent on each question is still recorded for review.</div>
+              </div>
+            </div>
+          </div>
+          <!-- ══ CONTENT LIBRARY ══ -->
+          <div class="set-pane" id="set-pane-lib" style="display:none">
+            <div class="settings-sect">
+              <div class="settings-hdr">
+                <div class="settings-hdr-title">Learning library</div>
+                <div class="settings-hdr-desc">Point StudyKit at your topic files on disk.</div>
+              </div>
+              <div class="settings-body2">
+                <div class="sf">
+                  <label>Library root path</label>
+                  <div class="flex-r g8">
+                    <input class="inp" type="text" value="/home/favour/X" style="flex:1;max-width:380px">
+                    <button class="btn btn-secondary">Browse</button>
+                    <button class="btn btn-primary" onclick="scanLib()">Scan</button>
+                  </div>
+                  <div class="flex-r g6 mt8" id="lib-status" style="display:none;color:var(--ja-tx);font-size:12.5px;font-weight:700"><span>✓</span><span>Found 12 valid topic(s) across 4 subject(s)</span></div>
+                </div>
+                <div class="lib-tree" id="lib-tree" style="display:none">
+                  <div class="tree-subj">▾ Physics</div>
+                  <div class="tree-topic"><input type="checkbox" checked> Newton's Laws</div>
+                  <div class="tree-topic"><input type="checkbox" checked> Kinematics</div>
+                  <div class="tree-topic"><input type="checkbox"> Waves <span class="tree-warn">⚠ missing files</span></div>
+                  <div class="tree-subj">▾ Chemistry</div>
+                  <div class="tree-topic"><input type="checkbox" checked> Acids & Bases</div>
+                  <div class="tree-topic"><input type="checkbox" checked> Stoichiometry</div>
+                  <div class="tree-subj">▾ Mathematics</div>
+                  <div class="tree-topic"><input type="checkbox" checked> Calculus</div>
+                  <div class="tree-subj">▾ Economics</div>
+                  <div class="tree-topic"><input type="checkbox"> Supply & Demand</div>
+                </div>
+                <div class="flex-r g10" id="lib-save-row" style="display:none">
+                  <button class="btn btn-primary" onclick="saveSetting('lib-saved')">Save Selection</button>
+                  <span class="saved-note" id="lib-saved">✓ 6 topic(s) selected</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ══ AI PROVIDER ══ -->
+          <div class="set-pane" id="set-pane-ai" style="display:none">
+            <div class="settings-sect">
+              <div class="settings-hdr">
+                <div class="settings-hdr-title">Provider mode</div>
+                <div class="settings-hdr-desc">How StudyKit connects to AI — keys stay on your machine.</div>
+              </div>
+              <div class="settings-body2">
+                <div class="set-row">
+                  <div class="set-row-lbl">
+                    <div class="set-row-title">Connection</div>
+                    <div class="set-row-sub">Direct API keys or the CLI bridge</div>
+                  </div>
+                  <div class="seg">
+                    <button class="seg-btn on" id="prov-api" onclick="setProvider('api')">API (Direct)</button>
+                    <button class="seg-btn" id="prov-cli" onclick="setProvider('cli')">CLI Bridge (opencode)</button>
+                  </div>
+                </div>
+                <div id="api-section">
+                  <div class="flex-c g12">
+                    <div class="sf">
+                      <label>GROQ Keys <span style="font-size:11px;color:var(--t3)">(up to 4)</span></label>
+                      <div class="sk-row"><input class="inp" type="password" placeholder="gsk_…" style="font-family:monospace;font-size:12px"><button class="btn btn-ghost btn-sm">✕</button></div>
+                      <div class="sk-row mt4"><input class="inp" type="password" placeholder="gsk_…" style="font-family:monospace;font-size:12px"><button class="btn btn-ghost btn-sm">✕</button></div>
+                      <button class="btn btn-ghost btn-sm" style="align-self:flex-start;margin-top:4px">+ Add key</button>
+                    </div>
+                    <div class="sf">
+                      <label>GROQ Model</label>
+                      <input class="inp" type="text" value="llama-3.3-70b-versatile" style="max-width:340px">
+                    </div>
+                    <div class="sf">
+                      <label>OpenRouter Keys <span style="font-size:11px;color:var(--t3)">(up to 4)</span></label>
+                      <div class="sk-row"><input class="inp" type="password" placeholder="sk-or-…" style="font-family:monospace;font-size:12px"><button class="btn btn-ghost btn-sm">✕</button></div>
+                      <button class="btn btn-ghost btn-sm" style="align-self:flex-start;margin-top:4px">+ Add key</button>
+                    </div>
+                    <div class="sf">
+                      <label>OpenRouter Model</label>
+                      <input class="inp" type="text" value="meta-llama/llama-3.3-70b-instruct" style="max-width:340px">
+                    </div>
+                  </div>
+                </div>
+                <div id="cli-section" style="display:none">
+                  <div class="sf">
+                    <label>Model</label>
+                    <input class="inp" type="text" value="opencode/big-pickle" style="max-width:340px" placeholder="provider/model-name">
+                    <div class="hint">Format: <span class="f-mono">provider/model</span></div>
+                  </div>
+                </div>
+                <div class="flex-r g10">
+                  <button class="btn btn-primary" onclick="saveSetting('api-saved')">Save API Keys</button>
+                  <span class="saved-note" id="api-saved">✓ Saved — 3 key(s) active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script>
+/* ═══════════════════════════════
+   MOCK DATA
+═══════════════════════════════ */
+const M = {
+  subjects:[{n:'Maths',p:88},{n:'Chem',p:74},{n:'Physics',p:61},{n:'Econ',p:55}],
+  weak:[{t:"Newton's Laws",p:42},{t:'Stoichiometry',p:48},{t:'Supply & Demand',p:51}],
+  recent:[
+    {date:'12 Jul',topic:"Newton's Laws",score:'6/10',tags:['MCQ 3/4','written 62%'],incomplete:false},
+    {date:'10 Jul',topic:'Acids & Bases',score:'8/10',tags:['1 skipped'],incomplete:false},
+    {date:'08 Jul',topic:'Kinematics',score:'4/10',tags:['2 skipped'],incomplete:true},
+  ],
+  histQuizzes:[
+    {id:'q1',title:"Newton's Laws",date:'12 Jul 2026',completed:true,questions:[
+      {n:1,type:'MCQ',text:"Which of the following best describes Newton's First Law?",yourAns:'A. An object at rest stays at rest…',correct:true,stdAns:'A. Inertia — objects resist changes to their state of motion.',score:null,fb:"Correct. Inertia is the core concept here.",timeSpent:42},
+      {n:2,type:'Written',text:'Explain how net force relates to acceleration.',yourAns:'F=ma so more force means more acceleration if mass is constant.',correct:null,stdAns:'Net force equals mass times acceleration (F = ma). When mass is constant, acceleration is directly proportional to net force.',score:0.72,fb:'Solid understanding. Explicitly stating the proportionality relationship and a real-world example would strengthen this answer.',timeSpent:78},
+      {n:3,type:'MCQ',text:'Two equal forces act in opposite directions. The net force is:',yourAns:'C. Zero',correct:true,stdAns:'C. Zero — equal and opposite forces cancel exactly.',score:null,fb:'Correct. Equal and opposite forces cancel.',timeSpent:35},
+      {n:4,type:'Written',text:'Describe the impulse-momentum theorem.',yourAns:'',correct:null,stdAns:'Impulse = change in momentum. J = Δp = FΔt.',score:null,fb:null,skipped:true,timeSpent:150},
+    ]},
+    {id:'q2',title:'Acids & Bases',date:'10 Jul 2026',completed:true,questions:[
+      {n:1,type:'MCQ',text:'What is the pH of a neutral solution at 25°C?',yourAns:'B. 7',correct:true,stdAns:'B. 7',score:null,fb:'Correct.',timeSpent:20},
+      {n:2,type:'MCQ',text:'Which ion causes acidic properties?',yourAns:'A. H⁺',correct:true,stdAns:'A. H⁺',score:null,fb:'Correct — Brønsted-Lowry definition.',timeSpent:25},
+    ]},
+  ],
+  quizDeck:[
+    {f:"State Newton's First Law.",b:'An object at rest stays at rest; an object in motion continues at constant velocity — unless a net external force acts on it.'},
+    {f:'What is F = ma known as?',b:"Newton's Second Law of Motion."},
+    {f:'Define impulse.',b:'Impulse = force × time = change in momentum (J = FΔt = Δp).'},
+    {f:"State Newton's Third Law.",b:'Every action has an equal and opposite reaction.'},
+    {f:'A 2 kg object accelerates at 5 m/s². What net force acts on it?',b:'F = ma = 2 × 5 = 10 N.'},
+    {f:'What is inertia?',b:'The resistance of an object to changes in its state of motion.'},
+    {f:'Define momentum.',b:'p = mv — a vector quantity measured in kg·m/s.'},
+  ],
+};
+const QUIZ_QS = [
+  {type:'MCQ',sec:'A',text:"Which of the following best describes Newton's First Law of Motion?",opts:['A. An object at rest stays at rest, and an object in motion stays in motion, unless acted on by a net external force.','B. Force equals mass times acceleration.','C. For every action, there is an equal and opposite reaction.','D. An object accelerates in proportion to the net force applied.'],correct:0,pacing:'Warm-up'},
+  {type:'Written',sec:'B',text:'Explain in your own words the relationship between net force, mass, and acceleration. Give a real-world example.',pacing:'Core concept'},
+  {type:'MCQ',sec:'A',text:'A 5 kg object experiences a net force of 20 N. What is its acceleration?',opts:['A. 0.25 m/s²','B. 4 m/s²','C. 100 m/s²','D. 25 m/s²'],correct:1,pacing:'Application'},
+  {type:'Sim',sec:'A',text:'Run the momentum conservation simulation. Record velocities before and after the collision, then calculate whether momentum was conserved.',opts:['A. Momentum increased','B. Momentum was conserved','C. Momentum decreased','D. Unable to determine'],correct:1,simInstr:'Launch the simulation, record the velocities, then select your answer.',pacing:'Transfer'},
+  {type:'Written',sec:'B',text:'Describe the impulse-momentum theorem and explain how airbags use this principle to protect passengers.',pacing:'Elevation'},
+  {type:'MCQ',sec:'A',text:"Newton's Third Law states that action and reaction forces are always:",opts:['A. Equal in magnitude, same direction','B. Equal in magnitude, opposite direction','C. Unequal, same direction','D. Unequal, opposite direction'],correct:1,pacing:'Prerequisite'},
+];
+/* ═══════════════════════════════
+   NAV
+═══════════════════════════════ */
+function navigate(id) {
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(b=>b.classList.remove('active'));
+  const sc=document.getElementById(id);
+  if(sc) sc.classList.add('active');
+  const nb=document.querySelector(`.nav-item[data-screen="${id}"]`);
+  if(nb) nb.classList.add('active');
+  // Show/hide quiz panels based on screen and current quiz state
+  const qsp=document.getElementById('qsp'),fbp=document.getElementById('fb-panel');
+  if(id!=='s-quiz'){qsp.style.display='none';fbp.style.display='none';}
+  else{
+    const activeState=document.querySelector('.qstate.active');
+    const inActive=activeState&&activeState.id==='qs-active';
+    qsp.style.display=inActive?'none':'';
+    fbp.style.display=inActive?'':'none';
+  }
+  if(id==='s-quiz'){const act=document.querySelector('.qstate.active');if(act&&act.id==='qs-active')resumeTimer();}
+  else pauseTimer();
+}
+document.querySelectorAll('.nav-item[data-screen]').forEach(b=>b.addEventListener('click',()=>navigate(b.dataset.screen)));
+document.getElementById('nav-collapse-btn').addEventListener('click',()=>document.getElementById('nav-rail').classList.toggle('collapsed'));
+/* ═══════════════════════════════
+   DASHBOARD
+═══════════════════════════════ */
+function renderDash(){
+  const sl=document.getElementById('subj-list');
+  sl.innerHTML=M.subjects.map(s=>{
+    const cls=s.p>=80?'fill-ja':s.p>=60?'fill-em':'fill-ro';
+    const col=s.p>=80?'var(--ja-tx)':s.p>=60?'var(--em-tx)':'var(--ro-tx)';
+    return`<div class="subj-row"><div class="subj-name">${s.n}</div><div class="subj-track"><div class="subj-fill ${cls}" style="width:${s.p}%"></div></div><div class="subj-pct" style="color:${col}">${s.p}%</div></div>`;
+  }).join('');
+  const wl=document.getElementById('weak-list');
+  wl.innerHTML=M.weak.map(w=>{
+    const sev=w.p<50?'ro':'em';
+    const col=w.p<50?'var(--ro)':'var(--em)';
+    return`<div class="weak-item w-${sev}"><div class="weak-topic">${w.t}</div><div class="weak-foot"><div class="weak-pct" style="color:${col}">${w.p}%</div><div class="weak-actions"><button class="btn btn-sm btn-secondary" onclick="navigate('s-hist')">Review</button><button class="btn btn-sm btn-secondary" onclick="navigate('s-tutor')">Tutor</button></div></div></div>`;
+  }).join('');
+  const al=document.getElementById('act-list');
+  al.innerHTML=M.recent.map(r=>{
+    const tags=r.tags.map(t=>`<span class="badge b-neutral" style="font-size:10px">${t}</span>`).join('');
+    const inc=r.incomplete?`<span class="badge b-rose" style="font-size:10px">incomplete</span>`:'';
+    return`<div class="act-row" onclick="navigate('s-hist')"><div class="act-date">${r.date}</div><div class="act-topic">${r.topic}</div><div class="act-score">${r.score}</div><div class="act-tags">${tags}${inc}</div></div>`;
+  }).join('');
+}
+/* ═══════════════════════════════
+   QUIZ SETTINGS PANEL
+═══════════════════════════════ */
+function toggleQSP(){document.getElementById('qsp').classList.toggle('collapsed')}
+function expandQSP(){document.getElementById('qsp').classList.remove('collapsed')}
+function setSkip(i){
+  document.getElementById('skip-0').classList.toggle('on',i===0);
+  document.getElementById('skip-1').classList.toggle('on',i===1);
+}
+/* ═══════════════════════════════
+   QUIZ — EVALUATION STATE
+   Shared between Settings and the quiz settings panel.
+   evalOn=true  → answers are marked immediately (Live).
+   evalOn=false → nothing is marked until the end; you can reanswer.
+   autoNext     → when evaluation is off, answering advances automatically.
+═══════════════════════════════ */
+let QSET={evalOn:true,autoNext:false,timerMode:'off',timerPerQ:60,timerTotal:10,totalExpiry:'end'};
+function setEval(on){QSET.evalOn=on;syncEvalUI();}
+function setAutoNext(on){QSET.autoNext=on;syncEvalUI();}
+function syncEvalUI(){
+  const on=QSET.evalOn;
+  document.getElementById('eval-on').classList.toggle('on',on);
+  document.getElementById('eval-off').classList.toggle('on',!on);
+  document.getElementById('set-eval-on').classList.toggle('on',on);
+  document.getElementById('set-eval-off').classList.toggle('on',!on);
+  document.getElementById('fbeval-on').classList.toggle('on',on);
+  document.getElementById('fbeval-off').classList.toggle('on',!on);
+  document.getElementById('auto-on').classList.toggle('on',QSET.autoNext);
+  document.getElementById('auto-off').classList.toggle('on',!QSET.autoNext);
+  document.getElementById('eval-hint').textContent=on?'Live: answers are marked and feedback shown after each question.':'End of quiz: nothing is marked until you finish — you can reanswer any question.';
+  document.getElementById('set-eval-hint').textContent=on?'Evaluation ON: AI scores each written answer immediately.':'Evaluation OFF: all answers are evaluated together at the end of the quiz.';
+  document.getElementById('fb-mode').textContent=on?'Live evaluation ON — feedback appears after each answer.':'Evaluation OFF — answers are marked at the end of the quiz.';
+  document.getElementById('auto-next-row').classList.toggle('auto-locked',on);
+  document.getElementById('auto-hint').textContent=on?'Auto next applies when evaluation is off. Turn evaluation off to use it.':'Jump to the next question automatically after answering.';
+  resetFB();
+  renderActions();
+}
+/* ═══════════════════════════════
+   TIMER
+═══════════════════════════════ */
+let QTimer={mode:'off',budget:0,rem:0,totalRem:0,totalInit:false,expired:false,qSecs:0,elapsed:0,running:false,wasRunning:false,last:null,iv:null};
+function setTimerMode(m){QSET.timerMode=m;syncTimerUI();}
+function setTimerPerQ(s){QSET.timerPerQ=s;syncTimerUI();}
+function setTimerTotal(m){QSET.timerTotal=m;syncTimerUI();}
+function setTotalExpiry(v){QSET.totalExpiry=v;syncTimerUI();}
+function syncTimerUI(){
+  const mode=QSET.timerMode;
+  [['tmode-off','off'],['tmode-perq','perQ'],['tmode-total','total'],['qsp-tmode-off','off'],['qsp-tmode-perq','perQ'],['qsp-tmode-total','total']]
+    .forEach(([id,m])=>document.getElementById(id).classList.toggle('on',mode===m));
+  [['tperq-30',30],['tperq-60',60],['tperq-90',90],['qsp-tperq-30',30],['qsp-tperq-60',60],['qsp-tperq-90',90]]
+    .forEach(([id,s])=>document.getElementById(id).classList.toggle('on',QSET.timerPerQ===s));
+  [['ttotal-5',5],['ttotal-10',10],['ttotal-15',15],['qsp-ttotal-5',5],['qsp-ttotal-10',10],['qsp-ttotal-15',15]]
+    .forEach(([id,m])=>document.getElementById(id).classList.toggle('on',QSET.timerTotal===m));
+  [['texp-end','end'],['texp-keep','continue'],['qsp-texp-end','end'],['qsp-texp-keep','continue']]
+    .forEach(([id,v])=>document.getElementById(id).classList.toggle('on',QSET.totalExpiry===v));
+  document.getElementById('set-perq-row').style.display=mode==='perQ'?'':'none';
+  document.getElementById('set-total-row').style.display=mode==='total'?'':'none';
+  document.getElementById('set-exp-row').style.display=mode==='total'?'':'none';
+  document.getElementById('qsp-perq-row').style.display=mode==='perQ'?'':'none';
+  document.getElementById('qsp-total-row').style.display=mode==='total'?'':'none';
+  document.getElementById('qsp-exp-row').style.display=mode==='total'?'':'none';
+  const perQsecs=Math.max(1,Math.ceil((QSET.timerTotal*60)/Math.max(1,QUIZ_QS.length)));
+  const th=document.getElementById('timer-hint'),qh=document.getElementById('qsp-timer-hint');
+  if(mode==='off'){th.textContent='No time limit. Time spent on each question is still recorded for review.';qh.textContent='No time limit. Time per question is still recorded.';}
+  else if(mode==='perQ'){th.textContent=`Per-question countdown of ${QSET.timerPerQ}s — the quiz auto-advances when time runs out.`;qh.textContent=`${QSET.timerPerQ}s per question. Time out → advance.`;}
+  else{
+    const cap=QSET.totalExpiry==='end'?'the quiz ends when the total runs out.':'it keeps going — the total is recorded, not enforced.';
+    th.textContent=`Overall ${QSET.timerTotal} min across ${QUIZ_QS.length} questions → ≈${fmtT(perQsecs)} per question; ${cap}`;
+    qh.textContent=`Total ${QSET.timerTotal} min → ≈${fmtT(perQsecs)}/q. ${QSET.totalExpiry==='end'?'Ends quiz at 0.':'Recorded only.'}`;
+  }
+  if(mode==='off'){document.getElementById('q-timer').style.display='none';}
+  else{document.getElementById('q-timer').style.display='';document.getElementById('q-timer-total').style.display=mode==='total'?'':'none';}
+  const act=document.querySelector('.qstate.active');
+  if(act&&act.id==='qs-active')startQuizClock();else stopTimer();
+}
+function startQuizClock(){
+  stopTimer();
+  QTimer.qSecs=0;
+  QTimer.mode=QSET.timerMode;
+  if(QSET.timerMode==='perQ'){QTimer.budget=QSET.timerPerQ;}
+  else if(QSET.timerMode==='total'){
+    if(!QTimer.totalInit){QTimer.totalRem=QSET.timerTotal*60;QTimer.totalInit=true;}
+    QTimer.budget=QTimer.totalRem>0?Math.max(1,Math.ceil(QTimer.totalRem/Math.max(1,QUIZ_QS.length-QS.cur))):0;
+  }
+  else QTimer.budget=0;
+  QTimer.rem=QTimer.budget;
+  QTimer.last=Date.now();QTimer.running=true;QTimer.wasRunning=false;
+  QTimer.iv=setInterval(tick,250);
+  updateTimerUI();
+}
+function stopTimer(){clearInterval(QTimer.iv);QTimer.iv=null;QTimer.running=false;QTimer.wasRunning=false;}
+function pauseTimer(){if(QTimer.running){clearInterval(QTimer.iv);QTimer.running=false;QTimer.wasRunning=true;}}
+function resumeTimer(){if(!QTimer.wasRunning)return;QTimer.wasRunning=false;QTimer.last=Date.now();QTimer.running=true;QTimer.iv=setInterval(tick,250);updateTimerUI();}
+function tick(){
+  if(!QTimer.running)return;
+  const now=Date.now();
+  const dt=Math.floor((now-(QTimer.last||now))/1000);
+  if(dt<=0)return;
+  QTimer.last=now;
+  QTimer.elapsed+=dt;
+  QTimer.qSecs+=dt;
+  if(QSET.timerMode==='off')return;
+  if(QSET.timerMode==='total')QTimer.totalRem-=dt;
+  QTimer.rem=Math.max(0,QTimer.rem-dt);
+  updateTimerUI();
+  if(QSET.timerMode==='total'&&QTimer.totalRem<=0){overallTimeUp();return;}
+  if(QTimer.rem<=0&&!QTimer.expired)timeUp();
+}
+function timeUp(){
+  stopTimer();
+  const a=QANS[QS.cur];
+  if(!a)return;
+  commitQTime(QS.cur);
+  if(QSET.evalOn){
+    a.submitted=true;a.skipped=true;
+    a.fb={type:'time',skipped:true};
+    showFB('time',null,'Time ran out for this question. It has been marked as skipped.',null,true);
+    document.getElementById('fb-next').style.display='block';
+    renderActions();
+  } else {
+    nextQ();
+  }
+}
+function overallTimeUp(){
+  if(QTimer.expired)return;
+  QTimer.expired=true;
+  stopTimer();
+  if(QSET.totalExpiry==='end'){endQuiz();return;}
+  timeUp();
+}
+function commitQTime(i){
+  if(QANS[i]&&!QANS[i].timeCommitted){QANS[i].timeSpent=(QANS[i].timeSpent||0)+QTimer.qSecs;QANS[i].timeCommitted=true;QTimer.qSecs=0;}
+}
+function updateTimerUI(){
+  if(QSET.timerMode==='off')return;
+  const v=document.getElementById('q-timer-val'),t=document.getElementById('q-timer-total');
+  const el=document.getElementById('q-timer');
+  let low=false;
+  if(QSET.timerMode==='total'&&QTimer.totalRem<0){
+    v.textContent='+'+fmtT(-QTimer.totalRem);
+    t.style.display='';t.textContent=' / 0:00';
+    low=true;
+  } else {
+    v.textContent=fmtT(QTimer.rem);
+    low=QTimer.rem<=10;
+    if(QSET.timerMode==='total'){t.style.display='';t.textContent=' / '+fmtT(QTimer.totalRem);if(QTimer.totalRem<=30)low=true;}
+    else{t.style.display='none';t.textContent='';}
+  }
+  el.classList.toggle('low',low);
+}
+function fmtT(s){s=Math.max(0,Math.round(s));return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');}
+function renderReport(){
+  const el=document.getElementById('report-times-list');
+  el.innerHTML=QUIZ_QS.map((q,i)=>{
+    const a=QANS[i]||{};
+    const secs=a.timeSpent||0;
+    const tag=a.skipped?' · skipped':a.submitted?'':' · unanswered';
+    return `<div class="rep-time-row"><span>Q${i+1} · ${q.type}${tag}</span><span class="${secs>=60?'rep-time-slow':''}">⏱ ${fmtT(secs)}</span></div>`;
+  }).join('');
+}
+/* ═══════════════════════════════
+   QUIZ — CHAT
+═══════════════════════════════ */
+let chatMsgs=[{r:'ai',t:"Hi Favour! I'll help you design a personalised quiz. Which subjects or topics would you like to focus on today?"}];
+let chatStarted=false;
+const AI_REPLIES=[
+  "Got it! How many questions would you like — a quick 5, a standard 10, or something longer?",
+  "Any weak areas to prioritise? For example, a concept you've been struggling with lately.",
+  "Perfect. I'll design a diagnostic quiz on Newton's Laws with some stoichiometry warm-ups. Hit Generate Quiz whenever you're ready.",
+];
+function startChat(){
+  chatStarted=true;
+  document.getElementById('chat-start').style.display='none';
+  document.getElementById('chat-msgs').style.display='flex';
+  document.getElementById('chat-footer').style.display='block';
+  renderChatMsgs();scrollChat();
+}
+function renderChatMsgs(){
+  const c=document.getElementById('chat-msgs');
+  c.innerHTML=chatMsgs.map(m=>{
+    if(m.typing) return`<div class="chat-bubble bubble-ai"><span class="bubble-dots"><span></span><span></span><span></span></span></div>`;
+    return`<div class="chat-bubble ${m.r==='user'?'bubble-user':'bubble-ai'}">${m.t}</div>`;
+  }).join('');
+}
+function scrollChat(){const b=document.getElementById('chat-body');b.scrollTop=b.scrollHeight}
+function autoGrow(el){
+  el.style.height='auto';
+  el.style.height=Math.min(el.scrollHeight,120)+'px';
+  el.style.overflowY=el.scrollHeight>120?'auto':'hidden';
+}
+function chatKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();if(e.target.id==='tutor-inp')sendTutor();else sendMsg();}}
+function sendMsg(){
+  const inp=document.getElementById('chat-inp'),txt=inp.value.trim();
+  if(!txt) return;
+  chatMsgs.push({r:'user',t:txt});inp.value='';autoGrow(inp);
+  renderChatMsgs();scrollChat();
+  const btn=document.getElementById('chat-send');
+  btn.textContent='…';btn.disabled=true;
+  chatMsgs.push({typing:true});renderChatMsgs();scrollChat();
+  const idx=Math.min(chatMsgs.filter(m=>m.r==='user').length-1,AI_REPLIES.length-1);
+  setTimeout(()=>{
+    chatMsgs[chatMsgs.length-1]={r:'ai',t:AI_REPLIES[idx]};
+    renderChatMsgs();scrollChat();
+    btn.textContent='Send';btn.disabled=false;
+  },1100);
+}
+/* ═══════════════════════════════
+   QUIZ — PIPELINE
+═══════════════════════════════ */
+let pStep=1,pTimer=null;
+const P_MSGS=[
+  {main:'Planning your quiz…',sub:'Analysing topics and your conversation',lbl:'Stage 1 of 4'},
+  {main:'Finding your questions…',sub:'Searching banks for Newton\'s Laws and Stoichiometry',lbl:'Stage 2 of 4'},
+  {main:'Ordering your questions…',sub:'Sequencing for pacing and diagnostic flow',lbl:'Stage 3 of 4'},
+  {main:'Running final checks…',sub:'Auditing structure, coverage, and answer formats',lbl:'Stage 4 of 4'},
+];
+const P_DETAIL=[
+  'Parsing chat history and generating a quiz blueprint…',
+  'Scoring and filtering candidate questions from your banks…',
+  'Applying pacing model: Warm-up → Repair → Core → Transfer…',
+  'Checking question types, count, and compliance constraints…',
+];
+const P_TIMES=['1.8s','—','—','—'];
+const P_BADGE=['PLANNING','FINDING','ORDERING','AUDITING'];
+function beginPipeline(){
+  pStep=0;showQState('qs-pipeline');
+  runPStep();
+}
+function runPStep(){
+  clearInterval(pTimer);
+  if(pStep>=4){setTimeout(()=>loadQuiz(),600);return}
+  updatePStepper();
+  let sub=0;
+  pTimer=setInterval(()=>{sub=(sub+1)%2;},3000);
+  setTimeout(()=>{pStep++;runPStep()},5000);
+}
+function updatePStepper(){
+  const msg=P_MSGS[pStep];
+  document.getElementById('p-main-msg').textContent=msg.main;
+  document.getElementById('p-sub-msg').textContent=msg.sub;
+  document.getElementById('p-stage-lbl').textContent=msg.lbl;
+  document.getElementById('badge-pipeline').textContent=P_BADGE[pStep]||'AUDITING';
+  [0,1,2,3].forEach(i=>{
+    const el=document.getElementById('ps-'+i);
+    el.className='p-stage';
+    const node=el.querySelector('.p-stage-node');
+    const detail=el.querySelector('.p-stage-detail');
+    if(i<pStep){el.classList.add('done');node.textContent='✓';if(detail)detail.style.display='none';}
+    else if(i===pStep){el.classList.add('active');node.textContent='↻';if(detail){detail.style.display='block';detail.textContent=P_DETAIL[i]}}
+    else{el.classList.add('idle');node.textContent=i+1;if(detail)detail.style.display='none';}
+  });
+}
+function doPeek(){
+  clearInterval(pTimer);
+  const pb=document.getElementById('peek-body');
+  pb.innerHTML=chatMsgs.map(m=>`<div class="chat-bubble ${m.r==='user'?'bubble-user':'bubble-ai'}">${m.t||'…'}</div>`).join('');
+  document.getElementById('peek-status').textContent=P_MSGS[pStep]?P_MSGS[pStep].sub.replace('Searching','Still searching').replace('Analysing','Still analysing'):'Still working…';
+  showQState('qs-peek');
+}
+function resumePipeline(){showQState('qs-pipeline');runPStep()}
+function doCancel(){clearInterval(pTimer);showQState('qs-cancelled')}
+function doRetry(){showQState('qs-pipeline');runPStep()}
+function showQState(id){
+  document.querySelectorAll('.qstate').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  // Show/hide QSP and feedback panel appropriately
+  const qsp=document.getElementById('qsp');
+  const fbp=document.getElementById('fb-panel');
+  if(id==='qs-active'){qsp.style.display='none';fbp.style.display='';}
+  else{qsp.style.display='';fbp.style.display='none';}
+}
+/* ═══════════════════════════════
+   QUIZ — ACTIVE
+═══════════════════════════════ */
+let QS={cur:0},QANS=[];
+function loadQuiz(){
+  QS={cur:0};
+  QTimer.elapsed=0;QTimer.totalRem=0;QTimer.totalInit=false;QTimer.expired=false;
+  QANS=QUIZ_QS.map(()=>({sel:null,written:'',submitted:false,skipped:false,fb:null,timeSpent:0,timeCommitted:false}));
+  showQState('qs-active');
+  renderQ();
+}
+function renderQ(){
+  const q=QUIZ_QS[QS.cur],n=QS.cur+1,tot=QUIZ_QS.length;
+  const a=QANS[QS.cur];
+  document.getElementById('badge-q').textContent=`Q ${n} / ${tot}`;
+  document.getElementById('q-prog').style.width=(n/tot*100)+'%';
+  document.getElementById('q-prog-lbl').textContent=`${n} of ${tot}`;
+  document.getElementById('q-type-bar').textContent=`${q.type} · Section ${q.sec}`;
+  document.getElementById('q-pacing-bar').textContent=q.pacing;
+  document.getElementById('q-text').textContent=q.text;
+  document.getElementById('sim-banner').style.display=q.type==='Sim'?'flex':'none';
+  if(q.type==='Sim') document.getElementById('sim-instr').textContent=q.simInstr||'';
+  const mo=document.getElementById('mcq-opts'),wa=document.getElementById('written-area'),no=document.getElementById('no-opts-warn');
+  if(q.type==='Written'){mo.style.display='none';wa.style.display='flex';no.style.display='none';document.getElementById('written-inp').value=a.written||'';}
+  else if(q.opts&&q.opts.length){
+    wa.style.display='none';no.style.display='none';mo.style.display='flex';mo.style.flexDirection='column';mo.style.gap='8px';
+    mo.innerHTML=q.opts.map((o,i)=>`<div class="mcq-opt" onclick="selOpt(this,${i})"><div class="opt-circle"></div><span>${o}</span></div>`).join('');
+    document.getElementById('written-inp').value='';document.getElementById('fallback-inp').value='';
+    const opts=mo.querySelectorAll('.mcq-opt');
+    if(QSET.evalOn&&a.submitted&&a.sel!=null){
+      opts.forEach((o,i)=>{o.style.pointerEvents='none';if(i===q.correct)o.classList.add('correct-a');else if(i===a.sel)o.classList.add('wrong-a');});
+    } else if(a.sel!=null&&opts[a.sel]) opts[a.sel].classList.add('sel');
+  } else{mo.style.display='none';wa.style.display='none';no.style.display='block';document.getElementById('fallback-inp').value=a.written||'';}
+  const ae=document.getElementById('ans-err');ae.textContent='Please select an option, or use Skip.';ae.style.display='none';
+  resetFB();
+  if(QSET.evalOn&&a.fb) showFB(a.fb.type,a.fb.ok,a.fb.txt,a.fb.score,a.fb.skipped);
+  startQuizClock();
+  renderActions();
+}
+function renderActions(){
+  const a=QANS[QS.cur]||{};
+  const sb=document.getElementById('submit-btn'),sk=document.getElementById('skip-btn'),nx=document.getElementById('next-btn'),bk=document.getElementById('back-btn');
+  if(QSET.evalOn){
+    if(a.submitted){sb.style.display='none';sk.style.display='none';nx.style.display='';}
+    else{sb.textContent='Submit Answer';sb.style.display='';sk.style.display='';nx.style.display='none';}
+  } else {
+    if(QSET.autoNext){sb.textContent='Answer & Next →';sb.style.display='';sk.style.display='';nx.style.display='none';}
+    else{sb.style.display='none';sk.style.display='none';nx.style.display='';}
+  }
+  bk.style.display=QS.cur>0?'':'none';
+  const aq=document.getElementById('auto-quick');
+  aq.style.display=QSET.evalOn?'none':'';
+  aq.classList.toggle('on',QSET.autoNext);
+  aq.textContent=QSET.autoNext?'Auto Next: On':'Auto Next: Off';
+}
+function selOpt(el,i){
+  const a=QANS[QS.cur];
+  if(QSET.evalOn&&a.submitted)return;
+  document.querySelectorAll('.mcq-opt').forEach(o=>o.classList.remove('sel'));
+  el.classList.add('sel');a.sel=i;
+}
+function saveWritten(el){QANS[QS.cur].written=el.value;}
+function submitAns(){
+  const q=QUIZ_QS[QS.cur],a=QANS[QS.cur];
+  const err=document.getElementById('ans-err');
+  if((q.type==='MCQ'||q.type==='Sim')&&q.opts&&q.opts.length&&a.sel===null){err.textContent='Please select an option, or use Skip.';err.style.display='inline';return;}
+  if(q.type==='Written'&&!a.written.trim()){err.textContent='Please write an answer, or use Skip.';err.style.display='inline';return;}
+  err.style.display='none';
+  commitQTime(QS.cur);
+  a.submitted=true;
+  if(!QSET.evalOn){ if(QSET.autoNext) nextQ(); return; }
+  if(q.type==='Written'){
+    a.fb={type:'loading'};
+    showFB('loading',null,null);
+    setTimeout(()=>{
+      a.fb={type:'score',ok:null,txt:'Solid understanding of F = ma. For full marks: state the proportionality explicitly, specify that mass must be constant, and include a labelled real-world example.',score:0.72};
+      showFB('score',null,a.fb.txt,a.fb.score);
+    },1400);
+  } else {
+    const opts=document.querySelectorAll('.mcq-opt');
+    opts.forEach((o,i)=>{o.style.pointerEvents='none';if(i===q.correct)o.classList.add('correct-a');else if(i===a.sel)o.classList.add('wrong-a');});
+    const ok=a.sel===q.correct;
+    a.fb={type:ok?'correct':'wrong',ok:ok,txt:ok?'Correct! Well done.':'Not quite — the correct answer is '+q.opts[q.correct]+'.'};
+    showFB(a.fb.type,ok,a.fb.txt);
+  }
+  document.getElementById('fb-next').style.display='block';
+  renderActions();
+}
+function skipQ(){
+  const a=QANS[QS.cur];
+  commitQTime(QS.cur);
+  if(!QSET.evalOn){ if(QSET.autoNext) nextQ(); return; }
+  a.submitted=true;a.skipped=true;
+  a.fb={type:'neutral',skipped:true};
+  showFB('neutral',null,null,null,true);
+  document.getElementById('fb-next').style.display='block';
+  renderActions();
+}
+function prevQ(){commitQTime(QS.cur);if(QS.cur>0){QS.cur--;renderQ();}}
+function nextQ(){commitQTime(QS.cur);if(QS.cur<QUIZ_QS.length-1){QS.cur++;renderQ();}else{endQuiz();}}
+function gotoQ(i){commitQTime(QS.cur);QS.cur=i;closeQMap();renderQ();}
+function renderQMap(){
+  const el=document.getElementById('qmap-grid');
+  el.innerHTML=QUIZ_QS.map((q,i)=>{
+    const a=QANS[i];let cls='qmap-chip';
+    if(i===QS.cur)cls+=' cur';
+    else if(QSET.evalOn&&a.submitted&&a.fb&&a.fb.type==='wrong')cls+=' wrong';
+    else if(QSET.evalOn&&(a.skipped||(a.fb&&a.fb.skipped)))cls+=' skip';
+    else if(QSET.evalOn&&a.submitted)cls+=' ok';
+    else if(a.sel!=null||a.submitted)cls+=' ans';
+    return `<button class="${cls}" onclick="gotoQ(${i})">${i+1}</button>`;
+  }).join('');
+}
+function toggleQMap(){
+  const p=document.getElementById('qmap-pop');
+  if(p.style.display==='block'){closeQMap();return;}
+  renderQMap();p.style.display='block';
+}
+function closeQMap(){document.getElementById('qmap-pop').style.display='none';}
+document.addEventListener('click',(e)=>{if(!e.target.closest('.qmap-wrap'))closeQMap();});
+function toggleFB(){document.getElementById('fb-panel').classList.toggle('collapsed');}
+function showFB(type,ok,txt,score,skipped){
+  const v=document.getElementById('fb-verdict'),t=document.getElementById('fb-text'),pl=document.getElementById('fb-placeholder');
+  v.style.display='flex';pl.style.display='none';
+  v.className='fb-verdict';
+  if(type==='correct'){v.classList.add('fv-correct');v.textContent='✓ Correct';}
+  else if(type==='wrong'){v.classList.add('fv-wrong');v.textContent='✗ Incorrect';}
+  else if(type==='score'){v.classList.add('fv-score');v.textContent=`Score: ${score}`;}
+  else if(type==='loading'){v.classList.add('fv-loading');v.textContent='Evaluating…';}
+  else if(type==='time'){v.classList.add('fv-neutral');v.textContent='Time up';}
+  else if(skipped){v.classList.add('fv-neutral');v.textContent='Skipped';}
+  t.textContent=txt||'';
+}
+function resetFB(){
+  document.getElementById('fb-verdict').style.display='none';
+  document.getElementById('fb-text').textContent='';
+  document.getElementById('fb-placeholder').style.display='block';
+  document.getElementById('fb-next').style.display='none';
+}
+function endQuiz(){
+  clearInterval(pTimer);
+  commitQTime(QS.cur);
+  stopTimer();
+  const rt=document.getElementById('report-time');
+  rt.textContent=QSET.timerMode==='off'?'—':QSET.timerMode==='total'?fmtT(QTimer.elapsed)+' / '+fmtT(QSET.timerTotal*60):fmtT(QTimer.elapsed);
+  renderReport();
+  showQState('qs-report');
+}
+function newQuiz(){
+  stopTimer();
+  QTimer.elapsed=0;QTimer.totalRem=0;QTimer.totalInit=false;QTimer.expired=false;
+  chatMsgs=[{r:'ai',t:"Hi Favour! I'll help you design a personalised quiz. Which subjects or topics would you like to focus on today?"}];
+  chatStarted=false;
+  document.getElementById('chat-start').style.display='flex';
+  document.getElementById('chat-msgs').style.display='none';
+  document.getElementById('chat-footer').style.display='none';
+  showQState('qs-chat');
+}
+/* ═══════════════════════════════
+   HISTORY
+═══════════════════════════════ */
+let hSelQuiz=null,hSelQ=null;
+function renderHist(){
+  document.getElementById('hist-quiz-list').innerHTML=M.histQuizzes.map(q=>`
+    <div class="hist-qz-row" data-id="${q.id}" onclick="selHistQuiz('${q.id}')">
+      <div class="hist-qz-title">${q.title}</div>
+      <div class="hist-qz-meta">${q.date} · ${q.completed?'Completed':'Incomplete'}</div>
+    </div>`).join('');
+}
+function selHistQuiz(id){
+  hSelQuiz=M.histQuizzes.find(q=>q.id===id);hSelQ=null;
+  document.querySelectorAll('.hist-qz-row').forEach(r=>r.classList.remove('active'));
+  document.querySelector(`.hist-qz-row[data-id="${id}"]`).classList.add('active');
+  document.getElementById('hist-q-rail').style.display='flex';
+  document.getElementById('hist-q-list').innerHTML=hSelQuiz.questions.map(q=>{
+    let mc='qm-skip',mt='⊘';
+    if(q.skipped){mc='qm-skip';mt='⊘';}
+    else if(q.correct===true){mc='qm-ok';mt='✓';}
+    else if(q.correct===false){mc='qm-bad';mt='✗';}
+    else if(q.score!=null){mc='qm-score';mt=q.score;}
+    return`<div class="hist-q-row" onclick="selHistQ(${q.n})"><div class="q-mark ${mc}">${mt}</div><div>Q${q.n}: ${q.text.substring(0,48)}…</div><div class="hist-q-time">⏱ ${fmtT(q.timeSpent||0)}</div></div>`;
+  }).join('');
+  if(hSelQuiz.questions.length) selHistQ(1);
+}
+function selHistQ(n){
+  hSelQ=hSelQuiz.questions.find(q=>q.n===n);
+  document.querySelectorAll('.hist-q-row').forEach((r,i)=>r.classList.toggle('active',i===n-1));
+  const dp=document.getElementById('hist-q-detail');
+  const q=hSelQ;
+  let ans='';
+  if(q.skipped){ans=`<div class="hist-ans-block"><div class="hist-ans-lbl">Your Answer</div><div class="hist-ans-val" style="color:var(--t3);font-style:italic">Skipped</div></div>`;}
+  else if(q.type==='MCQ'){
+    ans=`<div class="hist-ans-block"><div class="hist-ans-lbl">Your Answer</div><div class="hist-ans-val" style="color:${q.correct?'var(--ja-tx)':'var(--ro-tx)'}">${q.yourAns||'—'}</div></div>`;
+    if(!q.correct) ans+=`<div class="hist-ans-block"><div class="hist-ans-lbl">Correct Answer</div><div class="hist-ans-val" style="color:var(--ja-tx)">${q.stdAns} ✓</div></div>`;
+  } else{
+    ans=`<div class="hist-ans-block"><div class="hist-ans-lbl">Your Answer</div><div class="hist-ans-val">${q.yourAns||'—'}</div></div><div class="hist-ans-block"><div class="hist-ans-lbl">Standard Answer</div><div class="hist-ans-val">${q.stdAns}</div></div><div class="hist-ans-block"><div class="hist-ans-lbl">Score</div><div class="hist-ans-val" style="font-weight:800;color:${q.score>=.5?'var(--ja-tx)':'var(--ro-tx)'}">${q.score??'—'}</div></div>${q.fb?`<div class="hist-ans-block"><div class="hist-ans-lbl">AI Feedback</div><div class="hist-ans-val">${q.fb}</div></div>`:''}`;
+  }
+  dp.innerHTML=`
+    <div class="flex-r g8"><button class="btn btn-ghost btn-sm" onclick="backHistList()">← All Quizzes</button><span class="badge b-neutral">Q${q.n} · ${q.type}</span><span class="badge b-neutral">⏱ ${fmtT(q.timeSpent||0)}</span></div>
+    <div class="q-card"><div class="q-card-bar"><span style="color:#fff;font-size:11.5px;font-weight:800">${q.type} · ${hSelQuiz.title}</span></div><div class="q-card-body">${q.text}</div></div>
+    ${ans}`;
+}
+function backHistList(){
+  document.getElementById('hist-q-rail').style.display='none';
+  document.querySelectorAll('.hist-qz-row').forEach(r=>r.classList.remove('active'));
+  document.getElementById('hist-q-detail').innerHTML='<div class="empty"><div class="empty-ico">📋</div><h3>Select a quiz to review</h3><p>Choose a quiz from the list to see your answers and feedback.</p></div>';
+}
+/* ═══════════════════════════════
+   TUTOR
+═══════════════════════════════ */
+let tutorThreads={},tutorSelQ=null,tutorQuiz=null;
+function renderTutor(){
+  const sel=document.getElementById('tutor-quiz-picker');
+  sel.innerHTML=M.histQuizzes.map(q=>`<option value="${q.id}">${q.title} · ${q.date}</option>`).join('');
+  tutorQuiz=M.histQuizzes[0]||null;
+  if(tutorQuiz) sel.value=tutorQuiz.id;
+  renderTutorQuestions();
+}
+function setTutorQuiz(id){
+  tutorQuiz=M.histQuizzes.find(q=>q.id===id)||null;
+  tutorSelQ=null;
+  document.getElementById('tutor-ctx').style.display='none';
+  document.getElementById('tutor-footer').style.display='none';
+  document.getElementById('tutor-chat').innerHTML='<div class="empty" id="tutor-empty"><div class="empty-ico">💬</div><h3>Select a question to start tutoring</h3><p>Choose from the list to open a dedicated tutoring thread.</p></div>';
+  renderTutorQuestions();
+}
+function renderTutorQuestions(){
+  const qs=tutorQuiz?tutorQuiz.questions:[];
+  document.getElementById('tutor-q-items').innerHTML=qs.map(q=>`
+    <div class="tutor-qi" onclick="selTutorQ(${q.n})">
+      <div class="tutor-qi-num">Q${q.n} · ${q.type}</div>
+      <div class="tutor-qi-prev">${q.text}</div>
+    </div>`).join('');
+}
+function selTutorQ(n){
+  if(!tutorQuiz) return;
+  tutorSelQ=tutorQuiz.questions.find(q=>q.n===n);
+  if(!tutorSelQ) return;
+  document.querySelectorAll('.tutor-qi').forEach((i,idx)=>i.classList.toggle('active',idx===n-1));
+  document.getElementById('tutor-empty').style.display='none';
+  document.getElementById('tutor-ctx').style.display='block';
+  document.getElementById('tutor-footer').style.display='block';
+  document.getElementById('tutor-ctx-card').innerHTML=`
+    <div><div class="tutor-fld-lbl">Question</div><div class="tutor-fld-val">${tutorSelQ.text}</div></div>
+    <div><div class="tutor-fld-lbl">Your Answer</div><div class="tutor-fld-val">${tutorSelQ.yourAns||'—'}</div></div>`;
+  if(!tutorThreads[tutorQuiz.id+'-'+n]) tutorThreads[tutorQuiz.id+'-'+n]=[];
+  renderTutorChat();
+}
+function renderTutorChat(){
+  const c=document.getElementById('tutor-chat');
+  const th=tutorThreads[tutorQuiz.id+'-'+tutorSelQ.n]||[];
+  if(!th.length){c.innerHTML='<div style="font-size:13px;color:var(--t3);text-align:center;margin-top:28px">Ask anything about this question to start your tutoring session.</div>';return}
+  c.innerHTML=th.map(m=>`<div class="chat-bubble ${m.r==='user'?'bubble-user':'bubble-ai'}">${m.t}</div>`).join('');
+  c.scrollTop=c.scrollHeight;
+}
+function sendTutor(){
+  const inp=document.getElementById('tutor-inp'),txt=inp.value.trim();
+  if(!txt||!tutorSelQ||!tutorQuiz) return;
+  inp.value='';autoGrow(inp);
+  const key=tutorQuiz.id+'-'+tutorSelQ.n;
+  tutorThreads[key].push({r:'user',t:txt});
+  renderTutorChat();
+  setTimeout(()=>{
+    tutorThreads[key].push({r:'ai',t:`Let me walk you through that. ${tutorSelQ.stdAns} Does that help clarify things? Feel free to ask a follow-up.`});
+    renderTutorChat();
+  },900);
+}
+/* ═══════════════════════════════
+   FLASHCARDS
+═══════════════════════════════ */
+let fcSt={deck:[],cur:0,got:0,flipped:false};
+function renderFlashcards(){
+  document.getElementById('fc-quiz-decks').innerHTML=`
+    <div class="deck-card" onclick="startDeck()"><div class="deck-src">Quiz</div><div class="deck-title">Newton's Laws</div><div class="deck-meta">Physics · 7 cards</div></div>
+    <div class="deck-card" onclick="startDeck()"><div class="deck-src">Quiz</div><div class="deck-title">Acids & Bases</div><div class="deck-meta">Chemistry · 3 cards</div></div>`;
+  document.getElementById('fc-lib-decks').innerHTML=`
+    <div class="deck-card" onclick="startDeck()"><div class="deck-src">Library</div><div class="deck-title">Stoichiometry</div><div class="deck-meta">Chemistry · 30 cards</div></div>
+    <div class="deck-card" onclick="startDeck()"><div class="deck-src">Library</div><div class="deck-title">Kinematics</div><div class="deck-meta">Physics · 18 cards</div></div>`;
+}
+function startDeck(){
+  fcSt={deck:M.quizDeck,cur:0,got:0,flipped:false};
+  document.getElementById('fc-list-view').style.display='none';
+  document.getElementById('fc-complete').style.display='none';
+  document.getElementById('fc-study').classList.add('active');
+  renderFC();
+}
+function renderFC(){
+  const c=fcSt.deck[fcSt.cur];
+  document.getElementById('fc-front-text').textContent=c.f;
+  document.getElementById('fc-back-text').textContent=c.b;
+  document.getElementById('fc-prog-lbl').textContent=`Card ${fcSt.cur+1} / ${fcSt.deck.length} · Got it: ${fcSt.got}`;
+  document.getElementById('fc-card').classList.remove('flipped');
+  fcSt.flipped=false;document.getElementById('fc-rating').style.display='none';
+}
+function flipCard(){
+  if(fcSt.flipped)return;
+  document.getElementById('fc-card').classList.add('flipped');
+  fcSt.flipped=true;
+  setTimeout(()=>document.getElementById('fc-rating').style.display='flex',250);
+}
+function fcRate(got){
+  if(got)fcSt.got++;
+  fcSt.cur++;
+  if(fcSt.cur>=fcSt.deck.length){
+    document.getElementById('fc-study').classList.remove('active');
+    const comp=document.getElementById('fc-complete');
+    comp.style.display='flex';comp.style.flexDirection='column';
+    document.getElementById('fc-complete-stats').textContent=`${fcSt.deck.length} cards · ${fcSt.got} got it · ${Math.round(fcSt.got/fcSt.deck.length*100)}%`;
+  } else renderFC();
+}
+function fcBack(){
+  document.getElementById('fc-study').classList.remove('active');
+  document.getElementById('fc-complete').style.display='none';
+  document.getElementById('fc-list-view').style.display='flex';
+}
+function fcRestart(){
+  fcSt.cur=0;fcSt.got=0;
+  document.getElementById('fc-complete').style.display='none';
+  document.getElementById('fc-study').classList.add('active');
+  renderFC();
+}
+/* ═══════════════════════════════
+   SETTINGS
+═══════════════════════════════ */
+function setProvider(m){
+  document.getElementById('prov-api').classList.toggle('on',m==='api');
+  document.getElementById('prov-cli').classList.toggle('on',m==='cli');
+  document.getElementById('api-section').style.display=m==='api'?'block':'none';
+  document.getElementById('cli-section').style.display=m==='cli'?'block':'none';
+}
+function scanLib(){
+  setTimeout(()=>{
+    document.getElementById('lib-status').style.display='flex';
+    document.getElementById('lib-tree').style.display='block';
+    document.getElementById('lib-save-row').style.display='flex';
+  },700);
+}
+function saveSetting(id){
+  const el=document.getElementById(id);
+  el.classList.add('show');setTimeout(()=>el.classList.remove('show'),3000);
+}
+function toggleShuffle(el){document.getElementById('shuffle-sub').style.display=el.checked?'flex':'none'}
+function setPane(name){
+  document.querySelectorAll('.set-nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.set===name));
+  document.querySelectorAll('.set-pane').forEach(p=>p.style.display=p.id==='set-pane-'+name?'':'none');
+}
+/* ═══════════════════════════════
+   INIT
+═══════════════════════════════ */
+renderDash();renderHist();renderTutor();renderFlashcards();
+navigate('s-dash');
+syncEvalUI();syncTimerUI();
+// QSP is hidden until quiz is opened
+document.getElementById('qsp').style.display='none';
+</script>
+</body>
+</html>

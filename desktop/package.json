@@ -1,0 +1,30 @@
+{
+  "name": "studykit-desktop",
+  "version": "0.1.0",
+  "description": "StudyKit Electron shell + FastAPI sidecar",
+  "private": true,
+  "main": "dist/node/main/index.js",
+  "scripts": {
+    "dev": "npm run build:node && concurrently -k \"vite\" \"wait-on http://localhost:5173 && cross-env VITE_DEV_SERVER_URL=http://localhost:5173 electron .\"",
+    "build": "npm run build:node && vite build",
+    "build:node": "tsc -p tsconfig.node.json",
+    "start": "npm run build && electron .",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.0.5",
+    "concurrently": "^10.0.4",
+    "cross-env": "^10.1.0",
+    "electron": "^43.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.0",
+    "wait-on": "^9.1.0"
+  }
+}

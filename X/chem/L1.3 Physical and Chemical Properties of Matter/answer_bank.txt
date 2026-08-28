@@ -1,0 +1,40 @@
+1. C [Type: MCQ]
+2. C [Type: MCQ]
+3. B [Type: MCQ]
+4. B [Type: MCQ]
+5. B [Type: MCQ]
+6. B [Type: MCQ]
+7. C [Type: MCQ]
+8. C [Type: MCQ]
+9. B [Type: MCQ]
+10. C [Type: MCQ]
+11. B [Type: MCQ]
+12. C [Type: MCQ]
+13. B [Type: MCQ]
+14. B [Type: MCQ]
+15. B [Type: MCQ]
+16. 8.07 g/cm$^3$ [Type: Hybrid]
+17. Impure [Type: Hybrid]
+18. Homogeneous Mixture [Type: Hybrid]
+19. 70.0% [Type: Hybrid]
+20. Intensive Physical Property [Type: Hybrid]
+21. 2 [Type: Hybrid]
+22. 109.38 g [Type: Hybrid]
+23. Compound [Type: Hybrid]
+24. Increases [Type: Hybrid]
+25. Chemical Change [Type: Hybrid]
+26. (a) Pure substance has constant physical properties throughout. [Type: Theory]
+    (b) Impurities disrupt regular crystal lattice geometry, lowering melting onset and widening range.
+    (c) Pure liquids exhibit constant boiling temperatures during distillation.
+    (d) Ensures correct active dosage and prevents toxic side effects.
+27. (a) Fe = Element, S$_8$ = Element, FeS = Compound, Mixture = Mixture. [Type: Theory]
+    (b) Magnet attracts iron filings from the unheated mixture, but has no effect on FeS.
+    (c) Fixed mass ratio and chemical bonding in compound vs variable composition in mixture.
+28. (a) m = 3.996 mol/kg $\implies$ $\Delta$T$_f$ = 7.43$^\circ$C. [Type: Theory]
+    (b) Freezing point = $-$7.43$^\circ$C.
+    (c) Ionic dissociation (i > 1) depresses the freezing point of water on road surfaces.
+29. (a) Mass dissolved at 60$^\circ$C = 275.0 g. [Type: Theory]
+    (b) Precipitated mass = 275.0 $-$ 80.0 = 195.0 g.
+    (c) Dissolve crude solid in minimum hot solvent, hot filter, cool to crystallize, cold filter, wash, dry.
+30. (a) (i) Physical change; (ii) Chemical change; (iii) Chemical change. [Type: Theory]
+    (b) Physical: colorless, low density, low b.p.; Chemical: highly combustible in O$_2$, acts as reducing agent, reacts with N$_2$ to form NH$_3$.

@@ -1,0 +1,880 @@
+AI_Brainstorm - extracted chat transcript
+
+--- Page 1 ---
+User
+If you got te daignostic report from the daignosis agents, the concpt block and question banks, how exactly would
+the rport determine your next action of selecting questions [when user also says at the end of the chat what extra
+they want maybe a particular topic more or skill type of question e.g more calculation]
+Gemini
+This is where the entire system transitions from assessment to execution. You are moving from the Chat Stage
+into the Blueprint Compiler Stage.
+At this point, the system has a wealth of data. It takes the Diagnostic Payload (from your 4 background agents), the
+Concept Block, the Question Bank, and your final user request, and runs them through a deterministic allocation
+algorithm to pull the exact questions.
+Here is exactly how that final report determines the question selection.
+1. Constructing the Question Quota (The Allocation Algorithm)
+The Blueprint Compiler first decides how many questions to pull for each category before it looks at the actual
+question bank. It uses a hierarchy of needs based on the drill-recommender and the knowledge-graph-
+builder.
+If you requested a 10-question quiz, the system allocates slots based on this strict priority order:
+P r io r it y  L e v e l T r ig g e r e d  B y G o a l Q u o t a  S h a r e
+( E x a m p le )
+P r i o r i t y  1 :  T h e
+F o u n d a t i o n
+p r e r e q u i s i t e _ f l a
+w  o r  d e f i c i t  o n
+f o u n d a t io n a l n o d e s .
+F ix  s t r u c t u r a l c r a c k s
+b e f o r e  b u ild in g
+h ig h e r.
+4 0 %  ( 4  q u e s t io n s )
+P r i o r i t y  2 :  T h e  C o r e
+G a p s
+c o n c e p t u a l _ g a p
+o n  t h e  m a in  t o p ic .
+T a r g e t  d ir e c t
+m is u n d e r s t a n d in g s
+w it h
+c o n c e p t _ d r i l l s
+a n d
+m i s c o n c e p t i o n _ d r
+i l l s .
+3 0 %  ( 3  q u e s t io n s )
+P r i o r i t y  3 :  T h e
+F r a g i l e  K n o w l e d g e
+m e m o r i z e d  s t a t e
+f r o m  t h e
+m e c h a n i s m -
+e v a l u a t o r .
+F o r c e  a p p lic a t io n
+v ia
+t r a n s f e r _ d r i l l s
+t o  b r e a k  r o t e
+m e m o r iz a t io n .
+2 0 %  ( 2  q u e s t io n s )
+P r i o r i t y  4 :  T h e
+C e i l i n g
+m a s t e r e d  s t a t e . P u s h  lim it s  u s in g
+s y n t h e s i s _ d r i l l
+1 0 %  ( 1  q u e s t io n )
+P r io r it y  L e v e l T r ig g e r e d  B y G o a l Q u o t a  S h a r e
+( E x a m p le )
+P r i o r i t y  1 :  T h e
+F o u n d a t i o n
+p r e r e q u i s i t e _ f l a
+w  o r  d e f i c i t  o n
+f o u n d a t io n a l n o d e s .
+F ix  s t r u c t u r a l c r a c k s
+b e f o r e  b u ild in g
+h ig h e r.
+4 0 %  ( 4  q u e s t io n s )
+P r i o r i t y  2 :  T h e  C o r e
+G a p s
+c o n c e p t u a l _ g a p
+o n  t h e  m a in  t o p ic .
+T a r g e t  d ir e c t
+m is u n d e r s t a n d in g s
+w it h
+c o n c e p t _ d r i l l s
+a n d
+m i s c o n c e p t i o n _ d r
+i l l s .
+3 0 %  ( 3  q u e s t io n s )
+P r i o r i t y  3 :  T h e
+F r a g i l e  K n o w l e d g e
+m e m o r i z e d  s t a t e
+f r o m  t h e
+m e c h a n i s m -
+e v a l u a t o r .
+F o r c e  a p p lic a t io n
+v ia
+t r a n s f e r _ d r i l l s
+t o  b r e a k  r o t e
+m e m o r iz a t io n .
+2 0 %  ( 2  q u e s t io n s )
+P r i o r i t y  4 :  T h e
+C e i l i n g
+m a s t e r e d  s t a t e . P u s h  lim it s  u s in g
+s y n t h e s i s _ d r i l l
+1 0 %  ( 1  q u e s t io n )
+
+--- Page 2 ---
+2. Applying the User Override (The Final Filter)
+Your final chat request acts as a modifier layer on top of the system's quota. The system respects your autonomy
+without sacrificing its diagnostic integrity.
+If you ask for a specific topic: The system shifts the quota weight heavily toward that topic, but still applies
+the diagnostic logic within that topic. (e.g., If you ask for Quadratic Equations, it gives you Quadratic questions,
+but focuses them on your specific prerequisite flaws).
+If you ask for a specific format (e.g., "more calculations"): The system applies a metadata filter to the final
+database query. It will look for the required concept_drill or transfer_drill, but append AND format =
+'calculation' to the query.
+3. The Database Execution (Matching Tags)
+Once the quota and filters are set, the Blueprint Compiler translates the agent reports into direct database queries
+against the Question Bank.
+Every question in your bank must have metadata tags linking it back to the Concept Block. The system executes
+queries like this:
+For a Prerequisite Flaw:
+Agent Signal: misconception-classifier flagged a distributive property error while factoring.
+Compiler Query: Pull 2 questions where topic = 'Distributive Property' AND drill_type =
+'prerequisite_drill'.
+For Memorized Understanding:
+Agent Signal: mechanism-evaluator flagged standard formula application as memorized.
+Compiler Query: Pull 2 questions where topic = 'Quadratic Formula' AND drill_type =
+'transfer_drill'.
+For User Request (Calculations):
+Agent Signal: User requested "more calculations".
+Compiler Query: Take the prioritized list and filter where question_style = 'quantitative'.
+4. Conflict Resolution (System vs. User)
+Sometimes what the user wants contradicts what the diagnostic report says they need.
+Scenario: You ask for "advanced synthesis questions on factoring," but the misconception-classifier flagged
+that you completely misunderstand negative number distribution (a prerequisite). Resolution: The Blueprint
+Compiler splits the difference using a "Sandwich Method." It will start the quiz with the prerequisite drills you actually
+P r io r it y  L e v e l T r ig g e r e d  B y G o a l Q u o t a  S h a r e
+( E x a m p le )
+s  o r  e le v a t io n
+q u e s t io n s .
+P r io r it y  L e v e l T r ig g e r e d  B y G o a l Q u o t a  S h a r e
+( E x a m p le )
+s  o r  e le v a t io n
+q u e s t io n s .
+
+--- Page 3 ---
+need to fix the gap, but it will place 1 or 2 advanced synthesis questions at the very end to fulfill your explicit
+request.
+This ensures you don't get frustrated by the system ignoring your commands, but you still get the foundational
+repair the background agents identified.
+
+--- Page 4 ---
+User
+You mentioned `Every question in your bank must have metadata tags linking it back to the Concept Block` what did
+you mean. [Just to note, I am making use of an agent based system ]
+Gemini
+Because your system relies on silent diagnostic agents and an automated Blueprint Compiler, the system cannot
+pick questions based on reading the full text of a question on the fly. That would be too slow, inconsistent, and
+expensive.
+Instead, every question in your Question Bank needs a structured JSON wrapper—a set of metadata tags—that
+translates the question's properties into data your agents can query.
+The Concept Block serves as the single source of truth for topic names, skill names, and trap definitions. The
+metadata tags on a question explicitly declare which exact parts of the Concept Block that question tests.
+What a Tagged Question Looks Like
+Here is an example of how a standard math question is stored in your bank so the agents and Blueprint Compiler
+can read it:
+{
+  "question_id": "q_algebra_1042",
+  "question_text": "Solve for x: 2(x - 3) = 14",
+  "answer_keys": {
+    "correct_answer": "10",
+    "distractors": {
+      "4": "Caused by adding 3 instead of dividing first or mis-distributing",
+      "7": "Caused by forgetting to distribute 2 to -3"
+    }
+  },
+  "metadata": {
+    "subject": "Mathematics",
+    "topic": "Linear Equations",
+    "concept_name": "Multi-Step Equations with Distribution",
+    // 1. Direct links to Concept Block fields
+    "targeted_core_skill": "Distributing coefficients across parentheses",
+    "targeted_misconception": "Partial Distribution (distributing to the first term onl
+    "targeted_trap": "Negative sign distribution flip",
+    "prerequisites_tested": ["Basic Arithmetic", "Combining Like Terms"],
+    // 2. Direct links to Agent classifications
+    "drill_type": "concept_drill",          // Matches drill-recommender categories
+    "cognitive_depth": "procedural",         // Matches mechanism-evaluator (procedural
+    "question_style": "calculation",         // Matches user explicit requests ("more c
+JSON
+
+--- Page 5 ---
+Why This Metadata is Essential for Your Agent Pipeline
+1. It Completes the Link to the drill-recommender
+Your drill-recommender agent outputs specific drill types like prerequisite_drill, transfer_drill, or
+misconception_drill. The metadata tag "drill_type" allows the Blueprint Compiler to instantly filter the bank
+for exact matches without guessing.
+2. It Enables Targeted Error Repair
+If the misconception-classifier identifies that a student has a conceptual_gap around Negative Sign
+Distribution, the Blueprint Compiler searches for:
+Because the question was tagged with that exact misconception from the Concept Block, the compiler grabs the
+exact right tool for the job.
+3. It Fulfills the Mechanism Evaluator's Signals
+If the mechanism-evaluator notes that a student's understanding is purely memorized (they know the steps but
+not the why), the system needs a question that forces conceptual reasoning. It looks for questions tagged with
+"cognitive_depth": "conceptual" or "drill_type": "transfer_drill" rather than standard procedural
+drills.
+4. It Makes User Overrides Trivial
+When the user says at the end of the chat, "Give me more calculation questions on Quadratics," the compiler simply
+appends: AND question_style = 'calculation' to its database filter.
+Summary
+Think of metadata tags as barcode labels on boxes in a warehouse.
+The Concept Block defines what items exist. The diagnostic agents figure out which items the student needs. The
+metadata tags ensure the Blueprint Compiler can grab the exact box off the shelf in milliseconds.
+    "difficulty_rating": 2                   // Scale of 1-5 for blueprint balancing
+  }
+}
+SELECT question_id FROM question_bank
+WHERE targeted_misconception  'Negative Sign Distribution'
+=
+SQL
+
+--- Page 6 ---
+User
+Hold on
+Gemini
+I'm holding! Take your time. What's on your mind?
+
+--- Page 7 ---
+User
+If you were building a workflow for this next stage [I use agents/AIs for all reasoning including picking questions],
+outline a plan. In the prompts I shared erliers the agents all run the pre quiz chat work flow I tried to break down the
+task to a level where every agent is purely objective oriented - reducing hallucinative and decision making risk - I
+tried to really utilise task breakdown and task delegation.
+Gemini
+To maintain your strict philosophy of atomized, single-objective agents—eliminating hallucination and over-
+reaching AI decisions—the Blueprint & Question Selection Stage should run as a deterministic, multi-agent
+assembly line.
+No single agent should ever both analyze and select and sequence questions. Each agent performs one cognitive
+micro-task and passes its structured JSON output to the next.
+Here is the complete workflow plan for this stage.
+The 5-Agent Blueprint & Selection Workflow
+1. Agent 1: Diagnostic Quota Planner
+Mode: Single-Objective Reasoning
+Input:
+Reports from the 4 background diagnostic agents.
+User’s final explicit request (e.g., "10 questions, focus more on calculations").
+[4 Diagnostic Reports + User Request]
+                 │
+                 ▼
+     [Agent 1: Quota Planner]
+                 │
+                 ▼
+  [Agent 2: Metadata Query Specifier]
+                 │
+                 ▼
+   [Agent 3: Candidate Evaluator] ──(Queries Bank)──> [Candidate Question Pool]
+                 │
+                 ▼
+    [Agent 4: Sequence Builder]
+                 │
+                 ▼
+    [Agent 5: Compliance Auditor]
+                 │
+                 ▼
+        [Final Quiz Payload]
+
+--- Page 8 ---
+Objective: Determine the exact numerical distribution of question types needed to resolve gaps while
+respecting user preferences.
+Output (JSON): A strict breakdown manifest.
+2. Agent 2: Metadata Query Specifier
+Mode: Schema Translation
+Input:
+Quota Manifest from Agent 1.
+Selected Topic Concept Blocks (JSON).
+Objective: Translate each slot in the manifest into exact, non-ambiguous search parameters matching the
+Question Bank schema.
+Output (JSON): A list of precise database lookup specs.
+{
+  "total_questions": 10,
+  "slot_breakdown": [
+    { "slot_range": [1, 3], "category": "prerequisite_repair", "topic": "Distributi
+    { "slot_range": [4, 6], "category": "conceptual_gap", "topic": "Quadratic Formu
+    { "slot_range": [7, 8], "category": "transfer_mechanism", "topic": "Completing
+    { "slot_range": [9, 10], "category": "user_preference", "topic": "Factoring", "
+  ]
+}
+{
+  "search_queries": [
+    {
+      "slot": 1,
+      "target_topic": "Algebra",
+      "target_misconception": "Partial Distribution",
+      "drill_type": "prerequisite_drill",
+      "required_style": "calculation"
+    }
+    // //. repeated for each slot
+JSON
+JSON
+
+--- Page 9 ---
+3. Agent 3: Candidate Evaluator & Selector
+Mode: Evaluation & Matching
+Input:
+Query Specs from Agent 2.
+A pre-filtered candidate pool of tagged questions fetched from the Question Bank matching the query
+specs.
+Objective: Read the shortlisted candidate questions and pick the single best matching question_id for
+each slot based on the exact error details described in the research reports.
+Constraint: Cannot alter the slots or create new questions. It only evaluates and picks from candidate choices.
+Output (JSON): Selected question_id mapping.
+4. Agent 4: Pedagogical Sequence Builder
+Mode: Flow Optimization
+Input:
+Selected question_ids from Agent 3.
+Diagnostic priority profile.
+Objective: Order the selected questions to build the optimal psychological and learning pacing for the student
+(e.g., Warm-up  Foundation Repair  Core Challenge  User Request Finale).
+Output (JSON): Final ordered sequence of question IDs with pacing metadata.
+5. Agent 5: Compliance Auditor (Quality Control)
+Mode: Validation & Audit
+Input:
+Ordered Quiz from Agent 4.
+Original Diagnostic Payload + User Request.
+  ]
+}
+{
+  "selected_quiz_items": [
+    { "slot": 1, "question_id": "q_alg_1042", "selection_rationale": "Directly targ
+  ]
+}
+→ → →
+JSON
+
+--- Page 10 ---
+Objective: Run a strict quality check before delivering the quiz to the user interface.
+Verification Checks:
+[ ] Are there duplicate questions?
+[ ] Does the quiz contain the exact number of requested questions?
+[ ] Was the user's explicit formatting/topic request fulfilled?
+[ ] Does every question ID exist in the bank?
+Output: STATUS: PASSED (delivers payload to app) OR STATUS: FAILED (triggers a targeted retry call to the
+specific faulty agent).
+Why This Architecture Guarantees Stability
+1. Zero Hallucinated Questions: Agents 1, 2, 4, and 5 do not interact with question content directly, and Agent 3
+can only select from real, existing IDs in your bank pool.
+2. Deterministic Fallbacks: If Agent 3 finds no candidate questions for a very specific query spec, it flags a
+MISSING_BANK_ITEM error, allowing a fallback script to immediately widen the query tags without crashing the
+workflow.
+3. Traceability: If a user gets a bad quiz, you can inspect the exact output of each agent in the chain to see
+where the breakdown happened.
+Do you want to draft the system prompt for Agent 1 (Diagnostic Quota Planner) next, or look into how Agent 3
+handles edge cases when candidate question matches are slim?
+
+--- Page 11 ---
+User
+I need you to walk me through the workings of each stage, what i the function, what are the process in each. Let
+start with Agent 1
+Gemini
+Here is the complete operational breakdown for Agent 1: Diagnostic Quota Planner, designed strictly around your
+single-objective, low-hallucination architecture.
+Agent 1: Diagnostic Quota Planner
+1. Primary Function
+Agent 1’s sole purpose is slot allocation. It acts as a mathematical translator: it reads the qualitative diagnostic
+reports (research summaries from the 4 background agents) alongside the user's explicit final chat request, and
+outputs a strict, numerical Quota Breakdown Manifest.
+It does not read question text, search the database, or design question prompts. It simply calculates how many
+slots out of the total quiz count will go to each specific learning objective.
+2. Inputs & Context
+Agent 1 receives three structured inputs at the end of the chat session:
+1. The Diagnostic Research Payload: The latest reports from knowledge-graph-builder, misconception-
+classifier, mechanism-evaluator, and drill-recommender.
+2. The User Preference Flag: The user's final message in chat (e.g., "Make it 10 questions and focus more on
+calculations").
+3. Quiz Parameters: System defaults, such as total_questions = 10.
+3. Step-by-Step Internal Process
+Step 1: Priority Hierarchy Evaluation
+[4 Research Reports + User Request]
+                 │
+                 ▼
+     1. Priority Hierarchy Evaluation
+                 │
+                 ▼
+     2. Mathematical Quota Calculation
+                 │
+                 ▼
+     3. User Preference Adjustment (Override)
+                 │
+                 ▼
+     4. Manifest Output Generation
+
+--- Page 12 ---
+Agent 1 scans the research reports to rank learning needs according to a fixed priority waterfall:
+Priority 1 (Fix Cracks): prerequisite_flaw or foundational deficit nodes (from misconception-
+classifier & knowledge-graph-builder).
+Priority 2 (Target Gaps): Core conceptual_gap items on the active topic.
+Priority 3 (Test Intuition): Concepts flagged as purely memorized (from mechanism-evaluator) that need
+transfer testing.
+Priority 4 (Stretch/Mastery): mastered nodes flagged for elevation/synthesis.
+Step 2: Mathematical Quota Calculation
+Using the prioritized list from Step 1, Agent 1 maps those needs onto the total question count. For a standard 10-
+question quiz:
+If severe prerequisite flaws exist  Allocates 3–4 slots to prerequisite repair.
+If core concept gaps exist  Allocates 3–4 slots to concept/misconception drills.
+If formula memorization is flagged  Allocates 2 slots to mechanism/transfer drills.
+Step 3: User Preference Adjustment
+Agent 1 evaluates the user's final message to apply modifiers:
+Topic Modifier: If the user explicitly requested a specific sub-topic, Agent 1 re-allocates the majority of the slots
+to that sub-topic, while maintaining the diagnostic priorities within that sub-topic.
+Style Modifier: If the user asked for a specific format (e.g., "more calculations"), Agent 1 appends a formatting
+tag constraint (e.g., "required_style": "calculation") to the slots.
+Step 4: Output Generation
+Agent 1 formats its decision into a clean, un-nested JSON schema that contains no prose or conversational filler.
+4. Output Schema (The Quota Breakdown Manifest)
+{
+  "quiz_metadata": {
+    "total_questions": 10,
+    "primary_objective": "Prerequisite repair and conceptual transfer"
+  },
+  "slot_allocations": [
+    {
+      "slot_number": 1,
+      "objective_type": "prerequisite_repair",
+      "topic": "Distributive Property",
+      "target_issue": "Partial Distribution Error",
+      "style_constraint": "calculation"
+    },
+    {
+JSON
+
+--- Page 13 ---
+Why This Design Works
+By restricting Agent 1 solely to numerical allocation and category tagging, you prevent it from:
+Inventing questions out of thin air.
+Making assumptions about what questions exist in your database.
+Losing track of user preferences vs. diagnostic requirements.
+When Agent 1 finishes, it passes this manifest directly to Agent 2: Metadata Query Specifier.
+Ready to move to Agent 2, or would you like to tweak Agent 1's process first?
+      "slot_number": 2,
+      "objective_type": "prerequisite_repair",
+      "topic": "Distributive Property",
+      "target_issue": "Negative Sign Distribution",
+      "style_constraint": "calculation"
+    },
+    {
+      "slot_number": 3,
+      "objective_type": "conceptual_gap",
+      "topic": "Quadratic Equations",
+      "target_issue": "Discriminant Interpretation",
+      "style_constraint": "none"
+    },
+    {
+      "slot_number": 4,
+      "objective_type": "transfer_mechanism",
+      "topic": "Quadratic Formula",
+      "target_issue": "Memorized Formula Reliance",
+      "style_constraint": "calculation"
+    }
+    // //. remaining slots up to 10
+  ]
+}
+
+--- Page 14 ---
+User
+Agent 2
+Gemini
+Here is the complete operational breakdown for Agent 2: Metadata Query Specifier, built to fit your single-
+objective, deterministic pipeline for the Blueprint Stage.
+Agent 2: Metadata Query Specifier
+1. Primary Function
+Agent 2’s sole purpose is schema translation and search parameter specification.
+It takes the abstract quota allocation from Agent 1 (e.g., "Slot 1: Prerequisite repair on Distributive Property for
+Partial Distribution Error") and translates it into an exact, unambiguous set of database search criteria matching
+your Question Bank metadata schema.
+It does not read question text, search the database, or rank candidate questions. It simply converts learning
+objectives into standardized, queryable metadata filters.
+2. Inputs & Context
+1. The Quota Breakdown Manifest: The structured JSON output from Agent 1.
+2. The Concept Block Taxonomy / Index: The canonical reference list of topic names, core skills,
+misconceptions, traps, and prerequisite names extracted from the Concept Blocks.
+3. Step-by-Step Internal Process
+Step 1: Slot Unpacking & Taxonomy Alignment
+Agent 2 reads each slot in Agent 1's manifest and normalizes all topic and misconception descriptions against the
+canonical strings in your Concept Block taxonomy.
+[Quota Manifest from Agent 1 + Concept Block Taxonomy]
+                          │
+                          ▼
+        1. Slot Unpacking & Taxonomy Alignment
+                          │
+                          ▼
+        2. Drill Type & Cognitive Level Mapping
+                          │
+                          ▼
+        3. Constraint & User Preference Injection
+                          │
+                          ▼
+        4. Query Spec Manifest Generation
+
+--- Page 15 ---
+Example: If Agent 1 writes "target_issue": "Partial Distribution Error", Agent 2 aligns it to the exact
+metadata tag "targeted_misconception": "Partial Distribution".
+Step 2: Drill Type & Cognitive Level Mapping
+Agent 2 maps Agent 1's objective_type to the exact drill_type enums defined in your system taxonomy:
+prerequisite_repair  "drill_type": "prerequisite_drill"
+conceptual_gap  "drill_type": "misconception_drill" or "concept_drill"
+transfer_mechanism  "drill_type": "transfer_drill"
+mastery_elevation  "drill_type": "synthesis_drill"
+Step 3: Constraint & Fallback Layering
+Agent 2 builds both strict primary filters and relaxed fallback filters for each slot:
+Primary Query: Strict match on topic + targeted misconception + drill type + user style preference.
+Fallback Query: If the primary query returns 0 candidates, a wider safety filter drops non-essential tags (e.g.,
+drops targeted_misconception but retains topic and drill_type) to ensure the pipeline never halts.
+Step 4: Output Generation
+Agent 2 formats its query specifications into a clean, deterministic JSON array containing query objects for every
+slot.
+4. Output Schema (The Query Specification Manifest)
+{
+  "query_specs": [
+    {
+      "slot_number": 1,
+      "primary_filter": {
+        "subject": "Mathematics",
+        "topic": "Linear Equations",
+        "drill_type": "prerequisite_drill",
+        "targeted_misconception": "Partial Distribution",
+        "question_style": "calculation"
+      },
+      "fallback_filter": {
+        "subject": "Mathematics",
+        "topic": "Linear Equations",
+        "drill_type": "prerequisite_drill",
+        "question_style": "calculation"
+      }
+    },
+    {
+JSON
+
+--- Page 16 ---
+Why This Design Works
+1. Zero Hallucination: Agent 2 works strictly with predefined tag lists and database keys—it cannot invent non-
+existent database fields.
+2. Database Schema Isolation: The database query interface doesn't need to understand complex diagnostic
+reasoning; it only needs to execute simple metadata key-value filtering.
+3. Resilience via Fallbacks: By defining structured fallbacks upfront, you prevent database lookup failures if a
+niche tag combination yields no questions in your question bank.
+When Agent 2 completes this specification, the database is queried using these parameters to return a Candidate
+Question Pool for each slot.
+Ready to move to Agent 3: Candidate Evaluator & Selector?
+      "slot_number": 2,
+      "primary_filter": {
+        "subject": "Mathematics",
+        "topic": "Quadratic Equations",
+        "drill_type": "transfer_drill",
+        "targeted_core_skill": "Discriminant Interpretation",
+        "cognitive_depth": "conceptual",
+        "question_style": "any"
+      },
+      "fallback_filter": {
+        "subject": "Mathematics",
+        "topic": "Quadratic Equations",
+        "drill_type": "transfer_drill"
+      }
+    }
+  ]
+}
+
+--- Page 17 ---
+User
+Agent 3
+Gemini
+Here is the complete operational breakdown for Agent 3: Candidate Evaluator & Selector, designed around your
+single-objective, zero-hallucination philosophy.
+Agent 3: Candidate Evaluator & Selector
+1. Primary Function
+Agent 3’s sole purpose is semantic evaluation and matching.
+It receives the Candidate Question Pool (the actual questions retrieved from the Question Bank database using
+Agent 2’s query specifications) and compares them against the nuanced diagnostic details in the 4 background
+research reports. It picks the single best matching question_id for each slot.
+Crucial Constraint: Agent 3 never writes questions, generates text, or edits problem content. It operates purely as
+a decision-maker picking from a finite set of verified database items.
+2. Inputs & Context
+1. Query Specs from Agent 2: The slot-by-slot filter requirements and fallback criteria.
+2. The Candidate Question Pool: A JSON list of candidate questions returned by the database for each query
+spec (including question text, correct answers, distractor rationales, and metadata).
+3. The Diagnostic Research Payload: The full qualitative reports from knowledge-graph-builder,
+misconception-classifier, mechanism-evaluator, and drill-recommender.
+3. Step-by-Step Internal Process
+Step 1: Candidate Pool Matching
+[Query Specs + Candidate Question Pool + Research Payload]
+                          │
+                          ▼
+        1. Candidate Pool Matching per Slot
+                          │
+                          ▼
+        2. Semantic Fit & Distractor Alignment
+                          │
+                          ▼
+        3. Fallback Triggering (If Pool is Empty)
+                          │
+                          ▼
+        4. Selected Items Manifest Generation
+
+--- Page 18 ---
+Agent 3 groups the candidate questions fetched from the database by their assigned slot numbers.
+Step 2: Semantic Fit & Distractor Alignment
+For each slot with multiple candidate questions, Agent 3 evaluates which candidate offers the highest diagnostic
+value:
+Distractor Matching: It checks if the candidate question's distractor options directly reflect the specific mistake
+the student made in chat (as analyzed by misconception-classifier).
+Depth Check: If mechanism-evaluator flagged that the student relies on memorized steps, Agent 3 prefers
+candidates whose metadata or question structure requires conceptual explanation or novel transfer over
+standard plug-and-chug computation.
+Step 3: Fallback Resolution
+If a primary query spec yields zero candidate questions from the database:
+1. Agent 3 automatically requests the candidate pool resulting from Agent 2’s Fallback Query Spec (which drops
+secondary filters like specific distractor tags while maintaining topic and drill type).
+2. If even the fallback pool is empty, Agent 3 outputs a flagged status: "status": "MISSING_BANK_ITEM",
+allowing the orchestration system to trigger an alert or pull a closely related standard question.
+Step 4: Output Generation
+Agent 3 produces a clean mapping of slot_number to selected_question_id, complete with a brief selection
+rationale for system auditability.
+4. Output Schema (Selected Items Manifest)
+{
+  "selection_summary": {
+    "total_slots": 10,
+    "successful_matches": 10,
+    "fallback_used_count": 1
+  },
+  "selected_items": [
+    {
+      "slot_number": 1,
+      "selected_question_id": "q_alg_1042",
+      "match_confidence": "high",
+      "used_fallback": false,
+      "selection_rationale": "Question distractor (option B) specifically traps partial
+    },
+    {
+      "slot_number": 2,
+      "selected_question_id": "q_quad_3081",
+      "match_confidence": "moderate",
+JSON
+
+--- Page 19 ---
+5. Why This Design Works
+1. Eliminates AI Hallucinations: Because Agent 3 is given a pre-filtered list of existing database items, it cannot
+invent imaginary mathematical problems or invalid answer keys.
+2. Deep Diagnostic Relevance: Instead of just picking a random "Quadratic" question, Agent 3 checks whether a
+question's specific distractors match the exact error pattern logged during the chat.
+3. Graceful Degradation: If your question bank is small or lacks a very specific niche trap, Agent 3 uses fallback
+pools seamlessly without crashing the workflow.
+Once Agent 3 completes this selection, the chosen array of question_ids is handed off to Agent 4: Pedagogical
+Sequence Builder.
+Ready to move to Agent 4, or would you like to tweak Agent 3's matching criteria first?
+      "used_fallback": true,
+      "selection_rationale": "Primary filter yielded no matches. Fallback filter select
+    }
+  ]
+}
+
+--- Page 20 ---
+User
+Agent 4
+Gemini
+Here is the complete operational breakdown for Agent 4: Pedagogical Sequence Builder, structured specifically
+for your single-objective, deterministic pipeline.
+Agent 4: Pedagogical Sequence Builder
+1. Primary Function
+Agent 4’s sole purpose is ordering and cognitive pacing optimization.
+It takes the unordered bag of selected question_ids from Agent 3 and arranges them into a psychologically and
+pedagogically sound sequence for the quiz.
+It does not select questions, alter question text, or modify answer keys. It purely determines the presentation order
+to maximize student engagement, prevent early frustration, and build diagnostic confidence.
+2. Inputs & Context
+1. Selected Items Manifest from Agent 3: The list of chosen question_ids along with their metadata (topic,
+drill_type, difficulty rating, cognitive depth).
+2. Diagnostic Priority Profile: Research summaries from knowledge-graph-builder and misconception-
+classifier indicating student anxiety level or foundational stability.
+3. Step-by-Step Internal Process
+Step 1: Cognitive Arc & Pacing Curve Mapping
+Agent 4 selects an appropriate Pacing Arc Template based on the student's overall diagnostic profile:
+[Selected Items from Agent 3 + Diagnostic Priority Profile]
+                          │
+                          ▼
+        1. Cognitive Arc & Pacing Curve Mapping
+                          │
+                          ▼
+        2. Slot Sorting & Sequencing Rules
+                          │
+                          ▼
+        3. Context-Switching Optimization
+                          │
+                          ▼
+        4. Final Sequenced Quiz Manifest Generation
+
+--- Page 21 ---
+The "Repair First" Arc (Default for high prerequisite flaws): * Warm-up / Confidence Builder  Prerequisite
+Repair  Core Concept Gaps  Transfer / Elevation  User Preference Finale.
+The "Ramp Up" Arc (For students with high formula memorization): * Standard Procedural Drill
+Mechanism / Transfer Check  Prerequisite Polish  Synthesis.
+Step 2: Slot Sorting & Rule Execution
+Agent 4 applies deterministic sequencing rules to place each selected item into its ideal position:
+1. Position 1 (The Gateway): Must be an approachable item ( difficulty_rating  or a standard
+concept_drill) to anchor confidence.
+2. Positions 2–4 (Foundational Repair): Place prerequisite_drill items early so foundational gaps are
+addressed before dependent core concepts are tested.
+3. Positions 5–7 (Core Challenge): Place misconception_drill and transfer_drill items where cognitive
+energy is highest.
+4. Positions 8–10 (Elevation & User Request): Place synthesis_drill items or explicit user-requested
+formats (e.g., custom calculation drills) near the end.
+Step 3: Context-Switching Optimization
+Agent 4 minimizes jarring topic jumps by grouping items with shared parent topics while maintaining the pacing
+curve (e.g., placing both Linear Equation items back-to-back before shifting to Quadratic Equations).
+Step 4: Output Generation
+Agent 4 outputs a structured, ordered manifest where every item receives a sequence_index, explicit
+pacing_stage, and position_rationale.
+4. Output Schema (Sequenced Quiz Manifest)
+→ → →
+→ →
+≤2
+{
+  "sequence_metadata": {
+    "total_questions": 10,
+    "pacing_strategy": "Repair First Arc",
+    "target_cognitive_flow": "Confidence Anchor /> Prerequisite Fix /> Core Misconcepti
+  },
+  "ordered_quiz_sequence": [
+    {
+      "sequence_index": 1,
+      "question_id": "q_alg_1010",
+      "pacing_stage": "Warm-up / Confidence Anchor",
+      "topic": "Linear Equations",
+      "drill_type": "concept_drill",
+      "position_rationale": "Simple procedural linear equation to establish baseline co
+    },
+    {
+JSON
+
+--- Page 22 ---
+5. Why This Design Works
+1. Prevents Cognitive Overload: Throwing a student directly into their hardest prerequisite trap on Question 1
+causes frustration. Agent 4 guarantees a structured onboarding arc.
+2. Logical Flow: Grouping related sub-topics reduces context-switching friction while ensuring that prerequisite
+repairs precede dependent higher-level questions.
+3. Full Auditability: Every question's position in the test is explicitly justified, making it easy to tune pedagogical
+pacing rules over time.
+With the ordered sequence finalized, the manifest passes to the final agent in the assembly line: Agent 5:
+Compliance Auditor.
+Ready to move to Agent 5, or would you like to refine Agent 4's pacing rules first?
+      "sequence_index": 2,
+      "question_id": "q_alg_1042",
+      "pacing_stage": "Prerequisite Repair",
+      "topic": "Linear Equations",
+      "drill_type": "prerequisite_drill",
+      "position_rationale": "Fixes partial distribution error while staying in the Line
+    },
+    {
+      "sequence_index": 3,
+      "question_id": "q_quad_2015",
+      "pacing_stage": "Core Concept Gap",
+      "topic": "Quadratic Equations",
+      "drill_type": "misconception_drill",
+      "position_rationale": "Transitions into Quadratics to address main topic misconce
+    }
+    // //. remaining questions ordered up to 10
+  ]
+}
+
+--- Page 23 ---
+User
+Agent 5
+Gemini
+Here is the complete operational breakdown for Agent 5: Compliance Auditor, completing the 5-agent Blueprint &
+Selection assembly line.
+Agent 5: Compliance Auditor
+1. Primary Function
+Agent 5’s sole purpose is quality assurance, policy validation, and error trapping.
+It acts as the final gatekeeper between the multi-agent generation pipeline and the student-facing quiz app. It
+inspects the completed sequence from Agent 4 against a strict set of business logic rules, database integrity
+requirements, and user preferences.
+It never creates, reorders, or edits question content directly. It simply evaluates the entire generated quiz package
+and either approves it for deployment or issues a targeted rebuild directive to a specific faulty upstream agent.
+2. Inputs & Context
+1. Sequenced Quiz Manifest from Agent 4: The ordered list of question_ids, pacing stages, and rationales.
+2. Original Diagnostic Payload: The research reports from the 4 background agents ( knowledge-graph-
+builder, misconception-classifier, mechanism-evaluator, drill-recommender).
+3. User's Final Chat Message: The raw user request (e.g., "10 questions, focus on calculations").
+4. Database Verification Checklist: The system schema validator (ensures IDs exist and payloads are
+complete).
+3. Step-by-Step Internal Process
+[Sequenced Quiz + Diagnostic Payload + User Request]
+                          │
+                          ▼
+         1. Structural & Integrity Audit
+                          │
+                          ▼
+         2. Diagnostic Alignment Audit
+                          │
+                          ▼
+         3. User Preference Compliance Check
+                          │
+                          ▼
+         4. Decision Gate (PASSED or FAILED)
+
+--- Page 24 ---
+Step 1: Structural & Integrity Audit
+Agent 5 runs deterministic verification checks on the JSON structure:
+Unique Item Check: Verifies that no question_id appears more than once (prevents duplicate questions).
+Length Check: Confirms that len(selected_questions) strictly matches total_questions (e.g., exactly
+10).
+Database Field Integrity: Confirms that every selected question ID contains a complete question body, correct
+options, and valid answer keys in the database.
+Step 2: Diagnostic Alignment Audit
+Agent 5 verifies that critical learning deficits identified during the chat were not accidentally skipped:
+Prerequisite Safety Net: If misconception-classifier flagged a high-severity prerequisite_flaw,
+Agent 5 verifies that at least one prerequisite_drill matching that topic exists in the quiz.
+Over-Probing Check: Confirms that the quiz doesn't consist entirely of standard recall questions if
+mechanism-evaluator flagged the student as having memorized understanding.
+Step 3: User Preference Compliance Check
+Agent 5 cross-checks the final payload against the user's explicit request:
+If the user requested "more calculations", Agent 5 validates that at least 50% of the questions carry the
+"question_style": "calculation" metadata tag.
+If the user requested a specific sub-topic, Agent 5 verifies that the requested topic occupies the majority share
+of the question slots.
+Step 4: Decision Gate & Routing
+Case A: PASSED  Agent 5 strips out internal agent rationales, formats the payload into a clean, sanitized
+runtime object, and ships it directly to the Quiz UI.
+Case B: FAILED  Agent 5 outputs a targeted error log pinpointing the exact failure and triggering a single-
+agent retry call (e.g., telling Agent 3 to re-pick Slot 4 because of a duplicate ID).
+4. Output Schema
+Option A: Status PASSED (Delivered to App)
+{
+  "audit_status": "PASSED",
+  "audit_timestamp": "2026-07-26T00:15:00Z",
+  "production_quiz_payload": {
+    "quiz_id": "qz_89412_active",
+    "total_questions": 10,
+    "questions": [
+      {
+        "position": 1,
+JSON
+
+--- Page 25 ---
+Option B: Status FAILED (Targeted Retry Trigger)
+5. Why This Design Works
+1. Guarantees App Stability: Front-end crashes caused by null fields, missing answer keys, or wrong question
+counts are eliminated before the user sees the quiz.
+2. Enforces Self-Correction: Instead of failing silently or requiring human intervention, a failed audit
+automatically re-runs only the specific agent that caused the error (preventing costly full-pipeline
+regenerations).
+3. Protects User Trust: Ensures that user preferences ("give me calculations") are always honored alongside the
+diagnostic needs identified by the background agents.
+Complete Pipeline Summary
+You now have a complete, 5-stage blueprint pipeline operating downstream from your Socratic diagnostic chat:
+1. Agent 1 (Quota Planner): Translates diagnostic reports into numerical slot allocations.
+2. Agent 2 (Query Specifier): Translates slot allocations into strict metadata tags & database query specs.
+        "question_id": "q_alg_1010",
+        "question_text": "Solve for x: 2(x - 3) = 14",
+        "options": ["x = 10", "x = 4", "x = 7", "x = 13"],
+        "correct_answer": "x = 10"
+      }
+      // //. remaining 9 sanitized question objects
+    ]
+  }
+}
+{
+  "audit_status": "FAILED",
+  "failure_reason": "DUPLICATE_QUESTION_DETECTED",
+  "error_details": {
+    "slot_conflict": [3, 7],
+    "conflicting_id": "q_alg_1042"
+  },
+  "retry_instruction": {
+    "target_agent": "Agent_3_Candidate_Selector",
+    "action": "Re-evaluate Slot 7 candidates excluding q_alg_1042"
+  }
+}
+JSON
+
+--- Page 26 ---
+3. Agent 3 (Candidate Selector): Evaluates database search results and picks the best real question_id for
+each slot.
+4. Agent 4 (Sequence Builder): Orders selected questions into a pedagogically sound cognitive arc.
+5. Agent 5 (Compliance Auditor): Validates the entire package and approves it for delivery.
+Does this workflow give you everything you need to begin constructing or testing these agent prompts?

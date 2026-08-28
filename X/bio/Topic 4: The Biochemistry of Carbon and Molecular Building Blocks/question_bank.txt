@@ -1,0 +1,103 @@
+1. A neutral carbon atom possesses an atomic number of 6. What is its valence electron configuration and maximum covalent bonding capacity? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology 2021]
+   A. 2 valence electrons; forms 2 covalent bonds
+   B. 4 valence electrons; forms 4 covalent bonds (tetravalency)
+   C. 6 valence electrons; forms 6 ionic bonds
+   D. 8 valence electrons; forms 0 bonds (inert)
+2. Which structural characteristic of carbon skeletons allows for maximum spatial diversity and molecular complexity in biological macromolecules? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: IB Biology 2020]
+   A. Ability to form single, double, and triple covalent bonds forming straight, branched, and ring structures
+   B. Exclusive formation of unstable ionic bonds with transition metals
+   C. Formation of permanent linear hydrogen bond chains
+   D. Inability to bond with electronegative atoms such as oxygen and nitrogen
+3. Which reaction mechanism pairs monomer units together to form biological polymers while producing a water molecule as a byproduct? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge A Level 2021]
+   A. Hydrolysis
+   B. Condensation (Dehydration Synthesis)
+   C. Decarboxylation
+   D. Phosphorylation
+4. What chemical process breaks the covalent peptide bonds in a protein, consuming a molecule of water for each bond cleaved? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: WAEC 2020]
+   A. Condensation
+   B. Hydrolysis
+   C. Oxidation
+   D. Polymerization
+5. Why are lipids (e.g., triglycerides) excluded from formal classification as true biological polymers? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology 2022]
+   A. They do not contain carbon atoms in their skeletons.
+   B. They are not composed of repeating monomer units linked in continuous chains.
+   C. They are completely soluble in polar water solutions.
+   D. They lack covalent bonds between glycerol and fatty acids.
+6. Which covalent linkage connects adjacent nucleotide monomers along a single polynucleotide strand in DNA? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: IB Biology 2021]
+   A. Peptide bond
+   B. Glycosidic bond
+   C. Phosphodiester bond
+   D. Disulfide bridge
+7. Which functional groups react together during a condensation reaction between two standard amino acids? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge A Level 2020]
+   A. Hydroxyl group ($-$OH) and Phosphate group ($-$PO$_4^{2-}$)
+   B. Carboxyl group ($-$COOH) and Amino group ($-$NH$_2$)
+   C. Carbonyl group ($-$CHO) and Sulfhydryl group ($-$SH)
+   D. Methyl group ($-$CH$_3$) and Hydroxyl group ($-$OH)
+8. What type of covalent linkage is formed during the synthesis of a triacylglycerol from glycerol and three fatty acid molecules? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: NECO 2021]
+   A. Ester bond
+   B. Glycosidic bond
+   C. Peptide bond
+   D. Phosphodiester bond
+9. Which macromolecular class contains nitrogen and sulfur in addition to carbon, hydrogen, and oxygen? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge IGCSE]
+   A. Carbohydrates
+   B. Triglyceride Lipids
+   C. Proteins
+   D. Deoxyribonucleic acids
+10. What thermodynamic change occurs when ATP hydrolysis drives condensation reactions in anabolic pathways? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology 2019]
+   A. Exergonic ATP cleavage provides free energy ($\Delta G<0$) to drive endergonic synthesis reactions.
+   B. Endergonic ATP cleavage absorbs thermal energy from cytoplasm.
+   C. ATP condensation consumes excess glucose polymers directly.
+   D. Energy is permanently destroyed in accordance with thermodynamic laws.
+11. What structural feature renders phospholipids amphipathic? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: IB Biology 2022]
+   A. Presence of four fused hydrocarbon rings
+   B. A hydrophilic polar phosphate head group combined with two hydrophobic nonpolar fatty acid tails
+   C. Three identical hydrocarbon chains attached to glycerol
+   D. Continuous linear chains of identical amino acid monomers
+12. The functional group $-$SH (sulfhydryl) plays what specific role in tertiary protein structure stabilization? [Type: MCQ; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: WAEC 2022]
+   A. Formation of covalent disulfide bridges between cysteine residues
+   B. Formation of ionic bonds with acidic amino acids
+   C. Hydrolysis of adjacent peptide backbones
+   D. Catalysis of glycosidic bond cleavage
+13. State the valence capacity (number of shared electron pairs) of a single carbon atom. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge IGCSE]
+14. Calculate the number of water molecules released during the complete condensation synthesis of an unbranched polypeptide consisting of 40 amino acid monomers. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology]
+15. Name the precise covalent bond that links two amino acid monomers together during translation. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: IB Biology]
+16. State the monomeric building block of nucleic acids such as DNA and RNA. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: WAEC]
+17. Calculate the total number of water molecules required to fully hydrolyze a triglyceride into its constituent glycerol and three fatty acids. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge A Level]
+18. Name the chemical functional group represented by the formula $-$COOH. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: NECO]
+19. Identify the structural linkage formed between glycerol and a fatty acid in a phospholipid molecule. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology]
+20. Calculate the molecular formula of a trisaccharide assembled via condensation from three hexose sugars (C$_6$H$_{12}$O$_6$). [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: IB Biology]
+21. Classify polymer synthesis (condensation) as anabolic or catabolic in metabolic terms. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge A Level]
+22. State the monomer unit that forms the structural foundation of polysaccharides like cellulose and starch. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: WAEC]
+23. Calculate the number of peptide bonds present in a linear polypeptide composed of 100 amino acids. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: null]
+24. Identify the metabolic process that uses water to degrade glycogen into individual glucose monomers during glycogenolysis. [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge IGCSE]
+25. State the functional group formula for an amino group ($-$NH$_2$). [Type: Hybrid; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology]
+26. **Thermodynamics and Stoichiometry of Condensation and Hydrolysis** [Type: Theory; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: AP Biology 2022]
+    Biochemical polymerization relies on paired condensation and hydrolysis reactions.
+    (a) Compare condensation (dehydration synthesis) and hydrolysis in terms of reactants, products, water participation, and net enthalpy ($\Delta H$).
+    (b) Calculate the molecular formula of a linear heptasaccharide composed of seven $\alpha$-glucose (C$_6$H$_{12}$O$_6$) monomers linked by glycosidic bonds.
+    (c) Calculate the total mass (g/mol) of water produced during the complete enzymatic assembly of 100 moles of a linear 50-residue peptide (Molar mass of water = 18.015 g/mol).
+    (d) Explain how enzymes lower the activation energy ($E_a$) of hydrolytic cleavage without altering the equilibrium constant ($K_{eq}$).
+27. **Structural Non-Polymeric Classification of Triglycerides and Phospholipids** [Type: Theory; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: IB Biology 2021]
+    Lipids represent a diverse group of hydrophobic biomolecules distinct from true polymers.
+    (a) Explain why carbohydrates and proteins are classified as true polymers, whereas triglycerides are categorized as biological macromolecules but not true polymers.
+    (b) Describe the condensation reaction leading to triglyceride formation, explicitly stating the functional groups involved and the three ester linkages formed.
+    (c) Contrast the structural architecture and water interaction of a neutral triglyceride with an amphipathic phospholipid.
+    (d) Explain how saturated versus unsaturated fatty acid hydrocarbon tails affect membrane fluidity at low physiological temperatures.
+28. **Peptide Bond Formation and Polypeptide Architecture** [Type: Theory; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: Cambridge A Level 2020]
+    Proteins are linear polymers constructed from twenty standard amino acids.
+    (a) Draw/describe the general structural formula of an $\alpha$-amino acid, labeling the central alpha carbon, amino group, carboxyl group, hydrogen atom, and variable R-group.
+    (b) Show the step-by-step condensation reaction between two generic amino acids, identifying the covalent peptide bond formed ($-$CO$-$NH$-$).
+    (c) Explain how variations in the physicochemical properties (polar, nonpolar, charged) of amino acid R-groups drive tertiary protein folding in an aqueous cytosol.
+    (d) Explain why substitution of a hydrophilic glutamic acid with a hydrophobic valine in the $\beta$-globin chain causes hemoglobin aggregation in sickle cell anemia.
+29. **Nucleic Acid Polymerization and Backbone Geometry** [Type: Theory; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: WAEC 2022]
+    Nucleic acids (DNA and RNA) store and transmit genetic information.
+    (a) Identify the three chemical components of a single nucleotide monomer.
+    (b) Describe how DNA polymerase catalyzes phosphodiester bond formation between the 3$'$-OH group of an existing strand and the 5$'$-phosphate group of an incoming dNTP.
+    (c) Contrast DNA and RNA in terms of monomer sugar composition, pyrimidine bases, and strand architecture.
+    (d) Calculate the total number of phosphodiester bonds present in a double-stranded linear DNA molecule containing 500 base pairs (1000 total nucleotides).
+30. **Carbon Tetravalency and Isomeric Diversity in Organic Chemistry** [Type: Theory; Subject: Bio; Topic: Topic 4: The Biochemistry of Carbon and Molecular Building Blocks; Format: Non-Sim; Exam: NECO 2021]
+    The chemistry of life is fundamentally built upon carbon skeletons.
+    (a) Explain how carbon's tetravalency (sp$^3$ hybridization) leads to tetrahedral molecular geometry with bond angles of 109.5$^\circ$.
+    (b) Distinguish between structural isomers, cis-trans stereoisomers, and enantiomers, providing one biological example of each.
+    (c) Explain why biological enzymes exhibit high stereospecificity, recognizing only one enantiomer of an organic substrate (e.g., L-amino acids vs D-amino acids).
+    (d) Discuss the hypothesis that carbon's unique ability to form stable, diverse catenated chains made it the indispensable foundation for prebiotic evolutionary biochemistry.

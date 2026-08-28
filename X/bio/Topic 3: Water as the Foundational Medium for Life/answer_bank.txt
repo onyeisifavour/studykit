@@ -1,0 +1,44 @@
+1. B [Type: MCQ]
+2. C [Type: MCQ]
+3. C [Type: MCQ]
+4. B [Type: MCQ]
+5. A [Type: MCQ]
+6. B [Type: MCQ]
+7. C [Type: MCQ]
+8. B [Type: MCQ]
+9. C [Type: MCQ]
+10. B [Type: MCQ]
+11. B [Type: MCQ]
+12. C [Type: MCQ]
+13. Formula: H$_2$O; Net Charge: 0 [Type: Hybrid]
+14. 20,920 J [Type: Hybrid]
+15. $\delta^-$ [Type: Hybrid]
+16. 4 hydrogen bonds [Type: Hybrid]
+17. Xylem [Type: Hybrid]
+18. 4520 J [Type: Hybrid]
+19. Hydrophilic [Type: Hybrid]
+20. Cohesion (and surface tension) [Type: Hybrid]
+21. 0$^\circ$C [Type: Hybrid]
+22. Hydration shell [Type: Hybrid]
+23. Polar covalent bond [Type: Hybrid]
+24. Protocells / coacervates [Type: Hybrid]
+25. Hydrophobic [Type: Hybrid]
+26. (a) Polarity creates intermolecular hydrogen bonds between $\delta^-$ O and $\delta^+$ H; transitioning to gas requires input energy to break collective hydrogen bonds. [Type: Theory]
+    (b) Latent heat of vaporization: energy needed to change 1 g liquid to gas; Specific heat capacity: energy needed to raise 1 g by 1$^\circ$C.
+    (c) Mass = 250 g; Energy = 250 g $\times$ 2.26 kJ/g = 565 kJ.
+    (d) Lower $\Delta H_{vap}$ in ethanol would require higher volume evaporation per unit heat lost, leading to rapid dehydration.
+27. (a) Transpiration reduces mesophyll water potential, pulling xylem water under negative pressure tension. [Type: Theory]
+    (b) Cohesion: hydrogen bonding between water molecules; Adhesion: hydrogen bonding between water and hydrophilic cellulose/lignin walls.
+    (c) High tension breaks water column integrity (cavitation); bordered pits restrict bubble expansion.
+    (d) Xylem walls contain polar cellulose/lignin attracting water; cutin is a nonpolar hydrophobic lipid preventing water loss.
+28. (a) For Mg$^{2+}$: oxygen atoms ($\delta^-$) point inward; For Cl$^-$: hydrogen atoms ($\delta^+$) point inward. [Type: Theory]
+    (b) Nonpolar solutes force water into ordered entropic cages ($\Delta S < 0$), which is thermodynamically unfavorable.
+    (c) Polar heads face outward toward water, while nonpolar tails orient inward away from water, minimizing free energy.
+29. (a) Absorbs large heat quantities with minimal temperature shift, stabilizing aquatic physiological environments. [Type: Theory]
+    (b) Cooling below 4$^\circ$C causes hydrogen bonds to form an expanded open hexagonal lattice at 0$^\circ$C.
+    (c) Floating ice forms an insulating layer preventing underlying water from freezing solid.
+    (d) Water would freeze from bottom upward, solidifying entire water bodies and eliminating aquatic life.
+30. (a) Solvents enable fluid diffusion, increasing collision frequency required for chemical reactions. [Type: Theory]
+    (b) Evaporation concentrates monomers, driving condensation equilibrium toward polymer assembly by removing water.
+    (c) Hydrophobic forces drive self-assembly of lipids into enclosed membranes containing aqueous solutes.
+    (d) Water provides the medium for monomer collision but also mediates hydrolysis, creating a dynamic balance between polymer assembly and degradation.

@@ -1,0 +1,43 @@
+1. B [Type: MCQ]
+2. D [Type: MCQ]
+3. B [Type: MCQ]
+4. C [Type: MCQ]
+5. C [Type: MCQ]
+6. B [Type: MCQ]
+7. C [Type: MCQ]
+8. B [Type: MCQ]
+9. C [Type: MCQ]
+10. B [Type: MCQ]
+11. B [Type: MCQ]
+12. B [Type: MCQ]
+13. C [Type: MCQ]
+14. B [Type: MCQ]
+15. C [Type: MCQ]
+16. 0.403% [Type: Hybrid]
+17. Volumetric Flask [Type: Hybrid]
+18. Acute Toxicity [Type: Hybrid]
+19. 3.20 g [Type: Hybrid]
+20. Bottom Port [Type: Hybrid]
+21. 5.0% [Type: Hybrid]
+22. Desiccator [Type: Hybrid]
+23. $\pm$0.4$^\circ$C [Type: Hybrid]
+24. Eyewash Station [Type: Hybrid]
+25. Acid to Water [Type: Hybrid]
+26. (a) Ensures complete removal of hydration water. [Type: Theory]
+    (b) Mass water = 1.260 g, Mass MgSO$_4$ = 1.200 g.
+    (c) x = 7.
+    (d) Use crucible tongs and cool in a desiccator.
+27. (a) Weigh mass, dissolve in beaker, transfer to 250.0 cm$^3$ volumetric flask, dilute to mark. [Type: Theory]
+    (b) Hygroscopic solid absorbs CO$_2$ and moisture.
+    (c) Pipette = 0.24%, cylinder = 2.0%.
+    (d) Splash goggles and nitrile gloves required.
+28. (a) Reflux boils/condenses vertically back into flask; distillation diverts condensed vapors horizontally. [Type: Theory]
+    (b) Thermometer bulb at side-arm level; bottom water inlet; electric heating mantle.
+    (c) Volatile solvents are flammable; use heating mantle.
+    (d) Turn off heat, cover flame with fire blanket, deploy CO$_2$ extinguisher.
+29. (a) HNO$_3$ is corrosive/oxidizing; Benzene is toxic/carcinogenic/flammable. [Type: Theory]
+    (b) Heavy nitrile gloves in fume hood for HNO$_3$; Viton gloves in fume hood for Benzene.
+    (c) Flush skin with water for 15+ min; move victim to fresh air.
+30. (a) Random error: parallax fluctuations; Systematic error: offset balance zero. [Type: Theory]
+    (b) Calculated titer = 22.40 cm$^3$; systematic offset cancels out completely.
+    (c) Averaging concordant titers reduces random error, but leaves systematic error unchanged.

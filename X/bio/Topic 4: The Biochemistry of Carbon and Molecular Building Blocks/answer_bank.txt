@@ -1,0 +1,45 @@
+1. B [Type: MCQ]
+2. A [Type: MCQ]
+3. B [Type: MCQ]
+4. B [Type: MCQ]
+5. B [Type: MCQ]
+6. C [Type: MCQ]
+7. B [Type: MCQ]
+8. A [Type: MCQ]
+9. C [Type: MCQ]
+10. A [Type: MCQ]
+11. B [Type: MCQ]
+12. A [Type: MCQ]
+13. 4 shared electron pairs [Type: Hybrid]
+14. 39 water molecules [Type: Hybrid]
+15. Peptide bond [Type: Hybrid]
+16. Nucleotide [Type: Hybrid]
+17. 3 water molecules [Type: Hybrid]
+18. Carboxyl group [Type: Hybrid]
+19. Ester linkage [Type: Hybrid]
+20. C$_{18}$H$_{32}$O$_{16}$ [Type: Hybrid]
+21. Anabolic [Type: Hybrid]
+22. Glucose [Type: Hybrid]
+23. 99 peptide bonds [Type: Hybrid]
+24. Hydrolysis [Type: Hybrid]
+25. $-$NH$_2$ [Type: Hybrid]
+26. (a) Condensation combines monomers, releases H$_2$O, endergonic ($\Delta H>0$); Hydrolysis cleaves polymers, consumes H$_2$O, exergonic ($\Delta H<0$). [Type: Theory]
+    (b) Seven hexoses minus six H$_2$O: C$_{42}$H$_{72}$O$_{36}$.
+    (c) 100 moles $\times$ 49 bonds/mole = 4900 moles H$_2$O; Mass = 4900 $\times$ 18.015 g/mol = 88,273.5 g.
+    (d) Enzymes stabilize transition states lowering $E_a$, but do not alter initial/final free energy states or $K_{eq}$.
+27. (a) Polymers consist of repeating identical/similar monomer subunits linked in continuous chains; triglycerides consist of distinct glycerol bonded to 3 fatty acids. [Type: Theory]
+    (b) Carboxyl of 3 fatty acids reacts with 3 hydroxyls of glycerol via dehydration synthesis, forming 3 ester bonds and releasing 3H$_2$O.
+    (c) Triglyceride: 3 nonpolar fatty acids, entirely hydrophobic; Phospholipid: 2 nonpolar fatty acids + polar phosphate head group, amphipathic.
+    (d) Unsaturated fatty acids contain cis double bonds creating kinks that prevent tight packing, maintaining fluid membranes at low temperatures.
+28. (a) Central C$_\alpha$ bonded to $-$NH$_2$, $-$COOH, $-$H, and variable $-$R group. [Type: Theory]
+    (b) Hydroxyl ($-$OH) from carboxyl reacts with hydrogen ($-$H) from amino group, releasing H$_2$O and forming peptide linkage ($-$CO$-$NH$-$).
+    (c) Hydrophobic R-groups collapse into interior core away from water; hydrophilic R-groups orient outward forming hydrogen/ionic bonds.
+    (d) Hydrophobic valine on exterior surface creates sticky hydrophobic patches that aggregate into insoluble fibers under deoxygenated conditions.
+29. (a) Pentose sugar, nitrogenous base, and phosphate group. [Type: Theory]
+    (b) 3'-OH acts as nucleophile attacking $\alpha$-phosphate of incoming dNTP, releasing pyrophosphate (PP$_i$) and forming phosphodiester linkage.
+    (c) DNA contains deoxyribose, thymine, double-stranded helix; RNA contains ribose, uracil, single-stranded.
+    (d) Two strands of 500 nucleotides each: (500$-$1)+(500$-$1)=998 phosphodiester bonds.
+30. (a) Carbon forms four equivalent sp$^3$ hybrid orbitals directed toward corners of a regular tetrahedron with 109.5$^\circ$ angles. [Type: Theory]
+    (b) Structural: different covalent arrangements; Cis-trans: spatial arrangements around double bonds; Enantiomers: mirror-image isomers around chiral carbon.
+    (c) Active sites of enzymes are asymmetrical chiral environments matching only one specific enantiomeric spatial configuration.
+    (d) Carbon forms stable catenated chains and rings with moderate bond dissociation energy, allowing dynamic stability and biochemical reactivity necessary for life.

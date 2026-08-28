@@ -1,0 +1,40 @@
+1. A [Type: MCQ]
+2. A [Type: MCQ]
+3. A [Type: MCQ]
+4. C [Type: MCQ]
+5. B [Type: MCQ]
+6. C [Type: MCQ]
+7. A [Type: MCQ]
+8. A [Type: MCQ]
+9. B [Type: MCQ]
+10. A [Type: MCQ]
+11. $4.59 \times 10^8$ [Type: Hybrid]
+12. 3.31% [Type: Hybrid]
+13. $4.0 \times 10^{-8}$ [Type: Hybrid]
+14. 4 [Type: Hybrid]
+15. 4.5% [Type: Hybrid]
+16. 3 d.p.: 0.004; 3 s.f.: 0.00400 [Type: Hybrid]
+17. 0.3 [Type: Hybrid]
+18. $2.7 \times 10^8$ [Type: Hybrid]
+19. 7.0% [Type: Hybrid]
+20. 602,200,000,000,000,000,000,000 [Type: Hybrid]
+21. Lower bound = 24 cm, Upper bound = 28 cm [Type: Hybrid]
+22. 0.03 or 3% [Type: Hybrid]
+23. 10.02 [Type: Hybrid]
+24. 6% [Type: Hybrid]
+25. 0.00314159 [Type: Hybrid]
+26. (a) $g \approx 9.87$ m/s$^2$. [Type: Theory]
+    (b) $\frac{\Delta g}{g} = \frac{\Delta L}{L} + 2\frac{\Delta T}{T}$.
+    (c) $g = 9.87 \pm 0.30$ m/s$^2$ (3% error).
+27. (a) $V_{min} \approx 768.22$ cm$^3$, $V_{max} \approx 809.73$ cm$^3$. [Type: Theory]
+    (b) Difference = 20.87 cm$^3$.
+    (c) Repeated rounding causes compounding drift.
+28. (a) Taylor series first-order truncation. [Type: Theory]
+    (b) $1{,}000{,}300{,}000{,}000$.
+    (c) Absolute error = 30,001, percentage error = $3.0 \times 10^{-6}\%$.
+29. (a) $4.645 \times 10^9$ km. [Type: Theory]
+    (b) 30.0 times.
+    (c) 250 minutes.
+30. (a) $\frac{dP}{P} = \frac{dn}{n} + \frac{dT}{T} - \frac{dV}{V}$. [Type: Theory]
+    (b) Maximum error = 4.0%.
+    (c) Quadrature error $\approx 2.55\%$; accounts for uncorrelated statistical variation.

@@ -1,0 +1,121 @@
+1. Which of the following properties is classified as an intensive physical property of a matter sample? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: AP Chemistry]
+   A. Total enthalpy content
+   B. Mass
+   C. Density
+   D. Volume
+2. Which observation provides direct evidence that a chemical change, rather than merely a physical change, has occurred? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. Iodine crystals sublimate into a purple vapor upon mild heating
+   B. Solid sodium chloride dissolves in water to produce an electrically conductive solution
+   C. Mixing two colorless aqueous solutions forms a bright yellow insoluble precipitate and causes an exothermic temperature rise
+   D. Liquid paraffin wax solidifies upon cooling
+3. How does the presence of a non-volatile solute impurity (such as salt) affect the physical phase transition temperatures of pure water? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: IB Chemistry]
+   A. Elevates the melting point and depresses the boiling point
+   B. Depresses the melting point and elevates the boiling point
+   C. Depresses both the melting point and the boiling point
+   D. Has zero effect on melting or boiling temperatures
+4. Brass is an alloy consisting of copper and zinc melted together in fixed ratios. Brass is classified as a: [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: WAEC 2021]
+   A. Heterogeneous Mixture
+   B. Homogeneous Mixture (Solid Solution)
+   C. Pure Chemical Compound
+   D. Elemental Substance
+5. A solid block of pure aluminum has a mass of 135 g and a volume of 50.0 cm$^3$. What is the density of aluminum? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: null]
+   A. 0.370 g/cm$^3$
+   B. 2.70 g/cm$^3$
+   C. 6.75 g/cm$^3$
+   D. 27.0 g/cm$^3$
+6. Which characteristic uniquely distinguishes a pure chemical compound from a homogeneous mixture? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. A compound can be separated into its constituent elements by physical separation techniques such as filtration
+   B. A compound contains constituent elements combined in a fixed stoichiometric ratio by mass with chemical bonds
+   C. A compound exhibits variable composition depending on preparation method
+   D. A compound always retains the individual chemical properties of its constituent elements
+7. A sample of organic benzoic acid synthesized in the lab melts over a sharp range of 122.0$^\circ$C$-$122.5$^\circ$C. This sharp melting range indicates that the sample is: [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: NECO A-Level]
+   A. Highly impure
+   B. A heterogeneous mixture
+   C. A pure chemical substance
+   D. Partially decomposed
+8. Which of the following represents a chemical property of iron metal? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: null]
+   A. It has a high electrical conductivity
+   B. It exhibits a high density of 7.87 g/cm$^3$
+   C. It reacts with moist oxygen to form hydrated iron(III) oxide (rust)
+   D. It melts at 1538$^\circ$C
+9. Why is maintaining extreme chemical purity critical in pharmaceutical drug synthesis? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: AP Chemistry]
+   A. Impurities always increase the shelf-life of pharmaceutical tablets
+   B. Trace impurities or wrong enantiomeric forms can introduce severe physiological toxicity or eliminate biological efficacy
+   C. Pure compounds are less expensive to synthesize than crude mixtures
+   D. Impurities prevent drugs from dissolving in water
+10. Which physical separation technique relies strictly on differences in the boiling points of volatile liquids within a homogeneous liquid mixture? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A. Paper Chromatography
+    B. Simple Gravimetric Filtration
+    C. Fractional Distillation
+    D. Centrifugation
+11. Which substance cannot be broken down into simpler chemical constituents by any chemical or physical means? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: null]
+    A. Methane (CH$_4$)
+    B. Elemental Sulfur (S$_8$)
+    C. Sucrose (C$_{12}$H$_{22}$O$_{11}$)
+    D. Silicon Dioxide (SiO$_2$)
+12. A mixture containing oil, water, and sand is stirred vigorously and allowed to settle. How many distinct physical phases are present in the settled system? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: WAEC 2019]
+    A. 1
+    B. 2
+    C. 3
+    D. 4
+13. What physical parameter is defined as the maximum mass of solute that dissolves in 100 g of solvent at a specific temperature to yield a saturated solution? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: IB Chemistry]
+    A. Molar Concentration
+    B. Solubility Limit
+    C. Density Profile
+    D. Mass Fraction
+14. Which statement describes an extensive property of a chemical system? [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: null]
+    A. The refractive index of liquid ethanol
+    B. The total volume occupied by 2.0 moles of argon gas at standard conditions
+    C. The specific heat capacity of pure copper metal
+    D. The boiling point of pure water at 1 atm
+15. Corrosion of aluminum metal in acidic media is classified as a chemical property because: [Type: MCQ; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: NECO A-Level]
+    A. It involves a phase transition from solid to liquid
+    B. The aluminum metal undergoes an oxidation-reduction reaction forming new ionic chemical species
+    C. It alters only the macroscopic surface texture without breaking bonds
+    D. The process is completely reversible by mechanical polishing
+16. A metallic bar has a mass of 45.2 g. When submerged into a graduated cylinder containing water, the water level rises from 20.0 cm$^3$ to 25.6 cm$^3$. Calculate the density of the metal in g/cm$^3$. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+17. A sample of benzoic acid synthesized in a laboratory exhibits a broad melting temperature range of 112$^\circ$C$-$118$^\circ$C (pure m.p. = 122.3$^\circ$C). State whether this sample is pure or impure. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: IB Chemistry]
+18. Classify an aqueous solution of sodium chloride (NaCl(aq)) into one of the following categories: Element, Compound, Homogeneous Mixture, or Heterogeneous Mixture. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: WAEC 2020]
+19. A 12.0 g sample of a pure iron oxide compound is analyzed and found to contain 8.4 g of iron and 3.6 g of oxygen. Calculate the mass percentage of iron in the compound. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: null]
+20. State whether electrical conductivity is classified as an intensive or extensive physical property. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: AP Chemistry]
+21. State the number of distinct physical phases present in a well-shaken emulsion of vegetable oil and water after phase separation completes. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: null]
+22. Calculate the mass of water required to dissolve 35.0 g of potassium nitrate (KNO$_3$) at 20$^\circ$C, given that the solubility of KNO$_3$ at 20$^\circ$C is 32.0 g per 100 g H$_2$O. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+23. State the term used to describe a pure chemical substance comprised of two or more different elements chemically combined in fixed proportions. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: NECO A-Level]
+24. Predict the effect on the boiling point of pure water at 1 atm when non-volatile glucose is dissolved in it (Increases, Decreases, or Remains Unchanged). [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: AP Chemistry]
+25. Classify the rusting of an iron nail exposed to air and moisture as a Physical Change or a Chemical Change. [Type: Hybrid; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: WAEC 2018]
+26. **Thermal and Physical Criteria for Substance Purity and Industrial Quality Control** [Type: Theory; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: IB Chemistry]
+    Purity determination is a vital analytical requirement in chemical manufacturing.
+    (a) Define what is meant by a pure substance in chemistry, contrasting it with a daily usage term like "pure fruit juice".
+    (b) Explain at the microscopic level why an impure solid sample exhibits:
+    (i) Depressed melting point initial temperature.
+    (ii) Broadened melting temperature range.
+    (c) Describe how boiling point apparatus (such as a Thiele tube or distillation setup) can be used to confirm liquid purity.
+    (d) Explain the industrial importance of purity verification in the production of pharmaceutical agents such as aspirin.
+27. **Taxonomy of Matter: Elements, Compounds, and Multi-Phase Mixtures** [Type: Theory; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    Consider four materials: Iron filings (Fe), Sulfur powder (S$_8$), Iron(II) sulfide (FeS), and an unheated mixture of Iron filings and Sulfur powder.
+    (a) Classify each of the four materials as an Element, Compound, or Mixture.
+    (b) Describe an empirical test using a magnet to distinguish between the unheated Iron-Sulfur mixture and the chemical compound Iron(II) sulfide (FeS).
+    (c) Compare the four materials across four specific criteria:
+    (i) Composition variability.
+    (ii) Chemical bonding between constituents.
+    (iii) Separation methods required.
+    (iv) Thermal energy changes accompanying their formation.
+28. **Thermodynamic and Colligative Analysis of Impurity Effects on Phase Transitions** [Type: Theory; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: AP Chemistry]
+    A chemist investigates the colligative properties of aqueous solutions using ethylene glycol (C$_2$H$_6$O$_2$) solute.
+    (a) Calculate the freezing point depression $\Delta$T$_f$ of a solution containing 62.0 g of ethylene glycol (M$_r$ = 62.07 g/mol) dissolved in 250.0 g of pure water (K$_f$ = 1.86$^\circ$C$\cdot$kg/mol).
+    (b) Derive the theoretical freezing point of this antifreeze mixture.
+    (c) Explain why spreading sodium chloride (NaCl) or calcium chloride (CaCl$_2$) onto icy roads in winter prevents ice formation, highlighting the van 't Hoff factor i.
+29. **Solubility Dynamics, Crystallization Purification, and Mass Balance Calculations** [Type: Theory; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: NECO A-Level]
+    The solubility of potassium nitrate (KNO$_3$) in water varies with temperature as follows:
+    At 60$^\circ$C: 110.0 g per 100 g H$_2$O
+    At 20$^\circ$C: 32.0 g per 100 g H$_2$O
+    (a) A saturated solution of KNO$_3$ is prepared in 250.0 g of pure water at 60$^\circ$C. Calculate the total mass of dissolved KNO$_3$.
+    (b) The solution is subsequently cooled down to 20$^\circ$C. Calculate the mass of pure KNO$_3$ crystals that precipitate out of solution.
+    (c) Outline the laboratory technique of recrystallization used to purify an impure solid organic compound, explaining how insoluble and soluble impurities are removed.
+30. **Comparative Analysis of Physical vs Chemical Transformations and Property Profiling** [Type: Theory; Subject: Chem; Topic: L1.3 Physical and Chemical Properties of Matter; Format: Non-Sim; Exam: WAEC 2021]
+    Categorizing changes and properties is fundamental to chemical analysis.
+    (a) Classify each of the following transformations as either Physical Change or Chemical Change, justifying each choice:
+    (i) Dissolving anhydrous copper(II) sulfate powder in water to yield a blue solution.
+    (ii) Heating blue copper(II) sulfate pentahydrate crystals to yield white anhydrous powder and water vapor.
+    (iii) Electrolyzing aqueous copper(II) sulfate to deposit copper metal at the cathode.
+    (b) Tabulate three distinct physical properties and three distinct chemical properties for elemental hydrogen gas (H$_2$).

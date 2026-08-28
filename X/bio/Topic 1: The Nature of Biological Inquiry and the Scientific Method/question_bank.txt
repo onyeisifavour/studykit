@@ -1,0 +1,102 @@
+1. An investigator measures the rate of oxygen evolution in Elodea under varying photosynthetic photon flux densities while maintaining a constant temperature of 22$^\circ$C and a sodium bicarbonate concentration of 0.1 M. Which statement correctly classifies the variables in this experiment? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: AP Biology 2021]
+   A. Photon flux density is the dependent variable; oxygen evolution rate is the independent variable.
+   B. Sodium bicarbonate concentration is the independent variable; temperature is the controlled variable.
+   C. Photon flux density is the independent variable; oxygen evolution rate is the dependent variable.
+   D. Temperature is the dependent variable; photon flux density is the controlled variable.
+2. A student formulates the following statement: "If ambient temperature increases, then the rate of cellular respiration in Saccharomyces cerevisiae will increase because thermal energy accelerates enzymatic collisions." How should this statement be classified within the scientific method? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology 2020]
+   A. A scientific law describing an immutable physical relationship.
+   B. A testable hypothesis accompanied by an explanatory prediction.
+   C. A qualitative observation of metabolic behavior.
+   D. A fully verified scientific theory explaining cellular metabolism.
+3. In an investigation analyzing the effect of an antibacterial peptide on Escherichia coli culture density, one tube receives nutrient broth and bacterial inoculum without the peptide, while another receives only nutrient broth without bacteria or peptide. What is the precise experimental purpose of the tube containing only nutrient broth? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: Cambridge A Level 2022]
+   A. To serve as a positive control establishing maximum bacterial growth.
+   B. To act as a negative control verifying the absence of background contamination in the medium.
+   C. To adjust the independent variable across multiple trial gradients.
+   D. To measure the rate of peptide degradation over time.
+4. Which criteria must be met for a biological explanation to be recognized as a valid scientific hypothesis? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: WAEC 2019]
+   A. It must be proven true beyond all doubt prior to experimental execution.
+   B. It must be phrased using mathematical equations and contain no variables.
+   C. It must be testable through empirical observation and capable of being falsified.
+   D. It must align with existing qualitative observations without requiring quantitative data.
+5. A study records the skin color changes in Anolis lizards exposed to stress as "dark brown," "pale green," and "mottled green." How should these recorded data be categorized? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: NECO 2021]
+   A. Quantitative continuous data
+   B. Qualitative observational data
+   C. Quantitative discrete data
+   D. Inferential statistical data
+6. An experiment examining amylase activity fails to regulate the pH of the buffer solution across test tubes, leading to erratic reaction rates. In experimental design, how is pH classified in this specific setup? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology 2019]
+   A. A controlled constant
+   B. A dependent variable
+   C. A confounding variable
+   D. An independent variable
+7. Which option correctly distinguishes a scientific theory from a scientific law? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: null]
+   A. A theory is an unverified guess, whereas a law is a hypothesis that has been tested once.
+   B. A theory explains why natural phenomena occur based on extensive evidence; a law describes what happens under specific conditions, often mathematically.
+   C. A theory becomes a law once it is confirmed by more than ten independent peer-reviewed studies.
+   D. A law applies only to physical sciences, whereas a theory applies exclusively to biological systems.
+8. A researcher calibrates a digital colorimeter using a blank solution prior to measuring light absorbance in chlorophyll extracts. Which aspect of experimental quality does this calibration procedure directly ensure? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: Cambridge IGCSE 0610]
+   A. Experimental reliability by increasing sample variation
+   B. Systematic accuracy by reducing instrument bias
+   C. Ecological validity by simulating field conditions
+   D. Statistical power by increasing sample size n
+9. A field biologist measures plant heights along a transect using a tape measure with worn, unreadable markings at the zero mark, causing every measurement to be recorded as 1.5 cm greater than its true value. What type of experimental error is present? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: AP Biology 2019]
+   A. Random observational error
+   B. Systematic instrument error
+   C. Human transcription error
+   D. Sampling variation error
+10. Which statement best illustrates the self-correcting nature of the scientific process? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: null]
+    A. Experimental protocols are retained permanently once published in a peer-reviewed journal.
+    B. Scientific hypotheses are modified or rejected when newly generated empirical evidence contradicts existing models.
+    C. Universal scientific laws are modified weekly based on individual experimental anomalies.
+    D. Data collection is discontinued once a single trial yields results supporting the hypothesis.
+11. An investigation tests the effect of salinity on seed germination. Five petridishes containing 50 seeds each are exposed to 0 mM, 50 mM, 100 mM, 150 mM, and 200 mM NaCl solutions. Why is using 50 seeds per dish superior to using 1 seed per dish? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology 2021]
+    A. It eliminates the need for a control group.
+    B. It converts qualitative data into categorical data.
+    C. It minimizes the impact of random variation and improves result reliability.
+    D. It transforms the independent variable into a controlled variable.
+12. A scientist claims that a novel plant extract cures viral infections in humans based solely on an in vitro cell culture assay showing reduced viral replication. What is the major methodological limitation of this conclusion? [Type: MCQ; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: WAEC 2020]
+    A. In vitro assays cannot yield quantitative data.
+    B. Results from isolated cell cultures cannot be directly generalized to complex whole-organism physiological systems.
+    C. Cell culture studies do not allow for controlled independent variables.
+    D. Viral replication cannot be measured empirically.
+13. State the standard scientific unit used to measure the rate of a gas-producing biological reaction, such as catalase decomposition of hydrogen peroxide. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: Cambridge A Level]
+14. A leaf disk assay measures the time required for 10 leaf disks to float in a bicarbonate solution under light. If the median time recorded is 200 s, calculate the photosynthetic rate expressed as s$^{-1}$ multiplied by $10^3$. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: AP Biology]
+15. Identify whether recording the exact mass of a tissue sample as 4.32 g represents qualitative or quantitative data. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: null]
+16. State the minimum number of independent experimental replicates generally required in standard International Baccalaureate biological research to enable valid statistical calculations of mean and standard deviation. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology]
+17. In an experiment investigating light intensity on transpiration, a lamp is placed at varying distances from a potted plant. Name the specific confounding variable introduced if the lamp radiates significant heat toward the plant at closer distances. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: AP Biology]
+18. Formulate a concise, testable prediction regarding the effect of temperature on enzyme activity as temperature increases from 10$^\circ$C to the enzyme's optimal temperature of 37$^\circ$C. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: null]
+19. State the specific purpose of including a Benedict's test sample containing distilled water instead of a reducing sugar solution during a carbohydrate assay. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: Cambridge IGCSE]
+20. Classify the following data collection output as primary or secondary data: "A student extracts historical rainfall and vector density records from a published national meteorological report to model malaria transmission." [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: NECO]
+21. State the mathematical relationship used to calculate the percentage change in biological tissue mass following incubation in an osmotic solution. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology]
+22. In a clinical trial assessing a novel vaccine, neither the subjects nor the administering clinicians know who receives the active vaccine or the saline placebo. State the technical term for this experimental design safeguards against bias. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: AP Biology]
+23. State the term used to describe a broad, well-substantiated explanation of a natural phenomenon supported by a vast body of verified empirical evidence (e.g., the Endosymbiotic Model). [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology]
+24. A student measures a true lipid mass of 2.50 g as 2.30 g. Calculate the percentage error of this measurement. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: WAEC]
+25. State how increasing the sample size (n) in a biological field survey affects the standard error of the estimated sample mean. [Type: Hybrid; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: Cambridge A Level]
+26. **Experimental Design and Variable Control in Bacterial Respiration** [Type: Theory; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: IB Biology 2022]
+    A researcher investigates the metabolic output of Escherichia coli grown under anaerobic conditions using different carbon sources (glucose, lactose, sucrose, and glycerol) at a constant concentration of 20 g/L. The volume of carbon dioxide gas evolved is measured every 5 minutes for 60 minutes using a gas syringe.
+    (a) Identify the independent variable and the dependent variable in this investigation.
+    (b) Outline three critical controlled variables that must be kept constant to ensure valid experimental results, justifying the physiological reason for controlling each.
+    (c) Formulate a suitable null hypothesis ($H_0$) for this investigation.
+    (d) Explain how the researcher could establish a negative control setup for this experiment and describe its expected outcome.
+27. **Falsifiability, Hypotheses, and Theory Development in Evolutionary Biology** [Type: Theory; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: AP Biology 2021]
+    The hypothesis of Endosymbiosis posits that eukaryotic mitochondria originated from free-living $\alpha$-proteobacteria engulfed by ancestral anaerobic cells.
+    (a) Define the concept of "falsifiability" in the context of scientific hypotheses.
+    (b) Construct two distinct, testable predictions derived from the endosymbiotic hypothesis that can be evaluated using modern molecular and cellular biology techniques.
+    (c) Distinguish between the formal scientific status of Endosymbiosis as a "Theory" versus a simple "Hypothesis."
+    (d) Explain how the scientific method operates as a self-correcting mechanism when new phylogenomic sequence data contradict a previously accepted evolutionary pathway.
+28. **Evaluating Validity, Accuracy, and Reliability in Enzyme Kinetics** [Type: Theory; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: Cambridge A Level 2020]
+    An investigation measures the initial velocity ($V_0$) of catalase activity across five hydrogen peroxide concentrations (0.1 M, 0.2 M, 0.3 M, 0.4 M, 0.5 M). Three trials were conducted per concentration using a manual stopwatch and a graduated measuring cylinder to capture oxygen gas volume.
+    (a) Distinguish clearly between the terms accuracy, reliability, and validity as they apply to biological measurements.
+    (b) Identify two sources of random error inherent in the manual collection of gas volume and suggest specific technological improvements to convert these into precise quantitative measurements.
+    (c) Explain why conducting three trials per concentration improves reliability compared to a single measurement.
+    (d) Describe how the presence of an unrecognized competitive inhibitor in the catalase extract would act as a confounding variable, and predict its effect on the calculated $V_{max}$.
+29. **Eliminating Confounding Variables in Plant Transpiration Assays** [Type: Theory; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: WAEC 2022]
+    A potometer is assembled to measure water uptake by a leafy shoot under varying wind speeds generated by an electric fan set at three speed settings (Low, Medium, High).
+    (a) State the primary assumption made when using water uptake in a potometer as an indirect measurement of transpiration rate.
+    (b) Identify two environmental variables other than wind speed that could act as confounding factors during this assay if left uncontrolled, and explain their direct physiological impact on stomatal conductance.
+    (c) Outline the procedural steps required to reset and zero the air bubble in a micro-pipette potometer between successive experimental trials.
+30. **Methodological Rigor and Self-Correction in Ecological Field Surveys** [Type: Theory; Subject: Bio; Topic: Topic 1: The Nature of Biological Inquiry and the Scientific Method; Format: Non-Sim; Exam: NECO 2021]
+    An ecological survey estimates the population density of an endangered ground beetle species across a fragmented forest ecosystem using 1 m$^2$ quadrat sampling.
+    (a) Explain why random sampling is necessary when laying out quadrats along a forest grid, and describe how random numbers should be generated to eliminate selection bias.
+    (b) Contrast qualitative biodiversity observations (e.g., species presence) with quantitative density measurements (e.g., individuals/m$^2$).
+    (c) Explain how sample size (n) influences the statistical confidence of the population density estimate.
+    (d) Discuss how peer review and independent replication by other research teams serve to validate or refute published ecological claims.

@@ -1,0 +1,109 @@
+1. An experimenter measures the mass of a sample five times, obtaining 12.4 g, 12.5 g, 12.4 g, 12.6 g, and 12.5 g. The true mass is known to be 14.1 g. How should this measurement set be characterized? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: IB Physics]
+   A. High precision and high accuracy
+   B. High precision and low accuracy
+   C. Low precision and high accuracy
+   D. Low precision and low accuracy
+2. Which of the following experimental modifications will specifically reduce the impact of random errors on a calculated mean value? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: WAEC 2021]
+   A. Recalibrating the digital measuring instrument against a standard reference
+   B. Adjusting the apparatus to eliminate zero offset error
+   C. Increasing the number of independent measurement trials and taking the arithmetic mean
+   D. Switching from an analogue vernier caliper to a digital micrometer
+3. A student records a potential difference reading of $V = 12.0 \pm 0.3$ V. What is the percentage uncertainty in this measurement? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+   A. 0.025%
+   B. 0.25%
+   C. 2.5%
+   D. 4.0%
+4. Two masses are measured as $m_1 = 45.2 \pm 0.1$ g and $m_2 = 18.6 \pm 0.2$ g. Calculate the absolute uncertainty in the combined mass $M = m_1 + m_2$. [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+   A. $\pm 0.1$ g
+   B. $\pm 0.2$ g
+   C. $\pm 0.3$ g
+   D. $\pm 0.02$ g
+5. The radius r of a sphere is measured with a percentage uncertainty of 2%. What is the percentage uncertainty in the calculated volume $V = \frac{4}{3}\pi r^3$? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: AP Physics 1]
+   A. 2%
+   B. 6%
+   C. 8%
+   D. 12%
+6. An analogue voltmeter with a scale divided into 0.1 V intervals is used for a single measurement. What is the standard absolute reading uncertainty associated with this instrument? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: IB Physics]
+   A. $\pm 0.1$ V
+   B. $\pm 0.05$ V
+   C. $\pm 0.01$ V
+   D. $\pm 0.2$ V
+7. A linear graph of y against x yields a best-fit slope of $m_{best} = 2.45$ SI and a worst-fit maximum slope of $m_{max} = 2.60$ SI. Calculate the absolute uncertainty in the slope $\Delta m$. [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: AP Physics 1]
+   A. $\pm 0.15$ SI
+   B. $\pm 0.075$ SI
+   C. $\pm 0.30$ SI
+   D. $\pm 0.05$ SI
+8. In an experiment investigating how the period T of a simple pendulum depends on string length L, which variable must be plotted on the horizontal (x-axis)? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: NECO 2020]
+   A. Period T (dependent variable)
+   B. Length L (independent variable)
+   C. Acceleration due to gravity g (controlled variable)
+   D. Bob mass m (controlled variable)
+9. The current I through a resistor is $I = 2.0 \pm 0.1$ A and the resistance is $R = 10.0 \pm 0.5$ $\Omega$. Calculate the fractional uncertainty in the power dissipated $P = I^2R$. [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+   A. 0.05
+   B. 0.10
+   C. 0.15
+   D. 0.20
+10. Which error type introduces a persistent, constant offset from the true value in one specific direction across all measurements? [Type: MCQ; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: WAEC 2019]
+    A. Parallax error due to random viewing positions
+    B. Systematic zero-error on a digital balance
+    C. Thermal fluctuations in environmental temperature
+    D. Human reaction time variability in manual stopwatch triggering
+11. A rectangular steel plate has measured length $L = 12.0 \pm 0.2$ cm and width $W = 5.0 \pm 0.1$ cm. Calculate the absolute uncertainty in its area A in cm$^2$. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+12. The period of oscillation of a spring-mass system is $T = 2\pi\sqrt{\frac{m}{k}}$. If the mass m has a percentage uncertainty of 4% and the spring constant k has a percentage uncertainty of 6%, compute the percentage uncertainty in T. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: IB Physics]
+13. Convert a fractional uncertainty of 0.045 into a percentage uncertainty. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: null]
+14. A student records ten stopwatch trials for 20 pendulum oscillations: $T_{20} = 28.2$ s, 28.4 s, 28.1 s, 28.3 s, 28.5 s, 28.2 s, 28.4 s, 28.3 s, 28.1 s, 28.5 s. Calculate the mean period T for a single oscillation. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: WAEC 2021]
+15. A student constructs a linear graph with error bars. The best-fit line gradient is $m_{best} = 4.80$ s$^{-1}$, the maximum acceptable gradient is $m_{max} = 5.10$ s$^{-1}$, and the minimum acceptable gradient is $m_{min} = 4.50$ s$^{-1}$. Express the final gradient result with its absolute uncertainty. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: AP Physics 1]
+16. State the number of significant figures present in the measurement value 0.004050 kg. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: null]
+17. Calculate the absolute uncertainty in $Q = x - y$ where $x = 100 \pm 2$ J and $y = 45 \pm 3$ J. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+18. A micrometer screw gauge exhibits a zero error of $-0.03$ mm. If an uncorrected scale reading is 2.45 mm, calculate the true corrected thickness. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: NECO 2021]
+19. Identify the controlled variable in an experiment investigating Boyle's Law ($P \propto \frac{1}{V}$ for an ideal gas). [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: IB Physics]
+20. The speed of sound is measured as $v = 332 \pm 5$ m·s$^{-1}$. Calculate the fractional uncertainty in v. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: null]
+21. Calculate the percentage uncertainty in the density $\rho = \frac{m}{V}$ of a cube whose mass has 1.5% uncertainty and side length has 1.0% uncertainty. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+22. A graph of $v^2$ against s yields a y-intercept of $c_{best} = 16.0$ m$^2$·s$^{-2}$ with $c_{max} = 17.5$ m$^2$·s$^{-2}$. Compute the percentage uncertainty in the initial velocity squared. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: AP Physics 1]
+23. Express the measurement $V = 5.6743$ V rounded to match an absolute uncertainty of $\pm 0.08$ V. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: IB Physics]
+24. Calculate the percentage error between an experimentally determined acceleration due to gravity $g_{exp} = 9.61$ m·s$^{-2}$ and the accepted theoretical value $g_{true} = 9.81$ m·s$^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: WAEC 2020]
+25. An optical sensor measures time intervals with a resolution of 1 $\mu$s. Determine the reading uncertainty for a single time measurement. [Type: Hybrid; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: null]
+26. **Experimental Determination of g via Free Fall and Worst-Fit Line Uncertainty Analysis** [Type: Theory; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+    An experiment is designed to determine the local acceleration due to gravity g by dropping a steel ball through a series of light gates. The release height h and corresponding fall time t are recorded.
+    [DIAGRAM: Graph of h on vertical axis vs $t^2$ on horizontal axis, showing experimental data points with vertical error bars, best-fit line, maximum-gradient worst-fit line, and minimum-gradient worst-fit line]
+    The governing kinematic relation is $h = \frac{1}{2}gt^2$.
+    The measured data set is tabulated below:
+    | Height h (m) ($\pm 0.005$ m) | Time t1 (s) | Time t2 (s) | Time t3 (s) | Mean Time $\bar{t}$ (s) | $\bar{t}^2$ (s$^2$) |
+    | --- | --- | --- | --- | --- | --- |
+    | 0.200 | 0.201 | 0.203 | 0.202 | 0.202 | 0.0408 |
+    | 0.400 | 0.284 | 0.287 | 0.285 | 0.285 | 0.0812 |
+    | 0.600 | 0.348 | 0.351 | 0.349 | 0.349 | 0.1218 |
+    | 0.800 | 0.402 | 0.405 | 0.403 | 0.403 | 0.1624 |
+    | 1.000 | 0.450 | 0.453 | 0.451 | 0.451 | 0.2034 |
+    (a) Calculate the absolute and percentage uncertainty in $\bar{t}^2$ for the height $h = 1.000$ m.
+    (b) Explain why plotting h against $t^2$ yields a linear relationship, and state the physical interpretation of the gradient m.
+    (c) The best-fit line yields a gradient of $m_{best} = 4.88$ m·s$^{-2}$. The maximum and minimum worst-fit gradients are $m_{max} = 5.05$ m·s$^{-2}$ and $m_{min} = 4.71$ m·s$^{-2}$. Determine the experimental value of g alongside its absolute uncertainty.
+    (d) Identify one source of systematic error in this apparatus and propose a specific procedural refinement to eliminate it.
+27. **Multivariable Uncertainty Propagation in Electrical Resistivity Calculations** [Type: Theory; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: IB Physics]
+    The electrical resistivity $\rho$ of a cylindrical metallic wire is determined using the equation: $\rho = \frac{RA}{L} = \frac{V\pi d^2}{4IL}$.
+    The experimental raw data and absolute instrument uncertainties are given as:
+    Potential difference $V = 4.50 \pm 0.05$ V
+    Current $I = 1.20 \pm 0.02$ A
+    Wire diameter $d = 0.80 \pm 0.02$ mm
+    Wire length $L = 1.500 \pm 0.002$ m
+    (a) Calculate the fractional uncertainty associated with each of the four raw quantities ($V, I, d, L$).
+    (b) Show that the percentage uncertainty in the diameter d contributes the dominant component of the total calculated uncertainty in $\rho$.
+    (c) Calculate the value of resistivity $\rho$ in $\Omega$·m and state its absolute uncertainty to the correct number of significant figures.
+28. **Rigorous Experimental Design and Investigation of Centripetal Force** [Type: Theory; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: AP Physics 1]
+    A laboratory team is tasked with designing an investigation to test the hypothesis that the centripetal force $F_c$ acting on an object moving in a horizontal circle of radius r at constant speed v is directly proportional to $v^2$.
+    (a) Formulate a complete experimental plan: identify the independent variable, dependent variable, and three essential controlled variables.
+    (b) Describe the physical apparatus required, safety protocols, and step-by-step measurement methodology to collect valid data across six distinct velocity settings.
+    (c) Detail the graphical strategy required to test linear dependence, specifying the exact variables to plot on each coordinate axis.
+    (d) Explain how an uncalibrated force sensor introduces systematic error, and describe how zeroing the sensor mitigates this error.
+29. **Comparative Analysis of Error Reduction Strategies in Simple Harmonic Motion** [Type: Theory; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: NECO A-Level]
+    A researcher measures the period of a simple pendulum using two distinct experimental methodologies:
+    Method A: Measuring the time for a single oscillation $T_1$ across 10 separate trials using a manual digital stopwatch.
+    Method B: Measuring the cumulative time for 20 continuous oscillations $T_{20}$ across 3 trials and dividing by 20.
+    (a) Explain quantitatively why Method B reduces the absolute uncertainty in the calculated period T compared to Method A.
+    (b) Distinguish between the human reaction time error ($\approx \pm 0.2$ s) and the instrument scale resolution. Classify human reaction time within error taxonomy.
+    (c) Mathematically prove that taking the arithmetic mean of n independent random measurements reduces the standard error of the mean by a factor of $\frac{1}{\sqrt{n}}$.
+30. **Non-Linear Data Transformation and Logarithmic Linearization** [Type: Theory; Subject: Physics; Topic: L1.2 Experimental Uncertainties, Error Analysis, and Systematic Design; Format: Non-Sim; Exam: CAIE A-Level]
+    A physical process follows an unknown power-law relationship of the form $Y = aX^b$, where a and b are empirical constants to be determined.
+    (a) Apply natural logarithms to transform $Y = aX^b$ into a linear equation of the form $y = mx + c$. Identify the expressions for slope m and y-intercept c.
+    (b) Given transformed experimental data where $\ln(Y)$ is plotted against $\ln(X)$, the best-fit line yields slope $m = 1.50 \pm 0.05$ and y-intercept $c = 2.30 \pm 0.10$. Calculate the numerical values and uncertainties of constants a and b.
+    (c) Discuss how transforming raw data through non-linear functions alters the symmetry of error bars, and explain why weighted least-squares regression is required for high precision.

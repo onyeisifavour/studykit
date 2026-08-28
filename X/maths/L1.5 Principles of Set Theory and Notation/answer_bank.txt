@@ -1,0 +1,40 @@
+1. A [Type: MCQ]
+2. C [Type: MCQ]
+3. A [Type: MCQ]
+4. C [Type: MCQ]
+5. A [Type: MCQ]
+6. B [Type: MCQ]
+7. B [Type: MCQ]
+8. B [Type: MCQ]
+9. B [Type: MCQ]
+10. B [Type: MCQ]
+11. $A = \{-2, -1, 0, 1, 2\}$ [Type: Hybrid]
+12. 2 [Type: Hybrid]
+13. $(-\infty, \infty)$ or $\mathbb{R}$ [Type: Hybrid]
+14. $\{2, 4, 8, 10\}$ [Type: Hybrid]
+15. $|K| = 6$ [Type: Hybrid]
+16. $\{x \in \mathbb{R} \mid x \le -2 \text{ or } x > 5\}$ [Type: Hybrid]
+17. Yes, right endpoint is closed [Type: Hybrid]
+18. 22 [Type: Hybrid]
+19. True [Type: Hybrid]
+20. $A \cap B'$ [Type: Hybrid]
+21. $\{1, 2, 5, 6\}$ [Type: Hybrid]
+22. 1 [Type: Hybrid]
+23. $[1, 5]$ [Type: Hybrid]
+24. $A \cap B = A$, $A \cup B = B$ [Type: Hybrid]
+25. 16 [Type: Hybrid]
+26. (a) Element-wise logical equivalence. [Type: Theory]
+    (b) Logical equivalence proof.
+    (c) $A \cup B$.
+27. (a) Inclusion-Exclusion formula derivation. [Type: Theory]
+    (b) 88 students.
+    (c) Exactly two = 22, None = 12.
+28. (a) $P(S) = \{X \mid X \subseteq S\}$. [Type: Theory]
+    (b) Inductive proof step showing doubling per element.
+    (c) Partitioned listing confirming binomial coefficient sum.
+29. (a) Number line description. [Type: Theory]
+    (b) (i) $(1, 3)$, (ii) $[-4, 6]$, (iii) $[3, 6]$, (iv) $[-4, 1]$.
+    (c) Union of disjoint intervals $(-\infty, -4) \cup [3, \infty)$.
+30. (a) Non-empty, exhaustive, pairwise disjoint collection. [Type: Theory]
+    (b) Valid partition.
+    (c) Disjoint union proof showing $A \cup B = (A \setminus B) \cup (A \cap B) \cup (B \setminus A)$.

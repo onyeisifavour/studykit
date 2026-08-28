@@ -1,0 +1,97 @@
+1. Which of the following physical quantities is categorized strictly as a scalar quantity? [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: WAEC 2021]
+   A. Magnetic field intensity
+   B. Electric potential energy
+   C. Momentum
+   D. Torque
+2. Two vectors A and B have magnitudes of 8 units and 6 units, respectively. Which of the following CANNOT be the magnitude of their vector resultant $R = A + B$? [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+   A. 2 units
+   B. 10 units
+   C. 14 units
+   D. 16 units
+3. Vector F has a magnitude of 50 N directed at an angle of 30$^\circ$ above the negative x-axis (in the second quadrant). What is its horizontal Cartesian component $F_x$? [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: AP Physics C]
+   A. $+43.3$ N
+   B. $-43.3$ N
+   C. $+25.0$ N
+   D. $-25.0$ N
+4. Calculate the scalar (dot) product $A \cdot B$ for vectors $A = 3\hat{i} - 4\hat{j} + 2\hat{k}$ and $B = 2\hat{i} + 1\hat{j} - 5\hat{k}$. [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: IB Physics]
+   A. $-8$
+   B. $+8$
+   C. $-12$
+   D. $+18$
+5. The magnitude of the vector (cross) product $|A \times B|$ is maximized when the angle $\theta$ between A and B is: [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: NECO A-Level]
+   A. $0^\circ$
+   B. $45^\circ$
+   C. $90^\circ$
+   D. $180^\circ$
+6. Two force vectors $F_1 = 12$ N and $F_2 = 15$ N act on a point mass with an included angle of 60$^\circ$ between them. Use the Law of Cosines to determine the magnitude of the resultant force. [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+   A. 13.5 N
+   B. 23.4 N
+   C. 27.0 N
+   D. 19.2 N
+7. Given a position vector $r = 4\hat{i} - 3\hat{j}$ m, what is the unit vector $\hat{r}$ pointing in the exact same direction? [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: AP Physics C]
+   A. $0.8\hat{i} - 0.6\hat{j}$
+   B. $0.6\hat{i} - 0.8\hat{j}$
+   C. $4\hat{i} - 3\hat{j}$
+   D. $0.5\hat{i} - 0.5\hat{j}$
+8. Which property correctly characterizes the vector cross product operation? [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: IB Physics]
+   A. Commutative: $A \times B = B \times A$
+   B. Anti-commutative: $A \times B = -(B \times A)$
+   C. Always yields a scalar quantity
+   D. Independent of the right-hand orientation rule
+9. A displacement vector moves an object from position $(2, -1, 3)$ m to position $(5, 3, -2)$ m. Calculate the magnitude of displacement. [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: WAEC 2020]
+   A. 5.0 m
+   B. 7.07 m
+   C. 8.25 m
+   D. 10.0 m
+10. If the dot product of two non-zero vectors $P \cdot Q = 0$, what can be conclusively deduced regarding their geometric alignment? [Type: MCQ; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: NECO 2021]
+    A. Vectors P and Q are parallel.
+    B. Vectors P and Q are antiparallel.
+    C. Vectors P and Q are orthogonal (perpendicular).
+    D. Vectors P and Q have identical magnitudes.
+11. Calculate the magnitude of the vector resultant for three planar forces: $F_1 = (10\hat{i} + 15\hat{j})$ N, $F_2 = (-5\hat{i} + 20\hat{j})$ N, and $F_3 = (7\hat{i} - 10\hat{j})$ N. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+12. Compute the angle $\theta$ in degrees between vectors $A = 2\hat{i} + 3\hat{j}$ and $B = 4\hat{i} - 1\hat{j}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: IB Physics]
+13. Determine the cross product vector $C = A \times B$ given $A = 2\hat{i} + 0\hat{j} + 0\hat{k}$ and $B = 0\hat{i} + 5\hat{j} + 0\hat{k}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: AP Physics C]
+14. A force $F = (20\hat{i} - 15\hat{j})$ N acts on a particle during a displacement $d = (4\hat{i} + 3\hat{j})$ m. Calculate the work done $W = F \cdot d$ in Joules. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: WAEC 2022]
+15. Two vectors of equal magnitude V yield a resultant of magnitude V. Calculate the included angle between the two vectors in degrees. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: NECO A-Level]
+16. Evaluate the Cartesian component product $(\hat{i} \times \hat{j}) \cdot \hat{k}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: AP Physics C]
+17. Vector P has a magnitude of 10 units at 40$^\circ$ to the horizontal and vector Q has a magnitude of 15 units at 130$^\circ$ to the horizontal. Calculate the magnitude of the vector sum $P + Q$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+18. Find the value of scalar constant k such that vector $A = 3\hat{i} + k\hat{j}$ is orthogonal to vector $B = 6\hat{i} - 2\hat{j}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: IB Physics]
+19. Calculate the vector projection of $A = 4\hat{i} + 2\hat{j}$ onto the x-axis unit vector $\hat{i}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: null]
+20. A boat heads due North across a river at 8.0 m·s$^{-1}$ relative to the water. The river current flows due East at 6.0 m·s$^{-1}$. Calculate the resultant velocity magnitude relative to the bank. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: WAEC 2021]
+21. Compute the magnitude of torque $\tau = r \times F$ for position vector $r = 3.0$ m along the x-axis and force $F = 12.0$ N acting at 90$^\circ$ to the x-axis in the xy-plane. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: AP Physics C]
+22. State the magnitude of the zero (null) vector 0. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: null]
+23. Two vectors fulfill $|A + B| = |A - B|$. Determine the angle between A and B in degrees. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: IB Physics]
+24. Calculate the area of a parallelogram defined by adjacent edge vectors $A = 3\hat{i}$ and $B = 4\hat{j}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+25. Calculate the direction angle $\theta$ (with respect to the positive x-axis) of vector $V = -3\hat{i} - 3\hat{j}$. [Type: Hybrid; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: NECO 2020]
+26. **Three-Dimensional Structural Equilibrium and Component Vector Mechanics** [Type: Theory; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+    A heavy ring of mass $m = 25$ kg is suspended in static equilibrium by three flexible steel cables anchored at spatial points A, B, and C.
+    [DIAGRAM: 3D Cartesian coordinate system showing origin O at suspended mass, cable $T_1$ along positive x-axis, cable $T_2$ in xy-plane at angle $\theta$, and cable $T_3$ extending into positive z-space]
+    The force vectors exerted by the three cables are expressed in Cartesian component form as:
+    $T_1 = T_{1x}\hat{i} + 0\hat{j} + 0\hat{k}$
+    $T_2 = -T_2\cos(30^\circ)\hat{i} + T_2\sin(30^\circ)\hat{j} + 0\hat{k}$
+    $T_3 = 0\hat{i} - 120\hat{j} + T_{3z}\hat{k}$
+    The gravitational force acting downward is $W = -mg\hat{k}$ where $g = 9.81$ m·s$^{-2}$.
+    (a) State the vector condition for static translational equilibrium in three dimensions.
+    (b) Formulate three independent algebraic equations corresponding to the $\hat{i}$, $\hat{j}$, and $\hat{k}$ components.
+    (c) Calculate the required magnitude of tension $T_{3z}$ to support the mass in the vertical z-direction.
+    (d) Solve the system to determine the exact scalar tension magnitudes $T_1$ and $T_2$.
+27. **Non-Orthogonal Vector Systems and Oblique Navigation Calculus** [Type: Theory; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: IB Physics]
+    An aircraft flies with an airspeed of $v_a = 220$ km·h$^{-1}$ on a compass heading of 045$^\circ$ (North-East). A steady wind blows from 270$^\circ$ (due West towards East) at a speed of $v_w = 65$ km·h$^{-1}$.
+    (a) Construct a vector triangle diagram depicting airspeed $v_a$, wind velocity $v_w$, and groundspeed resultant $v_g$.
+    (b) Apply the Law of Cosines to calculate the magnitude of the groundspeed $|v_g|$.
+    (c) Apply the Law of Sines to calculate the drift angle $\alpha$ and state the true track direction relative to due North.
+28. **Mathematical Foundations and Physical Applications of Vector Products** [Type: Theory; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: AP Physics C]
+    Consider two general vectors in Cartesian space: $A = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$ and $B = B_x\hat{i} + B_y\hat{j} + B_z\hat{k}$.
+    (a) Prove algebraically that the scalar product $A \cdot B = A_xB_x + A_yB_y + A_zB_z$ starting from the unit vector dot products ($\hat{i} \cdot \hat{i} = 1$, $\hat{i} \cdot \hat{j} = 0$, etc.).
+    (b) Express the vector cross product $A \times B$ in 3$\times$3 matrix determinant form and expand it into its Cartesian component representation.
+    (c) A particle carrying electric charge $q = 1.6 \times 10^{-19}$ C moves with velocity $v = (3.0\hat{i} + 4.0\hat{j}) \times 10^5$ m·s$^{-1}$ through a uniform magnetic field $B = 0.50\hat{k}$ T. Calculate the magnetic Lorentz force vector $F = q(v \times B)$.
+29. **Derivation of Rotational Torque and Angular Momentum Vectors** [Type: Theory; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: NECO A-Level]
+    Rotational dynamics relies on cross-product operations linking linear position to rotational force and momentum.
+    (a) Define torque $\tau$ and angular momentum L in terms of position vector r, force vector F, and linear momentum vector p.
+    (b) A force $F = (-10\hat{i} + 25\hat{j})$ N acts at position $r = (0.8\hat{i} + 0.6\hat{j})$ m relative to a pivot point at the origin. Compute the torque vector $\tau$.
+    (c) Explain why torque is classified as a pseudovector (axial vector) and demonstrate how the right-hand grip rule determines its directional sign relative to the plane of rotation.
+30. **Vector Proofs and Orthogonality Conditions** [Type: Theory; Subject: Physics; Topic: L1.3 Vector and Scalar Algebra in Multi-Dimensional Systems; Format: Non-Sim; Exam: CAIE A-Level]
+    Vector algebra provides elegant methods for proving geometric theorems without scalar coordinate expansions.
+    (a) Prove vectorially that the diagonals of a rhombus are mutually perpendicular.
+    (b) Prove the parallelogram law of vector addition: $|A + B|^2 + |A - B|^2 = 2|A|^2 + 2|B|^2$.
+    (c) Given two vectors u and v such that $|u| = 5$, $|v| = 3$, and $u \cdot v = 6$, calculate the exact magnitude of their cross product $|u \times v|$.

@@ -1,0 +1,114 @@
+1. Which statement best encapsulates the primary definition of chemistry as an empirical physical science? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. The observational study of celestial motion and gravitational interaction between macroscopic bodies
+   B. The systematic investigation of matter, its composition, structure, properties, and the energy transformations accompanying its changes
+   C. The theoretical formulation of quantum wave functions independent of physical or material properties
+   D. The qualitative categorization of naturally occurring minerals without quantitative analytical testing
+2. A research team isolates a novel crystalline compound containing carbon, hydrogen, nitrogen, and oxygen from a marine organism and synthesizes structural analogs to evaluate medicinal efficacy. Which branch of chemistry primarily governs this investigation? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+   A. Inorganic Chemistry
+   B. Physical Chemistry
+   C. Organic Chemistry
+   D. Industrial Chemistry
+3. What fundamental distinction separates a scientific law from a scientific theory in chemical inquiry? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: IB Chemistry]
+   A. A law is a proved theory that can no longer be falsified by experimental evidence
+   B. A law describes a quantitative, universal relationship observed under specific conditions, whereas a theory provides a comprehensive explanation of underlying mechanisms
+   C. A theory is a tentative guess, whereas a law represents absolute mathematical certainty
+   D. A law applies exclusively to macroscopic systems, whereas a theory applies exclusively to subatomic particles
+4. An investigator records that mixing 50.0 cm$^3$ of 1.0 mol/dm$^3$ HCl and 50.0 cm$^3$ of 1.0 mol/dm$^3$ NaOH results in a temperature increase from 22.0$^\circ$C to 28.5$^\circ$C. This statement represents a: [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: WAEC 2020]
+   A. Scientific Theory
+   B. Qualitative Hypothesis
+   C. Direct Empirical Observation
+   D. Universal Law
+5. Which domain of chemistry is predominantly tasked with determining the chemical composition, identity, and relative quantities of components within an unknown environmental soil sample? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+   A. Analytical Chemistry
+   B. Biochemistry
+   C. Theoretical Chemistry
+   D. Inorganic Chemistry
+6. Which statement illustrates the fundamental relationship between microscopic structure and macroscopic properties in chemical systems? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: AP Chemistry]
+   A. The overall mass of a metal block increases exponentially when its unit cell structure is altered by mechanical stress
+   B. The presence of directional covalent network bonding in diamond accounts for its exceptional macroscopic hardness and high sublimation temperature
+   C. The volume of a liquid compound is strictly dictated by the electrical charge of its atomic nuclei
+   D. The macroscopic density of an elemental gas is entirely independent of its molecular mass and particle spacing
+7. A chemical engineer models reaction kinetics, activation energy barriers, and thermodynamic equilibrium parameters for the Haber-Bosch synthesis of ammonia (N$_2$ + 3H$_2$ $\rightleftharpoons$ 2NH$_3$). This work falls under: [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: NECO A-Level]
+   A. Analytical Biochemistry
+   B. Physical Chemistry
+   C. Bioinorganic Chemistry
+   D. Synthetic Organic Chemistry
+8. Which of the following best exemplifies an application of chemistry in modern agricultural science? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. Development of computer algorithms to map topography
+   B. Formulation of synthetic nitrogenous fertilizers and targeted systemic pesticides
+   C. Construction of mechanical harvesting equipment
+   D. Radiometric dating of fossilized seeds
+9. How does the scientific method treat a hypothesis when rigorous experimental data consistently contradict its predictions? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+   A. The hypothesis is automatically declared a scientific law
+   B. The experimental data are discarded to preserve the logical framework of the hypothesis
+   C. The hypothesis is modified or rejected in light of empirical evidence
+   D. The hypothesis is accepted provisionally until theoretical models are developed
+10. The study of metabolic pathways, such as glycolysis and the citric acid cycle, at the molecular level belongs to which branch of chemistry? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: IB Chemistry]
+    A. Biochemistry
+    B. Industrial Chemistry
+    C. Polymer Chemistry
+    D. Physical Chemistry
+11. Which option describes a quantitative chemical observation rather than a qualitative one? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: WAEC 2019]
+    A. A pungent, choking gas is evolved during the reaction
+    B. The copper sulfate solution changes from deep blue to colorless
+    C. The reaction releases 42.5 kJ of thermal energy per mole of reactant consumed
+    D. A yellow precipitate forms rapidly upon mixing the reagents
+12. Which chemical enterprise directly mitigates atmospheric pollution through catalytic converters in automobiles? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A. Bioinorganic Pharmacy
+    B. Environmental and Industrial Chemistry
+    C. Petrochemical Refining
+    D. Structural Crystallography
+13. The Law of Conservation of Mass states that mass is neither created nor destroyed during an ordinary chemical reaction. This statement is classified as a scientific law because: [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: AP Chemistry]
+    A. It explains the quantum mechanical origin of atomic mass changes
+    B. It summarizes vast empirical observations into a consistent mathematical description without explaining why matter behaves this way
+    C. It was proven theoretically before any experiments were conducted
+    D. It applies only under high-energy nuclear conditions
+14. Which interdisciplinary field bridges chemistry and physics to study atomic spectra, quantum mechanical energy levels, and molecular orbitals? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+    A. Chemical Physics / Quantum Chemistry
+    B. Geochemistry
+    C. Agricultural Chemistry
+    D. Synthetic Organic Chemistry
+15. What is the fundamental focus of green and sustainable chemistry in industrial manufacturing? [Type: MCQ; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: NECO A-Level]
+    A. Maximizing process yield regardless of toxic byproduct generation
+    B. Designing chemical processes and products that reduce or eliminate the use and generation of hazardous substances
+    C. Replacing all inorganic compounds with naturally occurring organic matter
+    D. Eliminating the use of catalysts in industrial chemical reactors
+16. A research team measures the second-order rate constant k = 1.42 $\times$ 10$^{-3}$ dm$^3$$\cdot$mol$^{-1}$$\cdot$s$^{-1}$ for an ester hydrolysis reaction. Identify the main branch of chemistry concerned with this kinetic measurement. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+17. Classify the following statement as a law, theory, or hypothesis: "At constant temperature, the pressure of a fixed mass of gas is inversely proportional to its volume (P $\propto$ $\frac{1}{V}$)". [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: WAEC 2019]
+18. State the primary branch of chemistry that investigates the structural properties, coordination geometry, and magnetic behavior of transition metal complexes such as [Fe(CN)$_6$]$^{3-}$. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: IB Chemistry]
+19. An analyst determines that an unknown water sample contains 3.2 ppm of dissolved lead ions (Pb$^{2+}$). State whether this determination represents qualitative or quantitative analytical chemistry. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+20. Identify the branch of chemistry that scales up laboratory reaction pathways into large-scale commercial manufacturing processes, focusing on mass transfer, energy efficiency, and cost optimization. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+21. State the logical scientific term given to a tentative, testable explanation formulated to account for observed physical phenomena before rigorous experimental validation. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: NECO A-Level]
+22. What fundamental property of matter is defined as the measure of the quantity of inertia it possesses or the amount of material contained within a physical body? [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+23. Name the interdisciplinary domain of chemistry that studies chemical transformations occurring within marine environments, sediment layers, and natural aqueous systems. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+24. A student posits that "Adding sodium chloride to pure water will increase its electrical conductivity because the salt dissociates into mobile ions". Identify whether "dissociates into mobile ions" is an observation or a theoretical explanation. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: AP Chemistry]
+25. State the branch of chemistry dedicated to the synthesis and characterization of long-chain repeating macromolecular structures such as polyethylene and proteins. [Type: Hybrid; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: null]
+26. **Scientific Epistemology and Model Evaluation in Chemistry** [Type: Theory; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: IB Chemistry]
+    Historical progression in atomic theory demonstrates how scientific models evolve upon encountering empirical anomalies.
+    (a) Distinguish clearly between a scientific hypothesis, a scientific law, and a scientific theory using John Dalton's Atomic Theory and the Law of Multiple Proportions as exemplars.
+    (b) Explain how the discovery of isotopes by Frederick Soddy modified Dalton's original postulate regarding identical atomic masses for a given element.
+    (c) Evaluate why the kinetic molecular theory of gases is categorized as a theory rather than a law, despite its ability to mathematically derive Boyle's Law and Charles's Law.
+27. **Interdisciplinary Classification and Problem-Solving Frameworks** [Type: Theory; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    Consider three industrial and environmental challenges:
+    1. Developing synthetic small-molecule inhibitors to target viral protease enzymes.
+    2. Optimizing the thermodynamic conditions for catalytic conversion of sulfur dioxide to sulfur trioxide in sulfuric acid production.
+    3. Monitoring trace microplastic degradation products in estuarine ecosystems using gas chromatography-mass spectrometry (GC-MS).
+    (a) Map each challenge (1, 2, and 3) to its primary branch of chemistry (e.g., Organic, Inorganic, Physical, Analytical, Biochemistry, Industrial). Justify each assignment based on the core chemical principles involved.
+    (b) Explain how challenge 1 and challenge 3 demonstrate the interdisciplinary overlap between chemistry, biology, and environmental science.
+28. **Scientific Method and Experimental Variable Design** [Type: Theory; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: AP Chemistry]
+    A student investigates the effect of catalyst surface area on the rate of decomposition of hydrogen peroxide solution:
+    $2$H$_2$O$_2$(aq) $\xrightarrow{\text{MnO}_2\,(s)}$ $2$H$_2$O(l) + O$_2$(g)
+    (a) Formulate a precise, testable scientific hypothesis for this investigation.
+    (b) Identify the independent variable, the dependent variable, and three essential control variables necessary to ensure experimental validity.
+    (c) Describe the method required to collect quantitative evidence to test the hypothesis, specifying the measuring instruments used.
+    (d) Explain how an unexpected systematic error (such as gas leakage from the apparatus) would impact the validity of the conclusions drawn.
+29. **Societal and Environmental Impact of Applied Industrial Chemistry** [Type: Theory; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: NECO A-Level]
+    The Haber-Bosch process synthesizes ammonia (NH$_3$) from atmospheric nitrogen (N$_2$) and hydrogen (H$_2$).
+    (a) Describe the societal importance of this process in global agriculture and food production.
+    (b) Analyze the environmental consequences associated with the runoff of nitrate fertilizers derived from industrial ammonia into aquatic ecosystems (eutrophication).
+    (c) Outline two green chemistry modifications that can reduce the carbon footprint of industrial hydrogen production for this process.
+30. **Comparative Epistemology: Distinguishing Laws, Theories, and Hypotheses** [Type: Theory; Subject: Chem; Topic: L1.1 Definition and Scope of Chemistry; Format: Non-Sim; Exam: WAEC 2021]
+    In chemical investigations, scientists construct logical arguments using inductive and deductive reasoning.
+    (a) Contrast inductive reasoning with deductive reasoning as applied in chemical research.
+    (b) Explain why a scientific theory can never be stated as "absolute truth" or mathematically proven beyond all future refutation.
+    (c) Provide a historic example of a chemical theory that was superseded or substantially revised due to new experimental evidence, detailing the new evidence that forced its modification.

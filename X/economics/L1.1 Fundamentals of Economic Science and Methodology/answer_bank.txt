@@ -1,0 +1,40 @@
+1. B — Positive economics relies strictly on verifiable, objective empirical analysis [Type: MCQ]
+2. B — Ceteris paribus isolates the specific relationship between an independent and dependent variable [Type: MCQ]
+3. B — Inductive reasoning derives general principles from specific empirical observations [Type: MCQ]
+4. C — Statement C contains objective, testable cause-and-effect relationships [Type: MCQ]
+5. B — Moving from general theoretical axioms to specific testable hypotheses is deductive reasoning [Type: MCQ]
+6. C — Selecting every n-th unit from a list after a random start is systematic sampling [Type: MCQ]
+7. B — Systematically underrepresenting specific population sub-groups constitutes sampling bias [Type: MCQ]
+8. B — Secondary data leaves the researcher without direct control over initial collection quality and bias [Type: MCQ]
+9. B — In the functional demand equation, Price (P) is the independent variable [Type: MCQ]
+10. C — Independent academic researchers maintain strict objective separation between analysis and policy advocacy [Type: MCQ]
+11. B — Assumptions strip away non-essential noise to highlight key underlying causal mechanisms [Type: MCQ]
+12. B — Prescriptive claims containing terms like "must" and "fairness" are normative statements [Type: MCQ]
+13. B — Dividing a population into sub-groups (strata) and sampling within each is stratified sampling [Type: MCQ]
+14. A — Interdependence among macroeconomic variables makes complete variable isolation difficult [Type: MCQ]
+15. B — Empirical evidence serves to test, accept, refine, or refute theoretical economic hypotheses [Type: MCQ]
+16. Positive statement (asserts a testable cause-and-effect relationship) [Type: Hybrid]
+17. C = 700 [Type: Hybrid]
+18. 200 workers [Type: Hybrid]
+19. Ceteris paribus [Type: Hybrid]
+20. 70% [Type: Hybrid]
+21. Inductive reasoning [Type: Hybrid]
+22. Sampling bias (or selection bias) [Type: Hybrid]
+23. $-$6% (Quantity demanded falls by 6%) [Type: Hybrid]
+24. Normative Economics [Type: Hybrid]
+25. Primary data [Type: Hybrid]
+26. (a) Inductive reasoning derives theories from empirical observations; deductive reasoning derives logical conclusions from basic axioms. [Type: Theory]
+    (b) Hypotheses derived deductively are tested empirically via inductive observation, refining the initial axioms.
+    (c) Human behavior cannot be fully controlled in social environments, creating confounding variables unlike laboratory physics.
+27. (a) Positive: Tax cut increases investment by $1.2B (testable); Normative: Government should lower taxes for fairness (value judgment). [Type: Theory]
+    (b) Trade-offs between competing social goals require subjective value preferences.
+    (c) Disaggregate objective economic forecasts from normative policy recommendations explicitly in reporting.
+28. (a) Agriculture: 1,000; Retail: 600; Manufacturing: 300; Services: 100. [Type: Theory]
+    (b) Stratified ensures proportional representation of small sectors; simple random risks underrepresenting smaller sectors.
+    (c) Selection bias skews sample; non-response bias alters final sample; mitigate via random follow-ups and weight adjustments.
+29. (a) Ceteris paribus fixes Y, P$_s$, P$_c$, T as constants, allowing $\frac{\partial Q_d}{\partial P}$ to measure isolated price elasticity. [Type: Theory]
+    (b) Systemic shocks shift multiple macroeconomic variables simultaneously, invalidating single-variable isolation.
+    (c) Statistical tools control for confounding variables without requiring physical lab isolation.
+30. (a) Primary data is customized and timely but expensive; secondary data is inexpensive but may suffer from definition mismatches. [Type: Theory]
+    (b) Reliability is consistency of measurement; validity is accuracy of measuring the true concept.
+    (c) Economists must adhere to objective data presentation, transparent methodology, and full disclosure of limitations.

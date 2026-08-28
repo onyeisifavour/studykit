@@ -1,0 +1,124 @@
+1. A student needs to transfer 25.00 cm$^3$ of a standard sodium carbonate solution into a conical flask for an acid-base titration. Which apparatus offers the highest precision for this operation? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. 50 cm$^3$ Graduated Beaker
+   B. 25 cm$^3$ Volumetric Pipette
+   C. 50 cm$^3$ Measuring Cylinder
+   D. 250 cm$^3$ Volumetric Flask
+2. What does a chemical hazard label displaying an exclamation mark inside a red diamond represent under the Globally Harmonized System (GHS)? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: null]
+   A. Acute aquatic toxicity
+   B. Corrosive substance causing irreversible skin burns
+   C. Health hazard causing respiratory sensitization or carcinogenicity
+   D. Harmful/Irritant, causing skin or eye irritation or acute oral toxicity
+3. During a distillation setup, why must the cooling water enter the Liebig condenser at the bottom port and exit at the top port? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: IB Chemistry]
+   A. To prevent the glass inner tube from overheating and cracking
+   B. To ensure the condenser jacket remains completely filled with water, maximizing heat transfer efficiency
+   C. To increase the boiling point of the distillate passing through
+   D. To force condensed liquid back into the boiling flask
+4. Which piece of laboratory glassware is explicitly designed to be heated to extreme temperatures over a Bunsen burner flame to decompose solid carbonates or hydrates? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: WAEC 2022]
+   A. Volumetric Flask
+   B. Büchner Funnel
+   C. Crucible and Lid
+   D. Separating Funnel
+5. What is the immediate first-aid action required if concentrated sulfuric acid (H$_2$SO$_4$) is accidentally spilled onto a student's forearm? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: AP Chemistry]
+   A. Neutralize immediately with concentrated sodium hydroxide solution
+   B. Wipe off thoroughly with paper towels and apply petroleum jelly
+   C. Flush the affected area with continuous running cold water for at least 15 minutes
+   D. Apply a tight bandage over the burn area
+6. For what reason must reactions generating toxic gases such as nitrogen dioxide (NO$_2$) or chlorine (Cl$_2$) be performed strictly inside a functional fume hood? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: NECO A-Level]
+   A. To accelerate the rate of reaction by maintaining higher ambient pressure
+   B. To prevent hazardous vapors from diffusing into the general laboratory workspace and inhalation by personnel
+   C. To protect heat-sensitive reagents from ambient light
+   D. To ensure complete combustion of all chemical reactants
+7. A student records titration volumes using a burette with an uncertainty of $\pm$0.05 cm$^3$ per reading. If the initial reading is 0.10 cm$^3$ and the final reading is 25.10 cm$^3$, what is the total absolute uncertainty in the calculated titer volume (25.00 cm$^3$)? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: IB Chemistry]
+   A. $\pm$0.025 cm$^3$
+   B. $\pm$0.05 cm$^3$
+   C. $\pm$0.10 cm$^3$
+   D. $\pm$0.20 cm$^3$
+8. Which apparatus is essential for preparing exactly 250.0 cm$^3$ of a standard solution of primary standard oxalic acid? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+   A. 250 cm$^3$ Erlenmeyer Flask
+   B. 250 cm$^3$ Volumetric Flask
+   C. 250 cm$^3$ Graduated Beaker
+   D. 250 cm$^3$ Measuring Cylinder
+9. When reading the volume of an aqueous solution in a burette, how should the meniscus be observed to prevent parallax error? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: null]
+   A. From above the liquid level looking downward
+   B. From below the liquid level looking upward
+   C. With the line of sight horizontal to the bottom of the curved liquid meniscus
+   D. With the line of sight horizontal to the top edges of the liquid interface
+10. What personal protective equipment (PPE) is mandatory when handling volatile organic solvents and concentrated acids in the laboratory? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: WAEC 2021]
+    A. Cloth face mask and sandals
+    B. Chemical splash safety goggles, nitrile gloves, and a flame-resistant lab coat
+    C. Prescription eyeglasses and disposable plastic apron
+    D. Latex gloves and open-toed shoes
+11. Which safety protocol must be followed when diluting concentrated acid with distilled water? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A. Always pour water rapidly into the acid while swirling
+    B. Always add acid slowly to water down the side of the container with continuous stirring
+    C. Mix both liquids simultaneously in equal volumes
+    D. Heat the acid before adding water to reduce density differences
+12. A balance displays mass to three decimal places ($\pm$0.001 g). A sample of mass 0.250 g is weighed. What is the percentage uncertainty associated with this mass measurement? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: AP Chemistry]
+    A. 0.04%
+    B. 0.4%
+    C. 4.0%
+    D. 0.1%
+13. What hazard icon is characterized by a flame over a circle symbol? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: NECO A-Level]
+    A. Explosive substance
+    B. Flammable solid/gas
+    C. Oxidizing agent
+    D. Compressed gas under pressure
+14. Which apparatus should be used to separate two immiscible liquids, such as hexane and aqueous sodium chloride solution? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A. Büchner Funnel
+    B. Separating Funnel
+    C. Liebig Condenser
+    D. Fractional Distillation Column
+15. What is the distinction between accuracy and precision in physical laboratory measurements? [Type: MCQ; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: IB Chemistry]
+    A. Accuracy refers to agreement among repeated measurements; precision refers to closeness to the true value
+    B. Accuracy refers to the number of decimal places; precision refers to calibration
+    C. Accuracy refers to how close a measured value is to the true value; precision refers to the agreement among repeated independent measurements
+    D. Accuracy is determined by systematic errors; precision is unaffected by random errors
+16. A student performs a titration requiring 24.80 cm$^3$ of acid delivered from a burette with uncertainty $\pm$0.05 cm$^3$ per reading. Calculate the percentage uncertainty in the delivered volume. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: IB Chemistry]
+17. Name the piece of volumetric glassware calibrated to contain (TC) an exact volume of liquid at 20$^\circ$C used in preparing standard solutions. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+18. State the GHS hazard classification symbol represented by a skull and crossbones icon. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: WAEC 2020]
+19. A student heats 5.00 g of hydrated copper(II) sulfate (CuSO$_4$$\cdot$5H$_2$O) in a porcelain crucible until a constant mass of anhydrous residue (CuSO$_4$) is obtained. Given molar masses M$_r$(CuSO$_4$) = 159.6 g/mol and M$_r$(H$_2$O) = 18.02 g/mol, calculate the theoretical mass of remaining anhydrous solid. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: null]
+20. Identify the water entry port (Top or Bottom) on a Liebig condenser used to maximize vapor condensation efficiency. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+21. Calculate the percentage error when 10.0 cm$^3$ of liquid reactant is measured using a graduated measuring cylinder with an uncertainty of $\pm$0.5 cm$^3$. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: null]
+22. State the lab apparatus designed to keep water-sensitive chemical solids dry using desiccants such as anhydrous calcium chloride. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: NECO A-Level]
+23. Calculate the absolute uncertainty in a temperature difference $\Delta$T = T$_2$ $-$ T$_1$, where T$_1$ = (21.5 $\pm$ 0.2)$^\circ$C and T$_2$ = (38.9 $\pm$ 0.2)$^\circ$C. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: AP Chemistry]
+24. Name the laboratory equipment used to rinse chemical splashes thoroughly out of an operator's eyes during an emergency splash event. [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: null]
+25. State the correct procedure for dissolving concentrated sulfuric acid in water (Acid to Water OR Water to Acid). [Type: Hybrid; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: WAEC 2018]
+26. **Gravimetric Determination of Hydrated Salt Stoichiometry and Apparatus Selection** [Type: Theory; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: IB Chemistry]
+    A student determines x in hydrated magnesium sulfate (MgSO$_4$$\cdot$xH$_2$O) by thermal decomposition:
+    MgSO$_4$$\cdot$xH$_2$O(s) $\xrightarrow{\Delta}$ MgSO$_4$(s) + xH$_2$O(g)
+    Data recorded:
+    Mass of empty crucible + lid = 24.210 g
+    Mass of crucible + lid + hydrated sample = 26.670 g
+    Mass of crucible + lid + residue after 1st heating = 25.450 g
+    Mass of crucible + lid + residue after 2nd heating = 25.410 g
+    Mass of crucible + lid + residue after 3rd heating = 25.410 g
+    (a) Explain why the sample was heated to "constant mass" (3rd heating).
+    (b) Calculate the mass of water lost and the mass of anhydrous MgSO$_4$ remaining.
+    (c) Calculate the empirical value of x (M$_r$(MgSO$_4$) = 120.37 g/mol, M$_r$(H$_2$O) = 18.02 g/mol).
+    (d) State two crucial experimental precautions taken when handling hot crucibles to prevent measurement error or personal injury.
+27. **Volumetric Analysis Precision, Calibration Errors, and Safety Evaluation** [Type: Theory; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: Cambridge IGCSE 0620]
+    A technician prepares 250.0 cm$^3$ of 0.100 mol/dm$^3$ NaOH standard solution to titrate hydrochloric acid of unknown concentration.
+    (a) Outline the step-by-step laboratory procedure for preparing this solution starting from solid NaOH pellets, identifying all volumetric glassware utilized.
+    (b) Explain why sodium hydroxide is not a primary standard and how this introduces systematic error if not standardized against potassium hydrogen phthalate.
+    (c) Compare the relative percentage uncertainties associated with measuring 25.0 cm$^3$ using:
+    (i) A 25 cm$^3$ Volumetric Pipette ($\pm$0.06 cm$^3$)
+    (ii) A 50 cm$^3$ Measuring Cylinder ($\pm$0.50 cm$^3$)
+    (d) Outline the safety precautions required when handling solid and concentrated dissolved sodium hydroxide.
+28. **Distillation and Reflux Apparatus Configuration and Emergency Protocols** [Type: Theory; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: AP Chemistry]
+    An organic reaction mixture containing ethanol (b.p. 78.3$^\circ$C), ethanoic acid (b.p. 118.1$^\circ$C), and ethyl ethanoate (b.p. 77.1$^\circ$C) is prepared in a round-bottom flask.
+    (a) Distinguish between the apparatus configurations used for reflux and simple distillation.
+    (b) Describe a simple fractional distillation apparatus setup, explicitly pointing out condenser water flow, thermometer bulb positioning, and heating source selection.
+    (c) Explain why a Bunsen burner direct flame must NOT be used to heat this specific reaction mixture, and identify a suitable alternative heating apparatus.
+    (d) Formulate the emergency response sequence if an organic solvent ignites inside a reaction vessel during heating.
+29. **Hazard Assessment, PPE Selection, and Chemical Burn Response** [Type: Theory; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: NECO A-Level]
+    Laboratory safety regulations require interpreting GHS chemical labels before executing synthesis.
+    (a) Contrast the hazard profile of concentrated Nitric Acid (68% HNO$_3$, Oxidizer, Corrosive) with Benzene (C$_6$H$_6$, Flammable, Carcinogen, Acute Toxic).
+    (b) Select appropriate personal protective equipment (PPE) for handling each chemical, explaining the choice of glove material and respiratory/ventilation protection.
+    (c) Detail the step-by-step first-aid protocol for:
+    (i) Concentrated acid splash on the skin.
+    (ii) Inhalation of volatile toxic halogen fumes.
+30. **Analytical Measurement Error Analysis and Quantitative Glassware Comparison** [Type: Theory; Subject: Chem; Topic: L1.2 Laboratory Apparatus and Safety Protocols; Format: Non-Sim; Exam: WAEC 2021]
+    An experiment is performed to determine the concentration of a solution using two different analytical methods.
+    (a) Define random error and systematic error, giving one concrete laboratory example of each.
+    (b) A student reads a burette initial volume as 0.05 cm$^3$ and final volume as 22.45 cm$^3$. If the burette scale has a systematic error where all graduation lines are etched 0.10 cm$^3$ too high, show mathematically whether the calculated titer volume is affected by this systematic error.
+    (c) Evaluate how repeating a titration three times and taking an average of concordant titers ($\pm$0.10 cm$^3$) affects random errors versus systematic errors.

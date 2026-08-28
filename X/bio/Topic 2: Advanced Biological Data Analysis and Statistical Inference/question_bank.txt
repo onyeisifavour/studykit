@@ -1,0 +1,113 @@
+1. A study measures the glucose concentrations in human blood plasma samples yielding values of 4.2 mmol/L, 5.1 mmol/L, and 4.8 mmol/L. How should this biological variable be classified? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology 2022]
+   A. Categorical nominal variable
+   B. Continuous numerical variable
+   C. Discrete quantitative variable
+   D. Ordinal qualitative variable
+2. A researcher performs a Chi-squared ($\chi^2$) test of independence on a 3$\times$2 contingency table evaluating plant phenotypic responses across two soil types. How many degrees of freedom (df) must be used to locate the critical value? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: Cambridge A Level 2021]
+   A. 6
+   B. 5
+   C. 2
+   D. 1
+3. What mathematical effect occurs to the Standard Error of the Mean (SEM) when the sample size (n) of a biological dataset is increased from 25 to 100, assuming the standard deviation (s) remains constant? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology 2021]
+   A. SEM doubles.
+   B. SEM is reduced by half.
+   C. SEM decreases by a factor of four.
+   D. SEM remains entirely unchanged.
+4. An investigator sets an alpha level of $\alpha = 0.05$ and rejects the null hypothesis ($H_0$). Subsequent large-scale testing reveals that the null hypothesis was actually true. What type of statistical error was committed? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology 2020]
+   A. Type I error
+   B. Type II error
+   C. Standard measurement error
+   D. Sampling bias error
+5. A study compares the arterial blood pressure of 15 patients before and after administering an antihypertensive drug. Which statistical test is most appropriate for analyzing whether the drug caused a significant reduction in blood pressure? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology 2022]
+   A. Independent two-sample t-test
+   B. Paired Student's t-test
+   C. One-way Analysis of Variance (ANOVA)
+   D. Chi-squared ($\chi^2$) goodness-of-fit test
+6. A statistical calculation yields $p = 0.003$ for an experimental treatment compared to a control, evaluated at a significance threshold of $\alpha = 0.05$. What is the correct scientific interpretation of this result? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: Cambridge A Level 2019]
+   A. Accept the null hypothesis; there is no significant difference.
+   B. Reject the null hypothesis; there is a statistically significant difference between groups.
+   C. Reject the alternative hypothesis; the observed variation is due entirely to chance.
+   D. Prove that the experimental treatment is 100% effective in all biological organisms.
+7. Why is conducting multiple pairwise t-tests inappropriate when comparing the means of four distinct plant fertilizer treatment groups? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology 2021]
+   A. It inflates the probability of committing a Type I error ($\alpha$ inflation).
+   B. It decreases the degrees of freedom to zero.
+   C. It causes the calculated variance to become negative.
+   D. It automatically generates a Type II error.
+8. In a Mendelian monohybrid cross between two heterozygous tall pea plants ($Tt \times Tt$), 400 offspring are counted. What are the expected phenotypic counts for tall and dwarf offspring under a standard 3:1 dominant-to-recessive inheritance model? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: WAEC 2020]
+   A. 200 Tall, 200 Dwarf
+   B. 300 Tall, 100 Dwarf
+   C. 100 Tall, 300 Dwarf
+   D. 250 Tall, 150 Dwarf
+9. Which measure of central tendency is least affected by extreme mathematical outliers in a highly skewed physiological dataset? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: NECO 2022]
+   A. Mean
+   B. Median
+   C. Range
+   D. Variance
+10. Which statement correctly describes the mathematical relationship between standard deviation (s) and variance ($s^2$)? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: Cambridge A Level 2020]
+    A. Standard deviation is the square root of the variance.
+    B. Variance is the square root of the standard deviation.
+    C. Standard deviation is always twice the variance.
+    D. Variance is calculated by dividing standard deviation by sample size n.
+11. A t-test calculated for two independent biological samples yields $t = 3.42$ with a critical value $t_{crit} = 2.12$ at $\alpha = 0.05$. What conclusion must be drawn? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology 2020]
+    A. Fail to reject $H_0$ because $t_{calc} > t_{crit}$.
+    B. Reject $H_0$ because $t_{calc} > t_{crit}$, confirming a statistically significant difference.
+    C. Accept $H_0$ because $p > 0.05$.
+    D. Discard the data due to excessive sample variance.
+12. Which parameter represents a fundamental requirement/assumption for utilizing parametric statistical tests such as the Student's t-test and One-way ANOVA? [Type: MCQ; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: null]
+    A. Data must follow a skewed bimodal distribution.
+    B. Data within populations should follow an approximately normal distribution with equal variances.
+    C. Sample size n must be less than 5 across all treatment groups.
+    D. Data must be strictly categorical and qualitative.
+13. Calculate the mean mass (g) of five fungal cultures with masses: 12.0 g, 14.5 g, 11.5 g, 16.0 g, and 11.0 g. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology]
+14. Given a sample standard deviation $s = 6.0$ mg/dL and a sample size $n = 36$, calculate the Standard Error of the Mean (SEM). [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology]
+15. In a dihybrid genetic cross expecting a 9:3:3:1 phenotypic ratio among 160 total offspring, calculate the expected number (E) of individuals displaying the double-recessive phenotype. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: WAEC]
+16. State the number of degrees of freedom (df) for a two-sample independent t-test comparing Group 1 ($n_1 = 10$) and Group 2 ($n_2 = 12$). [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: Cambridge A Level]
+17. Calculate the component $\frac{(O-E)^2}{E}$ for an observed phenotype count $O = 35$ where the expected count $E = 25$. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology]
+18. State the effect on the Type I error probability when an analyst lowers the statistical significance threshold $\alpha$ from 0.05 to 0.01. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology]
+19. Calculate the sample range for the following metabolic rate measurements (mL O$_2$/g/h): 1.2, 1.8, 2.5, 0.9, 3.1. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: NECO]
+20. An investigator compares 4 independent plant growth treatment groups using a One-Way ANOVA. State the degrees of freedom between groups ($df_{between}$). [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: Cambridge A Level]
+21. If the variance ($s^2$) of a cardiac output dataset is 16.0 (L/min)$^2$, state the sample standard deviation (s). [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: null]
+22. State the decision regarding $H_0$ if a Chi-squared test yields $\chi^2_{calc} = 8.51$ and the critical table value $\chi^2_{crit} = 7.82$ at $\alpha = 0.05$. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology]
+23. Express the formula used to calculate the Chi-squared ($\chi^2$) statistic using standard algebraic notation for observed (O) and expected (E) frequencies. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology]
+24. Calculate the standard error of the mean (SEM) for a dataset where $s = 2.5$ and $n = 25$. [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: null]
+25. State the statistical term for the probability of committing a Type II error (failing to reject a false null hypothesis). [Type: Hybrid; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: WAEC]
+26. **Chi-Squared Goodness-of-Fit Analysis in Dihybrid Genetics** [Type: Theory; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology 2022]
+    A genetic cross between two heterozygous Drosophila melanogaster fruit flies ($AaBb \times AaBb$) yields 1600 total offspring with the following observed phenotypes:
+    Wild-type wings / Red eyes: 880
+    Wild-type wings / Purple eyes: 320
+    Vestigial wings / Red eyes: 280
+    Vestigial wings / Purple eyes: 120
+    (a) State the null hypothesis ($H_0$) for this genetic cross based on Mendelian independent assortment.
+    (b) Calculate the expected numbers (E) for each of the four phenotypic classes.
+    (c) Calculate the total Chi-squared ($\chi^2$) statistic using the formula $\chi^2 = \sum \frac{(O-E)^2}{E}$.
+    (d) Determine the degrees of freedom (df) and evaluate whether the null hypothesis is accepted or rejected at $\alpha = 0.05$ (Critical value at df=3 is 7.815). Interpret the biological implication of this result.
+27. **Two-Sample Independent t-Test on Enzyme Reaction Rates** [Type: Theory; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: Cambridge A Level 2021]
+    An experiment measures the rate of nitrate uptake ($\mu$mol/g root/h) in wild-type plants versus a mutant strain lacking a specific transporter protein. Ten replicates were sampled per group:
+    Wild-Type ($n_1 = 10$): Mean $\bar{x}_1 = 24.5$, Standard Deviation $s_1 = 3.0$
+    Mutant ($n_2 = 10$): Mean $\bar{x}_2 = 18.5$, Standard Deviation $s_2 = 2.5$
+    (a) Formulate the null hypothesis ($H_0$) and alternative hypothesis ($H_1$).
+    (b) Calculate the standard error of the difference between the two means using: $SED = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$.
+    (c) Compute the Student's t-statistic using $t = \frac{\bar{x}_1 - \bar{x}_2}{SED}$.
+    (d) Determine $df = n_1 + n_2 - 2$. Given critical value $t_{crit} = 2.101$ at $\alpha = 0.05$, state the statistical conclusion and biological inference.
+28. **One-Way ANOVA and Variance Decomposition in Ecological Samples** [Type: Theory; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: IB Biology 2021]
+    An ecological survey compares soil organic matter percentages across three distinct forest canopy types (Pine, Oak, Mixed). Five soil cores ($n = 5$) are taken per canopy type ($k = 3$, Total $N = 15$).
+    (a) Explain why a One-Way ANOVA is statistically required instead of conducting three separate two-sample t-tests.
+    (b) Define the concepts of "Between-Group Variance" and "Within-Group Variance" in the context of ANOVA.
+    (c) Given a Between-Group Sum of Squares $SS_{between} = 120.0$ and Within-Group Sum of Squares $SS_{within} = 48.0$:
+        i. Compute $MS_{between} = \frac{SS_{between}}{k-1}$
+        ii. Compute $MS_{within} = \frac{SS_{within}}{N-k}$
+        iii. Calculate the F-statistic ratio $F = \frac{MS_{between}}{MS_{within}}$.
+    (d) Given $F_{crit} = 3.89$, draw the appropriate conclusions regarding canopy influence on soil organic matter.
+29. **Comparing Dispersion Metrics: Variance, SD, and SEM** [Type: Theory; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: AP Biology 2020]
+    A researcher collects leaf length data from two populations of Quercus alba ($n = 25$ per sample). Population A has a mean of 12.0 cm with $s = 2.0$ cm. Population B has a mean of 12.0 cm with $s = 5.0$ cm.
+    (a) Calculate the sample variance ($s^2$) and Standard Error of the Mean (SEM) for Population A and Population B.
+    (b) Differentiate conceptually between what Standard Deviation (s) measures versus what Standard Error (SEM) measures.
+    (c) Describe how sample error bars representing $\pm 2 \times SEM$ (roughly 95% confidence interval) are constructed on a bar graph and explain how overlapping error bars are interpreted.
+30. **Ecological Contingency Table Analysis and Test of Independence** [Type: Theory; Subject: Bio; Topic: Topic 2: Advanced Biological Data Analysis and Statistical Inference; Format: Non-Sim; Exam: NECO 2022]
+    A biological survey records lichen species occurrence (Lichen Present vs. Lichen Absent) across two industrial zones with high vs. low sulfur dioxide ($SO_2$) pollution levels:
+    High SO$_2$ Zone: Present = 20, Absent = 80 (Total = 100)
+    Low SO$_2$ Zone: Present = 70, Absent = 30 (Total = 100)
+    (a) Construct a 2$\times$2 contingency table displaying observed counts and marginal totals.
+    (b) Calculate the expected frequency (E) for each cell under the hypothesis of independence using $E = \frac{\text{Row Total} \times \text{Column Total}}{\text{Grand Total}}$.
+    (c) Calculate the total Chi-squared ($\chi^2$) statistic for independence.
+    (d) Evaluate significance at $\alpha = 0.05$ (df=1, Critical value = 3.841) and state the ecological conclusion regarding SO$_2$ sensitivity.

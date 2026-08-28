@@ -1,0 +1,40 @@
+1. B [Type: MCQ]
+2. C [Type: MCQ]
+3. B [Type: MCQ]
+4. C [Type: MCQ]
+5. A [Type: MCQ]
+6. B [Type: MCQ]
+7. B [Type: MCQ]
+8. B [Type: MCQ]
+9. C [Type: MCQ]
+10. A [Type: MCQ]
+11. C [Type: MCQ]
+12. B [Type: MCQ]
+13. B [Type: MCQ]
+14. A [Type: MCQ]
+15. B [Type: MCQ]
+16. Physical Chemistry [Type: Hybrid]
+17. Scientific Law [Type: Hybrid]
+18. Inorganic Chemistry [Type: Hybrid]
+19. Quantitative Analytical Chemistry [Type: Hybrid]
+20. Industrial Chemistry [Type: Hybrid]
+21. Hypothesis [Type: Hybrid]
+22. Mass [Type: Hybrid]
+23. Environmental / Geochemistry [Type: Hybrid]
+24. Theoretical Explanation [Type: Hybrid]
+25. Polymer Chemistry [Type: Hybrid]
+26. (a) Hypothesis: testable guess; Law: quantitative description; Theory: mechanistic model. [Type: Theory]
+    (b) Isotopes proved atoms of the same element differ in mass.
+    (c) KMT provides microscopic mechanisms explaining gas laws.
+27. (a) 1 = Biochemistry; 2 = Industrial/Physical Chemistry; 3 = Analytical/Environmental Chemistry. [Type: Theory]
+    (b) Links chemical structure to biological target binding and pollutant breakdown in ecosystems.
+28. (a) Increasing MnO$_2$ surface area increases O$_2$ evolution rate. [Type: Theory]
+    (b) Independent: surface area; Dependent: O$_2$ volume/time; Control: [H$_2$O$_2$], T, mass.
+    (c) Gas syringe with stopwatch.
+    (d) Gas leaks cause systematic underestimation.
+29. (a) Provides synthetic nitrogen for mass agricultural crop production. [Type: Theory]
+    (b) Excess runoff causes algal blooms and oxygen depletion.
+    (c) Use hydrogen generated via water electrolysis powered by renewables.
+30. (a) Inductive generalizes from data; Deductive tests specific predictions. [Type: Theory]
+    (b) Future empirical tests can always disprove theory predictions.
+    (c) Phlogiston theory replaced by Lavoisier's oxygen theory of combustion.

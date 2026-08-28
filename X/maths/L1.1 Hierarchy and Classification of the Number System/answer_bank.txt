@@ -1,0 +1,41 @@
+1. C [Type: MCQ]
+2. B [Type: MCQ]
+3. D [Type: MCQ]
+4. C [Type: MCQ]
+5. D [Type: MCQ]
+6. A [Type: MCQ]
+7. A [Type: MCQ]
+8. B [Type: MCQ]
+9. A [Type: MCQ]
+10. C [Type: MCQ]
+11. $\frac{47}{22}$ [Type: Hybrid]
+12. $x = 2$, $y = -1$ [Type: Hybrid]
+13. Closed under non-zero division [Type: Hybrid]
+14. $0 \in \mathbb{N}$ under ISO 80000-2; $\mathbb{W}$ included $0$ for cardinalities of empty sets [Type: Hybrid]
+15. $|z| = 2$, $\text{Arg}(z) = -\frac{2\pi}{3}$ [Type: Hybrid]
+16. $(-2) \times (-3) = 6 \notin \mathbb{Z}^-$ [Type: Hybrid]
+17. $\frac{1}{5} - \frac{2}{5}i$ [Type: Hybrid]
+18. $\mathbb{N}$ [Type: Hybrid]
+19. $\emptyset$ [Type: Hybrid]
+20. $-1$ [Type: Hybrid]
+21. No identity element exists [Type: Hybrid]
+22. Non-terminating, non-recurring decimal [Type: Hybrid]
+23. $2\sqrt{13}$ [Type: Hybrid]
+24. $16\left(\cos\left(-\frac{\pi}{2}\right) + i\sin\left(-\frac{\pi}{2}\right)\right)$ [Type: Hybrid]
+25. Multiplicative Inverse property [Type: Hybrid]
+26. (a) Proof by contradiction assuming $\gcd(a, b) = 1$. [Type: Theory]
+    (b) Proof showing $3 + 2\sqrt{2} = q \Rightarrow \sqrt{2} = \frac{q - 3}{2} \in \mathbb{Q}$ yields contradiction.
+    (c) $A \cap B = \emptyset$, both dense in $\mathbb{R}$.
+27. (a) Closure table across sets. [Type: Theory]
+    (b) Lacks multiplicative inverses for $z \neq \pm 1$.
+    (c) $z^{-1} = \frac{a}{a^2 + b^2} - \frac{b}{a^2 + b^2}i$.
+28. (a) Roots of negative real numbers undefined in $\mathbb{R}$. [Type: Theory]
+    (b) $z = -1 \pm 2i$.
+    (c) $|z| = \sqrt{5}$, $\theta = \pm 2.03$ rad, complex conjugates.
+29. (a) $10x - x = 9 \implies x = 1$. [Type: Theory]
+    (b) Terminating $a_k$ equals $a_k - 1$ with trailing infinitely recurring max digits.
+    (c) $0.\overline{4}_5 = 1_5$.
+30. (a) $(a + 1)(b + 1) \neq 0$. [Type: Theory]
+    (b) $(a \star b) \star c = a \star (b \star c)$.
+    (c) $e = 0$.
+    (d) $a^{-1} = -\frac{a}{1 + a}$.

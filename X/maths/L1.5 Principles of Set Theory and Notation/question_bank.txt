@@ -1,0 +1,92 @@
+1. Let $U = \{x \in \mathbb{Z} \mid 1 \le x \le 20\}$, set $A = \{x \in U \mid x \text{ is prime}\}$, and set $B = \{x \in U \mid x \text{ is odd}\}$. Determine the cardinality of the complement set $|(A \cup B)'|$. [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+   A. 9
+   B. 10
+   C. 8
+   D. 11
+2. Given a set S with $|S| = n$, what is the cardinality of its power set $P(S)$? [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+   A. $2n$
+   B. $n^2$
+   C. $2^n$
+   D. $2^{n-1}$
+3. Which of the following set relations represents an EMPTY set $\emptyset$? [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: NECO 2020]
+   A. $\{x \in \mathbb{R} \mid x^2 + 1 = 0\}$
+   B. $\{x \in \mathbb{Q} \mid x^2 - 4 = 0\}$
+   C. $\{0\}$
+   D. $\{\emptyset\}$
+4. Express the set inequality $\{x \in \mathbb{R} \mid -3 < x \le 5\}$ in formal interval notation. [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+   A. $[-3, 5]$
+   B. $(-3, 5)$
+   C. $(-3, 5]$
+   D. $[-3, 5)$
+5. If $|A| = 12$, $|B| = 15$, and $|A \cap B| = 5$, evaluate $|A \cup B|$. [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: WAEC WASSCE 2019]
+   A. 22
+   B. 27
+   C. 17
+   D. 32
+6. Which statement regarding proper subsets is mathematically TRUE for any non-empty set A? [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: IB DP Mathematics SL]
+   A. $A \subset A$
+   B. $\emptyset \subset A$
+   C. $A \subseteq \emptyset$
+   D. $|P(A)| = 2^{|A|} - 1$
+7. Let $I_1 = (-2, 4]$ and $I_2 = [1, 7)$. Find the intersection interval $I_1 \cap I_2$. [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: AP Calculus BC]
+   A. $(-2, 7)$
+   B. $[1, 4]$
+   C. $(-2, 1]$
+   D. $(4, 7)$
+8. By De Morgan's Laws, the set complement $(A \cap B)'$ is equivalent to which set expression? [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: NECO 2022]
+   A. $A' \cap B'$
+   B. $A' \cup B'$
+   C. $(A \cup B)'$
+   D. $A \setminus B$
+9. Identify the singleton set among the following choices. [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/41]
+   A. $\{x \in \mathbb{Z} \mid x^2 = 9\}$
+   B. $\{x \in \mathbb{N} \mid 2 < x < 4\}$
+   C. $\{x \in \mathbb{R} \mid x^2 = -4\}$
+   D. $\{x \in \mathbb{Q} \mid x^2 = 2\}$
+10. If set $A = \{1, 2\}$, list the complete power set $P(A)$. [Type: MCQ; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: WAEC WASSCE 2018]
+    A. $\{\{1\}, \{2\}\}$
+    B. $\{\emptyset, \{1\}, \{2\}, \{1, 2\}\}$
+    C. $\{\{1\}, \{2\}, \{1, 2\}\}$
+    D. $\{0, \{1\}, \{2\}, \{1, 2\}\}$
+11. Given $A = \{x \in \mathbb{Z} \mid -2 \le x < 3\}$, write out set A explicitly in roster notation. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+12. State the cardinality $|P(P(\emptyset))|$ of the iterated power set of the empty set. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: IB DP Mathematics HL]
+13. Express the union of intervals $J_1 = (-\infty, 3]$ and $J_2 = (1, \infty)$ in interval notation. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: AP Calculus BC]
+14. Given universal set $U = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}$, $A = \{2, 4, 6, 8, 10\}$, and $B = \{3, 6, 9\}$, find $A \setminus B$ (the set difference). [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: NECO 2021]
+15. If a set K has 63 proper subsets, determine the cardinality $|K|$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: WAEC WASSCE 2020]
+16. Write in set-builder notation the set of all real numbers strictly greater than 5 or less than or equal to $-2$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: null]
+17. Determine whether $x \in (2, 5]$ if $x = 5$. Justify briefly. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+18. Calculate $|A \cup B \cup C|$ given $|A| = 10$, $|B| = 12$, $|C| = 8$, $|A \cap B| = 4$, $|B \cap C| = 3$, $|A \cap C| = 2$, and $|A \cap B \cap C| = 1$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: IB DP Mathematics SL]
+19. True or False: $\emptyset \in \{\emptyset\}$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: null]
+20. Represent the set difference $A \setminus B$ in terms of set operations involving complementation and intersection. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: NECO 2019]
+21. Find the symmetric difference $A \triangle B$ for $A = \{1, 2, 3, 4\}$ and $B = \{3, 4, 5, 6\}$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: WAEC WASSCE 2022]
+22. State the cardinality of the set $S = \{x \in \mathbb{R} \mid x^2 - 9 = 0 \text{ and } 2x = 6\}$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: null]
+23. Express the set $\{x \in \mathbb{R} \mid |x - 3| \le 2\}$ as a closed interval $[a, b]$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: AP Calculus AB]
+24. Given $A \subseteq B$, simplify $A \cap B$ and $A \cup B$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/42]
+25. State the number of elements in the power set of $A = \{a, b, c, \{d, e\}\}$. [Type: Hybrid; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: IB DP Mathematics HL]
+26. **Rigorous Set Algebra and De Morgan's Proofs** [Type: Theory; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: IB DP Mathematics HL]
+    (a) Prove De Morgan's Law $(A \cup B)' = A' \cap B'$ rigorously using element-wise inclusion ($x \in S \iff \dots$).
+    (b) Prove the distributive law of set union over intersection: $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$.
+    (c) Simplify the set expression completely using set algebra identities: $((A \cap B') \cup (A \cap B)) \cup (A' \cap B)$.
+27. **Principle of Inclusion-Exclusion (PIE) and Combinatorial Applications** [Type: Theory; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: NECO A-Level 2021]
+    In a survey of 100 secondary school students regarding subject preferences:
+    45 study Mathematics (M), 40 study Physics (P), 35 study Chemistry (C), 15 study Mathematics and Physics, 12 study Physics and Chemistry, 10 study Mathematics and Chemistry, 5 study all three subjects.
+    (a) Derive the general Principle of Inclusion-Exclusion formula for 3 sets: $|M \cup P \cup C|$.
+    (b) Calculate how many students study at least one of the three subjects.
+    (c) Calculate how many students study EXACTLY two subjects, and how many study NONE of the three subjects.
+28. **Power Set Structure and Recursive Cardinality Analysis** [Type: Theory; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+    (a) Define formally the Power Set $P(S)$ of a given set S.
+    (b) Prove by mathematical induction that for any finite set S with $|S| = n \in \mathbb{N}_0$, the cardinality $|P(S)| = 2^n$.
+    (c) Let $S = \{1, 2, 3\}$. Explicitly list all $2^3 = 8$ elements of $P(S)$, partitioning them by subset size $k \in \{0, 1, 2, 3\}$, and verify that $\sum_{k=0}^{3} \binom{3}{k} = 2^3$.
+29. **Real Number Line Topology and Interval Algebra** [Type: Theory; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: AP Calculus BC]
+    Consider the intervals $A = [-4, 3)$, $B = (1, 6]$, and $C = [3, \infty)$ on $\mathbb{R}$.
+    (a) Represent A, B, and C on separate real number line diagrams, stating whether endpoints are open or closed.
+    (b) Evaluate the following set operations, expressing final answers in interval notation:
+        (i) $A \cap B$
+        (ii) $A \cup B$
+        (iii) $(A \cup B) \cap C$
+        (iv) $A \setminus B$
+    (c) State whether the set complement $\mathbb{R} \setminus A$ forms a single connected interval or a union of disjoint intervals, writing its exact expression.
+30. **Abstract Set Relations and Partitioning Theory** [Type: Theory; Subject: Maths; Topic: L1.5 Principles of Set Theory and Notation; Format: Non-Sim; Exam: Cambridge IGCSE 0580/42]
+    (a) Define what constitutes a valid partition of a non-empty set S.
+    (b) Given $S = \{1, 2, 3, 4, 5, 6\}$, determine whether $P_1 = \{\{1, 3\}, \{2, 4, 6\}, \{5\}\}$ forms a valid partition of S. Justify against all formal partition conditions.
+    (c) Prove that for any two sets A and B, the collection $\{A \setminus B, A \cap B, B \setminus A\}$ consists of pairwise disjoint sets, and express $A \cup B$ as their disjoint union.

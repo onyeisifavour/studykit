@@ -1,0 +1,42 @@
+1. B [Type: MCQ]
+2. B [Type: MCQ]
+3. B [Type: MCQ]
+4. C [Type: MCQ]
+5. B [Type: MCQ]
+6. B [Type: MCQ]
+7. C [Type: MCQ]
+8. B [Type: MCQ]
+9. B [Type: MCQ]
+10. B [Type: MCQ]
+11. C [Type: MCQ]
+12. A [Type: MCQ]
+13. B [Type: MCQ]
+14. B [Type: MCQ]
+15. A [Type: MCQ]
+16. 200.15 K [Type: Hybrid]
+17. 4 [Type: Hybrid]
+18. Brownian Motion [Type: Hybrid]
+19. 4.0 [Type: Hybrid]
+20. Liquid [Type: Hybrid]
+21. Remains Constant [Type: Hybrid]
+22. 226.85$^\circ$C [Type: Hybrid]
+23. Diffusion [Type: Hybrid]
+24. 1.41 [Type: Hybrid]
+25. Decreases [Type: Hybrid]
+26. (a) Negligible volume, no intermolecular forces, random motion, elastic collisions. [Type: Theory]
+    (b) High pressure and low temperature cause real gas deviations due to finite molecular volume and interparticle attractions.
+    (c) Diffusion ratio = 1.463.
+    (d) Distance = 41.0 cm.
+27. (a) Heating curve consists of rising temperature slopes for pure solid, liquid, gas states and flat temperature plateaus for melting (0$^\circ$C) and boiling (100$^\circ$C). [Type: Theory]
+    (b) Q$_1$ = 4.18 kJ.
+    (c) Melting duration = 16.7 min.
+    (d) Temperature increases raise kinetic energy; phase transition plateaus raise potential energy.
+28. (a) T$_1$ curve displays a sharp, tall peak at lower speed; T$_2$ curve displays a broader, lower peak shifted rightward. [Type: Theory]
+    (b) Higher temperature broadens speed distribution while total particle number (curve area) remains constant.
+    (c) Shifts curve rightward, increasing the fraction of particles with kinetic energy E $\geq$ E$_a$.
+29. (a) Rigid crystal lattice locks solid particles in place; liquid forces permit translational sliding. [Type: Theory]
+    (b) E$_k$ = $\frac{1}{2}$Mv$_{rms}^2$ = $\frac{1}{2}$M($\frac{3RT}{M}$) = $\frac{3}{2}$RT $\implies$ E$_k$ $\propto$ T.
+    (c) Gas particles are separated by vast empty spaces (>10$\times$ particle diameter), resulting in >1000$\times$ lower macroscopic density.
+30. (a) Smoke cell illuminated by side lamp and viewed under microscope reveals bright specs executing erratic zig-zag motion. [Type: Theory]
+    (b) Confirms air consists of fast-moving, invisible sub-microscopic molecules in random thermal motion.
+    (c) Equal average kinetic energy at same temperature (E$_k$ $\propto$ T); Neon (Ne, lighter) has higher root-mean-square velocity.
