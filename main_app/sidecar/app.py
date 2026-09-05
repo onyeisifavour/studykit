@@ -33,6 +33,12 @@ def _get_service() -> QuizService:
     return _service
 
 
+def _invalidate_service() -> None:
+    """Drop the cached service so the next request rebuilds from new config."""
+    global _service
+    _service = None
+
+
 # In-memory registry of running generation jobs (transport layer only).
 _JOBS: dict[str, GenerationJob] = {}
 _JOBS_LOCK = threading.Lock()
@@ -177,6 +183,42 @@ def quiz_chat(body: dict) -> dict:
         raise HTTPException(status_code=500, detail=holder['error'])
     if 'reply' not in holder:
         raise HTTPException(status_code=504, detail='Chat timed out.')
+    return {'reply': holder['reply']}
+
+
+@app.post('/api/tutor/chat')
+def tutor_chat(body: dict) -> dict:
+    """One turn of a post-quiz tutoring thread about a completed question."""
+    svc = _get_service()
+    holder = {}
+
+    def _res(text: str) -> None:
+        holder['reply'] = text
+        holder['done'] = True
+
+    def _err(msg: str) -> None:
+        holder['error'] = msg
+        holder['done'] = True
+
+    svc.tutor_message(
+        question=str(body.get('question') or ''),
+        user_answer=str(body.get('user_answer') or ''),
+        correct_answer=str(body.get('correct_answer') or ''),
+        follow_up=str(body.get('follow_up') or ''),
+        history=body.get('history') or [],
+        options=body.get('options'),
+        on_result=_res,
+        on_error=_err,
+    )
+
+    import time as _time
+    deadline = _time.time() + 180
+    while not holder.get('done') and _time.time() < deadline:
+        _time.sleep(0.1)
+    if holder.get('error'):
+        raise HTTPException(status_code=500, detail=holder['error'])
+    if 'reply' not in holder:
+        raise HTTPException(status_code=504, detail='Tutoring timed out.')
     return {'reply': holder['reply']}
 
 
@@ -425,6 +467,10 @@ def settings_save(body: dict) -> dict:
         config.save_provider_mode(str(body['provider_mode']))
     if 'cli_model' in body:
         config.save_cli_model(str(body['cli_model']))
+    if 'library_root' in body:
+        config.save_library_root(str(body['library_root'] or ''))
+    if 'selected_topics' in body:
+        config.save_selected_topics(list(body['selected_topics']))
 
     api = body.get('api') or {}
     if 'groq' in api:
@@ -477,4 +523,5 @@ def settings_save(body: dict) -> dict:
     if 'question_count' in body:
         config.save_question_count(int(body['question_count']))
 
+    _invalidate_service()
     return settings_get()

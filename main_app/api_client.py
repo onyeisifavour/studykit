@@ -405,6 +405,73 @@ class CLIBridgeClient:
         threading.Thread(target=_run, daemon=True, name='cli-bridge').start()
 
 
+def _clean_student_reply(text: str) -> str:
+    """
+    Strips internal chain-of-thought / protocol analysis out of an assistant
+    reply so the student only sees the conversational message.
+
+    The cli-bridge model ("opencode/big-pickle") sometimes folds its reasoning
+    into the same 'text' part as the real reply, either as a raw
+    "monologue + reply" concatenation or wrapped in a
+    '"Teacher message: ..." / "Student message: ..."' echo. Because opencode
+    classifies that as text (not 'reasoning'), a type filter cannot remove it;
+    we clean it here instead.
+
+    Returns the cleaned reply, or the original string when no cleanup applies.
+    """
+    if not text:
+        return text
+
+    # 1) Strip "Teacher message:" / "Student message:" wrapper metadata.
+    cleaned = text
+    if 'Student message:' in cleaned:
+        # The student echo marks the start/end of the wrapper; drop it and any
+        # trailing echoed student input, keeping everything before "Student message:".
+        cleaned = cleaned.split('Student message:', 1)[0]
+    if cleaned.startswith('"Teacher message:'):
+        cleaned = cleaned[len('"Teacher message:'):]
+        cleaned = cleaned.rstrip().rstrip('"')
+    cleaned = cleaned.strip()
+
+    if not cleaned:
+        return text
+
+    # 2) Drop the internal-monologue preface, keeping the final student-facing
+    #    reply. The analysis block is the trailing section written about the
+    #    student in the third person / protocol terms; the actual reply is the
+    #    last second-person conversational passage beginning after it.
+    lines = [ln for ln in cleaned.splitlines() if ln.strip()]
+    if len(lines) <= 1:
+        return cleaned
+
+    # Find the first line of the final conversational reply. Internal analysis
+    # lines are those that describe the student or the plan ("The student ...",
+    # "Per the protocol ...", "Let me ...", "This triggers Branch ...").
+    internal_markers = (
+        'the student', 'per the protocol', 'let me', 'this triggers',
+        'this is strong', 'this shows', 'i have enough information',
+        'looking at the digest', 'let me acknowledge', "i'll present",
+        'i will', 'since the student', 'given the number',
+    )
+
+    # The reply is the last contiguous run of lines that do *not* look like
+    # internal analysis. Walk backwards to find where the reply starts.
+    reply_start = len(lines)
+    for i in range(len(lines) - 1, -1, -1):
+        line = lines[i].lstrip()
+        low = line.lower()
+        if any(low.startswith(m) for m in internal_markers):
+            reply_start = i + 1
+            break
+
+    if reply_start < len(lines):
+        reply = '\n'.join(lines[reply_start:]).strip()
+        if reply:
+            return reply
+
+    return cleaned
+
+
 def _read_session_text_from_db(session_id: str) -> str:
     """
     Fallback for when opencode's --format json stream emits events to stdout
@@ -442,7 +509,7 @@ def _read_session_text_from_db(session_id: str) -> str:
                 t = part.get('text')
                 if isinstance(t, str) and t.strip():
                     texts.append(t)
-        return texts[-1].strip() if texts else ''
+        return _clean_student_reply(texts[-1].strip()) if texts else ''
     except Exception:
         return ''
 
@@ -495,4 +562,4 @@ def _extract_response_from_json(stdout: str) -> tuple[str, str]:
                     if isinstance(block, dict) and block.get('type') == 'text':
                         text_parts.append(block.get('text', ''))
 
-    return '\n'.join(text_parts).strip(), session_id or ''
+    return _clean_student_reply('\n'.join(text_parts).strip()), session_id or ''

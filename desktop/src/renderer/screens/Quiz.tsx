@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef } from 'react';
 import { ChatBubbles, ChatInput } from '../components/ChatComposer';
-import { quizChat, quizGenerate, quizJobStatus, quizCancel, quizEvaluate, quizBatchEvaluate } from '../api';
+import { quizChat, quizGenerate, quizJobStatus, quizCancel, quizEvaluate, quizBatchEvaluate, getSettings } from '../api';
 import type { QuizQuestion } from '../types';
 
 interface Props {
@@ -8,9 +8,9 @@ interface Props {
   active: boolean;
 }
 
-// ── Mock data (ported verbatim from electron_UI_prototype.html) ──────────────
+// ── Display model (derived from real backend questions) ─────────────────────
 
-interface MockQ {
+interface DisplayQ {
   type: 'MCQ' | 'Written';
   isSim: boolean;
   sec: string;
@@ -21,11 +21,11 @@ interface MockQ {
   pacing: string;
 }
 
-// Display model derived from real backend questions (see toMockQs below).
-function toMockQs(real: QuizQuestion[]): MockQ[] {
+// Display model derived from real backend questions (see toDisplayQs below).
+function toDisplayQs(real: QuizQuestion[]): DisplayQ[] {
   return real.map((r) => {
     const isSim = !!r.is_simulation;
-    const disptype: MockQ['type'] = r.q_type === 'MCQ' ? 'MCQ' : 'Written';
+    const disptype: DisplayQ['type'] = r.q_type === 'MCQ' ? 'MCQ' : 'Written';
     const correct = r.options.findIndex((o) => o.trim().toUpperCase().startsWith((r.correct_answer || '').trim().toUpperCase().slice(0, 1)));
     return {
       type: disptype,
@@ -125,6 +125,7 @@ export default function Quiz({ onNavigate, active }: Props) {
     cur: 0,
     ans: [] as Ans[],
     skipMode: 0,
+    selectedTopics: [] as string[],
     qspCollapsed: false,
     qmapOpen: false,
     fbCollapsed: false,
@@ -141,9 +142,9 @@ export default function Quiz({ onNavigate, active }: Props) {
 
   const q = () => Q.current;
 
-  const allQs = () => toMockQs(q().realQs);
+  const allQs = () => toDisplayQs(q().realQs);
   const totalQs = () => q().realQs.length;
-  const curQ = () => toMockQs(q().realQs)[q().cur];
+  const curQ = () => toDisplayQs(q().realQs)[q().cur];
   const stopPoll = () => {
     if (q().pollTimer) { clearInterval(q().pollTimer ?? undefined); q().pollTimer = null; }
   };
@@ -265,6 +266,17 @@ export default function Quiz({ onNavigate, active }: Props) {
     } else if (q().state === 'active') {
       resumeTimer();
     }
+  }, [active]);
+
+  // Load the real selected topics so the settings panel reflects current settings.
+  useEffect(() => {
+    if (!active) return;
+    getSettings()
+      .then((s) => {
+        q().selectedTopics = s.selected_topics || [];
+        bump();
+      })
+      .catch(() => {});
   }, [active]);
 
   // ── Chat ────────────────────────────────────────────────────────────────────
@@ -620,23 +632,23 @@ export default function Quiz({ onNavigate, active }: Props) {
                   </button>
                 </div>
               ) : (
-                <>
-                  <ChatBubbles messages={msgs.map((m) => ({ role: m.r === 'user' ? 'user' : 'ai', text: m.t, typing: m.typing }))} />
-                  <div className="chat-footer">
-                    <ChatInput
-                      placeholder="Type a message…"
-                      onSend={sendMsg}
-                      disabled={q().sendBusy}
-                      extra={
-                        <button className="btn btn-primary" onClick={beginPipeline}>
-                          Generate Quiz →
-                        </button>
-                      }
-                    />
-                  </div>
-                </>
+                <ChatBubbles messages={msgs.map((m) => ({ role: m.r === 'user' ? 'user' : 'ai', text: m.t, typing: m.typing }))} />
               )}
             </div>
+            {q().chatStarted && (
+              <div className="chat-footer">
+                <ChatInput
+                  placeholder="Type a message…"
+                  onSend={sendMsg}
+                  disabled={q().sendBusy}
+                  extra={
+                    <button className="btn btn-primary" onClick={beginPipeline}>
+                      Generate Quiz →
+                    </button>
+                  }
+                />
+              </div>
+            )}
           </div>
         )}
 
@@ -672,7 +684,6 @@ export default function Quiz({ onNavigate, active }: Props) {
                           </div>
                           {i === q().pStep && <div className="p-stage-detail">{P_DETAIL[i]}</div>}
                         </div>
-                        {i < q().pStep && <div className="p-stage-time">{i === 0 ? '1.8s' : '—'}</div>}
                       </div>
                     );
                   })}
@@ -1043,13 +1054,17 @@ export default function Quiz({ onNavigate, active }: Props) {
           </div>
           <div>
             <div className="qsp-section-title">Selected topics</div>
-            <div className="topic-pills">
-              <span className="topic-pill">Newton's Laws</span>
-              <span className="topic-pill">Kinematics</span>
-              <span className="topic-pill">Acids & Bases</span>
-              <span className="topic-pill">Stoichiometry</span>
-              <span className="topic-pill">Calculus</span>
-            </div>
+            {q().selectedTopics.length ? (
+              <div className="topic-pills">
+                {q().selectedTopics.map((t) => (
+                  <span className="topic-pill" key={t}>{t.split(/[\\/]/).pop()}</span>
+                ))}
+              </div>
+            ) : (
+              <div style={{ fontSize: 11.5, color: 'var(--t3)', lineHeight: 1.5 }}>
+                No topics selected yet.
+              </div>
+            )}
             <div style={{ fontSize: 11.5, color: 'var(--t3)', marginTop: 8 }}>
               Manage in <a style={{ cursor: 'pointer', color: 'var(--v)' }} onClick={() => onNavigate('settings')}>Settings</a>
             </div>

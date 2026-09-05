@@ -1,0 +1,85 @@
+1. Convert the binary number 11010110₂ to its equivalent representation in hexadecimal (base 16). [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+   A. D6₁₆
+   B. B6₁₆
+   C. C6₁₆
+   D. D10₁₆
+2. A system uses a radix b. If the number 35_b is equal to 29₁₀, determine the value of the base b. [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: WAEC WASSCE 2020]
+   A. 7
+   B. 8
+   C. 9
+   D. 6
+3. Convert the decimal fraction 0.625₁₀ into a binary fraction (bicimal). [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: NECO 2021]
+   A. 0.101₂
+   B. 0.110₂
+   C. 0.011₂
+   D. 0.111₂
+4. What is the largest 4-digit number in base 8 (octal), expressed in decimal (base 10)? [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/41]
+   A. 4095
+   B. 4096
+   C. 7777
+   D. 512
+5. Evaluate the quinary addition 342₅ + 423₅ and express the result in base 5. [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: WAEC WASSCE 2019]
+   A. 1320₅
+   B. 1240₅
+   C. 1321₅
+   D. 765₅
+6. Convert A3F₁₆ to octal (base 8). [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: IB DP Mathematics SL]
+   A. 5077₈
+   B. 5076₈
+   C. 2477₈
+   D. 5177₈
+7. Convert the quinary fraction 0.32₅ to a decimal fraction. [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: null]
+   A. 0.68₁₀
+   B. 0.64₁₀
+   C. 0.72₁₀
+   D. 0.56₁₀
+8. Which of the following digits is INVALID in a base-7 positional number system? [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: NECO 2018]
+   A. 0
+   B. 4
+   C. 6
+   D. 7
+9. Determine the general expression for the smallest non-zero n-digit integer in any base b ≥ 2. [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: null]
+   A. $b^n$
+   B. $b^{n-1}$
+   C. $b^n - 1$
+   D. $b^{n+1}$
+10. Express the decimal number 254₁₀ in hexadecimal. [Type: MCQ; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+    A. FE₁₆
+    B. FF₁₆
+    C. EF₁₆
+    D. E14₁₆
+11. Convert 1011.101₂ into a decimal number. Show full place-value expansion working. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+12. Solve for x in the base equation: 123_x = 38₁₀. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+13. Convert 0.3125₁₀ to octal (base 8) fraction. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: NECO 2020]
+14. Perform the subtraction in binary: 11010₂ − 1011₂. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/21]
+15. Convert 3B.4₁₆ into base 10. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: IB DP Mathematics HL]
+16. State the maximum number of distinct values that can be represented using a 10-bit binary integer. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: AP Computer Science A]
+17. Convert the decimal number 1000₁₀ into quinary (base 5). [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: WAEC WASSCE 2018]
+18. Expand 204.13₅ into powers of 5. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: null]
+19. Convert 756₈ directly to hexadecimal using binary as an intermediate pathway. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/42]
+20. Calculate the difference between the largest 3-digit number in base 6 and the smallest 3-digit number in base 6, leaving your answer in base 10. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: NECO 2019]
+21. If 212_b = 57₁₀, find b. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: WAEC WASSCE 2022]
+22. Convert 0.1101₂ to a base 10 fraction in lowest terms. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22]
+23. Convert 4C1₁₆ to base 10. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: null]
+24. Determine the binary representation of 7/16. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: AP Calculus BC]
+25. Find x such that x₈ = 10111001₂. [Type: Hybrid; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: IB DP Mathematics SL]
+26. **Base Conversion via Multiple Pathways and Bicimal Approximations** [Type: Theory; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: IB DP Mathematics HL]
+    (a) Convert 347.8125₁₀ to hexadecimal (base 16) showing separate integral and fractional conversion steps.
+    (b) Convert the result obtained in (a) directly to binary (base 2) using 4-bit nibble expansion.
+    (c) Convert 0.2₁₀ into a binary recurring bicimal and show that it results in an infinitely repeating string 0.00110011...₂. Explain why exact floating-point representation of certain decimal fractions is impossible in binary systems.
+27. **Algebraic Equations in Arbitrary Radices** [Type: Theory; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: NECO A-Level 2020]
+    (a) Solve for the positive integer base b in the quadratic radix equation: 13_b × 12_b = 211_b.
+    (b) A 3-digit integer in base b is written as abc_b. Write a formal algebraic proof showing that if the sum of its digits (a + b + c) is divisible by (b − 1), then abc_b itself is divisible by (b − 1).
+    (c) Apply your proof from part (b) to demonstrate why the "Rule of 9s" works in the decimal system (b = 10).
+28. **Theoretical Limits and Fixed-Digit Bounds** [Type: Theory; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/42]
+    Consider an n-digit integer system in radix b.
+    (a) Derive the formula for the maximum integer value M(n, b) that can be represented using exactly n digits in base b.
+    (b) Derive the formula for the total number of unique values N(n, b) that can be represented using up to n digits (including zero).
+    (c) Calculate M(6, 16) in decimal, and determine how many bytes of computer memory are required to store an integer of this magnitude.
+29. **Arithmetic Operations and Complement Systems** [Type: Theory; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: AP Computer Science A]
+    (a) Perform the addition A7B₁₆ + 4E9₁₆ entirely in hexadecimal notation without converting to base 10. Show all carry operations.
+    (b) Perform octal multiplication 65₈ × 43₈ entirely in octal notation.
+    (c) Explain the concept of Radix Complement (b's complement) for representing negative numbers in digital systems, and find the 8-bit 2's complement representation of the decimal integer −45₁₀.
+30. **Mixed-Base Systems and Radix Economy Optimization** [Type: Theory; Subject: Maths; Topic: L1.2 Theoretical Foundations of Number Base Systems; Format: Non-Sim; Exam: WAEC WASSCE 2021]
+    (a) Prove that converting a number from base b to base $b^k$ (where $k \in \mathbb{Z}^+$) can be executed simply by grouping digits into blocks of size k from the radix point.
+    (b) A computer architecture evaluates "radix economy" $E(b, N) = b \cdot \log_b(N)$ to determine the efficiency of number representation. Prove using calculus that $b = e \approx 2.718$ minimizes radix economy, explaining why base 3 (ternary) is theoretically more efficient than base 2 (binary).

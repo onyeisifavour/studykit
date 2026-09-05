@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from 'electron';
+import { app, BrowserWindow, dialog, ipcMain } from 'electron';
 import { spawn, ChildProcess } from 'child_process';
 import { userInfo } from 'os';
 import * as path from 'path';
@@ -51,6 +51,7 @@ function startSidecar(): Promise<string> {
 
     child.on('exit', (code) => {
       sidecar = null;
+      apiUrl = ''; // stale — next get-url will restart the sidecar
       if (!settled) {
         settled = true;
         clearTimeout(timer);
@@ -97,8 +98,28 @@ async function createWindow(): Promise<void> {
 }
 
 app.whenReady().then(async () => {
-  ipcMain.handle('sidecar:get-url', () => apiUrl);
+  ipcMain.handle('sidecar:get-url', async () => {
+    if (!apiUrl) {
+      try {
+        await startSidecar();
+      } catch (err) {
+        console.error('[studykit] failed to (re)start sidecar:', err);
+      }
+    }
+    return apiUrl;
+  });
   ipcMain.handle('sidecar:get-user', () => ({ name: userInfo().username }));
+  ipcMain.handle('sidecar:browse-folder', async () => {
+    const win = BrowserWindow.getFocusedWindow() ?? mainWindow ?? undefined;
+    const result = win
+      ? await dialog.showOpenDialog(win, {
+          title: 'Select your learning library',
+          properties: ['openDirectory'],
+        })
+      : { canceled: true, filePaths: [] };
+    if (result.canceled || result.filePaths.length === 0) return null;
+    return result.filePaths[0];
+  });
 
   try {
     await startSidecar();

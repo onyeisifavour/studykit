@@ -210,7 +210,10 @@ def save_custom_provider(url: str, key: str, model: str) -> None:
 
 
 def get_provider_mode() -> str:
-    return get('provider_mode', 'api')
+    mode = get('provider_mode', 'api')
+    if mode == 'cli':
+        return 'cli_bridge'
+    return mode
 
 
 def get_cli_model() -> str:

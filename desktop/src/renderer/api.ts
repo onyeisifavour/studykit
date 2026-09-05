@@ -20,24 +20,39 @@ async function apiUrl(): Promise<string> {
   return baseUrl;
 }
 
+function clearOnNetworkError(e: unknown): unknown {
+  // "Failed to fetch" (TypeError) means the sidecar connection is dead —
+  // forget the cached URL so the next call re-resolves and restarts it.
+  if (e instanceof TypeError) baseUrl = null;
+  return e;
+}
+
 async function get<T>(path: string): Promise<T> {
-  const res = await fetch(`${await apiUrl()}${path}`);
-  if (!res.ok) {
-    throw new Error(`${path} failed with status ${res.status}`);
+  try {
+    const res = await fetch(`${await apiUrl()}${path}`);
+    if (!res.ok) {
+      throw new Error(`${path} failed with status ${res.status}`);
+    }
+    return (await res.json()) as T;
+  } catch (e) {
+    throw clearOnNetworkError(e);
   }
-  return (await res.json()) as T;
 }
 
 async function post<T>(path: string, body: unknown): Promise<T> {
-  const res = await fetch(`${await apiUrl()}${path}`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) {
-    throw new Error(`${path} failed with status ${res.status}`);
+  try {
+    const res = await fetch(`${await apiUrl()}${path}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (!res.ok) {
+      throw new Error(`${path} failed with status ${res.status}`);
+    }
+    return (await res.json()) as T;
+  } catch (e) {
+    throw clearOnNetworkError(e);
   }
-  return (await res.json()) as T;
 }
 
 export function getDashboard(): Promise<DashboardData> {
@@ -100,9 +115,13 @@ export function quizJobStatus(jobId: string): Promise<QuizJobStatus> {
 }
 
 export async function quizCancel(jobId: string): Promise<QuizJobStatus> {
-  const res = await fetch(`${await apiUrl()}/api/quiz/job/${jobId}/cancel`, { method: 'POST' });
-  if (!res.ok) throw new Error(`quiz cancel failed with status ${res.status}`);
-  return (await res.json()) as QuizJobStatus;
+  try {
+    const res = await fetch(`${await apiUrl()}/api/quiz/job/${jobId}/cancel`, { method: 'POST' });
+    if (!res.ok) throw new Error(`quiz cancel failed with status ${res.status}`);
+    return (await res.json()) as QuizJobStatus;
+  } catch (e) {
+    throw clearOnNetworkError(e);
+  }
 }
 
 export function quizEvaluate(body: {
@@ -120,4 +139,15 @@ export function quizBatchEvaluate(body: {
   }[];
 }): Promise<BatchEvaluateResult> {
   return post<BatchEvaluateResult>('/api/quiz/evaluate-batch', body);
+}
+
+export function tutorChat(body: {
+  question: string;
+  user_answer: string;
+  correct_answer: string;
+  follow_up: string;
+  options?: string[];
+  history: { role: string; content: string }[];
+}): Promise<{ reply: string }> {
+  return post<{ reply: string }>('/api/tutor/chat', body);
 }

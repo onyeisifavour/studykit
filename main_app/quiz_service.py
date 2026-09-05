@@ -118,6 +118,64 @@ class QuizService:
     ) -> None:
         self._runner.chat_message(message, history, topic_files, on_result, on_error)
 
+    # ── 1b. Post-quiz tutoring thread ─────────────────────────────────────────
+    def tutor_message(
+        self,
+        question: str,
+        user_answer: str,
+        correct_answer: str,
+        follow_up: str,
+        history: list[dict],
+        options: Optional[list[str]] = None,
+        on_result: Optional[Callable[[str], None]] = None,
+        on_error: Optional[Callable[[str], None]] = None,
+    ) -> None:
+        """One turn of post-quiz tutoring. Prefers the CLI-bridge main chat
+        agent (works in cli_bridge provider mode); falls back to the direct-API
+        evaluation-thread prompt otherwise."""
+        if self._agent_runner is not None:
+            context = (
+                f"QUESTION: {question}"
+                + (f"\n\nOPTIONS:\n" + "\n".join(f"- {o}" for o in options) if options else "")
+                + f"\n\nSTUDENT'S ANSWER: {user_answer}"
+                + f"\n\nCORRECT ANSWER: {correct_answer}"
+            )
+            history_block = "\n".join(
+                f"{'Student' if m.get('role') == 'user' else 'Tutor'}: {m.get('content')}"
+                for m in history
+            )
+            prompt = (
+                "You are a patient, knowledgeable tutor helping a student review a "
+                "specific question from their completed quiz. Explain the concept "
+                "clearly, address the misconception in the student's answer, and "
+                "answer their follow-up in context. Be thorough but clear.\n\n"
+                f"{context}\n\n"
+                + (f"TUTORING THREAD SO FAR:\n{history_block}\n\n" if history_block else "")
+                + f"STUDENT'S FOLLOW-UP: {follow_up}"
+            )
+            self._agent_runner.call_main_chat(
+                user_message=prompt,
+                topic_files=[],
+                prefs={'section_a_sim': True, 'section_a_nonsim': True,
+                       'section_b_sim': True, 'section_b_nonsim': True,
+                       'question_count': 'Not specified'},
+                teacher_message=None,
+                on_result=on_result,
+                on_error=on_error,
+            )
+            return
+
+        self._runner.eval_thread_message(
+            question=question,
+            user_answer=user_answer,
+            correct_answer=correct_answer,
+            follow_up=follow_up,
+            history=history,
+            options=options,
+            on_result=on_result,
+            on_error=on_error,
+        )
+
     # ── Generation chain ──────────────────────────────────────────────────────
     def generate_quiz(
         self,

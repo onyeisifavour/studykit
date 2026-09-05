@@ -36,7 +36,7 @@ export default function Settings({ active }: Props) {
   const [scanning, setScanning] = useState(false);
 
   // ai pane
-  const [providerMode, setProviderMode] = useState('cli');
+  const [providerMode, setProviderMode] = useState('cli_bridge');
   const [cliModel, setCliModel] = useState('');
   const [groqKeys, setGroqKeys] = useState<string[]>(['', '', '', '']);
   const [groqModel, setGroqModel] = useState('');
@@ -58,7 +58,7 @@ export default function Settings({ active }: Props) {
         setEvalOn(s.evaluation_on);
         setLibRoot(s.library_root);
         setSelPaths([...s.selected_topics]);
-        setProviderMode(s.provider_mode === 'api' ? 'api' : 'cli');
+        setProviderMode(s.provider_mode === 'api' ? 'api' : 'cli_bridge');
         setCliModel(s.cli_model);
         setGroqKeys([...s.api.groq.keys].concat(Array(KEY_SLOTS).fill('')).slice(0, KEY_SLOTS));
         setGroqModel(s.api.groq.model);
@@ -124,6 +124,22 @@ export default function Settings({ active }: Props) {
         setScanErr(String(e.message ?? e));
         setScanning(false);
       });
+  };
+
+  const doBrowse = async () => {
+    try {
+      const chosen = await window.studykit.browseFolder();
+      if (!chosen) return;
+      setLibRoot(chosen);
+      setScanErr(null);
+      setScanning(true);
+      scanLibrary(chosen)
+        .then((s) => setScan(s))
+        .catch((e) => setScanErr(String(e.message ?? e)))
+        .finally(() => setScanning(false));
+    } catch (e) {
+      setScanErr(String(e instanceof Error ? e.message : e));
+    }
   };
 
   const togglePath = (path: string) => {
@@ -368,7 +384,7 @@ export default function Settings({ active }: Props) {
                         onChange={(e) => setLibRoot(e.target.value)}
                         style={{ flex: 1, maxWidth: 380 }}
                       />
-                      <button className="btn btn-secondary" onClick={() => setScan(null)}>Browse</button>
+                      <button className="btn btn-secondary" onClick={doBrowse}>Browse</button>
                       <button className="btn btn-primary" onClick={doScan}>{scanning ? 'Scanning…' : 'Scan'}</button>
                     </div>
                     {scanErr && <div style={{ color: 'var(--ro-tx)', fontSize: 12.5, marginTop: 8 }}>⚠ {scanErr}</div>}
@@ -426,7 +442,7 @@ export default function Settings({ active }: Props) {
                     </div>
                     <div className="seg">
                       <button className={providerMode === 'api' ? 'seg-btn on' : 'seg-btn'} onClick={() => setProviderMode('api')}>API (Direct)</button>
-                      <button className={providerMode === 'cli' ? 'seg-btn on' : 'seg-btn'} onClick={() => setProviderMode('cli')}>CLI Bridge (opencode)</button>
+                      <button className={providerMode === 'cli_bridge' ? 'seg-btn on' : 'seg-btn'} onClick={() => setProviderMode('cli_bridge')}>CLI Bridge (opencode)</button>
                     </div>
                   </div>
                   <div style={{ display: providerMode === 'api' ? 'block' : 'none' }}>
@@ -475,7 +491,7 @@ export default function Settings({ active }: Props) {
                       </div>
                     </div>
                   </div>
-                  <div style={{ display: providerMode === 'cli' ? 'block' : 'none' }}>
+                  <div style={{ display: providerMode === 'cli_bridge' ? 'block' : 'none' }}>
                     <div className="sf">
                       <label>Model</label>
                       <input className="inp" type="text" value={cliModel} onChange={(e) => setCliModel(e.target.value)} style={{ maxWidth: 340 }} placeholder="provider/model-name" />

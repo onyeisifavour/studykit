@@ -1,0 +1,50 @@
+=== TOPIC: L1.1 Definition and Scope of Chemistry ===
+
+CORE SKILL DRIVERS (with priority):
+- **[P1] Define chemistry**: State chemistry as the study of matter (composition, structure, properties) and energy changes. Probe: "Is the rusting of iron a chemistry question? What about the orbit of Mars?"
+- **[P1] Scientific terminology precision**: Distinguish scientific law, theory, hypothesis, and observation with correct usage. Probe with scenarios asking students to label each statement type.
+- **[P1] Qualitative vs quantitative observations**: Correctly classify observations as qualitative (descriptive, sensory) or quantitative (measurable, numerical). Probe: "The solution turned blue vs. the solution had a pH of 3.2."
+- **[P2] Classify branches**: Categorize problems into organic, inorganic, physical, analytical, biochemistry, or industrial chemistry. Probe: "Which branch studies the rate of a reaction?"
+- **[P2] Micro-macro relationship**: Explain how microscopic (atomic/molecular) structure determines macroscopic properties. Probe: "Why does salt dissolve in water but sand does not?"
+- **[P2] Scientific method application**: Describe how contradictory evidence affects hypothesis/theory evaluation. Probe: "An experiment contradicts a theory — what happens to the theory?"
+- **[P2] Green chemistry principles**: Identify sustainable alternatives in chemical processes. Probe: "Which solvent choice is greener and why?"
+- **[P3] Inductive vs deductive reasoning**: Classify reasoning types in scientific arguments. Probe: "Is assessing 100 samples to draw a generality induction or deduction?"
+- **[P3] Interdisciplinary integration**: Recognize how chemistry interfaces with physics, biology, geology (e.g., chemical physics, geochemistry).
+- **[P3] Atomic model evolution**: Explain how new evidence (isotopes, i.e., Soddy) refined Dalton's atomic theory rather than wholesale replacement.
+
+HIGH-YIELD TRAPS:
+- **Theory vs Law confusion**: Students assume theories "upgrade" into laws with enough evidence. Misconception exposed: Law = descriptive pattern in nature; Theory = explanatory framework. They are different kinds of statements, not a hierarchy.
+- **Hypothesis vs prediction conflation**: Students treat a testable hypothesis as merely a predicted outcome. Misconception: failing to see the hypothesis as the explanatory claim being tested.
+- **Qualitative vs quantitative flip**: Students classify "turned blue" as quantitative or "pH 3.2" as qualitative. Misconception: confusing precision with smell/color descriptors vs measured values.
+- **Conservation of Mass misapplication**: Students ignore gases escaping an open container and think mass disappeared. Misconception: the law applies only to closed systems of all participating matter.
+- **Branch misclassification**: Students confuse analytical ("what and how much is present") with physical ("why does it behave/react this way"), and industrial with applied general chemistry. Misconception: focusing on the substance studied rather than the question asked.
+- **Inductive overreach**: Students treat a single observation as sufficient for a universal law. Misconception: induction requires repeated, systematic observation; deductive reasoning tests predictions from principles.
+- **Contradictory evidence dismissal**: Students think one contradicting result kills a theory outright. Misconception: real science refines/modifies theories and re-examines the evidence (models evolve).
+- **Micro-macro disconnect**: Students cannot bridge molecular structure (micro) to observable phenomena (macro). Misconception: treating properties as unrelated to composition/structure.
+- **Atomic model teleology**: Students call Dalton's model "wrong." Misconception: models are approximations refined by new evidence (isotopes), not errors.
+- **Law of Conservation of Mass miscategorization**: Students mislabel it as a theory or hypothesis. Misconception: it is a law (consistent observed pattern), not an explanatory framework.
+
+PREREQUISITE LINKS:
+- Branches of chemistry requires understanding of what constitutes a chemical study
+- Scientific method application requires understanding of hypothesis/theory/law definitions
+- Inductive vs deductive reasoning requires understanding of scientific method
+- Micro-macro relationship requires foundational understanding of matter at atomic level
+- Green chemistry requires understanding of chemical processes and environmental impact
+- Atomic model evolution requires understanding of Dalton's postulates and isotopes
+- Mechanism check: Law/Therory/Hypothesis/Observation distinctions require prior facility with basic scientific inquiry terminology.
+
+MECHANISM CHECKS:
+- **Law vs theory probe**: Present a scenario (e.g., "Every sample of copper conducts electricity") and ask: is this law, theory, hypothesis, or observation? Follow with "Why does copper conduct electricity?" to check explanatory vs descriptive mode.
+- **Branches probe**: Give a phenomenon (e.g., "measuring glucose in a patient's blood sample") and ask which branch and why; probe that the branch follows from the question asked, not the substance.
+- **Evidence handling probe**: "A new experiment contradicts a well-established theory. A student concludes the theory is false. What is missing?" Check for refinement vs rejection.
+- **Induction/deduction probe**: Give a syllogism ("All matter has mass; water is matter; therefore water has mass" vs "I observed 10 metals conduct electricity...") and ask which is which.
+- **Macro-micro probe**: "Salt dissolves, sand does not, both are placed in water at the same temperature. Explain at the particle level." Check for structural explanation.
+
+SYNTHESIS/ELEVATION POINTS:
+- **Green chemistry synthesis**: Student should connect branch knowledge + environmental application to propose how chemists redesign processes (safer solvents, fewer byproducts) rather than just describe pollution.
+- **Modern framework synthesis**: Connect Law of Conservation of Mass + atomic model evolution to show how chemistry's foundational laws and models co-developed with new evidence (Soddy's isotopes refining Dalton).
+- **Interdisciplinary elevation**: Push from "chemistry studies matter" to situating chemistry between physics (physical chemistry) and biology (biochemistry) — diagnosing links across disciplines.
+- **Scientific literacy elevation**: Have the student critique a news headline's use of "theory" vs "law" to assess real-world scientific claim reading.
+- **Model-based reasoning**: Elevate from "atomic theory changed" to how all scientific models are provisional and evidence-driven — a transferable epistemology skill for later topics.
+
+---
