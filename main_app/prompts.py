@@ -15,6 +15,37 @@ Call map:
 """
 
 
+# ── 0. Shared math-notation spec ──────────────────────────────────────────────
+#
+# Styles every AI-emitted string that a student will read: chat replies,
+# question stems, options, correct answers, sim instructions, feedback,
+# summaries, and tutoring text. The app renders `$…$` spans as LaTeX, so the
+# AI must produce strictly delimited plain LaTeX and avoid plain-ASCII math.
+
+MATH_NOTATION_SPEC = (
+    "## Math notation (MANDATORY RESULT)\n"
+    "- Wrap every formula or numeric expression in LaTeX math delimiters so the "
+    "app can render it neatly:\n"
+    "    - Block/display math (standalone formula on its own line): use either\n"
+    "      \"$$...$$\" or \"\\begin{equation}...\\end{equation}\".\n"
+    "        e.g.  $$v = r\\omega$$\n"
+    "        e.g.  \\begin{equation}F = G\\frac{m_1 m_2}{r^2}\\end{equation}\n"
+    "    - Inline math (formula inside a sentence): use single \"$...$\".\n"
+    "        e.g.  the force is $F = G\\frac{m_1 m_2}{r^2}$ between the bodies\n"
+    "- Use LaTeX only inside the delimiters. Do NOT use TeX commands "
+    "outside them.\n"
+    "- NEVER write math as plain ASCII digits and operators: no caret "
+    "exponents (10^26), no `x` as a multiplication sign (use $\\times$), no "
+    "slash fractions (use $\\frac{}{}$), no units inside math like "
+    "$1.89\\times10^{26}\\ \\mathrm{N}$ instead of `1.89 x 10^26 N`.\n"
+    "- Keep units outside the math delimiters or as $\\mathrm{...}$ inside them.\n"
+    "- Examples:\n"
+    "    BAD:   GMm/r^2, 1.89 x 10^26 N, 1.18 x 10^25 x (1.0/0.5)^2\n"
+    "    GOOD:  $\\frac{GMm}{r^2}$, $1.89\\times10^{26}\\ \\mathrm{N}$, "
+    "$1.18\\times10^{25}\\times(1.0/0.5)^2$\n"
+)
+
+
 # ── 1. Pre-quiz chat ──────────────────────────────────────────────────────────
 
 CHAT_SYSTEM = (
@@ -28,7 +59,8 @@ CHAT_SYSTEM = (
     "- Keep it brief: 2–4 exchanges maximum\n"
     "- Once you have enough information, tell the student you are ready "
     "and that they should click 'Generate Quiz' to proceed\n\n"
-    "Do NOT generate questions or a blueprint yet. Just gather preferences."
+    "Do NOT generate questions or a blueprint yet. Just gather preferences.\n\n"
+    + MATH_NOTATION_SPEC
 )
 
 
@@ -152,7 +184,8 @@ SIM_QUESTIONS_SYSTEM = (
     "- Questions must ask for specific, measurable outputs\n"
     "- Answers must be precise — include units where applicable\n"
     "- The {answers}[...] block is required — correct answers are needed for marking\n"
-    "- Output ONLY the set blocks. No other text."
+    "- Output ONLY the set blocks. No other text.\n\n"
+    + MATH_NOTATION_SPEC
 )
 
 
@@ -170,7 +203,8 @@ LIVE_EVAL_SYSTEM = (
     "  0.5  — partially correct, key elements missing\n"
     "  0.25 — shows some understanding but mostly incorrect\n"
     "  0.0  — incorrect, off-topic, or blank\n\n"
-    "The SCORE line must appear first. Do not add any preamble or extra text."
+    "The SCORE line must appear first. Do not add any preamble or extra text.\n\n"
+    + MATH_NOTATION_SPEC
 )
 
 
@@ -194,6 +228,74 @@ BATCH_EVAL_SYSTEM = (
 )
 
 
+# ── 6b. Theory marking (persistent quiz-note batches, bucketed 0–1) ───────────
+
+# Levels must stay in sync with quiz_note.THEORY_SCORE_LEVELS.
+# User pass-criteria per level are still pending (see docs/quiz-note-and-grading.md);
+# until they arrive, the level labels below are the working rubric.
+THEORY_EVAL_SYSTEM = (
+    "You are marking a student's written theory answer in a quiz.\n\n"
+    "Return your evaluation in EXACTLY this format — no text before or after:\n\n"
+    "QUESTION 5:\n"
+    "SCORE: 0.75\n"
+    "EVALUATION: [2–4 sentences: what was correct, what was missing or wrong, "
+    "and what the student should review, tied to the standard answer]\n\n"
+    "MARKING STANDARD — THEORY QUESTIONS\n"
+    "Use the following 5-level scale:\n\n"
+    "1.0  — Complete, accurate, and precise. All required elements present. "
+    "Vocabulary and logic are technically correct throughout.\n"
+    "0.75 — Mostly correct. Core idea is sound but one minor gap or imprecision "
+    "exists that would require a single targeted addition/correction.\n"
+    "0.5  — Partial understanding demonstrated. At least half the content is "
+    "correct, but one significant component is missing or one substantive "
+    "error is present. Error must be isolated.\n"
+    "0.25 — Minimal credit. One recognisably correct element is present, but "
+    "the answer is substantially incomplete or significantly wrong overall. "
+    "Confusion of closely related concepts caps the score here.\n"
+    "0.0  — No credit. Answer is absent, irrelevant, or entirely incorrect. "
+    "Length does not compensate for wrong or missing content.\n\n"
+    "RULES:\n"
+    "- Base your score only on scientific/economic accuracy and completeness "
+    "relative to the reference answer provided.\n"
+    "- Penalise vague language that obscures technical meaning. 'It increases' "
+    "without specifying what, why, or by what mechanism is not acceptable at 1.0.\n"
+    "- Do not award marks for filler, hedged guesses, or adjacent-topic content.\n"
+    "- For process/mechanism questions: the direction of effect and the causal "
+    "chain are required, not optional.\n"
+    "- For compare/contrast: both sides must be substantively addressed for 1.0.\n"
+    "- For definitions: a key qualifier or boundary condition missing = 0.75 max.\n"
+    "- Accidentally correct statements that show no understanding = 0.0.\n"
+    "- This rubric is intentionally asymmetric — partial scores require earned "
+    "partial credit, not just effort or proximity.\n\n"
+    "The SCORE line must appear first, immediately followed by EVALUATION. "
+    "Do not add any preamble or extra text.\n\n"
+    + MATH_NOTATION_SPEC
+)
+
+
+# ── 6c. Hybrid strict marking (right/wrong, notation & format rules) ──────────
+
+HYBRID_EVAL_SYSTEM = (
+    "You are strictly marking a student's typed final answer (a number, an "
+    "expression, or a short precise statement). The expected final answer and "
+    "its format are given.\n\n"
+    "Return EXACTLY one of these two blocks — no preamble, no extra text:\n\n"
+    "RESULT: RIGHT\n"
+    "EXPLANATION: [one sentence confirming the match]\n\n"
+    "or\n\n"
+    "RESULT: WRONG\n"
+    "EXPLANATION: [one sentence naming why it differs — wrong value, wrong "
+    "notation, wrong casing, or wrong final-answer format]\n\n"
+    "Rules:\n"
+    "- Match the standard answer strictly: correct notation, correct units, "
+    "correct casing, and the same final-answer format.\n"
+    "- Algebraically equivalent but differently-formatted answers are WRONG "
+    "only when the standard answer fixes a required format; otherwise accept "
+    "equivalent forms.\n"
+    + MATH_NOTATION_SPEC
+)
+
+
 # ── 7. End-of-quiz summary report ────────────────────────────────────────────
 
 SUMMARY_SYSTEM = (
@@ -208,7 +310,8 @@ SUMMARY_SYSTEM = (
     "5. Recommended next steps — concrete actions (topics to revisit, "
     "question types to practise, concepts to look up)\n\n"
     "Be specific: reference actual questions and concepts from the session. "
-    "Be honest and constructive. Do not pad the report."
+    "Be honest and constructive. Do not pad the report.\n\n"
+    + MATH_NOTATION_SPEC
 )
 
 
@@ -225,9 +328,9 @@ EVAL_THREAD_SYSTEM = (
     "- Connect the question to the broader topic and learning objectives\n"
     "- Answer follow-up questions in context of this tutoring thread\n"
     "- Suggest what the student should study or practise next\n\n"
-    "Be thorough but clear. Use examples where they help understanding."
+"Be thorough but clear. Use examples where they help understanding.\n\n"
+    + MATH_NOTATION_SPEC
 )
-
 
 # ── Builder functions ─────────────────────────────────────────────────────────
 
@@ -398,6 +501,51 @@ def build_batch_eval_prompt(question_groups: list[dict]) -> str:
         f"{body}\n\n"
         "Score each sub-question using the label format shown. "
         "Return only QUESTION labels and SCORE values. No explanations."
+    )
+
+
+def build_theory_eval_prompt(theory_entries: list[dict]) -> str:
+    """
+    Builds a batch grading prompt for one theory batch file (≤15 questions).
+
+    Args:
+        theory_entries: list of {
+            'label':          str,   # question number, e.g. '5'
+            'question':       str,
+            'user_answer':    str,
+            'correct_answer': str,
+        }
+
+    Only entries with a non-empty correct_answer and a user answer are passed
+    in — flagged (no standard answer) entries never reach the grader.
+    """
+    parts = []
+    for sub in theory_entries:
+        parts.append(
+            f"QUESTION {sub['label']}:\n"
+            f"{sub['question']}\n"
+            f"Student: {sub['user_answer']}\n"
+            f"Standard: {sub['correct_answer']}"
+        )
+    body = "\n\n".join(parts)
+    return (
+        f"{body}\n\n"
+        "Grade each question using its number as the label. Return "
+        "QUESTION <number> / SCORE / EVALUATION blocks, one per question, "
+        "with no other text."
+    )
+
+
+def build_hybrid_eval_prompt(
+    question:       str,
+    user_answer:    str,
+    correct_answer: str,
+) -> str:
+    return (
+        f"STANDARD FINAL ANSWER:\n{correct_answer}\n\n"
+        f"QUESTION CONTEXT:\n{question}\n\n"
+        f"STUDENT'S ANSWER:\n{user_answer}\n\n"
+        "Mark RIGHT or WRONG with your explanation."
     )
 
 

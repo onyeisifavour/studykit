@@ -53,6 +53,7 @@ AGENT_MAIN_CHAT = 'pre-quiz_main_chat'
 AGENT_QUOTA_PLANNER = 'diagnostic-quota-planner'
 AGENT_2A_TOPIC_RESOLVER = 'agent2a-topic-resolver'
 AGENT_2C_FALLBACK_BUILDER = 'agent2c-fallback-builder'
+AGENT_SIM_GENERATOR = 'sim-question-generator'
 AGENT_3B_CANDIDATE_SELECTOR = 'agent3b-candidate-selector'
 AGENT_4A_PACING_ARC = 'agent4a-pacing-arc'
 AGENT_5B_DIAGNOSTIC_AUDIT = 'agent5b-diagnostic-audit'
@@ -76,6 +77,7 @@ PIPELINE_AGENTS = [
     AGENT_QUOTA_PLANNER,
     AGENT_2A_TOPIC_RESOLVER,
     AGENT_2C_FALLBACK_BUILDER,
+    AGENT_SIM_GENERATOR,
     AGENT_3B_CANDIDATE_SELECTOR,
     AGENT_4A_PACING_ARC,
     AGENT_5B_DIAGNOSTIC_AUDIT,
@@ -144,12 +146,14 @@ class AgentRunner:
             on_error: callback with error message
         """
         # Format message based on turn
+        from .prompts import MATH_NOTATION_SPEC
         if teacher_message is None:
             # First turn: include topic context and preferences
             message = self._format_first_message(user_message, topic_files, prefs)
         else:
             # Subsequent turns
             message = f"Teacher message: {teacher_message}\nStudent message: {user_message}"
+        message = f"{message}\n\n{MATH_NOTATION_SPEC}"
         
         session_id = self._sessions.get(AGENT_MAIN_CHAT)
         
@@ -307,28 +311,34 @@ class AgentRunner:
         background_reports: dict[str, str],
         user_request: str,
         total_questions: int,
+        prefs: Optional[dict] = None,
         on_result: Optional[Callable[[dict], None]] = None,
         on_error: Optional[Callable[[str], None]] = None,
     ) -> None:
         """
         Call diagnostic-quota-planner agent.
 
-        Passes all 4 background model reports + user request + question count.
+        Passes all 4 background model reports + user request + question count
+        (+ question section preferences) to Agent 1.
         Agent 1 internally runs 3 subagents:
           1a: Priority Hierarchy Evaluator
           1b: Mathematical Quota Calculator
           1c: User Preference Adjuster
-        Returns the parsed quota manifest JSON.
+        Returns the parsed quota manifest JSON. Each slot allocation may carry
+        a per-slot 'format' ('Sim' | 'Non-Sim') reflecting the user's section
+        preferences; step 2b honours it when assigning tags.
 
         Args:
             background_reports: {agent_name: report_text} from get_background_reports()
             user_request: the user's final chat message
             total_questions: number of questions requested
+            prefs: question section preferences (section_a_sim/nonsim,
+                   section_b_sim/nonsim).
             on_result: callback with parsed manifest dict
             on_error: callback with error message
         """
         message = self._format_quota_input(
-            background_reports, user_request, total_questions
+            background_reports, user_request, total_questions, prefs or {}
         )
 
         session_id = self._sessions.get(AGENT_QUOTA_PLANNER)
@@ -389,6 +399,7 @@ class AgentRunner:
         reports: dict[str, str],
         user_request: str,
         total_questions: int,
+        prefs: Optional[dict] = None,
     ) -> str:
         """Format the 4 background reports + user request for Agent 1."""
         bg_names = {
@@ -410,7 +421,29 @@ class AgentRunner:
         parts.append("=== USER REQUEST ===")
         parts.append(user_request)
 
+        if prefs:
+            parts.append("")
+            parts.append("=== QUESTION SECTION PREFERENCES (user's request) ===")
+            parts.append(self._format_prefs_block(prefs))
+
         return "\n".join(parts)
+
+    @staticmethod
+    def _format_prefs_block(prefs: Optional[dict]) -> str:
+        """Serialises question section preferences into a prompt block."""
+        prefs = prefs or {}
+        lines = []
+        if prefs.get('section_a_sim'):
+            lines.append("* Section A (Objective): Simulation questions included")
+        if prefs.get('section_a_nonsim'):
+            lines.append("* Section A (Objective): Non-simulation questions included")
+        if prefs.get('section_b_sim'):
+            lines.append("* Section B (Theory): Simulation questions included")
+        if prefs.get('section_b_nonsim'):
+            lines.append("* Section B (Theory): Non-simulation questions included")
+        if not lines:
+            lines.append("* No section preferences set — use your default mix.")
+        return "\n".join(lines)
 
     # ── Agent 2: Query Specifier ─────────────────────────────────────────────
 
@@ -418,6 +451,7 @@ class AgentRunner:
         self,
         quota_manifest: dict,
         topic_files: list[dict],
+        prefs: Optional[dict] = None,
         on_result: Optional[Callable[[dict], None]] = None,
         on_error: Optional[Callable[[str], None]] = None,
     ) -> None:
@@ -426,7 +460,8 @@ class AgentRunner:
 
         Sequence (updated approach — judgment AI, mechanical code):
             2a: call agent2a-topic-resolver  → resolved slot list
-            2b: code tag mapping             → Type/Format assigned
+            2b: code tag mapping             → Type/Format assigned (per-slot
+                format from the quota manifest is carried through)
             2c: call agent2c-fallback-builder → file query spec manifest
             2d: code validation + persist
 
@@ -435,6 +470,7 @@ class AgentRunner:
         Args:
             quota_manifest: Agent 1 output (quiz_metadata + slot_allocations).
             topic_files:    in-memory loaded topic dicts (library_scanner).
+            prefs:          question section preferences, forwarded to 2a/2c.
             on_result:      callback with the validated file query spec manifest.
             on_error:       callback with a formatted pipeline error message.
         """
@@ -445,6 +481,20 @@ class AgentRunner:
         slots = quota_manifest.get('slot_allocations', [])
         index_text = self._build_bank_tag_index(topic_files)
         concept_text = self._build_concept_blocks_text(topic_files)
+
+        # Fall back to the user's section preferences for any slot the quota
+        # planner did not tag with an explicit Sim/Non-Sim format, so a sim-only
+        # quiz is never misrouted into the non-sim banks.
+        from .sim_generator import resolve_slot_formats
+        resolve_slot_formats(quota_manifest, prefs)
+
+        # Fully-sim quiz: every slot is format='Sim', so the pipeline never
+        # touches the question banks. Skip the fallback-builder (2c) call and
+        # the bank index preparation below by short-circuiting after 2a.
+        real_slots = [s for s in slots if isinstance(s, dict)]
+        sim_only = bool(real_slots) and all(
+            str(s.get('format', 'Non-Sim')) == 'Sim' for s in real_slots
+        )
 
         # ── Step 3: fallback construction (2c) ───────────────────────────────
         def _on_2c_success(text: str, new_session_id: str) -> None:
@@ -489,22 +539,45 @@ class AgentRunner:
 
         # ── Step 2b+2c: map tags, then call 2c ───────────────────────────────
         def _continue_after_2a(resolved_slots: list[dict]) -> None:
-            # 2b: code tag mapping (join style_constraint from quota manifest)
+            # 2b: code tag mapping (join style_constraint + format from quota)
             style_lookup = {
                 slot.get('slot_number'): slot.get('style_constraint', '')
                 for slot in slots if isinstance(slot, dict)
             }
-            enriched = enrich_slots(resolved_slots, style_lookup)
+            format_lookup = {
+                slot.get('slot_number'): slot.get('format')
+                for slot in slots
+                if isinstance(slot, dict) and isinstance(slot.get('format'), str)
+            }
+            enriched = enrich_slots(resolved_slots, style_lookup, format_lookup)
+
+            if sim_only:
+                from .sim_generator import build_sim_only_query_spec
+
+                # No non-sim slots: synthesize a query spec manifest that only
+                # carries each slot's resolved topic for the README lookup.
+                manifest = build_sim_only_query_spec(enriched)
+                errors = validate_query_spec_manifest(manifest)
+                if errors:
+                    _report(build_pipeline_error(
+                        "The synthesized file query spec manifest failed validation.",
+                        detail="; ".join(errors),
+                    ))
+                    return
+                config.save_query_spec_manifest(manifest)
+                if on_result:
+                    on_result(manifest)
+                return
 
             self._client.call(
                 agent=AGENT_2C_FALLBACK_BUILDER,
                 session_id=self._sessions.get(AGENT_2C_FALLBACK_BUILDER),
-                user=self._format_2c_input(enriched, index_text),
+                user=self._format_2c_input(enriched, index_text, prefs),
                 on_success=_on_2c_success,
                 on_error=_on_2c_error,
             )
 
-        # ── Step 1: topic resolution (2a) ────────────────────────────────────
+# ── Step 1: topic resolution (2a) ────────────────────────────────────
         def _on_2a_success(text: str, new_session_id: str) -> None:
             if new_session_id:
                 self._sessions[AGENT_2A_TOPIC_RESOLVER] = new_session_id
@@ -543,10 +616,63 @@ class AgentRunner:
                 ],
             ))
 
+        # A fully-sim quiz never touches the question banks, so agent 2a's bank
+        # sub-topic resolution is pure dead weight — and its multi-KB prompt is
+        # the most flaky single call in the pipeline (300s timeouts). Resolve
+        # each slot mechanically from the quota manifest (which already carries
+        # the target issue, topic, and style constraint) instead.
+        if sim_only:
+            from .sim_generator import build_sim_only_query_spec
+            style_lookup = {
+                slot.get('slot_number'): slot.get('style_constraint', '')
+                for slot in slots if isinstance(slot, dict)
+            }
+            format_lookup = {
+                slot.get('slot_number'): slot.get('format')
+                for slot in slots
+                if isinstance(slot, dict) and isinstance(slot.get('format'), str)
+            }
+            subjects = {
+                (tf.get('topic_name') or str(tf.get('topic_path') or '')).strip().lower()
+                : tf.get('subject_name', '')
+                for tf in topic_files if isinstance(tf, dict)
+            }
+            synthesized = []
+            for slot in real_slots:
+                topic = (slot.get('topic') or '').strip()
+                subject = subjects.get(topic.lower(), '')
+                if not subject:
+                    subject = next(
+                        (tf.get('subject_name', '') for tf in topic_files
+                         if isinstance(tf, dict) and tf.get('subject_name')),
+                        '',
+                    )
+                synthesized.append({
+                    'slot_number': slot.get('slot_number'),
+                    'slot_objective': slot.get('objective_type', ''),
+                    'resolved_topic': topic,
+                    'resolved_subject': subject,
+                    'target_issue': slot.get('target_issue', ''),
+                    'keywords': [],
+                })
+            enriched = enrich_slots(synthesized, style_lookup, format_lookup)
+            manifest = build_sim_only_query_spec(enriched)
+            errors = validate_query_spec_manifest(manifest)
+            if errors:
+                _report(build_pipeline_error(
+                    "The synthesized file query spec manifest failed validation.",
+                    detail="; ".join(errors),
+                ))
+                return
+            config.save_query_spec_manifest(manifest)
+            if on_result:
+                on_result(manifest)
+            return
+
         self._client.call(
             agent=AGENT_2A_TOPIC_RESOLVER,
             session_id=self._sessions.get(AGENT_2A_TOPIC_RESOLVER),
-            user=self._format_2a_input(slots, concept_text, index_text),
+            user=self._format_2a_input(slots, concept_text, index_text, prefs),
             on_success=_on_2a_success,
             on_error=_on_2a_error,
         )
@@ -556,8 +682,10 @@ class AgentRunner:
         slots: list,
         concept_text: str,
         index_text: str,
+        prefs: Optional[dict] = None,
     ) -> str:
         """Formats the step 2a prompt: quota slots + concept taxonomy + tag index."""
+        prefs_block = self._format_prefs_block(prefs) if prefs else ""
         return (
             "=== SLOT ALLOCATIONS ===\n"
             f"{json.dumps(slots, indent=2)}\n\n"
@@ -565,7 +693,8 @@ class AgentRunner:
             f"{concept_text}\n\n"
             "=== BANK TAG INDEX ===\n"
             f"{index_text}\n\n"
-            "Resolve each slot's topic to an actual bank topic name. "
+            + (prefs_block + "\n\n" if prefs_block else "")
+            + "Resolve each slot's topic to an actual bank topic name. "
             "Return ONLY the JSON array of resolved slots."
         )
 
@@ -573,16 +702,201 @@ class AgentRunner:
         self,
         enriched_slots: list[dict],
         index_text: str,
+        prefs: Optional[dict] = None,
     ) -> str:
         """Formats the step 2c prompt: tag-resolved slots + bank tag index."""
+        prefs_block = self._format_prefs_block(prefs) if prefs else ""
         return (
             "=== RESOLVED SLOTS (tags assigned) ===\n"
             f"{json.dumps(enriched_slots, indent=2)}\n\n"
             "=== BANK TAG INDEX ===\n"
             f"{index_text}\n\n"
-            "Construct the 3-tier fallback search spec for each slot. "
+            + (prefs_block + "\n\n" if prefs_block else "")
+            + "Construct the 3-tier fallback search spec for each slot. "
             "Return ONLY the JSON object with a 'file_query_specs' array."
         )
+
+    # ── Sim Track: Simulation Question Generator ──────────────────────────────
+
+    def call_sim_generator(
+        self,
+        sim_slots: list[dict],
+        topic_files: list[dict],
+        resolved_topics: Optional[dict] = None,
+        on_result: Optional[Callable[[dict], None]] = None,
+        on_error: Optional[Callable[[str], None]] = None,
+    ) -> None:
+        """
+        Runs the simulation-question track for slots tagged format='Sim'.
+
+        Each sim slot whose resolved topic has a simulation README triggers one
+        call to the sim-question-generator agent, which authors a question from
+        that README. Slots without a README degrade to missing_items with
+        reason 'NO_SIM_AVAILABLE' (reduced-quiz semantics, same as a missing
+        bank item). All slots are resolved in parallel (CLIBridgeClient.call()
+        spawns a daemon thread per call); on_result fires once with the complete
+        sim-track selection manifest.
+
+        Args:
+            sim_slots:       quota slot allocations with format='Sim'.
+            topic_files:     in-memory loaded topic dicts (library_scanner).
+            resolved_topics: {slot_number: resolved_bank_topic} carried from
+                             the 2c tier_1_exact topics.
+            on_result:       callback with the sim-track selection manifest.
+            on_error:        callback with a formatted pipeline error message.
+        """
+        from .sim_generator import (
+            MISSING_REASON_NO_SIM,
+            assemble_sim_manifest,
+            build_missing_item,
+            build_sim_prompt,
+            build_sim_track_inputs,
+            parse_sim_question_response,
+        )
+        resolved_topics = resolved_topics or {}
+
+        slots_with_readmes, missing_numbers = build_sim_track_inputs(
+            topic_files, sim_slots, resolved_topics
+        )
+
+        def _report(msg: str) -> None:
+            if on_error:
+                on_error(msg)
+
+        if not slots_with_readmes:
+            if on_result:
+                on_result(assemble_sim_manifest(
+                    sim_slots,
+                    [],
+                    [build_missing_item(n, MISSING_REASON_NO_SIM)
+                     for n in missing_numbers],
+                ))
+            return
+
+        lock = threading.Lock()
+        state = {
+            'remaining': len(slots_with_readmes),
+            'items': [],
+            'failed': '',
+            'finished': False,
+        }
+
+        def _track_done(item: dict) -> None:
+            with lock:
+                if state['failed'] or state['finished']:
+                    return
+                state['items'].append(item)
+                state['remaining'] -= 1
+                if state['remaining'] > 0:
+                    return
+                if not state['failed']:
+                    state['finished'] = True
+
+            missing = [
+                build_missing_item(n, MISSING_REASON_NO_SIM)
+                for n in missing_numbers
+            ]
+            if on_result:
+                on_result(assemble_sim_manifest(
+                    sim_slots, state['items'], missing,
+                ))
+
+        # Each sim slot needs an independent authored question. Fire them one at
+        # a time reusing a single session: 10 parallel `opencode run` subprocess
+        # calls each with a multi-KB README prompt overwhelm the CLI and push
+        # individual calls past the 300s timeout, and they share session state
+        # which degrades model coherence. Serial execution stays well within a
+        # single call's budget and keeps the session turn-ordered. Drop any
+        # entry without an integer slot number before counting.
+        slots_with_readmes = [
+            e for e in slots_with_readmes
+            if isinstance(e.get('slot'), dict) and isinstance(e['slot'].get('slot_number'), int)
+        ]
+        state['remaining'] = len(slots_with_readmes)
+
+        def _run_next(index: int, session_id: Optional[str]) -> None:
+            if index >= len(slots_with_readmes):
+                return
+            entry = slots_with_readmes[index]
+            slot = entry['slot']
+            slot_num = slot.get('slot_number')
+            resolved = (resolved_topics.get(slot_num, '')
+                        or slot.get('topic', ''))
+            prompt = build_sim_prompt(slot, entry['readme'], '', resolved)
+
+            def _on_success(text: str, new_session_id: str) -> None:
+                if new_session_id:
+                    self._sessions[AGENT_SIM_GENERATOR] = new_session_id
+                    config.save_agent_session(
+                        AGENT_SIM_GENERATOR, new_session_id
+                    )
+
+                with lock:
+                    if state['failed'] or state['finished']:
+                        return
+
+                item, err = parse_sim_question_response(text)
+                if item is None:
+                    with lock:
+                        state['failed'] = 'parse'
+                    _report(build_pipeline_error(
+                        f'Failed to parse the simulation question for slot '
+                        f'{slot_num}.',
+                        detail=err or '',
+                        causes=[
+                            "The 'sim-question-generator' agent is not "
+                            "registered in opencode.json.",
+                            "The agent returned prose instead of JSON, or "
+                            "returned an empty response.",
+                            "The opencode CLI failed (network/model problem).",
+                        ],
+                    ))
+                    return
+
+                if item.get('slot_number') != slot_num:
+                    with lock:
+                        state['failed'] = 'mismatch'
+                    _report(build_pipeline_error(
+                        f'The sim agent returned slot '
+                        f'{item.get("slot_number")} but slot {slot_num} was '
+                        'requested.',
+                        causes=[
+                            "The 'sim-question-generator' agent ignored the "
+                            "requested slot_number.",
+                        ],
+                    ))
+                    return
+
+                _track_done(item)
+                if not state['finished'] and not state['failed']:
+                    _run_next(index + 1, new_session_id)
+
+            def _on_error(error: str) -> None:
+                with lock:
+                    if state['failed'] or state['finished']:
+                        return
+                    state['failed'] = error
+                _report(build_pipeline_error(
+                    f'The sim-question-generator agent call failed for slot '
+                    f'{slot_num}.',
+                    detail=error,
+                    causes=[
+                        "The 'sim-question-generator' agent is not registered "
+                        "in opencode.json.",
+                        "The opencode CLI is not installed or not in PATH.",
+                        "A network, rate-limit, or model configuration problem.",
+                    ],
+                ))
+
+            self._client.call(
+                agent=AGENT_SIM_GENERATOR,
+                session_id=session_id,
+                user=prompt,
+                on_success=_on_success,
+                on_error=_on_error,
+            )
+
+        _run_next(0, self._sessions.get(AGENT_SIM_GENERATOR))
 
     # ── Agent 3: Candidate Evaluator ──────────────────────────────────────────
 
@@ -992,10 +1306,18 @@ class AgentRunner:
 
         attempts = {'n': 0}
 
+        # The 5b diagnostic audit verifies the quiz against the 4 background
+        # diagnostic reports. With no reports there is nothing to verify — the
+        # agent correctly answers "CANNOT_VERIFY", which then hard-fails a
+        # generation that never produced reports (e.g. a sim-only quiz taken
+        # before chatting). Treat the no-report case as a vacuous PASS and
+        # skip the 5b agent call entirely.
+        has_reports = bool(background_reports)
+
         def _run_parallel_audits() -> None:
             attempts['n'] += 1
             holder: dict = {}
-            remaining = {'n': 2}
+            remaining = {'n': 2 if has_reports else 1}
 
             def _done() -> None:
                 remaining['n'] -= 1
@@ -1084,19 +1406,31 @@ class AgentRunner:
                 ))
 
             self._client.call(
-                agent=AGENT_5B_DIAGNOSTIC_AUDIT,
-                session_id=self._sessions.get(AGENT_5B_DIAGNOSTIC_AUDIT),
-                user=self._format_5b_input(_quiz_summary(), background_reports),
-                on_success=_on_5b_success,
-                on_error=_on_5b_error,
-            )
-            self._client.call(
                 agent=AGENT_5C_PREFERENCE_AUDIT,
                 session_id=self._sessions.get(AGENT_5C_PREFERENCE_AUDIT),
                 user=self._format_5c_input(_quiz_summary(), user_request),
                 on_success=_on_5c_success,
                 on_error=_on_5c_error,
             )
+
+            if has_reports:
+                self._client.call(
+                    agent=AGENT_5B_DIAGNOSTIC_AUDIT,
+                    session_id=self._sessions.get(AGENT_5B_DIAGNOSTIC_AUDIT),
+                    user=self._format_5b_input(_quiz_summary(), background_reports),
+                    on_success=_on_5b_success,
+                    on_error=_on_5b_error,
+                )
+            else:
+                holder['diag'] = {
+                    'verdict': 'PASS',
+                    'checks': [{
+                        'check': 'no_diagnostic_reports',
+                        'status': 'pass',
+                        'reason': 'No diagnostic reports to audit against; '
+                                  'vacuously satisfied.',
+                    }],
+                }
 
         _run_parallel_audits()
 
@@ -1112,6 +1446,8 @@ class AgentRunner:
             summary.append({
                 'sequence_index': entry.get('sequence_index', 0),
                 'type': q.get('type', ''),
+                'format': q.get('format', 'Non-Sim'),
+                'sim_name': q.get('sim_name', ''),
                 'topic': q.get('topic', ''),
                 'subject': q.get('subject', ''),
                 'objective_type': entry.get('objective_type', ''),
@@ -1145,10 +1481,10 @@ class AgentRunner:
         quiz_summary: str,
         user_request: str,
     ) -> str:
-        """Formats the step 5c prompt: quiz sequence + user request."""
+        """Formats the step 5c prompt: quiz sequence + user request block."""
         return (
             f"{quiz_summary}\n\n"
-            "=== USER REQUEST (verbatim) ===\n"
+            "=== USER REQUEST (authoritative selections block) ===\n"
             f"{user_request}\n\n"
             "Cross-check the quiz against this request. "
             "Return ONLY the JSON object with a 'verdict' and 'checks' array."
@@ -1159,7 +1495,7 @@ class AgentRunner:
         parsed = self._extract_json(text)
         if not isinstance(parsed, dict):
             return None, "Expected a JSON object with a 'verdict'."
-        verdict = parsed.get('verdict')
+        verdict = str(parsed.get('verdict', '')).strip().upper()
         if verdict not in ('PASS', 'FAIL'):
             return None, "verdict must be 'PASS' or 'FAIL'."
         checks = parsed.get('checks')
@@ -1172,7 +1508,7 @@ class AgentRunner:
         parsed = self._extract_json(text)
         if not isinstance(parsed, dict):
             return None, "Expected a JSON object with a 'verdict'."
-        verdict = parsed.get('verdict')
+        verdict = str(parsed.get('verdict', '')).strip().upper()
         if verdict not in ('PASS', 'FAIL'):
             return None, "verdict must be 'PASS' or 'FAIL'."
         checks = parsed.get('checks')
@@ -1528,6 +1864,29 @@ class AgentRunner:
                 on_complete(dict(self._bg_reports))
         
         threading.Thread(target=_wait_and_return, daemon=True, name='resolve-reports').start()
+
+    def resolve_pending_and_get_reports_sync(self, timeout: float = 60.0) -> dict[str, str]:
+        """
+        Blocking variant of resolve_pending_and_get_reports().
+
+        Waits (up to `timeout` seconds) for all outstanding background-model
+        stacks to drain, then returns the final reports dict. If the timeout
+        is hit while a model is still busy, whatever reports have landed so
+        far are returned (the drain thread keeps running in the background).
+
+        Used by generate_quiz() to gate quota planning on the diagnostic
+        reports so the Electron path matches the Tkinter behaviour.
+        """
+        done = threading.Event()
+        holder: dict = {}
+
+        def _complete(reports: dict[str, str]) -> None:
+            holder['reports'] = reports
+            done.set()
+
+        self.resolve_pending_and_get_reports(on_complete=_complete)
+        done.wait(timeout=timeout)
+        return holder.get('reports', dict(self._bg_reports))
 
     def get_background_reports(self) -> dict[str, str]:
         """Returns current background model reports (non-blocking)."""

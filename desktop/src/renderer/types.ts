@@ -62,6 +62,7 @@ export interface QuizJobStatus {
   ready: boolean;
   questions?: QuizQuestion[];
   topics?: string[];
+  quiz_id?: string;
 }
 
 export interface QuizFeedback {
@@ -103,6 +104,36 @@ export interface EvaluateResult {
 
 export interface BatchEvaluateResult {
   results: { label: string; score: number; explanation: string }[];
+}
+
+export interface QuizQuestionResult {
+  number: number;
+  score: number | null;
+  remark: string;
+  is_correct: boolean | null;
+  skipped?: boolean;
+  note?: string;
+}
+
+export interface ScoreProfile {
+  total: number;
+  attempted: number;
+  marked: number;
+  skipped: number;
+  unanswered: number;
+  ungraded: number;
+  earned: number;
+  overall: number | null;
+  by_type: Record<string, { earned: number; count: number; correct: number }>;
+  by_pacing_stage: Record<string, { earned: number; count: number }>;
+  by_topic: Record<string, { earned: number; count: number }>;
+}
+
+export interface QuizCompleteResult {
+  quiz_id: string;
+  history_written: boolean;
+  profile: ScoreProfile;
+  results: QuizQuestionResult[];
 }
 
 // ── History ──────────────────────────────────────────────────────────────────

@@ -441,8 +441,8 @@ export default function Settings({ active }: Props) {
                       <div className="set-row-sub">Direct API keys or the CLI bridge</div>
                     </div>
                     <div className="seg">
-                      <button className={providerMode === 'api' ? 'seg-btn on' : 'seg-btn'} onClick={() => setProviderMode('api')}>API (Direct)</button>
-                      <button className={providerMode === 'cli_bridge' ? 'seg-btn on' : 'seg-btn'} onClick={() => setProviderMode('cli_bridge')}>CLI Bridge (opencode)</button>
+                      <button className={providerMode === 'api' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setProviderMode('api'); persist({ provider_mode: 'api' }); }}>API (Direct)</button>
+                      <button className={providerMode === 'cli_bridge' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setProviderMode('cli_bridge'); persist({ provider_mode: 'cli_bridge' }); }}>CLI Bridge (opencode)</button>
                     </div>
                   </div>
                   <div style={{ display: providerMode === 'api' ? 'block' : 'none' }}>

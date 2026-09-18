@@ -6,18 +6,22 @@ existing main_app modules; this layer only translates HTTP requests into those
 calls and returns the JSON shapes documented in UI_UX_DESIGN_HANDOFF.md §7.
 """
 
+import json
 import re
 import threading
 import uuid
+from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 
 from .. import config
 from .. import dashboard_stats
 from .. import flashcard_builder
 from .. import library_scanner
 from .. import quiz_logger
+from ..user_selections import normalize_ascii_math
 from ..quiz_service import QuizService, GenerationJob
 
 app = FastAPI(title="StudyKit sidecar", version="0.1.0")
@@ -121,18 +125,18 @@ def history_detail(quiz_id: str) -> dict:
         'skip_mode':  log.skip_mode,
         'questions': [{
             'number':         q.number,
-            'question':       q.question,
-            'options':        list(q.options or []),
+            'question':       normalize_ascii_math(q.question),
+            'options':        [normalize_ascii_math(o) for o in (q.options or [])],
             'section':        q.section,
             'q_type':         q.q_type,
             'is_simulation':  q.is_simulation,
             'topic':          q.topic,
             'user_answer':    q.user_answer,
-            'correct_answer': q.correct_answer,
+            'correct_answer': normalize_ascii_math(q.correct_answer),
             'is_correct':     q.is_correct,
             'score':          q.score,
             'skipped':        q.skipped,
-            'ai_feedback':    q.ai_feedback,
+            'ai_feedback':    normalize_ascii_math(q.ai_feedback),
         } for q in log.questions],
     }
 
@@ -143,15 +147,18 @@ def _question_card(q) -> dict:
         'number':          getattr(q, 'number', 0),
         'section':         getattr(q, 'section', ''),
         'q_type':          getattr(q, 'q_type', ''),
+        'quiz_type':       getattr(q, 'quiz_type', '') or getattr(q, 'q_type', ''),
         'is_simulation':   getattr(q, 'is_simulation', False),
-        'question_text':   getattr(q, 'question_text', ''),
-        'options':         list(getattr(q, 'options', []) or []),
-        'correct_answer':  getattr(q, 'correct_answer', ''),
+        'question_text':   normalize_ascii_math(getattr(q, 'question_text', '')),
+        'options':         [normalize_ascii_math(o) for o in (getattr(q, 'options', []) or [])],
+        'correct_answer':  normalize_ascii_math(getattr(q, 'correct_answer', '')),
         'sim_name':        getattr(q, 'sim_name', ''),
-        'sim_instruction': getattr(q, 'sim_instruction', ''),
+        'sim_instruction': normalize_ascii_math(getattr(q, 'sim_instruction', '')),
         'topic':           getattr(q, 'topic', ''),
         'pacing_stage':    getattr(q, 'pacing_stage', ''),
         'objective_type':  getattr(q, 'objective_type', ''),
+        'position_rationale': getattr(q, 'position_rationale', ''),
+        'source':          getattr(q, 'source', ''),
     }
 
 
@@ -166,7 +173,7 @@ def quiz_chat(body: dict) -> dict:
     holder = {}
 
     def _res(text: str) -> None:
-        holder['reply'] = text
+        holder['reply'] = normalize_ascii_math(text)
         holder['done'] = True
 
     def _err(msg: str) -> None:
@@ -183,7 +190,33 @@ def quiz_chat(body: dict) -> dict:
         raise HTTPException(status_code=500, detail=holder['error'])
     if 'reply' not in holder:
         raise HTTPException(status_code=504, detail='Chat timed out.')
-    return {'reply': holder['reply']}
+
+    # ── Run extractor to update manifest ────────────────────────────────────
+    from ..user_selections import load_manifest, merge_manifest, save_manifest, extract_manifest_diff
+    from ..api_client import CLIBridgeClient
+
+    try:
+        current_manifest = load_manifest()
+        turn_index = len(history) + 1
+        # Build conversation text for the extractor (last few turns only to keep prompt small).
+        conv_turns = (history or [])[-8:] + [{'role': 'user', 'content': message}, {'role': 'assistant', 'content': holder['reply']}]
+        conv_text = json.dumps(conv_turns, indent=2)
+        cli = CLIBridgeClient()
+        diff = extract_manifest_diff(conv_text, current_manifest, cli, timeout=120.0)
+        if isinstance(diff, dict):
+            merged = merge_manifest(current_manifest, diff, turn_index=turn_index)
+            save_manifest(merged)
+            reply = {'reply': holder['reply'], 'selections': {k: v for k, v in merged.items() if not k.startswith('_')}}
+        else:
+            import sys
+            print('preference-extractor: no usable diff from chat turn', file=sys.stderr)
+            reply = {'reply': holder['reply']}
+    except Exception as exc:
+        import sys
+        print(f'preference-extractor: failed after chat turn: {exc}', file=sys.stderr)
+        reply = {'reply': holder['reply']}
+
+    return reply
 
 
 @app.post('/api/tutor/chat')
@@ -233,6 +266,7 @@ def quiz_generate(body: dict) -> dict:
         user_request=user_request,
         total_questions=int(total) if total else None,
         history=body.get('history') or [],
+        prefs=body.get('prefs'),
     )
     job_id = uuid.uuid4().hex[:12]
     with _JOBS_LOCK:
@@ -259,9 +293,88 @@ def quiz_job_status(job_id: str) -> dict:
     if snap['ready']:
         assert job.result is not None
         questions, meta = job.result
+        from .. import quiz_note
+        note = quiz_note.ensure_note(questions, meta)
+        payload['quiz_id'] = note['quiz_id']
         payload['questions'] = [_question_card(q) for q in questions]
         payload['topics'] = meta.get('topics', [])
     return payload
+
+
+@app.get('/api/quiz/last')
+def quiz_last() -> dict:
+    """Rebuilds the last successfully-completed quiz from the persisted
+    sequence manifest. Returns the same shape as /api/quiz/job/{id} with
+    questions, or 404 when there is no audit-passed run to resume."""
+    from ..question_generator import build_questions_from_sequence
+    from .. import quiz_note
+    audit = config.get('compliance_audit', {})
+    if not isinstance(audit, dict) or audit.get('audit_status') != 'PASSED':
+        raise HTTPException(status_code=404, detail='No audit-passed quiz to resume.')
+    seq = config.get('sequenced_quiz', {})
+    if not isinstance(seq, dict) or not seq.get('ordered_quiz_sequence'):
+        raise HTTPException(status_code=404, detail='No persisted quiz sequence to resume.')
+    questions = build_questions_from_sequence(seq)
+    topics = []
+    for q in questions:
+        if q.topic and q.topic not in topics:
+            topics.append(q.topic)
+    note = quiz_note.ensure_note(questions, {'topics': topics}, seq)
+    return {
+        'job_id': 'last',
+        'quiz_id': note['quiz_id'],
+        'state': 'done',
+        'stage': 'done',
+        'detail': 'Resumed from last persisted run.',
+        'error': None,
+        'ready': True,
+        'questions': [_question_card(q) for q in questions],
+        'topics': topics,
+    }
+
+
+@app.post('/api/quiz/complete')
+def quiz_complete(body: dict) -> dict:
+    """Marks + persists a finished quiz. Body:
+    {'quiz_id'?, 'answers': [{number, user_choice, choice_meta, skipped}],
+     'evaluation_on': bool, 'skip_mode'?, 'topics'?}
+    Grades MCQs locally, Hybrids via the strict marker (AI fallback), Theory via
+    the parallel bucketed batches, and writes the History quiz log."""
+    from .. import quiz_grader
+    svc = _get_service()
+    quiz_id = body.get('quiz_id') if isinstance(body.get('quiz_id'), str) else None
+    answers = body.get('answers') or []
+    evaluation_on = bool(body.get('evaluation_on', False))
+    skip_mode = str(body.get('skip_mode') or 'zero')
+    topics = body.get('topics')
+    if not isinstance(topics, list) or not topics:
+        topics = None
+    try:
+        return quiz_grader.complete_quiz(
+            svc, quiz_id, answers, evaluation_on,
+            skip_mode=skip_mode, topics=topics)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+
+@app.get('/api/quiz/note/{quiz_id}')
+def quiz_note_get(quiz_id: str) -> dict:
+    """Full quiz note (metadata, answers, marks) + aggregate profile."""
+    from .. import quiz_note as qn
+    note = qn.load_note(quiz_id)
+    if note is None:
+        raise HTTPException(status_code=404, detail='Quiz note not found.')
+    return {'note': note, 'profile': qn.score_profile(note, str(note.get('skip_mode') or 'zero'))}
+
+
+@app.get('/api/quiz/last/note')
+def quiz_last_note() -> dict:
+    """Quiz note for the last quiz built (current_quiz_id)."""
+    from .. import quiz_note as qn
+    current = config.get('current_quiz_id')
+    if not isinstance(current, str) or not current:
+        raise HTTPException(status_code=404, detail='No current quiz.')
+    return quiz_note_get(current)
 
 
 @app.post('/api/quiz/job/{job_id}/cancel')
@@ -525,3 +638,67 @@ def settings_save(body: dict) -> dict:
 
     _invalidate_service()
     return settings_get()
+
+
+# ── Simulations ───────────────────────────────────────────────────────────────
+
+class _SimLookupError(Exception):
+    pass
+
+
+def _resolve_sim_html(sim_name: str) -> tuple[Path, Path]:
+    """
+    Locates the folder for a simulation by name across the whole library tree
+    and returns (sim_folder, sim_html_path).
+
+    Both AI-generated and user-downloaded prebuilt sims land in the same place:
+    `<topic>/simulations/<sim_name>/sim.html` — so one code path finds both.
+
+    Raises _SimLookupError with a friendly message when it cannot be resolved.
+    """
+    name = (sim_name or '').strip()
+    root = config.get_library_root()
+    if not root:
+        raise _SimLookupError('Library root is not configured.')
+    try:
+        tree = library_scanner.scan_library(root)
+    except FileNotFoundError:
+        raise _SimLookupError(f'Library root not found: {root}') from None
+
+    candidates: list[Path] = []
+    for topic_map in tree.subjects.values():
+        for topic in topic_map.values():
+            for sim in topic.simulations:
+                if sim.name.lower() == name.lower():
+                    candidates.append(sim.folder_path)
+
+    if not candidates:
+        raise _SimLookupError(f"No simulation named '{name or '(empty)'}' found in the library.")
+    if len(candidates) > 1:
+        # Choose the first match deterministically (sorted subject/topic scan).
+        raise _SimLookupError(
+            f"Simulation '{name}' exists in multiple topics; cannot disambiguate."
+        )
+
+    folder = candidates[0]
+    html = folder / 'sim.html'
+    if not html.exists():
+        raise _SimLookupError(
+            f"Simulation '{name}' has no sim.html entry point. Found files: "
+            + ', '.join(p.name for p in folder.iterdir() if p.is_file())
+        )
+    return folder, html
+
+
+@app.get('/api/sim/{sim_name}')
+def sim_get(sim_name: str):
+    """Serves the simulation's sim.html so the renderer can run it in an iframe."""
+    try:
+        folder, html = _resolve_sim_html(sim_name)
+    except _SimLookupError as exc:
+        raise HTTPException(status_code=404, detail=str(exc))
+    return HTMLResponse(html.read_text(encoding='utf-8'), headers={
+        'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'no-store',
+        'X-Content-Type-Options': 'nosniff',
+    })

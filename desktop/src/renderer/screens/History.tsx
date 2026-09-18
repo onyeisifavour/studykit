@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getHistory, getHistoryDetail } from '../api';
+import RichText from '../components/RichText';
 import type { HistoryDetail, QuizSummary } from '../types';
 
 interface Props {
@@ -135,7 +136,7 @@ export default function History({ active }: Props) {
                   {curQ.q_type} · {detail.topic}
                 </span>
               </div>
-              <div className="q-card-body">{curQ.question}</div>
+              <div className="q-card-body"><RichText text={curQ.question} /></div>
             </div>
             {curQ.skipped ? (
               <div className="hist-ans-block">
@@ -153,7 +154,7 @@ export default function History({ active }: Props) {
                 {!curQ.is_correct && curQ.correct_answer && (
                   <div className="hist-ans-block">
                     <div className="hist-ans-lbl">Correct Answer</div>
-                    <div className="hist-ans-val" style={{ color: 'var(--ja-tx)' }}>{curQ.correct_answer} ✓</div>
+                    <div className="hist-ans-val" style={{ color: 'var(--ja-tx)' }}><RichText text={curQ.correct_answer} /> ✓</div>
                   </div>
                 )}
               </>
@@ -166,7 +167,7 @@ export default function History({ active }: Props) {
                 {curQ.correct_answer && (
                   <div className="hist-ans-block">
                     <div className="hist-ans-lbl">Standard Answer</div>
-                    <div className="hist-ans-val">{curQ.correct_answer}</div>
+                    <div className="hist-ans-val"><RichText text={curQ.correct_answer} /></div>
                   </div>
                 )}
                 {curQ.score != null && (
@@ -180,7 +181,7 @@ export default function History({ active }: Props) {
                 {curQ.ai_feedback && (
                   <div className="hist-ans-block">
                     <div className="hist-ans-lbl">AI Feedback</div>
-                    <div className="hist-ans-val">{curQ.ai_feedback}</div>
+                    <div className="hist-ans-val"><RichText text={curQ.ai_feedback} /></div>
                   </div>
                 )}
               </>

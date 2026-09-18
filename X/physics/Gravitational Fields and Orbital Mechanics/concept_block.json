@@ -1,344 +1,188 @@
 {
   "type": "study_concept_block",
-  "topic": "L1.2 Theoretical Foundations of Number Base Systems",
-  "subject": "Maths",
+  "topic": "Gravitational Fields and Orbital Mechanics",
+  "subject": "Physics",
   "concepts": [
     {
-      "name": "Place-Value Notation and Expansion",
-      "description": "The foundational positional-system principle that every digit contributes face value times a power of the radix, with the radix point separating b^0 from b^-1. Questions ask for full place-value expansion of integers and fractions in bases 2, 5, and 16.",
+      "name": "Newton's Law of Universal Gravitation",
+      "description": "Every mass attracts every other mass with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between their centres: F = G·M·m/r². The constant G = 6.674 × 10⁻¹¹ m³/(kg·s²). Questions compute the gravitational force between a central body and an orbiting body and explain how a change in distance (halving r) quadruples the force.",
       "core_skills": [
-        "Write any integer or fraction in base b as an expanded sum of digit × b^k, including negative powers",
-        "Evaluate an expanded form to a decimal value using positive and negative powers of the base",
-        "Identify the place value contributed by each digit position in bases 2, 5, 8, 10, and 16",
-        "Expand numbers like 204.13₅ into powers of 5 (2·5² + 0·5¹ + 4·5⁰ + 1·5⁻¹ + 3·5⁻²)",
-        "Convert a binary bicimal such as 1011.101₂ into decimal via full place-value expansion (11.625₁₀)"
+        "State and apply F = G·M·m/r² to compute gravitational force magnitude",
+        "Explain the inverse-square dependence: doubling distance quarters the force, halving distance quadruples it",
+        "Use G = 6.674 × 10⁻¹¹ m³/(kg·s²) with consistent SI units",
+        "Distinguish the force on the orbiting body from the equal-and-opposite force on the central body",
+        "Relate the force readout in the orbital-mechanics simulation to M, m and r"
       ],
       "prerequisites": [
-        "Whole-number arithmetic (multiplication and addition)",
-        "Exponents and powers of integers"
+        "Newton's laws of motion",
+        "Inverse-square relationships and proportional reasoning",
+        "SI units and scientific notation"
       ],
       "misconceptions": [
-        "Treating fractional digits as decimal fractions (e.g., reading 0.32₅ as 3/10 + 2/100) instead of as powers of 5",
-        "Confusing a digit's face value with its place value, e.g., treating the hex digit B as 11 rather than 11 × 16¹ in 3B.4₁₆"
+        "Believing the gravitational force depends on the orbiting body's mass only, ignoring the central mass M",
+        "Treating the distance r as height above the surface rather than centre-to-centre separation",
+        "Believing a smaller orbiting mass experiences a smaller force for the same separation",
+        "Reading the force as increasing linearly with distance rather than with 1/r²"
       ],
       "traps": [
-        "In base 5 the second fractional digit is 1/25 = 0.04, so 0.32₅ = 0.6 + 0.08 = 0.68₁₀; misplacing the negative power produces the distractor 0.64₁₀",
-        "Hexadecimal letter digits A–F must be replaced by 10–15 before place-value evaluation, so 3B.4₁₆ = 59.25₁₀ and 4C1₁₆ = 1217₁₀"
+        "Halving the distance quadruples the force (factor 4), not doubles it — the inverse-square term dominates",
+        "The force is symmetric: F on the orbiting body equals F on the central body, so mass_central has as much effect as mass_orbit",
+        "Force magnitude in newtons requires converting AU to metres (1 AU = 1.496 × 10¹¹ m) and solar masses to kilograms",
+        "Increasing mass_central from 1 to 4 M☉ multiplies the force by 4, not by the mass ratio squared"
       ],
-      "depth_test": "Explain why 0.32₅ = 0.68₁₀ and why 0.1101₂ = 13/16 by writing out the negative-power expansion rather than simply stating a converted result."
+      "depth_test": "Explain why reducing the initial distance between the two bodies from 2.0 AU to 1.0 AU quadruples the gravitational force, using F = G·M·m/r² and the inverse-square relation, rather than merely quoting the formula."
     },
     {
-      "name": "Integer Base Conversion",
-      "description": "Converting whole numbers between decimal and another base: repeated division with reversed remainders for decimal→base, and polynomial evaluation of the positional expansion for base→decimal.",
+      "name": "Circular, Elliptical, and Escape Trajectories",
+      "description": "The shape of an orbit is set by the initial velocity magnitude and direction relative to the radial direction. A tangential velocity near the circular-orbit speed produces a circular orbit; a lower tangential component produces an elliptical orbit; a velocity at or above the escape velocity produces an open escape trajectory. Eccentricity e = 0 for a circle, 0 < e < 1 for an ellipse, and e ≥ 1 for escape.",
       "core_skills": [
-        "Convert a decimal integer to base b by repeated division, reading remainders in reverse order (254₁₀ → FE₁₆, 1000₁₀ → 13000₅)",
-        "Convert a base-b integer to decimal by evaluating its place-value expansion (A3F₁₆, 4C1₁₆, 756₈ → 1EE₁₆ via intermediate pathways)",
-        "Express decimal integers in hexadecimal using letter digits for remainders of 10–15"
+        "Predict the orbit shape (circular, elliptical, escape) from the initial velocity direction and magnitude",
+        "Use eccentricity to classify a trajectory: 0 = circular, 0–1 = elliptical, ≥1 = escape",
+        "Explain how a tangential (perpendicular) initial velocity is required for a circular orbit",
+        "Describe how increasing velocity at a fixed distance moves the orbit from circular to elliptical and ultimately to escape",
+        "Interpret the trajectory classification readout in the simulation"
       ],
       "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Multiplication and division of whole numbers",
-        "Powers of integers"
+        "Newton's Law of Universal Gravitation",
+        "Velocity as a vector (magnitude and direction)",
+        "Conic sections: circle, ellipse, parabola"
       ],
       "misconceptions": [
-        "Reading division remainders in the order they are produced instead of reversed (distractor EF₁₆ for 254₁₀ → FE₁₆)",
-        "Stopping the repeated-division chain too early or mishandling the final quotient, giving off-by-one results like FF₁₆"
+        "Believing a larger initial speed always gives a larger ellipse rather than possibly an escape trajectory",
+        "Believing the orbit is circular regardless of the initial velocity direction",
+        "Confusing eccentricity e = 1 (parabolic escape) with a highly elongated ellipse",
+        "Thinking escape velocity depends on the orbiting body's mass (it depends on the central field, not the orbiting mass)"
       ],
       "traps": [
-        "Remainders 10–15 must be written as the letters A–F in hexadecimal, so 254₁₀ = FE₁₆, not E14₁₆",
-        "Repeated division must run until the quotient reaches 0; the final quotient becomes the leading digit (1000₁₀ = 13000₅)"
+        "A radial (outward) initial velocity does not produce the same orbit as a tangential one — direction matters, not just speed",
+        "Escape occurs when speed ≥ escape velocity; beyond that the period and semi-major axis report infinite/∞",
+        "The velocity needed for a circular orbit is specific: too slow falls into an ellipse, too fast escapes",
+        "An escape trajectory still experiences gravitational force; it is open, not a closed ellipse"
       ],
-      "depth_test": "Explain why repeated division by the target base produces the digits of the answer in reverse order, using 254₁₀ → FE₁₆ or 1000₁₀ → 13000₅ as the worked example."
+      "depth_test": "In the simulation, predict and then verify which trajectory results from setting velocity magnitude 25 km/s at 90° (tangential) versus the same magnitude at 0° (radial), explaining the role of velocity direction using eccentricity."
     },
     {
-      "name": "Fractional Base Conversion and Bicimals",
-      "description": "Converting fractional parts between bases by repeated multiplication by the target base, and recognizing which fractions terminate and which recur in a given base.",
+      "name": "Orbital Speed, Period, and Semi-Major Axis",
+      "description": "For a stable orbit, the gravitational force provides the centripetal force, linking orbital speed, period, and semi-major axis. The period is the time for one complete orbit; the semi-major axis describes the average orbital size. The simulation reads out speed, period, eccentricity and semi-major axis so students can test the distance–period relationship.",
       "core_skills": [
-        "Convert a decimal fraction to a base-b bicimal by repeatedly multiplying by b and recording integer parts (0.625₁₀ → 0.101₂, 0.3125₁₀ → 0.24₈)",
-        "Convert a bicimal to a decimal fraction using negative powers and reduce to lowest terms (0.1101₂ → 13/16)",
-        "Find the binary representation of a fraction like 7/16 → 0.0111₂",
-        "Determine whether a fraction terminates or produces a recurring bicimal in a target base"
+        "Relate orbital speed to the gravitational field strength at the orbit's location",
+        "Explain the distance–period relationship: orbits farther from the central body take longer to complete",
+        "Use the period readout (∞ for escape) to recognise open trajectories",
+        "Connect semi-major axis to the average size of the orbit and to the period",
+        "Analyse orbital speed along different parts of an elliptical orbit"
       ],
       "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Integer Base Conversion",
-        "Fractions and division"
+        "Newton's Law of Universal Gravitation",
+        "Uniform circular motion and centripetal force",
+        "Mode-appropriate notions of period and distance"
       ],
       "misconceptions": [
-        "Reading the generated fractional digits in reverse order, as in integer conversion, rather than in the order they are generated",
-        "Assuming a finite decimal fraction always has a finite binary representation (0.2₁₀ does not)",
-        "Multiplying by the wrong factor when the target base is not 2, e.g., using ×2 instead of ×8 for octal conversion"
+        "Believing all orbits around a given central body have the same period",
+        "Believing orbital speed is constant along an elliptical orbit",
+        "Confusing the semi-major axis with the instantaneous distance for a highly eccentric orbit",
+        "Believing a larger central mass always produces a longer period for the same distance (it produces a shorter one)"
       ],
       "traps": [
-        "0.2₁₀ has no finite binary form; it repeats forever as 0.00110011...₂ because 1/5 cannot be written with a denominator that is a power of 2",
-        "A fraction terminates in base b only if its denominator divides some power of b; otherwise the repeating block must be identified and explained",
-        "0.3125₁₀ → 0.24₈ requires multiplying by 8, not by 2"
+        "Farther orbits are slower AND longer, so the period grows steeply with distance",
+        "A larger central mass (e.g., 4 M☉) at the same distance shortens the period, not lengthens it",
+        "The period readout shows ∞ for any escape trajectory — treat this as the open-orbit signal",
+        "Speed and period are not independent: changing either mass or distance changes both"
       ],
-      "depth_test": "Explain why 0.625₁₀ terminates in binary while 0.2₁₀ recurs, and determine the binary representation of 7/16, justifying each fractional digit."
+      "depth_test": "Set up an orbit and double the initial distance from the central body at the same tangential speed; predict whether the period increases or decreases and by roughly what factor, then verify with the simulation's period readout."
     },
     {
-      "name": "Power-Related Base Conversion (Binary ↔ Octal ↔ Hexadecimal)",
-      "description": "Converting between bases that are powers of two by grouping digits into fixed-size blocks — nibbles of 4 bits for hex and triads of 3 bits for octal — working outward from the radix point.",
+      "name": "Escape Velocity and Binding to the Central Field",
+      "description": "Escape velocity is the minimum speed an orbiting body needs at a given distance to leave the central body's gravitational field without further thrust. It depends only on the central mass and the distance, not on the orbiting body's mass. The simulation reports escape velocity at the current distance so students can compare it with their chosen initial speed.",
       "core_skills": [
-        "Convert binary to hexadecimal by grouping bits into 4-bit nibbles from the radix point (11010110₂ → D6₁₆)",
-        "Convert binary to octal by grouping bits into 3-bit triads from the radix point (10111001₂ → 271₈)",
-        "Convert hex or octal to binary by expanding each digit into its fixed bit block",
-        "Use binary as an intermediate pathway for octal-to-hexadecimal conversion (756₈ → 1EE₁₆)",
-        "State and apply the grouping theorem for converting from base b to base b^k"
+        "Define escape velocity as the minimum speed to leave the central field from a given distance",
+        "Explain that escape velocity is independent of the orbiting body's mass",
+        "Compare a chosen initial speed to the escape velocity to predict whether the orbit is bound or open",
+        "Relate escape velocity to the central mass and distance: higher central mass or smaller distance raises escape velocity",
+        "Use the escape-velocity readout to diagnose open versus closed trajectories"
       ],
       "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Integer Base Conversion",
-        "Powers of a base (b^k structure)"
+        "Newton's Law of Universal Gravitation",
+        "Energy: kinetic and gravitational potential energy",
+        "Circular, Elliptical, and Escape Trajectories"
       ],
       "misconceptions": [
-        "Grouping bits from the wrong end instead of starting at the radix point",
-        "Dropping leading zeros in the most-significant block, changing the leading output digit",
-        "Confusing block sizes — using 4 bits per octal digit or 3 bits per hex digit"
+        "Believing a heavier orbiting body needs a higher escape speed",
+        "Believing escape velocity is reached only by leaving the gravitational 'reach' entirely rather than reaching an open trajectory",
+        "Treating escape velocity as a constant for the whole field rather than distance-dependent",
+        "Believing reaching exactly escape velocity gives a closed ellipse rather than a parabolic escape"
       ],
       "traps": [
-        "A3F₁₆ = 1010 0011 1111₂ must be regrouped as 101 000 111 111 → 5077₈; a single miscopied nibble changes the entire octal result",
-        "The leftmost incomplete block must be padded with leading zeros (10111001₂ → 010 111 001 → 271₈; 756₈ → 111 101 110 → 0001 1110 1110 → 1EE₁₆)",
-        "Converting base b to base b^k is valid only when the target base is a power of the source base"
+        "Escape velocity depends on the distance from the central body — it is lower farther out",
+        "If the chosen speed exceeds the reported escape velocity, the body escapes regardless of direction (as long as it is not directly into the surface)",
+        "At exactly escape speed the trajectory is open (parabolic), not a closed ellipse",
+        "Doubling the central mass multiplies the escape velocity by √2, not by 2"
       ],
-      "depth_test": "Prove why grouping digits into blocks of size k converts a number from base b to base b^k, then use the method to convert 756₈ directly to hexadecimal."
+      "depth_test": "At the default distance, compare the simulation's reported escape velocity with the default 25 km/s initial speed and predict whether the body escapes; explain your reasoning using the definition of escape velocity, then verify with the trajectory readout."
     },
     {
-      "name": "Arithmetic in Non-Decimal Bases",
-      "description": "Performing addition, subtraction, and multiplication entirely within a base, treating the radix b as the regrouping value for carries and borrows rather than converting to decimal.",
+      "name": "Kinetic and Gravitational Potential Energy in Orbits",
+      "description": "The simulation tracks kinetic energy and gravitational potential energy of the orbiting body. Kinetic energy depends on speed; gravitational potential energy is negative and grows more negative (deeper) as the body moves closer to the central mass. In a bound orbit the total mechanical energy stays roughly constant while the two components trade off along the trajectory.",
       "core_skills": [
-        "Add multi-digit numbers in base b with carries every time a column sum reaches b (342₅ + 423₅ = 1320₅)",
-        "Subtract binary numbers using binary borrows (11010₂ − 1011₂ = 1111₂)",
-        "Multiply in base b without converting to decimal (65₈ × 43₈ = 3477₈)",
-        "Add hexadecimal numbers with letter digits and carries (A7B₁₆ + 4E9₁₆ = F64₁₆)"
+        "Compute and compare kinetic energy (½mv²) of the orbiting body",
+        "Interpret gravitational potential energy as negative and decreasing (more negative) with lower altitude",
+        "Relate the kinetic and potential energy readouts to position along an elliptical orbit",
+        "Explain energy conservation in a bound orbit: the total stays approximately constant",
+        "Recognise that at escape the body has enough total energy for an open trajectory"
       ],
       "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Standard addition, subtraction, and multiplication algorithms"
+        "Kinetic energy: E_k = ½mv²",
+        "Gravitational potential energy concept",
+        "Orbital Speed, Period, and Semi-Major Axis"
       ],
       "misconceptions": [
-        "Adding columns as if they were base 10 and writing down digits that equal or exceed the base (the distractor 765₅ contains invalid digits 7 and 6)",
-        "Carrying at the wrong threshold, such as carrying at 10 in base 5 instead of at 5",
-        "Applying memorized decimal multiplication facts to a different base instead of recomputing each partial product in the base"
+        "Believing gravitational potential energy is positive and increases with altitude",
+        "Believing kinetic energy is constant around an elliptical orbit",
+        "Believing the total mechanical energy increases as the body falls inward",
+        "Confusing the exchange of kinetic and potential energy with a gain in total energy"
       ],
       "traps": [
-        "In base 5, a column summing to 12 is written as 2 with a carry of 2 (the number of times 5 goes into 12)",
-        "In hex addition, carries and letter-digit arithmetic combine: B + 9 = 20₁₀ = 14₁₆ writes 4 and carries 1",
-        "Every digit in the final answer must be strictly less than the base — an invalid digit signals an arithmetic error"
+        "Potential energy is negative here; a deeper (more negative) value means closer to the central mass",
+        "At periapsis (closest approach) speed and kinetic energy peak while potential energy is most negative",
+        "The total mechanical energy stays approximately constant in a bound orbit — the simulation conserves energy via the symplectic integrator",
+        "For an escape trajectory, the kinetic energy exceeds the potential binding at the radius where it departs"
       ],
-      "depth_test": "Perform 65₈ × 43₈ entirely in octal notation and explain the value of each carry produced, without converting the numbers to base 10."
-    },
-    {
-      "name": "Solving for Unknown Radix in Base Equations",
-      "description": "Translating a numeral with an unknown base into a polynomial equation via positional expansion, then solving for the base and validating it against the digit constraints of the numeral.",
-      "core_skills": [
-        "Expand a base-b numeral into a polynomial in the unknown base (35_b = 3b + 5, 123_x = x² + 2x + 3, 212_b = 2b² + b + 2)",
-        "Solve linear and quadratic equations for the base (35_b = 29₁₀ → b = 8; 123_x = 38₁₀ → x = 5; 212_b = 57₁₀ → b = 5)",
-        "Expand product equations digit-by-digit before solving (13_b × 12_b = 211_b → b = 5)",
-        "Reject inadmissible roots by checking that the base exceeds every digit in the numeral"
-      ],
-      "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Solving linear and quadratic equations",
-        "Digit Validity and Radix Constraints"
-      ],
-      "misconceptions": [
-        "Dropping the units digit when building the polynomial (solving 3b = 29 instead of 3b + 5 = 29)",
-        "Accepting the negative root of the quadratic as a valid base instead of discarding it",
-        "Forgetting that a valid base must be strictly greater than every digit appearing in the numeral"
-      ],
-      "traps": [
-        "For 123_x = 38₁₀, the polynomial x² + 2x + 3 = 38 factors as (x + 7)(x − 5); only x = 5 is admissible since the base must exceed the digit 3",
-        "Multi-digit factor multiplication must be done digit-by-digit in the base: 13_b × 12_b = (b + 3)(b + 2)",
-        "A candidate base that is smaller than or equal to any digit of the numeral is invalid by definition"
-      ],
-      "depth_test": "Solve 13_b × 12_b = 211_b for the positive integer base b and justify why the solution is the only admissible base, given the digits present."
-    },
-    {
-      "name": "Digit Validity and Radix Constraints",
-      "description": "The rule that a base-b positional system uses exactly the digits 0 through b−1, making any digit equal to or greater than b invalid in that system.",
-      "core_skills": [
-        "Identify invalid digits for a given base (7 is invalid in base 7, which uses only 0–6)",
-        "Check that every digit of a numeral is less than its stated base",
-        "Reject arithmetic or conversion results that contain invalid digits (e.g., 765₅)"
-      ],
-      "prerequisites": [
-        "Place-Value Notation and Expansion"
-      ],
-      "misconceptions": [
-        "Believing base 7 uses the digits 1 through 7 because decimal 10₁₀ is written with a 7 in one sense, rather than 0–6",
-        "Thinking the base equals the number of digits below it plus one in the wrong direction, e.g., that base 5 has five digits counting from 1",
-        "Treating large-looking digits like 7 as automatically valid without checking the radix"
-      ],
-      "traps": [
-        "A result such as 765₅ is self-evidently invalid because digits 7 and 6 are not allowed in base 5",
-        "When solving for an unknown base, the valid root must be greater than every digit of the original numeral (b > 6 required if the numeral contains digit 6)",
-        "The digit b−1 is the largest legal digit; digit b itself is never allowed"
-      ],
-      "depth_test": "Explain why 7 is an invalid digit in base 7 yet a perfectly valid digit in base 8, and why a computed base of 4 would be rejected for a numeral that contains the digit 6."
-    },
-    {
-      "name": "Fixed-Digit Bounds and Ranges",
-      "description": "The counting formulas for n-digit fields in base b: b^n distinct values representable with n digits, maximum value b^n − 1, and minimum n-digit value b^(n−1).",
-      "core_skills": [
-        "Compute the largest n-digit number in base b as b^n − 1 (largest 4-digit octal number = 4095₁₀)",
-        "Compute the number of distinct values representable with n digits as b^n (10-bit binary integer → 1024 values)",
-        "State and apply the formula for the smallest non-zero n-digit integer in base b as b^(n−1)",
-        "Compute differences between the largest and smallest n-digit numbers in a base (555₆ − 100₆ = 179₁₀)",
-        "Convert fixed-digit maximums to byte storage requirements (M(6,16) = 16,777,215₁₀ needs 3 bytes)"
-      ],
-      "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Integer Base Conversion",
-        "Powers of integers"
-      ],
-      "misconceptions": [
-        "Confusing the count of representable values (b^n) with the maximum value (b^n − 1), producing the off-by-one distractor 4096 for a 4-digit octal field",
-        "Choosing the numeral itself (7777₈) instead of converting the largest value into the requested base",
-        "Confusing the smallest n-digit number (b^(n−1)) with zero or with b^n"
-      ],
-      "traps": [
-        "A 10-bit field stores 1024 distinct values but its maximum value is only 1023",
-        "The smallest 3-digit number in base 6 is 100₆ = 36₁₀, not 0, so largest − smallest = 215 − 36 = 179₁₀",
-        "16⁶ = 2²⁴ = 16,777,216, so the maximum 6-digit hex value 16,777,215 requires exactly 24 bits, which is 3 bytes"
-      ],
-      "depth_test": "Derive the formulas M(n,b) = b^n − 1 and N(n,b) = b^n, and explain the difference between the number of representable values and the maximum value for a 10-bit integer."
-    },
-    {
-      "name": "Divisibility Rules in Arbitrary Bases",
-      "description": "The algebraic digit-sum rule that a base-b number is divisible by b−1 if and only if the sum of its digits is divisible by b−1, with the decimal Rule of 9s as the special case b = 10.",
-      "core_skills": [
-        "Prove that abc_b = (b−1)[a(b+1) + b] + (a + b + c) by manipulating the positional expansion",
-        "State and apply the digit-sum divisibility test for b−1 in any base",
-        "Show that the decimal rule of 9s is the b = 10 instance of the general rule"
-      ],
-      "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Integer Base Conversion",
-        "Algebraic factorization and expansion"
-      ],
-      "misconceptions": [
-        "Believing the divisibility-by-9 rule is a special property of decimal rather than a general b−1 phenomenon",
-        "Failing to separate the number into a multiple of (b−1) plus the digit sum during the proof",
-        "Applying the digit-sum rule to divisors other than b−1 without justification"
-      ],
-      "traps": [
-        "The proof works only because each power of b is congruent to 1 modulo (b−1); the rule does not generalize to arbitrary divisors",
-        "The analog in hexadecimal is divisibility by 15, and in octal it is divisibility by 7",
-        "The factor (b−1) must be pulled out explicitly from the full expansion, not just from the leading terms"
-      ],
-      "depth_test": "Write a formal algebraic proof that a 3-digit base-b number abc_b is divisible by b−1 whenever a + b + c is, and then demonstrate why the decimal rule of 9s is exactly the b = 10 case."
-    },
-    {
-      "name": "Radix Complement and Two's Complement",
-      "description": "Representing negative integers in digital systems using the b's complement of the positive magnitude, with two's complement (invert all bits, then add 1) as the binary case.",
-      "core_skills": [
-        "Explain the purpose and mechanism of radix complement for representing negative numbers",
-        "Compute an 8-bit two's complement by bitwise inversion followed by adding 1 (−45₁₀ → 11010011₂)",
-        "Work to a fixed field width, including leading zeros, before computing the complement"
-      ],
-      "prerequisites": [
-        "Place-Value Notation and Expansion",
-        "Integer Base Conversion (binary representation)",
-        "Arithmetic in Non-Decimal Bases"
-      ],
-      "misconceptions": [
-        "Omitting the final '+1' after bitwise inversion (which would give 11010010₂ instead of 11010011₂)",
-        "Using a sign-magnitude approach that merely flips the sign bit rather than computing the complement",
-        "Computing the complement to the wrong bit width"
-      ],
-      "traps": [
-        "−45₁₀ in 8-bit two's complement: 45 = 00101101₂ → invert to 11010010₂ → add 1 to get 11010011₂; skipping any step changes the value",
-        "The field width determines the leading zeros that must be inverted, so an 8-bit computation differs from a wider one",
-        "Two's complement is the radix complement of binary, not a sign-magnitude encoding"
-      ],
-      "depth_test": "Explain the concept of the b's complement for representing negative numbers in digital systems, then compute the 8-bit two's complement of −45₁₀ showing the inversion and '+1' steps."
-    },
-    {
-      "name": "Radix Economy and Optimal Base Selection",
-      "description": "The theoretical efficiency trade-off between digit count and digit-set size, quantified as E(b,N) = b·log_b(N), which calculus shows is minimized at b = e ≈ 2.718, making ternary more efficient than binary.",
-      "core_skills": [
-        "Set up the radix economy function E(b,N) = b·log_b(N) for representing a number N in base b",
-        "Minimize E with respect to b using differentiation, obtaining dE/db = 0 at b = e",
-        "Interpret why base 3, as the integer closest to e, is theoretically the most efficient base, ahead of binary"
-      ],
-      "prerequisites": [
-        "Fixed-Digit Bounds and Ranges",
-        "Logarithm rules",
-        "Differentiation (calculus)"
-      ],
-      "misconceptions": [
-        "Minimizing the number of digits alone rather than the product of the base size and digit count",
-        "Assuming base 2 is theoretically optimal simply because binary is the standard in digital computers",
-        "Mishandling the derivative of b·log_b(N), which requires rewriting as b·ln(N)/ln(b)"
-      ],
-      "traps": [
-        "The derivative of E(b,N) = b·ln N / ln b vanishes when ln b = 1, i.e., at b = e ≈ 2.718",
-        "Among integer bases, base 3 is closest to e, so ternary beats binary in theoretical radix economy even though engineering factors favor binary",
-        "Radix economy is a theoretical cost metric, not a claim about hardware feasibility"
-      ],
-      "depth_test": "Prove using calculus that E(b,N) = b·log_b(N) is minimized at b = e, and explain why this result shows base 3 (ternary) is theoretically more efficient than base 2 (binary)."
+      "depth_test": "Watch the kinetic and potential energy readouts as the body travels around an elliptical orbit; state where each reaches its maximum and minimum and explain why the total stays roughly constant."
     }
   ],
   "relationships": [
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Integer Base Conversion",
+      "from": "Newton's Law of Universal Gravitation",
+      "to": "Circular, Elliptical, and Escape Trajectories",
       "type": "prerequisite"
     },
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Fractional Base Conversion and Bicimals",
+      "from": "Newton's Law of Universal Gravitation",
+      "to": "Escape Velocity and Binding to the Central Field",
       "type": "prerequisite"
     },
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Power-Related Base Conversion (Binary ↔ Octal ↔ Hexadecimal)",
+      "from": "Newton's Law of Universal Gravitation",
+      "to": "Kinetic and Gravitational Potential Energy in Orbits",
       "type": "prerequisite"
     },
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Arithmetic in Non-Decimal Bases",
+      "from": "Circular, Elliptical, and Escape Trajectories",
+      "to": "Orbital Speed, Period, and Semi-Major Axis",
       "type": "prerequisite"
     },
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Solving for Unknown Radix in Base Equations",
+      "from": "Circular, Elliptical, and Escape Trajectories",
+      "to": "Escape Velocity and Binding to the Central Field",
       "type": "prerequisite"
     },
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Digit Validity and Radix Constraints",
+      "from": "Orbital Speed, Period, and Semi-Major Axis",
+      "to": "Kinetic and Gravitational Potential Energy in Orbits",
       "type": "prerequisite"
     },
     {
-      "from": "Place-Value Notation and Expansion",
-      "to": "Fixed-Digit Bounds and Ranges",
-      "type": "prerequisite"
-    },
-    {
-      "from": "Integer Base Conversion",
-      "to": "Power-Related Base Conversion (Binary ↔ Octal ↔ Hexadecimal)",
-      "type": "prerequisite"
-    },
-    {
-      "from": "Integer Base Conversion",
-      "to": "Divisibility Rules in Arbitrary Bases",
-      "type": "prerequisite"
-    },
-    {
-      "from": "Integer Base Conversion",
-      "to": "Radix Complement and Two's Complement",
-      "type": "prerequisite"
-    },
-    {
-      "from": "Arithmetic in Non-Decimal Bases",
-      "to": "Radix Complement and Two's Complement",
-      "type": "prerequisite"
-    },
-    {
-      "from": "Fixed-Digit Bounds and Ranges",
-      "to": "Radix Economy and Optimal Base Selection",
+      "from": "Escape Velocity and Binding to the Central Field",
+      "to": "Kinetic and Gravitational Potential Energy in Orbits",
       "type": "prerequisite"
     }
   ]

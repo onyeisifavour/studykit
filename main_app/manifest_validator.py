@@ -101,6 +101,14 @@ def validate_quota_manifest(m: Any) -> list[str]:
         if not isinstance(issue, str) or not issue.strip():
             errors.append(f'{label}.target_issue must be a non-empty string')
 
+        fmt = slot.get('format')
+        if fmt is not None and (
+            not isinstance(fmt, str) or fmt not in VALID_FORMATS
+        ):
+            errors.append(
+                f'{label}.format must be one of {sorted(VALID_FORMATS)}'
+            )
+
     return errors
 
 

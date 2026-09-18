@@ -10,6 +10,7 @@ import type {
   QuizGenerateResult,
   QuizJobStatus,
   QuizSummary,
+  QuizCompleteResult,
   SettingsData,
 } from './types';
 
@@ -18,6 +19,35 @@ let baseUrl: string | null = null;
 async function apiUrl(): Promise<string> {
   if (!baseUrl) baseUrl = await window.studykit.getApiUrl();
   return baseUrl;
+}
+
+/** Resolves (and caches) the sidecar base URL, e.g. for building iframe src. */
+export function getBaseUrl(): Promise<string> {
+  return apiUrl();
+}
+
+/**
+ * Returns a *working* sidecar base URL, validating the cached one against
+ * /health. If the cached URL is stale (sidecar restarted/exited) we drop it
+ * and ask the main process to restart the sidecar and hand back a fresh port.
+ * Used before building iframe srcs so dead connections surface immediately.
+ */
+export async function getLiveBaseUrl(): Promise<string> {
+  const cached = baseUrl || (await window.studykit.getApiUrl());
+  try {
+    const res = await fetch(`${cached}/health`, { cache: 'no-store' });
+    if (res.ok) {
+      baseUrl = cached;
+      return cached;
+    }
+  } catch {
+    // cached URL unreachable — fall through to a fresh resolve
+  }
+  baseUrl = null;
+  const fresh = await window.studykit.getApiUrl(); // main restarts the sidecar
+  if (!fresh) throw new Error('Sidecar not available');
+  baseUrl = fresh;
+  return fresh;
 }
 
 function clearOnNetworkError(e: unknown): unknown {
@@ -106,12 +136,22 @@ export function quizGenerate(body: {
   user_request: string;
   history?: { role: string; content: string }[];
   question_count?: number;
+  prefs?: {
+    section_a_sim: boolean;
+    section_a_nonsim: boolean;
+    section_b_sim: boolean;
+    section_b_nonsim: boolean;
+  };
 }): Promise<QuizGenerateResult> {
   return post<QuizGenerateResult>('/api/quiz/generate', body);
 }
 
 export function quizJobStatus(jobId: string): Promise<QuizJobStatus> {
   return get<QuizJobStatus>(`/api/quiz/job/${jobId}`);
+}
+
+export function quizLast(): Promise<QuizJobStatus> {
+  return get<QuizJobStatus>('/api/quiz/last');
 }
 
 export async function quizCancel(jobId: string): Promise<QuizJobStatus> {
@@ -139,6 +179,21 @@ export function quizBatchEvaluate(body: {
   }[];
 }): Promise<BatchEvaluateResult> {
   return post<BatchEvaluateResult>('/api/quiz/evaluate-batch', body);
+}
+
+export function completeQuiz(body: {
+  quiz_id?: string | null;
+  answers: {
+    number: number;
+    user_choice?: string | null;
+    choice_meta?: { kind?: string; index?: number } | null;
+    skipped?: boolean;
+  }[];
+  evaluation_on?: boolean;
+  skip_mode?: string;
+  topics?: string[];
+}): Promise<QuizCompleteResult> {
+  return post<QuizCompleteResult>('/api/quiz/complete', body);
 }
 
 export function tutorChat(body: {

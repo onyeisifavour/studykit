@@ -19,6 +19,7 @@ API calls are orchestrated by app.py via api_client.py.
 BlueprintEntry is defined here so blueprint_generator.py can import it.
 """
 
+import hashlib
 import random
 import re
 from dataclasses import dataclass, field
@@ -79,6 +80,16 @@ class GeneratedQuestion:
     sim_name:        str            = ''
     sim_instruction: str            = ''   # instruction shown before sim question group
     match_found:     bool           = True # False if answer_matcher had no result
+
+    # Agent 4 / 5 metadata carried from the sequence manifest to the quiz note.
+    # quiz_type is the canonical manifest type — 'MCQ' | 'Hybrid' | 'Theory' —
+    # kept separately from q_type so legacy consumers ('SUBJ') are unaffected.
+    quiz_type:        str = ''
+    subject:          str = ''
+    objective_type:   str = ''
+    pacing_stage:     str = ''
+    position_rationale: str = ''
+    source:           str = ''
 
 
 # ── Patterns ──────────────────────────────────────────────────────────────────
@@ -398,7 +409,71 @@ def build_questions_from_sequence(
             sim_name=q.get('sim_name', ''),
             sim_instruction=q.get('sim_instruction', ''),
             match_found=True,
+            quiz_type=q_type,
+            subject=q.get('subject', ''),
+            objective_type=entry.get('objective_type', ''),
+            pacing_stage=entry.get('pacing_stage', ''),
+            position_rationale=entry.get('position_rationale', ''),
+            source=entry.get('source', ''),
         ))
+    shuffle_mcq_options(questions)
+    return questions
+
+
+# ── MCQ option shuffling ──────────────────────────────────────────────────────
+
+_OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+
+
+def _relabel_option(text: str, letter: str) -> str:
+    """Rewrites a leading 'A.' label on an option to the given letter."""
+    text = (text or '').strip()
+    label = re.match(r'^[A-Za-z]\s*\.\s*', text)
+    if label:
+        return text[:label.start()] + f'{letter}. ' + text[label.end():]
+    return f'{letter}. {text}'
+
+
+def _option_correct_index(options: list[str], correct_answer: str) -> Optional[int]:
+    """Locates the correct option by exact text match, then leading-letter."""
+    ca = (correct_answer or '').strip()
+    for i, o in enumerate(options):
+        if (o or '').strip() == ca:
+            return i
+    head = ca[:1].upper() if ca and ca[:1].isalpha() else ''
+    if head:
+        for i, o in enumerate(options):
+            if (o or '').strip().upper().startswith(head):
+                return i
+    return None
+
+
+def shuffle_mcq_options(questions: list) -> list:
+    """
+    Reorders each MCQ question's answer options so the correct answer is not
+    always 'A', relabeling option letters and correct_answer consistently.
+
+    The permutation is derived deterministically from the option texts, so a
+    quiz rebuilt from the same manifest (e.g. a resume) reproduces the very
+    same option order and the persisted note stays reusable via its content
+    signature.
+    """
+    for q in questions:
+        if str(getattr(q, 'q_type', '')) != 'MCQ':
+            continue
+        opts = list(getattr(q, 'options', []) or [])
+        if len(opts) < 2:
+            continue
+        correct = _option_correct_index(opts, getattr(q, 'correct_answer', ''))
+        if correct is None:
+            continue
+        joined = '\x1f'.join((o or '').strip() for o in opts)
+        order = list(range(len(opts)))
+        random.Random(hashlib.sha256(joined.encode('utf-8')).hexdigest()).shuffle(order)
+        q.options = [_relabel_option(opts[i], _OPTION_LETTERS[k])
+                     for k, i in enumerate(order)]
+        new_pos = order.index(correct)
+        q.correct_answer = _relabel_option(opts[correct], _OPTION_LETTERS[new_pos])
     return questions
 
 

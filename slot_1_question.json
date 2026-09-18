@@ -1,0 +1,22 @@
+{
+  "slot_number": 1,
+  "question": {
+    "text": "In the simulation, you place an orbiting body at 1.5 AU from a 1.0 M☉ central star and set the velocity direction to 90° (purely tangential). At the default velocity of 25 km/s, the body follows an elliptical orbit. If you now increase the velocity magnitude while keeping all other parameters at defaults, at approximately what speed does the trajectory classification change from Elliptical to Escape?",
+    "type": "MCQ",
+    "options": [
+      "A. ~35 km/s",
+      "B. ~42 km/s",
+      "C. ~55 km/s",
+      "D. ~70 km/s"
+    ],
+    "correct_answer": "B. ~42 km/s",
+    "subject": "Physics",
+    "topic": "Gravitational Fields and Orbital Mechanics",
+    "sim_name": "orbital_mechanics_lab",
+    "sim_instruction": "Set distance = 1.5 AU, velocity direction = 90°, central mass = 1.0 M☉, orbiting mass = 0.001 M☉, and sim_speed = 1.0. Pause the simulation. Slowly increase the velocity magnitude from 25 km/s upward until the trajectory readout changes from 'Elliptical' to 'Escape'. Note the velocity at the transition."
+  },
+  "objective_type": "prerequisite_repair",
+  "match_confidence": "high",
+  "selection_rationale": "This question directly targets the prerequisite understanding of escape velocity — a core consequence of Newton's law of universal gravitation (v_esc = sqrt(2GM/r)). The simulation provides an explicit readout of escape velocity and trajectory classification, making the answer verifiable. The distractors correspond to plausible miscalculations: ~35 km/s is near the circular orbit speed (~30 km/s), ~55 km/s is a common overestimate for escape, and ~70 km/s is excessive. A student who cannot distinguish circular, elliptical, and escape regimes likely holds a misconception about how kinetic energy relates to gravitational potential energy, which is precisely the prerequisite gap this slot diagnoses."
+}
+}

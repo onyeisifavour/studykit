@@ -71,13 +71,32 @@ class EvaluationRunner:
             
             is_first_turn = len(history) == 0
             teacher_message = history[-1]['content'] if history else None
-            
+            bg_runner = self._agent_runner
+
+            def _on_reply(reply: str) -> None:
+                # Fire the 4 background models in the background (don't wait).
+                # This mirrors the Tkinter chat_view.py trigger so the Electron
+                # path feeds the quota planner the same diagnostic reports.
+                topic_context = ''
+                try:
+                    topic_context = prompts.build_multi_topic_concepts(
+                        topic_files
+                    )
+                except Exception:
+                    topic_context = ''
+                bg_runner.send_to_background_models(
+                    teacher_message=teacher_message if not is_first_turn else None,
+                    student_message=message,
+                    topic_digest=topic_context,
+                )
+                on_result(reply)
+
             self._agent_runner.call_main_chat(
                 user_message=message,
                 topic_files=topic_files,
                 prefs=prefs,
                 teacher_message=teacher_message if not is_first_turn else None,
-                on_result=on_result,
+                on_result=_on_reply,
                 on_error=on_error,
             )
             return
@@ -173,6 +192,73 @@ class EvaluationRunner:
             on_success=_on_success,
             on_error=on_error,
             max_tokens=1000,
+        )
+
+    # ── 3b. Theory batch grading (persistent quiz-note batches) ───────────────
+
+    def evaluate_theory(
+        self,
+        theory_entries: list[dict],
+        on_result:      Callable[[list[ScoreResult]], None],
+        on_error:       Callable[[str], None],
+    ) -> None:
+        """
+        Grades one theory batch (≤15 questions) on the bucketed 0–1 scale,
+        returning one ScoreResult per question with the full EVALUATION note.
+
+        theory_entries: list of {'label', 'question', 'user_answer',
+                                 'correct_answer'} — see
+                        theory_marker.eligible_entries().
+        """
+        user_prompt = prompts.build_theory_eval_prompt(theory_entries)
+
+        # on_success arity differs between ApiClient (1 arg) and the CLI bridge
+        # (2 args); take whichever arrives and read the leading argument.
+        def _on_success(*args) -> None:
+            response = args[0] if args else ''
+            results = score_parser.parse_multi_scores(response)
+            on_result(results)
+
+        self._api.call(
+            system=prompts.THEORY_EVAL_SYSTEM,
+            user=user_prompt,
+            on_success=_on_success,
+            on_error=on_error,
+            max_tokens=2000,
+        )
+
+    # ── 3c. Hybrid strict marking ─────────────────────────────────────────────
+
+    def evaluate_hybrid(
+        self,
+        question:       str,
+        user_answer:    str,
+        correct_answer: str,
+        on_result:      Callable[[bool, str], None],
+        on_error:       Callable[[str], None],
+    ) -> None:
+        """
+        Strict right/wrong marking of a Hybrid typed final answer. Used only
+        after the deterministic fast path (hybrid_marker.hybrid_is_correct_strict)
+        fails to confirm the answer.
+        """
+        user_prompt = prompts.build_hybrid_eval_prompt(
+            question, user_answer, correct_answer
+        )
+
+        from .hybrid_marker import parse_hybrid_verdict
+
+        def _on_success(*args) -> None:
+            response = args[0] if args else ''
+            is_correct, explanation = parse_hybrid_verdict(response)
+            on_result(bool(is_correct), explanation)
+
+        self._api.call(
+            system=prompts.HYBRID_EVAL_SYSTEM,
+            user=user_prompt,
+            on_success=_on_success,
+            on_error=on_error,
+            max_tokens=400,
         )
 
     # ── 4. Summary report ──────────────────────────────────────────────────────
@@ -272,6 +358,7 @@ class EvaluationRunner:
         background_reports: dict[str, str],
         user_request: str,
         total_questions: int,
+        prefs: Optional[dict] = None,
         on_result=None,
         on_error=None,
     ) -> None:
@@ -285,6 +372,7 @@ class EvaluationRunner:
                 background_reports=background_reports,
                 user_request=user_request,
                 total_questions=total_questions,
+                prefs=prefs,
                 on_result=on_result,
                 on_error=on_error,
             )
@@ -295,6 +383,7 @@ class EvaluationRunner:
         self,
         quota_manifest: dict,
         topic_files: list[dict],
+        prefs: Optional[dict] = None,
         on_result=None,
         on_error=None,
     ) -> None:
@@ -307,11 +396,36 @@ class EvaluationRunner:
             self._agent_runner.call_query_specifier(
                 quota_manifest=quota_manifest,
                 topic_files=topic_files,
+                prefs=prefs,
                 on_result=on_result,
                 on_error=on_error,
             )
 
-    # ── 9. Agent 3: Candidate Selector ───────────────────────────────────────
+    # ── 9. Sim Track: Simulation Question Generator ──────────────────────────
+
+    def call_sim_generator(
+        self,
+        sim_slots: list[dict],
+        topic_files: list[dict],
+        resolved_topics: Optional[dict] = None,
+        on_result: Optional[Callable[[dict], None]] = None,
+        on_error: Optional[Callable[[str], None]] = None,
+    ) -> None:
+        """
+        Delegate to AgentRunner.call_sim_generator().
+
+        Only available if AgentRunner is configured.
+        """
+        if self._agent_runner:
+            self._agent_runner.call_sim_generator(
+                sim_slots=sim_slots,
+                topic_files=topic_files,
+                resolved_topics=resolved_topics,
+                on_result=on_result,
+                on_error=on_error,
+            )
+
+    # ── 10. Agent 3: Candidate Selector ───────────────────────────────────────
 
     def call_candidate_selector(
         self,
@@ -335,7 +449,7 @@ class EvaluationRunner:
                 on_error=on_error,
             )
 
-    # ── 10. Agent 4: Pedagogical Sequence Builder ────────────────────────────
+    # ── 11. Agent 4: Pedagogical Sequence Builder ────────────────────────────
 
     def call_sequencer(
         self,
@@ -357,7 +471,7 @@ class EvaluationRunner:
                 on_error=on_error,
             )
 
-    # ── 11. Agent 5: Compliance Auditor ──────────────────────────────────────
+    # ── 12. Agent 5: Compliance Auditor ──────────────────────────────────────
 
     def call_compliance_audit(
         self,

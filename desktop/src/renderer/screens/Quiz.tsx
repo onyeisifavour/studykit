@@ -1,7 +1,8 @@
-import { useEffect, useReducer, useRef } from 'react';
+import { useCallback, useEffect, useReducer, useRef } from 'react';
 import { ChatBubbles, ChatInput } from '../components/ChatComposer';
-import { quizChat, quizGenerate, quizJobStatus, quizCancel, quizEvaluate, quizBatchEvaluate, getSettings } from '../api';
-import type { QuizQuestion } from '../types';
+import RichText from '../components/RichText';
+import { quizChat, quizGenerate, quizJobStatus, quizLast, quizCancel, quizEvaluate, completeQuiz, getSettings, saveSettings, getBaseUrl, getLiveBaseUrl } from '../api';
+import type { QuizCompleteResult, QuizQuestion } from '../types';
 
 interface Props {
   onNavigate: (screen: string) => void;
@@ -18,6 +19,7 @@ interface DisplayQ {
   opts?: string[];
   correct?: number;
   simInstr?: string;
+  simName?: string;
   pacing: string;
 }
 
@@ -35,6 +37,7 @@ function toDisplayQs(real: QuizQuestion[]): DisplayQ[] {
       opts: r.options && r.options.length ? r.options : undefined,
       correct: correct >= 0 ? correct : undefined,
       simInstr: r.sim_instruction || undefined,
+      simName: r.sim_name || undefined,
       pacing: r.pacing_stage || r.objective_type || '—',
     };
   });
@@ -125,7 +128,17 @@ export default function Quiz({ onNavigate, active }: Props) {
     cur: 0,
     ans: [] as Ans[],
     skipMode: 0,
+    quizId: null as string | null,
+    complete: null as QuizCompleteResult | null,
+    completeErr: null as string | null,
     selectedTopics: [] as string[],
+    qsp: {
+      section_a_sim: true,
+      section_a_nonsim: true,
+      section_b_sim: true,
+      section_b_nonsim: true,
+      count: 10,
+    },
     qspCollapsed: false,
     qmapOpen: false,
     fbCollapsed: false,
@@ -138,6 +151,14 @@ export default function Quiz({ onNavigate, active }: Props) {
     sub: 0,
     sendBusy: false,
     genError: null as string | null,
+    simBase: '' as string,
+    simUrl: '' as string,
+    simLoaded: false,
+    simErr: false,
+simW: 480,
+simZoom: 1,
+simMenuOpen: false,
+simDrag: null as { startW: number; startX: number } | null,
   });
 
   const q = () => Q.current;
@@ -145,9 +166,56 @@ export default function Quiz({ onNavigate, active }: Props) {
   const allQs = () => toDisplayQs(q().realQs);
   const totalQs = () => q().realQs.length;
   const curQ = () => toDisplayQs(q().realQs)[q().cur];
+  const simZoomAdj = (d: 1 | -1) => {
+    const next = Math.round(Math.min(2.5, Math.max(0.1, q().simZoom + d * 0.1)) * 10) / 10;
+    if (next !== q().simZoom) {
+      q().simZoom = next;
+      bump();
+    }
+  };
+  const resetSimSize = () => {
+    q().simW = 480;
+    q().simZoom = 1;
+    q().simMenuOpen = false;
+    bump();
+  };
   const stopPoll = () => {
     if (q().pollTimer) { clearInterval(q().pollTimer ?? undefined); q().pollTimer = null; }
   };
+
+  // Resolve the sidecar base URL once so iframes can be built for sim questions.
+  useEffect(() => {
+    let alive = true;
+    getBaseUrl()
+      .then((b) => { if (alive) { q().simBase = b; bump(); } })
+      .catch(() => {});
+    return () => { alive = false; };
+  }, []);
+
+  // A sim only loads when explicitly launched; swapping questions clears it so
+  // an old frame never keeps running off-screen. The base URL is revalidated at
+  // launch time so a sidecar that died mid-session is restarted instead of
+  // silently building a dead iframe URL.
+  const openSim = useCallback(async (name?: string) => {
+    if (!name) return;
+    q().simLoaded = false;
+    q().simErr = false;
+    try {
+      const base = await getLiveBaseUrl();
+      if (!base) throw new Error('Sidecar base URL unavailable');
+      q().simBase = base;
+    } catch {
+      q().simErr = true;
+      bump();
+      return;
+    }
+    q().simUrl = `${q().simBase}/api/sim/${encodeURIComponent(name)}`;
+    bump();
+  }, []);
+
+  const closeSim = useCallback(() => {
+    if (q().simUrl) { q().simUrl = ''; bump(); }
+  }, []);
 
   // ── Timer engine ────────────────────────────────────────────────────────────
 
@@ -274,12 +342,36 @@ export default function Quiz({ onNavigate, active }: Props) {
     getSettings()
       .then((s) => {
         q().selectedTopics = s.selected_topics || [];
+        if (s.sections) {
+          q().qsp.section_a_sim = !!s.sections.section_a_sim;
+          q().qsp.section_a_nonsim = !!s.sections.section_a_nonsim;
+          q().qsp.section_b_sim = !!s.sections.section_b_sim;
+          q().qsp.section_b_nonsim = !!s.sections.section_b_nonsim;
+        }
+        if (typeof s.question_count === 'number' && s.question_count > 0) {
+          q().qsp.count = s.question_count;
+        }
         bump();
       })
       .catch(() => {});
   }, [active]);
 
   // ── Chat ────────────────────────────────────────────────────────────────────
+
+  // Persist the right-rail quiz settings back to /api/settings as they change,
+  // so the Quiz sidebar and the Settings screen stay in sync (single source of
+  // truth on the backend).
+  const persistQsp = () => {
+    saveSettings({
+      sections: {
+        section_a_sim: !!q().qsp.section_a_sim,
+        section_a_nonsim: !!q().qsp.section_a_nonsim,
+        section_b_sim: !!q().qsp.section_b_sim,
+        section_b_nonsim: !!q().qsp.section_b_nonsim,
+      },
+      question_count: q().qsp.count,
+    }).catch(() => {});
+  };
 
   const startChat = () => {
     q().chatStarted = true;
@@ -323,6 +415,7 @@ export default function Quiz({ onNavigate, active }: Props) {
           stopPoll();
           q().realQs = st.questions;
           q().topics = st.topics || [];
+          q().quizId = st.quiz_id ?? null;
           loadQuiz();
         } else if (st.state === 'error') {
           stopPoll();
@@ -349,7 +442,17 @@ export default function Quiz({ onNavigate, active }: Props) {
     const userRequest =
       q().chatHistory.filter((m) => m.role === 'user').map((m) => m.content).join(' ') ||
       'Generate a quiz';
-    quizGenerate({ user_request: userRequest, history: q().chatHistory.slice() })
+    quizGenerate({
+      user_request: userRequest,
+      history: q().chatHistory.slice(),
+      question_count: q().qsp.count,
+      prefs: {
+        section_a_sim: q().qsp.section_a_sim,
+        section_a_nonsim: q().qsp.section_a_nonsim,
+        section_b_sim: q().qsp.section_b_sim,
+        section_b_nonsim: q().qsp.section_b_nonsim,
+      },
+    })
       .then((res) => {
         q().jobId = res.job_id;
         bump();
@@ -381,12 +484,37 @@ export default function Quiz({ onNavigate, active }: Props) {
     stopPoll();
     if (q().pTimer) clearTimeout(q().pTimer ?? undefined);
     if (q().pSubTimer) clearInterval(q().pSubTimer ?? undefined);
+    q().genError = null;
     q().state = 'cancelled';
     bump();
   };
 
   const doRetry = () => {
     beginPipeline();
+  };
+
+  const resumeLast = () => {
+    q().genError = null;
+    stopPoll();
+    quizLast()
+      .then((st) => {
+        if (st.state !== 'done' || !st.questions) {
+          q().genError = st.error || 'No saved quiz to resume. Generate a new one first.';
+          q().state = 'cancelled';
+          bump();
+          return;
+        }
+        q().realQs = st.questions;
+        q().topics = st.topics || [];
+        q().jobId = null;
+        q().quizId = st.quiz_id ?? null;
+        loadQuiz();
+      })
+      .catch((err) => {
+        q().genError = (err && err.message) || 'No saved quiz to resume.';
+        q().state = 'cancelled';
+        bump();
+      });
   };
 
   useEffect(() => {
@@ -477,19 +605,21 @@ export default function Quiz({ onNavigate, active }: Props) {
     const i = q().cur;
     const a = q().ans[i];
     commitQTime(i);
+    a.skipped = true;
     if (!q().qset.evalOn) {
+      bump();
       if (q().qset.autoNext) nextQ();
       else bump();
       return;
     }
     a.submitted = true;
-    a.skipped = true;
     a.fb = { type: 'neutral', ok: null, txt: null, score: null, skipped: true };
     bump();
   };
 
   const prevQ = () => {
     commitQTime(q().cur);
+    closeSim();
     if (q().cur > 0) {
       q().cur--;
       bump();
@@ -499,6 +629,7 @@ export default function Quiz({ onNavigate, active }: Props) {
 
   const nextQ = () => {
     commitQTime(q().cur);
+    closeSim();
     if (q().cur < totalQs() - 1) {
       q().cur++;
       bump();
@@ -510,6 +641,7 @@ export default function Quiz({ onNavigate, active }: Props) {
 
   const gotoQ = (i: number) => {
     commitQTime(q().cur);
+    closeSim();
     q().cur = i;
     q().qmapOpen = false;
     bump();
@@ -521,8 +653,76 @@ export default function Quiz({ onNavigate, active }: Props) {
     if (q().pSubTimer) clearInterval(q().pSubTimer ?? undefined);
     commitQTime(q().cur);
     stopTimer();
+    if (!q().qset.evalOn) localReveal();
+    fireComplete();
     q().state = 'report';
     bump();
+  };
+
+  // Instant local reveal for Evaluation OFF: only the locally-checkable MCQs
+  // show right/wrong immediately. Written/theory verdicts come from the
+  // authoritative server-side complete call (see fireComplete) and fill in as
+  // they arrive. No legacy live-scoring AI calls here.
+  const localReveal = () => {
+    const qs = q().realQs;
+    const ds = allQs();
+    qs.forEach((real, i) => {
+      const a = q().ans[i] ?? (q().ans[i] = newAns());
+      const d = ds[i];
+      if (!d) return;
+      const isOpt = d.type === 'MCQ' && !!d.opts && d.opts.length > 0;
+      const hasAns = isOpt ? a.sel != null : !!a.written.trim();
+      if (a.skipped) {
+        if (!hasAns) {
+          a.submitted = true;
+          a.fb = { type: 'neutral', ok: null, txt: 'Skipped.', score: null, skipped: true };
+          return;
+        }
+        a.skipped = false;
+      }
+      if (a.fb || !hasAns) return;
+      a.submitted = true;
+      if (isOpt) {
+        const ok = a.sel === d.correct;
+        a.fb = { type: ok ? 'correct' : 'wrong', ok, txt: ok ? 'Correct! Well done.' : 'Not quite — the correct answer is ' + ((d.opts && d.correct != null) ? d.opts[d.correct] ?? '' : '') + '.', score: null, skipped: false };
+      }
+    });
+  };
+
+  // Authoritative grading + persistence: sends every answer to the complete
+  // endpoint, which marks MCQs locally, Hybrids strictly (AI fallback), Theory
+  // on the parallel bucketed batches, and writes the History quiz log.
+  const fireComplete = () => {
+    const ds = allQs();
+    const answers = q().realQs.map((r, i) => {
+      const a = q().ans[i] ?? newAns();
+      const isOpt = ds[i]?.type === 'MCQ' && !!ds[i]?.opts && ds[i].opts.length > 0;
+      const has = isOpt ? a.sel != null : !!a.written.trim();
+      return {
+        number: r.number,
+        user_choice: isOpt ? (has ? String(r.options[a.sel ?? 0] ?? '') : null) : (a.written || null),
+        choice_meta: isOpt ? (has ? { kind: 'option', index: a.sel ?? 0 } : null) : (has ? { kind: 'text' } : null),
+        skipped: a.skipped || !has,
+      };
+    });
+    q().complete = null;
+    q().completeErr = null;
+    bump();
+    completeQuiz({
+      quiz_id: q().quizId,
+      answers,
+      evaluation_on: q().qset.evalOn,
+      skip_mode: q().skipMode === 1 ? 'exclude' : 'zero',
+      topics: q().topics,
+    })
+      .then((res) => {
+        q().complete = res;
+        bump();
+      })
+      .catch((err) => {
+        q().completeErr = 'Grading failed: ' + ((err && err.message) || err);
+        bump();
+      });
   };
 
   const newQuiz = () => {
@@ -538,6 +738,9 @@ export default function Quiz({ onNavigate, active }: Props) {
     q().realQs = [];
     q().topics = [];
     q().jobId = null;
+    q().quizId = null;
+    q().complete = null;
+    q().completeErr = null;
     q().genError = null;
     q().chatStarted = false;
     q().state = 'chat';
@@ -602,6 +805,7 @@ export default function Quiz({ onNavigate, active }: Props) {
       ? `${qset.timerPerQ}s per question. Time out → advance.`
       : `Total ${qset.timerTotal} min → ≈${fmtT(perQsecs)}/q. ${qset.totalExpiry === 'end' ? 'Ends quiz at 0.' : 'Recorded only.'}`;
   const reportTime = qset.timerMode === 'off' ? '—' : qset.timerMode === 'total' ? `${fmtT(timer.elapsed)} / ${fmtT(qset.timerTotal * 60)}` : fmtT(timer.elapsed);
+  const reportSummary = null as string | null;
 
   return (
     <section className={active ? 'screen active' : 'screen'} id="screen-quiz">
@@ -629,6 +833,14 @@ export default function Quiz({ onNavigate, active }: Props) {
                   </div>
                   <button className="btn btn-primary btn-lg" onClick={startChat} style={{ marginTop: 4 }}>
                     Start Chat
+                  </button>
+                  <button
+                    className="btn btn-outline btn-lg"
+                    onClick={resumeLast}
+                    style={{ marginTop: 8 }}
+                    title="Take the last audited quiz without rebuilding it"
+                  >
+                    Resume last quiz
                   </button>
                 </div>
               ) : (
@@ -738,10 +950,14 @@ export default function Quiz({ onNavigate, active }: Props) {
             <div className="cancelled-body">
               <div className="cancelled-inner">
                 <div className="cancelled-ico">🚫</div>
-                <div className="f-h1">Cancelled.</div>
-                <p style={{ fontSize: 14, color: 'var(--t2)', lineHeight: 1.65, maxWidth: 340 }}>
-                  The quiz generation was stopped. You can retry from where it left off, or go back to revise your chat.
-                </p>
+                <div style={{ textAlign: 'center' }}>
+                  <div className="f-h1">{q().genError ? 'Generation failed.' : 'Cancelled.'}</div>
+                  <p style={{ fontSize: 14, color: 'var(--t2)', lineHeight: 1.65, maxWidth: 340 }}>
+                    {q().genError
+                      ? q().genError
+                      : 'The quiz generation was stopped. You can retry from where it left off, or go back to revise your chat.'}
+                  </p>
+                </div>
                 <div className="flex-r g10 mt8">
                   <button className="btn btn-primary" onClick={doRetry}>Retry →</button>
                   <button className="btn btn-secondary" onClick={() => { q().state = 'chat'; bump(); }}>← Back to Chat</button>
@@ -809,12 +1025,81 @@ export default function Quiz({ onNavigate, active }: Props) {
                     <div style={{ fontWeight: 800, color: 'var(--em-tx)', fontSize: 13.5, marginBottom: 3 }}>
                       SIMULATION REQUIRED
                     </div>
-                    <div style={{ fontSize: 13, color: 'var(--t2)' }}>{qd.simInstr ?? 'Run the simulation, then answer below.'}</div>
+                    <div style={{ fontSize: 13, color: 'var(--t2)' }}>{qd.simInstr ? <RichText text={qd.simInstr} /> : 'Run the simulation, then answer below.'}</div>
                   </div>
-                  <button className="btn btn-sm btn-secondary" onClick={() => alert('Simulation would launch as an external process.')}>
+                  <button className="btn btn-sm btn-secondary" onClick={() => openSim(qd.simName)} disabled={!qd.simName}>
                     ▶ Launch Simulation
                   </button>
                 </div>
+                {q().simUrl && (
+                  <div className="sim-shell" style={{ width: q().simW }}>
+                    <div className="sim-frame-wrap">
+                      <iframe
+                        key={q().simUrl}
+                        className="sim-frame"
+                        src={q().simUrl}
+                        style={{ zoom: q().simZoom }}
+                        sandbox="allow-scripts allow-pointer-lock allow-downloads"
+                        title="Simulation"
+                        onLoad={() => { q().simLoaded = true; q().simErr = false; bump(); }}
+                        onError={() => { q().simLoaded = false; q().simErr = true; bump(); }}
+                      />
+                      {!q().simLoaded && (
+                        <div className="sim-loading">
+                          <div className="sim-loading-spin" />
+                          <div className="sim-loading-txt">
+                            {q().simErr ? 'Simulation failed to load — try launching it again.' : 'Loading simulation…'}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    <div
+                      className="sim-grip"
+                      aria-label="Drag to resize simulation"
+                      onPointerDown={(e) => {
+                        e.preventDefault();
+                        const d = { startW: q().simW, startX: e.clientX, id: e.pointerId };
+                        q().simDrag = d;
+                        bump();
+                        const onMove = (ev: PointerEvent) => {
+                          if (ev.pointerId !== d.id) return;
+                          const next = Math.round(Math.min(4096, Math.max(320, d.startW + (ev.clientX - d.startX))));
+                          if (next !== q().simW) { q().simW = next; bump(); }
+                        };
+                        const onUp = () => {
+                          if (q().simDrag?.id !== d.id) return;
+                          q().simDrag = null;
+                          window.removeEventListener('pointermove', onMove);
+                          window.removeEventListener('pointerup', onUp);
+                          window.removeEventListener('pointercancel', onUp);
+                          bump();
+                        };
+                        window.addEventListener('pointermove', onMove);
+                        window.addEventListener('pointerup', onUp);
+                        window.addEventListener('pointercancel', onUp);
+                      }}
+                    />
+                    <div className="sim-dots-wrap">
+                      <button
+                        className="sim-dots"
+                        title="Simulation options"
+                        aria-label="Simulation options"
+                        onClick={() => { q().simMenuOpen = !q().simMenuOpen; bump(); }}
+                      >⋯</button>
+                      {q().simMenuOpen && (
+                        <div className="sim-menu">
+                          <div className="sim-zoom">
+                            <button className="sim-zoom-btn" title="Zoom out" aria-label="Zoom out" onClick={() => simZoomAdj(-1)}>−</button>
+                            <span className="sim-zoom-val">{Math.round(q().simZoom * 100)}%</span>
+                            <button className="sim-zoom-btn" title="Zoom in" aria-label="Zoom in" onClick={() => simZoomAdj(1)}>＋</button>
+                          </div>
+                          <div className="sim-menu-div" />
+                          <button className="sim-menu-btn" onClick={() => resetSimSize()}>Reset</button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
                 <div className="q-card">
                   <div className="q-card-bar">
                     <span style={{ color: '#fff', fontSize: 11.5, fontWeight: 800, letterSpacing: '.05em' }}>
@@ -824,7 +1109,7 @@ export default function Quiz({ onNavigate, active }: Props) {
                       {qd.pacing}
                     </span>
                   </div>
-                  <div className="q-card-body">{qd.text}</div>
+                  <div className="q-card-body"><RichText text={qd.text} /></div>
                 </div>
                 <div className="flex-c g8">
                   <div className="ans-label">Your answer</div>
@@ -844,7 +1129,7 @@ export default function Quiz({ onNavigate, active }: Props) {
                             onClick={() => selectOpt(i)}
                           >
                             <div className="opt-circle" />
-                            <span>{o}</span>
+                            <span><RichText text={o} /></span>
                           </div>
                         );
                       })}
@@ -939,7 +1224,7 @@ export default function Quiz({ onNavigate, active }: Props) {
                     </div>
                   )}
                   {a.fb && a.fb.type === 'loading' && <div className="fb-verdict fv-loading">Evaluating…</div>}
-                  {a.fb && a.fb.type !== 'loading' && a.fb.txt && <div className="fb-text">{a.fb.txt}</div>}
+                  {a.fb && a.fb.type !== 'loading' && a.fb.txt && <div className="fb-text"><RichText text={a.fb.txt} /></div>}
                   {!a.fb && <div className="fb-placeholder">Answer a question to see AI feedback here.</div>}
                   <div style={{ marginTop: 'auto' }}>
                     {a.submitted && (
@@ -963,54 +1248,111 @@ export default function Quiz({ onNavigate, active }: Props) {
             </div>
             <div className="report-body" style={{ overflowY: 'auto' }}>
               <div className="f-h1">Your results</div>
+              {q().completeErr && (
+                <div className="report-err" style={{ marginBottom: 12, color: 'var(--danger, #e5484d)', fontSize: 13.5 }}>
+                  {q().completeErr} Written/theory verdicts are ungraded; MCQs below are from your live/local marks.
+                </div>
+              )}
               <div className="report-stats">
-                <div className="report-stat">
-                  <div className="rs-lbl">MCQ Score</div>
-                  <div className="rs-val" style={{ color: 'var(--v)' }}>
-                    {report.ok}
-                    <span style={{ fontSize: 18, color: 'var(--t3)' }}>/{report.tot}</span>
-                  </div>
-                </div>
-                <div className="report-stat">
-                  <div className="rs-lbl">Written Score</div>
-                  <div className="rs-val" style={{ color: 'var(--em)' }}>
-                    {report.wPct != null ? report.wPct : '—'}
-                    {report.wPct != null && <span style={{ fontSize: 18, color: 'var(--t3)' }}>%</span>}
-                  </div>
-                </div>
-                <div className="report-stat">
-                  <div className="rs-lbl">Skipped</div>
-                  <div className="rs-val" style={{ color: 'var(--t3)' }}>{report.skipped}</div>
-                  <div className="rs-note">excluded from score</div>
-                </div>
-                <div className="report-stat">
-                  <div className="rs-lbl">Time used</div>
-                  <div className="rs-val" style={{ color: 'var(--t2)' }}>{reportTime}</div>
-                </div>
-              </div>
-              <div className="report-summary">
-                <div className="f-h3" style={{ marginBottom: 12 }}>Summary</div>
-                <p>
-                  You showed solid command of Newton's Laws — correctly identifying the First and Third Laws under pressure. Your written answer on F = ma was strong in concept but lacked the explicit proportionality statement and a labelled real-world example, which cost you marks.
-                </p>
-                <p style={{ marginTop: 10 }}>
-                  Stoichiometry continues to be a gap: both mole-ratio questions were skipped. A focused 20-minute review of limiting reagents and molar mass calculation would likely push your accuracy above 70% on your next attempt.
-                </p>
-              </div>
-              <div className="report-times">
-                <div className="f-h3" style={{ marginBottom: 4 }}>Time per question</div>
-                {allQs().map((qq, i) => {
-                  const an = q().ans[i] ?? newAns();
-                  const secs = an.timeSpent;
-                  const tag = an.skipped ? ' · skipped' : an.submitted ? '' : ' · unanswered';
+                {q().complete ? (() => {
+                  const p = q().complete!.profile;
                   return (
-                    <div className="rep-time-row" key={i}>
-                      <span>Q{i + 1} · {qq.type}{tag}</span>
-                      <span className={secs >= 60 ? 'rep-time-slow' : ''}>⏱ {fmtT(secs)}</span>
-                    </div>
+                    <>
+                      <div className="report-stat">
+                        <div className="rs-lbl">Overall</div>
+                        <div className="rs-val" style={{ color: 'var(--v)' }}>
+                          {p.overall != null ? p.overall : '—'}
+                          {p.overall != null && <span style={{ fontSize: 18, color: 'var(--t3)' }}>%</span>}
+                        </div>
+                        <div className="rs-note">{p.earned} pts across {p.attempted} attempted</div>
+                      </div>
+                      <div className="report-stat">
+                        <div className="rs-lbl">Marked</div>
+                        <div className="rs-val" style={{ color: 'var(--em)' }}>{p.marked}</div>
+                        <div className="rs-note">of {p.total} questions</div>
+                      </div>
+                      <div className="report-stat">
+                        <div className="rs-lbl">Skipped / Ungraded</div>
+                        <div className="rs-val" style={{ color: 'var(--t3)' }}>{p.skipped} / {p.ungraded}</div>
+                        <div className="rs-note">skipped excluded · blank/no-standard-answer never graded</div>
+                      </div>
+                      <div className="report-stat">
+                        <div className="rs-lbl">Time used</div>
+                        <div className="rs-val" style={{ color: 'var(--t2)' }}>{reportTime}</div>
+                      </div>
+                    </>
                   );
-                })}
+                })() : (
+                  <>
+                    <div className="report-stat">
+                      <div className="rs-lbl">MCQ Score</div>
+                      <div className="rs-val" style={{ color: 'var(--v)' }}>
+                        {report.ok}
+                        <span style={{ fontSize: 18, color: 'var(--t3)' }}>/{report.tot}</span>
+                      </div>
+                    </div>
+                    <div className="report-stat">
+                      <div className="rs-lbl">Written Score</div>
+                      <div className="rs-val" style={{ color: 'var(--em)' }}>
+                        {report.wPct != null ? report.wPct : '—'}
+                        {report.wPct != null && <span style={{ fontSize: 18, color: 'var(--t3)' }}>%</span>}
+                      </div>
+                    </div>
+                    <div className="report-stat">
+                      <div className="rs-lbl">Skipped</div>
+                      <div className="rs-val" style={{ color: 'var(--t3)' }}>{report.skipped}</div>
+                      <div className="rs-note">excluded from score</div>
+                    </div>
+                    <div className="report-stat">
+                      <div className="rs-lbl">Time used</div>
+                      <div className="rs-val" style={{ color: 'var(--t2)' }}>{reportTime}</div>
+                    </div>
+                  </>
+                )}
               </div>
+              {q().complete === null && !q().completeErr && (
+                <div className="report-summary" style={{ borderColor: 'var(--b3)' }}>
+                  <div className="f-h3" style={{ marginBottom: 12 }}>Grading written answers…</div>
+                  <p style={{ color: 'var(--t2)' }}>The server is marking theory questions on the 5-level rubric and saving your quiz to History. This page updates when it finishes.</p>
+                </div>
+              )}
+              {reportSummary && (
+                <div className="report-summary">
+                  <div className="f-h3" style={{ marginBottom: 12 }}>Summary</div>
+                  <p>{reportSummary.replace(/^\s*(Summary|Report)\s*:\s*/i, '')}</p>
+                </div>
+              )}
+<div className="report-times">
+                  <div className="f-h3" style={{ marginBottom: 4 }}>Time per question</div>
+                  {allQs().map((qq, i) => {
+                    const an = q().ans[i] ?? newAns();
+                    const secs = an.timeSpent;
+                    const isOpt = qq.type === 'MCQ' && !!qq.opts && qq.opts.length > 0;
+                    const hasAns = isOpt ? an.sel != null : !!an.written.trim();
+                    const cr = q().complete;
+                    const sr = cr ? cr.results.find((r) => r.number === (q().realQs[i]?.number ?? 0)) : undefined;
+                    let mark = '';
+                    if (sr) {
+                      if (sr.skipped) mark = '· skipped';
+                      else if (sr.remark === 'right') mark = '✓';
+                      else if (sr.remark === 'wrong') mark = '✗';
+                      else if (sr.score != null) mark = `· ${Math.round(sr.score * 100)}%${sr.remark ? ' · ' + sr.remark : ''}`;
+                      else if (sr.remark) mark = `· ${sr.remark}`;
+                      else mark = '· answered';
+                    } else if (an.skipped) mark = '· skipped';
+                    else if (an.fb && an.fb.type === 'correct') mark = '✓';
+                    else if (an.fb && an.fb.type === 'wrong') mark = '✗';
+                    else if (an.fb && an.fb.score != null) mark = `· scored ${Math.round(an.fb.score * 100)}%`;
+                    else if (hasAns) mark = '· answered';
+                    else mark = '· unanswered';
+                    return (
+                      <div className={`rep-time-row${mark === '✓' ? ' rep-ok' : mark === '✗' ? ' rep-bad' : ''}`} key={i}>
+                        <span>Q{i + 1} · {qq.type}{mark ? ` ${mark}` : ''}</span>
+                        <span className={secs >= 60 ? 'rep-time-slow' : ''}>⏱ {fmtT(secs)}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               <div className="report-actions">
                 <button className="btn btn-primary btn-lg" onClick={newQuiz}>Start New Quiz</button>
                 <button className="btn btn-secondary btn-lg" onClick={() => onNavigate('history')}>Review This Quiz →</button>
@@ -1045,12 +1387,27 @@ export default function Quiz({ onNavigate, active }: Props) {
             <div className="qsp-section-title">Question types</div>
             <div className="flex-c g8">
               <div style={{ fontSize: 11.5, fontWeight: 700, color: 'var(--t2)', marginBottom: 2 }}>Section A — Objective</div>
-              <label className="type-cb"><input type="checkbox" defaultChecked /> Simulation</label>
-              <label className="type-cb"><input type="checkbox" defaultChecked /> Non-simulation</label>
+              <label className="type-cb"><input type="checkbox" checked={q().qsp.section_a_sim} onChange={(e) => { q().qsp.section_a_sim = e.target.checked; bump(); persistQsp(); }} /> Simulation</label>
+              <label className="type-cb"><input type="checkbox" checked={q().qsp.section_a_nonsim} onChange={(e) => { q().qsp.section_a_nonsim = e.target.checked; bump(); persistQsp(); }} /> Non-simulation</label>
               <div style={{ fontSize: 11.5, fontWeight: 700, color: 'var(--t2)', marginTop: 6, marginBottom: 2 }}>Section B — Theory</div>
-              <label className="type-cb"><input type="checkbox" defaultChecked /> Simulation</label>
-              <label className="type-cb"><input type="checkbox" defaultChecked /> Non-simulation</label>
+              <label className="type-cb"><input type="checkbox" checked={q().qsp.section_b_sim} onChange={(e) => { q().qsp.section_b_sim = e.target.checked; bump(); persistQsp(); }} /> Simulation</label>
+              <label className="type-cb"><input type="checkbox" checked={q().qsp.section_b_nonsim} onChange={(e) => { q().qsp.section_b_nonsim = e.target.checked; bump(); persistQsp(); }} /> Non-simulation</label>
             </div>
+          </div>
+          <div>
+            <div className="qsp-section-title">Number of questions</div>
+            <input
+              type="number"
+              min={1}
+              max={50}
+              value={q().qsp.count}
+              onChange={(e) => {
+                const n = parseInt(e.target.value, 10);
+                if (!Number.isNaN(n) && n >= 1 && n <= 50) { q().qsp.count = n; bump(); persistQsp(); }
+              }}
+              style={{ width: '100%', background: 'var(--bg)', border: '1px solid var(--bd2)', borderRadius: 'var(--r-sm)', padding: '8px 10px', color: 'var(--t1)' }}
+            />
+            <div style={{ fontSize: 11.5, color: 'var(--t3)', marginTop: 6 }}>Questions per quiz (1–50).</div>
           </div>
           <div>
             <div className="qsp-section-title">Selected topics</div>

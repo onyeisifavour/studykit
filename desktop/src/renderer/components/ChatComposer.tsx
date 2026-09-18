@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import RichText from './RichText';
 
 export interface ChatMessage {
   role: 'user' | 'ai';
@@ -31,7 +32,7 @@ export function ChatBubbles({ messages }: BubblesProps) {
           </div>
         ) : (
           <div className={m.role === 'user' ? 'chat-bubble bubble-user' : 'chat-bubble bubble-ai'} key={i}>
-            {m.text}
+            <RichText text={m.text} />
           </div>
         ),
       )}

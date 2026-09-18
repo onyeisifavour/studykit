@@ -35,6 +35,7 @@ from typing import Any, Callable, Optional
 from . import config
 from . import file_retriever
 from . import library_scanner
+from . import prompts
 from . import question_generator
 from . import compliance_auditor
 from .api_client import ApiClient, CLIBridgeClient
@@ -149,6 +150,7 @@ class QuizService:
                 "specific question from their completed quiz. Explain the concept "
                 "clearly, address the misconception in the student's answer, and "
                 "answer their follow-up in context. Be thorough but clear.\n\n"
+                + prompts.MATH_NOTATION_SPEC + "\n\n"
                 f"{context}\n\n"
                 + (f"TUTORING THREAD SO FAR:\n{history_block}\n\n" if history_block else "")
                 + f"STUDENT'S FOLLOW-UP: {follow_up}"
@@ -183,6 +185,7 @@ class QuizService:
         topic_files: list[dict],
         history: Optional[list[dict]] = None,
         total_questions: Optional[int] = None,
+        prefs: Optional[dict] = None,
         progress: Optional[Callable[[str, str], None]] = None,
         on_result: Optional[Callable[[list, dict], None]] = None,
         on_error: Optional[Callable[[str, str], None]] = None,
@@ -195,6 +198,9 @@ class QuizService:
         progress(stage, detail) fires as each stage is entered (stage is one
         of STAGES keys). The chain is asynchronous: results arrive via
         callbacks. Use generate_quiz_sync() to block until completion.
+
+        prefs: question section preferences (section_a_sim/nonsim,
+               section_b_sim/nonsim). Defaults to the saved settings when None.
         """
         if not self._agent_runner:
             self._legacy_generate(user_request, topic_files, history,
@@ -204,7 +210,19 @@ class QuizService:
         if total_questions is None:
             total_questions = int(config.get('question_count') or 10)  # type: ignore
         qcount: int = total_questions
-        background_reports = self._agent_runner.get_background_reports()
+        if prefs is None:
+            prefs = config.get_question_section_preferences()
+
+        # ── Inject manifest-based request block ────────────────────────────
+        from .user_selections import load_manifest, build_request_block
+        manifest = load_manifest()
+        user_request = build_request_block(manifest, user_request, form_prefs=prefs)
+        # Gate on the outstanding background-model reports: the Electron chat
+        # fires the 4 background agents asynchronously per turn, so by the time
+        # the user clicks Generate Quiz there may still be in-flight / stacked
+        # messages. Block for them (bounded) so the quota planner sees the
+        # current diagnostic picture, matching the Tkinter path.
+        background_reports = self._agent_runner.resolve_pending_and_get_reports_sync(timeout=60.0)
 
         def _ptrain(stage: str, detail: str):
             if progress:
@@ -216,42 +234,148 @@ class QuizService:
                 background_reports=background_reports,
                 user_request=user_request,
                 total_questions=qcount,
+                prefs=prefs,
                 on_result=lambda m: self._on_quota_manifest(
-                    m, user_request, topic_files, progress, on_result, on_error),
+                    m, user_request, topic_files, prefs, progress, on_result, on_error),
                 on_error=lambda e: _fail(on_error, 'planning', e),
             )
         except Exception as exc:  # pragma: no cover - defensive
             _fail(on_error, 'planning', str(exc))
 
     # ── Chain continuation (agent path) ──────────────────────────────────────
-    def _on_quota_manifest(self, manifest, user_request, topic_files,
+    def _on_quota_manifest(self, manifest, user_request, topic_files, prefs,
                            progress, on_result, on_error):
+        from .sim_generator import resolve_slot_formats, split_slots_by_format
+
         config.save_quota_manifest(manifest)
-        _progress(progress, 'finding', 'Scoring and filtering candidate questions from your banks…')
+        resolve_slot_formats(manifest, prefs)
+        non_sim_slots, sim_slots = split_slots_by_format(manifest)
+        if sim_slots and non_sim_slots:
+            detail = 'Building simulation questions and scoring bank candidates…'
+        elif sim_slots:
+            detail = 'Building simulation questions from your topic READMEs…'
+        else:
+            detail = 'Scoring and filtering candidate questions from your banks…'
+        _progress(progress, 'finding', detail)
         self._runner.call_query_specifier(
             quota_manifest=manifest,
             topic_files=topic_files,
+            prefs=prefs,
             on_result=lambda spec: self._on_query_spec(
-                manifest, spec, user_request, topic_files, progress, on_result, on_error),
+                manifest, spec, user_request, topic_files, prefs, progress, on_result, on_error),
             on_error=lambda e: _fail(on_error, 'finding', e),
         )
 
     def _on_query_spec(self, quota_manifest, spec_manifest, user_request,
-                       topic_files, progress, on_result, on_error):
-        pool = file_retriever.retrieve_candidates(spec_manifest, topic_files)
-        errors = validate_candidate_pool(pool)
-        if errors:
-            _fail(on_error, 'finding', 'Candidate pool failed validation: ' + '; '.join(errors))
-            return
-        bg = self._agent_runner.get_background_reports() if self._agent_runner else {}
-        self._runner.call_candidate_selector(
-            quota_manifest=quota_manifest,
-            candidate_pool=pool,
-            background_reports=bg,
-            on_result=lambda sel: self._on_selection(
-                sel, user_request, progress, on_result, on_error),
-            on_error=lambda e: _fail(on_error, 'finding', e),
+                       topic_files, prefs, progress, on_result, on_error):
+        from .sim_generator import (
+            filter_manifest_by_slots,
+            merge_selection_manifests,
+            resolve_slot_formats,
+            split_slots_by_format,
         )
+
+        resolve_slot_formats(quota_manifest, prefs)
+        non_sim_slots, sim_slots = split_slots_by_format(quota_manifest)
+        non_sim_manifest = filter_manifest_by_slots(quota_manifest, non_sim_slots)
+
+        non_sim_numbers = {
+            s['slot_number'] for s in non_sim_slots if isinstance(s, dict)
+        }
+
+        resolved_topics = {}
+        for spec in spec_manifest.get('file_query_specs', []):
+            tiers = spec.get('search_tiers', {}) or {}
+            tier_one = tiers.get('tier_1_exact') or {}
+            resolved_topics[spec.get('slot_number')] = tier_one.get('topic', '')
+
+        # The question banks are only engaged when there is at least one
+        # Non-Sim slot. A fully-sim quiz never scans or retrieves bank content,
+        # so the pool is left empty and no validation runs.
+        pool: dict = {}
+        bg = self._agent_runner.get_background_reports() if self._agent_runner else {}
+        if non_sim_slots:
+            non_sim_spec_manifest = {
+                **spec_manifest,
+                'file_query_specs': [
+                    spec for spec in spec_manifest.get('file_query_specs', [])
+                    if isinstance(spec, dict) and spec.get('slot_number') in non_sim_numbers
+                ],
+            }
+            pool = file_retriever.retrieve_candidates(non_sim_spec_manifest, topic_files)
+            errors = validate_candidate_pool(pool)
+            if errors:
+                _fail(on_error, 'finding', 'Candidate pool failed validation: ' + '; '.join(errors))
+                return
+
+        non_sim_pool = {
+            k: v for k, v in pool.items() if k in non_sim_numbers
+        }
+
+        state = {
+            'lock': threading.Lock(),
+            'pending': set(),
+            'result': {},
+            'failed': '',
+        }
+
+        def _finish_track(name: str, manifest) -> None:
+            with state['lock']:
+                if state['failed']:
+                    return
+                state['result'][name] = manifest
+                state['pending'].discard(name)
+                if state['pending']:
+                    return
+            merged = merge_selection_manifests(
+                state['result'].get('non_sim'),
+                state['result'].get('sim'),
+            )
+            self._on_selection(merged, user_request, progress, on_result, on_error)
+
+        def _fail_track(name: str, msg: str) -> None:
+            with state['lock']:
+                if state['failed']:
+                    return
+                state['failed'] = msg
+            _fail(on_error, 'finding', msg)
+
+        no_tracks = not non_sim_slots and not sim_slots
+
+        if non_sim_slots:
+            _progress(progress, 'finding',
+                      'Scoring and filtering candidate questions from your banks…')
+            state['pending'].add('non_sim')
+            self._runner.call_candidate_selector(
+                quota_manifest=non_sim_manifest,
+                candidate_pool=non_sim_pool,
+                background_reports=bg,
+                on_result=lambda sel: _finish_track('non_sim', sel),
+                on_error=lambda e: _fail_track('non_sim', e),
+            )
+        else:
+            state['result']['non_sim'] = None
+
+        if sim_slots:
+            _progress(progress, 'finding',
+                      'Building simulation questions from your topic READMEs…')
+            state['pending'].add('sim')
+            self._runner.call_sim_generator(
+                sim_slots=sim_slots,
+                topic_files=topic_files,
+                resolved_topics=resolved_topics,
+                on_result=lambda sel: _finish_track('sim', sel),
+                on_error=lambda e: _fail_track('sim', e),
+            )
+        else:
+            state['result']['sim'] = None
+
+        if no_tracks:
+            merged = merge_selection_manifests(
+                state['result'].get('non_sim'),
+                state['result'].get('sim'),
+            )
+            self._on_selection(merged, user_request, progress, on_result, on_error)
 
     def _on_selection(self, selection_manifest, user_request, progress,
                       on_result, on_error):
@@ -269,6 +393,35 @@ class QuizService:
     def _on_sequenced(self, sequence_manifest, selection_manifest, user_request,
                       progress, on_result, on_error):
         config.save_sequenced_quiz(sequence_manifest)
+
+        # ── Machine-check: compare manifest against plan before LLM audit ──
+        from .user_selections import (load_manifest,
+                                      check_manifest_against_plan,
+                                      check_math_notation)
+        user_manifest = load_manifest()
+        manifest_violations = check_manifest_against_plan(user_manifest, sequence_manifest)
+        math_violations = check_math_notation(sequence_manifest)
+        blocks = []
+        if manifest_violations:
+            blocks.append(
+                "\n\n=== MACHINE-CHECKED VIOLATIONS (deterministic — these are "
+                "DEFINITE failures) ===\n"
+                + "\n".join(f"- {v}" for v in manifest_violations)
+            )
+        if math_violations:
+            blocks.append(
+                "\n\n=== MATH-NOTATION ADVISORY (deterministic, NON-BLOCKING) ===\n"
+                "The following Sim-slot text uses plain-ASCII math instead of "
+                "delimited LaTeX. The app normalises and renders it regardless, "
+                "so do NOT fail the audit over formatting alone. Note the "
+                "issues and correct them if re-authoring that content.\n"
+                + "\n".join(f"- {v}" for v in math_violations)
+            )
+        if blocks:
+            # Feed violations explicitly into the audit so 5c sees them rather
+            # than having to re-derive intent from chat.
+            user_request = user_request + ''.join(blocks)
+
         _progress(progress, 'auditing', 'Checking question types, count, and compliance constraints…')
         bg = self._agent_runner.get_background_reports() if self._agent_runner else {}
         missing = selection_manifest.get('missing_items', [])
@@ -289,6 +442,13 @@ class QuizService:
         self._finish_questions(manifest, progress, on_result)
 
     def _finish_questions(self, sequence_manifest, progress, on_result):
+        # Prefer the original saved manifest: it preserves the true per-slot
+        # source ('sim_generated' vs 'bank') and the pacing metadata that the
+        # sanitised audit payload flattens. Content is identical.
+        from . import quiz_note
+        orig = config.get_sequenced_quiz()
+        if isinstance(orig, dict) and orig.get('ordered_quiz_sequence'):
+            sequence_manifest = orig
         questions = question_generator.build_questions_from_sequence(sequence_manifest)
         questions = [q for q in questions if q.question_text.strip()]
         if not questions:
@@ -302,6 +462,7 @@ class QuizService:
             questions = question_generator.shuffle_questions(
                 questions, shuffle_prefs['keep_sim_together'])
         topics = _topics_from_questions(questions)
+        quiz_note.ensure_note(questions, {'topics': topics}, sequence_manifest)
         if on_result:
             on_result(questions, {'topics': topics})
 
@@ -333,6 +494,7 @@ class QuizService:
         topic_files: Optional[list[dict]] = None,
         total_questions: Optional[int] = None,
         history: Optional[list[dict]] = None,
+        prefs: Optional[dict] = None,
     ) -> tuple[list, dict]:
         """
         Blocking variant of generate_quiz(). Returns (questions, meta).
@@ -361,6 +523,7 @@ class QuizService:
             topic_files=topic_files,
             total_questions=total_questions,
             history=history,
+            prefs=prefs,
             on_result=_res,
             on_error=_err,
         )
@@ -395,6 +558,27 @@ class QuizService:
         on_error: Callable[[str], None],
     ) -> None:
         self._runner.evaluate_batch(question_groups, on_result, on_error)
+
+    def evaluate_theory(
+        self,
+        theory_entries: list[dict],
+        on_result: Callable[[list], None],
+        on_error: Callable[[str], None],
+    ) -> None:
+        """Bucketed 0–1 grading of one theory batch file (≤15 questions)."""
+        self._runner.evaluate_theory(theory_entries, on_result, on_error)
+
+    def evaluate_hybrid(
+        self,
+        question: str,
+        user_answer: str,
+        correct_answer: str,
+        on_result: Callable[[bool, str], None],
+        on_error: Callable[[str], None],
+    ) -> None:
+        """Strict AI fallback marking of a Hybrid final answer."""
+        self._runner.evaluate_hybrid(question, user_answer, correct_answer,
+                                     on_result, on_error)
 
     def generate_summary(
         self,
@@ -432,12 +616,14 @@ class GenerationJob:
         topic_files: Optional[list] = None,
         total_questions: Optional[int] = None,
         history: Optional[list[dict]] = None,
+        prefs: Optional[dict] = None,
     ):
         self._service = service
         self._user_request = user_request
         self._topic_files = topic_files or service.load_selected_topics()
         self._total_questions = total_questions
         self._history = history or []
+        self._prefs = prefs
 
         self._lock = threading.Lock()
         self.state = 'pending'
@@ -508,6 +694,7 @@ class GenerationJob:
             topic_files=self._topic_files,
             total_questions=self._total_questions,
             history=self._history,
+            prefs=self._prefs,
             progress=_progress,
             on_result=_result,
             on_error=_error,

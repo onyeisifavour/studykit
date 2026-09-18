@@ -1,0 +1,78 @@
+{
+  "quiz_metadata": {
+    "total_questions": 10,
+    "primary_objective": "General subject overview for first-time user with sims format"
+  },
+  "slot_allocations": [
+    {
+      "slot_number": 1,
+      "objective_type": "prerequisite_repair",
+      "topic": "General Introduction",
+      "target_issue": "Baseline assessment - foundational concepts",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 2,
+      "objective_type": "prerequisite_repair",
+      "topic": "General Introduction",
+      "target_issue": "Baseline assessment - basic terminology",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 3,
+      "objective_type": "prerequisite_repair",
+      "topic": "General Introduction",
+      "target_issue": "Baseline assessment - core principles",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 4,
+      "objective_type": "conceptual_gap",
+      "topic": "General Introduction",
+      "target_issue": "Conceptual understanding - key relationships",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 5,
+      "objective_type": "conceptual_gap",
+      "topic": "General Introduction",
+      "target_issue": "Conceptual understanding - mechanism explanations",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 6,
+      "objective_type": "conceptual_gap",
+      "topic": "General Introduction",
+      "target_issue": "Conceptual understanding - cause-effect chains",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 7,
+      "objective_type": "transfer_mechanism",
+      "topic": "General Introduction",
+      "target_issue": "Application problems - scenario analysis",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 8,
+      "objective_type": "transfer_mechanism",
+      "topic": "General Introduction",
+      "target_issue": "Transfer tasks - real-world application",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 9,
+      "objective_type": "synthesis_elevation",
+      "topic": "General Introduction",
+      "target_issue": "Integration challenge - multi-concept synthesis",
+      "style_constraint": "sims"
+    },
+    {
+      "slot_number": 10,
+      "objective_type": "synthesis_elevation",
+      "topic": "General Introduction",
+      "target_issue": "Elevation probe - extended reasoning",
+      "style_constraint": "sims"
+    }
+  ]
+}

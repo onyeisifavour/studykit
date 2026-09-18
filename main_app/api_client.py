@@ -338,29 +338,30 @@ class CLIBridgeClient:
 
         def _run() -> None:
             try:
-                # Build command
-                cmd = ['opencode', 'run', '--format', 'json']
-                
-                if agent:
-                    cmd.extend(['--agent', agent])
-                    if session_id:
-                        cmd.extend(['-s', session_id])
-                    # For agents, only send user message (system is built-in)
-                    cmd.append(user)
-                else:
-                    # Legacy mode: combine system + user
-                    if session_id:
-                        cmd.extend(['-s', session_id])
-                    full_prompt = f"{system}\n\n---\n\n{user}" if system else user
-                    cmd.append(full_prompt)
-
                 # Plain pipes (not a PTY): opencode only emits clean
                 # --format json lines when stdout is not a TTY. stderr is
                 # captured separately to avoid merging streams.
                 last_error: Optional[str] = None
+                effective_session = session_id  # dropped if found stale
                 for attempt in range(5):
                     if attempt:
                         time.sleep(3)
+
+                    # Build command
+                    cmd = ['opencode', 'run', '--format', 'json']
+                    if agent:
+                        cmd.extend(['--agent', agent])
+                        if effective_session:
+                            cmd.extend(['-s', effective_session])
+                        # For agents, only send user message (system is built-in)
+                        cmd.append(user)
+                    else:
+                        # Legacy mode: combine system + user
+                        if effective_session:
+                            cmd.extend(['-s', effective_session])
+                        full_prompt = f"{system}\n\n---\n\n{user}" if system else user
+                        cmd.append(full_prompt)
+
                     proc = subprocess.Popen(
                         cmd,
                         stdout=subprocess.PIPE,
@@ -371,10 +372,23 @@ class CLIBridgeClient:
                     except subprocess.TimeoutExpired:
                         proc.kill()
                         proc.wait()
-                        raise subprocess.TimeoutExpired(cmd, 300)
+                        # A single slow call shouldn't sink the whole quiz.
+                        last_error = "opencode timed out after 300 seconds."
+                        continue
 
                     if proc.returncode != 0:
                         last_error = f"opencode exited with code {proc.returncode}"
+                        # A cached session id can outlive its session (stale
+                        # config, cleared sessions, restarted TUI). Resume then
+                        # hard-fails; drop it and start a fresh session rather
+                        # than reporting an error for a recoverable problem.
+                        err_text = err.decode('utf-8', errors='replace')
+                        if effective_session and 'Session not found' in err_text:
+                            effective_session = None
+                            last_error = (
+                                f"opencode exited with code {proc.returncode} "
+                                f"(stale session {effective_session or session_id!r}); retrying fresh"
+                            )
                         continue
 
                     text, new_session_id = _extract_response_from_json(

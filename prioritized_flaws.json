@@ -1,0 +1,98 @@
+[
+  {
+    "priority_level": 1,
+    "flaw_type": "prerequisite_flaw",
+    "topic": "Vector Analysis",
+    "target_issue": "Inability to decompose gravitational vectors or apply directional reasoning in field problems",
+    "severity": "high",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 1,
+    "flaw_type": "prerequisite_flaw",
+    "topic": "Newton's Laws of Motion",
+    "target_issue": "Confusion between action-reaction pairs and failure to apply F=ma in gravitational contexts",
+    "severity": "high",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 1,
+    "flaw_type": "prerequisite_flaw",
+    "topic": "Algebraic Manipulation",
+    "target_issue": "Errors in rearranging gravitational equations and isolating variables for orbital calculations",
+    "severity": "high",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 1,
+    "flaw_type": "prerequisite_flaw",
+    "topic": "Centripetal Force",
+    "target_issue": "Treating centripetal force as a separate force rather than the net radial component",
+    "severity": "high",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 2,
+    "flaw_type": "conceptual_gap",
+    "topic": "Inverse Square Law",
+    "target_issue": "Misunderstanding how gravitational field strength varies with distance squared",
+    "severity": "moderate",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 2,
+    "flaw_type": "conceptual_gap",
+    "topic": "Gravitational Field vs Force",
+    "target_issue": "Conflating field strength (N/kg) with gravitational force (N) and applying them interchangeably",
+    "severity": "moderate",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 2,
+    "flaw_type": "conceptual_gap",
+    "topic": "Gravitational Potential",
+    "target_issue": "Incorrect sign convention for gravitational potential energy and potential near massive bodies",
+    "severity": "moderate",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 3,
+    "flaw_type": "memorized_state",
+    "topic": "Orbital Weightlessness",
+    "target_issue": "Believing weightlessness in orbit means zero gravity rather than free-fall conditions",
+    "severity": "moderate",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 3,
+    "flaw_type": "memorized_state",
+    "topic": "Orbital Velocity & Kepler's Laws",
+    "target_issue": "Rote application of v = sqrt(GM/r) and Kepler's third law without conceptual derivation or understanding",
+    "severity": "moderate",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 3,
+    "flaw_type": "memorized_state",
+    "topic": "Escape Velocity",
+    "target_issue": "Memorizing v_esc = sqrt(2GM/r) without understanding energy conservation basis or orbital implications",
+    "severity": "moderate",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 4,
+    "flaw_type": "mastered_state",
+    "topic": "Synthesis: Multi-body Gravitational Systems",
+    "target_issue": "Ready for advanced problems combining field superposition, energy methods, and orbital transfer analysis",
+    "severity": "low",
+    "source": "default_heuristic"
+  },
+  {
+    "priority_level": 4,
+    "flaw_type": "mastered_state",
+    "topic": "Synthesis: Gravitational-Electromagnetic Analogies",
+    "target_issue": "Ready for cross-domain synthesis comparing gravitational and electric field concepts",
+    "severity": "low",
+    "source": "default_heuristic"
+  }
+]
