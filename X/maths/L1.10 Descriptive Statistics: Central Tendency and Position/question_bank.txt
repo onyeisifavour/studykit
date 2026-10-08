@@ -1,0 +1,157 @@
+1. Calculate the arithmetic mean of the raw dataset: 12,15,18,22,28. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 18
+B. 19
+C. 19.2
+D. 20
+
+2. Find the median of the ordered observations: 4,7,10,14,19,25. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. 10
+B. 12
+C. 14
+D. 13
+
+3. What is the class midpoint of the grouped frequency interval 20−29? [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 24
+B. 24.5
+C. 25
+D. 24.8
+
+4. Which formula estimates the mode from a histogram frequency distribution? [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. L+(Δ₁/(Δ₁+Δ₂))w
+B. L+(f₂/N−F)w
+C. ∑fx/N
+D. Q₃−Q₁
+
+5. Calculate the Interquartile Range (IQR) if Q₁=24 and Q₃=58. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. 82
+B. 34
+C. 41
+D. 17
+
+6. An observation is classified as an outlier if it falls below which lower boundary fence? [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Q₁−1.0×IQR
+B. Q₁−1.5×IQR
+C. Q₂−1.5×IQR
+D. Q₁−2.0×IQR
+
+7. The second quartile Q₂ corresponds strictly to which positional metric? [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. Arithmetic Mean
+B. Median (50th Percentile)
+C. Mode
+D. Upper Quartile
+
+8. A frequency distribution has ∑fx=680 and total frequency N=40. Calculate the mean. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. 15
+B. 16
+C. 17
+D. 18
+
+9. The 70th percentile P₇₀ corresponds to which decile metric? [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. D₅
+B. D₇
+C. D₈
+D. D₆
+
+10. Which metric is displayed by the central line inside a standard boxplot box? [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. Mean
+B. Median
+C. Mode
+D. Range
+
+11. Adding a constant +5 to every raw observation in a dataset changes the mean by: [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. Remaining unchanged
+B. Increasing by 5
+C. Multiplying by 5
+D. Increasing by 5/N
+
+12. Identify the modal class for grouped frequencies: [0−10:4],[10−20:11],[20−30:8],[30−40:3]. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. 0−10
+B. 10−20
+C. 20−30
+D. 30−40
+
+13. Determine relative frequency of class frequency fᵢ=15 in sample size N=60. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 0.15
+B. 0.25
+C. 0.40
+D. 4.00
+
+14. Calculate cumulative frequency of third class given class frequencies f₁=5,f₂=12,f₃=8. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. 8
+B. 20
+C. 25
+D. 17
+
+15. Find mode of raw dataset 3,8,8,11,14,14,14,19. [Type: MCQ; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. 8
+B. 11
+C. 14
+D. 19
+
+HYBRID QUESTIONS
+16. Calculate mean of values 5,10,15,20,25. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+17. Calculate median of observations 2,5,8,12,16,20,24. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+
+18. State mode of distribution 4,7,7,9,12,12,12,15. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+
+19. Calculate IQR if Q₁=15 and Q₃=45. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+20. Calculate class boundary width for continuous grouped interval 10−19. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+21. Calculate upper outlier fence given Q₁=20 and Q₃=36. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+22. State value of second quartile Q₂ for dataset with median 18.5. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+23. State total frequency N if cumulative frequency of final class equals 150. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+
+24. Calculate estimated mean for midpoints x=[5,15] with frequencies f=[4,6]. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+25. Find 60th percentile position index L₆₀ = (60/100)×N for N=80. [Type: Hybrid; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. The table below displays examination marks for 50 students:
+
+Marks
+Frequency
+​
+  
+10−19
+5
+​
+  
+20−29
+12
+​
+  
+30−39
+18
+​
+  
+40−49
+10
+​
+  
+50−59
+5
+​
+ 
+​
+ 
+
+(a) Calculate estimated mean mark using class midpoints.
+(b) Calculate estimated median using cumulative interpolation formula.
+(c) Calculate estimated mode using modal class formula. [Type: Theory; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+27. Given five-number summary values x_min=12, Q₁=28, Q₂=40, Q₃=52, x_max=95:
+(a) Construct a box-and-whisker plot summary description.
+(b) Calculate upper and lower outlier fences.
+(c) Determine whether x_max=95 is an outlier. [Type: Theory; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+28. Compare mean, median, and mode for a strongly right-skewed income distribution. Explain which measure of central tendency provides the most representative assessment and why. [Type: Theory; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+29. A student calculated the grouped mean by multiplying lower class limits by frequencies instead of class midpoints.
+(a) Identify the mathematical error and its direction of bias.
+(b) Re-calculate correct mean for lower limits [10,20] with frequencies [3,7] compared to midpoints [15,25]. [Type: Theory; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+
+30. Construct a cumulative frequency table for grouped classes [0−10:6],[10−20:14],[20−30:20],[30−40:10] and estimate Q₁, Q₃, and P₈₀. [Type: Theory; Subject: Maths; Topic: L1.10 Descriptive Statistics: Central Tendency and Position; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]

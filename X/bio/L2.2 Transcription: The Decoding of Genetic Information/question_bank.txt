@@ -1,0 +1,123 @@
+1. What is the primary role of the promoter region during eukaryotic gene transcription initiation? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Coding for the N-terminal signal peptide of the translated protein
+B. Binding RNA Polymerase and transcription factors to position the enzyme at the start site
+C. Terminating transcription and inducing polyadenylation
+D. Directing spliceosomes to remove non-coding introns
+
+2. During transcription elongation, which DNA strand serves as the direct template read by RNA Polymerase? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Sense strand (5′→3′)
+B. Antisense / Template strand (3′→5′)
+C. Okazaki strand
+D. Non-transcribed coding strand
+
+3. In what directional orientation does RNA Polymerase synthesize a primary pre-mRNA transcript? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 3′→5′ direction
+B. 5′→3′ direction
+C. Bidirectionally from both ends simultaneously
+D. 1′→5′ direction
+
+4. What chemical modification is added to the 5′ end of eukaryotic pre-mRNA shortly after transcription initiation? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Polyadenine tail (100–250 adenines)
+B. 7-Methylguanosine cap
+C. Spliceosome intron loop
+D. Deoxyribonucleotide primer
+
+5. What post-transcriptional processing event removes non-coding sequences from pre-mRNA and covalently joins coding sequences? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 3' Polyadenylation
+B. RNA Splicing of introns and ligation of exons
+C. DNA Methylation
+D. Histone Deacetylation
+
+6. How does alternative pre-mRNA splicing enable a single eukaryotic gene to code for multiple distinct protein isoforms? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By mutating genomic base sequences inside promoters
+B. By selectively including or excluding specific exons during pre-mRNA splicing
+C. By changing ribose sugars into 2′-deoxyribose sugars
+D. By translating introns in place of exons
+
+7. What is the function of the 3′ polyadenine (poly-A) tail added to eukaryotic mature mRNA? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Directing spliceosomes to exon junctions
+B. Protecting mRNA from exonucleolytic degradation and facilitating nuclear export
+C. Complementary pairing with the promoter region
+D. Initiating transcription elongation
+
+8. If a DNA coding (sense) strand base sequence is 5′-ATG-CGT-GCA-3′, what is the base sequence of the transcribed pre-mRNA? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 5′-AUG-CGU-GCA-3′
+B. 3′-UAC-GCA-CGU-5′
+C. 5′-UAC-GCA-CGU-3′
+D. 5′-ATG-CGT-GCA-3′
+
+9. Which enzyme complex catalyzes the cleavage of non-coding introns and the re-joining of exons in eukaryotic cell nuclei? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 26S Proteasome
+B. Spliceosome (snRNPs and associated proteins)
+C. DNA Polymerase I
+D. RNA Primase
+
+10. What sequence motif within eukaryotic gene promoters is recognized by general transcription factors to guide RNA Polymerase II binding? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. TATA box
+B. CpG island
+C. Poly-A signal
+D. AUG codon
+
+11. Why do prokaryotic organisms lack post-transcriptional pre-mRNA processing (capping, splicing, polyadenylation)? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Prokaryotic genes contain only non-coding introns.
+B. Prokaryotes lack a nuclear membrane, allowing translation to occur concurrently on nascent transcripts.
+C. Prokaryotic RNA contains thymine instead of uracil.
+D. Prokaryotes utilize DNA polymerases to synthesize mRNA.
+
+12. Which nucleotide base pair bond is formed when RNA Polymerase incorporates a complementary base opposite Adenine on the DNA template strand? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Adenine–Thymine
+B. Adenine–Uracil
+C. Guanine–Cytosine
+D. Uracil–Thymine
+
+13. What structural feature of mature eukaryotic mRNA is specifically recognized by 40S ribosomal subunits during translation initiation? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 3′ Poly-A tail
+B. 5′ 7-Methylguanosine cap
+C. Spliceosomal branch point
+D. Intron-exon junction
+
+14. What occurs when RNA Polymerase reaches a transcription termination signal sequence in eukaryotes? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. The enzyme pauses, releases the primary pre-mRNA transcript, and dissociates from the DNA template.
+B. The enzyme begins translating mRNA into protein inside the nucleus.
+C. The enzyme converts the RNA transcript into double-stranded DNA.
+D. The enzyme initiates DNA replication at the 3′ end.
+
+15. What structural component remains in mature mRNA after post-transcriptional pre-mRNA processing is complete? [Type: MCQ; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. Introns only
+B. Exons bounded by a 5′ cap and 3′ poly-A tail
+C. Promoter TATA box sequences
+D. Single-stranded binding proteins
+
+16. Name the region of DNA located upstream of a gene where RNA Polymerase binds to initiate transcription. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. State the directional orientation in which RNA Polymerase reads the DNA template (antisense) strand. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+18. Name the non-coding intervening sequences excised from eukaryotic pre-mRNA during splicing. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+19. Identify the chemical structure added to the 3′ end of mature eukaryotic mRNA to enhance stability. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+20. State the base sequence of transcribed RNA if the DNA antisense strand reads 3′-TAC-GGC-TTA-5′. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. What molecular mechanism allows one single eukaryotic gene to encode multiple distinct polypeptide variants? [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+22. Name the nuclear ribonucleoprotein complex that catalyzes pre-mRNA splicing. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+23. Which end (5′ or 3′) of eukaryotic pre-mRNA receives a 7-methylguanosine cap? [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+24. Name the DNA strand that has the same base sequence as the primary RNA transcript (except U replaces T). [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+25. State the intracellular location where eukaryotic post-transcriptional mRNA processing takes place. [Type: Hybrid; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+26. [DIAGRAM: Eukaryotic gene structure showing Promoter, Exon 1, Intron 1, Exon 2, Intron 2, Exon 3, and Poly-A signal site]
+(a) Outline the stages involved in converting primary pre-mRNA transcribed from this gene into mature mRNA ready for nuclear export.
+(b) Explain the biological advantage conferred by alternative splicing in higher eukaryotes. [Type: Theory; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Compare the process of transcription in prokaryotic cells versus eukaryotic cells. In your answer, refer to intracellular compartmentalization, promoter recognition, and post-transcriptional processing. [Type: Theory; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Distinguish between the sense (coding) strand and the antisense (template) strand of DNA. Explain why RNA Polymerase must synthesize mRNA exclusively in the 5′→3′ direction using the antisense strand as a template. [Type: Theory; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+29. Explain the functions of the 5′ 7-methylguanosine cap and the 3′ polyadenine tail during eukaryotic mRNA metabolism. Describe what happens to an un-capped mRNA transcript introduced into the cytoplasm. [Type: Theory; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+30. A specific gene contains 5 exons separated by 4 introns.
+(a) Predict the effect of a point mutation that destroys the consensus splice-acceptor site at the boundary of Intron 2.
+(b) Explain how this mutation alters the reading frame and functional polypeptide structure during subsequent ribosomal translation. [Type: Theory; Subject: Biology; Topic: L2.2 Transcription: The Decoding of Genetic Information; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]

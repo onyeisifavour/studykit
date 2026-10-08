@@ -33,12 +33,19 @@ from pathlib import Path
 from typing import Any, Optional
 
 from . import config
+from . import quiz_artifact
 
 # Five-level theory marking rubric (user-specified, 2026-09-11). The grader
 # produces one of these levels directly; snap_score is a defensive pass-through
 # for stray values. Levels must stay in sync with the rubric in THEORY_EVAL_SYSTEM.
 THEORY_SCORE_LEVELS = (0.0, 0.25, 0.5, 0.75, 1.0)  # full = 100%, quarter = 25%
 THEORY_BATCH_MAX = 15
+
+# Hybrid is graded strictly (user-specified, 2026-10-02): right or wrong, never
+# partial. The batched evaluator returns the same 0-1 float it returns for
+# Theory, so a raw score is rounded to the nearer of these two levels.
+HYBRID_SCORE_LEVELS = (0.0, 1.0)
+HYBRID_PASS_THRESHOLD = 0.5  # raw >= 0.5 → 1.0, below → 0.0
 
 QUIZ_NOTES_DIR = Path.home() / '.quiz_app' / 'quizzes'
 
@@ -69,6 +76,22 @@ def quiz_id_from_manifest(sequence_manifest: Optional[dict]) -> str:
     return hashlib.sha1(payload).hexdigest()[:12]
 
 
+def _coerce_option_index(value) -> Optional[int]:
+    """
+    Normalises a correct-option index, rejecting bools and malformed values.
+
+    Anything unusable becomes None so downstream falls back to text matching
+    rather than trusting a wrong index.
+    """
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value if value >= 0 else None
+    if isinstance(value, str) and value.strip().isdigit():
+        return int(value.strip())
+    return None
+
+
 def _questions_sig(questions: list) -> str:
     parts = [(
         getattr(q, 'number', 0),
@@ -85,6 +108,24 @@ def snap_score(raw: float) -> float:
     """Snaps a raw 0–1 score to the nearest THEORY_SCORE_LEVELS bucket."""
     raw = max(0.0, min(1.0, float(raw or 0.0)))
     return min(THEORY_SCORE_LEVELS, key=lambda level: abs(level - raw))
+
+
+def snap_hybrid_score(raw: float) -> float:
+    """
+    Snaps a raw 0-1 evaluator score to strict binary credit.
+
+    Hybrid answers are right or wrong: an answer that is correct in substance
+    scores 1.0, and anything with a real error — wrong unit, wrong value, wrong
+    notation — scores 0.0. There is no partial credit, so anything at or above
+    HYBRID_PASS_THRESHOLD rounds to full marks and everything else to zero.
+    """
+    try:
+        value = float(raw)
+    except (TypeError, ValueError):
+        return 0.0
+    if value != value:  # NaN
+        return 0.0
+    return 1.0 if max(0.0, min(1.0, value)) >= HYBRID_PASS_THRESHOLD else 0.0
 
 
 def _now() -> str:
@@ -118,6 +159,12 @@ def _entry_from_question(q) -> dict:
         'source':                str(getattr(q, 'source', '') or ''),
         'question_text':         str(getattr(q, 'question_text', '') or ''),
         'options':               list(getattr(q, 'options', []) or []),
+        'correct_option_index':  _coerce_option_index(
+            getattr(q, 'correct_option_index', None)),
+        'option_rationales':     list(getattr(q, 'option_rationales', []) or []),
+        'option_error_types':    list(getattr(q, 'option_error_types', []) or []),
+        'option_warnings':       list(getattr(q, 'option_warnings', []) or []),
+        'options_generated':     bool(getattr(q, 'options_generated', False)),
         'sim_name':              str(getattr(q, 'sim_name', '') or ''),
         'sim_instruction':       str(getattr(q, 'sim_instruction', '') or ''),
         'correct_answer':        correct,
@@ -195,6 +242,12 @@ def ensure_note(questions: list, meta: Optional[dict] = None,
     if not questions:
         raise ValueError('ensure_note requires at least one question')
     sig = _questions_sig(questions)
+
+    # Capture the immutable artifact on every sight of this content, before any
+    # early return below. ensure_note is the single choke point every
+    # generation path passes through, so hooking here covers all of them.
+    # Keyed on content, so this is idempotent and never duplicates an artifact.
+    quiz_artifact.artifact_from_questions(questions)
 
     current = config.get('current_quiz_id')
     rec = load_note(current) if current else None
@@ -295,9 +348,17 @@ def set_run_options(quiz_id: str, evaluation_on: bool, skip_mode: str) -> None:
 # ── Theory batch files (minimal marking data, ≤ THEORY_BATCH_MAX questions) ───
 
 def _theory_entries(note: dict) -> list[dict]:
+    """
+    The answer-bearing subjective entries that get batched for AI grading.
+
+    Both Theory and Hybrid live here: they share the batch format, the
+    evaluator, and the 15-per-batch cap, and they differ only in how the raw
+    score is snapped (bucketed vs strict binary). Keeping them in one batch
+    stream is what stops Hybrid from costing one API call per question.
+    """
     out = []
     for e in note.get('questions', []):
-        if e.get('type') == 'Theory':
+        if e.get('type') in ('Theory', 'Hybrid'):
             entry = {'number': int(e.get('number', 0))}
             entry.update(e)
             out.append(entry)
@@ -321,6 +382,7 @@ def write_theory_batches(note: dict) -> list[Path]:
             'max_capacity': THEORY_BATCH_MAX,
             'questions': [{
                 'number': e['number'],
+                'type': e.get('type', 'Theory'),
                 'question_text': e['question_text'],
                 'user_choice': e.get('user_choice'),
                 'correct_answer': e.get('correct_answer', ''),

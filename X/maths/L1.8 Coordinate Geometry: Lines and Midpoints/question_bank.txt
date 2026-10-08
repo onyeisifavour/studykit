@@ -1,0 +1,129 @@
+1. Calculate the distance between the points A(1,2) and B(4,6) on the Cartesian plane. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 3
+B. 4
+C. 5
+D. 25
+
+2. Determine the coordinates of the midpoint of the line segment joining P(−2,8) and Q(4,−2). [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. (1,3)
+B. (3,3)
+C. (2,6)
+D. (−1,5)
+
+3. Find the gradient m of the straight line passing through points R(3,−1) and S(7,11). [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 1/3
+B. 2
+C. 3
+D. 2/5
+
+4. What is the gradient of a line whose angle of inclination with the positive x-axis is 135°? [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. 1
+B. −1
+C. √3
+D. −√3
+
+5. Determine the equation of a line passing through (2,3) and parallel to y=4x−7. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. y=4x−5
+B. y=4x+5
+C. y=−1/4 x+7/2
+D. y=4x−11
+
+6. Find the gradient of any line perpendicular to 3x−2y+6=0. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. 2/3
+B. −2/3
+C. 3/2
+D. −3/2
+
+7. Convert the line equation y=4/3 x−2 into general form ax+by+c=0. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 3x−4y−8=0
+B. 3x+4y−8=0
+C. 4x−3y−2=0
+D. 3x−4y+2=0
+
+8. Midpoint M(5,1) bisects segment AB. If endpoint A has coordinates (2,5), find coordinates of B. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. (3.5,3)
+B. (8,−3)
+C. (7,−4)
+D. (8,3)
+
+9. Calculate the distance between horizontal line points C(−3,4) and D(7,4). [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. 4
+B. 7
+C. 10
+D. 12
+
+10. Which equation represents a line passing through (3,−2) with slope m=5 in point-gradient form? [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. y−2=5(x−3)
+B. y+2=5(x−3)
+C. y+2=5(x+3)
+D. y−3=5(x+2)
+
+11. Determine the angle of inclination θ for a line possessing gradient m=1. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: NECO 2023; Answer-Method: text-exclusive]
+A. 30°
+B. 45°
+C. 60°
+D. 90°
+
+12. Find the equation of the perpendicular bisector of the line segment joining (0,0) and (4,8). [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. x+2y−10=0
+B. 2x+y−8=0
+C. x−2y+6=0
+D. x+2y−5=0
+
+13. Determine the point of intersection of linear equations 2x−y=4 and x+y=5. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. (3,2)
+B. (2,3)
+C. (1,4)
+D. (4,1)
+
+14. For what value of k are lines 2x+ky=7 and 4x−3y=1 parallel? [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WASSCE 2021; Answer-Method: text-exclusive]
+A. k=2/3
+B. k=−2/3
+C. k=−6
+D. k=6
+
+15. Find value p such that px+3y=9 is perpendicular to 2x−4y=5. [Type: MCQ; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. p=6
+B. p=−6
+C. p=3/8
+D. p=2
+
+HYBRID QUESTIONS
+16. Calculate the distance between E(−5,1) and F(7,10). [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+17. Determine the y-intercept of the line 5x−2y+12=0. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+18. Calculate the exact gradient of a line inclined at 60° to the positive x-axis. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+
+19. Segment AB has midpoint M(3,−4). If B is (9,2), state coordinates of endpoint A. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+20. State the gradient of a line perpendicular to y=−1/4 x+8. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+21. Calculate the area of the right-angled triangle formed by line 3x+4y=12 and coordinate axes. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+22. Find positive value a if distance between (1,a) and (4,5) equals 5. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+23. Find the simplified gradient of line joining (a,2a) and (3a,8a) where a≠0. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+21. Calculate the x-intercept of line passing through (2,4) with slope m=−2. [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+22. Find midpoint coordinates of hypotenuse of right triangle with vertices (0,0),(6,0),(0,8). [Type: Hybrid; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. A quadrilateral has vertices A(1,1), B(4,5), C(9,5), and D(6,1).
+(a) Calculate gradients of all four sides and prove ABCD is a parallelogram.
+(b) Calculate side lengths AB and BC to determine whether ABCD is a rhombus. [Type: Theory; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+27. Given points P(−2,3) and Q(4,1):
+(a) Derive the general equation ax+by+c=0 of the perpendicular bisector of segment PQ.
+(b) Calculate the shortest distance from the origin (0,0) to this perpendicular bisector line. [Type: Theory; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+27. Triangle JKL has vertices J(0,4), K(6,0), and L(3,9).
+(a) Find equations of altitudes from L to JK and from J to KL.
+(b) Calculate coordinates of the orthocenter (intersection of altitudes). [Type: Theory; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+28. A student calculated the angle between lines L₁:y=2x+1 and L₂:y=3x−4 as tanθ=2+3=5.
+(a) Identify the candidate's conceptual error.
+(b) State the correct formula tanθ=|(m₂−m₁)/(1+m₁m₂)| and compute exact acute angle θ. [Type: Theory; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+
+29. Prove analytically using coordinate geometry that the line segment connecting midpoints of two sides of any triangle is parallel to the third side and equal to half its length. [Type: Theory; Subject: Maths; Topic: L1.8 Coordinate Geometry: Lines and Midpoints; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]

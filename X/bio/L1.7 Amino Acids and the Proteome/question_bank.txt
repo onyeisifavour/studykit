@@ -1,0 +1,122 @@
+1. Which chemical group of a generalized amino acid undergoes a condensation reaction with the carboxyl group of an adjacent amino acid to form a peptide bond? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Central α-carbon
+B. Variable R-group
+C. Amino group (−NH₂)
+D. Hydroxyl group (−OH)
+
+2. A polypeptide chain consists of 45 amino acids. How many molecules of water are liberated during its complete ribosomal biosynthesis? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 44
+B. 45
+C. 88
+D. 90
+
+3. Which pair of amino acid R-groups is most likely to form an ionic bond within the tertiary core of a globular protein at physiological pH (∼7.4)? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Leucine and Isoleucine
+B. Aspartate and Lysine
+C. Serine and Threonine
+D. Cysteine and Cysteine
+
+4. Heavy metal ions such as Pb²⁺ disrupt protein tertiary structure by binding to carboxylate (−COO⁻) and sulfhydryl (−SH) groups. Which interactions are directly compromised by this binding? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Peptide bonds and hydrogen bonds
+B. Ionic bonds and disulfide bridges
+C. Hydrophobic interactions and peptide bonds
+D. Hydrogen bonds and hydrophobic interactions
+
+5. What is the fundamental difference between the genome and the proteome of a multicellular organism? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. The genome varies between tissue types, whereas the proteome remains constant.
+B. The genome is made of proteins, whereas the proteome consists of nucleic acids.
+C. The genome is fixed for an organism, whereas the proteome varies dynamically according to cell type and physiological conditions.
+D. The proteome includes non-coding introns, whereas the genome contains only expressed exons.
+
+6. Which force primarily drives the folding of nonpolar amino acid side chains into the interior of a cytosolic globular protein? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Hydrophobic interactions with water molecules
+B. Covalent disulfide bond formation
+C. Formation of hydrogen bonds with the peptide backbone
+D. Electrostatic attraction between opposite full charges
+
+7. How many distinct tetrapeptide sequences can theoretically be synthesized from the 20 standard biological amino acids? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 80
+B. 8,000
+C. 160,000
+D. 20⁴ (160,000)
+
+8. Which functional protein consists of three left-handed helical polypeptide chains wrapped around each other into a right-handed triple superhelix to yield high tensile strength? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Rubisco
+B. Insulin
+C. Collagen
+D. Immunoglobulin
+
+9. Which protein structure level is maintained exclusively by hydrogen bonding between the carbonyl oxygen (−C=O) and amide nitrogen (−N−H) atoms of the polypeptide backbone? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Primary structure
+B. Secondary structure
+C. Tertiary structure
+D. Quaternary structure
+
+10. What role does ubiquitin play in cellular protein quality control? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. It catalyzes peptide bond formation during translation.
+B. It acts as a covalent tag that targets damaged or short-lived proteins to the 26S proteasome for degradation.
+C. It stabilizes α-helices during thermal denaturation.
+D. It binds to the promoter region to activate transcription.
+
+11. What structural feature distinguishes a conjugated protein, such as hemoglobin, from a simple protein like insulin? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Presence of non-protein prosthetic groups bound to the polypeptide
+B. Absence of secondary structural motifs
+C. Reliance solely on covalent peptide bonds for 3D stability
+D. Synthesis on free cytosolic ribosomes rather than the rough ER
+
+12. Which amino acid side chain contains a sulfhydryl group capable of forming covalent cross-links in tertiary protein structure? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Methionine
+B. Cysteine
+C. Serine
+D. Lysine
+
+13. Which functional protein acts as an enzyme responsible for inorganic carbon fixation in photosynthetic autotrophs? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Insulin
+B. Immunoglobulin
+C. Rubisco
+D. Rhodopsin
+
+14. A protein undergoes complete denaturation upon exposure to extreme heat (75°C). Which structural level remains intact? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Primary structure
+B. Secondary structure
+C. Tertiary structure
+D. Quaternary structure
+
+15. What type of functional protein is characterized by a Y-shaped structure composed of two identical heavy chains and two identical light chains held together by disulfide bonds? [Type: MCQ; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Hemoglobin
+B. Immunoglobulin
+C. Collagen
+D. Insulin
+
+16. State the number of peptide bonds present in a linear polypeptide chain composed of 120 amino acids. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. Name the specific enzyme complex in the cytoplasm that hydrolyzes polyubiquitinated proteins into short peptide fragments. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+18. Calculate the total number of amino acids present in a tetrameric hemoglobin molecule if each α-chain contains 141 amino acids and each β-chain contains 146 amino acids. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: AQA A-Level Biology 2022; Answer-Method: text-exclusive]
+
+19. Identify the chemical group attached to the central α-carbon of an amino acid that varies among all 20 standard biological amino acids. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+20. A dipeptide is broken down into two individual amino acids. State the name of this biological cleavage reaction. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. Identify the structural level of a protein formed when two or more distinct folded polypeptide chains associate into a functional complex. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+22. State the term used to describe amino acids that cannot be synthesized by human metabolism and must be obtained through dietary intake. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+23. Name the fibrous structural protein that forms the primary component of extracellular connective tissues such as tendons, skin, and bone. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+24. What directionality does a newly synthesized polypeptide chain exhibit from its start to its finish during ribosomal translation? [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+25. Name the globular peptide hormone synthesized by pancreatic β-cells that regulates blood glucose levels. [Type: Hybrid; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+26. (a) Draw the structural formula of a peptide bond joining two amino acids into a dipeptide.
+(b) Explain how the chemical properties of hydrophobic and hydrophilic R-groups govern the final three-dimensional folding pattern of a globular protein in an aqueous intracellular environment. [Type: Theory; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: non-text-exclusive]
+
+27. Contrast the structural organization and biological roles of collagen and immunoglobulins. In your answer, refer to primary structure motifs, secondary/tertiary/quaternary arrangements, and solubility characteristics. [Type: Theory; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Distinguish between the terms genome and proteome. Explain two cellular mechanisms that enable a single eukaryotic genome to encode a significantly larger proteome. [Type: Theory; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: AQA A-Level Biology; Answer-Method: text-exclusive]
+
+29. Describe the ubiquitin-proteasome pathway. Explain why continuous protein breakdown and recycling are necessary for maintaining a functional proteome within eukaryotic cells. [Type: Theory; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+30. Hemoglobin exhibits quaternary structure consisting of two α-globin and two β-globin subunits.
+(a) Explain the term quaternary structure.
+(b) A missense point mutation replaces a single hydrophilic glutamic acid residue with a hydrophobic valine residue on the surface of the β-globin chain. Explain how this modification affects the tertiary structure, solubility, and physiological function of hemoglobin under low oxygen tension. [Type: Theory; Subject: Biology; Topic: L1.7 Amino Acids and the Proteome; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]

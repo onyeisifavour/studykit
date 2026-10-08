@@ -1,0 +1,110 @@
+1. In fractional distillation of miscible liquids, what primary role is served by the fractionating column packing (e.g., glass beads)? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A. Increasing thermal insulation of the column
+B. Providing high surface area for repeated vaporization-condensation cycles
+C. Absorbing non-volatile chemical impurities
+D. Lowering the atmospheric pressure within the distillation flask
+2. Where must the thermometer bulb be positioned in a standard simple distillation apparatus to record the accurate boiling point of the distillate? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Fully immersed in the boiling liquid mixture
+B. Suspended above the liquid surface in the boiling flask
+C. Directly level with or slightly below the opening of the condenser side-arm
+D. Inside the receiving flask
+3. Ethanol (boiling point $78\ ^\circ\text{C}$) and water (boiling point $100\ ^\circ\text{C}$) are separated by fractional distillation. Which component enriches the vapor phase near the top of the column first? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Water vapor
+B. Ethanol vapor
+C. An equimolar mixture of ethanol and water
+D. Atmospheric air
+4. Why must the origin baseline on paper chromatography paper be drawn in graphite pencil rather than ballpoint ink? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge IGCSE 0620/32; Answer-Method: text-exclusive]
+A. Ink reacts chemically with cellulose paper
+B. Graphite pencil is insoluble in the mobile solvent and will not dissolve to produce competing chromatograms
+C. Pencil marks increase the $R_f$ value of all solutes
+D. Ballpoint ink dissolves only in non-polar solvents
+5. In thin-layer chromatography (TLC) using silica gel as the stationary phase and hexane as the mobile phase, which compound will display the highest $R_f$ value? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: AP Chemistry 2019; Answer-Method: text-exclusive]
+A. Highly polar carboxylic acid
+B. Non-polar aliphatic hydrocarbon
+C. Primary alcohol with strong hydrogen bonding
+D. Ionic ammonium salt
+6. During industrial fractional distillation of crude oil, where does the fraction with the lowest boiling point collect? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. At the very bottom of the fractionating column as bitumens
+B. At the top of the fractionating column as refinery gases
+C. In the middle tray as diesel oil
+D. In the reboiler heater
+7. If a solute spot travels $3.2\ \text{cm}$ from the pencil origin line while the solvent front travels $8.0\ \text{cm}$, what is the $R_f$ value of the solute? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. $2.50$
+B. $0.40$
+C. $0.60$
+D. $1.12$
+8. Why is water fed into the bottom opening of a Liebig condenser and discharged from the top opening during distillation? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. To allow gravity to assist water flow
+B. To ensure the condenser jacket remains completely filled with cold water for maximum thermal exchange
+C. To prevent high water pressure from breaking the glass apparatus
+D. To heat the vapor before condensation
+9. Which physical property difference forms the fundamental basis for chromatography separation? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. Boiling point discrepancy
+B. Differential affinity and partitioning between a mobile phase and a stationary phase
+C. Particle density relative to solvent
+D. Sublimation vapor pressure
+10. What happens if the solvent level in a chromatography jar is placed above the sample baseline containing spotted dye samples? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. The dyes migrate faster up the paper
+B. The spotted dyes dissolve directly into the bulk solvent pool and wash away
+C. $R_f$ values double automatically
+D. Stationary phase dissolves into mobile phase
+11. Which mixture is best separated using simple distillation rather than fractional distillation? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Water (boiling point $100\ ^\circ\text{C}$) and sodium chloride (melting point $801\ ^\circ\text{C}$)
+B. Methanol (boiling point $65\ ^\circ\text{C}$) and ethanol (boiling point $78\ ^\circ\text{C}$)
+C. Oxygen and nitrogen from liquid air
+D. Hexane (boiling point $69\ ^\circ\text{C}$) and heptane (boiling point $98\ ^\circ\text{C}$)
+12. In paper chromatography, what serves as the stationary phase? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. Organic solvent migrating up the paper
+B. Water molecules bound tightly to the cellulose fiber structure of the paper
+C. Atmospheric air inside the covered jar
+D. Synthetic glass substrate
+13. How are colorless amino acids visualised on a developed paper chromatogram? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+A. By exposure to ultraviolet light only
+B. By spraying with ninhydrin reagent followed by gentle heating to yield purple spots
+C. By dipping the chromatogram into concentrated sulfuric acid
+D. By washing with aqueous ammonia solution
+14. Petroleum refining converts crude oil into valuable fractions using: [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. Vacuum filtration
+B. Fractional distillation
+C. Thin-layer chromatography
+D. Solvent extraction
+15. What is the theoretical maximum value that a Retention Factor ($R_f$) can attain in planar chromatography? [Type: MCQ; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. $0.5$
+B. $1.0$
+C. $10.0$
+D. Infinity
+16. Write the mathematical formula used to calculate the Retention Factor ($R_f$) of a solute spot in chromatography. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+17. A chromatogram shows the solvent front moved $10.0\ \text{cm}$ from the pencil baseline. Spot X moved $4.5\ \text{cm}$. Calculate the $R_f$ value of Spot X. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+18. Name the petroleum distillation fraction collected immediately above gasoline/petrol in terms of boiling point range. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+19. Identify the apparatus component placed in fractional distillation that differentiates it from simple distillation apparatus. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+20. What physical state is the mobile phase in gas chromatography? [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+21. A mixture contains two miscible liquids with boiling points of $56\ ^\circ\text{C}$ and $118\ ^\circ\text{C}$. Which distillation method is sufficient to achieve separation? [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+22. State why a lid must be placed on the chromatographic chamber during paper chromatography development. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+23. Calculate the distance traveled by a solute spot with an $R_f$ value of $0.75$ if the solvent front traveled $12.0\ \text{cm}$. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+24. Name the major hydrocarbon fraction obtained at the bottom of a petroleum fractionating tower that is used for road surfacing. [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+25. What property of a compound determines its relative distance traveled along a silica gel TLC plate using a polar solvent? [Type: Hybrid; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: AP Chemistry 2020; Answer-Method: text-exclusive]
+26. **Fractional Distillation of Acetone-Water Mixture** [Type: Theory; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: WAEC 2020 Q4; Answer-Method: non-text-exclusive]
+An organic liquid mixture contains acetone (boiling point $56\ ^\circ\text{C}$) and water (boiling point $100\ ^\circ\text{C}$).
+(a) Draw a labeled diagram placeholder or detailed description of the fractional distillation setup.
+(b) Explain how the fractionating column enables isolation of pure acetone distillate.
+(c) State the temperature reading on the thermometer while the first distillate fraction is being collected.
+27. **Paper Chromatography of Food Dyes** [Type: Theory; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A student conducts paper chromatography on a synthetic food dye mixture containing Red 40, Yellow 5, and Blue 1.
+(a) State two reasons why the solvent level must be kept below the pencil origin line.
+(b) The solvent front travels $15.0\ \text{cm}$. The solute distances are: Red $40 = 3.0\ \text{cm}$, Yellow $5 = 9.0\ \text{cm}$, and Blue $1 = 12.0\ \text{cm}$. Calculate the $R_f$ value for each dye.
+(c) Deduce which dye has the greatest affinity for the mobile solvent phase and justify your answer.
+28. **Crude Oil Refining and Petroleum Fractions** [Type: Theory; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+Crude oil (petroleum) undergoes industrial refining.
+(a) Explain why crude oil cannot be used directly as fuel without fractional distillation.
+(b) List four major petroleum fractions in order of increasing boiling point range and state one commercial use for each.
+(c) Explain why catalytic cracking is performed on heavy gas oil fractions obtained from distillation.
+29. **Thin-Layer Chromatography of Pharmaceutical Analgesics** [Type: Theory; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+Thin-layer chromatography (TLC) was used to analyze an unknown pharmaceutical analgesic against pure reference standards of aspirin, paracetamol, and caffeine.
+(a) Describe how a silica-gel TLC plate is prepared, spotted, and developed.
+(b) The unknown sample produced two spots: Spot 1 ($R_f = 0.45$) and Spot 2 ($R_f = 0.78$). Reference standards produced: paracetamol ($R_f = 0.45$), aspirin ($R_f = 0.78$), caffeine ($R_f = 0.20$). Identify the active ingredients in the unknown sample.
+(c) State two advantages of thin-layer chromatography over paper chromatography.
+30. **Comparative Physical Separation Methods** [Type: Theory; Subject: Chemistry; Topic: L1.7 Advanced Distillation and Chromatography; Format: Non-Sim; Exam: IB Chemistry HL 2020; Answer-Method: text-exclusive]
+Compare physical separation methods across different chemical systems:
+(a) Contrast simple distillation and fractional distillation with respect to mixture suitability and column requirement.
+(b) Explain why paper chromatography can separate pigments with identical boiling points where fractional distillation fails.
+(c) A mixture of ethanol, water, and sand needs complete separation. Outline the multi-step separation scheme required to isolate all three components in pure state.

@@ -1,0 +1,131 @@
+1. What is the primary foundational objective of Operations Research (OR) as a scientific discipline? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Historical documentation of corporate management
+B. Scientific approach to decision-making and optimal resource allocation
+C. Rote computation of statistical tables
+D. Software user interface design
+
+2. In which historical era did Operations Research originate as a distinct quantitative discipline? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Industrial Revolution
+B. World War II military strategy operations
+C. Post-2000 dot-com expansion
+D. 18th-century mercantile trade expansion
+
+3. A 3D physical scale model of an architectural bridge structure is classified as which type of model? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Iconic Model
+B. Analog Model
+C. Symbolic Model
+D. Stochastic Model
+
+4. A circuit graph using electrical voltage flow to represent fluid pipe network dynamics is classified as: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Iconic Model
+B. Analog Model
+C. Symbolic Model
+D. Descriptive Model
+
+5. A set of algebraic equations z=3x₁+5x₂ subject to linear constraints is classified as: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Iconic Model
+B. Analog Model
+C. Symbolic Model
+D. Physical Model
+
+6. What is the first sequential phase in the standard Operations Research methodology? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Model Formulation
+B. Problem Formulation
+C. Solution Generation
+D. Model Validation
+
+7. In OR methodology, candidate mathematical solutions are derived during which stage? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Problem Formulation
+B. Solution Generation
+C. Validation
+D. Implementation
+
+8. Comparing model predictions against empirical real-world operating data occurs during: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Problem Formulation
+B. Solution Generation
+C. Model Validation
+D. Implementation
+
+9. Controllable system inputs adjusted by a decision-maker to optimize performance are called: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Parameters
+B. Decision Variables
+C. Exogenous Variables
+D. Random Variables
+
+10. The mathematical function representing system performance to be maximized or minimized is the: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Boundary Condition
+B. Objective Function
+C. Constraint Matrix
+D. Decision Vector
+
+11. What function do non-negativity constraints (xᵢ ≥0) perform in linear programming models? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Eliminate objective function calculations
+B. Prevent physically impossible negative production or allocation quantities
+C. Guarantee unbounded optimal solutions
+D. Convert inequalities into equalities
+
+12. Continuous system monitoring and parameters recalibration occurs during which OR stage? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Problem Formulation
+B. Model Formulation
+C. Implementation and Refinement
+D. Solution Generation
+
+13. Which feature distinguishes symbolic models from iconic models? [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Symbolic models retain physical spatial appearance
+B. Symbolic models use mathematical notation and abstract variables
+C. Iconic models are cheaper to reconfigure dynamically
+D. Iconic models handle unlimited dimensional space
+
+14. Quantitative decision-making under resource constraints relies primarily on: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Qualitative intuition
+B. Mathematical optimization algorithms
+C. Arbitrary trial-and-error
+D. Historical storytelling
+
+15. Assessing model stability under parameter fluctuations during validation is called: [Type: MCQ; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Sensitivity Analysis
+B. Linear Interpolation
+C. Symbolic Reduction
+D. Empirical Extrapolation
+
+HYBRID QUESTIONS
+16. State the stage executed immediately following Model Formulation in OR methodology. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+17. Classify model type for algebraic expression z=4x+7y. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+18. Classify model type for physical scaled airplane prototype tested in wind tunnel. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+19. State mathematical term for condition x₁,x₂ ≥0 in decision models. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+20. State primary objective type when minimizing financial operational expenditures. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+21. Name phase where operational problems are translated into mathematical symbols. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+22. State historical military era during which OR emerged. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+23. Classify model type using hydraulic fluid pressure to represent financial liquidity flow. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+24. State term for fixed external system inputs like available machine hours. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+24. State final stage of OR methodology responsible for real-world deployment. [Type: Hybrid; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. Detail the five sequential phases of Operations Research methodology (Formulation → Modeling → Solution → Validation → Implementation) using an industrial manufacturing resource scheduling scenario. [Type: Theory; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+27. Compare Iconic, Analog, and Symbolic OR models across:
+(a) Physical appearance vs mathematical abstraction.
+(b) Ease of modifying variables.
+(c) Solvability using quantitative computer algorithms. [Type: Theory; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+28. Formulate a mathematical OR model for a production plant producing product A (x₁) and product B (x₂):
+Profit per unit: $40 for A, $50 for B.
+Machine labor limit: 2x₁+3x₂ ≤120 hours.
+Raw material limit: x₁+x₂ ≤50 units.
+(a) Write objective function z.
+(b) State full set of structural constraints including non-negativity. [Type: Theory; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+29. A planner omitted non-negativity constraints x₁,x₂ ≥0, resulting in an unconstrained solver outputting x₁=150,x₂=−100.
+(a) Explain why this output fails in real-world operational context.
+(b) Explain how non-negativity bounds restore operational model validity. [Type: Theory; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+30. Discuss model validation techniques in Operations Research, contrasting retrospective data testing against sensitivity analysis under parameter fluctuations. [Type: Theory; Subject: Maths; Topic: L1.11 Foundations of Operations Research; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]

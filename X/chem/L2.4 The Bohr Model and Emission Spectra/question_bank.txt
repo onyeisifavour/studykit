@@ -1,0 +1,109 @@
+1. In the hydrogen atom emission spectrum, transitions terminating at the ground state principal energy level ($n = 1$) produce spectral lines in which region of the electromagnetic spectrum? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Infrared (Paschen series)
+B. Visible light (Balmer series)
+C. Ultraviolet (Lyman series)
+D. Microwave series
+2. Which electronic transition in a hydrogen atom emits a photon with the highest frequency and shortest wavelength? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. $n = 2 \rightarrow n = 1$
+B. $n = 3 \rightarrow n = 2$
+C. $n = 4 \rightarrow n = 3$
+D. $n = 5 \rightarrow n = 4$
+3. Why do spectral lines in the hydrogen emission spectrum converge at higher frequencies/energies? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+A. The electron gains mass at higher energy levels
+B. Energy gaps between adjacent principal quantum levels decrease as $n$ increases ($\Delta E \propto 1/n^2$)
+C. Protons repel orbiting electrons at higher shell levels
+D. Speed of light decreases near the ionization limit
+4. Which series of hydrogen spectral emission lines falls entirely within the visible light region of the electromagnetic spectrum? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. Lyman series
+B. Balmer series
+C. Paschen series
+D. Brackett series
+5. What physical process produces emission spectral lines when an electric discharge is passed through low-pressure hydrogen gas? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A. Continuous thermal blackbody radiation
+B. Excited electrons dropping from higher allowed energy levels to lower energy levels, releasing discrete photons
+C. Protons falling into the atomic nucleus
+D. Neutrons splitting into electrons and protons
+6. What happens to a hydrogen atom when an electron absorbs a photon with energy equal to or exceeding its ionization energy ($13.6\ \text{eV}$)? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. The electron drops to $n = 0$
+B. The electron is completely ejected from the atom, leaving a positive $\text{H}^+$ ion
+C. The electron transforms into a neutron
+D. The atom contracts in radius
+7. Which mathematical relationship links photon energy ($\Delta E$), frequency ($\nu$), and wavelength ($\lambda$)? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. $\Delta E = h\lambda / c$
+B. $\Delta E = hc / \lambda$
+C. $\Delta E = h / \nu$
+D. $\Delta E = c / h\lambda$
+8. What fundamental property of atomic electron states is directly proven by the existence of discrete line spectra rather than continuous rainbow spectra? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Electron charge density
+B. Quantization of atomic energy levels
+C. Nuclear fission dynamics
+D. Isotopic abundance
+9. Calculate the energy of a photon with frequency $\nu = 6.00 \times 10^{14}\ \text{Hz}$ [Planck's constant $h = 6.63 \times 10^{-34}\ \text{J}\cdot\text{s}$]. [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. $3.98 \times 10^{-19}\ \text{J}$
+B. $1.11 \times 10^{-48}\ \text{J}$
+C. $4.50 \times 10^{-40}\ \text{J}$
+D. $2.00 \times 10^{-19}\ \text{J}$
+10. The Paschen series of hydrogen line emissions corresponds to electronic transitions terminating at which lower principal energy level? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. $n = 1$
+B. $n = 2$
+C. $n = 3$
+D. $n = 4$
+11. Why is an absorption spectrum composed of dark lines superimposed on a continuous light background? [Type: MCQ; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Cold gas atoms absorb specific photon frequencies corresponding exactly to their electronic excitation energy gaps
+B. Gas molecules reflect all light frequencies
+C. Gas atoms undergo nuclear fusion
+D. Prisms block specific light colors
+12. What spectral line represents the limit of convergence in the Lyman series ($n = \infty \rightarrow n = 1$)?
+A. Lowest energy visible line
+B. Ionization energy line of ground-state hydrogen
+C. Infrared heat radiation line
+D. Microwave rotational line
+13. Which electronic transition in a hydrogen atom absorbs energy?
+A. $n = 1 \rightarrow n = 3$
+B. $n = 4 \rightarrow n = 2$
+C. $n = 3 \rightarrow n = 1$
+D. $n = 5 \rightarrow n = 2$
+14. What color of visible light corresponds to the lowest-energy transition ($n = 3 \rightarrow n = 2$) in the hydrogen Balmer series?
+A. Violet
+B. Blue-green
+C. Red
+D. Yellow
+15. What relationship exists between the wavelength ($\lambda$) of emitted light and the energy gap ($\Delta E$) between electron levels?
+A. Wavelength is directly proportional to energy gap
+B. Wavelength is inversely proportional to energy gap ($\lambda = hc / \Delta E$)
+C. Wavelength is independent of energy gap
+D. Wavelength equals the square of energy gap
+16. What is the energy of a photon with frequency $\nu = 6.00 \times 10^{14}\ \text{Hz}$ [Planck's constant $h = 6.63 \times 10^{-34}\ \text{J}\cdot\text{s}$]?
+A. $3.98 \times 10^{-19}\ \text{J}$
+B. $1.11 \times 10^{-48}\ \text{J}$
+C. $4.50 \times 10^{-40}\ \text{J}$
+D. $2.00 \times 10^{-19}\ \text{J}$
+17. Name the spectral series formed by electron transitions returning to $n = 1$ in the hydrogen atom. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+18. Calculate the frequency ($\nu$) of a photon with wavelength $\lambda = 4.34 \times 10^{-7}\ \text{m}$ [$c = 3.00 \times 10^8\ \text{m/s}$]. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+19. In which region of the electromagnetic spectrum is the Paschen series located? [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+20. State the principal quantum level ($n$) to which excited electrons decay in the Balmer series. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+21. Calculate energy $\Delta E$ in Joules for a transition emitting light at frequency $7.50 \times 10^{14}\ \text{Hz}$ [$h = 6.63 \times 10^{-34}\ \text{J}\cdot\text{s}$]. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+22. What happens to the spacing between adjacent lines in an emission spectrum as frequency increases toward the convergence limit? [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: IB Chemistry SL 2020; Answer-Method: text-exclusive]
+23. State the value of $n$ corresponding to an electron that has been completely removed from the attractive nuclear field of a hydrogen atom. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+24. Calculate the wavelength in nanometers ($\text{nm}$) for a photon with energy $4.09 \times 10^{-19}\ \text{J}$ [$h = 6.63 \times 10^{-34}\ \text{J}\cdot\text{s}, c = 3.00 \times 10^8\ \text{m/s}$]. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+25. Name the laboratory instrument used to separate and measure wavelengths of light emitted by gas discharge tubes. [Type: Hybrid; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+26. **Hydrogen line emission spectra and series classification:** [Type: Theory; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: WAEC 2021 Q4; Answer-Method: text-exclusive]
+(a) Explain the origin of hydrogen emission spectral lines using Bohr's postulates of excitation and de-excitation.
+(b) Identify the three named spectral series (Lyman, Balmer, Paschen), state the lower principal level ($n_{\text{lower}}$) for each, and state their respective electromagnetic regions.
+(c) Explain why the emission spectrum of hydrogen contains many discrete lines even though a single hydrogen atom possesses only one electron.
+27. **Convergence limit and ionization energy calculation:** [Type: Theory; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+(a) Define the term convergence limit in an emission spectrum.
+(b) The convergence limit line of the Lyman series in hydrogen occurs at a frequency $\nu = 3.28 \times 10^{15}\ \text{Hz}$. Calculate the ionization energy of a single hydrogen atom in Joules.
+(c) Calculate the first molar ionization energy of hydrogen in kilojoules per mole ($\text{kJ/mol}$) [$N_\text{A} = 6.02 \times 10^{23}\ \text{mol}^{-1}$].
+28. **Quantitative photon wavelength and energy calculations:** [Type: Theory; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: NECO 2020 Q3; Answer-Method: text-exclusive]
+(a) An electron in a hydrogen atom undergoes a transition from $n = 4$ to $n = 2$, emitting a photon with energy $\Delta E = 4.09 \times 10^{-19}\ \text{J}$. Calculate the frequency ($\nu$) and wavelength ($\lambda$) in meters and nanometers of this spectral line.
+(b) State the color and spectral series associated with this transition.
+(c) Explain how flame test emission colors of metal cations ($\text{Na}^+$ yellow, $\text{K}^+$ lilac, $\text{Cu}^{2+}$ blue-green) relate to atomic electron transitions.
+29. **Continuous vs line spectra and absorption phenomena:** [Type: Theory; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: IB Chemistry SL 2021; Answer-Method: text-exclusive]
+(a) Differentiate clearly between a continuous spectrum (e.g., sunlight passing through a prism) and an atomic line emission spectrum.
+(b) Describe how solar absorption lines (Fraunhofer lines) allow astronomers to determine the elemental chemical composition of the outer solar atmosphere.
+(c) Explain why the absorption spectrum of hydrogen gas at room temperature displays only the Lyman series lines, whereas the emission spectrum displays Lyman, Balmer, and Paschen series lines.
+30. **Energy level diagram interpretation:** [Type: Theory; Subject: Chemistry; Topic: L2.4 The Bohr Model and Emission Spectra; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: non-text-exclusive]
+(a) Draw or describe a detailed energy level diagram for hydrogen showing levels $n = 1, 2, 3, 4, 5, \infty$.
+(b) Annotate vertical arrows representing the lowest energy transition in the Lyman series, the highest energy transition in the Balmer series, and the ionization transition from ground state.
+(c) Show mathematically using $\Delta E \propto (1/n_1^2 - 1/n_2^2)$ why the energy gap between $n = 1$ and $n = 2$ is greater than the total energy span between $n = 2$ and $n = \infty$.

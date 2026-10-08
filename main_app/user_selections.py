@@ -319,6 +319,136 @@ def _scan_text(text: str, where: str, violations: list[str]) -> None:
             )
 
 
+# ── Malformed-LaTeX check (deterministic, inside delimited spans) ─────────────
+#
+# The ASCII check above strips delimited spans before scanning, so it cannot see
+# a span that is *present* but malformed. This catches the other failure mode:
+# math that was correctly wrapped but is not valid LaTeX, and therefore renders
+# wrong even though every other check passes.
+#
+# The universal invariant: `^` and `_` take exactly ONE character. Anything
+# longer must be braced. `M_sun` silently becomes M-subscript-s followed by the
+# ordinary letters "un"; `F_net` and `x^12` fail the same way.
+
+# In LaTeX `^` and `_` take exactly ONE character, so `M_sun` renders as
+# M-subscript-s plus the ordinary letters "un". Two shapes are unambiguous:
+#
+#   * marker + two letters   -> a word label that needed braces: M_sun, F_net
+#   * marker + two digits    -> a multi-digit exponent that needed braces: x^12
+#
+# Shapes that stay silent, because they are genuinely indistinguishable from
+# valid notation (a single-char script followed by a new base term):
+#
+#   * marker + digit + letter -> v_0t, a_1b, x_2y  (v₀t, a₁b, x²y)
+#   * word run followed by another script -> M_sun^2, x^2y^3, a_1b_2
+#
+# Under-flagging here is deliberate: this feeds a compliance gate that can fail
+# a pipeline, so a false positive on valid notation is worse than a miss.
+_UNBRACED_WORD_SCRIPT = _re.compile(r'[_^](?!\{)([A-Za-z])([A-Za-z])')
+_UNBRACED_DIGIT_EXP = _re.compile(r'\^(?!\{)(\d)(\d)')
+
+
+def _scan_math_spans_for_malformed(text: str, where: str,
+                                   violations: list[str]) -> None:
+    """Flags unbraced multi-character sub/superscripts inside $...$ spans."""
+    if not isinstance(text, str) or '$' not in text:
+        return
+    for chunk, protected in _protected_blocks(text):
+        if not protected or ('_' not in chunk and '^' not in chunk):
+            continue
+        found = None
+        for m in _UNBRACED_WORD_SCRIPT.finditer(chunk):
+            # Walk to the end of the word this script character started. If the
+            # whole word is followed by another script, it was a base.
+            end = m.end()
+            while end < len(chunk) and chunk[end].isalnum():
+                end += 1
+            if end < len(chunk) and chunk[end] in '_^':
+                continue
+            found = m.group(0)
+            break
+        if found is None:
+            m = _UNBRACED_DIGIT_EXP.search(chunk)
+            if m:
+                found = m.group(0)
+        if found is not None:
+            excerpt = text.strip().replace('\n', ' ')[:140]
+            violations.append(
+                f"[{where}] has an unbraced multi-character "
+                f"sub/superscript in its LaTeX ({found!r}). `^` and `_` apply "
+                f"to exactly one character, so the extra letters/digits render "
+                f"as ordinary text beside it. Brace the whole script, e.g. "
+                f"`M_{{sun}}` rather than `M_sun`. Field: {excerpt!r}"
+            )
+
+
+def check_option_quality(sequence_manifest: dict) -> list[str]:
+    """
+    Surfaces the mechanical option audits the sim option generator recorded.
+
+    The option stage never fails an item; it records `option_warnings` and
+    `options_generated` on the question and moves on. Without this check those
+    warnings are written and never read, which makes a purely mechanical rule
+    ("the correct option is the longest") indistinguishable from no rule at
+    all. This lifts them into the compliance audit as an ADVISORY.
+
+    Only Sim-format questions are scanned: only they go through the option
+    generator. Bank-copied MCQs have no option_warnings to report.
+
+    Returns a list of violation strings (empty = all pass).
+    """
+    violations: list[str] = []
+    for slot in sequence_manifest.get('ordered_quiz_sequence', []):
+        q = slot.get('question', {}) or {}
+        if not isinstance(q, dict):
+            continue
+        if str(q.get('format', 'Non-Sim')) != 'Sim':
+            continue
+        label = f"Sim slot {slot.get('sequence_index', '?')}"
+        warnings = q.get('option_warnings') or []
+        for w in warnings:
+            violations.append(f'{label} option quality: {w}')
+        if q.get('options_generated') is False:
+            violations.append(
+                f'{label} option quality: the option agent produced no usable '
+                'options, so this item was delivered as free-response instead '
+                'of the requested multiple choice')
+    return violations
+
+
+def check_malformed_latex(sequence_manifest: dict) -> list[str]:
+    """
+    Deterministic check for correctly-delimited but malformed LaTeX.
+
+    Complements check_math_notation, which only inspects text *outside* math
+    delimiters. This one inspects the delimited spans themselves, which is the
+    only place a missing brace can hide.
+
+    Only Sim-format questions are scanned, for the same reason as
+    check_math_notation: they are pipeline-authored and must obey
+    MATH_NOTATION_SPEC, whereas bank-copied text is verbatim.
+
+    Returns a list of violation strings (empty = all pass).
+    """
+    violations: list[str] = []
+    for slot in sequence_manifest.get('ordered_quiz_sequence', []):
+        q = slot.get('question', {}) or {}
+        if not isinstance(q, dict):
+            continue
+        if str(q.get('format', 'Non-Sim')) != 'Sim':
+            continue
+        label = f"Sim slot {slot.get('sequence_index', '?')}"
+        _scan_math_spans_for_malformed(q.get('text') or '',
+                                       f'{label} question', violations)
+        for i, opt in enumerate(q.get('options') or [], start=1):
+            _scan_math_spans_for_malformed(opt, f'{label} option {i}', violations)
+        _scan_math_spans_for_malformed(q.get('correct_answer') or '',
+                                       f'{label} correct_answer', violations)
+        _scan_math_spans_for_malformed(q.get('sim_instruction') or '',
+                                       f'{label} sim_instruction', violations)
+    return violations
+
+
 def _protected_blocks(text: str) -> list[tuple[str, bool]]:
     """Splits text into (chunk, is_protected_math) pairs, where protected
     spans are already-delimited LaTeX (``$..$``, ``$$..$$``,

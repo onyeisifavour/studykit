@@ -1,0 +1,110 @@
+1. An atom of sodium is represented by the nuclide notation $^{23}_{11}\text{Na}$. How many protons, neutrons, and electrons does it contain? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Protons $= 11$, Neutrons $= 12$, Electrons $= 11$
+B. Protons $= 11$, Neutrons $= 23$, Electrons $= 11$
+C. Protons $= 12$, Neutrons $= 11$, Electrons $= 12$
+D. Protons $= 23$, Neutrons $= 11$, Electrons $= 12$
+2. What is the fundamental definition of the unified atomic mass unit ($\text{u}$ or $\text{amu}$)? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. Exactly $1/16\text{th}$ the mass of an oxygen-16 atom
+B. Exactly $1/12\text{th}$ the mass of a carbon-12 atom in its ground state
+C. Mass of a single hydrogen-1 atom
+D. Average mass of a proton and electron
+3. A phosphide ion is represented by $^{31}_{15}\text{P}^{3-}$. What are the correct counts for subatomic particles in this anion? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. $15\text{ p}, 16\text{ n}, 15\text{ e}$
+B. $15\text{ p}, 16\text{ n}, 18\text{ e}$
+C. $15\text{ p}, 31\text{ n}, 12\text{ e}$
+D. $18\text{ p}, 16\text{ n}, 15\text{ e}$
+4. Which subatomic particle possesses a relative electric charge of $-1$ and a relative mass of approximately $1/1836\ \text{u}$? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. Proton
+B. Neutron
+C. Electron
+D. Alpha particle
+5. What total number of nucleons is present in an atom of $^{56}_{26}\text{Fe}$? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. $26$
+B. $30$
+C. $56$
+D. $82$
+6. A neutral species has an atomic number $Z = 17$ and mass number $A = 37$. This species is an atom of: [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Argon-37
+B. Chlorine-37
+C. Potassium-37
+D. Sulfur-37
+7. A cation $\text{M}^{2+}$ contains $18$ electrons and has a mass number of $40$. What is the atomic number ($Z$) of element M? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge IGCSE 0620/32; Answer-Method: text-exclusive]
+A. $16$
+B. $18$
+C. $20$
+D. $22$
+8. Which subatomic particles are located within the dense atomic nucleus? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Electrons and protons only
+B. Protons and neutrons only
+C. Neutrons and electrons only
+D. Protons, neutrons, and electrons
+9. How does a neutral atom transform into a triply charged cation ($\text{X}^{3+}$)? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. By gaining three protons
+B. By losing three electrons from its outer shell
+C. By gaining three neutrons
+D. By losing three protons
+10. What determines the chemical element identity of an atom? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. Number of neutrons ($A - Z$)
+B. Number of protons ($Z$)
+C. Number of valence electrons only
+D. Total mass number ($A$)
+11. An oxide ion $\text{O}^{2-}$ is formed from $^{16}_8\text{O}$. How many total electrons are present in $\text{O}^{2-}$? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge IGCSE 0620/21; Answer-Method: text-exclusive]
+A. $6$
+B. $8$
+C. $10$
+D. $16$
+12. Which two subatomic particles contribute almost entirely to the total mass of an atom? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: NECO 2017; Answer-Method: text-exclusive]
+A. Protons and electrons
+B. Protons and neutrons
+C. Neutrons and electrons
+D. Electrons and positrons
+13. What is the net charge on an atom that contains $26$ protons, $30$ neutrons, and $23$ electrons? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. $0$
+B. $+3$
+C. $-3$
+D. $+4$
+14. How many neutrons are contained in an atom of uranium-238 ($^{238}_{92}\text{U}$)? [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+A. $92$
+B. $146$
+C. $238$
+D. $330$
+15. Two species $^{40}_{18}\text{Ar}$ and $^{40}_{20}\text{Ca}^{2+}$ both have $18$ electrons. They are classified as: [Type: MCQ; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. Isotopes
+B. Isoelectronic species
+C. Allotropes
+D. Isomers
+16. State the atomic number ($Z$) of an element whose neutral atom contains $15$ electrons. [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. Calculate the number of neutrons present in a nuclide of lead-208 ($^{208}_{82}\text{Pb}$). [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+18. What is the relative charge and relative mass (in amu) of a neutron? [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+19. An ion $\text{X}^{2-}$ has $18$ electrons and $18$ neutrons. Write the full nuclide symbol $^{A}_{Z}\text{X}^{2-}$ for this ion. [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+20. Define the term mass number ($A$). [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+21. How many electrons are present in an aluminum cation $^{27}_{13}\text{Al}^{3+}$? [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+22. State the carbon isotope chosen as the universal international standard for the atomic mass unit scale. [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+23. Calculate the total charge in Coulombs of $1.0\ \text{mole}$ of protons [Elementary charge $e = 1.60 \times 10^{-19}\ \text{C}$, $N_\text{A} = 6.02 \times 10^{23}\ \text{mol}^{-1}$]. [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+24. What overall term is used to refer collectively to protons and neutrons in the atomic nucleus? [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: JAMB 2017; Answer-Method: text-exclusive]
+25. Identify the element symbol for a neutral atom with $35$ protons and $45$ neutrons. [Type: Hybrid; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+26. **Fundamental Subatomic Structure and Nuclide Notation** [Type: Theory; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: WAEC 2022 Q3; Answer-Method: text-exclusive]
+(a) Define atomic number ($Z$) and mass number ($A$).
+(b) Complete the following table for neutral atoms and ions:
+$^{39}_{19}\text{K}$: Protons $= ?$, Neutrons $= ?$, Electrons $= ?$
+$^{32}_{16}\text{S}^{2-}$: Protons $= ?$, Neutrons $= ?$, Electrons $= ?$
+$^{56}_{26}\text{Fe}^{3+}$: Protons $= ?$, Neutrons $= ?$, Electrons $= ?$
+(c) Explain why changing the number of neutrons creates an isotope whereas changing the number of protons creates a different element.
+27. **Unified Atomic Mass Standard and Subatomic Quantitative Dynamics** [Type: Theory; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+(a) Define the unified atomic mass unit ($\text{u}$) relative to carbon-12.
+(b) Given the exact masses: Proton $= 1.00728\ \text{u}$, Neutron $= 1.00866\ \text{u}$, Electron $= 0.00055\ \text{u}$. Calculate the mass of a hypothetical unbound $^{12}_6\text{C}$ atom in amu and explain why its actual nuclear mass is slightly less than the sum of its isolated subatomic parts.
+(c) Explain why the mass of electrons is ignored when calculating the mass number ($A$) of an atom.
+28. **Isoelectronic Series and Particle Subatomic Relationships** [Type: Theory; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: NECO 2020 Q4; Answer-Method: text-exclusive]
+(a) Define the term isoelectronic series.
+(b) Consider the species: $\text{N}^{3-}, \text{O}^{2-}, \text{F}^-, \text{Ne}, \text{Na}^+, \text{Mg}^{2+}, \text{Al}^{3+}$.
+State the number of electrons present in every species in this series.
+Arrange these species in order of increasing ionic radius and justify your arrangement based on nuclear proton pull.
+(c) Calculate the proton-to-electron ratio ($p/e$) for $\text{N}^{3-}$ and $\text{Al}^{3+}$ and relate this ratio to electron cloud contraction.
+29. **Subatomic Particle Deflection in Physical Force Fields** [Type: Theory; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+(a) Describe how beams of protons, neutrons, and electrons behave when passed through a uniform perpendicular electric field between two oppositely charged plates.
+(b) Explain why electrons undergo much larger angular deflections than protons in the same electric field strength.
+(c) State why neutrons pass straight through undeflected.
+30. **Quantitative Particle Calculations for Charged Polyatomic Ions** [Type: Theory; Subject: Chemistry; Topic: L2.2 The Nuclear Atom and Subatomic Particles; Format: Non-Sim; Exam: IB Chemistry HL 2020; Answer-Method: text-exclusive]
+(a) Calculate the total number of protons, neutrons, and electrons in one ammonium ion ($^{14}_7\text{N}^1\text{H}_4^+$) [For $\text{H}$, use $Z=1, A=1$].
+(b) Calculate the total number of electrons present in $0.50\ \text{moles}$ of hydroxide ions ($^{16}_8\text{O}^1\text{H}^-$) [$N_\text{A} = 6.02 \times 10^{23}\ \text{mol}^{-1}$].
+(c) A metal ion $\text{M}^{n+}$ has $24$ protons, $28$ neutrons, and $21$ electrons. Determine its mass number ($A$), the value of ionic charge $n$, and identify the metal element M.

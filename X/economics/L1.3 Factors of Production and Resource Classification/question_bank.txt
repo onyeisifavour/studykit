@@ -1,0 +1,110 @@
+1. In economic taxonomy, which factor reward corresponds specifically to the productive contribution of Land? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. Wages
+    B. Interest
+    C. Rent
+    D. Economic Profit
+2. Which characteristic distinguishes Land from other primary factors of production? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: WAEC SC; Answer-Method: text-exclusive]
+    A. Land is completely mobile geographically across national borders.
+    B. The total macro supply of physical land is fixed by nature (perfectly inelastic in supply).
+    C. Land does not undergo any form of environmental degradation or depreciation.
+    D. Land is a man-made tool created to increase factory efficiency.
+3. Human effort—both physical and mental—applied in the commercial generation of goods and services is classified as: [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+    A. Entrepreneurship
+    B. Labor
+    C. Human Capital Investment
+    D. Social Overhead Capital
+4. What is the fundamental functional difference between Capital and Money in microeconomic analysis? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. Capital consists of physical man-made goods used to produce other outputs, whereas money is a financial medium of exchange.
+    B. Capital earns wages, whereas money earns economic profit.
+    C. Capital is perfectly mobile geographically, whereas money cannot cross borders.
+    D. Money undergoes physical depreciation, whereas capital does not depreciate.
+5. Which primary function is performed exclusively by the Entrepreneur among the four factors of production? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Executing manual assembly work on a factory floor.
+    B. Bearing non-insurable business risks and combining productive factors into an operational enterprise.
+    C. Providing natural raw materials extracted from mineral deposits.
+    D. Financing short-run inventory purchases using personal credit cards.
+6. A structural engineer undergoes specialized re-training to transition into software engineering. This transition represents an improvement in: [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+    A. Geographical mobility of labor.
+    B. Occupational mobility of labor.
+    C. Fixed capital accumulation.
+    D. Social overhead capital mobility.
+7. Which barrier directly restricts the geographical mobility of labor within a national economy? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+    A. High occupational licensing qualification hurdles.
+    B. Regional housing price differentials and legal migration restrictions.
+    C. Technological progress in factory automation.
+    D. A reduction in state minimum wage rates.
+8. Which capital classification includes long-lived physical assets such as manufacturing machinery, commercial factory buildings, and heavy transport equipment? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. Circulating capital
+    B. Fixed capital
+    C. Human capital
+    D. Social overhead capital
+9. Raw materials, fuel, and semi-finished component inventory consumed directly during a single production run are classified as: [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: WAEC SC; Answer-Method: text-exclusive]
+    A. Fixed capital
+    B. Circulating (working) capital
+    C. Human capital
+    D. Social overhead capital
+10. Public seaports, inter-state highway networks, national electrical grids, and municipal sanitation systems constructed by the state are classified as: [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. Fixed private capital
+    B. Circulating corporate capital
+    C. Social overhead capital (infrastructure)
+    D. Intangible financial capital
+11. What is the primary economic benefit of investing heavily in Human Capital through public education and technical skills training programs? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Immediate reduction in the depreciation rate of physical machinery.
+    B. Structural improvement in labor productivity and long-run economic growth potential.
+    C. Direct conversion of labor into natural land resources.
+    D. Total elimination of occupational mobility across service industries.
+12. Depreciation of physical capital refers to: [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+    A. The appreciation of currency value in foreign exchange markets.
+    B. The gradual loss of physical efficiency, wear and tear, or obsolescence of fixed capital over time.
+    C. The total wages paid to skilled workers during a financial year.
+    D. The extraction rate of non-renewable natural resources.
+13. How does high occupational factor mobility impact resource allocation efficiency within an economy? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+    A. It increases structural unemployment by locking workers in declining industries.
+    B. It enables productive resources to reallocate rapidly from declining sectors to expanding sectors, enhancing allocative efficiency.
+    C. It reduces the marginal productivity of labor across all commercial sectors.
+    D. It eliminates the need for entrepreneurship in private markets.
+14. What factor reward is earned by owners of Capital goods for lending their monetary savings to firms for physical asset acquisition? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+    A. Rent
+    B. Interest
+    C. Wages
+    D. Pure Profit
+15. If gross investment in physical capital in a given year is less than annual capital depreciation, what happens to the country's net capital stock? [Type: MCQ; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. The net capital stock expands, shifting the PPF outward.
+    B. The net capital stock contracts, reducing future productive capacity.
+    C. The net capital stock remains completely static.
+    D. Human capital automatically doubles to compensate for physical capital loss.
+16. State the specific factor reward earned by Entrepreneurship in a market economy. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+17. A manufacturing firm buys a commercial printing machine for $200,000. The machine depreciates at a constant straight-line rate of 10% per annum of its original purchase value. Calculate the remaining economic accounting value of the machine after 4 years. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+18. A nation has a total capital stock valued at $400 billion at the start of the year. During the year, Gross Fixed Capital Formation totals $65 billion, and total physical depreciation is evaluated at $25 billion. Calculate the Net Investment for the economy. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+19. Classify raw cotton inventory held in a textile factory warehouse into its appropriate capital subtype (Fixed, Circulating, Social Overhead, or Human). [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+20. A factory employs 50 labor workers working 8 hours per day to produce 10,000 unit components daily. Calculate average labor productivity per worker-hour. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+21. Identify the term for public physical infrastructure—such as transport bridges, railways, and municipal water systems—that supports general private economic activities. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+22. State whether strict national occupational licensing laws enhance or restrict the occupational mobility of labor. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+23. A business owner invests $100,000 of personal capital into purchasing delivery vans. The market interest rate on capital loans is 5% per annum. Calculate the annual opportunity cost of using personal capital rather than lending it at the market interest rate. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+24. Classify specialized technical expertise acquired through a 4-year university engineering degree under its appropriate factor of production category. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+25. Identify the factor of production that is uniquely characterized as being completely fixed in total physical quantity by nature on a macro scale. [Type: Hybrid; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: WAEC SC; Answer-Method: text-exclusive]
+26. **Factor Mobility, Structural Unemployment, and Allocative Efficiency** [Type: Theory; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    An industrial nation undergoes a rapid technological transition away from traditional coal mining toward clean solar technology and software engineering.
+    (a) Distinguish between geographical mobility of labor and occupational mobility of labor.
+    (b) Explain two structural barriers that restrict the occupational mobility of former coal miners attempting to transition into software design, and analyze how these barriers generate structural unemployment.
+    (c) Evaluate two microeconomic policy measures a government could implement to increase labor mobility and improve long-run resource allocation efficiency.
+27. **Capital Taxonomy, Depreciation Dynamics, and Economic Growth** [Type: Theory; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+    Capital accumulation is a central determinant of a nation's long-run productive capacity.
+    (a) Categorize and contrast the following four forms of capital: Fixed Capital, Circulating Capital, Social Overhead Capital, and Human Capital. Provide one distinct real-world example for each.
+    (b) An industrial enterprise purchases heavy robotics machinery for $500,000 with an estimated operational lifespan of 8 years and a residual scrap value of $20,000. Calculate the annual straight-line depreciation charge and explain the cause of physical vs. technological depreciation.
+    (c) Analyze the macroeconomic consequence for long-run economic growth if aggregate annual Gross Investment is consistently less than annual national capital depreciation.
+28. **The Functions and Factor Rewards of Entrepreneurship** [Type: Theory; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+    Classical economic theory isolates Entrepreneurship as a distinct factor of production separate from standard labor.
+    (a) Define the economic role of the Entrepreneur and detail four primary functions performed by an entrepreneur in a modern market economy.
+    (b) Differentiate between insurable business risk and non-insurable economic uncertainty. Explain why pure economic profit is considered the explicit reward for bearing non-insurable uncertainty and fostering innovation.
+    (c) Discuss how a severe deficit of entrepreneurial talent in a developing nation impacts the productive utilization of available land, labor, and capital resources.
+29. **Interdependence and Complementarity Among Factors of Production** [Type: Theory; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    Production processes require the simultaneous integration of multiple factor inputs.
+    (a) Explain what is meant by the complementary nature of production factors using a manufacturing firm as an illustrative example.
+    (b) Using marginal productivity analysis, explain how a capital-deepening investment (e.g., providing advanced automated machinery to factory workers) affects the marginal physical product of labor (MPP_L) and equilibrium real wages.
+    (c) Analyze the microeconomic impact on agricultural output and factor prices if a severe natural disaster temporarily eliminates 30% of a region's arable Land while leaving Labor and Capital intact.
+30. **Human Capital Investment and Productivity Analysis** [Type: Theory; Subject: Economics; Topic: L1.3 Factors of Production and Resource Classification; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+    A government allocates $2 billion to establish national vocational technical institutes and worker health facilities.
+    (a) Define Human Capital and detail three primary channels through which human capital formation enhances labor productivity.
+    (b) Contrast the economic returns of investing in human capital versus investing in physical fixed capital in a service-driven modern economy.
+    (c) Evaluate the economic policy trade-off facing a developing country choosing between allocating scarce public funds to higher tertiary education versus primary basic healthcare.

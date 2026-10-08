@@ -1,0 +1,145 @@
+1. Market equilibrium occurs geometrically at the price level where: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Quantity demanded exceeds quantity supplied.
+B. Quantity supplied exceeds quantity demanded.
+C. The demand curve intersects the supply curve (Qd = Qs).
+D. Total fixed costs equal total revenue.
+
+2. If prevailing market price is set above equilibrium (P > P*), the resulting market condition is: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Excess demand (shortage)
+B. Excess supply (surplus)
+C. Allocative efficiency
+D. Deadweight loss elimination
+
+3. In a market experiencing excess demand (shortage), natural price adjustments toward equilibrium occur because: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Unsold inventories force producers to discount prices.
+B. Frustrated buyers bid up prices, incentivizing producers to expand output.
+C. The government mandates an immediate price floor.
+D. Aggregate demand contracts to zero.
+
+4. Given linear demand Qd = 120 - 4P and supply Qs = -20 + 3P, what is the equilibrium price P*? [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. 14.29
+B. 20.00
+C. 23.33
+D. 35.00
+
+5. For demand Qd = 120 - 4P and supply Qs = -20 + 3P, what is the equilibrium quantity Q*? [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. 40
+B. 60
+C. 80
+D. 100
+
+6. The function of the price mechanism that distributes limited available output to consumers willing and able to pay the market price is called the: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Signalling function
+B. Incentive function
+C. Rationing function
+D. Allocative function
+
+7. If market demand increases (shifts rightward) while market supply simultaneously increases (shifts rightward), what is the impact on equilibrium price (P*) and quantity (Q*)? [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. P* rises unambiguously; Q* is indeterminate.
+B. Q* rises unambiguously; P* is indeterminate (depends on shift magnitudes).
+C. Both P* and Q* rise unambiguously.
+D. Both P* and Q* fall unambiguously.
+
+8. If market demand increases (shifts rightward) while market supply decreases (shifts leftward), equilibrium price (P*) will: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. Rise unambiguously
+B. Fall unambiguously
+C. Remain completely unchanged
+D. Be indeterminate
+
+9. An effective statutory price ceiling imposed below market equilibrium (Pmax < P*) results in: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. A persistent market surplus.
+B. A persistent market shortage, queuing, and potential secondary illegal markets.
+C. An immediate shift of supply rightward.
+D. Complete market clearing.
+
+10. A statutory minimum price floor established above equilibrium (Pmin > P*) causes: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Excess supply (surplus)
+B. Excess demand (shortage)
+C. An expansion in quantity demanded
+D. Immediate market clearing
+
+11. What is the signaling function of prices in a market system? [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Raising tax revenues for municipal authorities.
+B. Conveying information to consumers and producers regarding resource scarcity and preference shifts.
+C. Guaranteeing equal wage distributions across labor markets.
+D. Preventing price adjustments during demand shocks.
+
+12. The imposition of a unit indirect tax on a competitive market leads to: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. A lower equilibrium price and higher equilibrium quantity.
+B. A higher equilibrium price and lower equilibrium quantity.
+C. No change in market equilibrium quantity.
+D. An unambiguous rightward shift of the demand curve.
+
+13. A specific subsidy paid to producers shifts supply downward, causing equilibrium price to: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Fall while equilibrium quantity expands.
+B. Rise while equilibrium quantity contracts.
+C. Fall while equilibrium quantity contracts.
+D. Remain unchanged while demand shifts leftward.
+
+14. Given demand Qd = 300 - 5P and supply Qs = 100 + 5P, calculate excess demand when market price is set at P = 15. [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. 50 units
+B. 100 units
+C. 175 units
+D. 225 units
+
+15. If a market is characterized by demand Qd = 100 - P and supply Qs = 20 + 3P, what is the market clearing equilibrium price P*? [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. 10
+B. 20
+C. 30
+D. 40
+
+16. Consumer surplus is visually represented in a competitive equilibrium diagram as the area: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Below the supply curve and above the market price line.
+B. Below the demand curve and above the market equilibrium price line.
+C. Below the supply curve and to the right of equilibrium quantity.
+D. Between the x-axis and y-axis intercept points.
+
+17. Producer surplus at competitive equilibrium represents: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Total consumer expenditure on output.
+B. The difference between total revenue received by producers and minimum total costs required to supply output.
+C. Deadweight economic loss resulting from indirect taxes.
+D. Government subsidy disbursements.
+
+18. Simultaneous leftward shifts in both demand and supply will unambiguously cause equilibrium quantity (Q*) to: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. Fall
+B. Rise
+C. Remain unchanged
+D. Pivot vertically
+
+19. When price acts as an incentive, a price rise encourages existing firms to expand output because: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Marginal cost falls continuously.
+B. Higher market prices increase potential profit margins on additional output units.
+C. Government subsidies increase automatically.
+D. Consumer real purchasing power expands.
+
+20. A decrease in input raw material prices combined with a simultaneous drop in consumer incomes for a normal good will result in: [Type: MCQ; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. An unambiguous drop in equilibrium price (P*).
+B. An unambiguous rise in equilibrium price (P*).
+C. An unambiguous expansion in equilibrium quantity (Q*).
+D. Zero change in equilibrium price.
+
+21. Given linear demand Qd = 500 - 20P and supply Qs = 100 + 20P, calculate the equilibrium price P*. [Type: Hybrid; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+22. For Qd = 500 - 20P and Qs = 100 + 20P, calculate the equilibrium quantity Q*. [Type: Hybrid; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+23. Calculate the magnitude of excess demand (shortage) when price is set at P = 5 for demand Qd = 200 - 10P and supply Qs = 50 + 10P. [Type: Hybrid; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+
+24. Calculate the new equilibrium price if market demand shifts rightward by 40 units to Qd' = 240 - 10P while supply remains Qs = 50 + 10P. [Type: Hybrid; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+25. Identify which equilibrium variable (P* or Q*) is indeterminate when demand decreases (shifts leftward) and supply increases (shifts rightward). [Type: Hybrid; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+
+26. **Market demand and supply functions for an agricultural commodity are given by: Qd = 1000 - 50P and Qs = -200 + 30P.** [Type: Theory; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+(a) Calculate market clearing equilibrium price P* and quantity Q*.
+(b) Calculate the market situation (surplus or shortage) and its numerical magnitude if the government fixes price at P = 20.
+(c) Explain how price mechanism adjustment dynamics restore equilibrium from disequilibrium.
+
+27. **Explain the three dynamic functions of the price mechanism—signalling, incentive, and rationing—in reallocating scarce resources following a major shift in consumer demand preferences.** [Type: Theory; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+28. **Evaluate the microeconomic consequences of a state-imposed maximum price ceiling on urban rental housing, analyzing impacts on equilibrium price, quantity supplied, excess demand, and market efficiency.** [Type: Theory; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+
+29. **Analyze the comparative static outcomes on equilibrium price and quantity when:** [Type: Theory; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+(a) Demand increases while supply remains constant.
+(b) Supply decreases while demand remains constant.
+(c) Demand increases and supply increases simultaneously.
+
+30. **You are a market consultant. Analyze the simultaneous effects of a substantial increase in global jet fuel prices and a post-pandemic recovery in international tourist travel on the equilibrium price and quantity of commercial airline flights.** [Type: Theory; Subject: Economics; Topic: L1.11 Competitive Market Equilibrium and Price Determination; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]

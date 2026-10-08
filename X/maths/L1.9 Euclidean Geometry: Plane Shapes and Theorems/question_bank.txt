@@ -1,0 +1,128 @@
+1. [FIGURE: Circle center O with central angle AOB=110° and inscribed angle ACB on circumference]. Calculate size of angle ACB. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 220°
+B. 110°
+C. 55°
+D. 45°
+
+2. In cyclic quadrilateral ABCD, interior opposite angles are ∠A=x+25° and ∠C=2x−10°. Find x. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. 55°
+B. 60°
+C. 45°
+D. 50°
+
+3. [FIGURE: Circle with tangent PT at T and chord TM. Angle between tangent PT and chord TM is 62°]. Find angle subtended in alternate segment. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WASSCE 2022; Answer-Method: text-exclusive]
+A. 28°
+B. 62°
+C. 124°
+D. 31°
+
+4. An angle subtended by a diameter at the circumference of a circle is always: [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. 45°
+B. 60°
+C. 90°
+D. 180°
+
+5. [DIAGRAM: Triangle ABC with line DE∥BC intersecting AB at D and AC at E. AD=4 cm, DB=6 cm, AE=5 cm]. Calculate EC. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 7.5 cm
+B. 6.0 cm
+C. 8.0 cm
+D. 10.0 cm
+
+6. The exterior angle of a triangle equals 125°. If one interior opposite angle is 55°, find the other interior opposite angle. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. 70°
+B. 65°
+C. 80°
+D. 55°
+
+7. Which congruence criterion applies strictly to right-angled triangles using hypotenuse and one side? [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. SSS
+B. SAS
+C. ASA
+D. RHS
+
+8. Two similar triangles have corresponding sides in linear scale ratio 3:5. Calculate ratio of their areas. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 3:5
+B. 6:10
+C. 9:25
+D. 27:125
+
+9. The angle between a radius and a tangent at the point of contact is: [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. 45°
+B. 60°
+C. 90°
+D. 180°
+
+10. Diagonals of a rhombus always: [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Are equal in length
+B. Bisect each other at right angles
+C. Are parallel
+D. Bisect interior angles into 45° each
+
+11. What is the sum of interior angles of a convex hexagon? [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. 360°
+B. 540°
+C. 720°
+D. 900°
+
+12. A chord of length 16 cm is drawn in a circle of radius 10 cm. Calculate distance from center to chord. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. 6 cm
+B. 8 cm
+C. 12 cm
+D. 5 cm
+
+13. The exterior angle of a cyclic quadrilateral is 82°. Find size of interior opposite angle. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WASSCE 2021; Answer-Method: text-exclusive]
+A. 98°
+B. 82°
+C. 164°
+D. 41°
+
+14. [DIAGRAM: Parallel lines L₁, L₂, L₃ cutting transversals T₁ and T₂ into segments x,6 and 4,8]. Find x. [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 3
+B. 4
+C. 2
+D. 5
+
+15. Angles subtended by the same chord in the same segment of a circle are: [Type: MCQ; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. Supplementary
+B. Complementary
+C. Equal
+D. Doubled
+
+HYBRID QUESTIONS
+16. Calculate angle at circumference subtended by central angle of 140°. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+17. Calculate side length of an equilateral triangle possessing altitude 6√3 cm. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+
+17. Find chord length in circle of radius 13 cm positioned 5 cm from center. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+18. In similar triangles, sides are x,12 and 5,15. Calculate x. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+19. Calculate fourth interior angle of quadrilateral with angles 85°, 95°, 110°. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+19. Calculate angle between two tangents drawn from external point P if central angle is 130°. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+20. Calculate perimeter of rhombus with diagonals 12 cm and 16 cm. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+21. Find angle formed by tangent and chord if angle in alternate segment is 68°. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+
+21. Parallel lines cut transversal segments 3 cm and 9 cm. If second transversal segment is 4 cm, calculate remaining segment. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+22. State interior opposite angle of cyclic quadrilateral if one angle is 72°. [Type: Hybrid; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. [FIGURE: Circle center O with arc AB subtending central angle AOB and inscribed angle ACB on circumference].
+Prove formally that ∠AOB=2∠ACB. [Type: Theory; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: non-text-exclusive]
+
+27. [FIGURE: Circle with tangent PT at T and chord TK drawing angle ∠PTK].
+Prove the Alternate Segment Theorem establishing that ∠PTK equals angle subtended by chord TK in alternate segment. [Type: Theory; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: non-text-exclusive]
+
+28. [FIGURE: Cyclic quadrilateral ABCD inscribed in circle center O, extended side AB to E].
+(a) Prove opposite interior angles ∠A+∠C=180°.
+(b) Deduce that exterior angle ∠CBE=∠ADC. [Type: Theory; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: WASSCE 2021; Answer-Method: non-text-exclusive]
+
+29. [DIAGRAM: Trapezoid ABCD with AB∥CD. Line EF∥AB cuts AD at E and BC at F].
+Given AE=6 cm, ED=9 cm, and BF=8 cm, apply Intercept Theorem to calculate FC and prove AE/ED = BF/FC. [Type: Theory; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: non-text-exclusive]
+
+30. A student asserts that any two triangles sharing two equal side lengths and one equal angle are congruent by SAS.
+(a) Identify the flaw in this statement regarding non-included angles.
+(b) Provide a geometric counterexample (ambiguous case of sine rule) disproving the assertion. [Type: Theory; Subject: Maths; Topic: L1.9 Euclidean Geometry: Plane Shapes and Theorems; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: non-text-exclusive]

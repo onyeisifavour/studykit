@@ -1,0 +1,110 @@
+1. A mixture contains water-soluble sodium chloride and water-insoluble calcium carbonate. Which sequence of operations will yield pure, dry crystals of sodium chloride and a clean residue of calcium carbonate? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Evaporation of the mixture followed by filtration and drying
+B. Addition of water, stirring, filtration, followed by evaporation of the filtrate to crystallization
+C. Simple distillation of the mixture followed by centrifugation
+D. Sublimation of the mixture followed by condensation
+2. A student attempts to separate dissolved copper(II) sulfate from an aqueous solution by gravity filtration using standard quantitative filter paper. What will be observed in the filtrate? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A. Pure water only, with copper(II) sulfate retained on the filter paper
+B. A less concentrated copper(II) sulfate solution
+C. A copper(II) sulfate solution of unchanged concentration
+D. Precipitated copper(II) sulfate crystals
+3. Which physical property difference fundamentally enables the separation of suspended clay particles from water during gravity filtration? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. Boiling point differential
+B. Particle size relative to filter pore dimensions
+C. Relative volatility of solute and solvent
+D. Temperature dependence of solubility
+4. Why is crystallization preferred over direct evaporation to dryness when isolating hydrated copper(II) sulfate ($\text{CuSO}_4\cdot 5\text{H}_2\text{O}$) from an aqueous solution? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Evaporation does not remove water completely
+B. Heating to dryness decomposes the hydrated crystal structure, yielding anhydrous powder or oxide
+C. Copper(II) sulfate sublimes upon heating
+D. Crystallization separates the salt from insoluble impurities more rapidly
+5. During the purification of an impure salt sample by crystallization, why are foreign soluble impurities largely excluded from the growing crystal lattice? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. Impurities evaporate during the cooling process
+B. Impurities remain in the mother liquor because their concentration stays below their solubility limit
+C. Impurities are mechanically trapped on the surface of the filter paper
+D. Impurities undergo chemical neutralization upon cooling
+6. A saturated solution of potassium nitrate is cooled from $60\ ^\circ\text{C}$ to $20\ ^\circ\text{C}$. Which phenomenon drives the formation of solid crystals? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. Increase in solvent volatility
+B. Decrease in solute solubility with decreasing temperature
+C. Thermal decomposition of the solute
+D. Increase in atmospheric pressure on the solution surface
+7. Which combination of substances can be completely separated into its individual pure components using only water, a funnel, filter paper, and an evaporating dish? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. Sodium chloride and sugar
+B. Sand and sodium chloride
+C. Ethanol and water
+D. Iron filings and sulfur powder
+8. Which mixture is best separated by simple evaporation to dryness rather than crystallization? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: JAMB 2017; Answer-Method: text-exclusive]
+A. Hydrated cobalt(II) chloride solution
+B. Aqueous sodium chloride solution where thermal stability is high and anhydrous salt is desired
+C. A mixture of two heat-sensitive organic acids
+D. A suspension of chalk in water
+9. What is the liquid collected in the receiving flask after passing through filter paper during filtration called? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+A. Residue
+B. Distillate
+C. Filtrate
+D. Mother liquor
+10. A solid remaining on filter paper after filtering a suspension of starch in cold water is classified as the: [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. Solute
+B. Filtrate
+C. Residue
+D. Precipitate
+11. Why cannot a mixture of glucose and potassium chloride in aqueous solution be separated by filtration? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Both components are insoluble in water
+B. Both components pass through the filter paper pores as dissolved species
+C. Glucose reacts with potassium chloride to form a precipitate
+D. Filter paper dissolves in sugar solutions
+12. To obtain pure water from a sea water sample containing dissolved salts, which physical technique must be selected? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+A. Filtration
+B. Evaporation to dryness
+C. Simple distillation
+D. Crystallization
+13. When preparing a hot saturated solution for crystallization, why is it necessary to filter the hot mixture before cooling? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. To remove soluble impurities
+B. To remove insoluble suspended impurities that would contaminate the final crystals
+C. To decrease the concentration of the solute
+D. To prevent premature evaporation of the solvent
+14. Which separation method relies entirely on differences in the volatility of the solvent and non-volatility of the solute? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. Gravity filtration
+B. Evaporation
+C. Magnetization
+D. Sieving
+15. What visual indication confirms that a heated aqueous salt solution has reached its crystallization point? [Type: MCQ; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. Evolution of gas bubbles from the bottom of the dish
+B. Formation of a thin crystalline crust on the surface of the liquid or on a cold glass rod dipped into the solution
+C. Complete disappearance of the liquid phase
+D. Color change of the salt crystal lattice
+16. State the operational laboratory term for the solid substance collected on the filter paper during gravity filtration. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+17. A mixture contains $5.0\ \text{g}$ of sand and $5.0\ \text{g}$ of sodium chloride. After dissolving the mixture in water, filtering, and drying the residue, $4.8\ \text{g}$ of sand is recovered. Calculate the percentage recovery of sand. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+18. Identify the specific separation technique used in salt-manufacturing industries to recover crude sodium chloride salt from ocean brine. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+19. Name the liquid phase that passes through a filter paper during the separation of a heterogeneous solid-liquid mixture. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+20. At $60\ ^\circ\text{C}$, the solubility of a salt is $80\ \text{g per } 100\ \text{g water}$, and at $20\ ^\circ\text{C}$ it is $30\ \text{g per } 100\ \text{g water}$. Calculate the mass of crystals deposited when a saturated solution containing $100\ \text{g}$ of water is cooled from $60\ ^\circ\text{C}$ to $20\ ^\circ\text{C}$. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+21. Which separation method is uniquely suitable for separating an insoluble particulate suspension with particle diameters larger than $10\ \mu\text{m}$ from water? [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+22. State the primary physical property differential exploited when separating chalk powder from aqueous salt solution via filtration. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+23. Name the separation process used to obtain pure crystalline sugar from concentrated sugarcane juice without thermal caramelization. [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: Cambridge IGCSE 0620/22; Answer-Method: text-exclusive]
+24. What type of mixture (homogeneous or heterogeneous) is formed by mixing fine barium sulfate powder with pure water? [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: NECO 2017; Answer-Method: text-exclusive]
+25. Why is direct evaporation unsuitable for isolating pure hydrated iron(II) sulfate crystals ($\text{FeSO}_4\cdot 7\text{H}_2\text{O}$) from aqueous solution? [Type: Hybrid; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2016; Answer-Method: text-exclusive]
+26. **Industrial Effluent Separation Protocol** [Type: Theory; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2022 Q3; Answer-Method: text-exclusive]
+An industrial effluent sample contains insoluble silicon dioxide sand, dissolved sodium nitrate, and small insoluble iron metal filings.
+(a) Design a sequential experimental protocol using physical separation techniques to isolate all three components in pure, dry solid forms.
+(b) Explain why magnetic separation should precede filtration in your protocol.
+(c) Justify why crystallization is selected over evaporation to dryness to recover solid sodium nitrate.
+27. **Solubility-Dependent Crystallization of Potassium Chlorate** [Type: Theory; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A student investigates the solubility-dependent crystallization of potassium chlorate ($\text{KClO}_3$).
+(a) Define the term saturated solution.
+(b) Describe the step-by-step laboratory procedure to prepare pure crystals of $\text{KClO}_3$ starting from an impure sample containing soluble sodium chloride as a trace contaminant.
+(c) Explain the physical role of slow cooling versus rapid ice-bath cooling on the size and purity of the resulting crystals.
+28. **Filtration Mechanisms Under Varying Conditions** [Type: Theory; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+Evaluate filtration mechanisms under varying experimental conditions:
+(a) Differentiate between gravity filtration and vacuum (Büchner) filtration in terms of driving force and operational speed.
+(b) Explain why dissolved ionic solutes, such as $\text{Na}^+$ and $\text{Cl}^-$ ions, pass completely through standard filter paper pores despite having hydrated ionic radii.
+(c) State two common experimental errors during gravity filtration that cause residue contamination in the filtrate.
+29. **Thermal Physical Separation Processes and Phase Equilibria** [Type: Theory; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+Thermal physical separation processes rely on energy transfer and phase equilibria.
+(a) Compare direct evaporation to dryness and crystallization with respect to solvent fate, solid purity, and applicability to hydrated salts.
+(b) Explain why heating an aqueous solution of hydrated copper(II) sulfate to complete dryness results in a color change from blue to white.
+(c) Write a balanced chemical equation showing the thermal dehydration of copper(II) sulfate pentahydrate.
+30. **Sea Water Processing for Potable Water and Resource Recovery** [Type: Theory; Subject: Chemistry; Topic: L1.6 Primary Separation Techniques; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A laboratory technician is provided with a $250\ \text{cm}^3$ sample of sea water containing suspended insoluble organic debris and dissolved salts.
+(a) Outline the double-separation procedure required to produce both pure dry insoluble organic debris and dry anhydrous salt.
+(b) If $100\ \text{g}$ of sea water yields $0.5\ \text{g}$ of insoluble debris and $3.5\ \text{g}$ of dry salt upon complete processing, calculate the mass percentage of pure water in the sample.
+(c) Explain why filtration alone cannot convert sea water into potable drinking water.

@@ -194,7 +194,7 @@ class EvaluationRunner:
             max_tokens=1000,
         )
 
-    # ── 3b. Theory batch grading (persistent quiz-note batches) ───────────────
+    # ── 3b. Subjective batch grading (persistent quiz-note batches) ─────────────
 
     def evaluate_theory(
         self,
@@ -203,10 +203,12 @@ class EvaluationRunner:
         on_error:       Callable[[str], None],
     ) -> None:
         """
-        Grades one theory batch (≤15 questions) on the bucketed 0–1 scale,
-        returning one ScoreResult per question with the full EVALUATION note.
+        Grades one subjective batch (≤15 Theory and/or Hybrid questions) on the
+        0–1 scale, returning one ScoreResult per question with the full
+        EVALUATION note. Snapping to credit levels is the caller's job: Theory
+        buckets to five levels, Hybrid rounds to strict binary.
 
-        theory_entries: list of {'label', 'question', 'user_answer',
+        theory_entries: list of {'label', 'type', 'question', 'user_answer',
                                  'correct_answer'} — see
                         theory_marker.eligible_entries().
         """
@@ -225,40 +227,6 @@ class EvaluationRunner:
             on_success=_on_success,
             on_error=on_error,
             max_tokens=2000,
-        )
-
-    # ── 3c. Hybrid strict marking ─────────────────────────────────────────────
-
-    def evaluate_hybrid(
-        self,
-        question:       str,
-        user_answer:    str,
-        correct_answer: str,
-        on_result:      Callable[[bool, str], None],
-        on_error:       Callable[[str], None],
-    ) -> None:
-        """
-        Strict right/wrong marking of a Hybrid typed final answer. Used only
-        after the deterministic fast path (hybrid_marker.hybrid_is_correct_strict)
-        fails to confirm the answer.
-        """
-        user_prompt = prompts.build_hybrid_eval_prompt(
-            question, user_answer, correct_answer
-        )
-
-        from .hybrid_marker import parse_hybrid_verdict
-
-        def _on_success(*args) -> None:
-            response = args[0] if args else ''
-            is_correct, explanation = parse_hybrid_verdict(response)
-            on_result(bool(is_correct), explanation)
-
-        self._api.call(
-            system=prompts.HYBRID_EVAL_SYSTEM,
-            user=user_prompt,
-            on_success=_on_success,
-            on_error=on_error,
-            max_tokens=400,
         )
 
     # ── 4. Summary report ──────────────────────────────────────────────────────
@@ -424,6 +392,30 @@ class EvaluationRunner:
                 on_result=on_result,
                 on_error=on_error,
             )
+
+    def call_sim_option_generator(
+        self,
+        sim_manifest: dict,
+        background_reports: Optional[dict] = None,
+        on_result=None,
+        on_error=None,
+    ) -> None:
+        """
+        Delegate to AgentRunner.call_sim_option_generator().
+
+        Stage 1b of the sim track: a separate agent writes the four options for
+        the MCQ items. Non-fatal — on failure the items stay free-response,
+        since they already carry a correct answer.
+        """
+        if self._agent_runner:
+            self._agent_runner.call_sim_option_generator(
+                sim_manifest=sim_manifest,
+                background_reports=background_reports,
+                on_result=on_result,
+                on_error=on_error,
+            )
+        elif on_result:
+            on_result(sim_manifest)
 
     # ── 10. Agent 3: Candidate Selector ───────────────────────────────────────
 

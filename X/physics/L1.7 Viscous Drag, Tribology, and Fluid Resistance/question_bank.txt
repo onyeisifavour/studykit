@@ -1,0 +1,109 @@
+1. A small smooth sphere of radius $r$ falls at terminal velocity $v_t$ through a liquid of dynamic viscosity $\eta$ and density $\rho_f$. If the sphere density is $\rho_s$, which expression represents $v_t$ under laminar flow conditions, and how does viscous drag scale with speed? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $v_t = \frac{2 r^2 g (\rho_s - \rho_f)}{9 \eta}$; linear drag $F_d \propto v$
+    B. $v_t = \frac{9 r^2 g (\rho_s - \rho_f)}{2 \eta}$; quadratic drag $F_d \propto v^2$
+    C. $v_t = \frac{2 r g (\rho_s - \rho_f)}{9 \eta^2}$; constant drag independent of $v$
+    D. $v_t = \frac{4 \pi r^3 g \rho_s}{6 \pi \eta r}$; linear drag $F_d \propto v$
+2. A metal sphere falling through a tall column of oil reaches terminal velocity. What is the net force acting on the sphere, and which force relation is correct? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. Net force is directed downward; Weight = Viscous Drag.
+    B. Net force is zero; Weight = Upthrust + Viscous Drag.
+    C. Net force is directed upward; Viscous Drag = Upthrust.
+    D. Net force is zero; Upthrust = Weight + Viscous Drag.
+3. Two spherical steel drops of radii $r$ and $2r$ drop through a viscous liquid at low velocities where Stokes' Law holds. What is the ratio of the viscous drag force experienced by the larger sphere to that of the smaller sphere at equal speed? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. $1 : 2$
+    B. $2 : 1$
+    C. $4 : 1$
+    D. $8 : 1$
+4. Under high-speed flow, drag transitions from laminar Stokes drag ($F_d \propto v$) to turbulent quadratic drag ($F_d = \frac{1}{2}\rho v^2 C_d A$). If a car doubles its speed $v$, by what factor does the drag force increase, and how does the required engine power scale? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. Drag quadruples ($4\times$); engine power increases eightfold ($8\times$).
+    B. Drag doubles ($2\times$); engine power quadruples ($4\times$).
+    C. Drag quadruples ($4\times$); engine power quadruples ($4\times$).
+    D. Drag increases eightfold ($8\times$); engine power quadruples ($4\times$).
+5. A spherical raindrop of radius $1.0\text{ mm}$ falls through air ($\eta = 1.8 \times 10^{-5}\text{ Pa s}$) at a terminal speed of $4.5\text{ m s}^{-1}$. Assuming Stokes' Law holds, calculate the viscous drag force. [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $1.53 \times 10^{-6}\text{ N}$
+    B. $3.05 \times 10^{-6}\text{ N}$
+    C. $5.09 \times 10^{-7}\text{ N}$
+    D. $1.22 \times 10^{-5}\text{ N}$
+6. Which set of physical conditions is strictly required for Stokes' Law ($F_d = 6\pi\eta r v$) to remain valid? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Turbulent flow, high speed, non-spherical rigid bodies.
+    B. Smooth spherical body, low speed, laminar unbounded flow.
+    C. Compressible fluid, high Reynolds number, flat surface geometry.
+    D. Vacuum conditions, zero viscosity, bounded cylindrical flow.
+7. A spherical ball of radius $r$ falls through a liquid. If eight such identical small drops coalesce into a single larger drop, how does the terminal velocity $V_{\text{new}}$ of the coalesced drop compare to the original terminal velocity $v_0$? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. $V_{\text{new}} = 2 v_0$
+    B. $V_{\text{new}} = 4 v_0$
+    C. $V_{\text{new}} = 8 v_0$
+    D. $V_{\text{new}} = 16 v_0$
+8. Static friction $\mu_s$ and kinetic friction $\mu_k$ between dry solid surfaces satisfy $\mu_s > \mu_k$. Microscopically, this tribological inequality occurs because: [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. Surface asperities interlock deeper and form stronger cold-weld bonds at rest than during relative motion.
+    B. Kinetic motion increases the effective normal reaction force.
+    C. Static friction depends explicitly on the gross surface contact area.
+    D. Fluid lubrication layers form spontaneously once sliding commences.
+9. A skydiver of mass $70.0\text{ kg}$ jumps from an aircraft. With open parachute, quadratic air drag is $F_d = b v^2$ where $b = 30.0\text{ kg m}^{-1}$. Calculate the terminal velocity attained. Take $g = 9.81\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $4.79\text{ m s}^{-1}$
+    B. $22.9\text{ m s}^{-1}$
+    C. $15.1\text{ m s}^{-1}$
+    D. $6.78\text{ m s}^{-1}$
+10. A block slides down an inclined plane at constant speed. If the incline angle is $\theta$, what is the coefficient of kinetic friction $\mu_k$? [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: JAMB 2012; Answer-Method: text-exclusive]
+    A. $\sin\theta$
+    B. $\cos\theta$
+    C. $\tan\theta$
+    D. $\cot\theta$
+11. An object moving through a fluid experiences a drag coefficient $C_d$. This dimensionless parameter represents: [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Absolute fluid viscosity per unit density.
+    B. Aerodynamic shape efficiency and surface roughness of the body.
+    C. The ratio of gravitational force to buoyant force.
+    D. The speed of sound in the fluid medium.
+12. Streamlining an object reduces total drag at high speeds primarily by: [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+    A. Increasing fluid density at the rear of the object.
+    B. Delaying flow separation and minimizing the turbulent wake area behind the body.
+    C. Eliminating viscous friction at the boundary layer.
+    D. Reducing the mass density of the body.
+13. The dynamic viscosity $\eta$ of a liquid decreases as temperature increases because: [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. Intermolecular cohesive forces weaken with increased thermal kinetic energy.
+    B. Liquid density increases significantly with temperature.
+    C. Surface tension increases, causing smoother flow.
+    D. Molecular momentum transport across layers doubles.
+14. A spherical steel ball of radius $1.5\text{ mm}$ falls through oil ($\eta = 0.80\text{ Pa s}$). At an instant when its speed is $0.050\text{ m s}^{-1}$, calculate the viscous drag force. [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $1.13 \times 10^{-3}\text{ N}$
+    B. $2.26 \times 10^{-3}\text{ N}$
+    C. $3.77 \times 10^{-4}\text{ N}$
+    D. $7.54 \times 10^{-3}\text{ N}$
+15. Two small spheres of identical size but densities $\rho_1$ and $\rho_2$ ($\rho_1 > \rho_2 > \rho_f$) fall through glycerin. The ratio of their terminal velocities $v_1 / v_2$ is: [Type: MCQ; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. $\frac{\rho_1}{\rho_2}$
+    B. $\frac{\rho_1 - \rho_f}{\rho_2 - \rho_f}$
+    C. $\left(\frac{\rho_1 - \rho_f}{\rho_2 - \rho_f}\right)^2$
+    D. $\sqrt{\frac{\rho_1}{\rho_2}}$
+16. A glass sphere of radius $r = 1.50 \times 10^{-3}\text{ m}$ falls at terminal velocity through glycerin ($\rho_f = 1260\text{ kg m}^{-3}, \eta = 1.18\text{ Pa s}$). Glass density is $\rho_s = 2500\text{ kg m}^{-3}$. Calculate terminal velocity $v_t$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+17. A sphere of radius $2.0\text{ mm}$ moves through water ($\eta = 1.0 \times 10^{-3}\text{ Pa s}$) at speed $0.030\text{ m s}^{-1}$. Calculate the Stokes drag force. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+18. An aircraft with projected area $A = 15.0\text{ m}^2$ and drag coefficient $C_d = 0.030$ flies through air ($\rho = 1.20\text{ kg m}^{-3}$) at $100\text{ m s}^{-1}$. Compute the macroscopic quadratic drag force $F_d = \frac{1}{2}\rho v^2 C_d A$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+19. A small metal bead of radius $0.50\text{ mm}$ falling through an oil column reaches a steady terminal speed of $0.020\text{ m s}^{-1}$. If the viscous drag force is $9.42 \times 10^{-7}\text{ N}$, compute the dynamic viscosity $\eta$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+20. A sled of mass $20.0\text{ kg}$ is pulled along horizontal snow at constant velocity by a horizontal rope with tension $T = 39.2\text{ N}$. Compute the coefficient of kinetic friction $\mu_k$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+21. A small oil drop of mass $m = 4.0 \times 10^{-14}\text{ kg}$ falls vertically in air ($\eta = 1.80 \times 10^{-5}\text{ Pa s}$) at terminal velocity. Neglecting air buoyancy, calculate the radius $r$ of the drop if terminal speed is $4.0 \times 10^{-4}\text{ m s}^{-1}$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+22. A high-speed train presents frontal area $A = 10.0\text{ m}^2$ with drag coefficient $C_d = 0.25$ in air ($\rho = 1.25\text{ kg m}^{-3}$). Calculate the mechanical power needed solely to overcome aerodynamic drag at $v = 50.0\text{ m s}^{-1}$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+23. A sphere of radius $r_1$ falling in fluid has terminal velocity $v_1 = 0.12\text{ m s}^{-1}$. A second sphere of the same material but radius $r_2 = 3 r_1$ falls in the same fluid. Compute its terminal velocity $v_2$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+24. A $5.0\text{ kg}$ block sits on a rough $40^\circ$ incline ($\mu_s = 0.50$). Calculate the magnitude of the static friction force acting on the block to keep it at rest. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+25. Calculate the Reynolds number $Re = \frac{\rho v D}{\eta}$ for a sphere of diameter $D = 2.0\text{ mm}$ moving at $0.010\text{ m s}^{-1}$ in water ($\rho = 1000\text{ kg m}^{-3}, \eta = 1.0 \times 10^{-3}\text{ Pa s}$), and state if flow is laminar ($Re < 1$). [Type: Hybrid; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+26. **Formal Derivation of Terminal Velocity Formula from Stokes' Law** [Type: Theory; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    Consider a small, smooth spherical body of radius $r$ and density $\rho_s$ falling under gravity through a motionless viscous fluid of density $\rho_f$ and dynamic viscosity $\eta$.
+    (a) Identify the three forces acting on the sphere during motion and state their directions.
+    (b) Write down the dynamic force balance equation for the accelerating sphere.
+    (c) Prove formally that at mechanical equilibrium (terminal velocity $v_t$), when $\sum \mathbf{F} = 0$, the terminal velocity is given by:
+    $$v_t = \frac{2 r^2 g (\rho_s - \rho_f)}{9 \eta}$$
+    (d) State the experimental conditions necessary for this derivation to remain valid.
+27. **Experimental Determination of Viscosity via Falling-Sphere Methods** [Type: Theory; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A student investigates oil viscosity using small steel spheres and a tall glass tube marked with timing lines.
+    (a) Describe how terminal velocity $v_t$ is experimentally verified using timing marks.
+    (b) A sphere of radius $r = 1.50\text{ mm}$ and density $\rho_s = 7800\text{ kg m}^{-3}$ falls through oil ($\rho_f = 900\text{ kg m}^{-3}$). It covers $0.500\text{ m}$ at terminal speed in $4.20\text{ s}$. Calculate $v_t$ and evaluate $\eta$.
+    (c) Explain the wall effect error introduced if the tube radius is not large compared to $r$, and state how temperature variations affect results.
+28. **Scaling Laws and Transition from Laminar to Turbulent Drag** [Type: Theory; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    (a) Compare linear Stokes drag ($F_d = 6\pi\eta r v$) and quadratic drag ($F_d = \frac{1}{2}\rho v^2 C_d A$) regarding physical origins and velocity dependence.
+    (b) Derive an expression for the crossover velocity $v_c$ at which Stokes drag equals quadratic drag for a sphere of radius $r$.
+    (c) A vehicle moving at speed $v$ experiences drag $F_d = b v^2$. Derive the formula for engine power required, and explain why fuel consumption increases sharply at higher highway speeds.
+29. **Microscopic Tribology and Frictional Dynamics on Inclined Surfaces** [Type: Theory; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    (a) Explain the microscopic physical origins of static and kinetic friction, highlighting adhesive cold-welding and surface roughness asperities.
+    (b) A block $m = 5.0\text{ kg}$ sits on an adjustable inclined plane. As the tilt angle $\theta$ is raised from $0^\circ$, the block stays stationary until $\theta = 35^\circ$, after which it slides down with acceleration $a = 1.2\text{ m s}^{-2}$. Calculate $\mu_s$ and $\mu_k$. Take $g = 9.81\text{ m s}^{-2}$.
+30. **Sedimentation Mechanics in Biological and Environmental Fluids** [Type: Theory; Subject: Physics; Topic: L1.7 Viscous Drag, Tribology, and Fluid Resistance; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    Silt particles in water reservoirs can be modeled as small spheres settling under gravity.
+    (a) Explain why fine silt particles remain suspended far longer than coarse sand grains, citing the $r^2$ dependence in terminal velocity.
+    (b) Compute the terminal velocity of a silt particle ($r = 10.0\text{ \mu m}, \rho_s = 2650\text{ kg m}^{-3}$) in water ($\rho_f = 1000\text{ kg m}^{-3}, \eta = 1.00 \times 10^{-3}\text{ Pa s}$).
+    (c) Calculate the time required for this particle to settle through a still water depth of $5.0\text{ m}$.

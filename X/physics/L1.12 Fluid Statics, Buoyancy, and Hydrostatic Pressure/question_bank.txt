@@ -1,0 +1,109 @@
+1. Hydrostatic pressure $P$ at depth $h$ in liquid of density $\rho$ exposed to surface pressure $P_0$ is $P = P_0 + \rho g h$. If a reservoir $500\text{ m}$ deep contains fluid of density $850\text{ kg m}^{-3}$ ($P_0 = 1.05 \times 10^5\text{ Pa}$), calculate bottom absolute pressure. Take $g = 10.0\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+    A. $4.72 \times 10^6\text{ N m}^{-2}$
+    B. $4.36 \times 10^6\text{ N m}^{-2}$
+    C. $4.28 \times 10^6\text{ N m}^{-2}$
+    D. $4.355 \times 10^6\text{ N m}^{-2}$
+2. Archimedes' Principle states that buoyant upthrust equals: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. Total weight of submerged object.
+    B. Weight of fluid displaced by submerged volume ($F_b = \rho_{\text{fluid}} V_{\text{sub}} g$).
+    C. Gauge pressure at base.
+    D. Surface tension force.
+3. Iron weighs $250\text{ N}$ in air and $200\text{ N}$ in liquid of density $1000\text{ kg m}^{-3}$. Calculate volume of iron. Take $g = 10.0\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+    A. $5.0 \times 10^{-2}\text{ m}^3$
+    B. $2.5 \times 10^{-2}\text{ m}^3$
+    C. $5.0 \times 10^{-3}\text{ m}^3$
+    D. $2.0 \times 10^{-3}\text{ m}^3$
+4. An industrial hydrometer floats in liquids to measure relative density. How are stem calibrations arranged? [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. Denser liquids cause deeper sinking.
+    B. Denser liquids produce greater upthrust per submerged volume; hydrometer floats higher, placing higher relative density marks lower on stem.
+    C. Calibrations are linearly spaced regardless of density.
+    D. Stem readings are independent of density.
+5. Calculate upthrust $F_b$ on an object ($V = 50.0\text{ cm}^3$) fully immersed in water ($\rho = 1000\text{ kg m}^{-3}$). Take $g = 10.0\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+    A. $0.50\text{ N}$
+    B. $5.00\text{ N}$
+    C. $50.0\text{ N}$
+    D. $0.05\text{ N}$
+6. A submarine ballast system achieves neutral buoyancy by: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. Increasing hull displacement.
+    B. Adjusting water/air ballast ratio until average submarine density equals seawater density ($\rho_{\text{sub}} = \rho_{\text{sea}}$).
+    C. Increasing downward motor thrust.
+    D. Reducing hull surface tension.
+7. A wooden block of density $600\text{ kg m}^{-3}$ floats in water ($\rho = 1000\text{ kg m}^{-3}$). What fraction of its volume is submerged? [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $40\%$
+    B. $60\%$
+    C. $80\%$
+    D. $50\%$
+8. A metal sphere of radius $3.0\text{ cm}$ is fully immersed in a cylinder of water, raising water level by $1.0\text{ cm}$. Calculate cylinder radius. [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: JAMB 2001; Answer-Method: text-exclusive]
+    A. $6.0\text{ cm}$
+    B. $12.0\text{ cm}$
+    C. $3.0\text{ cm}$
+    D. $3.87\text{ cm}$
+9. Stable floating equilibrium requires that metacenter $M$ lies: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. Below center of gravity $G$.
+    B. Above center of gravity $G$, creating a restoring couple.
+    C. Coincident with center of buoyancy $B$.
+    D. At water surface always.
+10. Gauge pressure is defined mathematically as: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. $P_{\text{absolute}} + P_{\text{atmospheric}}$
+    B. $P_{\text{absolute}} - P_{\text{atmospheric}} = \rho g h$
+    C. $\frac{P_{\text{absolute}}}{P_{\text{atmospheric}}}$
+    D. $P_{\text{atmospheric}} - \rho g h$
+11. An ice cube floats in a glass brimful with water. When the ice completely melts, what happens to the water level? [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: JAMB 1999; Answer-Method: text-exclusive]
+    A. Water overflows.
+    B. Water level drops.
+    C. Water level remains unchanged.
+    D. Water level fluctuates.
+12. Specific gravity (Relative Density) is defined as: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+    A. Substance density divided by pure water reference density at $4^\circ\text{C}$.
+    B. Substance weight divided by surface area.
+    C. Mass multiplied by volume.
+    D. Atmospheric pressure divided by liquid pressure.
+13. Hydrostatic pressure at a point in a static fluid acts: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. Vertically downward only.
+    B. Equally in all directions perpendicular to any contact surface.
+    C. Horizontally along depth axis.
+    D. In direction of flow.
+14. An oil layer ($\rho_{\text{oil}} = 800\text{ kg m}^{-3}$) of depth $0.20\text{ m}$ floats on water ($\rho_w = 1000\text{ kg m}^{-3}$) of depth $0.50\text{ m}$. Compute bottom gauge pressure. Take $g = 9.81\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $6475\text{ Pa}$
+    B. $4905\text{ Pa}$
+    C. $1570\text{ Pa}$
+    D. $6867\text{ Pa}$
+15. Vessel displacement volume in naval architecture refers to: [Type: MCQ; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. Maximum total hull volume.
+    B. Displaced water volume whose weight equals total vessel mass.
+    C. Ballast tank air volume.
+    D. Height of waterline above keel.
+16. Calculate absolute pressure at depth $h = 20.0\text{ m}$ in seawater ($\rho = 1025\text{ kg m}^{-3}$) given $P_0 = 1.013 \times 10^5\text{ Pa}$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+17. A solid crown weighs $25.0\text{ N}$ in air and $23.4\text{ N}$ in water ($\rho_w = 1000\text{ kg m}^{-3}$). Calculate relative density. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+18. A block of wood ($V = 0.020\text{ m}^3, \rho = 700\text{ kg m}^{-3}$) floats in water. Calculate submerged volume $V_{\text{sub}}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+19. Compute upward force on a submarine window ($r = 0.15\text{ m}$) at depth $h = 100\text{ m}$ in water ($\rho = 1000\text{ kg m}^{-3}$). Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+20. A hydrometer ($m = 0.040\text{ kg}$, stem area $A = 0.50\text{ cm}^2$) floats in liquids. Compute distance between stem marks for densities $1000\text{ kg m}^{-3}$ and $800\text{ kg m}^{-3}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+21. Calculate density of a mixture of $21\text{ g}$ alcohol ($\rho = 0.70\text{ g cm}^{-3}$) and $10\text{ g}$ water ($\rho = 1.0\text{ g cm}^{-3}$). [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+22. A rectangular barge ($10.0\text{ m} \times 4.0\text{ m}$) floats in water. Loading coal increases draft by $0.50\text{ m}$. Compute coal mass added. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+23. A solid metal cube ($edge = 0.10\text{ m}, \rho = 8000\text{ kg m}^{-3}$) suspended in oil ($\rho_{\text{oil}} = 900\text{ kg m}^{-3}$) hangs from a string. Compute tension. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+24. A balloon ($R = 3.0\text{ m}$) filled with helium ($\rho_{\text{He}} = 0.18\text{ kg m}^{-3}$) floats in air ($\rho_{\text{air}} = 1.25\text{ kg m}^{-3}$). Compute net payload capacity. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+25. Compute gauge pressure at the base of $0.76\text{ m}$ mercury column ($\rho_{\text{Hg}} = 13600\text{ kg m}^{-3}$). Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+26. **Formal Proof: Derivation of Archimedes' Principle from Hydrostatic Equations** [Type: Theory; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Consider a vertical submerged cylinder ($A, h = y_2 - y_1$) in static liquid $\rho_f$. Write downward force $F_1$ at top $y_1$ and upward force $F_2$ at base $y_2$.
+    (b) Derive net vertical hydrostatic pressure force $F_b = F_2 - F_1$, proving Archimedes' Principle:
+    $$F_b = \rho_f V_{\text{sub}} g$$
+    (c) Prove Archimedes' Principle for arbitrary shapes using divergence theorem on surface pressure integrals $\mathbf{F}_b = -\iint P d\mathbf{A}$.
+27. **Hydrometer Mechanics and Stratified Flotation Equilibrium** [Type: Theory; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    An industrial hydrometer ($M = 0.050\text{ kg}, V_0 = 4.0 \times 10^{-5}\text{ m}^3$) has a stem ($A = 0.40\text{ cm}^2$).
+    (a) Derive submerged stem length $y$ as function of liquid density $\rho_f$.
+    (b) Calculate $y$ in water ($\rho = 1000\text{ kg m}^{-3}$) and brine ($\rho = 1150\text{ kg m}^{-3}$).
+    (c) Analyze flotation equilibrium for a body straddling two immiscible liquid layers.
+28. **Stability and Metacentric Height in Naval Engineering** [Type: Theory; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    (a) Distinguish Center of Gravity ($G$) from Center of Buoyancy ($B$).
+    (b) Explain how tilting shifts Center of Buoyancy to $B'$, defining Metacenter $M$.
+    (c) Derive stability condition based on metacentric height $GM = BM - BG$.
+    (d) Analyze stability impact of raising deck cargo vs filling keel ballast tanks.
+29. **Experimental Determination of Relative Density** [Type: Theory; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    (a) Describe a U-tube manometer experiment comparing two immiscible liquids to measure relative density.
+    (b) Derive working formula $\rho_{\text{oil}} h_{\text{oil}} = \rho_w h_w$.
+    (c) A solid weighs $4.00\text{ N}$ in air, $2.50\text{ N}$ in water, and $2.80\text{ N}$ in liquid X. Calculate density of solid and density of liquid X.
+30. **Submarine Ballast Mechanics and Pressure Hull Design** [Type: Theory; Subject: Physics; Topic: L1.12 Fluid Statics, Buoyancy, and Hydrostatic Pressure; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A submarine ($hull = 2500\text{ m}^3, dry\ mass = 2.0 \times 10^6\text{ kg}$) operates in seawater ($\rho = 1025\text{ kg m}^{-3}$).
+    (a) Calculate ballast water volume required for neutral buoyancy.
+    (b) Calculate absolute pressure and net crushing force on a hatch ($A = 1.2\text{ m}^2$) at depth $300\text{ m}$. Take $g = 9.81\text{ m s}^{-2}$.
+    (c) Explain compressed air blowing mechanisms used for emergency surfacing.

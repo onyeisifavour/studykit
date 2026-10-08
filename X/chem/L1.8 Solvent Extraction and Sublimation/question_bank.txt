@@ -1,0 +1,110 @@
+1. A laboratory mixture contains solid ammonium chloride ($\text{NH}_4\text{Cl}$) and solid sodium chloride ($\text{NaCl}$). Which technique isolates pure $\text{NH}_4\text{Cl}$ directly in a single heating step? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: JAMB 1978; Answer-Method: text-exclusive]
+A. Gravity filtration
+B. Sublimation
+C. Simple distillation
+D. Paper chromatography
+2. Which structural feature of a separating funnel enables the clean mechanical separation of two immiscible liquids? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Fractionating column packing
+B. Stopcock valve at the narrow lower stem allowing controlled liquid drainage
+C. Porous glass membrane
+D. Condenser water jacket
+3. When water (density $= 1.00\ \text{g/cm}^3$) and dichloromethane (density $= 1.33\ \text{g/cm}^3$) are shaken in a separating funnel and allowed to settle, which layer forms the bottom phase? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. Aqueous layer
+B. Dichloromethane layer
+C. Emulsion middle layer
+D. Gaseous vapor layer
+4. Solid iodine ($\text{I}_2$) changes directly into a purple vapor upon gentle heating without melting. What is this phase transition called? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. Evaporation
+B. Sublimation
+C. Condensation
+D. Deposition
+5. Why is performing three sequential $15\ \text{cm}^3$ extractions with organic solvent more efficient than performing one single $45\ \text{cm}^3$ extraction? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: AP Chemistry 2018; Answer-Method: text-exclusive]
+A. It changes the organic solvent density
+B. Mathematical equilibrium distribution dictates higher total solute partition recovery across multiple small volumes
+C. Multiple extractions destroy the solute structure
+D. Single extractions cause instant evaporation
+6. Which substance undergoes sublimation upon heating at standard atmospheric pressure? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Sodium hydroxide ($\text{NaOH}$)
+B. Naphthalene ($\text{C}_{10}\text{H}_8$)
+C. Calcium carbonate ($\text{CaCO}_3$)
+D. Copper(II) sulfate ($\text{CuSO}_4$)
+7. What physical property must two liquid solvents possess to be used in solvent extraction with a separating funnel? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. Identical boiling points
+B. High mutual immiscibility and differing solute solubilities
+C. Identical molecular masses
+D. High electrical conductivity
+8. During sublimation of iodine mixed with sand, where does pure iodine deposit as crystalline solid? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. At the bottom of the heated beaker
+B. On the underside of an ice-cooled watch glass placed over the beaker
+C. Inside the filter paper pores
+D. In the receiving measuring cylinder
+9. Caffeine is extracted from aqueous tea solution using ethoxyethane. Which physical constant governs the ratio of caffeine concentrations in the two phases at equilibrium? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: IB Chemistry HL 2019; Answer-Method: text-exclusive]
+A. Retention Factor ($R_f$)
+B. Partition Coefficient / Distribution Coefficient ($K_\text{D}$)
+C. Avogadro Constant ($N_\text{A}$)
+D. Faraday Constant ($F$)
+10. A mixture contains iron powder, ammonium chloride, and sand. Which operational sequence yields all three substances separated? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Dissolution in water, filtration, evaporation
+B. Magnetic separation, sublimation of residue, washing remaining sand with water and drying
+C. Simple distillation followed by paper chromatography
+D. Direct heating to dryness followed by sieving
+11. What safety precaution must be taken when shaking an organic solvent and aqueous solution inside a closed separating funnel? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge A-Level 9701/31; Answer-Method: text-exclusive]
+A. Heating the funnel over an open Bunsen burner
+B. Periodically inverting the funnel and opening the stopcock to vent vapor pressure build-up
+C. Sealing the stopcock with glue
+D. Adding concentrated acid to accelerate phase separation
+12. Which solid transforms directly from gas back to solid without passing through the liquid state? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. Water ice at $0\ ^\circ\text{C}$
+B. Carbon dioxide gas depositing as dry ice below $-78.5\ ^\circ\text{C}$
+C. Molten sodium chloride cooling
+D. Liquid ethanol freezing
+13. Kerosene and water form two distinct layers when mixed. This mixture is classified as: [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+A. Miscible liquids
+B. Immiscible liquids
+C. Saturated solution
+D. Homogeneous compound
+14. What happens when a mixture of dry ice (solid $\text{CO}_2$) and table salt ($\text{NaCl}$) is warmed to room temperature? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. Salt sublimes leaving dry ice
+B. Carbon dioxide sublimes into gas leaving solid sodium chloride residue
+C. Both substances decompose into elements
+D. A liquid solution of sodium chloride forms
+15. An organic compound has a partition coefficient $K_\text{D} = [\text{organic}] / [\text{aqueous}] = 4.0$. If $1.0\ \text{g}$ of solute is dissolved in $100\ \text{cm}^3$ water and extracted with $100\ \text{cm}^3$ organic solvent, how much solute remains in water? [Type: MCQ; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+A. $0.80\ \text{g}$
+B. $0.20\ \text{g}$
+C. $0.50\ \text{g}$
+D. $0.00\ \text{g}$
+16. State the term for the phase change where a gas transitions directly into a solid without forming a liquid. [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. Name two non-metallic chemical elements that readily undergo sublimation upon gentle heating at atmospheric pressure. [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+18. What laboratory piece of apparatus is specifically used to separate two immiscible liquids based on density differences? [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+19. Ether (density $= 0.71\ \text{g/cm}^3$) and water (density $= 1.00\ \text{g/cm}^3$) are placed in a separating funnel. Which liquid forms the upper layer? [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+20. Identify the white cloud deposit observed on the cool upper walls of a test tube when ammonium chloride solid is gently heated. [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: JAMB 1978; Answer-Method: text-exclusive]
+21. Write the equilibrium expression for partition coefficient $K_\text{D}$ of solute S between solvent A (organic) and solvent B (water). [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+22. What happens to the density layer positioning in a separating funnel if water is replaced by saturated sodium chloride solution (density $= 1.20\ \text{g/cm}^3$) when extracting with ethyl acetate (density $= 0.90\ \text{g/cm}^3$)? [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+23. Name one commercial household product containing naphthalene that utilizes sublimation to repel insects. [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+24. Calculate the partition coefficient $K_\text{D}$ if $0.60\ \text{mol/dm}^3$ of solute dissolves in the organic layer and $0.15\ \text{mol/dm}^3$ remains in the aqueous layer at equilibrium. [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+25. Why can solid iodine be separated from solid sodium chloride using sublimation? [Type: Hybrid; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+26. **Iodine, Ammonium Chloride, and Sodium Chloride Separation** [Type: Theory; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: JAMB 1978 / WAEC 2021; Answer-Method: text-exclusive]
+A student is provided with a solid mixture containing iodine ($\text{I}_2$), ammonium chloride ($\text{NH}_4\text{Cl}$), and sodium chloride ($\text{NaCl}$).
+(a) Explain why iodine sublimes at mild temperatures whereas sodium chloride requires temperatures above $800\ ^\circ\text{C}$ to melt.
+(b) Describe a procedure to separate iodine from sodium chloride using a beaker, ice-cooled watch glass, and Bunsen burner.
+(c) Explain why ammonium chloride decomposes upon heating into ammonia and hydrogen chloride gas, which recombine on cool surfaces to form a white sublimate deposit.
+27. **Liquid-Liquid Extraction in Pharmaceutical Synthesis** [Type: Theory; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+Liquid-liquid extraction is widely used in pharmaceutical synthesis.
+(a) Define the term immiscible liquids and provide one example pair.
+(b) Explain step-by-step how to isolate an organic acid dissolved in water using diethyl ether in a separating funnel.
+(c) Derive mathematically why two sequential $25\ \text{cm}^3$ extractions recover more solute than a single $50\ \text{cm}^3$ extraction given $K_\text{D} = 3.0$ and $V_{\text{aq}} = 50\ \text{cm}^3$.
+28. **Sublimation Dynamics and Thermodynamics** [Type: Theory; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: NECO 2020 Q2; Answer-Method: non-text-exclusive]
+Sublimation dynamics are governed by vapor pressure and intermolecular forces.
+(a) Define sublimation and deposition from a thermodynamic perspective.
+(b) Draw an experimental setup placeholder for laboratory sublimation of an impure naphthalene sample.
+(c) Explain why dry ice (solid $\text{CO}_2$) sublimes at $-78.5\ ^\circ\text{C}$ at $1\ \text{atm}$ pressure rather than melting into liquid carbon dioxide.
+29. **Caffeine Extraction from Plant Extract** [Type: Theory; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: IB Chemistry HL 2021; Answer-Method: text-exclusive]
+A forensic sample contains caffeine dissolved in an aqueous plant extract.
+(a) Select an appropriate organic solvent for caffeine extraction (caffeine solubility: water $= 2.1\ \text{g}/100\ \text{cm}^3$, dichloromethane $= 14.0\ \text{g}/100\ \text{cm}^3$). Justify your choice.
+(b) Describe how to dry the recovered organic layer and remove the organic solvent to obtain pure caffeine crystals.
+(c) Calculate the mass of caffeine extracted from $100\ \text{cm}^3$ of aqueous solution containing $0.50\ \text{g}$ caffeine using $50\ \text{cm}^3$ dichloromethane if $K_\text{D} = 6.67$.
+30. **Comparative Physical Separation Systems** [Type: Theory; Subject: Chemistry; Topic: L1.8 Solvent Extraction and Sublimation; Format: Non-Sim; Exam: WAEC 2019 Q5; Answer-Method: text-exclusive]
+Compare physical separation systems:
+(a) Differentiate between solvent extraction and simple distillation in terms of energy consumption and solute suitability.
+(b) Explain why an emulsion sometimes forms during separating funnel agitation and how adding saturated $\text{NaCl}$ solution ("salting out") resolves it.
+(c) Design a sequential flow separation for a ternary solid mixture of benzoic acid, sand, and sodium chloride.

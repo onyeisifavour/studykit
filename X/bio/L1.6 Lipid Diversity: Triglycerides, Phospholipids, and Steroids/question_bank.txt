@@ -1,0 +1,108 @@
+1. Which chemical property accounts for the lower mass-to-energy ratio of stored triglycerides compared to hydrated glycogen in animal tissue? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2021; Answer-Method: text-exclusive]
+A. Triglycerides contain more oxidized carbon atoms than glycogen.
+B. Triglycerides are stored in an unhydrated form due to their hydrophobic nature.
+C. Triglycerides form glycosidic bonds that release extra energy when hydrolyzed.
+D. Triglycerides contain fewer hydrogen atoms per carbon atom than glycogen.
+2. Analysis of a fatty acid reveals three double bonds along its hydrocarbon chain, each with hydrogen atoms positioned on the same side of the carbon-carbon double bond. How is this fatty acid correctly classified? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 2020; Answer-Method: text-exclusive]
+A. Saturated trans-fatty acid
+B. Monounsaturated cis-fatty acid
+C. Polyunsaturated cis-fatty acid
+D. Polyunsaturated trans-fatty acid
+3. What structural feature enables phospholipids to form stable bilayers in aqueous cellular environments? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: AP Biology 2019; Answer-Method: text-exclusive]
+A. Saturated fatty acyl tails that pack densely
+B. Amphipathic nature with polar head groups and non-polar tails
+C. Three ester bonds connecting glycerol to polar phosphate groups
+D. Fused four-ring carbon frameworks that exclude water
+4. Which lipid molecule contains a characteristic fused four-ring carbon skeleton? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2018; Answer-Method: text-exclusive]
+A. Triacylglycerol
+B. Phosphatidylcholine
+C. Cholesterol
+D. Glyceryl tristearate
+5. How many water molecules are produced during the complete synthesis of one triglyceride molecule from glycerol and three fatty acids? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. 1
+B. 2
+C. 3
+D. 4
+6. What type of bond is formed between the hydroxyl group of glycerol and the carboxyl group of a fatty acid during lipogenesis? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge IGCSE 0610/22/Ma; Answer-Method: text-exclusive]
+A. Peptide bond
+B. Ester bond
+C. Phosphodiester bond
+D. Glycosidic bond
+7. Which fatty acid configuration introduces a distinct kink in the hydrocarbon chain, preventing close packing and lowering the melting point? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2022; Answer-Method: text-exclusive]
+A. Saturated
+B. Cis-unsaturated
+C. Trans-unsaturated
+D. Conjugated saturated
+8. Why are lipids preferred over carbohydrates for long-term energy storage in mobile animals? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: AP Biology 2020; Answer-Method: text-exclusive]
+A. Lipids can be metabolized under anaerobic conditions.
+B. Lipids yield roughly twice the energy per gram compared to carbohydrates.
+C. Lipids dissolve rapidly in the bloodstream for transport.
+D. Lipids exert higher osmotic pressure in cellular storage vesicles.
+9. Which enzyme class catalyzes the cleavage of ester bonds in triglycerides during lipid mobilization? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Amylases
+B. Proteases
+C. Lipases
+D. Isomerases
+10. Which statement comparing steroids and triglycerides is correct? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 2018; Answer-Method: text-exclusive]
+A. Both contain glycerol backbones.
+B. Both are completely insoluble in non-polar solvents.
+C. Steroids lack fatty acid chains and ester bonds.
+D. Triglycerides contain a four-ring carbon architecture.
+11. What accounts for the structural difference between a saturated and a monounsaturated fatty acid? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2017; Answer-Method: text-exclusive]
+A. Saturated fatty acids contain one double bond.
+B. Monounsaturated fatty acids contain exactly one double bond.
+C. Saturated fatty acids contain branched carbon chains.
+D. Monounsaturated fatty acids possess polar side chains.
+12. Which statement correctly describes trans-fatty acids? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: AP Biology 2021; Answer-Method: text-exclusive]
+A. Hydrogens at double bonds are on the same side, creating flexible kinks.
+B. Hydrogens at double bonds are on opposite sides, maintaining a linear acyl chain.
+C. They occur in high abundance in natural unrefined plant oils.
+D. They lack carbon-carbon double bonds entirely.
+13. What occurs when phospholipids are placed into an aqueous environment? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. They dissolve into individual monomers.
+B. Hydrophobic heads face outward toward water.
+C. They self-assemble into bilayers with hydrophobic tails shielded internally.
+D. They form covalent peptide links between adjacent phosphate groups.
+14. What is the approximate energy yield per gram of lipid upon complete oxidation? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge IGCSE 0610/11/J; Answer-Method: text-exclusive]
+A. $17\text{ kJ}\cdot\text{g}^{-1}$
+B. $37\text{ kJ}\cdot\text{g}^{-1}$
+C. $4.18\text{ kJ}\cdot\text{g}^{-1}$
+D. $100\text{ kJ}\cdot\text{g}^{-1}$
+15. What primary role does cholesterol play in animal plasma membranes? [Type: MCQ; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2020; Answer-Method: text-exclusive]
+A. Acts as a primary receptor for peptide hormones.
+B. Catalyzes ATP synthesis across the lipid bilayer.
+C. Modulates membrane fluidity across physiological temperatures.
+D. Anchors mRNA molecules during active protein translation.
+16. State the number of ester bonds present in a single fully assembled triglyceride molecule. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 2019; Answer-Method: text-exclusive]
+17. A fatty acid has the molecular formula $\mathrm{C_{18}H_{34}O_2}$. Calculate the number of carbon-carbon double bonds contained within its hydrocarbon chain. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2019; Answer-Method: text-exclusive]
+18. Calculate the total energy released (in $\text{kJ}$) when $15\text{ g}$ of pure fat is completely oxidized, assuming an energy density of $37\text{ kJ}\cdot\text{g}^{-1}$. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: AP Biology 2018; Answer-Method: text-exclusive]
+19. Identify the functional group formed when the $-\mathrm{OH}$ group of glycerol reacts with the $-\mathrm{COOH}$ group of a fatty acid. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+20. Name the structural component of a phospholipid molecule that imparts its hydrophilic property. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+21. Calculate the mass of water (in grams) associated with storing $100\text{ g}$ of glycogen in human liver tissue, assuming glycogen binds $2.5\text{ g}$ of water per gram of carbohydrate. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2021; Answer-Method: text-exclusive]
+22. State the term used to describe molecules that possess distinct hydrophilic and hydrophobic regions. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 2021; Answer-Method: text-exclusive]
+23. A sample of lipid yields $1.5\text{ moles}$ of glycerol upon complete enzymatic hydrolysis. State how many moles of fatty acid molecules are liberated. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: AP Biology 2022; Answer-Method: text-exclusive]
+24. Name the specific steroid molecule that serves as the metabolic precursor for synthesized human steroid hormones such as estrogen and testosterone. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2022; Answer-Method: text-exclusive]
+25. Identify whether a cis- or trans-unsaturated fatty acid exhibits a higher melting point, and state the structural basis for this difference. [Type: Hybrid; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 2022; Answer-Method: text-exclusive]
+26. **Comparative Bioenergetics and Structural Biochemistry of Storage Lipids** [Type: Theory; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2020/TZ2; Answer-Method: text-exclusive]
+An investigation compares adipose lipid storage with hepatic glycogen storage in mammals.
+(a) Describe the condensation reaction leading to triglyceride formation, specifying the functional groups involved and the stoichiometry of reactants and products.
+(b) Contrast the structural differences between saturated, cis-monounsaturated, and trans-unsaturated fatty acids, detailing how double bond geometry affects molecular packing and melting point.
+(c) Calculate the total wet storage mass required for a human to store $600,000\text{ kJ}$ of energy as (i) pure unhydrated triglyceride ($37\text{ kJ}\cdot\text{g}^{-1}$) versus (ii) hydrated glycogen ($17\text{ kJ}\cdot\text{g}^{-1}$, associated with $2.5\text{ g}$ $\mathrm{H_2O}$ per gram of glycogen). Show all steps.
+27. **Phospholipid Bilayers and Biophysical Dynamics of Cell Membranes** [Type: Theory; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 9700/41/M/J; Answer-Method: text-exclusive]
+Phospholipids and steroids govern cell membrane architecture and physical dynamics.
+(a) Explain how the amphipathic nature of phospholipids causes spontaneous self-assembly into a lipid bilayer in aqueous media.
+(b) Compare the molecular structure of a phospholipid with that of a triglyceride.
+(c) Explain the role of cholesterol in maintaining membrane stability and fluidity across elevated and reduced physiological temperatures.
+28. **Thermodynamic Analysis of Lipid Hydrolysis** [Type: Theory; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: AP Biology 2021/FRQ; Answer-Method: text-exclusive]
+A biochemistry laboratory measures the enzymatic breakdown of a triacylglycerol molecule containing one stearic acid ($\mathrm{C_{18}H_{36}O_2}$), one oleic acid ($\mathrm{C_{18}H_{34}O_2}$), and one linoleic acid ($\mathrm{C_{18}H_{32}O_2}$).
+(a) Write a balanced molecular equation for the complete enzymatic hydrolysis of this triacylglycerol into its constituent components.
+(b) Identify which of the three fatty acids is polyunsaturated, and state the number of double bonds present in its hydrocarbon chain.
+(c) Deduce the number of hydrogen atoms present in a triglyceride molecule formed exclusively from three oleic acid molecules ($\mathrm{C_{18}H_{34}O_2}$).
+29. **Steroid Architecture and Physiological Function** [Type: Theory; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: IB Biology 2019/TZ1; Answer-Method: text-exclusive]
+Steroids represent a distinct class of non-saponifiable lipids.
+(a) Describe the core carbon skeleton shared by steroid lipid molecules.
+(b) Contrast steroids with triglycerides in terms of molecular structure, enzymatic hydrolyzability, and biological function.
+30. **Evolutionary Energetics of Metabolic Storage** [Type: Theory; Subject: Biology; Topic: L1.6 Lipid Diversity: Triglycerides, Phospholipids, and Steroids; Format: Non-Sim; Exam: Cambridge A-Level 9700/42/O/N; Answer-Method: text-exclusive]
+Migratory animals rely heavily on lipid reserves during long-distance locomotion.
+(a) Explain why migratory birds store reserves as triglycerides rather than starch or glycogen prior to long-distance flight.
+(b) Discuss the metabolic limitations of relying exclusively on lipids for rapid energy mobilization during high-intensity exercise.

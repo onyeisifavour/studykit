@@ -1,0 +1,146 @@
+1. In a pie chart illustrating total national tax revenue of USD 360 million, a sector representing corporate tax revenue of USD 90 million has a central angle of: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. 45°
+B. 90°
+C. 120°
+D. 180°
+
+2. Which visual representation is most appropriate for displaying continuous grouped data where frequency density is represented on the vertical axis? [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Simple bar chart
+B. Multiple bar chart
+C. Histogram
+D. Component bar chart
+
+3. In a histogram with unequal class intervals, rectangle height is proportional to: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Class frequency
+B. Class width
+C. Frequency density
+D. Cumulative frequency
+
+4. The linear market demand function is given by Qd = 500 − 10P. What is the slope of the direct demand function dP/dQd? [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. 500
+B. -10
+C. -0.10
+D. 50
+
+5. For the total cost function TC = 100 + 5Q + 2Q², the derivative dTC/dQ represents: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. Average fixed cost
+B. Average total cost
+C. Marginal cost
+D. Total variable cost
+
+6. Differentiate y = 4x³ − 5x² + 7x − 12 with respect to x. [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. 12x² − 10x + 7
+B. 4x² − 5x + 7
+C. 12x³ − 10x² + 7x
+D. 24x − 10
+
+7. Given the demand function Qd = f(Px, Y, Py), the partial derivative ∂Y/∂Qd < 0 implies that good x is: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. A normal good
+B. An inferior good
+C. A complementary good
+D. A substitute good
+
+8. Given Qd = 100 − 2Px + 0.05Y + 1.5Py, what is the partial derivative ∂Px/∂Qd? [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. -2
+B. 0.05
+C. 1.5
+D. 100
+
+9. In a Cobb-Douglas production function Q = AK^α L^β, the partial derivative ∂Q/∂L evaluates: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. Marginal product of capital
+B. Marginal product of labor
+C. Average product of labor
+D. Output elasticity of capital
+
+10. A multiple bar chart is best suited to display: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Proportional sector shares of a single macroeconomic aggregate.
+B. Side-by-side comparative categorical data across multiple time periods or regions.
+C. Continuous cumulative frequency distribution curves.
+D. Functional slope tangents along non-linear production functions.
+
+11. What is the value of marginal revenue (MR) when total revenue is given by TR = 50Q − 0.5Q² at output level Q = 10? [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 40
+B. 45
+C. 50
+D. 400
+
+12. In Cartesian coordinates for standard demand diagrams, the independent variable (price) and dependent variable (quantity) are conventionally plotted on: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Vertical axis (price), Horizontal axis (quantity)
+B. Horizontal axis (price), Vertical axis (quantity)
+C. Horizontal axis (price), Horizontal axis (quantity)
+D. Vertical axis (quantity), Vertical axis (price)
+
+13. The second derivative of a total utility function, d²TU/dQ² < 0, mathematically demonstrates: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Increasing marginal utility
+B. Diminishing marginal utility
+C. Constant total utility
+D. Negative total revenue
+
+14. For the linear equation y = 15 + 3x, the y-intercept a and slope b are respectively: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. 3 and 15
+B. 15 and 3
+C. -15 and 3
+D. 15 and -3
+
+15. In a component (stacked) bar chart, individual bar segments represent: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Independent continuous class intervals.
+B. Sub-component contributions to an aggregate category total.
+C. Tangent slopes along non-linear total product curves.
+D. Cumulative percentage frequencies.
+
+16. Given the production function Q = 10L^0.5 K^0.5, what is the marginal product of labor ∂Q/∂L? [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. 5L^(-0.5) K^0.5
+B. 10L^0.5 K^(-0.5)
+C. 5L^0.5 K^0.5
+D. 0.5LK
+
+17. Pictograms communicate quantitative economic information using: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Continuous smooth mathematical curves.
+B. Visual icons or symbols scaled to standardized numerical values.
+C. Logarithmic sector angles.
+D. Linear regression trend lines.
+
+18. The derivative of a constant value c with respect to variable x, dc/dx, strictly equals: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. 1
+B. c
+C. 0
+D. x
+
+19. If a firm's profit function is Π = −Q² + 20Q − 50, what output Q maximizes profit (dΠ/dQ = 0)? [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. 5
+B. 10
+C. 20
+D. 50
+
+20. A partial derivative measures the rate of change of a multivariable function with respect to one independent variable while: [Type: MCQ; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Allowing all other variables to vary simultaneously.
+B. Holding all other independent variables constant (ceteris paribus).
+C. Setting all other variables equal to zero.
+D. Integrating the function over time.
+
+21. Calculate the central angle for a sector in a pie chart representing USD 40 million of agricultural exports out of total national exports of USD 160 million. [Type: Hybrid; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+22. Given the non-linear function y = 3x² + 4x − 5, calculate the instantaneous slope dy/dx at x = 3. [Type: Hybrid; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+23. Given the multivariable utility function U = 5x²y³, evaluate the partial derivative ∂U/∂x at x = 2 and y = 1. [Type: Hybrid; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+
+24. Calculate the frequency density for a histogram class interval of 20−50 (width = 30) with a recorded class frequency of 90. [Type: Hybrid; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+
+25. Find marginal cost MC = dTC/dQ for total cost function TC = 200 + 10Q + 0.5Q² at output level Q = 20. [Type: Hybrid; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+26. **A consumer demand model is formulated as: Qd = 1200 − 4Px + 0.02Y − 3Py + 5Pz** [Type: Theory; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+Where Px is own price, Y is household income, Py is price of good y, and Pz is price of good z.
+(a) Calculate partial derivatives ∂Qd/∂Px, ∂Qd/∂Y, ∂Qd/∂Py, and ∂Qd/∂Pz.
+(b) Using the calculated signs, classify good x as normal or inferior, and identify whether goods y and z are substitutes or complements to good x.
+(c) Explain the economic significance of the ceteris paribus assumption when interpreting these partial derivatives.
+
+27. **Compare the graphical construction principles, analytical advantages, and practical limitations of histograms versus component bar charts when presenting national economic survey data.** [Type: Theory; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+28. **A monopoly firm faces total revenue function TR = 100Q − 2Q² and total cost function TC = 50 + 20Q + Q².** [Type: Theory; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+(a) Derive the marginal revenue (MR) and marginal cost (MC) functions using differential calculus.
+(b) Calculate the profit-maximizing output level Q* where MR = MC.
+(c) Verify that this output maximizes profit using second-order derivative conditions.
+
+29. **Discuss how calculus-based marginal analysis (dy/dx) enhances microeconomic decision-making for firms optimizing output and consumers maximizing utility compared to average metric comparisons.** [Type: Theory; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+
+30. **Explain the procedures required to convert raw continuous frequency data with unequal class widths into an accurately constructed histogram.** [Type: Theory; Subject: Economics; Topic: L1.8 Advanced Data Representation and Functional Relationships; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]

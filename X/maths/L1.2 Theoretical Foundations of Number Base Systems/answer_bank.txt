@@ -1,39 +1,34 @@
-1. A [Type: MCQ]
-2. B [Type: MCQ]
-3. A [Type: MCQ]
-4. A [Type: MCQ]
-5. A [Type: MCQ]
-6. A [Type: MCQ]
-7. A [Type: MCQ]
-8. D [Type: MCQ]
-9. B [Type: MCQ]
-10. A [Type: MCQ]
-11. 11.625₁₀ [Type: Hybrid]
-12. x = 5 [Type: Hybrid]
-13. 0.24₈ [Type: Hybrid]
-14. 1111₂ [Type: Hybrid]
-15. 59.25₁₀ [Type: Hybrid]
-16. 1024 [Type: Hybrid]
-17. 13000₅ [Type: Hybrid]
-18. $2 \cdot 5^2 + 0 \cdot 5^1 + 4 \cdot 5^0 + 1 \cdot 5^{-1} + 3 \cdot 5^{-2}$ [Type: Hybrid]
-19. 1EE₁₆ [Type: Hybrid]
-20. 179₁₀ [Type: Hybrid]
-21. b = 5 [Type: Hybrid]
-22. $\frac{13}{16}$ [Type: Hybrid]
-23. 1217₁₀ [Type: Hybrid]
-24. 0.0111₂ [Type: Hybrid]
-25. 271₈ [Type: Hybrid]
-26. (a) 15B.D₁₆. [Type: Theory]
-    (b) 101011011.1101₂.
-    (c) Repeating string 0.00110011...₂; binary finite representation fails for non-powers of 2 denominators.
-27. (a) b = 5. [Type: Theory]
-    (b) $abc_b = (b - 1)[a(b + 1) + b] + (a + b + c)$.
-    (c) b = 10 $\Rightarrow$ b − 1 = 9.
-28. (a) $M(n, b) = b^n - 1$. [Type: Theory]
-    (b) $N(n, b) = b^n$.
-    (c) 16,777,215₁₀; 3 bytes.
-29. (a) F64₁₆. [Type: Theory]
-    (b) 3477₈.
-    (c) 11010011₂.
-30. (a) Block decomposition over base powers. [Type: Theory]
-    (b) $\frac{dE}{db} = 0 \Rightarrow b = e$; base 3 is closest integer to e.
+1. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+2. B [Type: MCQ ] [Answer-Method: text-exclusive]  
+3. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+4. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+5. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+6. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+7. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+8. D [Type: MCQ ] [Answer-Method: text-exclusive]  
+9. B [Type: MCQ ] [Answer-Method: text-exclusive]  
+10. A [Type: MCQ ] [Answer-Method: text-exclusive]  
+11. 11.625₁₀ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+12. x = 5 [Type: Hybrid ] [Answer-Method: text-exclusive]  
+13. 0.24₈ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+14. 1111₂ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+15. 59.25₁₀ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+16. 1024 [Type: Hybrid ] [Answer-Method: text-exclusive]  
+17. 13000₅ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+18. $2 \cdot 5^2 + 0 \cdot 5^1 + 4 \cdot 5^0 + 1 \cdot 5^{-1} + 3 \cdot 5^{-2}$ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+19. 1EE₁₆ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+20. 179₁₀ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+21. b = 5 [Type: Hybrid ] [Answer-Method: text-exclusive]  
+22. $\frac{13}{16}$ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+23. 1217₁₀ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+24. 0.0111₂ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+25. 271₈ [Type: Hybrid ] [Answer-Method: text-exclusive]  
+26. (a) 15B.D₁₆. [Type: Theory ] [Answer-Method: text-exclusive]  (b) 101011011.1101₂.
+(c) Repeating string 0.00110011...₂; binary finite representation fails for non-powers of 2 denominators.
+27. (a) b =    [Answer-Method: text-exclusive]5. [Type: Theory] [Answer-Method: text-exclusive]  (b) $abc_b = (b - 1)[a(b + 1) + b ] + (a + b + c)$.
+(c) b = 10 $\Rightarrow$ b − 1 = 9.
+   [Answer-Method: text-exclusive]28. (a) $M(n, b) = b^n - 1$. [Type: Theory ] [Answer-Method: text-exclusive]  (b) $N(n, b) = b^n$.
+(c) 16,777,215₁₀; 3 bytes.
+29. (a) F64₁₆. [Type: Theory ] [Answer-Method: text-exclusive]  (b) 3477₈.
+(c) 11010011₂.
+30. (a) Block decomposition over base powers. [Type: Theory ] [Answer-Method: text-exclusive]  (b) $\frac{dE}{db} = 0 \Rightarrow b = e$; base 3 is closest integer to e.

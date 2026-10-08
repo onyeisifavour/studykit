@@ -1,0 +1,126 @@
+1. According to the induced-fit model of enzyme action, what occurs when a specific substrate molecule enters the enzyme active site? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. The substrate changes its chemical structure permanently before binding.
+B. The active site undergoes conformational changes to achieve optimal catalytic fit around the substrate.
+C. The enzyme permanently denatures to release the product.
+D. The activation energy of the reaction increases to accelerate product formation.
+
+2. How does an enzyme accelerate the rate of a biochemical reaction without altering its equilibrium position? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By increasing the total thermal kinetic energy of the substrate molecules
+B. By lowering the activation energy (Ea) required to reach the transition state
+C. By shifting the overall net change in free energy (ΔG) to a more negative value
+D. By increasing the frequency of random molecular collisions across the cell cytosol
+
+3. What kinetic change is observed in an enzyme-catalyzed reaction in the presence of a competitive inhibitor? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Vmax is decreased; Km remains unchanged.
+B. Vmax remains unchanged; apparent Km is increased.
+C. Both Vmax and Km are decreased proportionally.
+D. Vmax is increased; apparent Km is decreased.
+
+4. The graph below displays reaction rate versus substrate concentration for an enzyme-catalyzed reaction.
+[DIAGRAM: Curve rising steeply from origin and reaching a horizontal plateau at high substrate concentration]
+What factor limits the rate of reaction along the horizontal plateau region? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Substrate concentration
+B. Enzyme concentration
+C. Product inhibition
+D. Activation energy
+
+5. How does a non-competitive inhibitor reduce the maximum velocity (Vmax) of an enzymatic reaction? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By binding reversibly to the active site and directly competing with the substrate
+B. By binding to an allosteric site, inducing a conformational change that alters active site geometry
+C. By irreversibly cleaving peptide bonds within the enzyme catalytic domain
+D. By depleting the free substrate pool available in solution
+
+6. End-product inhibition (negative feedback) in a metabolic pathway typically involves which molecular mechanism? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. The final pathway product binds allosterically to the first enzyme of the pathway to inhibit its catalytic activity.
+B. The final pathway product acts as a competitive substrate for every enzyme in the pathway.
+C. Accumulation of the final product causes transcriptional repression of ribosomal RNA synthesis.
+D. The final product denatures intermediate substrates via acidification.
+
+7. Why does an enzyme's catalytic activity decline rapidly at temperatures significantly above its optimum? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. Substrate molecules lose their kinetic energy and stop colliding with active sites.
+B. Excessive thermal energy breaks non-covalent bonds maintaining tertiary structure, denaturing the active site.
+C. The activation energy barrier increases beyond the thermal energy of the system.
+D. Peptide bonds along the primary structure are hydrolyzed spontaneously.
+
+8. An enzyme has an optimal pH of 2.0. Which change in hydrogen ion concentration [H+] occurs when this enzyme is transferred from pH 2.0 to pH 4.0, and what is its effect on active site structure? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. [H+] increases by a factor of 100; ionic bonds are disrupted.
+B. [H+] decreases by a factor of 100; ionization states of active site R-groups are altered.
+C. [H+] increases by a factor of 2; peptide bonds are broken.
+D. [H+] decreases by a factor of 2; substrate molecules become positively charged.
+
+9. What term describes the intermediate chemical state formed when a substrate molecule successfully binds to the active site of an enzyme? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Transition state complex
+B. Enzyme-substrate complex
+C. Enzyme-inhibitor complex
+D. Allosteric precursor
+
+10. Which statement correctly describes the effect of increasing substrate concentration in the presence of a fixed concentration of a non-competitive inhibitor? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. The rate of reaction increases until it reaches the uninhibited Vmax.
+B. The inhibition is fully overcome at saturated substrate levels.
+C. The rate of reaction cannot reach the uninhibited Vmax regardless of substrate concentration.
+D. The competitive binding equilibrium shifts back toward active site occupancy.
+
+11. What is the biological significance of allosteric sites on regulatory metabolic enzymes? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. They act as backup catalytic active sites when primary sites are damaged.
+B. They allow effector molecules to modulate enzyme activity by inducing conformational shifts.
+C. They bind tRNA molecules during localized co-translational folding.
+D. They anchor enzymes permanently to the phospholipid bilayer of the plasma membrane.
+
+12. Which parameter represents the substrate concentration at which an enzyme-catalyzed reaction proceeds at half of its maximum velocity (0.5 Vmax)? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Turnover number (kcat)
+B. Michaelis constant (Km)
+C. Activation energy (Ea)
+D. Inhibition constant (Ki)
+
+13. How does an increase in temperature within the physiological range (0°C to 37°C) affect catalytic rate? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Increases substrate and enzyme average kinetic energy, raising collision frequency and energy.
+B. Decreases activation energy by destabilizing substrate covalent bonds.
+C. Converts non-competitive inhibitors into competitive active site substrates.
+D. Expands active site dimensions to accept larger substrate molecules.
+
+14. What occurs when an enzyme active site becomes saturated with substrate? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. The reaction rate drops to zero due to steric hindrance.
+B. Further increases in substrate concentration do not increase reaction rate (Vmax reached).
+C. The enzyme begins converting products back into reactants.
+D. Competitive inhibitors can no longer bind anywhere on the enzyme.
+
+15. In a metabolic pathway A → B → C → D, compound D inhibits enzyme E1. What type of regulation is this, and what is its benefit? [Type: MCQ; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Positive feedback; accelerates production of compound D when levels are high.
+B. End-product inhibition; prevents overproduction of compound D and conserves cellular resources.
+C. Competitive activation; increases affinity of E1 for substrate A.
+D. Irreversible inactivation; permanently destroys enzyme E1 to halt cellular growth.
+
+16. State the term for the minimum energy required by reactant molecules to undergo a chemical transformation into products. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+17. If an enzyme has a Vmax of 120 μmol min−1, calculate the reaction rate at a substrate concentration equal to its Km. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+18. Name the region of an enzyme away from the active site to which non-competitive inhibitors or regulatory effectors bind. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+19. Identify the type of inhibition that can be reversed completely by increasing substrate concentration to high levels. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+20. What happens to the numerical value of Km in the presence of a competitive inhibitor? [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+21. State the temperature coefficient (Q10) value typical for most biological enzyme-catalyzed reactions within physiological limits. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+22. Name the hypothesis that replaced the rigid "lock-and-key" model to explain enzyme active site flexibility. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+23. Identify the enzyme property defined as the specific recognition and processing of only one substrate or structural class of substrates. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+24. What happens to the numerical value of Vmax in the presence of a non-competitive inhibitor? [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+25. Name the inorganic ions or non-protein organic molecules required by certain enzymes to achieve full catalytic activity. [Type: Hybrid; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+26. An investigation was carried out on the activity of enzyme X at various substrate concentrations in the presence and absence of inhibitor Y.
+[DIAGRAM: Graph showing rate of reaction vs substrate concentration for Control (highest curve), Inhibitor Y (lower curve reaching same Vmax at high [S]), and Inhibitor Z (lowest curve plateauing at reduced Vmax)]
+(a) Identify the type of inhibition displayed by Inhibitor Y and Inhibitor Z.
+(b) Explain how the experimental curves support your classification of Inhibitor Y. [Type: Theory; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Compare and contrast the "lock-and-key" model with the "induced-fit" model of enzyme catalysis. Discuss how structural flexibility in the active site contributes to lowering reaction activation energy (Ea). [Type: Theory; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Explain the biological importance of end-product inhibition in controlling multi-step metabolic pathways. Describe the molecular events that occur when end-product concentration decreases significantly inside the cytosol. [Type: Theory; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+29. Describe an experiment to investigate the effect of pH on the rate of catalase activity using hydrogen peroxide as a substrate. Outline the independent variable, dependent variable, two controlled variables, and the expected results. [Type: Theory; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: WAEC 2021 / Cambridge Practical; Answer-Method: text-exclusive]
+
+30. Phosphofructokinase (PFK) catalyzes the key rate-limiting step of glycolysis. High cellular ratios of ATP to ADP allosterically inhibit PFK, whereas elevated levels of AMP restore its activity.
+(a) Explain why allosteric regulation of PFK by ATP is advantageous to cell bioenergetics.
+(b) Predict and justify the change in glycolytic rate when a metabolic poison disrupts mitochondrial ATP synthesis. [Type: Theory; Subject: Biology; Topic: L1.8 Enzyme Catalysis and Metabolic Regulation; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]

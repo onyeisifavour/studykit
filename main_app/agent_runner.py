@@ -54,6 +54,7 @@ AGENT_QUOTA_PLANNER = 'diagnostic-quota-planner'
 AGENT_2A_TOPIC_RESOLVER = 'agent2a-topic-resolver'
 AGENT_2C_FALLBACK_BUILDER = 'agent2c-fallback-builder'
 AGENT_SIM_GENERATOR = 'sim-question-generator'
+AGENT_SIM_OPTION_GENERATOR = 'sim-option-generator'
 AGENT_3B_CANDIDATE_SELECTOR = 'agent3b-candidate-selector'
 AGENT_4A_PACING_ARC = 'agent4a-pacing-arc'
 AGENT_5B_DIAGNOSTIC_AUDIT = 'agent5b-diagnostic-audit'
@@ -78,6 +79,7 @@ PIPELINE_AGENTS = [
     AGENT_2A_TOPIC_RESOLVER,
     AGENT_2C_FALLBACK_BUILDER,
     AGENT_SIM_GENERATOR,
+    AGENT_SIM_OPTION_GENERATOR,
     AGENT_3B_CANDIDATE_SELECTOR,
     AGENT_4A_PACING_ARC,
     AGENT_5B_DIAGNOSTIC_AUDIT,
@@ -835,7 +837,9 @@ class AgentRunner:
                     if state['failed'] or state['finished']:
                         return
 
-                item, err = parse_sim_question_response(text)
+                item, err = parse_sim_question_response(
+                    text, target_issue=slot.get('target_issue', ''),
+                )
                 if item is None:
                     with lock:
                         state['failed'] = 'parse'
@@ -897,6 +901,113 @@ class AgentRunner:
             )
 
         _run_next(0, self._sessions.get(AGENT_SIM_GENERATOR))
+
+    def call_sim_option_generator(
+        self,
+        sim_manifest: dict,
+        background_reports: Optional[dict] = None,
+        on_result: Optional[Callable[[dict], None]] = None,
+        on_error: Optional[Callable[[str], None]] = None,
+    ) -> None:
+        """
+        Stage 1b: writes the four options for every MCQ item in the sim track.
+
+        Runs after call_sim_generator and before the manifests are merged, so
+        the option agent sees only what it needs: an authored stem, its correct
+        answer, the simulation instruction, and the diagnostic context for the
+        slot.
+
+        Hybrid and Theory items are passed through untouched; they are
+        free-response by design and have no options to write.
+
+        Deliberately non-fatal. A missing or unusable option set degrades that
+        one item to a free-response question - it already has a correct answer,
+        so the student can still answer it - rather than failing the quiz
+        build. Mechanical quality warnings are recorded on the item as
+        `option_warnings` for the pipeline to surface.
+        """
+        from .option_generator import build_option_prompt, parse_option_response
+
+        items = [it for it in (sim_manifest.get('selected_items') or [])
+                 if isinstance(it, dict)]
+        if not items:
+            if on_result:
+                on_result(sim_manifest)
+            return
+
+        diagnostic_text = self._build_diagnostic_reports_text(
+            background_reports or {})
+
+        lock = threading.Lock()
+        state = {'done': False}
+
+        def _handle(index: int, session_id: Optional[str]) -> None:
+            if index >= len(items):
+                with lock:
+                    if state['done']:
+                        return
+                    state['done'] = True
+                if on_result:
+                    on_result(sim_manifest)
+                return
+
+            item = items[index]
+            q = item.get('selected_question', {}) or {}
+
+            if q.get('type') != 'MCQ':
+                _handle(index + 1, session_id)
+                return
+
+            def _on_success(text: str, new_session_id: str) -> None:
+                if new_session_id:
+                    self._sessions[AGENT_SIM_OPTION_GENERATOR] = new_session_id
+                    config.save_agent_session(
+                        AGENT_SIM_OPTION_GENERATOR, new_session_id)
+
+                options, correct_index, rationales, error_types, warnings = \
+                    parse_option_response(text, item)
+
+                if options is None:
+                    # Unusable response: keep the question, drop to
+                    # free-response. The learner can still answer and be graded.
+                    q['options'] = []
+                    q['correct_option_index'] = None
+                    q['options_generated'] = False
+                else:
+                    q['options'] = options
+                    q['correct_option_index'] = correct_index
+                    q['option_rationales'] = rationales
+                    q['option_error_types'] = error_types
+                    q['options_generated'] = True
+                    # Grading reads the index, not this display string, so a
+                    # reworded correct option stays correct.
+                    if correct_index is not None and 0 <= correct_index < len(options):
+                        q['correct_answer'] = options[correct_index]
+                if warnings:
+                    q['option_warnings'] = warnings
+
+                _handle(index + 1, new_session_id)
+
+            def _on_error(error: str) -> None:
+                with lock:
+                    q['options'] = []
+                    q['correct_option_index'] = None
+                    q['options_generated'] = False
+                    q['option_warnings'] = [f'option agent call failed: {error}']
+                _handle(index + 1, session_id)
+
+            self._client.call(
+                agent=AGENT_SIM_OPTION_GENERATOR,
+                session_id=session_id,
+                user=build_option_prompt(item, diagnostic_text),
+                on_success=_on_success,
+                on_error=_on_error,
+            )
+
+        # Serial, for the same reason the sim generator is serial: parallel
+        # `opencode run` calls against one shared session degrade coherence and
+        # push individual calls past the CLI timeout.
+        _handle(0, self._sessions.get(AGENT_SIM_OPTION_GENERATOR))
 
     # ── Agent 3: Candidate Evaluator ──────────────────────────────────────────
 

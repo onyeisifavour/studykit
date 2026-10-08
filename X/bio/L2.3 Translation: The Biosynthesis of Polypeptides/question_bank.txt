@@ -1,0 +1,123 @@
+1. Which functional site of an 80S eukaryotic ribosome receives incoming aminoacyl-tRNA complexes during translation elongation? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Peptidyl (P) site
+B. Aminoacyl (A) site
+C. Exit (E) site
+D. Promoter site
+
+2. What triplet sequence on a transfer RNA (tRNA) molecule forms complementary base pairs with a specific codon on mRNA? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Anticodon
+B. Poly-A tag
+C. TATA box
+D. Signal peptide
+
+3. Which universal mRNA codon specifies the initiation of translation and codes for the amino acid Methionine? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. UAA
+B. UAG
+C. AUG
+D. UGA
+
+4. What catalytic activity resides within the large ribosomal subunit to form peptide bonds between amino acids? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. DNA Polymerase activity
+B. Peptidyl transferase ribozyme activity
+C. RNA Helicase activity
+D. Ubiquitin ligase activity
+
+5. What occurs when a ribosome encounters one of the three stop codons (UAA, UAG, UGA) in the A site? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. An aminoacyl-tRNA carrying Valine enters the A site.
+B. A protein release factor binds the stop codon, hydrolyzing the bond linking the polypeptide to the tRNA.
+C. The ribosome reverses direction and reads the mRNA 3′→5′.
+D. DNA ligase seals the ribosomal subunit.
+
+6. What destination is characteristic of proteins synthesized on bound ribosomes attached to the rough endoplasmic reticulum (RER)? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Cytosolic metabolic enzymes
+B. Histones for nuclear chromatin
+C. Lysosomal enzymes, membrane proteins, or secreted extracellular proteins
+D. Mitochondrial matrix enzymes
+
+7. What property describes the genetic code where multiple distinct mRNA codons specify the exact same amino acid? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Universal
+B. Degenerate / Redundant
+C. Non-overlapping
+D. Ambiguous
+
+8. A bacterial mRNA gene coding sequence contains 360 nucleotides between the start codon and stop codon. How many amino acids will comprise the translated polypeptide? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 120
+B. 119
+C. 360
+D. 180
+
+9. What molecular component charges a tRNA molecule by covalently attaching its corresponding amino acid to its 3′ CCA terminal stem? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. Aminoacyl-tRNA synthetase
+B. Peptidyl transferase
+C. RNA Polymerase III
+D. Signal Recognition Particle (SRP)
+
+10. What sequence of steps occurs during a single elongation cycle of translation? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Codon recognition at A site → Peptide bond formation → Ribosome translocation 5′→3′ along mRNA
+B. Ribosome translocation → Stop codon recognition → Release factor binding
+C. tRNA binding at E site → Peptide bond hydrolysis → 5′ cap cleavage
+D. Unfolding at P site → Polyadenylation → Spliceosome binding
+
+11. Which structure consists of multiple ribosomes simultaneously translating a single mRNA transcript in the 5′→3′ direction? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Spliceosome
+B. Polysome / Polyribosome
+C. Nucleosome
+D. Proteasome
+
+12. What features characterize the universal nature of the genetic code across organisms? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. All organisms utilize completely different codons to encode amino acids.
+B. The same mRNA codons specify the identical amino acids in almost all organisms, from bacteria to humans.
+C. Plant codons code for carbohydrates instead of amino acids.
+D. Archaea translate DNA directly without mRNA intermediaries.
+
+13. Which tRNA functional domain binds to the mRNA codon via antiparallel complementary base pairing? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 3′ Acceptor stem
+B. T-loop
+C. Anticodon loop
+D. D-arm
+
+14. What occurs during the translocation step of translation elongation? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. The ribosome advances by three nucleotides (1 codon) along mRNA, moving uncharged tRNA from P to E site and peptidyl-tRNA from A to P site.
+B. The mRNA moves backward into the nucleus.
+C. The small subunit detaches from the large subunit permanently.
+D. The polypeptide chain is transferred to the 5′ cap.
+
+15. What destination is targeted by polypeptides synthesized on free cytosolic ribosomes? [Type: MCQ; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Extracellular secretion via exocytosis
+B. Intracellular sites such as the cytosol, nucleus, or peroxisomes
+C. Insertion into the plasma membrane
+D. Secretion into the lumen of the Golgi apparatus
+
+16. State the mRNA codon sequence that signals translation initiation. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. Name the enzyme that attaches a specific amino acid to its corresponding tRNA molecule using ATP. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+18. If an mRNA codon reads 5′-CAG-3′, state the complementary tRNA anticodon sequence (5′→3′). [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+19. Identify the ribosomal site (A, P, or E) from which uncharged tRNAs exit the ribosome. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+20. Name the protein factor that enters the A site when a stop codon is encountered to terminate translation. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. State the ribosomal Svedberg subunit sizes (40S, 60S, 80S) that compose a functional eukaryotic ribosome. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+22. What term describes the feature where one mRNA transcript is translated simultaneously by multiple ribosomes? [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+23. Name the initial amino acid incorporated at the N-terminus of eukaryotic polypeptides during translation. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+24. Calculate the minimum number of nucleotides required in an mRNA coding region to specify a polypeptide of 150 amino acids (including the stop codon). [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+25. State the direction of ribosome movement along the mRNA transcript during elongation. [Type: Hybrid; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+26. [DIAGRAM: Translation elongation cycle showing ribosome A, P, and E sites, mRNA codons, tRNA anticodons, and growing peptide chain]
+(a) Describe the events that occur during codon recognition, peptide bond formation, and translocation in a single elongation cycle.
+(b) Explain why recombinant human proteins, such as insulin, can be successfully produced by genetically modified E. coli bacteria. [Type: Theory; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700 / IB; Answer-Method: text-exclusive]
+
+27. Compare the roles and destinations of proteins synthesized on free cytosolic ribosomes versus those synthesized on bound ribosomes attached to the rough endoplasmic reticulum. Explain how signal peptides direct ribosomes to the rough ER surface. [Type: Theory; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Detail the three main stages of ribosomal translation (Initiation, Elongation, Termination). Mention the structural roles of the 40S subunit, 60S subunit, initiator tRNA, GTP hydrolysis, and release factors. [Type: Theory; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+29. Explain the terms degeneracy and universality as applied to the genetic code. Discuss how codon degeneracy provides a protective buffer against point mutations in DNA. [Type: Theory; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+30. A synthetic mRNA polymer composed of repeating nucleotide sequences 5′-UCU-CUC-UCU-CUC-3′ was translated in a cell-free system.
+(a) Predict the amino acid sequence of the resulting polypeptide, given that UCU codes for Serine and CUC codes for Leucine.
+(b) Explain what happens to polypeptide synthesis if a point insertion shifts the reading frame by one base at the second codon. [Type: Theory; Subject: Biology; Topic: L2.3 Translation: The Biosynthesis of Polypeptides; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]

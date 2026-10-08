@@ -1,0 +1,115 @@
+1. In economic analysis, the fundamental problem of scarcity necessitates economic choice, which directly gives rise to: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. The elimination of trade-offs in resource allocation.
+    B. The existence of opportunity cost in decision-making.
+    C. Unlimited availability of capital goods.
+    D. Guaranteed allocative efficiency in all markets.
+2. A free-market economy resolves the "what to produce" question primarily through: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. Central planning directives issued by state agencies.
+    B. Consumer sovereignty operating through the price mechanism.
+    C. Statutory price ceilings established by government decree.
+    D. Equal distribution of physical output among households.
+3. Which function of the price mechanism provides financial incentives for producers to reallocate resources toward goods experiencing increased consumer demand? [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. Rationing function
+    B. Signalling function
+    C. Incentive function
+    D. Equity function
+4. In a pure command economy, resource allocation and factor ownership are characterized by: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. Private ownership of land and market-determined profit margins.
+    B. Decentralized decision-making by individual consumers and firms.
+    C. State ownership of productive assets and central administrative planning.
+    D. Prices fluctuating freely based on supply and demand dynamics.
+5. A primary economic disadvantage frequently associated with command economic systems is: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. Widespread underprovision of public goods.
+    B. Productive inefficiencies due to administrative coordination failure and lack of profit incentives.
+    C. Excessive market power exercised by private corporate monopolies.
+    D. Extreme income inequality resulting from unregulated wage determination.
+6. A mixed economic system attempts to balance market efficiency and social welfare by: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. Abolishing private property rights entirely.
+    B. Combining private enterprise with state regulation, public provision, and redistribution.
+    C. Relying exclusively on central planning boards to set prices.
+    D. Eliminating taxation on corporate profits and personal income.
+7. Which economic concept explains why free-market systems may fail to achieve allocative efficiency in the presence of negative externalities? [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Government failure
+    B. Market failure
+    C. Diminishing marginal returns
+    D. Soft budget constraints
+8. Economic deregulation involves which of the following policy actions? [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. Increasing state subsidies to public utilities.
+    B. Removing statutory regulations, licensing requirements, and price controls to foster competition.
+    C. Nationalizing key private manufacturing industries.
+    D. Imposing maximum price ceilings on essential commodities.
+9. The removal of trade barriers, tariffs, and foreign investment restrictions as part of structural economic reforms is best described as: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. Commercialization
+    B. Economic liberalization
+    C. Nationalization
+    D. Central planning
+10. Privatization refers to the transfer of state-owned enterprises (SOEs) to: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+    A. Municipal local government councils.
+    B. Central planning boards.
+    C. Private sector ownership and control.
+    D. Non-profit international charitable trusts.
+11. During economic transition in Eastern Europe following 1989, rapid price deregulation and asset sales implemented simultaneously were known as: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. Gradual reform
+    B. Shock therapy
+    C. Import substitution
+    D. Centralization
+12. India's economic reforms initiated in 1991 were primarily aimed at: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+    A. Transitioning from a market economy to central command planning.
+    B. Liberalizing the economy by reducing industrial licensing ("License Raj") and trade protectionism.
+    C. Eliminating all private property ownership rights.
+    D. Fixed state allocation of agricultural production quotas.
+13. In Brazil, structural economic transitions during the 1990s heavily emphasized privatization in which key sector? [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+    A. Subsistence agriculture
+    B. Public utilities and telecommunications
+    C. Defence and central banking
+    D. Informal municipal markets
+14. Nigeria's public enterprise reform programs implemented commercialization and privatization to address: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+    A. Over-reliance on private equity markets.
+    B. Fiscal burdens caused by inefficient, subsidized state-owned enterprises.
+    C. Excessively high levels of market competition in power generation.
+    D. Deficit spending in pure free-market institutions.
+15. Productive efficiency is achieved when a firm or economy produces output: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. At maximum total revenue.
+    B. At the lowest possible average total cost.
+    C. Where price equals marginal cost (P=MC).
+    D. Using only labor-intensive production methods.
+16. Allocative efficiency occurs when resource allocation reflects consumer preferences such that: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Marginal cost exceeds price.
+    B. Price equals marginal cost (P=MC).
+    C. Total fixed costs are minimized.
+    D. Scarcity is entirely eliminated from the economy.
+17. Which of the following is a recognized cause of government failure? [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. Perfect consumer information
+    B. Regulatory capture and policy unintended consequences
+    C. Complete internal internalization of externalities
+    D. Flexible market-clearing price adjustments
+18. In a free-market economy, how are goods distributed among individuals? [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+    A. According to individual moral merit
+    B. Equal division across all registered households
+    C. According to purchasing power and effective demand
+    D. Direct rationing cards issued by planning officers
+19. Soft budget constraints in state-owned enterprises occur when: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. Enterprise financial losses are consistently covered by government subsidies or state loans.
+    B. Firms face strict commercial bankruptcy laws.
+    C. Shareholder equity limits borrowing capacity.
+    D. Prices are set purely by competitive market demand.
+20. Modern comparative economics recognizes that contemporary economies are predominantly: [Type: MCQ; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. Pure free-market systems.
+    B. Pure command planned systems.
+    C. Mixed systems with varying degrees of market orientation and state intervention.
+    D. Traditional barter economies.
+21. Identify the term for an economic situation where unregulated private markets produce an inefficient allocation of resources. [Type: Hybrid; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+22. State the primary mechanism used by command economies to allocate factor inputs across industrial sectors. [Type: Hybrid; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+23. Name the institutional policy reform that involves selling state-owned equity shares to private investors via a public stock exchange. [Type: Hybrid; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+24. What formal economic term describes the loss of the next best alternative forgone when making an economic decision? [Type: Hybrid; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+25. Identify the efficiency condition satisfied when an economy produces at a point situated on its Production Possibility Curve (PPC). [Type: Hybrid; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+26. **Explain how resources are allocated in a free-market economy through the price mechanism, and discuss why this allocation may fail to achieve social equity.** [Type: Theory; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+27. **You are an economic adviser to a transition economy shifting from central planning to a market-oriented system.** [Type: Theory; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    (a) Explain two major structural challenges associated with price deregulation.
+    (b) Assess whether "shock therapy" or gradualism is the more effective implementation path for privatization in this context.
+28. **A state-owned electricity monopoly is facing severe operational deficits and frequent supply shortages.** [Type: Theory; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+    (a) Identify the economic concept illustrated by persistent state financial bailouts for loss-making public enterprises.
+    (b) Explain how commercialization differs from privatization as a reform strategy for this enterprise.
+    (c) Analyze two potential welfare consequences for consumers if the monopoly is privatized without regulatory price controls.
+29. **Discuss how economic deregulation and market liberalization affect productive and allocative efficiency in an economy.** [Type: Theory; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+30. **Compare how a free-market economy and a command economy resolve the three fundamental economic coordination questions: what to produce, how to produce, and for whom to produce.** [Type: Theory; Subject: Economics; Topic: L1.6 Comparative Economic Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]

@@ -1,0 +1,105 @@
+1. How is an atomic orbital defined in modern quantum mechanical theory? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+A. A fixed circular pathway followed by an electron around the nucleus
+B. A three-dimensional region of space around the nucleus where the probability of finding an electron is highest (typically $>90\%$)
+C. The physical surface of the atomic nucleus
+D. A linear track along which electrons oscillate
+2. What is the characteristic geometric shape of an $s$ atomic orbital? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Dumbbell shape oriented along axes
+B. Spherical shape centered on the nucleus
+C. Cloverleaf shape
+D. Toroidal ring shape
+3. How many individual degenerate $p$ orbitals exist within any $p$ sub-level ($p_x, p_y, p_z$)? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. $1$
+B. $3$
+C. $5$
+D. $7$
+4. What is the maximum total electron capacity of the $d$ sub-level across its five degenerate orbitals? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. $2$ electrons
+B. $6$ electrons
+C. $10$ electrons
+D. $14$ electrons
+5. Which principal energy shell level ($n$) is the first to contain a $d$ sub-level? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. $n = 1$
+B. $n = 2$
+C. $n = 3$
+D. $n = 4$
+6. What is the geometric orientation relationship among the three $p$ orbitals ($p_x, p_y, p_z$) in a $p$ sub-level? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Parallel to each other at $0^\circ$
+B. Mutually perpendicular (at $90^\circ$ angles) along Cartesian x, y, and z axes
+C. Arranged at $120^\circ$ planar angles
+D. Arranged at $109.5^\circ$ tetrahedral angles
+7. How many total atomic orbitals (sum of $s, p, d$) are present in the third principal shell ($n = 3$)? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. $3$ orbitals
+B. $4$ orbitals
+C. $9$ orbitals ($1\times s, 3\times p, 5\times d$)
+D. $18$ orbitals
+8. Which quantum mechanical sublevel designation is physically impossible? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. $2s$
+B. $1p$
+C. $3d$
+D. $4f$
+9. What spatial node feature is present at the nucleus of a $2p_x$ atomic orbital? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. Region of maximum electron density
+B. A nodal plane where probability density of finding an electron is exactly zero
+C. Spherical boundary shell
+D. Positive charge region
+10. What maximum total number of electrons can occupy the fourth principal shell ($n = 4$)? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. $8$
+B. $18$
+C. $32$ ($2n^2 = 2(4)^2$)
+D. $50$
+11. How do $1s$ and $2s$ orbitals compare structurally? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. Both are spherical, but $2s$ is larger in volume, higher in energy, and contains a radial node
+B. $1s$ is spherical while $2s$ is dumbbell-shaped
+C. $1s$ holds $2$ electrons while $2s$ holds $8$ electrons
+D. $1s$ is non-directional while $2s$ is directional
+12. How many orbitals are present within an $f$ sub-level? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. $3$
+B. $5$
+C. $7$
+D. $14$
+13. What maximum number of electrons can be accommodated in a single individual $3d_{xy}$ orbital? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+A. $2$ electrons
+B. $6$ electrons
+C. $10$ electrons
+D. $1$ electron
+14. Which sub-level is filled immediately after the $3p$ sub-level in neutral ground-state atoms? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. $3d$
+B. $4s$
+C. $4p$
+D. $2d$
+15. What term describes atomic orbitals that possess identical energy levels (e.g., $2p_x, 2p_y, 2p_z$ in an isolated atom)? [Type: MCQ; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: IB Chemistry HL 2020; Answer-Method: text-exclusive]
+A. Hybridized orbitals
+B. Degenerate orbitals
+C. Isoelectronic orbitals
+D. Valence orbitals
+16. State the geometric shape of a $2p_z$ atomic orbital. [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. Calculate the total maximum electron capacity of a $p$ sub-level. [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+18. How many total sub-levels exist in the second principal energy shell ($n = 2$)? [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+19. State the mathematical formula relating the number of orbitals in a shell to the principal quantum number $n$. [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+20. Name the sub-levels present in the third principal quantum shell ($n = 3$). [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+21. What is the maximum number of paired electrons that can occupy a single $s$ orbital? [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+22. State the plane passing through the nucleus of a $2p_x$ orbital where probability density of finding an electron is zero. [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+23. Which quantum number letter ($s, p, d, f$) represents a sub-level containing 5 degenerate orbitals? [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+24. Calculate the total maximum electron capacity of the $n = 3$ principal shell. [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+25. What spatial property distinguishes a $2p_x$ orbital from a $2p_y$ orbital? [Type: Hybrid; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+26. **Quantum Mechanical orbital model vs Bohr orbits:** [Type: Theory; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: WAEC 2021 Q5; Answer-Method: text-exclusive]
+(a) Contrast a fixed Bohr orbit with a quantum mechanical 3D atomic orbital.
+(b) Describe the boundary surface shapes and directional properties of $s$ orbitals and $p$ orbitals.
+(c) Explain why electron density probability maps are used rather than precise trajectories to describe electron locations.
+27. **Hierarchical organization of atomic electronic structure:** [Type: Theory; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: non-text-exclusive]
+(a) Construct a summary table listing principal shells $n = 1, 2, 3, 4$, the sub-levels present in each, the number of orbitals per sub-level, and the total electron capacity per shell.
+(b) Define degenerate orbitals and give two examples of degenerate orbital sets.
+(c) Explain why $3d$ orbitals are higher in energy than $4s$ orbitals in neutral un-ionized atoms.
+28. **Spatial topology and nodal properties of $p$ orbitals:** [Type: Theory; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: NECO 2020 Q4; Answer-Method: non-text-exclusive]
+(a) Draw or describe detailed 3D sketches of $p_x, p_y,$ and $p_z$ orbitals, showing Cartesian axes $x, y, z$.
+(b) Identify the location of nodal planes for $p_x, p_y,$ and $p_z$ orbitals.
+(c) Explain how orbital overlap between $p$ orbitals forms $\sigma$ (sigma) and $\pi$ (pi) covalent chemical bonds.
+29. **Radial distribution and energy screening in multi-electron atoms:** [Type: Theory; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: IB Chemistry HL 2021; Answer-Method: text-exclusive]
+(a) Compare $1s, 2s,$ and $3s$ orbitals in terms of size, energy, and number of radial nodes.
+(b) Explain the concept of electron shielding / screening effect by inner shell $s$ and $p$ electrons on outer valence orbitals.
+(c) Explain why $4s$ electrons penetrate closer to the nucleus than $3d$ electrons, lowering $4s$ potential energy during orbital filling.
+30. **Advanced sub-level configurations and orbital capacity synthesis:** [Type: Theory; Subject: Chemistry; Topic: L2.5 Advanced Electronic Structure: Orbitals and Sub-levels; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+(a) Determine the number of orbitals and total electron capacity for the $4f$ sub-level.
+(b) Explain why a $2d$ or $3f$ sub-level cannot exist under quantum mechanics rules.
+(c) Calculate the total number of $p$ electrons and $d$ electrons in a neutral ground-state atom of iron ($Z = 26$).

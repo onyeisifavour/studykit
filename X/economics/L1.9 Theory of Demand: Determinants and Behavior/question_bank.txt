@@ -1,0 +1,116 @@
+1. The Law of Demand establishes that, holding other factors constant (ceteris paribus), an increase in the price of a good results in: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. A rightward shift of the demand curve.
+    B. A decrease in quantity demanded represented by a movement along the demand curve.
+    C. An increase in consumer income.
+    D. A leftward shift of the demand curve.
+2. A change in quantity demanded is caused exclusively by a change in: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. Consumer tastes and preferences.
+    B. The price of the good itself.
+    C. Household disposable income.
+    D. Prices of related substitute goods.
+3. If consumer household income increases and demand for Good X decreases, Good X is classified as: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. A normal good
+    B. A complementary good
+    C. An inferior good
+    D. A Veblen good
+4. Goods A and B are close substitutes. An increase in the price of Good A will cause: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. Demand for Good B to shift leftward.
+    B. Demand for Good B to shift rightward.
+    C. Quantity demanded of Good B to fall along its curve.
+    D. No change in market demand for Good B.
+5. Goods X and Y are complements consumed jointly. A decrease in the price of Good X leads to: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+    A. An increase in demand for Good Y (rightward shift).
+    B. A decrease in demand for Good Y (leftward shift).
+    C. A movement downward along Good Y's existing demand curve.
+    D. An immediate reduction in output of Good Y.
+6. The substitution effect of a price reduction measures the change in consumption resulting purely from: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. The change in consumer real purchasing power.
+    B. The change in relative prices, holding real utility constant.
+    C. An absolute shift in consumer income expectations.
+    D. Lower factor input production costs.
+7. The income effect of a price fall for a normal good reinforces the substitution effect, causing total quantity demanded to: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Fall
+    B. Rise
+    C. Remain unchanged
+    D. Fluctuate unpredictably
+8. For a Giffen good, a price fall results in a decrease in quantity demanded because: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. The positive substitution effect outweighs the negative income effect.
+    B. The negative income effect outweighs the positive substitution effect.
+    C. The good is highly demanded by high-income earners.
+    D. Its cross-price elasticity of demand is zero.
+9. Steel demanded by automobile manufacturers is an example of: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. Composite demand
+    B. Derived demand
+    C. Joint demand
+    D. Autonomous demand
+10. Land demanded concurrently for residential housing, agricultural cultivation, and industrial factories illustrates: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. Derived demand
+    B. Composite demand
+    C. Complementary demand
+    D. Inelastic demand
+11. Joint (complementary) demand occurs when two or more goods are: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+    A. Demanded for mutually exclusive alternative uses.
+    B. Demanded together to satisfy a single unified need.
+    C. Produced from the same industrial raw material.
+    D. Sold exclusively in state-monopolized markets.
+12. Given the linear demand equation Qd = 200 − 4P, what is quantity demanded when price P = 15? [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. 140
+    B. 160
+    C. 180
+    D. 260
+13. Rearranging the direct demand equation Qd = 100 − 2P yields the inverse demand equation: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. P = 50 − 0.5Qd
+    B. P = 100 − 2Qd
+    C. P = 200 − Qd
+    D. P = 50 + 0.5Qd
+14. An expectation that the market price of housing will rise dramatically next month is likely to cause current housing demand to: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    A. Shift leftward immediately.
+    B. Shift rightward immediately.
+    C. Move downward along the existing curve.
+    D. Contract to zero.
+15. Market demand is derived geometrically by taking the: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+    A. Vertical summation of individual demand curves.
+    B. Horizontal summation of individual demand curves at each price level.
+    C. Average price level across all individual buyers.
+    D. Product of price elasticities of individual buyers.
+16. Which non-price determinant will cause an unambiguous rightward shift in the market demand curve for personal electric vehicles? [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. A decrease in petrol prices for conventional vehicles.
+    B. A state subsidy provided directly to electric vehicle consumers.
+    C. A widespread fall in household real disposable income.
+    D. An increase in the purchase price of electric vehicle charging units.
+17. The law of diminishing marginal utility provides the microeconomic foundation for why individual demand curves are: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Upward sloping
+    B. Perfectly horizontal
+    C. Downward sloping
+    D. Vertical
+18. A rightward shift of the demand curve for coffee could be caused by: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. A drop in the price of tea (a close substitute).
+    B. A successful advertising campaign highlighting coffee health benefits.
+    C. An increase in the price of coffee beans.
+    D. A surge in the market price of sugar (a complement).
+19. When the price of a normal good rises, consumer real purchasing power falls, causing consumption to decrease. This mechanism is known as the: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+    A. Substitution effect
+    B. Income effect
+    C. Price elasticity effect
+    D. Output effect
+20. A decrease in population size due to outward migration will shift the aggregate market demand curve for food housing: [Type: MCQ; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A. Rightward
+    B. Leftward
+    C. Upward along the curve
+    D. Downward along the curve
+21. Calculate quantity demanded for linear demand equation Qd = 450 − 15P when market price P = 20. [Type: Hybrid; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+22. Identify the specialized demand category describing labor demand by an industrial firm producing commercial furniture. [Type: Hybrid; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+23. Given initial demand Q1 = 100 at P = 10, a rise in consumer income increases demand to Q2 = 140 at P = 10. Calculate the absolute unit shift in demand. [Type: Hybrid; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+24. Name the specialized demand structure where crude oil is demanded to produce petrol, diesel, jet fuel, and petrochemical plastics. [Type: Hybrid; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+25. State the direction of demand curve shift for a normal good following a reduction in personal income tax rates. [Type: Hybrid; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+26. **Using Slutsky-Hicks utility analysis, explain how a price reduction causes substitution and income effects for:** [Type: Theory; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+    (a) A normal good
+    (b) An inferior good (non-Giffen)
+    (c) A Giffen good
+27. **Define derived demand, composite demand, and joint (complementary) demand, providing one distinct real-world economic example for each.** [Type: Theory; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+28. **Distinguish clearly between a change in quantity demanded and a change in demand, illustrating each concept with a demand curve graph description and real-world triggers.** [Type: Theory; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+29. **You are a business analyst advising an automobile manufacturing firm. Explain how each of the following exogenous developments will affect the market demand curve for electric vehicles:** [Type: Theory; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    (a) A substantial rise in petrol prices for internal combustion engine vehicles.
+    (b) A fall in national average household disposable income.
+    (c) Government introduction of a cash rebate scheme for electric vehicle buyers.
+30. **Explain how diminishing marginal utility leads to consumer choice optimization and the formal derivation of a downward-sloping individual demand curve.** [Type: Theory; Subject: Economics; Topic: L1.9 Theory of Demand: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]

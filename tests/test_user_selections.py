@@ -9,7 +9,7 @@ from main_app import config
 from main_app.user_selections import (
     load_manifest, save_manifest, reset_manifest,
     merge_manifest, build_request_block, check_manifest_against_plan,
-    extract_manifest_diff, _EMPTY_MANIFEST,
+    extract_manifest_diff, check_malformed_latex, _EMPTY_MANIFEST,
 )
 
 reset_manifest()
@@ -185,5 +185,41 @@ assert '$F = Gm/r^2$' in q and '10^{2}' in q, q
 assert p.count('$') == 0
 print('PASS 15: normalizer never touches prose or compliant spans')
 
+# 16. Malformed-LaTeX check catches unbraced multi-character sub/superscripts
+def _sim_manifest(question):
+    return {'ordered_quiz_sequence': [
+        {'sequence_index': 1, 'question': dict(question, format='Sim')},
+    ]}
+
+# The reported failure and the rest of the class it belongs to.
+for bad in ('$M_sun$', '$F_net$', '$E_kine$', '$T_max$', '$x^12$'):
+    v = check_malformed_latex(_sim_manifest({'text': bad}))
+    assert v, f'should flag {bad}'
+print('PASS 16a: unbraced multi-char sub/superscripts are flagged')
+
+# Also scanned outside the stem: options, correct_answer, sim_instruction.
+v = check_malformed_latex(_sim_manifest({
+    'text': 'ok $x^2$', 'options': ['$M_sun$', 'fine'],
+    'correct_answer': '$F_net$', 'sim_instruction': 'set $E_kine$',
+}))
+assert len(v) == 3, v
+print('PASS 16b: options, correct_answer and sim_instruction are scanned too')
+
+# 17. Valid notation must never be flagged
+for good in ('$M_{sun}$', '$x^2$', '$m_1$', '$v_0$', '$x_i$', '$x^2y^3$',
+             '$a_1b_2$', '$v_0t$', '$x^2y$', '$v = r\\omega$',
+             '$F = G\\frac{m_1 m_2}{r^2}$', '$M_{\\text{sun}}$',
+             '$1.89\\times10^{26}\\ \\mathrm{N}$', 'plain M_sun prose'):
+    v = check_malformed_latex(_sim_manifest({'text': good}))
+    assert not v, f'false positive on {good}: {v}'
+print('PASS 17: valid notation is never flagged (no false positives)')
+
+# 18. Non-Sim (bank-copied verbatim) text is out of scope
+v = check_malformed_latex({'ordered_quiz_sequence': [
+    {'sequence_index': 1, 'question': {'format': 'Non-Sim', 'text': '$M_sun$'}},
+]})
+assert not v, v
+print('PASS 18: bank-copied Non-Sim text is skipped')
+
 reset_manifest()
-print('\nAll 15 tests passed.')
+print('\nAll 18 tests passed.')

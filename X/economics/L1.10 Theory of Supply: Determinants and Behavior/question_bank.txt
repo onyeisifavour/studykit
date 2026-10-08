@@ -1,0 +1,139 @@
+1. The Law of Supply states that, holding other factors constant (ceteris paribus), as the price of a product increases, the quantity supplied will: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Decrease
+B. Increase
+C. Remain unchanged
+D. Shift the supply curve leftward
+
+2. A movement along a stable supply curve (change in quantity supplied) is caused by a change in: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Production technology
+B. The price of the good itself
+C. Raw material factor input costs
+D. Business taxation rates
+
+3. Technological progress that increases labor productivity and lowers unit manufacturing costs will cause the supply curve to: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Shift leftward
+B. Shift rightward
+C. Move upward along the existing curve
+D. Become perfectly vertical
+
+4. The imposition of a statutory unit indirect tax (t) on production causes the market supply curve to shift: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. Vertically upward by the exact amount of the tax.
+B. Vertically downward by the tax amount.
+C. Horizontally rightward by total tax revenue.
+D. Downward along the existing supply curve.
+
+5. A government production subsidy paid directly to agricultural producers causes: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. An upward vertical shift of the supply curve.
+B. A downward vertical shift of the supply curve (rightward expansion).
+C. A leftward contraction in quantity supplied.
+D. An immediate rise in market price.
+
+6. Joint supply occurs when two outputs are produced concurrently from a single production process. An example of joint supply is: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Wheat and barley cultivated on agricultural land.
+B. Beef and leather hides derived from cattle.
+C. Smartphones and mobile network plans.
+D. Automobiles and commercial air transport.
+
+7. Competitive supply occurs when factor inputs can be reallocated between alternative outputs. If the market price of corn increases significantly, the supply of wheat on shared farmland will likely: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Shift rightward
+B. Shift leftward
+C. Move upward along the wheat supply curve
+D. Double immediately
+
+8. An increase in the wage rate paid to industrial production workers increases marginal cost, causing firm supply curves to shift: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Rightward
+B. Leftward
+C. Downward
+D. Perfectly horizontal
+
+9. Given the linear supply function Qs = −50 + 5P, what is the quantity supplied when market price P = 20? [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. 50
+B. 100
+C. 150
+D. -50
+
+10. Rearranging the direct supply function Qs = −20 + 2P yields the inverse supply function: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. P = 10 + 0.5Qs
+B. P = 20 + 2Qs
+C. P = −10 + 0.5Qs
+D. P = 5 + Qs
+
+11. If agricultural producers expect the future market price of grain to double next month, current grain supply to the market will: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Shift rightward immediately.
+B. Shift leftward immediately as inventory is withheld.
+C. Move upward along the curve.
+D. Increase to maximum capacity.
+
+12. Short-run marginal cost rises as output expands due to: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. The law of diminishing marginal returns.
+B. Increasing economies of scale.
+C. Decreasing raw material prices.
+D. Perfect consumer utility maximization.
+
+13. Market supply is geometrically derived by taking the: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Vertical summation of individual firm supply curves.
+B. Horizontal summation of individual firm supply curves at each price level.
+C. Average cost curve of the largest market producer.
+D. Ratio of price elasticities of supply across firms.
+
+14. An increase in statutory environmental compliance regulations that raises operating costs for chemical manufacturers causes supply to: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Shift leftward
+B. Shift rightward
+C. Move downward along the curve
+D. Remain unchanged
+
+15. An ad valorem percentage tax on production changes the supply curve by: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Shifting it downward parallel to the original curve.
+B. Pivoting it upward and making it steeper as price increases.
+C. Shifting it horizontally rightward.
+D. Converting it into a vertical straight line.
+
+16. A reduction in import tariffs on imported raw steel will shift the supply curve for domestic machinery manufacturers: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Leftward
+B. Rightward
+C. Vertically upward
+D. Outward parallel to the y-axis
+
+17. In competitive markets under perfect competition, the short-run individual firm supply curve corresponds to the segment of its: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+A. Marginal cost curve above average variable cost.
+B. Average fixed cost curve.
+C. Total revenue curve.
+D. Marginal revenue curve below price.
+
+18. Severe drought conditions affecting coffee-producing regions represent a supply shock that shifts coffee supply: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Rightward
+B. Leftward
+C. Downward along the curve
+D. Parallel to the horizontal axis
+
+19. If a firm operates with a linear supply function Qs = c + dP, parameter c < 0 implies that: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Production is profitable at zero price.
+B. A minimum threshold price is required before any positive output is supplied.
+C. Supply is perfectly price elastic.
+D. Marginal cost is negative.
+
+20. An increase in the number of competing firms entering a market will cause aggregate market supply to: [Type: MCQ; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. Shift leftward
+B. Shift rightward
+C. Contract along the curve
+D. Become perfectly inelastic
+
+21. Calculate quantity supplied for linear supply function Qs = −100 + 10P when market price P = 25. [Type: Hybrid; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+22. Given initial supply function Qs = −20 + 4P, determine the new supply equation after a specific unit tax of USD 2 per unit is imposed (P replaced by P − 2). [Type: Hybrid; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+23. Identify the specialized supply relationship existing between wool and mutton obtained from sheep farming. [Type: Hybrid; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+
+24. Calculate the absolute shift in supply if a production subsidy expands quantity supplied from Q1 = 500 to Q2 = 650 at price P = 50. [Type: Hybrid; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+25. State the direction of supply curve shift for commercial airlines following a substantial drop in global aviation fuel prices. [Type: Hybrid; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+
+26. **Analyze how the introduction of a specific unit tax (t) versus a unit production subsidy (s) alters the mathematical supply equation and graphical positioning of a competitive supply curve.** [Type: Theory; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+27. **Define joint supply and competitive supply, providing a detailed economic analysis of how an increase in market demand for beef impacts the leather hides market (joint supply) and the land available for wheat farming (competitive supply).** [Type: Theory; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+28. **Distinguish between a movement along a supply curve (change in quantity supplied) and a shift of the supply curve (change in supply), illustrating each with appropriate graphs and real-world triggers.** [Type: Theory; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+
+29. **Explain how technological advances and changes in factor input prices influence short-run marginal cost curves and aggregate industry supply curves.** [Type: Theory; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+
+30. **You are an agricultural policy adviser evaluating market conditions for bio-fuel energy crops. Discuss how price expectations, government land-use regulations, and climatic factors interact to shift competitive supply in agricultural markets.** [Type: Theory; Subject: Economics; Topic: L1.10 Theory of Supply: Determinants and Behavior; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]

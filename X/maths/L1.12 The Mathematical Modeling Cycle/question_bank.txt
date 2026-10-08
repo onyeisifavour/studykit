@@ -1,0 +1,135 @@
+1. What is the initial operational step in the iterative mathematical modeling cycle? [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Solve Mathematically
+B. Identify Variables and Establish Assumptions
+C. Refine Model
+D. Interpret Results
+
+2. In dynamic growth models, time t is universally classified as which variable type? [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Dependent Variable
+B. Independent Variable
+C. Random Variable
+D. Decision Variable
+
+3. A variable whose value is set by system managers to steer performance is classified as: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Decision Variable
+B. Exogenous Variable
+C. Random Variable
+D. Dependent Variable
+
+4. Environmental factors originating outside model boundaries are classified as: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Independent Variables
+B. Exogenous Variables
+C. Decision Variables
+D. Dependent Variables
+
+5. A variable subject to probabilistic variance in a stochastic model is classified as: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+A. Decision Variable
+B. Deterministic Parameter
+C. Random Variable
+D. Exogenous Variable
+
+6. In traffic modeling, fundamental traffic flow equation q=k⋅v relates flow q to: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Density k and Speed v
+B. Acceleration a and Distance d
+C. Time t and Fuel Consumption f
+D. Mass m and Friction μ
+
+7. In classical epidemiological SIR modeling, S(t) represents the population segment that is: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Symptomatic
+B. Susceptible to infection
+C. Sustained immune
+D. Severely isolated
+
+8. In logistic population growth dt/dP = rP(1−P/K), parameter K represents: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+A. Initial population
+B. Environmental Carrying Capacity
+C. Transmission coefficient
+D. Harvest rate
+
+9. Translating numerical output back into original physical system terms occurs during: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Solution Generation
+B. Model Interpretation
+C. Variable Identification
+D. Symbolic Substitution
+
+10. What step is triggered when empirical validation reveals major discrepancies? [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Immediate implementation
+B. Model Refinement and Iteration
+C. Termination of analysis
+D. Discarding empirical data
+
+11. What is the role of assumptions in mathematical model formulation? [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Introduce unnecessary mathematical errors
+B. Simplify complex real systems to make them mathematically tractable
+C. Guarantee exact numerical predictions without variance
+D. Replace empirical data collection entirely
+
+12. In the virus transmission rate term βSI, parameter β represents: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Disease Infection/Transmission rate coefficient
+B. Recovery rate coefficient
+C. Total population size
+D. Quarantine efficiency
+
+13. What happens to logistic growth rate dt/dP when population P reaches carrying capacity K? [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+A. Reaches maximum positive growth
+B. Equals zero (dt/dP = 0)
+C. Becomes infinite
+D. Tends to −r
+
+14. In traffic flow q=k⋅v, if speed v is measured in km/h and density k in vehicles/km, unit of flow q is: [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. vehicles/hour
+B. km/hour
+C. vehicles⋅km/hour
+D. hours/vehicle
+
+15. Why is mathematical modeling categorized as an iterative cycle? [Type: MCQ; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Models require continuous re-evaluation and refinement against new empirical data
+B. Mathematical equations can only be solved in repeating loops
+C. Real-world systems never change
+D. Initial assumptions are always completely accurate
+
+HYBRID QUESTIONS
+16. State fundamental traffic flow equation relating flow q, density k, and speed v. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+17. State population compartment represented by R(t) in SIR epidemiological models. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+18. State term for variables whose values depend on independent input variables. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+19. Evaluate growth rate dt/dP in logistic model dt/dP = rP(1−P/K) when P=K. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+
+20. Name step in modeling cycle executed immediately following 'Solve Mathematically'. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+21. Classify weather rainfall in urban traffic flow modeling. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+22. State parameter γ role in differential equation dt/dR = γI. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+23. State term for variables directly manipulated by planners to optimize performance. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+24. Name step executed when validation testing reveals systematic prediction discrepancies. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+25. Calculate traffic flow q given density k=40 vehicles/km and speed v=60 km/h. [Type: Hybrid; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. An epidemic is modeled by SIR differential equations:
+
+dS/dt = −βSI, dI/dt = βSI−γI, dR/dt = γI
+
+(a) Classify t,S,I,R,β,γ into independent variables, dependent variables, and parameters.
+(b) Derive basic reproduction threshold R₀ = βS₀/γ condition required for infection growth (dI/dt > 0). [Type: Theory; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+27. A traffic flow model defines speed-density relationship v(k)=v_f(1−k/k_j), where v_f is free-flow speed and k_j is jam density.
+(a) Substitute v(k) into q=k⋅v to obtain flow q(k) quadratic equation.
+(b) Differentiate q(k) with respect to k to derive optimal density k* maximizing flow and calculate maximum capacity q_max. [Type: Theory; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+28. Environmental fish stocking follows logistic model with harvesting H:
+
+dP/dt = 0.4P(1−P/1000)−H
+
+(a) Calculate equilibrium population P when harvesting H=0.
+(b) Determine maximum sustainable harvest yield H_max that maintains steady population state (dP/dt = 0). [Type: Theory; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+
+29. A modeler assumed constant vehicle speed v=80 km/h under high traffic density, leading to massive flow overestimation.
+(a) Explain why treating speed as constant violates realistic traffic dynamics.
+(b) Refine model by establishing speed v as dependent on density k. [Type: Theory; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+30. Map out the full 6-phase modeling cycle (Variables → Formulation → Solution → Interpretation → Validation → Refinement) for a city solar energy network. [Type: Theory; Subject: Maths; Topic: L1.12 The Mathematical Modeling Cycle; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]

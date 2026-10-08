@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Artifacts from './screens/Artifacts';
 import Dashboard from './screens/Dashboard';
 import Flashcards from './screens/Flashcards';
 import History from './screens/History';
@@ -62,6 +63,17 @@ const NAV_ITEMS = [
     ),
   },
   {
+    id: 'artifacts',
+    label: 'Artifacts',
+    icon: (
+      <svg {...ICON_PROPS}>
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+        <path d="m3.3 7 8.7 5 8.7-5" />
+        <path d="M12 22V12" />
+      </svg>
+    ),
+  },
+  {
     id: 'tutor',
     label: 'Tutor',
     icon: (
@@ -88,6 +100,18 @@ const NAV_BOTTOM = [
 export default function App() {
   const [screen, setScreen] = useState('dashboard');
   const [collapsed, setCollapsed] = useState(false);
+  // A saved state picked in Artifacts → Saved States: Quiz reads this on mount
+  // to load that attempt's working note and jump to its saved position.
+  const [resumeReq, setResumeReq] = useState<{
+    instanceId: string;
+    workQuizId: string;
+    at: number;
+  } | null>(null);
+
+  const resumeFrom = (instanceId: string, workQuizId: string) => {
+    setResumeReq({ instanceId, workQuizId, at: Date.now() });
+    setScreen('quiz');
+  };
 
   return (
     <div className="app-shell">
@@ -138,9 +162,14 @@ export default function App() {
 
       <main className="content-region">
         <Dashboard onNavigate={setScreen} active={screen === 'dashboard'} />
-        <Quiz onNavigate={setScreen} active={screen === 'quiz'} />
+        <Quiz onNavigate={setScreen} active={screen === 'quiz'} resumeReq={resumeReq} />
         <Flashcards active={screen === 'flashcards'} />
-        <History onNavigate={setScreen} active={screen === 'history'} />
+        <History
+          onNavigate={setScreen}
+          active={screen === 'history'}
+          onResume={resumeFrom}
+        />
+        <Artifacts active={screen === 'artifacts'} onResume={resumeFrom} />
         <Tutor active={screen === 'tutor'} />
         <Settings active={screen === 'settings'} />
       </main>

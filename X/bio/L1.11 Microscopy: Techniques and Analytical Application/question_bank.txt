@@ -1,0 +1,129 @@
+1. An optical light microscope uses an eyepiece lens of ×10 magnification and an objective lens of ×40 magnification. What is the total magnification of the specimen image? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. ×40
+B. ×50
+C. ×400
+D. ×4000
+
+2. A micrograph shows a plant cell with an image length of 48 mm. The scale bar indicates a magnification of ×800. What is the actual length of the plant cell in micrometers (μm)? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 0.06 μm
+B. 6.0 μm
+C. 60 μm
+D. 600 μm
+
+3. Why do Transmission Electron Microscopes (TEM) achieve significantly higher resolution (<0.5 nm) than light microscopes (∼200 nm)? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Electron beams have much shorter wavelengths than visible light photons.
+B. Glass lenses bend electron beams more effectively than visible light.
+C. TEM specimens are kept alive in fluid chambers.
+D. TEM images rely on fluorescent dye emission.
+
+4. Which microscope modality is best suited for viewing the high-resolution three-dimensional surface topography of a pollen grain? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Brightfield Light Microscope
+B. Scanning Electron Microscope (SEM)
+C. Transmission Electron Microscope (TEM)
+D. Phase-contrast Optical Microscope
+
+5. A tissue sample field of view contains 120 total cells. Microscopic observation reveals that 30 of these cells exhibit condensed chromosomes undergoing mitosis. What is the Mitotic Index (MI) of this tissue? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 0.15
+B. 0.25
+C. 0.33
+D. 4.00
+
+6. Convert a measurement of 0.0075 millimeters (mm) into nanometers (nm). [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. 7.5 nm
+B. 75 nm
+C. 750 nm
+D. 7,500 nm
+
+7. What component of a light microscope controls the amount of light passing upward through the condenser lens onto the specimen slide? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Iris diaphragm
+B. Coarse focus adjustment knob
+C. Revolving nosepiece
+D. Stage clip
+
+8. When preparing a temporary wet mount of onion epidermal tissue, why is a glass coverslip lowered at a 45° angle using a mounted needle? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge IGCSE 0610; Answer-Method: text-exclusive]
+A. To prevent the iodine stain from evaporating
+B. To avoid trapping air bubbles beneath the coverslip
+C. To crush the cell walls and release nuclear stain
+D. To fix the cells permanently to the glass slide
+
+9. Which organelle ultrastructure can be resolved clearly using a Transmission Electron Microscope but remains invisible under standard light microscopy? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Cell wall
+B. Nuclear membrane bound envelope
+C. 80S Ribosome / Mitochondrial cristae
+D. Large central vacuole in plant cells
+
+10. A histopathological biopsy of a tumor yields a high Mitotic Index of 0.68, compared to a control tissue value of 0.04. What clinical diagnosis is strongly indicated? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Apoptotic tissue necrosis
+B. Uncontrolled rapid cell proliferation / Malignant neoplasm (cancer)
+C. Normal physiological cellular senescence
+D. Viral lysogenic dormancy
+
+11. What is the actual diameter of a red blood cell if it measures 14 mm on a micrograph taken at a magnification of ×2,000? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 7.0 μm
+B. 0.7 μm
+C. 70 μm
+D. 14 μm
+
+12. Which statement correctly distinguishes image resolution from magnification? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Magnification is the ability to distinguish two close points as separate; resolution is the degree of enlargement.
+B. Resolution is the minimum distance between two points that allows them to be distinguished as separate entities; magnification is the ratio of image size to actual size.
+C. Resolution increases infinitely with higher objective lens power.
+D. Magnification depends on light wavelength, whereas resolution depends on lens diameter.
+
+13. A specimen measuring 15 μm in actual length appears as 30 mm on a printed micrograph. What is the magnification of the micrograph? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. ×200
+B. ×500
+C. ×2,000
+D. ×20,000
+
+14. Why must biological specimens examined under an electron microscope be placed inside an evacuated high-vacuum chamber? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Air molecules scatter electron beams, preventing focus and image formation.
+B. Vacuum prevents living cells from moving out of the field of view.
+C. Vacuum activates fluorescent heavy metal stains.
+D. High pressure would shatter magnetic lenses.
+
+15. What limitation must be considered when interpreting Mitotic Index data from tumor tissue biopsies? [Type: MCQ; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Mitotic index distinguishes benign from malignant tumors with 100% accuracy without controls.
+B. Mitotic index provides a static snapshot of a single field of view and varies across different region sections of a heterogeneous tumor.
+C. Mitotic index cannot be calculated using light microscopy.
+D. Mitotic index applies only to plant meristem tissue.
+
+16. State the equation used to calculate actual specimen size (A) when image size (I) and magnification (M) are known. [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge IGCSE 0610; Answer-Method: text-exclusive]
+
+17. Convert 350 nanometers (nm) into micrometers (μm). [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+18. State the type of electron microscope used to observe the internal ultrastructure of thin sectioned cell samples. [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+19. A field of view contains 200 total cells, of which 45 are in prophase, 15 in metaphase, 10 in anaphase, and 10 in telophase. Calculate the Mitotic Index. [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+20. What optical component is placed inside the eyepiece of a light microscope to measure specimen dimensions in arbitrary units? [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+21. Calculate the magnification of a micrograph where a 10 μm scale bar measures exactly 25 mm with a ruler. [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+22. State the maximum practical resolving power limit of a standard compound light microscope in nanometers (nm). [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+23. Name the chemical fixative stain commonly used to selectively stain DNA in plant root tip squashes for mitotic cell counts. [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge Practical; Answer-Method: text-exclusive]
+
+24. Convert 4.2 millimeters (mm) into micrometers (μm). [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+25. Identify the microscope feature adjusted to bring a specimen image into sharp focus under high power magnification. [Type: Hybrid; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge IGCSE 0610; Answer-Method: text-exclusive]
+
+26. [MICROGRAPH: Transmission electron micrograph of a eukaryotic cell showing nucleus, mitochondria with cristae, rough ER, and Golgi apparatus]
+(a) Calculate the actual diameter in micrometers (μm) of a mitochondrion that measures 18 mm on a micrograph at ×15,000 magnification.
+(b) Compare the advantages and limitations of Transmission Electron Microscopy (TEM) versus Scanning Electron Microscopy (SEM) for studying cell structure. [Type: Theory; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Describe the procedure for preparing a stained squash slide of Allium (onion) root tip meristem tissue to observe mitotic chromosomes under high power light microscopy. Explain why heating in aceto-orcein or feulgen stain is necessary. [Type: Theory; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge Practical / WAEC; Answer-Method: text-exclusive]
+
+28. The Mitotic Index (MI) is used in clinical oncology.
+(a) Define Mitotic Index and state its mathematical formula.
+(b) The table below shows cell counts from biopsy tissue samples taken from three patients.
+Patient A: 12 mitotic cells / 400 total cells
+Patient B: 84 mitotic cells / 350 total cells
+Patient C: 22 mitotic cells / 450 total cells
+Calculate the Mitotic Index for each patient and identify which patient requires immediate oncological intervention for aggressive tumor growth. Justify your answer. [Type: Theory; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+29. Explain the relationship between wavelength of radiation, lens aperture, and resolving power in microscopy. Explain why light microscopes cannot resolve structures smaller than 200 nm regardless of magnification strength. [Type: Theory; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+30. A student calibrated an eyepiece graticule using a stage micrometer at ×400 total magnification. Each division on the stage micrometer equals 0.01 mm.
+(a) If 40 eyepiece graticule units (epu) align perfectly with 10 stage micrometer divisions, calculate the actual distance represented by 1 epu in micrometers (μm).
+(b) The student measures a stomatal guard cell at 18 epu. Calculate its actual length in micrometers (μm). [Type: Theory; Subject: Biology; Topic: L1.11 Microscopy: Techniques and Analytical Application; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]

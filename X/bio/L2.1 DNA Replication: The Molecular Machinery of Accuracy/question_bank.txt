@@ -1,0 +1,123 @@
+1. What density distribution of DNA bands did Meselson and Stahl observe in cesium chloride (CsCl) gradients after transferring ¹⁵N-labeled E. coli to ¹⁴N medium for exactly one generation? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. One 100% heavy ¹⁵N band and one 100% light ¹⁴N band
+B. A single intermediate hybrid ¹⁵N/¹⁴N density band
+C. Two equal bands of hybrid ¹⁵N/¹⁴N and light ¹⁴N density
+D. A broad dispersed smearing pattern across the entire tube
+
+2. Which enzyme hydrolyzes ATP to unwind the DNA double helix by breaking inter-strand hydrogen bonds at the replication fork? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. DNA Polymerase I
+B. DNA Helicase
+C. DNA Ligase
+D. DNA Primase
+
+3. What is the precise function of DNA Gyrase (Topoisomerase II) ahead of the advancing replication fork? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Synthesizing short RNA primers on single-stranded template regions
+B. Relieving torsional strain and positive supercoiling induced by unwinding
+C. Covalently linking Okazaki fragments on the lagging strand
+D. Removing mispaired nucleotides via 3′→5′ proofreading
+
+4. Why are Single-Strand Binding Proteins (SSBs) essential during DNA replication fork progression? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. They catalyze phosphodiester bond formation between Okazaki fragments.
+B. They bind selectively to exposed single strands to prevent template re-annealing and secondary hairpin formation.
+C. They add 7-methylguanosine caps to the 5′ ends of leading strands.
+D. They hydrolyze RNA primers prior to cell division.
+
+5. Why is DNA synthesis continuous on the leading strand but discontinuous on the lagging strand? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. DNA Polymerase III can synthesize DNA only in the 5′→3′ direction, while lagging template strands run antiparallel.
+B. Lagging strand templates lack adenine nucleotides.
+C. Helicase unwinds the leading strand template twice as fast as the lagging strand template.
+D. DNA Primase operates only on the leading strand.
+
+6. Which enzyme catalyzes the removal of RNA primers on the lagging strand and replaces them with corresponding deoxyribonucleotides? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. DNA Polymerase III
+B. DNA Polymerase I
+C. DNA Ligase
+D. RNA Polymerase II
+
+7. What enzymatic activity allows DNA Ligase to seal single-strand nicks along the lagging strand sugar-phosphate backbone? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Hydrogen bond formation between complement purines and pyrimidines
+B. Phosphodiester bond synthesis between adjacent 3′-hydroxyl and 5′-phosphate ends
+C. Hydrolysis of Okazaki fragment RNA primers
+D. Addition of poly-A tails to DNA ends
+
+8. What structural starter sequence does DNA Primase synthesize to provide a free 3′-OH group required for DNA Polymerase III initiation? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Poly-A DNA tail
+B. Short RNA primer (10–12 nucleotides)
+C. Single-stranded telomere repeat
+D. Deoxyribonucleotide dimer
+
+9. In the Meselson-Stahl experiment, what percentage of double-stranded DNA molecules consisted of pure light ¹⁴N/¹⁴N density after two complete cell divisions in ¹⁴N medium? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 0%
+B. 25%
+C. 50%
+D. 75%
+
+10. What directional polarity does DNA Polymerase III exhibit as it reads the parental DNA template strand? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Reads template 3′→5′; synthesizes daughter strand 5′→3′
+B. Reads template 5′→3′; synthesizes daughter strand 3′→5′
+C. Reads template 5′→3′; synthesizes daughter strand 5′→3′
+D. Reads template 3′→5′; synthesizes daughter strand 3′→5′
+
+11. What short discontinuous segment of newly synthesized DNA is formed on the lagging strand during replication? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Promoter element
+B. Okazaki fragment
+C. Ribozyme transcript
+D. TATA box fragment
+
+12. Which enzyme possesses 5′→3′ exonuclease activity specifically utilized to degrade RNA primers ahead of repair synthesis? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. DNA Polymerase I
+B. DNA Polymerase III
+C. Helicase
+D. Topoisomerase I
+
+13. What model of DNA replication was conclusively falsified when Meselson and Stahl observed a single hybrid band after Generation 1? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Semi-conservative model
+B. Conservative model
+C. Dispersive model
+D. Endosymbiotic model
+
+14. How does the replication machinery ensure extremely high fidelity (<1 error per 10⁹ bases) during DNA synthesis? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. DNA Ligase destroys mismatched base pairs before phosphodiester bond formation.
+B. DNA Polymerase III performs immediate 3′→5′ exonuclease proofreading upon incorporating a mismatched nucleotide.
+C. Single-strand binding proteins edit template strand bases prior to replication fork opening.
+D. RNA primers excise non-complementary purines automatically.
+
+15. What structural feature marks the origin of replication where helicase initially binds and separates parental strands? [Type: MCQ; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. High concentration of G≡C base pairs
+B. Specific A=T-rich sequence motifs requiring lower energy to melt
+C. Direct attachment to ribosomal RNA genes
+D. Clusters of methylated cytosine residues
+
+16. State the term for short fragments of DNA synthesized asynchronously on the lagging strand during replication. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. Name the isotope of nitrogen used as the "heavy" density label in the Meselson-Stahl experiment. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+18. Identify the enzyme that synthesizes short RNA primers on single-stranded template DNA. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+19. Name the enzyme responsible for joining the 3′-hydroxy end of one Okazaki fragment to the 5′-phosphate end of an adjacent fragment. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+20. What fraction of total double-stranded DNA remains hybrid (¹⁵N/¹⁴N) after 3 generations of replication in ¹⁴N medium? [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. Identify the enzyme that unwinds positive supercoils and relieves supercoiling strain ahead of the replication fork. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+22. State the primary enzyme responsible for bulk 5′→3′ DNA elongation at the replication fork in E. coli. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+23. Which parental template strand (leading or lagging) undergoes continuous 5′→3′ replication toward the advancing fork? [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+24. Name the analytical technique used by Meselson and Stahl to separate DNA strands based on density differences. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+25. State the direction of exonucleolytic proofreading activity possessed by DNA Polymerase III to remove mispaired bases. [Type: Hybrid; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+26. [DIAGRAM: Active replication fork showing helicase, topoisomerase, SSB proteins, leading strand, lagging strand, RNA primers, Okazaki fragments, and polymerases labelled 1 to 6]
+(a) Identify the components labelled 1 (Helicase), 2 (DNA Gyrase), 3 (SSB proteins), and 4 (Okazaki fragment).
+(b) Explain why replication on the lagging strand proceeds discontinuously, whereas leading strand replication is continuous. [Type: Theory; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Describe the experimental design and conclusions of the Meselson-Stahl experiment. Predict and explain the band patterns expected in CsCl gradient centrifugation after Generation 0, Generation 1, and Generation 2 under a semi-conservative versus a conservative replication model. [Type: Theory; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Outline the sequential roles of DNA Primase, DNA Polymerase III, DNA Polymerase I, and DNA Ligase during lagging strand maturation. [Type: Theory; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+29. Explain how the coordination of helicase, single-strand binding proteins, and DNA gyrase maintains template stability and prevents mechanical strand breakage during rapid replication fork progression. [Type: Theory; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+30. High-fidelity replication relies on both base-pairing specificity and enzymatic proofreading.
+(a) Describe the 3′→5′ exonuclease proofreading mechanism of DNA Polymerase III.
+(b) Predict the physiological consequences for a bacterial strain carrying a loss-of-function mutation in the gene encoding the proofreading domain of DNA Polymerase III. [Type: Theory; Subject: Biology; Topic: L2.1 DNA Replication: The Molecular Machinery of Accuracy; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]

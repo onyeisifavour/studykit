@@ -1,11 +1,12 @@
 """
 theory_marker.py
 
-Grades the Theory questions of a quiz from its minimal theory batch files
-(≤ THEORY_BATCH_MAX questions each, possibly spanning several files). All
-files are sent for grading at the same time (one thread per file), the raw
-0–1 verdicts are snapped to THEORY_SCORE_LEVELS, and the results are written
-back into both the batch file and the master quiz note.
+Grades the subjective questions of a quiz (Theory and Hybrid alike) from its
+minimal batch files (≤ THEORY_BATCH_MAX questions each, possibly spanning
+several files). All files are sent for grading at the same time (one thread per
+file). Raw 0–1 verdicts are snapped per question type — Theory to
+THEORY_SCORE_LEVELS, Hybrid to strict binary 0.0/1.0 — and the results are
+written back into both the batch file and the master quiz note.
 
 Safety (from the theory-marking audit):
   - An entry with no standard answer (correct_answer_present is False) is
@@ -25,8 +26,11 @@ from . import score_parser
 
 def eligible_entries(batch: dict) -> list[dict]:
     """
-    Returns the grader-ready subset of a theory batch: entries that have a
-    user answer AND a non-empty correct answer, reformatted for the prompt.
+    Returns the grader-ready subset of a batch: entries that have a user answer
+    AND a non-empty correct answer, reformatted for the prompt.
+
+    The question type travels with each entry so the marker can snap Hybrid to
+    strict binary credit while Theory keeps its five-level scale.
     """
     out: list[dict] = []
     for q in batch.get('questions', []):
@@ -37,6 +41,7 @@ def eligible_entries(batch: dict) -> list[dict]:
             continue
         out.append({
             'label':          str(q.get('number', 0)),
+            'type':           str(q.get('type') or 'Theory'),
             'question':       str(q.get('question_text', '')),
             'user_answer':    str(choice),
             'correct_answer': str(q.get('correct_answer', '')),
@@ -118,14 +123,26 @@ def grade_theory(service, quiz_id: str,
             remark_text = 'Evaluation unavailable.'
             if result is not None:
                 remark_text = result.explanation or remark_text
-            # Snap raw → nearest credit level (bucketed theory scale).
-            score = quiz_note.snap_score(result.score) if result is not None else None
+            # Snap raw → credit levels. Theory keeps the five-level bucketed
+            # scale; Hybrid is strict right/wrong, so a real error (wrong unit,
+            # wrong value) rounds down to zero rather than earning partial
+            # credit.
+            is_hybrid = e.get('type') == 'Hybrid'
+            if result is None:
+                _verdict_from(int(e['label']), None,
+                              'ungraded — score unavailable', None, {})
+                continue
+            if is_hybrid:
+                score = quiz_note.snap_hybrid_score(result.score)
+            else:
+                score = quiz_note.snap_score(result.score)
             if score is None:
                 _verdict_from(int(e['label']), None,
                               'ungraded — score unavailable', None, {})
                 continue
             _verdict_from(int(e['label']), score, remark_text,
-                          'theory_ai', {'raw_score': result.score if result is not None else None})
+                          'hybrid_ai' if is_hybrid else 'theory_ai',
+                          {'raw_score': result.score})
 
     threads = [
         threading.Thread(target=_grade_batch, args=(i, b), daemon=True)

@@ -1,0 +1,111 @@
+=== Verification Log ===
+Date: 2026-10-06
+
+=== CORPUS OVERVIEW ===
+Total topics: 66
+- Biology: 16 topics (L1.1-L1.11, L2.1-L2.5) = 480 Q/A
+- Chemistry: 15 topics (L1.1-L1.9, L2.1-L2.6) = 450 Q/A
+- Economics: 15 topics (L1.1-L1.15) = 450 Q/A
+- Mathematics: 5 topics (L1.1-L1.5) = 150 Q/A
+- Physics: 15 topics (L1.1-L1.13, L2.1-L2.2) = 450 Q/A
+
+Grand total: 66 topics × 30 Q/A = 1,980 Q/A pairs
+
+=== ANSWER-METHOD TAGGING (COMPLETED 2026-10-06) ===
+
+Rule (keyboard-only test): 
+- text-exclusive: answer producible with keyboard text only
+- non-text-exclusive: answer requires hand-drawn diagram, graph, table, sketch, structural formula, FBD, ray diagram, Sankey, stress-strain curve, Argand plot, vector triangle
+
+Tag placement:
+- Question banks: appended inside metadata bracket as "; Answer-Method: X" (header line for single-line, last continuation line for multi-line)
+- Answer banks: appended as "[Answer-Method: X]" after "[Type: XXX]"
+
+Register of non-text-exclusive items (23 in QB, 22 in AB):
+
+Biology (2):
+- bio/L1.2 Q30: construct 2×2 contingency table
+- bio/L1.5 Q27: construct comparison table (polysaccharides)
+- bio/L1.7 Q26: draw structural formula of peptide bond
+- bio/L1.9 Q27: tabulate 3 DNA/RNA differences
+
+Chemistry (6):
+- chem/L1.3 Q30: tabulate physical/chemical properties
+- chem/L1.7 Q26: draw distillation setup
+- chem/L1.8 Q28: draw sublimation setup
+- chem/L2.1 Q27: Rutherford scattering diagram (answer contains [DIAGRAM])
+- chem/L2.1 Q29: construct comparison table (atomic models)
+- chem/L2.4 Q30: draw energy-level diagram (answer contains [DIAGRAM])
+- chem/L2.5 Q27: construct summary table (shells/subshells)
+- chem/L2.5 Q28: d-orbital dumbbell diagram (answer contains [DIAGRAM])
+
+Mathematics (1):
+- maths/L1.1 Q27: construct comparison table + plot on Argand diagram
+
+Physics (10):
+- physics/L1.3 Q27: construct vector triangle diagram
+- physics/L1.4 Q27: construct a-t graph
+- physics/L1.5 Q30: sketch trajectory curves
+- physics/L1.6 Q26: construct free-body diagrams
+- physics/L1.8 Q27: construct Sankey diagram
+- physics/L1.10 Q29: draw FBD (banked curve)
+- physics/L1.11 Q27: draw force vector diagram
+- physics/L1.13 Q27: sketch stress-strain curves
+- physics/L2.1 Q27: sketch E_k/E_p/E_total vs x
+- physics/L2.2 Q30: construct ray diagram
+
+All other 1,957 items: text-exclusive
+
+=== STRUCTURAL FIXES (COMPLETED) ===
+
+1. economics/L1.7: QB renumbered 1-30 (was 1-14,13,14×5,15,15,16-21,21); AB expanded to 30 answers (was 21, added 9 generated)
+2. physics/L1.4 answer bank: orphan entry "22. 18 m" deleted; renumbered 1-30 (was 31 entries with duplicate 22)
+3. chem/L2.5 answer bank: line 8 "6." → "8."
+4. economics/L1.6 answer bank: line 13 "12." → "13."
+5. physics/L1.1 answer bank: line 23 "22." → "23."
+6. physics/L1.3 answer bank: off-by-one renumbered (line 27 "26." → "27.", tail 27→30)
+
+All answer banks now: 30 entries, labels 1-30, no duplicates.
+
+=== METADATA NORMALIZATION (COMPLETED) ===
+
+Bio L1.1-L1.5: Subject "Bio" → "Biology"; Topic "Topic N: Name" → "LN.N Name"
+Chem L1.1-L1.5: Subject "Chem" → "Chemistry"; Topic "Topic N: Name" → "LN.N Name"
+
+Now all 66 topics use consistent full-name metadata.
+
+=== TAG VERIFICATION ===
+
+✅ 66/66 question banks have Answer-Method on every question
+✅ 66/66 answer banks have Answer-Method on every answer
+✅ 66/66 answer banks have 30 entries, labels 1-30, no duplicates
+✅ QB non-text-exclusive count: 23 (matches register)
+✅ AB non-text-exclusive count: 22 (register items with answer-side diagrams counted once)
+✅ Metadata consistent across all 66 topics
+
+=== PREVIOUS LOG CORRECTIONS ===
+
+The prior log contained outdated information:
+- Stated 44 topics (actual: 66)
+- Stated 1,191 Q/A pairs (actual: 1,980)
+- Applied "Theory = non-text-exclusive" blanket rule (replaced with keyboard-only semantic rule)
+- Listed "cosmetic grep overcounts" for Physics L1.2/L1.4 (L1.4 had genuine orphan entry, now fixed)
+- Economics L1.7 listed as "21 Q/A by design" (now 30 Q/A after renumbering + 9 answers written)
+- Physics L1.4 listed as "trailing newline only" (had genuine orphan answer, now fixed)
+- Missing 22 biology topics (L1.7-L2.5 added after prior log)
+- Missing Answer-Method backfill to 55 question banks (now complete)
+
+=== FINAL STATUS ===
+
+All 66 topics verified:
+- Biology: 16 topics × 30 = 480 Q/A ✓
+- Chemistry: 15 topics × 30 = 450 Q/A ✓
+- Economics: 15 topics × 30 = 450 Q/A ✓
+- Mathematics: 5 topics × 30 = 150 Q/A ✓
+- Physics: 15 topics × 30 = 450 Q/A ✓
+
+Total: 1,980 Q/A pairs, all with correct Answer-Method tags in both banks.
+Tag placement verified. Structural defects resolved. Metadata normalized.
+No remaining issues.
+
+=== VERIFICATION COMPLETE ===

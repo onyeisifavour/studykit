@@ -5,9 +5,10 @@ End-to-end marking + persistence for a finished quiz (the "complete" flow).
 
 Given the per-question answers from the renderer, this module:
   1. patches the student's choices into the master quiz note,
-  2. marks every question (MCQ locally against the pre-declared answer,
-     Hybrid via the strict marker with a deterministic fast path, Theory via
-     the parallel bucketed batch grader),
+  2. marks every question (MCQ locally against the pre-declared answer;
+     Theory and Hybrid together through the parallel batch grader, which snaps
+     Hybrid to strict binary credit and Theory to the five-level scale — a
+     Hybrid exact match is settled locally first and costs no API call),
   3. writes the QuizLog so the History screen (and dashboard) finally persist
      Electron-completed quizzes,
   4. returns the score profile + per-question verdicts for the report.
@@ -18,20 +19,34 @@ sent to a grader; they are recorded as ungraded/unanswered.
 
 from __future__ import annotations
 
-import threading
-import time
 from typing import Optional
 
 from . import config
 from . import quiz_logger
 from . import quiz_note
 from . import theory_marker
-from .hybrid_marker import hybrid_is_correct_strict
+from .hybrid_marker import hybrid_exact_match
 
 
 # ── Local MCQ option matching (mirrors the renderer's prefix heuristic) ───────
 
-def _correct_option_index(options: list[str], correct_answer: str) -> Optional[int]:
+# Sentinel remark for a subjective question deferred by "Mark later". It is
+# persisted in the working note but never surfaced as feedback text.
+PENDING_REMARK = 'pending'
+
+def _correct_option_index(options: list[str], correct_answer: str,
+                          correct_option_index: Optional[int] = None) -> Optional[int]:
+    """
+    Locates the correct option.
+
+    Prefers the explicit `correct_option_index` when present and in range.
+    Options are display text and may reword the correct answer, so text/letter
+    matching is only a fallback for bank-copied questions and older manifests
+    that carry no index.
+    """
+    if isinstance(correct_option_index, int) and not isinstance(correct_option_index, bool):
+        if 0 <= correct_option_index < len(options or []):
+            return correct_option_index
     head = (correct_answer or '').strip().upper()[:1]
     if not head:
         return None
@@ -51,11 +66,39 @@ def _sel_from_choice(entry: dict) -> int:
     return -1
 
 
+def _feedback_text(entry: dict) -> str:
+    """The remark as user-facing feedback, minus the pending sentinel.
+
+    A deferred subjective question carries PENDING_REMARK in the note so the
+    attempt knows it still owes a mark. That is state, not feedback, so the
+    History entry leaves the field empty and the UI shows its pending badge.
+    """
+    remark = str(entry.get('remark') or '')
+    return '' if remark == PENDING_REMARK else remark
+
+
+def _defer_subjective(note: dict, entry: dict) -> dict:
+    """Leave a subjective question (Hybrid or Theory) pending a later pass.
+
+    The mark is persisted as PENDING_REMARK rather than simply omitted, so the
+    note on disk matches the History entry and a resumed attempt shows the
+    question as still awaiting marking. That sentinel is stripped again when
+    the History log is written — the UI carries a pending badge instead of
+    showing the word as if it were feedback.
+    """
+    quiz_id = note['quiz_id']
+    number = int(entry['number'])
+    quiz_note.set_mark(quiz_id, number, None, PENDING_REMARK, None, {})
+    return {'number': number, 'score': None, 'remark': PENDING_REMARK,
+            'is_correct': None}
+
+
 def _mark_mcq(note: dict, entry: dict) -> dict:
     quiz_id = note['quiz_id']
     number = int(entry['number'])
     correct_idx = _correct_option_index(entry.get('options') or [],
-                                        entry.get('correct_answer', ''))
+                                        entry.get('correct_answer', ''),
+                                        entry.get('correct_option_index'))
     if correct_idx is None:
         quiz_note.set_mark(quiz_id, number, None,
                            'ungraded — no standard answer', None, {})
@@ -75,83 +118,28 @@ def _mark_mcq(note: dict, entry: dict) -> dict:
             'is_correct': right}
 
 
-# ── Blocking wrapper around the evaluator callbacks ───────────────────────────
-
-def _call_sync(trigger, timeout: float = 90.0) -> dict:
-    """Runs `trigger(on_result, on_error)` and blocks until it settles."""
-    holder: dict = {}
-    done = threading.Event()
-
-    def _res(*args):
-        holder['ok'] = args[0] if args else None
-        holder['extra'] = args[1:] if len(args) > 1 else None
-        done.set()
-
-    def _err(msg: str):
-        holder['error'] = msg
-        done.set()
-
-    trigger(_res, _err)
-    deadline = time.monotonic() + timeout
-    while not done.is_set() and time.monotonic() < deadline:
-        time.sleep(0.1)
-    return holder
-
-
-def _mark_hybrid(service, note: dict, entry: dict) -> dict:
-    quiz_id = note['quiz_id']
-    number = int(entry['number'])
-    choice = str(entry.get('user_choice') or '').strip()
-    correct = str(entry.get('correct_answer') or '').strip()
-    if not correct:
-        quiz_note.set_mark(quiz_id, number, None,
-                           'ungraded — no standard answer', None, {})
-        return {'number': number, 'score': None,
-                'remark': 'ungraded — no standard answer', 'is_correct': None}
-    if not choice:
-        quiz_note.set_mark(quiz_id, number, None, 'unanswered', None, {})
-        return {'number': number, 'score': None, 'remark': 'unanswered',
-                'is_correct': None}
-
-    if hybrid_is_correct_strict(choice, correct):
-        quiz_note.set_mark(quiz_id, number, 1.0, 'right', 'hybrid_local', {})
-        return {'number': number, 'score': 1.0, 'remark': 'right',
-                'is_correct': True}
-
-    holder = _call_sync(
-        lambda res, err: service.evaluate_hybrid(
-            question=str(entry.get('question_text', '')),
-            user_answer=choice,
-            correct_answer=correct,
-            on_result=res,
-            on_error=err,
-        )
-    )
-    if holder.get('error') or 'ok' not in holder:
-        quiz_note.set_mark(quiz_id, number, None,
-                           'ungraded — evaluator failed', None, {})
-        return {'number': number, 'score': None,
-                'remark': 'ungraded — evaluator failed', 'is_correct': None}
-
-    is_correct = bool(holder['ok'])
-    explanation = (holder.get('extra') or [None])[0] or ''
-    remark = 'right' if is_correct else 'wrong'
-    score = 1.0 if is_correct else 0.0
-    quiz_note.set_mark(quiz_id, number, score, remark, 'hybrid_ai',
-                       {'note': explanation})
-    return {'number': number, 'score': score, 'remark': remark,
-            'is_correct': is_correct, 'note': explanation}
-
-
 # ── Complete orchestrator ─────────────────────────────────────────────────────
 
 def complete_quiz(service, quiz_id: Optional[str], answers: list[dict],
                   evaluation_on: bool, skip_mode: str = 'zero',
-                  topics: Optional[list[str]] = None) -> dict:
+                  topics: Optional[list[str]] = None,
+                  mark_subjective: bool = True) -> dict:
     """
     Marks + persists a finished quiz and returns {quiz_id, profile, results,
-    history_written}. `answers` is a list of {'number', 'user_choice',
-    'choice_meta', 'skipped'} dicts matching the renderer's display order.
+    history_written, marking_pending}. `answers` is a list of {'number',
+    'user_choice', 'choice_meta', 'skipped'} dicts matching the renderer's
+    display order.
+
+    `mark_subjective=False` is the "Mark later" choice: MCQs are still marked
+    and the History entry is written immediately, but every subjective
+    question — Hybrid and Theory alike — is left pending for a later pass. The
+    entry is flagged `marking_pending` so the UI can say so rather than showing
+    a blank score.
+
+    A Hybrid answer the deterministic matcher settles exactly is marked here for
+    free; every other subjective question is deferred to the batched marker,
+    which snaps Hybrid to strict binary credit and Theory to the five-level
+    scale. That keeps the whole subjective tail on one code path.
     """
     note = quiz_note.load_note(quiz_id) if isinstance(quiz_id, str) else None
     if note is None:
@@ -199,7 +187,24 @@ def complete_quiz(service, quiz_id: Optional[str], answers: list[dict],
         if etype == 'MCQ':
             results.append(_mark_mcq(note, entry))
         elif etype == 'Hybrid':
-            results.append(_mark_hybrid(service, note, entry))
+            # An exact match is settled locally and for free — but only on a
+            # "Mark now" finish, since "Mark later" must defer the whole
+            # subjective tail so History lands with every subjective score null.
+            # A non-match is never a verdict: it goes to the batched evaluator,
+            # which judges whether the answer is *right* (equivalent wording and
+            # notation count) and then snaps that to binary credit.
+            exact = hybrid_exact_match(
+                str(entry.get('user_choice') or '').strip(),
+                str(entry.get('correct_answer') or '').strip(),
+            )
+            if mark_subjective and exact:
+                quiz_note.set_mark(quiz_id, number, 1.0, 'right', 'hybrid_local', {})
+                results.append({'number': number, 'score': 1.0, 'remark': 'right',
+                                'is_correct': True})
+            else:
+                # Graded by theory_marker in the same batch as Theory, so a
+                # Hybrid costs one shared API call rather than its own.
+                results.append(_defer_subjective(note, entry))
         else:  # Theory
             if not str(entry.get('correct_answer', '')).strip():
                 desc = 'ungraded — no standard answer available'
@@ -207,46 +212,147 @@ def complete_quiz(service, quiz_id: Optional[str], answers: list[dict],
                 results.append({'number': number, 'score': None,
                                 'remark': desc, 'is_correct': None})
             else:
-                results.append({'number': number, 'score': None,
-                                'remark': 'pending', 'is_correct': None})
+                results.append(_defer_subjective(note, entry))
 
-    theory_verdicts = theory_marker.grade_theory(service, quiz_id)
-    verdict_by_number = {v['number']: v for v in theory_verdicts}
-    for r in results:
-        v = verdict_by_number.get(r['number'])
-        if not v:
-            continue
-        r['score'] = v['score']
-        r['remark'] = v['remark']
-        r['is_correct'] = bool(v['score'] == 1.0) if v['score'] is not None else None
-        note_text = (v.get('eval_payload') or {}).get('note')
-        if note_text:
-            r['note'] = note_text
+    if mark_subjective:
+        theory_verdicts = theory_marker.grade_theory(service, quiz_id)
+        verdict_by_number = {v['number']: v for v in theory_verdicts}
+        for r in results:
+            v = verdict_by_number.get(r['number'])
+            if not v:
+                continue
+            r['score'] = v['score']
+            r['remark'] = v['remark']
+            r['is_correct'] = bool(v['score'] == 1.0) if v['score'] is not None else None
+            note_text = (v.get('eval_payload') or {}).get('note')
+            if note_text:
+                r['note'] = note_text
 
     fresh = quiz_note.load_note(quiz_id)
     if fresh is None:
         fresh = note  # theory verdicts already in the reloaded note
-    _write_quiz_log(fresh, evaluation_on, skip_mode, topics)
+    history_quiz_id = _write_quiz_log(fresh, evaluation_on, skip_mode, topics,
+                                      marking_pending=not mark_subjective)
     profile = quiz_note.score_profile(fresh, skip_mode)
 
     return {
         'quiz_id': quiz_id,
         'history_written': True,
+        'history_quiz_id': history_quiz_id,
+        'marking_pending': not mark_subjective,
         'profile': profile,
         'results': results,
+    }
+
+
+def mark_pending_quiz(service, quiz_id: str) -> dict:
+    """
+    Second half of "Mark later": grades every deferred subjective question for a
+    quiz that already has a History entry, then patches that entry in place.
+
+    Theory and Hybrid both go through the parallel batched marker — Hybrid is
+    snapped to strict binary credit on the way out, Theory to the five-level
+    scale — so a "Mark later" quiz and a "Mark now" finish reach identical
+    verdicts by the same route.
+
+    Safe to call more than once — the graders rebuild from the working note, so
+    a retry re-marks from the source of truth rather than compounding the
+    previous pass.
+    """
+    log = quiz_logger.load_quiz_log(quiz_id)
+    if log is None:
+        raise ValueError(f'No such quiz log: {quiz_id!r}')
+    # An instance logs under a fresh timestamp id while its working note keeps
+    # its own work id, so the log records which note it came from.
+    work_quiz_id = str(log.source_quiz_id or quiz_id)
+    note = quiz_note.load_note(work_quiz_id)
+    if note is None:
+        raise ValueError(f'No working note for quiz {quiz_id!r}; nothing to mark.')
+
+    # Snapshot which subjective questions are genuinely still pending *before*
+    # grading. grade_theory writes its verdicts straight into the note, so
+    # asking afterwards would see every question as already marked and skip
+    # the lot.
+    pending_numbers = {
+        int(e['number']) for e in (note.get('questions') or [])
+        if e.get('type') in ('Theory', 'Hybrid')
+        and not e.get('skipped') and e.get('score') is None
+    }
+
+    verdicts = theory_marker.grade_theory(service, work_quiz_id)
+    by_number = {int(v['number']): v for v in verdicts}
+
+    fresh = quiz_note.load_note(work_quiz_id) or note
+    results = []
+    for e in fresh.get('questions', []):
+        etype = e.get('type', 'Theory')
+        if etype not in ('Theory', 'Hybrid'):
+            continue
+        number = int(e.get('number', 0))
+        # Only re-grade what was still pending when this pass started.
+        if number not in pending_numbers:
+            continue
+        v = by_number.get(number)
+        if not v:
+            continue
+        results.append({
+            'number':     number,
+            'score':      v.get('score'),
+            'remark':     v.get('remark'),
+            'is_correct': bool(v.get('score') == 1.0) if v.get('score') is not None else None,
+            'note':       (v.get('eval_payload') or {}).get('note'),
+        })
+
+    # Patch the already-written History entry: subjective scores and feedback
+    # only. MCQ verdicts recorded at finish time are left exactly as they were.
+    for r in results:
+        for q in log.questions:
+            if int(q.number) != r['number']:
+                continue
+            q.score = r['score']
+            q.ai_feedback = str(r.get('remark') or '') or q.ai_feedback
+            # Only Hybrid carries a boolean right/wrong. Theory is fluid 0-1
+            # credit, so its is_correct stays None by design and must not be
+            # back-filled from a full-credit score.
+            if q.q_type == 'Hybrid' and r.get('is_correct') is not None:
+                q.is_correct = bool(r['is_correct'])
+            break
+    log.marking_pending = False
+    quiz_logger.save_quiz_log(log)
+
+    # The saved state this attempt came from carries the same pending flag, so
+    # clear it too — otherwise Artifacts → Saved States would keep offering
+    # "Mark now" for an entry that is already marked.
+    from . import quiz_instance
+    instance_id = quiz_instance.find_by_history_id(str(quiz_id))
+    if instance_id:
+        try:
+            quiz_instance.mark_pending_cleared(instance_id)
+        except Exception:
+            pass
+
+    return {
+        'quiz_id':          str(quiz_id),
+        'marking_pending':  False,
+        'marked':           len(results),
+        'results':          results,
+        'profile':          quiz_note.score_profile(fresh, log.skip_mode),
     }
 
 
 # ── QuizLog (History persistence) ─────────────────────────────────────────────
 
 def _write_quiz_log(note: dict, evaluation_on: bool, skip_mode: str,
-                    topics: Optional[list[str]]) -> str:
+                    topics: Optional[list[str]],
+                    marking_pending: bool = False) -> str:
     topics = topics or note.get('topics') or []
     log = quiz_logger.new_quiz_log(
         topics=topics,
         evaluation_on=evaluation_on,
         skip_mode=skip_mode,
     )
+    log.marking_pending = bool(marking_pending)
+    log.source_quiz_id = str(note.get('quiz_id') or '') or None
     for e in note.get('questions', []):
         choice = str(e.get('user_choice') or '')
         if e.get('skipped'):
@@ -262,10 +368,13 @@ def _write_quiz_log(note: dict, evaluation_on: bool, skip_mode: str,
             is_simulation=bool(e.get('is_simulation', False)),
             correct_answer=str(e.get('correct_answer', '')),
             options=list(e.get('options') or []),
+            correct_option_index=e.get('correct_option_index'),
+            option_rationales=list(e.get('option_rationales') or []),
+            option_error_types=list(e.get('option_error_types') or []),
             user_answer=choice,
             is_correct=(bool(score == 1.0) if score is not None and etype in ('MCQ', 'Hybrid') else None),
             score=score if etype in ('Hybrid', 'Theory') else None,
-            ai_feedback=str(e.get('remark') or '') if etype in ('Hybrid', 'Theory') else '',
+            ai_feedback=_feedback_text(e) if etype in ('Hybrid', 'Theory') else '',
             topic=str(e.get('topic', '')),
             sim_instruction=str(e.get('sim_instruction', '')),
             skipped=bool(e.get('skipped', False)),

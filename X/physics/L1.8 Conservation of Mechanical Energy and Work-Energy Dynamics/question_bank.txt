@@ -1,0 +1,111 @@
+1. A variable force $F(x) = (3x^2 + 2x)\text{ N}$ acts on a particle of mass $m = 2.0\text{ kg}$ along the x-axis. Calculate the work done by this force as the particle moves from $x = 1.0\text{ m}$ to $x = 3.0\text{ m}$, and determine its final kinetic energy if it started from rest at $x = 1.0\text{ m}$. [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $34.0\text{ J}$; $E_k = 34.0\text{ J}$
+    B. $26.0\text{ J}$; $E_k = 26.0\text{ J}$
+    C. $34.0\text{ J}$; $E_k = 17.0\text{ J}$
+    D. $18.0\text{ J}$; $E_k = 18.0\text{ J}$
+2. A ball of mass $0.10\text{ kg}$ is thrown vertically upward with a speed of $10.0\text{ m s}^{-1}$ from the top of a tower $10.0\text{ m}$ high. Neglecting air resistance and taking $g = 10.0\text{ m s}^{-2}$, what is its total mechanical energy just before hitting the ground relative to the ground reference level? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: JAMB 1999; Answer-Method: text-exclusive]
+    A. $5.0\text{ J}$
+    B. $10.0\text{ J}$
+    C. $15.0\text{ J}$
+    D. $20.0\text{ J}$
+3. An ideal spring ($k = 400\text{ N m}^{-1}$) compressed by $0.10\text{ m}$ releases a block of mass $m = 0.50\text{ kg}$ across a frictionless horizontal plane. What speed does the block attain upon leaving the spring? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $2.00\text{ m s}^{-1}$
+    B. $2.83\text{ m s}^{-1}$
+    C. $4.00\text{ m s}^{-1}$
+    D. $8.00\text{ m s}^{-1}$
+4. A vector force $\mathbf{F} = (4\mathbf{i} + 3\mathbf{j} - 2\mathbf{k})\text{ N}$ displaces an object through $\mathbf{s} = (2\mathbf{i} - 5\mathbf{j} + 4\mathbf{k})\text{ m}$. Compute the scalar work $W = \mathbf{F} \cdot \mathbf{s}$ performed. [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+    A. $-15.0\text{ J}$
+    B. $-7.0\text{ J}$
+    C. $15.0\text{ J}$
+    D. $23.0\text{ J}$
+5. An electric pump lifts $500\text{ kg}$ of water through a vertical height of $60.0\text{ m}$ in $15.0\text{ minutes}$. Taking $g = 10.0\text{ m s}^{-2}$, compute the useful mechanical power output. [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+    A. $333\text{ W}$
+    B. $2500\text{ W}$
+    C. $3333\text{ W}$
+    D. $333\text{ kW}$
+6. A pendulum bob of mass $m$ is released from rest at angle $\theta$ to the vertical. If string length is $L$, what is the speed $v$ of the bob at its lowest point? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $v = \sqrt{2gL\cos\theta}$
+    B. $v = \sqrt{2gL(1 - \cos\theta)}$
+    C. $v = \sqrt{2gL\sin\theta}$
+    D. $v = \sqrt{gL(1 - \sin\theta)}$
+7. In a Sankey diagram for an electric motor, the input width corresponds to $1000\text{ J}$ of electrical energy. The useful mechanical output width is $750\text{ J}$, and the remaining width represents thermal dissipation. What is the efficiency $\eta$? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+    A. $25\%$
+    B. $75\%$
+    C. $80\%$
+    D. $133\%$
+8. An object of mass $m$ slides down a rough curved ramp of height $h$, reaching the bottom with speed $v < \sqrt{2gh}$. How much mechanical energy was dissipated into thermal energy by friction? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $mgh - \frac{1}{2}mv^2$
+    B. $mgh + \frac{1}{2}mv^2$
+    C. $\frac{1}{2}mv^2 - mgh$
+    D. $mgh$
+9. An engine provides force $\mathbf{F}$ to propel a boat at constant velocity $\mathbf{v}$. The mechanical power is $P = \mathbf{F} \cdot \mathbf{v}$. If fluid drag is proportional to $v^2$ ($F_{\text{drag}} = b v^2$), how does engine power $P$ scale with speed $v$? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $P \propto v$
+    B. $P \propto v^2$
+    C. $P \propto v^3$
+    D. $P \propto v^4$
+10. A block of mass $2.0\text{ kg}$ compresses a spring ($k = 800\text{ N m}^{-1}$) by $0.20\text{ m}$. When released on a rough horizontal surface ($\mu_k = 0.25$), how far does the block travel before stopping? Take $g = 9.81\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. $3.26\text{ m}$
+    B. $6.52\text{ m}$
+    C. $1.63\text{ m}$
+    D. $0.82\text{ m}$
+11. A machine raises a load of $800\text{ N}$ through $1.0\text{ m}$ when an effort of $400\text{ N}$ moves through $6.0\text{ m}$. Calculate the mechanical efficiency $\eta$. [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: JAMB 1999; Answer-Method: text-exclusive]
+    A. $33.3\%$
+    B. $50.0\%$
+    C. $66.7\%$
+    D. $75.0\%$
+12. The Work-Energy Theorem states that net work $W_{\text{net}}$ done by all forces acting on a particle equals: [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. Change in potential energy $\Delta E_p$.
+    B. Change in kinetic energy $\Delta E_k$.
+    C. Total mechanical energy $E_{\text{mech}}$.
+    D. Power dissipation rate $\frac{dP}{dt}$.
+13. A $60.0\text{ kg}$ cyclist accelerates from rest to $12.0\text{ m s}^{-1}$ in $6.00\text{ s}$ along a level track. Compute the average useful mechanical power generated. [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. $720\text{ W}$
+    B. $1440\text{ W}$
+    C. $4320\text{ W}$
+    D. $360\text{ W}$
+14. A conservative force is distinguished from a non-conservative force because: [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Work done by a conservative force around any closed loop is zero ($\oint \mathbf{F} \cdot d\mathbf{r} = 0$).
+    B. Conservative forces generate thermal dissipation.
+    C. Work done depends explicitly on the path taken.
+    D. Conservative forces act only in stationary frames.
+15. An object of mass $m$ drops from rest from height $h$. At what height $y$ above ground does its kinetic energy equal twice its potential energy ($E_k = 2 E_p$)? [Type: MCQ; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $y = \frac{h}{2}$
+    B. $y = \frac{h}{3}$
+    C. $y = \frac{2h}{3}$
+    D. $y = \frac{h}{4}$
+16. A mass $m = 3.0\text{ kg}$ dropped from height $h = 5.0\text{ m}$ strikes a vertical spring ($k = 1500\text{ N m}^{-1}$). Compute maximum spring compression $x$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+17. Calculate work done when a force $F = 1500\text{ N}$ pulls a sled through $20.0\text{ m}$ along a floor via a rope angled at $45^\circ$ to the floor. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: JAMB 2012; Answer-Method: text-exclusive]
+18. An electric hoist lifts a $250\text{ kg}$ load vertically at constant speed $v = 1.5\text{ m s}^{-1}$. Compute useful output power. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+19. A block $m = 4.0\text{ kg}$ slides $5.0\text{ m}$ down a rough $30^\circ$ incline ($\mu_k = 0.20$). Calculate net work done and speed at bottom if released from rest. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+20. A bullet of mass $0.010\text{ kg}$ moving horizontally at $400\text{ m s}^{-1}$ penetrates $0.10\text{ m}$ into a wooden block before stopping. Calculate average retarding force. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+21. An industrial hydro-turbine converts falling water ($h = 40.0\text{ m}$) into electricity. If water flows at $2000\text{ kg s}^{-1}$ and efficiency is $85\%$, compute electrical power output. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+22. A spring ($k = 500\text{ N m}^{-1}$) is stretched from extension $x_1 = 0.05\text{ m}$ to $x_2 = 0.15\text{ m}$. Calculate work required. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+23. A $1000\text{ kg}$ car accelerates from $10.0\text{ m s}^{-1}$ to $30.0\text{ m s}^{-1}$ over $150\text{ m}$. Calculate average net horizontal force required. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+24. Compute efficiency of a block-and-tackle pulley system ($VR = 6$) if an effort of $80\text{ N}$ raises a load of $240\text{ N}$. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: JAMB 2001; Answer-Method: text-exclusive]
+25. A flywheel has kinetic energy $12000\text{ J}$. If frictional drag consumes $300\text{ W}$, calculate time required to stop. [Type: Hybrid; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+26. **Formal Calculus Proof of Mechanical Energy Integrals** [Type: Theory; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Starting from Newton's Second Law $F = m\frac{dv}{dt}$, prove by calculus integration ($W = \int F\,dx$) that work done equals change in kinetic energy:
+    $$W_{\text{net}} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$$
+    (b) Using Hooke's Law $F_{\text{spring}} = -kx$, derive elastic potential energy $E_{el} = \frac{1}{2}kx^2$.
+    (c) Prove that for free fall under gravity in a vacuum, total mechanical energy $E_{\text{mech}} = E_k + E_p$ remains strictly constant.
+27. **Energy Dynamics and Power Profiles in Automobile Mechanics** [Type: Theory; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: non-text-exclusive]
+    A car $M = 1200\text{ kg}$ climbs a hill inclined at $\alpha = 5.0^\circ$ at constant speed $v = 20.0\text{ m s}^{-1}$. Total resistive drag is $F_{\text{resist}} = 600\text{ N}$.
+    (a) Calculate useful engine output power. Take $g = 9.81\text{ m s}^{-2}$.
+    (b) Construct a quantitative Sankey diagram, given chemical fuel burn rate is $200\text{ kW}$. State thermal power dissipated and overall efficiency.
+    (c) If the car accelerates up the incline from $20.0\text{ m s}^{-1}$ to $28.0\text{ m s}^{-1}$ over $200\text{ m}$, compute total work done by engine.
+28. **Multi-State Energy Transfers in Mass-Spring-Incline Systems** [Type: Theory; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A block $m = 2.0\text{ kg}$ is compressed against a spring ($k = 800\text{ N m}^{-1}, x = 0.25\text{ m}$) at the foot of a rough $30^\circ$ incline ($\mu_k = 0.15$).
+    (a) Calculate initial elastic potential energy.
+    (b) The block is released. Determine total distance $d$ slided along incline before coming to rest. Take $g = 9.81\text{ m s}^{-2}$.
+    (c) Account quantitatively for energy conservation across elastic, kinetic, gravitational potential, and thermal states.
+29. **Non-Conservative Energy Accounting in Real Mechanical Systems** [Type: Theory; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    (a) Define Mechanical Advantage ($MA$), Velocity Ratio ($VR$), and Mechanical Efficiency ($\eta$), and prove $\eta = \frac{MA}{VR} \times 100\%$.
+    (b) A pulley system with $VR = 5$ raises $1000\text{ N}$ load through $4.0\text{ m}$. Due to friction, efficiency is $80\%$. Compute:
+    (i) Input work performed.
+    (ii) Required effort force $E$.
+    (iii) Thermal energy dissipated.
+30. **Loop-the-Loop Mechanics and Energy Conservation Thresholds** [Type: Theory; Subject: Physics; Topic: L1.8 Conservation of Mechanical Energy and Work-Energy Dynamics; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A block of mass $m$ slides from rest down a smooth track into a vertical circular loop of radius $R$.
+    (a) Derive the minimum initial release height $h_{\min}$ required to complete the loop without losing contact at apex.
+    (b) Calculate track normal force on block at bottom of loop if released from $h = 3R$.
+    (c) Explain how friction alters this release height requirement.

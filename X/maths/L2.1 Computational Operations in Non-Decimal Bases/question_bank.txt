@@ -1,0 +1,125 @@
+1. Convert binary positional number 11011₂ to its decimal base 10 equivalent. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. 23
+B. 25
+C. 27
+D. 31
+
+2. Perform binary addition: 1011₂ + 1101₂. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. 10100₂
+B. 11000₂
+C. 10110₂
+D. 11100₂
+
+3. Perform subtraction in base 5: 42₅ − 14₅. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. 23₅
+B. 28₅
+C. 33₅
+D. 13₅
+
+4. Determine base x if positional identity 23ₓ = 19₁₀ holds true. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. 6
+B. 7
+C. 8
+D. 9
+
+5. Convert hexadecimal number 1A₁₆ into decimal notation. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 20
+B. 26
+C. 32
+D. 160
+
+6. Perform multiplication in base 4: 23₄ × 12₄. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. 302₄
+B. 332₄
+C. 322₄
+D. 402₄
+
+7. Perform addition in octal base 8: 57₈ + 24₈. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. 81₈
+B. 103₈
+C. 711₈
+D. 101₈
+
+8. Solve linear equation 3₆x + 4₆ = 22₆ for x in base 6. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. x=3₆
+B. x=4₆
+C. x=2₆
+D. x=5₆
+
+9. Which set of digits is strictly permitted in base 8 positional notation? [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. {0,1,2,3,4,5,6,7,8}
+B. {0,1,2,3,4,5,6,7}
+C. {1,2,3,4,5,6,7,8}
+D. {0,1,2,3,4,5,6}
+
+10. Convert hexadecimal F₁₆ into 4-bit binary notation. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. 1010₂
+B. 1100₂
+C. 1110₂
+D. 1111₂
+
+11. Solve quadratic equation x² − 12₇x + 32₇ = 0 in base 7 notation. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. x=3₇ or x=6₇
+B. x=4₇ or x=5₇
+C. x=2₇ or x=10₇
+D. x=3₇ or x=4₇
+
+12. In digital computing memory addressing, byte offsets are compactly formatted in: [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+A. Base 5
+B. Base 8
+C. Base 16 (Hexadecimal)
+D. Base 20
+
+13. Convert fractional decimal 0.625₁₀ to binary base 2 representation. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. 0.101₂
+B. 0.110₂
+C. 0.011₂
+D. 0.111₂
+
+14. Perform binary division: 1100₂ ÷ 11₂. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 10₂
+B. 11₂
+C. 100₂
+D. 101₂
+
+15. Solve 2₅x = 13₅ for x in base 5 notation. [Type: MCQ; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. x=4₅
+B. x=3₅
+C. x=2.3₅
+D. x=1.4₅
+
+HYBRID QUESTIONS
+16. Evaluate binary sum 101₂ + 111₂ in base 2 notation. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+17. Evaluate base 6 subtraction 43₆ − 25₆. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+
+18. Convert hexadecimal A3₁₆ to decimal notation. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+19. Determine radix b if 12_b + 24_b = 41_b. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+20. Evaluate base 3 product 12₃ × 21₃ in base 3 notation. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+21. State hexadecimal representation of decimal integer 255. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+22. Solve x + 24₅ = 112₅ for x in base 5 notation. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+
+22. State total number of binary bits represented by two hexadecimal digits. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+23. Solve 2₄x = 12₄ for x in base 4 notation. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+
+24. Convert fractional decimal 0.375₁₀ to binary base 2 notation. [Type: Hybrid; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+25. Solve quadratic equation x² − 11₅x + 24₅ = 0 directly in base 5 arithmetic, showing factoring and verification steps. [Type: Theory; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+26. Prove positional weight equivalence between 4-bit binary group representations and single hexadecimal digit equivalents for binary number 11010110₂. [Type: Theory; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+27. Perform long division 101101₂ ÷ 101₂ showing step-by-step binary subtraction borrowings and state quotient and remainder in base 2. [Type: Theory; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+28. A student subtracted base 8 numbers 52₈ − 27₈ by borrowing decimal 10 instead of octal radix 8, getting 25₈.
+(a) Identify the candidate's exact computational error.
+(b) Demonstrate correct octal borrowing steps and state true result in base 8. [Type: Theory; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+
+29. In digital architecture memory addressing, a 16-bit register contains binary value 1100000010101111₂.
+(a) Convert this address to hexadecimal format.
+(b) Calculate decimal memory address offset value. [Type: Theory; Subject: Maths; Topic: L2.1 Computational Operations in Non-Decimal Bases; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]

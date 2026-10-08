@@ -1,0 +1,143 @@
+1. In the basic two-sector circular flow model, monetary flows consist of: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Factor services flowing from households to firms.
+B. Factor income payments (wages, rent, interest, profit) and consumer spending (C).
+C. Physical outputs flowing from firms to households.
+D. Direct tax payments to central planning boards.
+
+2. Which economic sector is introduced when expanding from a two-sector model to a three-sector circular flow model? [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. The foreign trade sector
+B. The government sector
+C. The corporate banking sector
+D. The non-profit cooperative sector
+
+3. In circular flow analysis, leakages (withdrawals) represent: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Exogenous expenditure injections that expand aggregate demand.
+B. Income diverted away from domestic consumption within the core circular flow.
+C. Government spending allocations on domestic public goods.
+D. Export revenues received from foreign buyers.
+
+4. The three primary leakage components in a four-sector macroeconomy are: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Investment (I), Government Spending (G), Exports (X)
+B. Savings (S), Net Taxation (T), Imports (M)
+C. Consumption (C), Investment (I), Government Spending (G)
+D. Wages (W), Rent (R), Profit (Π)
+
+5. The three primary injection components introduced into the circular flow of national income are: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. Savings (S), Taxation (T), Imports (M)
+B. Investment (I), Government Spending (G), Exports (X)
+C. Wages (W), Interest (I), Remittances (R)
+D. Consumption (C), Savings (S), Imports (M)
+
+6. What is the fundamental condition required for macroeconomic circular flow equilibrium in a four-sector economy? [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. S+T+M=I+G+X
+B. S+I=T+G
+C. X−M=0
+D. C+S=T+G+X
+
+7. If total leakages exceed total injections (S+T+M>I+G+X), aggregate national income (Y) will: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+A. Expand continuously
+B. Contract until leakages adjust back into equality with injections
+C. Remain completely unchanged
+D. Trigger hyperinflation
+
+8. When exogenous injections exceed total withdrawals (I+G+X>S+T+M), what adjustment occurs in the macroeconomy? [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Business inventories accumulate, causing production cutbacks.
+B. Aggregate national output, income, and employment expand.
+C. Import expenditure drops to zero.
+D. Household savings immediately double.
+
+9. In the circular flow framework, household savings (S) leak directly into which intermediate sector? [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. The financial sector (commercial banks and capital markets)
+B. The foreign export market
+C. The municipal tax authority
+D. State-owned manufacturing public corporations
+
+10. Capital investment expenditure (I) by business firms acts as an injection funded predominantly by: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Overseas import tariffs
+B. Household savings channelled through financial intermediaries
+C. Direct personal income taxes
+D. Central bank currency reserves
+
+11. Net taxation (T) acts as a leakage because it: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Reduces household disposable income available for domestic consumer expenditure.
+B. Increases foreign demand for exports.
+C. Provides cash subsidies directly to corporate exporters.
+D. Prevents commercial bank lending.
+
+12. Import spending (M) is classified as a leakage from the domestic circular flow because: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. It represents income paid out to foreign producers outside the domestic economy.
+B. It increases domestic physical output directly.
+C. It expands domestic capital fixed formation.
+D. It reduces statutory corporate tax obligations.
+
+13. Foreign demand for domestic export products (X) represents an injection because it: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Withdraws monetary expenditure from foreign households.
+B. Introduces external monetary spending into domestic firm revenue flows.
+C. Reduces domestic factor employment.
+D. Is subject to domestic price ceilings.
+
+14. What occurs in a four-sector economy experiencing a persistent government budget deficit (G>T) while trade and private savings are balanced? [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Injections exceed leakages, exerting expansionary pressure on aggregate national income.
+B. Leakages exceed injections, causing immediate contraction in output.
+C. Total national product drops to zero.
+D. Exports automatically decline.
+
+15. Real flows in the circular flow model refer strictly to the physical movement of: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+A. Factor inputs (land, labor, capital) and produced final goods and services.
+B. Wage payments and dividend checks.
+C. Bank deposits and debt bonds.
+D. Direct tax revenues and state subsidies.
+
+16. Monetary flows in the circular flow model move in the: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Same direction as real physical flows.
+B. Opposite direction to real physical flows (counter-current monetary payments).
+C. Vertical direction along the y-axis.
+D. Form of foreign currency exchanges only.
+
+17. If households decide to save a higher proportion of their income (marginal propensity to save rises), the immediate effect on the circular flow is: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. An increase in leakages, reducing consumer spending and contracting national income.
+B. An expansion in total injections.
+C. A rightward shift in the supply of imports.
+D. An automatic reduction in government tax rates.
+
+18. In macroeconomic equilibrium where S+T+M=I+G+X, if private savings exceed private investment (S>I), it must follow that: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+A. Net government injections and/or net export injections ((G−T)+(X−M)) must equal the savings surplus ((S−I)).
+B. Total leakages equal zero.
+C. Exports strictly equal imports (X=M).
+D. Government budget is in absolute balance (G=T).
+
+19. Unsold corporate inventory accumulation caused by an excess of leakages over injections signals firms to: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Expand production output and hire additional workers.
+B. Cut production output, reduce factor input purchases, and lay off labor.
+C. Double capital investment expenditure.
+D. Raise product prices significantly.
+
+20. A open economy with a substantial trade surplus (X>M) experiences: [Type: MCQ; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Net monetary leakage to foreign nations.
+B. Net injection of demand from the rest of the world into domestic circular flow.
+C. An automatic drop in domestic national income.
+D. Perfect internal economic stagnation.
+
+21. Calculate total leakages (W) in a four-sector macroeconomy where Savings S=40, Taxation T=30, and Imports M=20. [Type: Hybrid; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+22. Calculate total injections (J) where Investment I=35, Government Spending G=45, and Exports X=25. [Type: Hybrid; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+23. Determine the macroeconomic circular flow state (Expanding, Contracting, or Equilibrium) if total leakages W=100 and total injections J=120. [Type: Hybrid; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+
+24. Calculate the level of Investment (I) required for circular flow equilibrium if S=50, T=40, M=30, G=45, and X=35. [Type: Hybrid; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+25. State the net injection/leakage value arising from the government sector if Government Spending G=150 and Tax Revenue T=120. [Type: Hybrid; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+
+26. **Using a four-sector circular flow framework, detail all monetary and real flows, identify all leakages and injections, and formulate the complete macroeconomic equilibrium condition.** [Type: Theory; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+27. **Analyze step-by-step economic adjustment processes that occur when total leakages exceed total injections (W>J) in an economy, detailing inventory changes, firm output responses, and income adjustments toward equilibrium.** [Type: Theory; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+
+28. **You are a central bank research analyst. Evaluate the macroeconomic impacts on circular flow national income when a government concurrently implements a fiscal austerity policy (reducing G and raising T) while facing an external trade shock that depresses export demand (X).** [Type: Theory; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+
+29. **Compare two-sector, three-sector, and four-sector circular flow models, explaining how the addition of financial, state, and foreign sectors alters macroeconomic equilibrium analysis.** [Type: Theory; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+30. **In a four-sector macroeconomy, the following values are recorded:
+Savings (S=60), Taxation (T=50), Imports (M=40), Investment (I=70), Government Spending (G=40), Exports (X=30).** [Type: Theory; Subject: Economics; Topic: L1.15 The Circular Flow of Income; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+(a) Calculate total leakages (W) and total injections (J).
+(b) State whether the economy is in equilibrium, expanding, or contracting, and explain the adjustment mechanism.
+(c) Calculate required export level X* to achieve equilibrium holding all other variables constant.

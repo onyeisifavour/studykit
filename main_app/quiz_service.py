@@ -360,11 +360,26 @@ class QuizService:
             _progress(progress, 'finding',
                       'Building simulation questions from your topic READMEs…')
             state['pending'].add('sim')
+
+            def _finish_sim(sel) -> None:
+                # Stage 1b: a separate agent writes the four options for the
+                # MCQ items. Non-fatal, so a failure degrades those items to
+                # free-response rather than losing the quiz build.
+                _progress(progress, 'finding',
+                          'Writing answer options for your multiple-choice '
+                          'simulation questions…')
+                self._runner.call_sim_option_generator(
+                    sim_manifest=sel,
+                    background_reports=bg,
+                    on_result=lambda done: _finish_track('sim', done),
+                    on_error=lambda e: _finish_track('sim', sel),
+                )
+
             self._runner.call_sim_generator(
                 sim_slots=sim_slots,
                 topic_files=topic_files,
                 resolved_topics=resolved_topics,
-                on_result=lambda sel: _finish_track('sim', sel),
+                on_result=_finish_sim,
                 on_error=lambda e: _fail_track('sim', e),
             )
         else:
@@ -397,10 +412,14 @@ class QuizService:
         # ── Machine-check: compare manifest against plan before LLM audit ──
         from .user_selections import (load_manifest,
                                       check_manifest_against_plan,
-                                      check_math_notation)
+                                      check_math_notation,
+                                      check_malformed_latex,
+                                      check_option_quality)
         user_manifest = load_manifest()
         manifest_violations = check_manifest_against_plan(user_manifest, sequence_manifest)
         math_violations = check_math_notation(sequence_manifest)
+        latex_violations = check_malformed_latex(sequence_manifest)
+        option_violations = check_option_quality(sequence_manifest)
         blocks = []
         if manifest_violations:
             blocks.append(
@@ -416,6 +435,33 @@ class QuizService:
                 "so do NOT fail the audit over formatting alone. Note the "
                 "issues and correct them if re-authoring that content.\n"
                 + "\n".join(f"- {v}" for v in math_violations)
+            )
+        if latex_violations:
+            blocks.append(
+                "\n\n=== MALFORMED-LATEX ADVISORY (deterministic, NON-BLOCKING) ===\n"
+                "The following Sim-slot LaTeX is correctly delimited but "
+                "malformed: a sub/superscript of more than one character was "
+                "left unbraced, so it will RENDER INCORRECTLY (e.g. $M_sun$ "
+                "shows as M-subscript-s followed by stray letters 'un'). This "
+                "is a real rendering defect, not a style preference. Brace the "
+                "whole script when re-authoring: $M_{sun}$, $F_{net}$, "
+                "$x^{12}$. Do not fail the audit over formatting alone.\n"
+                + "\n".join(f"- {v}" for v in latex_violations)
+            )
+        if option_violations:
+            blocks.append(
+                "\n\n=== MCQ-OPTION-QUALITY ADVISORY (deterministic, "
+                "NON-BLOCKING) ===\n"
+                "The option generator for the following Sim items raised "
+                "mechanical quality problems, or returned no usable options "
+                "at all (those items were delivered as free-response instead "
+                "of multiple choice). The most serious pattern is a correct "
+                "option that is visibly longer or more detailed than its "
+                "distractors: that teaches students to pick the longest "
+                "answer instead of reading the simulation. Reword the options "
+                "so all four are comparable in length and structure, and give "
+                "each distractor a rationale naming its specific mistake.\n"
+                + "\n".join(f"- {v}" for v in option_violations)
             )
         if blocks:
             # Feed violations explicitly into the audit so 5c sees them rather
@@ -567,18 +613,6 @@ class QuizService:
     ) -> None:
         """Bucketed 0–1 grading of one theory batch file (≤15 questions)."""
         self._runner.evaluate_theory(theory_entries, on_result, on_error)
-
-    def evaluate_hybrid(
-        self,
-        question: str,
-        user_answer: str,
-        correct_answer: str,
-        on_result: Callable[[bool, str], None],
-        on_error: Callable[[str], None],
-    ) -> None:
-        """Strict AI fallback marking of a Hybrid final answer."""
-        self._runner.evaluate_hybrid(question, user_answer, correct_answer,
-                                     on_result, on_error)
 
     def generate_summary(
         self,

@@ -41,6 +41,20 @@ export interface QuizQuestion {
   question_text: string;
   options: string[];
   correct_answer: string;
+  /**
+   * Authoritative correct-option position. Options are display text and may
+   * reword the correct answer, so text matching is only a fallback for
+   * bank-copied and legacy questions. Absent/null on those.
+   */
+  correct_option_index?: number | null;
+  /** Per-option "you likely <mistake>" text, aligned to `options`. Not shown yet. */
+  option_rationales?: string[];
+  /**
+   * Per-option short label for the mistake the option encodes, aligned to
+   * `options`; the correct option is 'correct'. The option agent picks these
+   * labels itself, so they are free text. Not shown yet.
+   */
+  option_error_types?: string[];
   sim_name: string;
   sim_instruction: string;
   topic: string;
@@ -132,8 +146,20 @@ export interface ScoreProfile {
 export interface QuizCompleteResult {
   quiz_id: string;
   history_written: boolean;
+  history_quiz_id: string;
+  /** True when the student chose "Mark later" — subjective scores are not in
+   *  the History entry yet. */
+  marking_pending: boolean;
   profile: ScoreProfile;
   results: QuizQuestionResult[];
+}
+
+export interface MarkPendingResult {
+  quiz_id: string;
+  marking_pending: boolean;
+  marked: number;
+  results: QuizQuestionResult[];
+  profile: ScoreProfile;
 }
 
 // ── History ──────────────────────────────────────────────────────────────────
@@ -149,6 +175,71 @@ export interface QuizSummary {
   skipped: number;
   avg_pct: number;
   skip_mode: string;
+  marking_pending: boolean;
+}
+
+/** An immutable quiz set. Never carries answers or marks. */
+export interface ArtifactSummary {
+  artifact_id: string;
+  created_at: string;
+  source: string;
+  topics: string[];
+  title: string;
+  subject: string;
+  total_questions: number;
+}
+
+export interface ArtifactQuestion {
+  number: number;
+  section: string;
+  q_type: string;
+  question_text: string;
+  options: string[];
+  correct_answer: string;
+  topic: string;
+  is_simulation: boolean;
+  sim_instruction: string;
+}
+
+export interface ArtifactDetail extends ArtifactSummary {
+  questions: ArtifactQuestion[];
+}
+
+/** One closed stretch of time, appended by every Save State. */
+export interface TimeEntry {
+  index: number;
+  elapsed_secs: number;
+  saved_at: string;
+}
+
+/** A mutable attempt taken from an artifact. */
+export interface InstanceSummary {
+  instance_id: string;
+  artifact_id: string | null;
+  parent_instance_id: string | null;
+  title: string;
+  subject: string;
+  topics: string[];
+  created_at: string;
+  updated_at: string;
+  status: 'created' | 'active' | 'paused' | 'completed';
+  total_questions: number;
+  answered: number;
+  current_index: number;
+  /** Number of saved stretches — non-zero means the run was paused. */
+  time_entries: number;
+  total_secs: number;
+  /** null whenever the run was paused, because the mean is then meaningless. */
+  avg_secs: number | null;
+  was_paused: boolean;
+  work_quiz_id: string | null;
+  history_quiz_id: string | null;
+  marking_pending: boolean;
+}
+
+export interface InstanceDetail extends InstanceSummary {
+  entries: TimeEntry[];
+  answers: { number: number; answered: boolean; skipped: boolean }[];
 }
 
 export interface HistoryDetail {
@@ -157,6 +248,7 @@ export interface HistoryDetail {
   subject: string;
   created_at: string;
   skip_mode: string;
+  marking_pending: boolean;
   questions: {
     number: number;
     question: string;

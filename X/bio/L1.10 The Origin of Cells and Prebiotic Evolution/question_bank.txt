@@ -1,0 +1,125 @@
+1. What fundamental abiotic conditions on early Earth were essential for driving the spontaneous synthesis of organic monomers during prebiotic evolution? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. High atmospheric oxygen (21%), low volcanic activity, and cold oceanic temperatures
+B. Reducing atmosphere lacking free O₂, intense UV radiation, electrical discharges, and thermal heat
+C. High ozone layer protection, abundant aerobic bacteria, and high glucose concentration
+D. Highly oxidizing atmospheric mantle with stable climate controls
+
+2. What was the significance of the Miller-Urey experiment in supporting prebiotic evolutionary theory? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. It produced functional membrane-bound eukaryotic cells from inorganic gas mixtures.
+B. It demonstrated that organic molecules, including amino acids, could be synthesized abiotically under simulated reducing conditions.
+C. It proved that DNA was the first genetic molecule inside primitive protocells.
+D. It confirmed that mitochondria evolved from engulfed aerobic alphaproteobacteria.
+
+3. Why is RNA hypothesized to have preceded DNA as the primary genetic material in early prebiotic systems (The RNA World Hypothesis)? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. RNA is chemically more stable than DNA in aqueous environments.
+B. RNA can act simultaneously as genetic information storage and as a biocatalyst (ribozyme).
+C. RNA requires no enzymes for its transcription into polypeptide chains.
+D. RNA forms a double helix capable of self-assembly without hydrogen bonding.
+
+4. Which property of amphipathic lipid molecules enabled the spontaneous formation of early protocell boundaries in prebiotic oceans? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Covalent polymerization into rigid crystalline matrices
+B. Spontaneous self-assembly into lipid bilayers and closed vesicles in aqueous solutions
+C. Active transport of glucose across hydrophobic domains
+D. Enzymatic cleavage of phosphodiester linkages in surrounding RNA
+
+5. According to the endosymbiotic theory, which free-living prokaryotic ancestor was engulfed by an ancestral anaerobic eukaryotic host to become the mitochondrion? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Photosynthetic cyanobacterium
+B. Aerobic alphaproteobacterium
+C. Methanogenic archaebacterium
+D. Filamentous actinobacterium
+
+6. Which line of evidence provides strong structural support for the endosymbiotic origin of mitochondria and chloroplasts? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Presence of linear eukaryotic chromosomes bound to histone proteins
+B. Presence of double membranes and autonomous 70S ribosomes similar to prokaryotes
+C. Ability to survive indefinitely when isolated completely outside eukaryotic cells
+D. Reliance on host nuclear 80S ribosomes for all organelle protein synthesis
+
+7. What physical surfaces are hypothesized to have acted as mineral catalysts for the condensation of organic monomers into early polymers during prebiotic evolution? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Volcanic ash clouds
+B. Clay minerals and deep-sea hydrothermal vent surfaces
+C. Glacial ice sheets
+D. Atmospheric water droplets
+
+8. What functional capability distinguishes a ribozyme from a standard RNA strand? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Catalytic activity capable of hydrolyzing or synthesizing specific chemical bonds
+B. Resistance to thermal degradation at temperatures exceeding 100°C
+C. Inability to form complementary hydrogen bonds
+D. Exclusive composition of deoxyribose nucleotides
+
+9. Which evolutionary step was necessary for protocells to transition into fully functional, autonomous prokaryotic organisms? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Loss of lipid bilayer boundaries
+B. Establishment of DNA-based genetic inheritance and ribosome-mediated translation
+C. Transition from cellular respiration to anaerobic fermentation
+D. Development of multicellular tissue organization
+
+10. What metabolic advantage did the acquisition of mitochondria confer upon early ancestral eukaryotic cells? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Ability to perform oxygenic photosynthesis
+B. High-yield ATP generation via aerobic oxidative phosphorylation
+C. Direct fixation of atmospheric nitrogen gas into amino acids
+D. Synthesis of cellulose cell walls for mechanical protection
+
+11. Why was the absence of free molecular oxygen (O₂) in early Earth's atmosphere essential for the abiotic synthesis of organic monomers? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. O₂ would have oxidized and destroyed newly formed organic monomers.
+B. O₂ blocks ultraviolet light required for abiotic condensation.
+C. Oxygen prevents nitrogen gas from reacting with water vapor.
+D. Free oxygen inhibits lipid bilayer membrane self-assembly.
+
+12. What feature of organelle division in mitochondria and chloroplasts supports their bacterial origin? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Division by eukaryotic mitosis with spindle fibers
+B. Independent division by binary fission-like processes
+C. Budding from the rough endoplasmic reticulum
+D. Fragmentation during nuclear envelope breakdown
+
+13. Which ancestral engulfed organism gave rise to photosynthetic chloroplasts in green algae and plants? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Methanogenic archaebacterium
+B. Oxygenic photosynthetic cyanobacterium
+C. Nitrifying bacterium
+D. Aerobic alphaproteobacterium
+
+14. What molecular evolutionary process led to the modern reliance of mitochondria on nuclear-encoded proteins? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Complete destruction of mitochondrial DNA
+B. Transfer of ancestral endosymbiont genes to the host eukaryotic cell nucleus
+C. Loss of host nuclear transcription factors
+D. Conversion of mitochondrial 70S ribosomes into 80S cytosolic ribosomes
+
+15. What type of artificial structure formed in laboratories by lipid self-assembly mimics primitive protocell boundaries? [Type: MCQ; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Nucleosome
+B. Liposome / Membrane-bound vesicle
+C. Proteasome
+D. Ribozyme complex
+
+16. Name the catalytic RNA molecules capable of storing genetic information and accelerating biochemical reactions. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. State the hypothesis proposing that self-replicating RNA molecules served as the precursor to modern DNA- and protein-based life. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+18. Identify the bacterial ribosome size (70S or 80S) found inside modern eukaryotic mitochondria and chloroplasts. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+19. Name the landmark 1953 experiment that demonstrated abiotic synthesis of amino acids from methane, ammonia, hydrogen, and water vapor under electrical discharge. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+20. Identify the free-living prokaryotic group that gave rise to mitochondria via primary endosymbiosis. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. State the structural topology of mitochondrial and chloroplast genomic DNA (circular or linear). [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+22. What type of chemical environment (reducing or oxidizing) characterized the early Earth atmosphere prior to the emergence of oxygenic photosynthesis? [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+23. Name the deep-sea geological structures where extreme heat, mineral gradients, and reducing chemistry provided ideal conditions for prebiotic monomer formation. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+24. What primary advantage does DNA possess over RNA as a long-term genome storage molecule in cellular organisms? [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+25. Identify the membrane structure boundary formed spontaneously when amphipathic phospholipids are placed in water. [Type: Hybrid; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+26. Outline four sequential evolutionary steps required for the spontaneous origin of living cells from non-living chemical precursors on early Earth. [Type: Theory; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+27. Evaluate the RNA World Hypothesis.
+(a) Explain two properties of RNA that support its role as the primary prebiotic informational and catalytic molecule.
+(b) Discuss the evolutionary advantages that drove modern biological systems to select DNA for genetic storage and proteins for enzymatic catalysis. [Type: Theory; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Describe the Endosymbiotic Theory for the origin of eukaryotic organelles. Outline four distinct pieces of evidence from mitochondrial structure, genetics, and division that support its bacterial ancestry. [Type: Theory; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700 / IB; Answer-Method: text-exclusive]
+
+29. Compartmentalization was a prerequisite for the emergence of life.
+(a) Explain how amphipathic lipid molecules form protocell membranes.
+(b) Discuss why internal micro-environments were essential for concentrating catalytic RNA molecules and maintaining chemical homeostasis against the surrounding environment. [Type: Theory; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+30. Photosynthetic cyanobacteria evolved oxygenic pathways that transformed early Earth's atmosphere.
+(a) Describe the physiological impact of rising atmospheric O₂ concentrations ("The Great Oxidation Event") on obligate anaerobic organisms.
+(b) Explain how the acquisition of aerobic endosymbionts allowed ancestral eukaryotic cells to survive and expand into newly aerobic biomes. [Type: Theory; Subject: Biology; Topic: L1.10 The Origin of Cells and Prebiotic Evolution; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]

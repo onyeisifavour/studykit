@@ -1,0 +1,270 @@
+1. For what value of x is the rational function f(x)= 
+x−2
+3x+1
+​
+  mathematically undefined? [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. x=− 
+3
+1
+​
+ 
+B. x=0
+C. x=2
+D. x=−2
+
+2. Determine the maximal real domain of the square-root function f(x)= 
+2x−6
+
+​
+ . [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. x>3
+B. x≥3
+C. x≥6
+D. x∈R
+
+3. Find the range of the quadratic function f(x)=x 
+2
+ +4x−3 for x∈R. [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. y≥−7
+B. y≥−3
+C. y≥0
+D. y∈R
+
+4. What is the maximal real domain of the logarithmic function f(x)=ln(5−x)? [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+A. x≤5
+B. x<5
+C. x>5
+D. x≠5
+
+5. Determine the range of the exponential function f(x)=3 
+x
+ +2 defined for all x∈R. [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. y>0
+B. y≥2
+C. y>2
+D. y∈R
+
+6. Find the range of the trigonometric function f(x)=sin(x)+1 for x∈R. [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. −1≤y≤1
+B. 0≤y≤2
+C. 1≤y≤2
+D. 0<y<2
+
+7. Which condition must be satisfied for a relation f:X→Y to be classified strictly as a mathematical function? [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Every output y∈Y must correspond to at least one input x∈X.
+B. Every input x∈X must map to exactly one output y∈Y.
+C. The domain X must equal the range Y.
+D. The mapping must be one-to-one and onto.
+
+8. Determine the maximal domain of the rational function f(x)= 
+x 
+2
+ −9
+x+1
+​
+ . [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. x∈R∖{3}
+B. x∈R∖{−3,3}
+C. x∈R∖{−1}
+D. x>3
+
+9. Identify the maximal real domain of the odd-root function f(x)= 
+3
+  
+x−4
+
+​
+ . [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+A. x≥4
+B. x>4
+C. x∈R
+D. x≤4
+
+10. Find the range of the rational function f(x)= 
+x−3
+2x+1
+​
+  on its maximal domain. [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. y∈R∖{3}
+B. y∈R∖{2}
+C. y∈R∖{1}
+D. y>0
+
+11. Determine the maximal real domain of the combined expression f(x)= 
+x−2
+
+​
+ + 
+x−5
+1
+​
+ . [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. [2,∞)
+B. (2,5)∪(5,∞)
+C. [2,5)∪(5,∞)
+D. (5,∞)
+
+12. The trigonometric function f(x)=tan(x) is undefined at which set of real values (where k∈Z)? [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. x=kπ
+B. x=π/2 +kπ
+C. x=π/4 +2kπ
+D. x=2kπ
+
+13. Given the discrete domain X={−3,0,2} for the linear function f(x)=3x−5, determine its range. [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+A. {−14,−5,1}
+B. {−14,0,1}
+C. {−9,−5,1}
+D. {−3,0,2}
+
+14. Determine the range of the quadratic function f(x)=−x 
+2
+ +6x−5. [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. y≤4
+B. y≥4
+C. y≤−5
+D. y≥3
+
+15. For composite function g(f(x)) where f(x)=x 
+2
+ −4 and g(x)= 
+x
+
+​
+ 
+1
+​
+ , find the maximal domain of g(f(x)). [Type: MCQ; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. x>2
+B. x<−2 or x>2
+C. −2<x<2
+D. x≥2
+
+HYBRID QUESTIONS
+16. State the maximal domain of f(x)= 
+x 
+2
+ −16
+
+​
+ 
+1
+​
+  in interval notation. [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+17. Find the horizontal asymptotic boundary limiting the range of f(x)=4−e 
+−2x
+ . [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+18. State the value of x excluded from the domain of f(x)= 
+3x+12
+2x−1
+​
+ . [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+19. Calculate the upper bound of the range for f(x)=5−2cos(x). [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+20. Determine the domain restriction for f(x)=log 
+10
+​
+ (x 
+2
+ −9) in terms of x. [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+
+21. Calculate the range of f(x)=x 
+2
+ +2 restricted to domain 1<x<5. [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+22. State the smallest integer contained within the domain of f(x)= 
+3x−11
+
+​
+ . [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+23. Find the maximum value in the range of the rational function f(x)= 
+x 
+2
+ +1
+4
+​
+ . [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+24. Determine the maximal domain of f(x)= 
+x−3
+x−1
+​
+ 
+
+​
+ . [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+25. Calculate the minimum value in the range of f(x)=2x 
+2
+ −8x+11. [Type: Hybrid; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge IGCSE 0580/22; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. Given the function f(x)= 
+x+4
+
+​
+ 
+3x−2
+​
+ :
+(a) Determine the maximal real domain of f(x), expressing your answer in interval notation.
+(b) Explain why x=−4 and x=−5 are excluded from the domain, citing specific algebraic rules. [Type: Theory; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+27. Two functions are defined by f(x)= 
+x−2
+1
+​
+  and g(x)= 
+x−3
+
+​
+ .
+(a) Determine the domain and range of f(x) and g(x) individually.
+(b) Formulate the composite function expression (g∘f)(x)=g(f(x)).
+(c) Derive the maximal domain of (g∘f)(x), showing all intersection steps. [Type: Theory; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+28. A function h(x) is defined piecewise by:
+h(x)= 
+⎩
+⎨
+⎧
+​
+  
+x 
+2
+ +2,
+5−x,
+x−4
+1
+​
+ ,
+​
+  
+x<1
+1≤x≤4
+x>4
+​
+ 
+
+(a) Determine the maximal real domain of h(x).
+(b) Determine the exact range of h(x).
+(c) Identify any points of discontinuity or undefined behavior. [Type: Theory; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+
+29. A student concluded that the range of f(x)= 
+x 
+2
+ +1
+x 
+2
+ 
+​
+  is all real numbers y∈R because the denominator is never zero.
+(a) Identify the candidate's error in range determination.
+(b) Prove analytically that the range is bounded within [0,1). [Type: Theory; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: AP Calculus AB; Answer-Method: text-exclusive]
+
+30. Consider the trigonometric logarithmic function f(x)=ln(2−sinx).
+(a) Prove that the maximal real domain of f(x) is all real numbers x∈R.
+(b) Determine the exact range of f(x) in closed interval form. [Type: Theory; Subject: Maths; Topic: L1.7 Functions: Definitions, Domain, and Range; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]

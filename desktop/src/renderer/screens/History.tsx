@@ -1,11 +1,20 @@
 import { useEffect, useState } from 'react';
-import { getHistory, getHistoryDetail } from '../api';
+import {
+  deleteHistory,
+  getHistory,
+  getHistoryDetail,
+  historyToArtifact,
+  markPending,
+  startInstance,
+} from '../api';
+import Menu from '../components/Menu';
 import RichText from '../components/RichText';
 import type { HistoryDetail, QuizSummary } from '../types';
 
 interface Props {
   onNavigate: (screen: string) => void;
   active: boolean;
+  onResume: (instanceId: string, workQuizId: string) => void;
 }
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -26,7 +35,7 @@ function short(q: string, n = 48): string {
   return q.length > n ? q.substring(0, n) + '…' : q;
 }
 
-export default function History({ active }: Props) {
+export default function History({ active, onResume }: Props) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [quizzes, setQuizzes] = useState<QuizSummary[]>([]);
@@ -34,6 +43,8 @@ export default function History({ active }: Props) {
   const [detail, setDetail] = useState<HistoryDetail | null>(null);
   const [selQ, setSelQ] = useState(0);
   const [railOpen, setRailOpen] = useState(false);
+  const [busyId, setBusyId] = useState<string | null>(null);
+  const [note, setNote] = useState<string | null>(null);
 
   const load = () => {
     setLoading(true);
@@ -49,7 +60,13 @@ export default function History({ active }: Props) {
       });
   };
 
-  useEffect(load, []);
+  // Every screen is mounted for the life of the app and merely shown or hidden,
+  // so loading once on mount left History showing whatever existed at startup.
+  // Reloading whenever the screen becomes visible means a finished quiz appears
+  // without needing an app restart.
+  useEffect(() => {
+    if (active) load();
+  }, [active]);
 
   const selectQuiz = (q: QuizSummary) => {
     setSelQuiz(q);
@@ -70,6 +87,58 @@ export default function History({ active }: Props) {
     setDetail(null);
   };
 
+  // Removes the log only. Any stored quiz/artifact built from this attempt is
+  // left on disk so it can still be retaken.
+  const removeQuiz = (q: QuizSummary) => {
+    if (busyId) return;
+    setBusyId(q.quiz_id);
+    deleteHistory(q.quiz_id)
+      .then(() => {
+        setQuizzes((prev) => prev.filter((x) => x.quiz_id !== q.quiz_id));
+        if (selQuiz && selQuiz.quiz_id === q.quiz_id) backToList();
+      })
+      .catch((e) => setError(String(e.message ?? e)))
+      .finally(() => setBusyId(null));
+  };
+
+  // Retake: promotes this attempt into an immutable artifact, then starts a
+  // brand new attempt at it and hands it to the quiz screen. The history entry
+  // itself is left untouched, so the new attempt lands in History separately
+  // once it is finished.
+  const retake = (q: QuizSummary) => {
+    if (busyId) return;
+    setBusyId(q.quiz_id);
+    setError(null);
+    setNote(null);
+    historyToArtifact(q.quiz_id)
+      .then((r) => startInstance(r.artifact_id))
+      .then((inst) => {
+        if (!inst.work_quiz_id) {
+          setError('Could not open a new attempt at that quiz. Try again.');
+          return;
+        }
+        onResume(inst.instance_id, inst.work_quiz_id);
+      })
+      .catch((e) => setError(String(e.message ?? e)))
+      .finally(() => setBusyId(null));
+  };
+
+  // Finishes grading a quiz the student deferred with "Mark later". The
+  // existing History entry is patched in place, so no new entry appears.
+  const markNow = (q: QuizSummary) => {
+    if (busyId) return;
+    setBusyId(q.quiz_id);
+    setError(null);
+    setNote(null);
+    markPending(q.quiz_id)
+      .then((r) => {
+        setNote(`Marked ${r.marked} written answer${r.marked === 1 ? '' : 's'}.`);
+        return load();
+      })
+      .catch((e) => setError(String(e.message ?? e)))
+      .finally(() => setBusyId(null));
+  };
+
   const curQ = detail && detail.questions.length ? detail.questions[selQ] : null;
 
   return (
@@ -82,12 +151,24 @@ export default function History({ active }: Props) {
         <div className="hist-list-hdr">
           <span className="f-label">Recent quizzes</span>
         </div>
+        {error && quizzes.length > 0 && (
+          <div className="hist-inline-error">
+            <span>{error}</span>
+            <button type="button" onClick={() => setError(null)} aria-label="Dismiss">✕</button>
+          </div>
+        )}
+        {note && quizzes.length > 0 && (
+          <div className="hist-inline-note">
+            <span>{note}</span>
+            <button type="button" onClick={() => setNote(null)} aria-label="Dismiss">✕</button>
+          </div>
+        )}
         {loading ? (
           <div className="empty">
             <div className="empty-ico">⏳</div>
             <h3>Loading your history…</h3>
           </div>
-        ) : error ? (
+        ) : error && quizzes.length === 0 ? (
           <div className="empty">
             <div className="empty-ico">⚠️</div>
             <h3>Couldn't load history</h3>
@@ -109,7 +190,41 @@ export default function History({ active }: Props) {
             >
               <div className="hist-qz-title">{q.topic || 'Untitled quiz'}</div>
               <div className="hist-qz-meta">
-                {fmtDate(q.created_at)} · {q.completed ? 'Completed' : 'Incomplete'} · <span style={{ color: pctColor(q.avg_pct) }}>{q.avg_pct}%</span>
+                {fmtDate(q.created_at)} · {q.completed ? 'Completed' : 'Incomplete'} ·{' '}
+                {q.marking_pending ? (
+                  <span className="badge b-amber">PENDING AI MARKING</span>
+                ) : (
+                  <span style={{ color: pctColor(q.avg_pct) }}>{q.avg_pct}%</span>
+                )}
+              </div>
+              <div className="hist-qz-menu" onClick={(e) => e.stopPropagation()}>
+                <Menu
+                  ariaLabel={`Actions for ${q.topic || 'Untitled quiz'}`}
+                  items={[
+                    {
+                      key: 'retake',
+                      label: 'Retake this quiz now',
+                      disabled: busyId === q.quiz_id,
+                      onSelect: () => retake(q),
+                    },
+                    ...(q.marking_pending
+                      ? [{
+                          key: 'marknow',
+                          label: 'Mark now',
+                          disabled: busyId === q.quiz_id,
+                          onSelect: () => markNow(q),
+                        }]
+                      : []),
+                    {
+                      key: 'delete',
+                      label: 'Delete from history',
+                      confirm: 'Click again to confirm',
+                      danger: true,
+                      disabled: busyId === q.quiz_id,
+                      onSelect: () => removeQuiz(q),
+                    },
+                  ]}
+                />
               </div>
             </div>
           ))
@@ -148,7 +263,7 @@ export default function History({ active }: Props) {
                 <div className="hist-ans-block">
                   <div className="hist-ans-lbl">Your Answer</div>
                   <div className="hist-ans-val" style={{ color: curQ.is_correct ? 'var(--ja-tx)' : 'var(--ro-tx)' }}>
-                    {curQ.user_answer || '—'}
+                    {curQ.user_answer ? <RichText text={curQ.user_answer} /> : '—'}
                   </div>
                 </div>
                 {!curQ.is_correct && curQ.correct_answer && (
@@ -162,7 +277,7 @@ export default function History({ active }: Props) {
               <>
                 <div className="hist-ans-block">
                   <div className="hist-ans-lbl">Your Answer</div>
-                  <div className="hist-ans-val">{curQ.user_answer || '—'}</div>
+                  <div className="hist-ans-val">{curQ.user_answer ? <RichText text={curQ.user_answer} /> : '—'}</div>
                 </div>
                 {curQ.correct_answer && (
                   <div className="hist-ans-block">

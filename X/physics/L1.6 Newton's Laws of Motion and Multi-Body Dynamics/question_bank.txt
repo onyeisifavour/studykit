@@ -1,0 +1,113 @@
+1. A block of mass $m_1 = 2.0\text{ kg}$ rests on top of a second block of mass $m_2 = 4.0\text{ kg}$, which sits on a frictionless horizontal floor. The coefficient of static friction between the two blocks is $\mu_s = 0.30$. A horizontal pulling force $F$ is applied directly to $m_2$. What is the maximum value of $F$ such that $m_1$ does not slide relative to $m_2$, and what physical force accelerates $m_1$? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $17.7\text{ N}$; $m_1$ is accelerated by the static frictional force exerted on it by $m_2$.
+    B. $5.88\text{ N}$; $m_1$ is accelerated directly by the external force $F$.
+    C. $17.7\text{ N}$; $m_1$ is accelerated by kinetic friction once sliding begins.
+    D. $11.8\text{ N}$; $m_1$ is accelerated by the vertical normal reaction force.
+2. Two isolated bodies have masses in the ratio $3:1$. Independent horizontal forces act on them, imparting accelerations in the ratio $2:9$, respectively. Determine the ratio of the net forces experienced by the two masses. [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: JAMB 1999; Answer-Method: text-exclusive]
+    A. $1 : 4$
+    B. $2 : 1$
+    C. $2 : 3$
+    D. $2 : 5$
+3. An elevator frame of total mass $M$ accelerates vertically upward with an acceleration $a = \frac{g}{2}$. A passenger of mass $m$ standing inside the elevator stands on a calibrated spring scale. What reading is recorded on the scale, and what physical mechanism explains this observation? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. $\frac{1}{2}mg$; the apparent weight decreases because inertia resists upward displacement.
+    B. $\frac{3}{2}mg$; the scale must exert an upward normal force supporting $mg$ plus the net force $m(g/2)$ for acceleration.
+    C. $mg$; translational equilibrium is maintained within the accelerating frame.
+    D. $2mg$; scale compression doubles in any non-inertial accelerating frame.
+4. A heavy book rests in static equilibrium on a horizontal table. Which pair of forces represents a valid interaction pair under Newton's Third Law? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. The downward gravitational pull of the Earth on the book and the upward normal force of the table on the book.
+    B. The downward gravitational pull of the Earth on the book and the upward gravitational pull of the book on the Earth.
+    C. The downward force of the book on the table and the downward gravitational force on the book.
+    D. The static frictional force between book and table and the gravitational pull of the Earth.
+5. A high-speed jet of water with cross-sectional area $A$ and mass density $\rho$ strikes a flat vertical wall normally at speed $v$ and rebounds horizontally with speed $v/2$. Applying Newton's Second Law in momentum form ($\mathbf{F} = \frac{d\mathbf{p}}{dt}$), what magnitude of dynamic force is exerted on the wall? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $\frac{1}{2}\rho A v^2$
+    B. $\rho A v^2$
+    C. $\frac{3}{2}\rho A v^2$
+    D. $2\rho A v^2$
+6. In an Atwood machine, two suspended masses $m_1 = 3.0\text{ kg}$ and $m_2 = 5.0\text{ kg}$ are connected by a light inextensible string passing over a smooth, frictionless pulley. Taking $g = 9.81\text{ m s}^{-2}$, calculate the magnitude of the system acceleration $a$ and the string tension $T$. [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. $a = 2.45\text{ m s}^{-2},\ T = 36.8\text{ N}$
+    B. $a = 4.90\text{ m s}^{-2},\ T = 36.8\text{ N}$
+    C. $a = 2.45\text{ m s}^{-2},\ T = 29.4\text{ N}$
+    D. $a = 1.23\text{ m s}^{-2},\ T = 49.0\text{ N}$
+7. A wooden crate rests on a rough plane inclined at angle $\theta$ to the horizontal. As the incline angle is slowly increased, the crate begins to slide down when $\theta = 30^\circ$. What is the coefficient of static friction $\mu_s$, and why does the maximum static friction force change prior to motion? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $\mu_s = 0.577$; $f_{s,\max} = \mu_s mg\cos\theta$ decreases because the normal reaction force diminishes as $\theta$ increases.
+    B. $\mu_s = 0.500$; $f_{s,\max}$ remains constant until sliding begins.
+    C. $\mu_s = 0.866$; $f_{s,\max}$ increases linearly with the tilt angle.
+    D. $\mu_s = 0.577$; $f_{s,\max}$ increases because gravity pulls harder along the surface.
+8. Two connected masses $m_1 = 4.0\text{ kg}$ and $m_2 = 2.0\text{ kg}$ are pulled up a smooth plane inclined at $30^\circ$ to the horizontal by a force $F = 45\text{ N}$ applied parallel to the incline to $m_1$. Determine the tension $T$ in the string connecting $m_1$ and $m_2$. [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $9.81\text{ N}$
+    B. $15.0\text{ N}$
+    C. $21.5\text{ N}$
+    D. $30.0\text{ N}$
+9. A heavy crate of weight $W$ is pulled along a rough horizontal floor at constant velocity by a force $P$ inclined at angle $\theta$ above the horizontal. If the coefficient of kinetic friction is $\mu_k$, which expression correctly gives $P$? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $P = \frac{\mu_k W}{\cos\theta + \mu_k \sin\theta}$
+    B. $P = \frac{\mu_k W}{\cos\theta - \mu_k \sin\theta}$
+    C. $P = \frac{\mu_k W}{\sin\theta + \mu_k \cos\theta}$
+    D. $P = \mu_k W \cos\theta$
+10. A particle of mass $m$ moves under the action of three concurrent coplanar forces. If the system is in translational equilibrium and two forces are $\mathbf{F}_1 = 3\mathbf{i} - 4\mathbf{j}\text{ N}$ and $\mathbf{F}_2 = -5\mathbf{i} + 2\mathbf{j}\text{ N}$, calculate the magnitude of the third force $\mathbf{F}_3$. [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+    A. $2.83\text{ N}$
+    B. $4.00\text{ N}$
+    C. $2.00\text{ N}$
+    D. $8.00\text{ N}$
+11. A force $F = 20\text{ N}$ holds a $5.0\text{ kg}$ block against a vertical rough wall ($\mu_s = 0.60, \mu_k = 0.40$). Taking $g = 9.81\text{ m s}^{-2}$, describe the motion and compute the net vertical force acting on the block. [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+    A. Block remains stationary; static friction $12\text{ N}$ balances weight $49.05\text{ N}$.
+    B. Block accelerates downward; net vertical force is $41.05\text{ N}$ downward.
+    C. Block accelerates downward; net vertical force is $37.05\text{ N}$ downward because $f_k = \mu_k F = 8.0\text{ N}$.
+    D. Block slides at constant speed downward; net force is zero.
+12. A particle of mass $m = 0.50\text{ kg}$ is subjected to a time-dependent force $\mathbf{F}(t) = (6t\mathbf{i} + 4\mathbf{j})\text{ N}$. If it starts from rest at $t = 0$, determine its velocity vector $\mathbf{v}$ at $t = 2.0\text{ s}$. [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $(12\mathbf{i} + 8\mathbf{j})\text{ m s}^{-1}$
+    B. $(24\mathbf{i} + 16\mathbf{j})\text{ m s}^{-1}$
+    C. $(6\mathbf{i} + 4\mathbf{j})\text{ m s}^{-1}$
+    D. $(48\mathbf{i} + 32\mathbf{j})\text{ m s}^{-1}$
+13. A block rests on an inclined plane. Which statement correctly explains why the maximum static friction force decreases as the incline angle $\theta$ increases? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. The coefficient of friction $\mu_s$ decreases with increasing incline angle.
+    B. The normal reaction force $F_N = mg\cos\theta$ decreases, directly reducing $f_{s,\max} = \mu_s F_N$.
+    C. Gravity pulls the block harder parallel to the surface, reducing friction.
+    D. The macroscopic contact area between block and plane decreases as angle grows.
+14. Inertia is defined and quantified physically in dynamic mechanical systems as: [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. The velocity-dependent opposition to motion, measured in newtons.
+    B. The intrinsic property of matter that resists changes in momentum, measured quantitatively by mass.
+    C. The vector sum of external forces required to sustain uniform motion.
+    D. The gravitational attraction exerted by a body on its immediate surroundings.
+15. Three blocks $A$, $B$, and $C$ of masses $1.0\text{ kg}$, $2.0\text{ kg}$, and $3.0\text{ kg}$ sit in contact on a smooth horizontal surface. A force $F = 12\text{ N}$ pushes block $A$ horizontally. What is the contact force exerted by block $B$ on block $C$? [Type: MCQ; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $12\text{ N}$
+    B. $8.0\text{ N}$
+    C. $6.0\text{ N}$
+    D. $4.0\text{ N}$
+16. In an Atwood machine setup, mass $m_1 = 15.0\text{ kg}$ and mass $m_2 = 28.0\text{ kg}$ hang over a smooth, light pulley. Calculate the magnitude of the upward acceleration of $m_1$ and the string tension $T$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+17. A vehicle of mass $800\text{ kg}$ accelerates uniformly along a straight horizontal road from an initial velocity of $25.0\text{ m s}^{-1}$ to $45.0\text{ m s}^{-1}$ in $10.0\text{ s}$. Calculate the magnitude of the net horizontal accelerating force. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: JAMB 2010; Answer-Method: text-exclusive]
+18. A mass $m_1 = 4.0\text{ kg}$ resting on a smooth horizontal table is connected by a light string over a frictionless pulley to a hanging mass $m_2 = 6.0\text{ kg}$. Calculate the system acceleration upon release from rest. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+19. A modified Atwood machine consists of a block $m_1 = 5.0\text{ kg}$ on a rough horizontal surface ($\mu_k = 0.20$) connected via a light cord over a smooth pulley to a suspended block $m_2 = 3.0\text{ kg}$. Compute the acceleration of the system. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+20. A block of mass $10.0\text{ kg}$ is pulled along a rough horizontal plane ($\mu_k = 0.30$) at constant velocity by a force $F$ directed at $30^\circ$ above the horizontal. Calculate the required force magnitude $F$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+21. A rubber sphere of mass $0.50\text{ kg}$ strikes a rigid vertical wall horizontally at $12.0\text{ m s}^{-1}$ and rebounds horizontally at $8.0\text{ m s}^{-1}$. If the contact duration is $0.050\text{ s}$, compute the average contact force exerted by the wall. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+22. A $12.0\text{ kg}$ crate rests on an incline angled at $\theta = 35^\circ$ with static coefficient $\mu_s = 0.40$. Calculate the minimum force $F$ applied parallel to the plane necessary to prevent the crate from sliding down. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+23. Three blocks of masses $m_1 = 1.0\text{ kg}$, $m_2 = 2.0\text{ kg}$, and $m_3 = 3.0\text{ kg}$ sit in contact on a smooth horizontal table. A force $F = 12.0\text{ N}$ pushes $m_1$ horizontally. Determine the contact force magnitude exerted by $m_2$ on $m_3$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+24. A heavy mass $M = 500\text{ kg}$ rests on a stiff vertical restoring spring ($k = 25000\text{ N m}^{-1}$). Calculate the equilibrium vertical compression distance of the spring. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+25. A car of mass $1200\text{ kg}$ travelling at $20.0\text{ m s}^{-1}$ locks its brakes on a wet road ($\mu_k = 0.60$). Calculate the stopping distance required under kinetic friction alone. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+26. **Formal Mathematical Proof: Acceleration and Tension Equations in an Ideal Atwood Machine** [Type: Theory; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: non-text-exclusive]
+    An Atwood machine consists of two suspended masses $m_1$ and $m_2$ ($m_2 > m_1$) connected by an ideal light, inextensible string passing over a frictionless, massless pulley.
+    (a) Construct individual free-body diagrams for $m_1$ and $m_2$, explicitly labeling force vectors and choosing a consistent coordinate orientation.
+    (b) Applying Newton's Second Law ($\mathbf{F} = m\mathbf{a}$) to each isolated body, prove formally that the system acceleration $a$ is given by:
+    $$a = g\left(\frac{m_2 - m_1}{m_1 + m_2}\right)$$
+    and that the string tension $T$ is given by:
+    $$T = \frac{2 m_1 m_2 g}{m_1 + m_2}$$
+    (c) Evaluate the theoretical limiting cases where $m_1 \ll m_2$ and where $m_1 = m_2$, interpreting the physical outcome of each limit in terms of Newton's First and Second Laws.
+27. **Multi-Body Dynamics on an Inclined Plane with Friction** [Type: Theory; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A block $m_1 = 3.0\text{ kg}$ rests on a rough inclined plane angled at $\theta = 30^\circ$ ($\mu_k = 0.20$). Block $m_1$ is attached via a light cord over a smooth pulley to a hanging block $m_2 = 5.0\text{ kg}$.
+    (a) Draw labeled FBDs for both $m_1$ and $m_2$.
+    (b) Calculate the acceleration $a$ of the system upon release from rest.
+    (c) Compute the cord tension $T$ during motion.
+    (d) If the string breaks after $2.0\text{ s}$, calculate the additional distance $m_1$ slides up the incline before momentarily coming to rest.
+28. **Newton's Laws and Momentum-Based Mass-Flow Mechanics** [Type: Theory; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    (a) State Newton's Second Law in its general differential vector calculus form involving momentum $\mathbf{p}$, and prove how it simplifies to $\mathbf{F} = m\mathbf{a}$ for a closed system of constant mass.
+    (b) A sand hopper drops sand vertically at a rate $\frac{dm}{dt} = R = 10.0\text{ kg s}^{-1}$ onto a conveyor belt moving horizontally at constant speed $v = 2.0\text{ m s}^{-1}$. Explain why a horizontal force $F$ is required to maintain constant speed $v$, and calculate the power expended by this force versus the rate of kinetic energy gain of the sand.
+    (c) Account for the discrepancy between input mechanical power and rate of kinetic energy gain.
+29. **Equilibrium and Contact Mechanics in Stacked and Coupled Systems** [Type: Theory; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+    Two rectangular blocks $A$ ($m_A = 8.0\text{ kg}$) and $B$ ($m_B = 12.0\text{ kg}$) are stacked vertically on a horizontal surface, with $A$ resting on top of $B$. The coefficient of static friction between $A$ and $B$ is $\mu_{s1} = 0.40$, while between $B$ and the ground $\mu_{s2} = 0.15$.
+    (a) Draw detailed FBDs for $A$ and $B$ when a horizontal force $P$ is applied directly to $B$.
+    (b) Calculate the maximum pulling force $P_{\max}$ that can be applied to $B$ without causing $A$ to slide relative to $B$.
+    (c) Describe the motion of the system if $P$ exceeds $P_{\max}$.
+30. **Translational Equilibrium and Vector Force Decomposition** [Type: Theory; Subject: Physics; Topic: L1.6 Newton's Laws of Motion and Multi-Body Dynamics; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A heavy traffic light of weight $W = 200\text{ N}$ is suspended from a junction of two structural support cables. Cable 1 makes an angle of $30^\circ$ with the horizontal ceiling, and Cable 2 makes an angle of $60^\circ$.
+    (a) Set up the formal translational equilibrium equations ($\sum F_x = 0$ and $\sum F_y = 0$).
+    (b) Calculate the tensions $T_1$ and $T_2$ in Cables 1 and 2.
+    (c) Explain why no cable supporting a non-zero vertical load can ever remain perfectly horizontal.

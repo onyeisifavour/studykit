@@ -1,0 +1,112 @@
+1. A particle fixed to the tip of a fan blade rotates with angular velocity $\omega = 100\text{ rad s}^{-1}$. If blade radius is $r = 0.20\text{ m}$ and particle mass is $m = 1.0 \times 10^{-2}\text{ kg}$, calculate centripetal force and state its vector direction. [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 1999; Answer-Method: text-exclusive]
+    A. $20.0\text{ N}$; directed tangentially along motion
+    B. $20.0\text{ N}$; directed radially inward toward center of rotation
+    C. $200.0\text{ N}$; directed radially outward
+    D. $2.00\text{ N}$; directed perpendicular to plane of rotation
+2. State Kepler's First Law of Planetary Motion. [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 1980; Answer-Method: text-exclusive]
+    A. Planets describe ellipses with the Sun located at one focus.
+    B. Planets describe ellipses with the Moon located at one focus.
+    C. Planets describe circles with the Sun located at the physical center.
+    D. Orbital period squared is directly proportional to orbit radius.
+3. The force of universal gravitational attraction between point masses $m_1$ and $m_2$ separated by distance $r$ is $F = G\frac{m_1 m_2}{r^2}$. If separation $r$ is reduced to $r/3$, by what factor does gravitational force change? [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 1993; Answer-Method: text-exclusive]
+    A. Reduced to $1/9$
+    B. Increased threefold
+    C. Increased ninefold
+    D. Unchanged
+4. A satellite orbits Earth in a circular orbit of radius $r$ at speed $v_0 = \sqrt{\frac{GM}{r}}$. What escape velocity $v_{\text{esc}}$ is required from this orbital radius to escape Earth's gravity completely? [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $v_{\text{esc}} = v_0$
+    B. $v_{\text{esc}} = \sqrt{2} v_0$
+    C. $v_{\text{esc}} = 2 v_0$
+    D. $v_{\text{esc}} = \frac{v_0}{\sqrt{2}}$
+5. A car of mass $1500\text{ kg}$ rounds a circular curve ($r = 50.0\text{ m}$) at $v = 40.0\text{ m s}^{-1}$. Calculate centripetal force required to prevent skidding. [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+    A. $4.80 \times 10^4\text{ N}$
+    B. $4.80 \times 10^3\text{ N}$
+    C. $1.20 \times 10^3\text{ N}$
+    D. $2.40 \times 10^4\text{ N}$
+6. Gravitational field strength $g$ at distance $r$ from the center of a planet of mass $M$ ($r \ge R$) is given by: [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. $g = G\frac{M}{r}$
+    B. $g = G\frac{M}{r^2}$
+    C. $g = G M r^2$
+    D. $g = \frac{r^2}{GM}$
+7. An object moves in a circle of radius $0.50\text{ m}$ at speed $v = 1.00\text{ m s}^{-1}$. Compute its angular velocity $\omega$. [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 2012; Answer-Method: text-exclusive]
+    A. $0.50\text{ rad s}^{-1}$
+    B. $1.00\text{ rad s}^{-1}$
+    C. $2.00\text{ rad s}^{-1}$
+    D. $4.00\text{ rad s}^{-1}$
+8. Kepler's Third Law ($T^2 \propto r^3$) derived for circular orbits shows that $T^2 / r^3$ equals: [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. $\frac{4\pi^2}{GM}$
+    B. $\frac{GM}{4\pi^2}$
+    C. $\frac{2\pi}{G M^2}$
+    D. $\frac{4\pi}{G}$
+9. A particle moves at constant speed $v$ along a circle of radius $r$. Acceleration is non-zero because: [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. Tangential speed magnitude varies continuously.
+    B. Direction of velocity vector changes continuously toward center.
+    C. Centripetal force acts opposite to motion vector.
+    D. Angular displacement is zero over full revolution.
+10. Spherical masses $m_1 = 5.0\text{ kg}$ and $m_2 = 10.0\text{ kg}$ are separated by $r = 0.30\text{ m}$. Compute gravitational attractive force ($G = 6.67 \times 10^{-11}\text{ N m}^2\text{ kg}^{-2}$). [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+    A. $3.71 \times 10^{-8}\text{ N}$
+    B. $3.50 \times 10^{-10}\text{ N}$
+    C. $3.57 \times 10^{-2}\text{ N}$
+    D. $4.00 \times 10^{2}\text{ N}$
+11. An astronaut on an orbiting space station experiences weightlessness primarily because: [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. Earth's gravitational field vanishes at orbital altitude.
+    B. Astronaut and station are in continuous free fall with identical centripetal acceleration.
+    C. Centrifugal force balances gravity.
+    D. Vacuum eliminates normal force transmission.
+12. Gravitational potential energy $U$ of mass $m$ at distance $r$ from central mass $M$ ($U = 0$ at $r = \infty$) is: [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $U = -G\frac{M m}{r}$
+    B. $U = G\frac{M m}{r^2}$
+    C. $U = -G\frac{M m}{r^2}$
+    D. $U = G M m r$
+13. A car travels over a convex bridge of curvature radius $R$ at speed $v$. What normal force $F_N$ is exerted by the road at apex? [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $F_N = mg + \frac{mv^2}{R}$
+    B. $F_N = mg - \frac{mv^2}{R}$
+    C. $F_N = \frac{mv^2}{R}$
+    D. $F_N = mg$
+14. A geostationary satellite must be placed in an orbit that is: [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+    A. Above geographic poles with period $12\text{ hours}$.
+    B. Above Earth's equator with period $24\text{ hours}$, orbiting west to east.
+    C. At any inclination angle with period $24\text{ hours}$.
+    D. Stationary without orbital motion.
+15. If Earth's radius is $R_E$, at what altitude $h$ above surface does gravitational field strength drop to $\frac{g_0}{4}$? [Type: MCQ; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $h = R_E$
+    B. $h = 2 R_E$
+    C. $h = 3 R_E$
+    D. $h = \frac{R_E}{2}$
+16. A particle moves in a circle of radius $0.020\text{ m}$ at speed $v = 0.88\text{ m s}^{-1}$. Calculate its rotation frequency $f$ in Hz. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+17. Calculate gravitational field strength experienced by an object of mass $60.0\text{ kg}$ in Moon's gravitational field if force experienced is $100.2\text{ N}$. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 1993; Answer-Method: text-exclusive]
+18. Calculate circular orbital speed of a satellite orbiting Earth at altitude $h = 600\text{ km}$ ($R_E = 6.38 \times 10^6\text{ m}, M_E = 5.97 \times 10^{24}\text{ kg}, G = 6.67 \times 10^{-11}\text{ N m}^2\text{ kg}^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+19. A record takes $5.0\text{ s}$ to reach constant angular velocity $\omega = 4\pi\text{ rad s}^{-1}$ from rest. Calculate constant angular acceleration $\alpha$. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+20. Compute Earth's escape velocity from surface ($R_E = 6.38 \times 10^6\text{ m}, g_0 = 9.81\text{ m s}^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+21. A stone ($0.40\text{ kg}$) tied to a $0.80\text{ m}$ string is whirled in a vertical circle. Calculate minimum string tension at top if speed at apex is $4.0\text{ m s}^{-1}$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+22. A vehicle travels around a banked circular track ($r = 120\text{ m}$) angled at $\theta = 20^\circ$. Calculate optimum speed $v$ for zero horizontal friction required. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+23. Calculate orbital period $T$ of a geostationary satellite at radius $r = 4.22 \times 10^7\text{ m}$ around Earth ($M_E = 5.97 \times 10^{24}\text{ kg}$). State answer in hours. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+24. Two stars of equal mass $M = 2.0 \times 10^{30}\text{ kg}$ orbit their common center of mass in a binary system separated by $d = 1.0 \times 10^{11}\text{ m}$. Compute orbital speed of each star. [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+25. Compute percentage decrease in gravitational field strength $g$ when ascending to altitude $h = 320\text{ km}$ ($R_E = 6400\text{ km}$). [Type: Hybrid; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+26. **Formal Derivation of Kepler's Harmonic Law and Orbital Energy** [Type: Theory; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Consider a satellite of mass $m$ in circular orbit radius $r$ around central mass $M$. Equate gravitational force to centripetal force to prove formally:
+    $$v = \sqrt{\frac{GM}{r}}$$
+    (b) Using $v = \frac{2\pi r}{T}$, derive Kepler's Third Law in exact form:
+    $$T^2 = \left(\frac{4\pi^2}{GM}\right) r^3$$
+    (c) Show that total mechanical energy $E_{\text{total}}$ of circular orbit is bound and given by $E_{\text{total}} = -\frac{GMm}{2r}$.
+27. **Derivation of Gravitational Escape Velocity** [Type: Theory; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    (a) Define gravitational potential $V_g$, and explain why $V_g$ is defined as negative relative to infinity.
+    (b) Derive the work integral required to move mass $m$ from surface radius $R$ to infinity ($\infty$), proving $U(R) = -\frac{GMm}{R}$.
+    (c) Apply Conservation of Mechanical Energy to derive escape velocity:
+    $$v_{\text{esc}} = \sqrt{\frac{2GM}{R}} = \sqrt{2g_0 R}$$
+    (d) Calculate $v_{\text{esc}}$ for Earth ($R_E = 6.38 \times 10^6\text{ m}, M_E = 5.97 \times 10^{24}\text{ kg}$).
+28. **Vertical Circular Motion Dynamics** [Type: Theory; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A block $m$ slides inside a smooth vertical circular track of radius $R$.
+    (a) Derive track normal force $F_N$ at bottom, horizontal middle, and top points as functions of speed $v$.
+    (b) Prove that minimum bottom speed required to complete loop without falling off at top is $v_{\text{bottom,min}} = \sqrt{5gR}$.
+    (c) Compute normal force ratio $N_{\text{bottom}} / N_{\text{top}}$ when top speed is critical threshold $v_{\text{top}} = \sqrt{gR}$.
+29. **Banked Curve Dynamics and Civil Engineering Design** [Type: Theory; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: non-text-exclusive]
+    An engineer designs a highway curve ($r = 200\text{ m}$) banked at angle $\theta$ for speed $v = 25.0\text{ m s}^{-1}$.
+    (a) Draw a complete FBD for a car on the banked curve without friction.
+    (b) Derive banking angle formula $\tan\theta = \frac{v^2}{rg}$, and compute $\theta$. Take $g = 9.81\text{ m s}^{-2}$.
+    (c) If the road becomes icy ($\mu_s = 0.10$), calculate maximum speed $v_{\max}$ before sliding up the bank.
+30. **Gravitational Field Superposition and Neutral Equilibrium** [Type: Theory; Subject: Physics; Topic: L1.10 Circular Kinematics, Centripetal Forces, and Universal Gravitation; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    Earth ($M_E = 5.97 \times 10^{24}\text{ kg}$) and Moon ($M_M = 7.35 \times 10^{22}\text{ kg}$) are separated by $d = 3.84 \times 10^8\text{ m}$.
+    (a) Calculate distance $x$ from Earth's center to neutral point $L_1$ where net gravitational field vanishes.
+    (b) Calculate gravitational potential $V_g$ at $L_1$.
+    (c) Explain physical significance of Lagrange points in orbital mechanics.

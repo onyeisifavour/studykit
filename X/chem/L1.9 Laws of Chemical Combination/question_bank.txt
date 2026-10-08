@@ -1,0 +1,106 @@
+1. When $2.40\ \text{g}$ of magnesium ribbon burns completely in oxygen inside a closed crucible, $4.00\ \text{g}$ of magnesium oxide ($\text{MgO}$) is produced. What mass of oxygen gas reacted? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. $6.40\ \text{g}$
+B. $1.60\ \text{g}$
+C. $2.40\ \text{g}$
+D. $0.80\ \text{g}$
+2. Which chemical law is directly verified when two different samples of pure copper(II) carbonate, one natural mineral and one synthetic precipitate, both yield $57.5\%$ copper, $9.7\%$ carbon, and $32.8\%$ oxygen by mass? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. Law of Conservation of Mass
+B. Law of Constant Composition (Definite Proportions)
+C. Law of Multiple Proportions
+D. Law of Reciprocal Proportions
+3. Carbon forms two gaseous oxides: Carbon Monoxide ($\text{CO}$) and Carbon Dioxide ($\text{CO}_2$). In $\text{CO}$, $12\ \text{g}$ carbon combines with $16\ \text{g}$ oxygen. In $\text{CO}_2$, $12\ \text{g}$ carbon combines with $32\ \text{g}$ oxygen. What integer ratio illustrates the Law of Multiple Proportions? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+A. $1 : 1$
+B. $1 : 2$
+C. $2 : 3$
+D. $3 : 4$
+4. A student heats $10.0\ \text{g}$ of calcium carbonate ($\text{CaCO}_3$) in an open beaker, collecting $5.6\ \text{g}$ of solid calcium oxide ($\text{CaO}$). The apparent loss of $4.4\ \text{g}$ mass is explained by: [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. Violation of the Law of Conservation of Mass
+B. Escape of $4.4\ \text{g}$ of gaseous carbon dioxide ($\text{CO}_2$) into the atmosphere in an open system
+C. Destruction of calcium atoms during heating
+D. Experimental error in weighing scale calibration
+5. Methane ($\text{CH}_4$) always contains $75\%$ carbon and $25\%$ hydrogen by mass regardless of its natural gas source. This empirical fact supports: [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. Law of Definite Proportions
+B. Law of Multiple Proportions
+C. Avogadro's Law
+D. Gay-Lussac's Law
+6. Element X and Element Y form two compounds, $P$ and $Q$. In $P$, $2\ \text{g}$ of X combines with $3\ \text{g}$ of Y. In $Q$, $2\ \text{g}$ of X combines with $9\ \text{g}$ of Y. What is the ratio of masses of Y combining with a fixed mass of X? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. $1 : 2$
+B. $1 : 3$
+C. $2 : 3$
+D. $3 : 4$
+7. Why must chemical equations be balanced with stoichiometric coefficients? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. To satisfy the Law of Conservation of Mass by conserving atom counts for each element
+B. To ensure all reactants have equal masses
+C. To change the valence electrons of products
+D. To balance the volume of solids and liquids
+8. Copper forms two oxides: red copper(I) oxide ($\text{Cu}_2\text{O}$) and black copper(II) oxide ($\text{CuO}$). Calculating the mass of copper per gram of oxygen in both oxides demonstrates: [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. Law of Constant Composition
+B. Law of Multiple Proportions
+C. Law of Conservation of Energy
+D. Periodic Law
+9. If $4.0\ \text{g}$ of hydrogen gas reacts completely with $32.0\ \text{g}$ of oxygen gas, what mass of steam ($\text{H}_2\text{O}$) is produced? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+A. $28.0\ \text{g}$
+B. $36.0\ \text{g}$
+C. $16.0\ \text{g}$
+D. $64.0\ \text{g}$
+10. A compound of sulfur and oxygen contains $50\%$ sulfur and $50\%$ oxygen by mass. Another compound contains $40\%$ sulfur and $60\%$ oxygen by mass. What are the empirical formulas of these two oxides? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. $\text{SO}$ and $\text{SO}_2$
+B. $\text{SO}_2$ and $\text{SO}_3$
+C. $\text{S}_2\text{O}$ and $\text{SO}$
+D. $\text{SO}_3$ and $\text{S}_2\text{O}_7$
+11. Why does an iron nail left in moist air gain mass as it rusts into $\text{Fe}_2\text{O}_3\cdot x\text{H}_2\text{O}$? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Iron atoms multiply during corrosion
+B. Mass of bound atmospheric oxygen and water vapor is added to the initial mass of iron
+C. Rusting is an endothermic phase change
+D. Gravity increases iron density over time
+12. Two pure samples of water, one extracted from Antarctic ice and one synthesized in a laboratory by burning hydrogen, both show an $H : O$ mass ratio of $1 : 8$. This confirms the: [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+A. Law of Multiple Proportions
+B. Law of Definite Proportions
+C. Law of Combining Volumes
+D. Conservation of Energy Law
+13. What mass of lead(II) nitrate is required to react with $11.7\ \text{g}$ of sodium chloride to produce $27.8\ \text{g}$ of lead(II) chloride and $17.0\ \text{g}$ of sodium nitrate? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. $33.1\ \text{g}$
+B. $44.8\ \text{g}$
+C. $20.0\ \text{g}$
+D. $56.5\ \text{g}$
+14. Hydrogen peroxide ($\text{H}_2\text{O}_2$) and water ($\text{H}_2\text{O}$) have $H : O$ mass ratios of $1 : 16$ and $1 : 8$ respectively. The ratio of oxygen masses combining with $1\ \text{g}$ of hydrogen ($16 : 8 = 2 : 1$) obeys which law? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A. Law of Conservation of Mass
+B. Law of Constant Composition
+C. Law of Multiple Proportions
+D. Avogadro's Law
+15. In a chemical reaction $A + B \rightarrow C + D$, $5.0\ \text{g}$ of A reacts with $8.0\ \text{g}$ of B. If $10.0\ \text{g}$ of C is produced, what mass of D must be formed? [Type: MCQ; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2017; Answer-Method: text-exclusive]
+A. $3.0\ \text{g}$
+B. $13.0\ \text{g}$
+C. $2.0\ \text{g}$
+D. $5.0\ \text{g}$
+16. State the Law of Conservation of Mass in sentence form. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. $12.0\ \text{g}$ of carbon reacts completely with $32.0\ \text{g}$ of oxygen gas. Calculate the total mass of carbon dioxide gas produced. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+18. Calculate the mass percentage of nitrogen in pure ammonium nitrate ($\text{NH}_4\text{NO}_3$) [Molar mass: $\text{N} = 14, \text{H} = 1, \text{O} = 16$]. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+19. Nitrogen forms $\text{NO}$ and $\text{NO}_2$. Calculate the ratio of oxygen masses combining with a fixed mass ($14.0\ \text{g}$) of nitrogen in these two oxides. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+20. When $10.0\ \text{g}$ of mercury(II) oxide decomposes upon heating, $9.26\ \text{g}$ of liquid mercury is recovered. Calculate the mass of oxygen gas released. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+21. Which scientist formulated the Law of Definite Proportions in 1799? [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: JAMB 2017; Answer-Method: text-exclusive]
+22. A compound containing only iron and sulfur is $63.53\%$ iron by mass. Calculate the mass of sulfur combined with $100.0\ \text{g}$ of iron. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+23. Balance the following chemical equation: $\text{Fe}(s) + \text{O}_2(g) \rightarrow \text{Fe}_2\text{O}_3(s)$ and give the coefficient for $\text{O}_2$. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge IGCSE 0620/21; Answer-Method: text-exclusive]
+24. Calculate the percentage composition of carbon in propane ($\text{C}_3\text{H}_8$) [Atomic masses: $\text{C} = 12.0, \text{H} = 1.0$]. [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+25. In an experiment, $1.00\ \text{g}$ of phosphorus reacts with chlorine to form $4.43\ \text{g}$ of $\text{PCl}_3$. What mass of chlorine reacted? [Type: Hybrid; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+26. **Quantitative Experimental Verification of Mass Conservation** [Type: Theory; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: WAEC 2021 Q1; Answer-Method: text-exclusive]
+(a) Describe a closed-system precipitation experiment using aqueous silver nitrate ($\text{AgNO}_3$) and sodium chloride ($\text{NaCl}$) solutions inside a sealed conical flask to verify mass conservation.
+(b) Explain why performing the thermal decomposition of sodium hydrogen carbonate ($\text{NaHCO}_3$) in an open crucible results in an apparent mass decrease.
+(c) Show how accounting for evolved $\text{CO}_2$ gas and steam restores mass balance conservation.
+27. **The Law of Definite Proportions Tested on Copper Oxide Samples** [Type: Theory; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+(a) Sample 1 is prepared by heating copper in oxygen: $2.00\ \text{g}$ copper produces $2.50\ \text{g}$ copper oxide. Calculate the mass percent of copper in Sample 1.
+(b) Sample 2 is prepared by thermal decomposition of copper(II) nitrate followed by reduction: $3.18\ \text{g}$ copper oxide yields $2.54\ \text{g}$ pure copper. Calculate the mass percent of copper in Sample 2.
+(c) Compare the results of Sample 1 and Sample 2 and state whether they support the Law of Definite Proportions.
+28. **Nitrogen and Oxygen Binary Oxides: Law of Multiple Proportions** [Type: Theory; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: NECO 2020 Q3; Answer-Method: text-exclusive]
+(a) Oxide A contains $30.43\%$ nitrogen and $69.57\%$ oxygen by mass. Oxide B contains $46.67\%$ nitrogen and $53.33\%$ oxygen by mass. Calculate the mass of oxygen combined with $1.00\ \text{g}$ of nitrogen in each oxide.
+(b) Calculate the simple whole-number ratio of oxygen masses between Oxide A and Oxide B per fixed gram of nitrogen.
+(c) State which fundamental chemical law is verified by this dataset and derive the empirical formulas for Oxide A and Oxide B [Atomic masses: $\text{N} = 14.0, \text{O} = 16.0$].
+29. **Stoichiometric Relationships and Atomic Conservation** [Type: Theory; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: IB Chemistry SL 2020; Answer-Method: text-exclusive]
+(a) Explain how John Dalton's Atomic Theory provided the theoretical explanation for the Law of Conservation of Mass and Law of Definite Proportions.
+(b) Balance the combustion reaction equation: $\text{C}_4\text{H}_{10}(g) + \text{O}_2(g) \rightarrow \text{CO}_2(g) + \text{H}_2\text{O}(g)$.
+(c) Calculate the mass of oxygen required to combust completely $58.0\ \text{g}$ of butane gas ($\text{C}_4\text{H}_{10}$).
+30. **Iron Chlorides and the Law of Multiple Proportions** [Type: Theory; Subject: Chemistry; Topic: L1.9 Laws of Chemical Combination; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+Iron forms two distinct chloride salts upon reaction with hydrochloric acid and chlorine gas respectively.
+(a) Reaction 1: $5.60\ \text{g}$ iron reacts with $\text{HCl}$ to produce $12.70\ \text{g}$ of Iron Chloride X. Reaction 2: $5.60\ \text{g}$ iron reacts with $\text{Cl}_2$ gas to produce $16.25\ \text{g}$ of Iron Chloride Y. Calculate the mass of chlorine in Chloride X and Chloride Y.
+(b) Determine the simple integer ratio of chlorine masses combined with $5.60\ \text{g}$ of iron between the two salts.
+(c) Identify the IUPAC names and chemical formulas for Iron Chloride X and Iron Chloride Y.

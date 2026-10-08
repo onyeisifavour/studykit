@@ -1,0 +1,127 @@
+1. Evaluate modular sum 7+15 (mod 9) to its least non-negative residue. [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. 2
+B. 4
+C. 5
+D. 7
+
+2. Find least non-negative residue x satisfying congruence x≡29 (mod 6). [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. 1
+B. 3
+C. 5
+D. 4
+
+3. Calculate modular multiplicative inverse of 3 (mod 7). [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. 2
+B. 3
+C. 4
+D. 5
+
+4. A modular multiplicative inverse a⁻¹ (mod n) exists if and only if: [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. a is an even integer
+B. gcd(a,n)=1 (coprime)
+C. n is an even integer
+D. a>n
+
+5. On a standard 12-hour clock, what time is indicated 7 hours after 9 o'clock? [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. 2 o'clock
+B. 4 o'clock
+C. 16 o'clock
+D. 5 o'clock
+
+6. If today is Tuesday (day 2 mod 7), what day of the week will it be in 100 days? [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. Wednesday
+B. Thursday
+C. Friday
+D. Saturday
+
+7. Evaluate exponentiation modulo 5: 4³ (mod 5). [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. 1
+B. 2
+C. 3
+D. 4
+
+8. Solve linear congruence 2x≡3 (mod 7) for least positive residue x. [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. x=2
+B. x=3
+C. x=5
+D. x=6
+
+9. Find highest value of x∈{x:2≤x≤18; x∈Z} satisfying 7+x≡4 (mod 9). [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 6
+B. 12
+C. 15
+D. 18
+
+10. A modular residue system Zₙ forms an algebraic field if and only if modulus n is: [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Composite
+B. A prime number p
+C. An even integer
+D. A power of 10
+
+11. Calculate multiplicative inverse of 5 (mod 12). [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. 5
+B. 7
+C. 11
+D. Does not exist
+
+12. Evaluate negative residue (−5) (mod 6) to its least non-negative value. [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. 1
+B. 5
+C. −1
+D. 0
+
+13. Calendar scheduling for days of the week executes under which modulus ring? [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Modulo 5
+B. Modulo 7
+C. Modulo 12
+D. Modulo 30
+
+14. Apply Fermat's Little Theorem to evaluate 3¹⁰ (mod 7). [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. 1
+B. 2
+C. 4
+D. 5
+
+15. Zero divisors exist in residue system Zₙ when modulus n is: [Type: MCQ; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Prime
+B. Composite
+C. Odd
+D. Negative
+
+HYBRID QUESTIONS
+16. State least non-negative residue of 28 (mod 6). [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+
+17. Calculate multiplicative inverse of 4 (mod 9). [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+18. On a 24-hour clock, state time 50 hours after 15:00. [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+
+19. Solve for smallest positive integer x satisfying 3x≡1 (mod 11). [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+20. If day 0 is Sunday, state day of week 45 days later. [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+21. Evaluate modular product 12×11 (mod 13). [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+22. Solve x+4≡2 (mod 5) for x∈{0,1,2,3,4}. [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+
+23. Calculate remainder when 2²⁰ is divided by 3. [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+24. Calculate greatest common divisor gcd(18,25). [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+25. State least non-negative residue of −18 (mod 7). [Type: Hybrid; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+THEORY QUESTIONS
+26. Apply Extended Euclidean Algorithm to:
+(a) Calculate multiplicative inverse 7⁻¹ (mod 31).
+(b) Solve linear congruence 7x≡5 (mod 31) for least positive integer residue x. [Type: Theory; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+27. Prove formally that residue class ring Zₙ contains no zero divisors if and only if modulus n is prime. Provide a numerical counterexample for composite modulus n=6. [Type: Theory; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+28. Three industrial shift workers operate on rotating cycles of 4 days, 5 days, and 7 days respectively.
+(a) Express worker shift overlaps using simultaneous congruences.
+(b) Calculate after how many days all three workers simultaneously align on shift day 0. [Type: Theory; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+
+29. A candidate attempted modular division 4/6 (mod 8) by dividing numerator and denominator to get 1.5 (mod 8).
+(a) Explain why standard fractional division fails in modular integer rings.
+(b) Explain why 4⁻¹ (mod 8) does not exist since gcd(4,8)=4≠1. [Type: Theory; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+30. Prove using modular exponentiation and periodic residue tables that n⁵−n is divisible by 5 for every positive integer n∈Z⁺. [Type: Theory; Subject: Maths; Topic: L2.2 Modular Arithmetic and Cyclic Systems; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]

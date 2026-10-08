@@ -1,0 +1,121 @@
+1. Which simplifying assumption forms an explicit foundation of the basic Production Possibility Frontier (PPF) geometric model? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. The economy experiences continuous, unpredictable fluctuations in overall population size.
+    B. The total quantity of available productive resources and state of technology are fixed in the short run.
+    C. The economy produces an infinite variety of consumer commodities simultaneously.
+    D. Resources are fully capable of switching between industries without incurring setup costs.
+2. A linear, straight-line Production Possibility Frontier implies which underlying economic condition? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+    A. Increasing marginal opportunity costs across all output combinations.
+    B. Perfect factor substitutability between the production of the two goods.
+    C. Structural underutilization of available industrial factors.
+    D. Total absence of scarcity within the macroeconomic system.
+3. Why is a standard Production Possibility Frontier geometrically concave (bowed-out) relative to the origin? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. Because factors of production are heterogeneous and not perfectly adaptable to alternative uses.
+    B. Because technological progress improves at a diminishing rate over time.
+    C. Because consumer preference for capital goods is strictly constant.
+    D. Because government price controls distort resource allocation.
+4. On a Production Possibility Frontier diagram, any operating point located strictly inside the frontier curve represents: [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. Productive efficiency combined with full employment.
+    B. Productive inefficiency, underutilized resources, or structural unemployment.
+    C. An unattainable output combination given existing technology.
+    D. Allocative efficiency under perfect competition.
+5. Operating at a point lying directly on the perimeter of a Production Possibility Frontier signifies that the economy has achieved: [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+    A. Productive efficiency, utilizing all available resources fully and efficiently.
+    B. Absolute equality in national income distribution.
+    C. Zero trade-offs between consumer goods and capital goods.
+    D. Unlimited future growth capacity.
+6. An output combination located completely outside the Production Possibility Frontier curve is best described as: [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: WAEC SC; Answer-Method: text-exclusive]
+    A. Productively inefficient in the short run.
+    B. Unattainable under current resource constraints and technological limits.
+    C. Sustainable only during periods of severe macroeconomic recession.
+    D. Indicative of structural resource underutilization.
+7. Marginal Opportunity Cost along a bowed-out PPF is mathematically represented by: [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. The absolute numerical value of the slope of the PPF curve ($\frac{\Delta Y}{\Delta X}$).
+    B. The area enclosed under the PPF curve.
+    C. The horizontal intercept divided by total population size.
+    D. The ratio of inflation rate to interest rate.
+8. Refer to the table below detailing an economy's production possibilities:
+    Combination | Good X (Units) | Good Y (Units)
+    A | 0 | 100
+    B | 10 | 90
+    C | 20 | 70
+    D | 30 | 40
+    E | 40 | 0
+    What is the marginal opportunity cost of increasing production of Good X from 20 to 30 units? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. 10 units of Good Y
+    B. 20 units of Good Y
+    C. 30 units of Good Y
+    D. 70 units of Good Y
+9. Based on the production table in Question 8, what type of opportunity cost is demonstrated as output of Good X expands successively from A to E? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+    A. Constant opportunity cost
+    B. Decreasing opportunity cost
+    C. Increasing opportunity cost
+    D. Zero opportunity cost
+10. Which event will cause an immediate parallel outward shift of a nation's entire Production Possibility Frontier? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+    A. A decrease in national structural unemployment during a cyclical recovery.
+    B. A major technological breakthrough affecting all manufacturing and agricultural sectors simultaneously.
+    C. A reallocation of factor inputs from capital goods to consumer goods along the existing curve.
+    D. Imposition of strict statutory price ceilings on consumer goods.
+11. How does a devastating natural disaster that permanently destroys 20% of a country's physical infrastructure affect its PPF? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+    A. It moves the economy's operating point from on the curve to inside the curve, leaving the curve unchanged.
+    B. It causes an inward shift of the entire PPF curve, reflecting reduced productive potential.
+    C. It changes the PPF shape from concave to linear.
+    D. It shifts the PPF curve outward due to reconstruction demands.
+12. If a nation prioritizes producing Capital Goods over Consumer Goods today, what is the expected long-run effect on its PPF? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A. The PPF will shift inward faster in future periods due to consumer neglect.
+    B. The PPF will shift outward at a higher rate in future periods due to greater capital accumulation.
+    C. The PPF will remain permanently static.
+    D. The PPF will immediately become linear.
+13. A technological improvement that occurs exclusively in the agricultural sector (Good X), leaving industrial production (Good Y) unchanged, causes which geometric change in the PPF? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    A. A symmetric outward shift along both axes.
+    B. An asymmetric (biased) outward rotation pivoting from the Good Y intercept.
+    C. A parallel inward shift along both axes.
+    D. A change in the Good Y intercept only.
+14. How does the PPF model illustrate the core concept of Scarcity? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+    A. Through the existence of points lying inside the frontier.
+    B. Through the existence of unattainable combinations lying outside the frontier envelope.
+    C. Through the negative slope of the frontier.
+    D. Through the movement from one point on the frontier to another.
+15. How does the PPF model illustrate Choice? [Type: MCQ; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: WAEC SC; Answer-Method: text-exclusive]
+    A. By requiring a society to select one specific point along the frontier curve out of many feasible combinations.
+    B. By proving that capital goods are superior to consumer goods.
+    C. By shifting the frontier curve outward over time.
+    D. By showing that all inputs are fully employed inside the curve.
+16. An economy's linear PPF is defined by the equation $Y = 300 - 3X$, where $X$ is agricultural output and $Y$ is industrial output. Calculate the opportunity cost of producing 1 additional unit of Good X in terms of Good Y. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+17. Using the linear PPF equation $Y = 300 - 3X$, calculate the maximum achievable output of Good Y when $X = 40$. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+18. An economy moves from Point A (10 Capital Goods, 80 Consumer Goods) to Point B (15 Capital Goods, 60 Consumer Goods) along its PPF. Calculate the marginal opportunity cost per additional Capital Good. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+19. An economy experiences a severe economic recession, causing aggregate factory utilization to collapse by 15%. State whether this economic event causes a shift of the PPF curve or a movement to a point inside the PPF curve. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+20. Given a linear PPF with intercepts at $(X = 100, Y = 0)$ and $(X = 0, Y = 200)$, determine whether the output bundle $(X = 50, Y = 120)$ is Attainable or Unattainable. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+21. Identify the specific economic condition defined as: "Producing the maximum possible output from a given combination of factor inputs, such that output of one good cannot be expanded without reducing output of another." [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+22. A technological innovation increases an economy's maximum production of Consumer Goods by 25%, while maximum Capital Goods potential remains unchanged at 400 units. Calculate the new maximum Consumer Goods intercept if the original maximum was 800 units. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+23. Calculate the marginal opportunity cost of expanding production from 3 units to 4 units of Good X using the following production table:
+    Good X (Units) | 0 | 1 | 2 | 3 | 4
+    Good Y (Units) | 50 | 48 | 43 | 35 | 24
+    [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+24. State whether Allocative Efficiency can be pinpointed geometrically on a standard PPF diagram without knowing consumer preferences and demand utilities. Answer "Yes" or "No". [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+25. State the underlying reason why real-world PPF curves are concave (bowed-out) rather than straight lines. [Type: Hybrid; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: WAEC SC; Answer-Method: text-exclusive]
+26. **Geometric Derivation, Opportunity Cost, and Mathematical PPF Mechanics** [Type: Theory; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+    A nation produces two goods: Agricultural Produce ($A$) and Industrial Machinery ($M$). Its maximum productive capacity is represented by the non-linear PPF equation:
+    $$M = 100 - 0.01A^2$$
+    (a) Calculate the maximum output of Machinery ($M$) when $A = 0$, and the maximum output of Agricultural Produce ($A$) when $M = 0$.
+    (b) Calculate the output of Machinery when $A = 50$ units, and when $A = 80$ units. Calculate the marginal opportunity cost of expanding Agricultural Produce from $A = 50$ to $A = 80$ in terms of lost Machinery.
+    (c) Derive the calculus expression for the slope of the PPF ($\frac{dM}{dA}$) as a function of $A$. Explain why this derivative proves that the economy faces increasing marginal opportunity costs.
+27. **Factor Specialization, Concavity, and Economic Growth Dynamics** [Type: Theory; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: Cambridge International A-Level 9708; Answer-Method: text-exclusive]
+    The geometric shape of the PPF reflects resource adaptability across industries.
+    (a) Explain why imperfect factor substitutability generates a concave PPF curve, utilizing a two-good model (Wheat vs. Computers).
+    (b) Contrast the structural implications of a linear PPF against a concave PPF regarding factor specialization and comparative advantage.
+    (c) Analyze three distinct macroeconomic catalysts that cause an outward shift of the entire PPF, and explain how each catalyst improves long-run aggregate economic potential.
+28. **Capital Formation vs. Present Consumption Trade-offs** [Type: Theory; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AP Microeconomics; Answer-Method: text-exclusive]
+    Consider two developing economies, Economy A and Economy B. Both economies currently possess identical PPF curves producing Consumer Goods ($C$) and Capital Goods ($K$).
+    (a) Economy A chooses an operating allocation concentrated heavily on Consumer Goods (80% $C$, 20% $K$), whereas Economy B chooses an operating allocation concentrated on Capital Goods (20% $C$, 80% $K$). Illustrate these choices conceptually on a PPF diagram.
+    (b) Analyze the intertemporal trade-off faced by Economy B. What happens to its immediate standard of living relative to its future growth potential?
+    (c) Project and contrast the relative positions of Economy A's and Economy B's Production Possibility Frontiers after a 15-year period. Justify your projections using capital accumulation theory.
+29. **Efficiency Paradigms, Recessionary Gaps, and Structural Reallocation** [Type: Theory; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: AQA A-Level Economics; Answer-Method: text-exclusive]
+    Economists distinguish between productive efficiency, allocative efficiency, and macroeconomic underutilization.
+    (a) Differentiate between Productive Efficiency and Allocative Efficiency within the context of the PPF model. Explain why all points on the PPF are productively efficient, but only one point is allocatively efficient.
+    (b) Explain how an economy experiencing structural labor market rigidity and idle factory capacity is represented on a PPF diagram. Contrast a policy that moves the economy from an interior point to the frontier with a policy that shifts the frontier itself.
+    (c) Evaluate whether a society operating on its PPF curve is guaranteed to maximize national economic well-being.
+30. **Sectoral Technological Progress and Biased PPF Shifts** [Type: Theory; Subject: Economics; Topic: L1.4 The Production Possibility Frontier (PPF) Model; Format: Non-Sim; Exam: NECO A-Level; Answer-Method: text-exclusive]
+    An economy produces Textiles ($T$) and Microprocessors ($P$).
+    (a) Describe the geometric outcome on the PPF if a technological breakthrough doubles production efficiency in Microprocessors while leaving Textile manufacturing techniques completely unchanged.
+    (b) Explain why an asymmetric outward pivot in the Microprocessor sector allows the economy to consume more Textiles than before, even though Textile productivity did not increase.
+    (c) Assess how asymmetric technological change impacts resource reallocation across domestic industries and its potential impact on sectoral employment.

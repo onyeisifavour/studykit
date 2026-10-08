@@ -10,6 +10,23 @@ let apiUrl = '';
 let apiChild: ChildProcess | null = null;
 let sidecarStarting: Promise<string> | null = null;
 
+// The sidecar's own output is the only record of why it failed to start. When
+// StudyKit is launched from a .desktop entry there is no terminal attached, so
+// that output is written here instead of being lost.
+let sidecarLogPath = '';
+let lastSidecarError = '';
+
+function sidecarLog(message: string): void {
+  const line = `[${new Date().toISOString()}] ${message}\n`;
+  process.stdout.write(line);
+  if (!sidecarLogPath) return;
+  try {
+    fs.appendFileSync(sidecarLogPath, line);
+  } catch {
+    /* logging must never break startup */
+  }
+}
+
 const DEV_URL = process.env.VITE_DEV_SERVER_URL || '';
 
 function repoRoot(): string {
@@ -75,8 +92,21 @@ function cleanupOrphanSidecars(): void {
 
 function startSidecar(): Promise<string> {
   if (sidecarStarting) return sidecarStarting;
+  if (!sidecarLogPath) {
+    try {
+      sidecarLogPath = path.join(app.getPath('userData'), 'sidecar.log');
+    } catch {
+      sidecarLogPath = path.join(repoRoot(), 'sidecar.log');
+    }
+  }
   sidecarStarting = new Promise<string>((resolve, reject) => {
-    const child = spawn(pythonBin(), ['-m', 'main_app.sidecar'], {
+    const bin = pythonBin();
+    lastSidecarError = '';
+    sidecarLog(
+      `--- spawn attempt: ${bin} -m main_app.sidecar (cwd=${repoRoot()}) ` +
+        `binExists=${fs.existsSync(bin)}`,
+    );
+    const child = spawn(bin, ['-m', 'main_app.sidecar'], {
       cwd: repoRoot(),
       env: { ...process.env },
       stdio: ['ignore', 'pipe', 'pipe'],
@@ -84,18 +114,24 @@ function startSidecar(): Promise<string> {
     sidecar = child;
 
     let settled = false;
+    const fail = (reason: string, err?: unknown) => {
+      lastSidecarError = err ? `${reason}: ${err instanceof Error ? err.message : String(err)}` : reason;
+      sidecarLog(`FAILED — ${lastSidecarError}`);
+    };
+
     const timer = setTimeout(() => {
       if (!settled) {
         settled = true;
         sidecarStarting = null;
         child.kill('SIGTERM');
+        fail('Sidecar startup timed out after 20s (no STUDYKIT_PORT line)');
         reject(new Error('Sidecar startup timed out'));
       }
     }, 20000);
 
     child.stdout?.on('data', (buf: Buffer) => {
       const text = buf.toString();
-      process.stdout.write(text);
+      sidecarLog(`stdout: ${text.replace(/\n$/, '')}`);
       const match = text.match(/STUDYKIT_PORT=(\d+)/);
       if (match && !settled) {
         settled = true;
@@ -103,22 +139,27 @@ function startSidecar(): Promise<string> {
         sidecarStarting = null;
         apiUrl = `http://127.0.0.1:${match[1]}`;
         apiChild = child;
+        sidecarLog(`ready on ${apiUrl}`);
         resolve(apiUrl);
       }
     });
 
-    child.stderr?.on('data', (buf: Buffer) => process.stderr.write(buf.toString()));
+    child.stderr?.on('data', (buf: Buffer) =>
+      sidecarLog(`stderr: ${buf.toString().replace(/\n$/, '')}`),
+    );
 
-    child.on('exit', (code) => {
+    child.on('exit', (code, signal) => {
       if (sidecar === child) sidecar = null;
       if (child === apiChild) {
         apiChild = null;
         apiUrl = ''; // this was the active sidecar — next get-url restarts it
+        sidecarLog(`active sidecar exited (code=${code} signal=${signal}) — will restart on next request`);
       }
       if (!settled) {
         settled = true;
         clearTimeout(timer);
         sidecarStarting = null;
+        fail(`Sidecar exited before startup completed (code=${code} signal=${signal})`);
         reject(new Error(`Sidecar exited with code ${code}`));
       }
     });
@@ -128,6 +169,7 @@ function startSidecar(): Promise<string> {
         settled = true;
         clearTimeout(timer);
         sidecarStarting = null;
+        fail('Sidecar process could not be started', err);
         reject(err);
       }
     });
@@ -151,6 +193,22 @@ async function createWindow(): Promise<void> {
     },
   });
 
+  // Simulation errors surface in the renderer and inside the sandboxed sim
+  // iframe. Without this they go to a devtools window nobody has open, which is
+  // why a missing three.js used to show up as a silently blank canvas.
+  // Signature: (event, level, message, line, sourceId) — level 2 is error, 1 warning.
+  mainWindow.webContents.on(
+    'console-message',
+    (_event, level: number, message: string, line: number, sourceId: string) => {
+      if (level <= 1) return;
+      const where = sourceId ? ` (${sourceId}:${line})` : '';
+      sidecarLog(`renderer ${level === 2 ? 'error' : 'warning'}: ${message}${where}`);
+    },
+  );
+  mainWindow.webContents.on('did-fail-load', (_event, code, description, url) => {
+    sidecarLog(`renderer load failed [${code}] ${description} — ${url}`);
+  });
+
   mainWindow.once('ready-to-show', () => mainWindow?.show());
   mainWindow.on('closed', () => {
     mainWindow = null;
@@ -170,7 +228,9 @@ app.whenReady().then(async () => {
       try {
         await startSidecar();
       } catch (err) {
-        console.error('[studykit] failed to (re)start sidecar:', err);
+        const reason = err instanceof Error ? err.message : String(err);
+        console.error('[studykit] failed to (re)start sidecar:', reason);
+        sidecarLog(`get-url giving up — ${reason} (${lastSidecarError || 'no detail'})`);
       }
     }
     return apiUrl;
@@ -192,6 +252,7 @@ app.whenReady().then(async () => {
     await startSidecar();
   } catch (err) {
     console.error('[studykit] failed to start sidecar:', err);
+    sidecarLog(`startup gave up — ${lastSidecarError || 'no detail'}`);
   }
 
   await createWindow();

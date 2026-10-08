@@ -1,12 +1,18 @@
 import { useCallback, useEffect, useReducer, useRef } from 'react';
 import { ChatBubbles, ChatInput } from '../components/ChatComposer';
 import RichText from '../components/RichText';
-import { quizChat, quizGenerate, quizJobStatus, quizLast, quizCancel, quizEvaluate, completeQuiz, getSettings, saveSettings, getBaseUrl, getLiveBaseUrl } from '../api';
-import type { QuizCompleteResult, QuizQuestion } from '../types';
+import { markPending, quizChat, quizGenerate, quizJobStatus, quizLast, quizCancel, quizEvaluate, completeQuiz, getSettings, saveSettings, getBaseUrl, getLiveBaseUrl, adoptInstance, getInstance, getQuizNoteCards, openInstance, resumeInstance, saveInstanceState } from '../api';
+import type { InstanceDetail, QuizCompleteResult, QuizQuestion } from '../types';
 
 interface Props {
   onNavigate: (screen: string) => void;
   active: boolean;
+  /** Set when a saved state is resumed from Artifacts → Saved States. */
+  resumeReq?: {
+    instanceId: string;
+    workQuizId: string;
+    at: number;
+  } | null;
 }
 
 // ── Display model (derived from real backend questions) ─────────────────────
@@ -28,7 +34,14 @@ function toDisplayQs(real: QuizQuestion[]): DisplayQ[] {
   return real.map((r) => {
     const isSim = !!r.is_simulation;
     const disptype: DisplayQ['type'] = r.q_type === 'MCQ' ? 'MCQ' : 'Written';
-    const correct = r.options.findIndex((o) => o.trim().toUpperCase().startsWith((r.correct_answer || '').trim().toUpperCase().slice(0, 1)));
+    // Prefer the authoritative index: options are display text and may reword
+    // the correct answer, so leading-letter matching is only a fallback for
+    // bank-copied and legacy questions that carry no index.
+    const idx = r.correct_option_index;
+    const correct =
+      typeof idx === 'number' && idx >= 0 && idx < r.options.length
+        ? idx
+        : r.options.findIndex((o) => o.trim().toUpperCase().startsWith((r.correct_answer || '').trim().toUpperCase().slice(0, 1)));
     return {
       type: disptype,
       isSim,
@@ -111,11 +124,11 @@ function newAns(): Ans {
   return { sel: null, written: '', submitted: false, skipped: false, fb: null, timeSpent: 0, timeCommitted: false };
 }
 
-export default function Quiz({ onNavigate, active }: Props) {
+export default function Quiz({ onNavigate, active, resumeReq }: Props) {
   const [, bump] = useReducer((x: number) => x + 1, 0);
 
   const Q = useRef({
-    state: 'chat' as 'chat' | 'pipeline' | 'peek' | 'cancelled' | 'active' | 'report',
+    state: 'chat' as 'chat' | 'pipeline' | 'peek' | 'cancelled' | 'active' | 'finish' | 'report',
     chatStarted: false,
     chatMsgs: [{ r: 'ai', t: "Hi Favour! I'll help you design a personalised quiz. Which subjects or topics would you like to focus on today?" }] as ChatMsg[],
     chatHistory: [] as { role: string; content: string }[],
@@ -129,6 +142,10 @@ export default function Quiz({ onNavigate, active }: Props) {
     ans: [] as Ans[],
     skipMode: 0,
     quizId: null as string | null,
+    instanceId: null as string | null,
+    instanceNote: null as string | null,
+    saveBusy: false as boolean,
+    savedFlash: '' as string,
     complete: null as QuizCompleteResult | null,
     completeErr: null as string | null,
     selectedTopics: [] as string[],
@@ -158,7 +175,7 @@ export default function Quiz({ onNavigate, active }: Props) {
 simW: 480,
 simZoom: 1,
 simMenuOpen: false,
-simDrag: null as { startW: number; startX: number } | null,
+simDrag: null as { startW: number; startX: number; id: number } | null,
   });
 
   const q = () => Q.current;
@@ -517,6 +534,57 @@ simDrag: null as { startW: number; startX: number } | null,
       });
   };
 
+  // Resuming a saved state: reload that attempt's own working note, replay the
+  // answers it already holds, and jump to the question it was parked on.
+  const openSavedState = (req: NonNullable<Props['resumeReq']>) => {
+    q().genError = null;
+    stopPoll();
+    getQuizNoteCards(req.workQuizId)
+      .then((r) => {
+        if (!r.questions.length) {
+          q().genError = 'That saved state has no readable questions.';
+          q().state = 'cancelled';
+          bump();
+          return;
+        }
+        q().realQs = r.questions;
+        q().topics = r.topics || [];
+        q().quizId = req.workQuizId;
+        q().instanceId = req.instanceId;
+        q().instanceNote = null;
+        q().savedFlash = '';
+        loadQuiz();
+        // A never-opened attempt reports `created`; a parked one reports
+        // `paused`. Either way the clock only starts from this moment, so
+        // choosing an attempt and reading it before opening costs nothing.
+        getInstance(req.instanceId)
+          .then((d) => (d.status === 'paused' ? resumeInstance(req.instanceId) : openInstance(req.instanceId)))
+          .then((d) => {
+            q().cur = Math.min(Math.max(0, d.current_index), Math.max(0, r.questions.length - 1));
+            q().instanceNote = `Resumed at question ${q().cur + 1}`;
+            bump();
+          })
+          .catch((e) => {
+            q().instanceNote = 'Clock not restarted: ' + String(e?.message ?? e);
+            bump();
+          });
+      })
+      .catch((err) => {
+        q().genError = (err && err.message) || 'Could not open that saved state.';
+        q().state = 'cancelled';
+        bump();
+      });
+  };
+
+  const lastReq = useRef(0);
+  useEffect(() => {
+    if (resumeReq && resumeReq.at !== lastReq.current) {
+      lastReq.current = resumeReq.at;
+      openSavedState(resumeReq);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resumeReq]);
+
   useEffect(() => {
     return () => {
       stopPoll();
@@ -653,10 +721,67 @@ simDrag: null as { startW: number; startX: number } | null,
     if (q().pSubTimer) clearInterval(q().pSubTimer ?? undefined);
     commitQTime(q().cur);
     stopTimer();
+    q().state = 'finish';
+    bump();
+  };
+
+  // Mark now / Mark later. The finish page always offers both, because
+  // `evaluation_on` is not what decides whether AI marking happens — the
+  // student's choice on this page is.
+  const chooseFinish = (markSubjective: boolean) => {
     if (!q().qset.evalOn) localReveal();
-    fireComplete();
+    fireComplete(markSubjective);
     q().state = 'report';
     bump();
+  };
+
+  // Save State parks this attempt. The instance is created on first use by
+  // adopting the quiz's existing working note, so nothing is copied and the
+  // answers already given stay where they are.
+  const saveState = () => {
+    const quizId = q().quizId;
+    if (q().saveBusy || !quizId) return;
+    q().saveBusy = true;
+    q().savedFlash = '';
+    commitQTime(q().cur);
+    stopTimer();
+    const done = (r: InstanceDetail) => {
+      q().instanceId = r.instance_id;
+      q().instanceNote = `Saved · ${r.time_entries} stretch${r.time_entries === 1 ? '' : 'es'} · ${fmtT(r.total_secs)} total`;
+      q().saveBusy = false;
+      bump();
+    };
+    const fail = (e: unknown) => {
+      q().instanceNote = 'Could not save: ' + String((e as Error)?.message ?? e);
+      q().saveBusy = false;
+      bump();
+    };
+    const existing = q().instanceId;
+    const payload = existing
+      ? saveInstanceState(existing, q().cur)
+      : adoptInstance(quizId).then((r) => saveInstanceState(r.instance_id, q().cur));
+    payload.then(done).catch(fail);
+  };
+
+  // Resume restarts the clock and restores the position this attempt was left at.
+  const resumeState = () => {
+    const instanceId = q().instanceId;
+    if (q().saveBusy || !instanceId) return;
+    q().saveBusy = true;
+    q().savedFlash = '';
+    resumeInstance(instanceId)
+      .then((r) => {
+        q().cur = Math.min(Math.max(0, r.current_index), Math.max(0, totalQs() - 1));
+        q().saveBusy = false;
+        q().instanceNote = `Resumed at question ${q().cur + 1}`;
+        bump();
+        requestAnimationFrame(() => startQuizClock());
+      })
+      .catch((e) => {
+        q().instanceNote = 'Could not resume: ' + String(e?.message ?? e);
+        q().saveBusy = false;
+        bump();
+      });
   };
 
   // Instant local reveal for Evaluation OFF: only the locally-checkable MCQs
@@ -692,7 +817,7 @@ simDrag: null as { startW: number; startX: number } | null,
   // Authoritative grading + persistence: sends every answer to the complete
   // endpoint, which marks MCQs locally, Hybrids strictly (AI fallback), Theory
   // on the parallel bucketed batches, and writes the History quiz log.
-  const fireComplete = () => {
+  const fireComplete = (markSubjective: boolean) => {
     const ds = allQs();
     const answers = q().realQs.map((r, i) => {
       const a = q().ans[i] ?? newAns();
@@ -714,6 +839,8 @@ simDrag: null as { startW: number; startX: number } | null,
       evaluation_on: q().qset.evalOn,
       skip_mode: q().skipMode === 1 ? 'exclude' : 'zero',
       topics: q().topics,
+      mark_subjective: markSubjective,
+      instance_id: q().instanceId,
     })
       .then((res) => {
         q().complete = res;
@@ -989,6 +1116,21 @@ simDrag: null as { startW: number; startX: number } | null,
                   ⏱ <span>{fmtT(timer.rem)}</span>
                   {qset.timerMode === 'total' && <span>{' / ' + fmtT(timer.totalRem)}</span>}
                 </div>
+                <div className="q-save-group">
+                  {q().instanceId ? (
+                    <button className="btn btn-ghost btn-sm" onClick={resumeState} disabled={q().saveBusy} title="Restart the clock and jump back to where you stopped">
+                      ⏵ Resume
+                    </button>
+                  ) : null}
+                  <button className="btn btn-secondary btn-sm" onClick={saveState} disabled={q().saveBusy} title="Pause this attempt and record the time so far">
+                    {q().saveBusy ? 'Saving…' : '💾 Save State'}
+                  </button>
+                </div>
+                {q().instanceNote && (
+                  <span className="q-save-note" title="Time is recorded server-side, so it keeps counting if you quit the app">
+                    {q().instanceNote}
+                  </span>
+                )}
                 <div className="qmap-wrap">
                   <button className="btn btn-secondary btn-sm" onClick={() => { q().qmapOpen = !q().qmapOpen; bump(); }}>
                     Questions
@@ -1237,6 +1379,54 @@ simDrag: null as { startW: number; startX: number } | null,
           </div>
         )}
 
+        {/* STATE: FINISH — the Mark now / Mark later choice */}
+        {state === 'finish' && (
+          <div className="qstate active">
+            <div className="qhdr">
+              <div className="qhdr-l">
+                <span className="q-page-title">Finish quiz</span>
+                <span className="badge b-violet">{total} answered</span>
+              </div>
+            </div>
+            <div className="finish-pane">
+              <h2 className="f-h2">How do you want this marked?</h2>
+              <p className="f-label" style={{ marginBottom: 18 }}>
+                Multiple-choice questions are marked straight away either way.
+                The choice only affects the subjective ones — hybrid and theory.
+              </p>
+              <div className="finish-choices">
+                <button className="finish-choice" onClick={() => chooseFinish(true)}>
+                  <div className="finish-choice-ico">✓</div>
+                  <div className="finish-choice-body">
+                    <div className="finish-choice-title">Mark now</div>
+                    <div className="finish-choice-sub">
+                      Everything is graded now. This takes a moment if you have
+                      written answers.
+                    </div>
+                  </div>
+                </button>
+                <button className="finish-choice" onClick={() => chooseFinish(false)}>
+                  <div className="finish-choice-ico alt">⏳</div>
+                  <div className="finish-choice-body">
+                    <div className="finish-choice-title">Mark later</div>
+                    <div className="finish-choice-sub">
+                      Saved to History straight away with a pending badge. Mark
+                      it whenever you like from History.
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <button
+                className="btn btn-ghost btn-sm"
+                style={{ marginTop: 18 }}
+                onClick={() => { q().state = 'active'; requestAnimationFrame(() => startQuizClock()); bump(); }}
+              >
+                ← Back to the quiz
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* STATE: REPORT */}
         {state === 'report' && (
           <div className="qstate active">
@@ -1251,6 +1441,35 @@ simDrag: null as { startW: number; startX: number } | null,
               {q().completeErr && (
                 <div className="report-err" style={{ marginBottom: 12, color: 'var(--danger, #e5484d)', fontSize: 13.5 }}>
                   {q().completeErr} Written/theory verdicts are ungraded; MCQs below are from your live/local marks.
+                </div>
+              )}
+              {q().complete?.marking_pending && (
+                <div className="pending-strip">
+                  <span className="badge b-amber">PENDING AI MARKING</span>
+                  <span>
+                    Saved to History. Your hybrid and theory answers are waiting
+                    to be marked — do it from History whenever you like.
+                  </span>
+                  <button
+                    className="btn btn-primary btn-sm"
+                    onClick={() => {
+                      const id = q().complete?.history_quiz_id;
+                      if (!id) return;
+                      q().completeErr = null;
+                      markPending(id)
+                        .then(() => {
+                          q().complete = { ...q().complete!, marking_pending: false };
+                          q().savedFlash = 'Marked — History updated.';
+                          bump();
+                        })
+                        .catch((e) => {
+                          q().completeErr = 'Marking failed: ' + String(e?.message ?? e);
+                          bump();
+                        });
+                    }}
+                  >
+                    Mark now
+                  </button>
                 </div>
               )}
               <div className="report-stats">

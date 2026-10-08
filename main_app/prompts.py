@@ -36,13 +36,28 @@ MATH_NOTATION_SPEC = (
     "outside them.\n"
     "- NEVER write math as plain ASCII digits and operators: no caret "
     "exponents (10^26), no `x` as a multiplication sign (use $\\times$), no "
-    "slash fractions (use $\\frac{}{}$), no units inside math like "
-    "$1.89\\times10^{26}\\ \\mathrm{N}$ instead of `1.89 x 10^26 N`.\n"
+    "slash fractions (use $\\frac{}{}$). Instead of `1.89 x 10^26 N`, write "
+    "$1.89\\times10^{26}\\ \\mathrm{N}$.\n"
+    "- NEVER write a unit, quantity name, or other multi-word label in plain "
+    "ASCII inside math. Either keep it as ordinary text outside the "
+    "delimiters (`central mass 1.0 M_sun`), or write it as math with "
+    "$\\mathrm{...}$ / $\\text{...}$ "
+    "(`$1.0\\ M_{\\text{sun}}$`).\n"
+    "- SUBSCRIPTS AND SUPERSCRIPTS: in LaTeX, `^` and `_` apply to exactly ONE "
+    "character. A sub- or superscript longer than one character MUST be "
+    "braced, or the remaining characters render as ordinary text sitting beside "
+    "it.\n"
+    "    BAD:   $M_sun$     renders as M with subscript s, then the letters 'un' "
+    "at full size\n"
+    "    BAD:   $F_net$, $x^12$, $a_1bc$\n"
+    "    GOOD:  $M_{sun}$, $F_{net}$, $x^{12}$\n"
+    "    Single-character sub/superscripts need no braces: $x^2$, $m_1$, $v_0$ "
+    "are already correct.\n"
     "- Keep units outside the math delimiters or as $\\mathrm{...}$ inside them.\n"
     "- Examples:\n"
-    "    BAD:   GMm/r^2, 1.89 x 10^26 N, 1.18 x 10^25 x (1.0/0.5)^2\n"
+    "    BAD:   GMm/r^2, 1.89 x 10^26 N, 1.18 x 10^25 x (1.0/0.5)^2, M_sun\n"
     "    GOOD:  $\\frac{GMm}{r^2}$, $1.89\\times10^{26}\\ \\mathrm{N}$, "
-    "$1.18\\times10^{25}\\times(1.0/0.5)^2$\n"
+    "$1.18\\times10^{25}\\times(1.0/0.5)^2$, $M_{\\text{sun}}$\n"
 )
 
 
@@ -147,20 +162,21 @@ SIM_QUESTIONS_SYSTEM = (
     "For each SET in the blueprint, note the exact sequence of slot types "
     "(MCQ or SUBJ) and generate that many questions, in that order, matching "
     "each slot's type exactly.\n\n"
+    "Write the QUESTION STEM and its CORRECT ANSWER only. A separate "
+    "downstream agent authors the multiple-choice options, so do NOT write, "
+    "invent, or include any answer options, distractors, or A/B/C/D labels. "
+    "For an MCQ slot, still mark it [MCQ] in the question line and give its "
+    "answer in the {answers} block.\n\n"
     "Output in EXACTLY this format:\n\n"
     "{Set 1}[\n"
     "{instruction}[Set up the simulation with these exact parameter values: "
     "[list values]. Run it and record measurements before answering.]\n"
     "{questions}[\n"
     "Q1: [MCQ] What is the maximum height reached?\n"
-    "A. 8.2 m\n"
-    "B. 10.2 m\n"
-    "C. 12.4 m\n"
-    "D. 14.6 m\n"
     "Q2: [SUBJ] Explain why the range is maximised at this launch angle.\n"
     "]\n"
     "{answers}[\n"
-    "A1: B\n"
+    "A1: [the correct answer itself for the MCQ, e.g. '8.2 m' — not a letter]\n"
     "A2: [precise free-text expected answer covering the key reasoning]\n"
     "]]\n\n"
     "{Set 2}[\n"
@@ -176,9 +192,9 @@ SIM_QUESTIONS_SYSTEM = (
     "- Number AND type (MCQ/SUBJ) of Q entries per set must exactly match the "
     "SIM slots for that SET, in the same order\n"
     "- Tag every question with [MCQ] or [SUBJ] immediately after 'Q<n>:'\n"
-    "- For [MCQ]: generate 4 plausible options (A.–D.) on the lines directly "
-    "below the question, and give the correct option's LETTER as the answer "
-    "(e.g. 'A1: B')\n"
+    "- For [MCQ]: do NOT list any A.–D. options; those are authored later by a "
+    "separate agent. Give the correct answer itself in the {answers} block "
+    "(e.g. 'A1: 8.2 m')\n"
     "- For [SUBJ]: give a precise free-text expected answer as the answer\n"
     "- Instructions must give EXACT parameter values so the student knows what to set\n"
     "- Questions must ask for specific, measurable outputs\n"
@@ -269,29 +285,6 @@ THEORY_EVAL_SYSTEM = (
     "partial credit, not just effort or proximity.\n\n"
     "The SCORE line must appear first, immediately followed by EVALUATION. "
     "Do not add any preamble or extra text.\n\n"
-    + MATH_NOTATION_SPEC
-)
-
-
-# ── 6c. Hybrid strict marking (right/wrong, notation & format rules) ──────────
-
-HYBRID_EVAL_SYSTEM = (
-    "You are strictly marking a student's typed final answer (a number, an "
-    "expression, or a short precise statement). The expected final answer and "
-    "its format are given.\n\n"
-    "Return EXACTLY one of these two blocks — no preamble, no extra text:\n\n"
-    "RESULT: RIGHT\n"
-    "EXPLANATION: [one sentence confirming the match]\n\n"
-    "or\n\n"
-    "RESULT: WRONG\n"
-    "EXPLANATION: [one sentence naming why it differs — wrong value, wrong "
-    "notation, wrong casing, or wrong final-answer format]\n\n"
-    "Rules:\n"
-    "- Match the standard answer strictly: correct notation, correct units, "
-    "correct casing, and the same final-answer format.\n"
-    "- Algebraically equivalent but differently-formatted answers are WRONG "
-    "only when the standard answer fixes a required format; otherwise accept "
-    "equivalent forms.\n"
     + MATH_NOTATION_SPEC
 )
 
@@ -506,11 +499,12 @@ def build_batch_eval_prompt(question_groups: list[dict]) -> str:
 
 def build_theory_eval_prompt(theory_entries: list[dict]) -> str:
     """
-    Builds a batch grading prompt for one theory batch file (≤15 questions).
+    Builds a batch grading prompt for one subjective batch file (≤15 questions).
 
     Args:
         theory_entries: list of {
             'label':          str,   # question number, e.g. '5'
+            'type':           str,   # 'Theory' (partial credit) | 'Hybrid'
             'question':       str,
             'user_answer':    str,
             'correct_answer': str,
@@ -518,34 +512,68 @@ def build_theory_eval_prompt(theory_entries: list[dict]) -> str:
 
     Only entries with a non-empty correct_answer and a user answer are passed
     in — flagged (no standard answer) entries never reach the grader.
+
+    Hybrid entries are tagged BINARY so the model grades them the way the
+    student is actually assessed: there is no partial credit, but semantic
+    equivalence still counts as correct. The tag means "0 or 1", NOT "judge the
+    wording strictly" — a right answer phrased or notated differently is 1.0.
+
+    The BINARY rubric is appended only when the batch actually contains a
+    Hybrid entry. In a Theory-only batch, leaving "score exactly 1.0 or 0.0" in
+    the prompt risks the model applying binary scoring to Theory questions,
+    which are supposed to keep partial credit.
     """
+    has_hybrid = any(str(sub.get('type') or 'Theory') == 'Hybrid'
+                     for sub in theory_entries)
+
     parts = []
     for sub in theory_entries:
-        parts.append(
-            f"QUESTION {sub['label']}:\n"
-            f"{sub['question']}\n"
-            f"Student: {sub['user_answer']}\n"
-            f"Standard: {sub['correct_answer']}"
-        )
+        if str(sub.get('type') or 'Theory') == 'Hybrid':
+            parts.append(
+                f"QUESTION {sub['label']} (BINARY — score exactly 1.0 or 0.0, "
+                f"no partial credit; judge meaning, not wording):\n"
+                f"{sub['question']}\n"
+                f"Student: {sub['user_answer']}\n"
+                f"Standard: {sub['correct_answer']}"
+            )
+        else:
+            parts.append(
+                f"QUESTION {sub['label']}:\n"
+                f"{sub['question']}\n"
+                f"Student: {sub['user_answer']}\n"
+                f"Standard: {sub['correct_answer']}"
+            )
     body = "\n\n".join(parts)
-    return (
+
+    header = (
         f"{body}\n\n"
         "Grade each question using its number as the label. Return "
         "QUESTION <number> / SCORE / EVALUATION blocks, one per question, "
         "with no other text."
     )
+    if not has_hybrid:
+        return header
 
-
-def build_hybrid_eval_prompt(
-    question:       str,
-    user_answer:    str,
-    correct_answer: str,
-) -> str:
     return (
-        f"STANDARD FINAL ANSWER:\n{correct_answer}\n\n"
-        f"QUESTION CONTEXT:\n{question}\n\n"
-        f"STUDENT'S ANSWER:\n{user_answer}\n\n"
-        "Mark RIGHT or WRONG with your explanation."
+        f"{header}\n\n"
+        "A question marked BINARY must be scored exactly 1.0 or exactly 0.0. "
+        "This is about credit, not wording: decide whether the student is "
+        "right, then commit to full or no credit. Every question NOT marked "
+        "BINARY is graded normally on the 0-1 scale and may earn partial "
+        "credit.\n"
+        "Score 1.0 for a BINARY question when the student's answer is "
+        "correct, including when it:\n"
+        "- states the same thing in different words, or is less or more "
+        "detailed;\n"
+        "- uses a different but mathematically equivalent form (units converted, "
+        "extra precision, scientific vs decimal notation, reordered terms, "
+        "unexpanded vs factored algebra);\n"
+        "- omits wording or units that the question did not ask for.\n"
+        "Score 0.0 for a BINARY question only for a real error in the answer "
+        "itself, such as a wrong value, a wrong physical quantity, a wrong or "
+        "missing unit where the question required one, or a wrong method or "
+        "conclusion. Do not score 0.0 merely because the phrasing differs from "
+        "the standard answer."
     )
 
 

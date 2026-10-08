@@ -1,0 +1,111 @@
+1. Torque vector is defined as vector cross product $\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$. If force $\mathbf{F} = (2\mathbf{i} + 4\mathbf{j})\text{ N}$ acts at position $\mathbf{r} = (3\mathbf{i} + 1\mathbf{j})\text{ m}$, calculate torque $\boldsymbol{\tau}$ and scalar magnitude. [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $10\mathbf{k}\text{ N m}$; magnitude $10\text{ N m}$
+    B. $-10\mathbf{k}\text{ N m}$; magnitude $10\text{ N m}$
+    C. $14\mathbf{k}\text{ N m}$; magnitude $14\text{ N m}$
+    D. $6\mathbf{k}\text{ N m}$; magnitude $6\text{ N m}$
+2. Masses $50.0\text{ g}$ and $70.0\text{ g}$ hang from opposite ends of a uniform $1.00\text{ m}$ light rule. Where is the center of gravity located for rotational equilibrium? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+    A. $50.0\text{ cm}$
+    B. $58.3\text{ cm}$ from $50\text{ g}$ mass
+    C. $41.7\text{ cm}$ from $50\text{ g}$ mass
+    D. $52.3\text{ cm}$ from $50\text{ g}$ mass
+3. What is the SI unit of moment of a couple? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: JAMB 2007; Answer-Method: text-exclusive]
+    A. $\text{N m}^{-1}$
+    B. $\text{N m}^{-2}$
+    C. $\text{N m}$
+    D. $\text{N m}^2$
+4. Rotational Second Law for a rigid body is $\tau_{\text{net}} = I\alpha$. If a solid sphere ($I = \frac{2}{5}M R^2, M = 5.0\text{ kg}, R = 0.20\text{ m}$) experiences net torque $\tau = 4.0\text{ N m}$, calculate angular acceleration $\alpha$. [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. $20.0\text{ rad s}^{-2}$
+    B. $50.0\text{ rad s}^{-2}$
+    C. $25.0\text{ rad s}^{-2}$
+    D. $100.0\text{ rad s}^{-2}$
+5. A solid cylinder rolls down an incline without slipping. What fraction of total kinetic energy is rotational kinetic energy ($E_{k,\text{rot}} / E_{k,\text{total}}$)? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. $1/2$
+    B. $1/3$
+    C. $2/3$
+    D. $2/5$
+6. A skater spins with angular velocity $\omega_1$ ($I_1$). Pulling arms in reduces moment of inertia to $I_2 = I_1 / 2$. Neglecting friction, what are final angular velocity $\omega_2$ and rotational kinetic energy $E_{k2}$? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. $\omega_2 = 2 \omega_1$; $E_{k2} = 2 E_{k1}$
+    B. $\omega_2 = 4 \omega_1$; $E_{k2} = 4 E_{k1}$
+    C. $\omega_2 = 2 \omega_1$; $E_{k2} = E_{k1}$
+    D. $\omega_2 = \omega_1 / 2$; $E_{k2} = E_{k1} / 2$
+7. Complete static equilibrium of a rigid body requires: [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. $\sum \mathbf{F} = 0$ only.
+    B. $\sum \boldsymbol{\tau} = 0$ only about one fixed point.
+    C. $\sum \mathbf{F} = 0$ AND $\sum \boldsymbol{\tau} = 0$ about any arbitrary axis simultaneously.
+    D. Zero velocity vector.
+8. A wheel and axle system has wheel radius $R = 0.40\text{ m}$ and axle radius $r = 0.08\text{ m}$. What is ideal Velocity Ratio ($VR$)? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+    A. $0.20$
+    B. $5.00$
+    C. $25.0$
+    D. $3.20$
+9. Lubrication and ball bearings improve machine efficiency by: [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. Increasing Velocity Ratio.
+    B. Replacing sliding friction with lower rolling friction and reducing viscous drag losses.
+    C. Increasing work input.
+    D. Eliminating moment of inertia.
+10. A uniform ladder of weight $W$ rests against a smooth vertical wall at $60^\circ$ to horizontal ground. What horizontal ground friction $f$ is required to prevent slipping? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $f = W \frac{\sqrt{3}}{2}$
+    B. $f = W \frac{\sqrt{3}}{6}$
+    C. $f = W \frac{1}{2}$
+    D. $f = W \frac{\sqrt{3}}{4}$
+11. Moment of Inertia $I$ depends explicitly on: [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Total mass and spatial mass distribution relative to rotation axis.
+    B. Angular velocity and torque alone.
+    C. Linear acceleration and gravity.
+    D. Surface area and friction coefficient.
+12. Gear $A$ ($20$ teeth) drives Gear $B$ ($60$ teeth). If Gear $A$ rotates at $180\text{ rpm}$, calculate rotation speed of Gear $B$. [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. $60\text{ rpm}$
+    B. $540\text{ rpm}$
+    C. $180\text{ rpm}$
+    D. $90\text{ rpm}$
+13. Angular momentum $\mathbf{L}$ of a rigid body about a fixed axis is: [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. $\mathbf{L} = I \boldsymbol{\alpha}$
+    B. $\mathbf{L} = I \boldsymbol{\omega}$
+    C. $\mathbf{L} = \frac{1}{2} I \boldsymbol{\omega}^2$
+    D. $\mathbf{L} = \mathbf{r} \times \mathbf{p}^2$
+14. A machine raises $1200\text{ N}$ load with effort $300\text{ N}$. If $VR = 5$, what is efficiency $\eta$? [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: JAMB 2012; Answer-Method: text-exclusive]
+    A. $60\%$
+    B. $80\%$
+    C. $75\%$
+    D. $40\%$
+15. Total kinetic energy $E_k$ of a rolling sphere ($I = \frac{2}{5}m r^2$) at speed $v$ is: [Type: MCQ; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $\frac{1}{2}m v^2$
+    B. $\frac{7}{10}m v^2$
+    C. $\frac{3}{4}m v^2$
+    D. $m v^2$
+16. A uniform beam ($4.0\text{ m}$ long, weight $300\text{ N}$) is supported horizontally at ends $A$ and $B$. A load of $500\text{ N}$ rests $1.0\text{ m}$ from $A$. Calculate vertical reaction force at $B$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+17. A solid cylinder ($I = \frac{1}{2}M R^2, M = 4.0\text{ kg}, R = 0.15\text{ m}$) accelerates from rest under net torque $\tau = 1.8\text{ N m}$. Compute angular velocity $\omega$ after $3.0\text{ s}$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+18. Calculate Velocity Ratio ($VR$) of an inclined plane angled at $30^\circ$ to horizontal. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: JAMB 2008; Answer-Method: text-exclusive]
+19. A turntable ($I = 0.050\text{ kg m}^2$) rotates at $\omega = 10.0\text{ rad s}^{-1}$. Clay ($m = 0.20\text{ kg}$) drops vertically onto turntable at $r = 0.20\text{ m}$ from axis and sticks. Compute final angular velocity. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+20. A flywheel has $I = 2.5\text{ kg m}^2$ and spins at $\omega = 40\text{ rad s}^{-1}$. Calculate rotational kinetic energy $E_{k,\text{rot}}$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+21. Compute Actual Mechanical Advantage ($MA$) of a screw jack (pitch $p = 5.0\text{ mm}$, handle $L = 0.50\text{ m}$) if efficiency is $40\%$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+22. A uniform $2.0\text{ kg}$ rod ($L = 1.2\text{ m}$) pivoted at one end is released horizontally from rest. Compute initial angular acceleration $\alpha$. Take $g = 9.81\text{ m s}^{-2}$ ($I_{\text{end}} = \frac{1}{3}M L^2$). [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+23. Calculate speed $v$ of a rolling sphere ($I = \frac{2}{5}m r^2$) at the bottom of a $3.0\text{ m}$ high incline if released from rest. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+24. A wheel radius $0.30\text{ m}$ experiences tangential friction force $F = 15.0\text{ N}$ at axle bearing. Compute braking torque $\tau$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+25. Compute angular momentum $L$ of a uniform sphere ($M = 10.0\text{ kg}, R = 0.10\text{ m}$) rotating at $\omega = 50.0\text{ rad s}^{-1}$. [Type: Hybrid; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+26. **Formal Proof of Conservation of Angular Momentum** [Type: Theory; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Differentiate vector angular momentum $\mathbf{L} = \mathbf{r} \times \mathbf{p}$ with respect to time to derive:
+    $$\frac{d\mathbf{L}}{dt} = \boldsymbol{\tau}_{\text{net}}$$
+    (b) Prove formally that when net external torque vanishes ($\boldsymbol{\tau}_{\text{net}} = 0$), angular momentum is strictly conserved ($\mathbf{L} = I \boldsymbol{\omega} = \text{constant}$).
+    (c) Apply this proof to explain why a collapsing rotating star increases its rotation frequency rapidly.
+27. **Complete Static Equilibrium Analysis of Heavy Ladder Systems** [Type: Theory; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: non-text-exclusive]
+    A uniform ladder ($m = 20.0\text{ kg}, L = 6.0\text{ m}$) leans against a smooth vertical wall at angle $\theta = 60^\circ$ to rough ground ($\mu_s = 0.40$). A firefighter ($M = 80.0\text{ kg}$) climbs up.
+    (a) Draw a complete force vector diagram.
+    (b) Write translational ($\sum F_x = 0, \sum F_y = 0$) and rotational ($\sum \tau = 0$) equilibrium equations.
+    (c) Calculate maximum distance $d$ along ladder firefighter climbs before slipping occurs. Take $g = 9.81\text{ m s}^{-2}$.
+28. **Rolling Motion Dynamics and Energy Partition Derivation** [Type: Theory; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A round body ($M, R, I = \beta M R^2$) rolls down a rough incline $\theta$ without slipping.
+    (a) Derive general acceleration formula $a = \frac{g \sin\theta}{1 + \beta}$.
+    (b) Compute exact acceleration values for a solid cylinder ($\beta = 1/2$), solid sphere ($\beta = 2/5$), and thin spherical shell ($\beta = 2/3$).
+    (c) Explain which shape wins a race down the incline and why.
+29. **Classical Machine Mechanics and Efficiency Improvement** [Type: Theory; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A wheel and axle machine has $R = 30.0\text{ cm}$ and $r = 6.0\text{ cm}$.
+    (a) Derive Velocity Ratio $VR = R/r$.
+    (b) An effort of $150\text{ N}$ lifts a load of $600\text{ N}$. Calculate $MA$ and efficiency $\eta$.
+    (c) Calculate work wasted against friction when lifting the load through $2.0\text{ m}$.
+    (d) State maintenance protocols (lubrication, ball bearings) used to maximize efficiency.
+30. **Coupled Rotational Dynamics: Flywheel and Falling Mass** [Type: Theory; Subject: Physics; Topic: L1.11 Rigid Body Dynamics, Rotational Equilibrium, and Mechanical Systems; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A mass $m = 2.0\text{ kg}$ hangs from a string wrapped around a cylindrical flywheel ($M = 8.0\text{ kg}, R = 0.25\text{ m}$).
+    (a) Draw FBDs for falling mass and rotating flywheel.
+    (b) Derive acceleration formula $a = \frac{m g}{m + M/2}$, and calculate $a$ and tension $T$. Take $g = 9.81\text{ m s}^{-2}$.
+    (c) Compute angular speed $\omega$ after mass drops $1.5\text{ m}$.

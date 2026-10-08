@@ -1,0 +1,142 @@
+1. Which of the following mathematical expressions represents a closed declarative statement with a definitive truth value? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. x+5=12
+B. 7+4=11
+C. Solve for y in 2y−3=9
+D. 3x>15
+
+2. Given two simple propositions p and q, under which specific truth assignment does the logical implication p⇒q evaluate to False? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. p is True and q is True
+B. p is True and q is False
+C. p is False and q is True
+D. p is False and q is False
+
+3. What is the contrapositive of the conditional proposition "If a polygon is a regular hexagon, then its interior angles sum to 720 
+∘
+ "? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WASSCE 2020; Answer-Method: text-exclusive]
+A. If a polygon's interior angles sum to 720 
+∘
+ , then it is a regular hexagon.
+B. If a polygon is not a regular hexagon, then its interior angles do not sum to 720 
+∘
+ .
+C. If a polygon's interior angles do not sum to 720 
+∘
+ , then it is not a regular hexagon.
+D. A polygon is a regular hexagon if and only if its interior angles sum to 720 
+∘
+ .
+
+4. The logical statement ¬p⇒¬q represents which variation of the original implication p⇒q? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Converse
+B. Inverse
+C. Contrapositive
+D. Biconditional
+
+5. Which of the following compound propositions is logically equivalent to the implication p⇒q? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: NECO 2023; Answer-Method: text-exclusive]
+A. q⇒p
+B. ¬p⇒¬q
+C. ¬q⇒¬p
+D. ¬p∧q
+
+6. Which logical expression constitutes a tautology? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. p∧¬p
+B. p∨¬p
+C. p⇒¬p
+D. p⇔¬p
+
+7. Which compound proposition represents a contradiction? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. (p∨q)∧¬p
+B. (p∧q)∧(¬p∨¬q)
+C. p⇒(q∨p)
+D. (p⇔q)∨(p∧¬q)
+
+8. Evaluate the truth value of the compound expression (p∧q)⇒p across all possible truth values of p and q. [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. Always False
+B. Always True
+C. True only when p is True
+D. True only when q is False
+
+9. How many total distinct truth-value combinations exist in a truth table constructed for n=3 independent propositions p,q, and r? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. 4
+B. 6
+C. 8
+D. 16
+
+10. According to De Morgan's Laws, the logical negation ¬(p∨q) is strictly equivalent to: [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+A. ¬p∨¬q
+B. ¬p∧¬q
+C. ¬p⇒¬q
+D. p∧¬q
+
+11. Under what condition is the logical bi-implication p⇔q evaluated as True? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. Exclusively when p is True and q is True
+B. Exclusively when p is False and q is False
+C. Whenever p and q possess identical truth values
+D. Whenever p and q possess opposite truth values
+
+12. Consider the open statement P(x):"x 
+2
+ −9=0" defined on the domain of integers Z. Which value of x transforms P(x) into a True closed statement? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. x=0
+B. x=3
+C. x=9
+D. x=−1
+
+13. Given statements p:"It is raining" and q:"The ground is wet", express the statement "If the ground is not wet, then it is not raining" in symbolic form. [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WASSCE 2021; Answer-Method: text-exclusive]
+A. ¬p⇒¬q
+B. ¬q⇒¬p
+C. q⇒p
+D. ¬(p∧q)
+
+14. What is the truth value of (p∨q)∧¬p when p is False and q is True? [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. True
+B. False
+C. Undetermined
+D. Vacuously True
+
+15. If proposition p is True and proposition q is False, evaluate the truth value of p⇒(p∧q). [Type: MCQ; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. True
+B. False
+C. Indeterminate
+D. Equivalent to p∨q
+
+16. State the total number of False outcomes in the truth table output column for the logical conjunction p∧q across 2 propositions. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+17. Evaluate the final truth value (T or F) of the compound expression (T∨F)⇒(F∧T). [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+18. State the converse of the implication: "If x=4, then x 
+2
+ =16". [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+
+19. Determine the integer value of x that converts the open statement 2x+7=19 into a True closed statement. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+
+20. Calculate the number of rows required in a complete truth table for an expression involving 4 distinct simple propositions. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+21. Evaluate the truth value (T or F) of the biconditional expression p⇔¬p. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+22. Evaluate the truth value (T or F) of p⇒(q∨¬q) when p=T and q=F. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+23. Simplify the logical expression (p∧T)∨F to its single primitive proposition. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+24. Classify the compound statement (p⇒q)∧(p∧¬q) as a tautology, contradiction, or contingency. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: text-exclusive]
+
+25. State the truth value (T or F) of the conditional statement F⇒T. [Type: Hybrid; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+
+26. (a) Construct a complete truth table for the compound statement ¬(p∧q)⇔(¬p∨¬q).
+(b) Deduce whether the statement is a tautology, contradiction, or contingency, and name the fundamental logical law demonstrated. [Type: Theory; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: non-text-exclusive]
+
+27. Using truth tables, prove the Law of Hypothetical Syllogism by showing that [(p⇒q)∧(q⇒r)]⇒(p⇒r) is a tautology. [Type: Theory; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: Cambridge International AS & A Level 9709; Answer-Method: non-text-exclusive]
+
+28. Consider the following propositions:
+p: "The driver exceeds the speed limit."
+q: "The traffic officer issues a citation."
+r: "The driver pays a financial penalty."
+(a) Express the compound proposition (p∧q)⇒r in plain verbal language.
+(b) Write the contrapositive of (p∧q)⇒r both in symbolic notation and in plain verbal language. [Type: Theory; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: WASSCE 2022; Answer-Method: text-exclusive]
+
+29. A student claims that the negation of the implication "If n is divisible by 6, then n is divisible by 3" is "If n is not divisible by 6, then n is not divisible by 3".
+(a) Identify the precise error in the student's reasoning.
+(b) State the correct logical negation of the implication p⇒q in terms of conjunction and negation.
+(c) Provide a specific numerical counterexample that refutes the student's proposed statement. [Type: Theory; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: IB Analysis and Approaches SL; Answer-Method: text-exclusive]
+
+30. Determine whether the set of premises {p⇒q,q⇒¬r,r,p} is logically consistent or inconsistent by evaluating their simultaneous truth values. Justify your conclusion mathematically. [Type: Theory; Subject: Maths; Topic: L1.6 Logical Reasoning: Propositions and Connectives; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]

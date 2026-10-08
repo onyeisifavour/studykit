@@ -1,0 +1,115 @@
+1. Which governing principle states that electrons sequentially occupy the lowest available energy orbital before populating higher energy sub-levels? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Pauli Exclusion Principle
+B. Aufbau Principle
+C. Hund's Rule of Maximum Multiplicity
+D. Avogadro's Law
+2. What does the Pauli Exclusion Principle mandate regarding two electrons occupying the same individual atomic orbital? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. They must have identical parallel spin quantum numbers
+B. They must possess opposite (paired) spins
+C. They must emit electromagnetic radiation continuously
+D. They must occupy different principal shells
+3. Hund's Rule of Maximum Multiplicity dictates that when electrons fill degenerate p or d orbitals within a sub-level, they will: [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A. Pair up in the first orbital before occupying empty orbitals
+B. Occupy degenerate orbitals singly with parallel spins before pairing commences
+C. Promote immediately to the next principal shell
+D. Evacuate s sub-levels completely
+4. What is the correct full ground-state electron configuration of a neutral chromium atom (Z=24)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. 1s 2 2s 2 2p 6 3s 2 3p 6 4s 2 3d 4
+B. 1s 2 2s 2 2p 6 3s 2 3p 6 4s 1 3d 5
+C. 1s 2 2s 2 2p 6 3s 2 3p 6 3d 6
+D. 1s 2 2s 2 2p 6 3s 2 3p 4 4s 2 3d 4
+5. What anomalous ground-state electron configuration is adopted by a neutral copper atom (Z=29)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. [Ar]4s 2 3d 9
+B. [Ar]4s 1 3d 10
+C. [Ar]4s 0 3d 11
+D. [Ar]4s 2 3d 10
+6. What is the ground-state electron configuration of an iron(III) cation (Fe 3+ , Z=26)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+A. [Ar]4s 2 3d 3
+B. [Ar]4s 1 3d 4
+C. [Ar]3d 5
+D. [Ar]4s 2 3d 5
+7. When forming transition metal cations from neutral fourth-period atoms (Z=21 to 30), from which sub-level are electrons lost first? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. 3p sub-level
+B. 3d sub-level
+C. 4s sub-level
+D. 1s sub-level
+8. Which ground-state species has the condensed electron configuration [Ne]3s 2 3p 4 ? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+A. Silicon (Z=14)
+B. Phosphorus (Z=15)
+C. Sulfur (Z=16)
+D. Chlorine (Z=17)
+9. How many unpaired electrons are present in a ground-state gaseous nitrogen atom (Z=7)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+A. 0
+B. 1
+C. 3
+D. 5
+10. What is the full ground-state electron configuration of a oxide anion (O 2− , Z=8)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. 1s 2 2s 2 2p 4
+B. 1s 2 2s 2 2p 6
+C. 1s 2 2s 2 2p 2
+D. 1s 2 2s 6
+11. Why do chromium (Z=24) and copper (Z=29) deviate from standard Aufbau filling rules? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+A. 4s orbitals evaporate at room temperature
+B. Half-filled (3d 5 ) and completely filled (3d 10 ) sub-levels confer enhanced exchange-energy stability
+C. Protons convert into neutrons
+D. Nuclear charge drops significantly
+12. Which noble gas notation core represents the inner 18 electrons in the configuration of Krypton (Z=36)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. [He]
+B. [Ne]
+C. [Ar]
+D. [Kr]
+13. How many unpaired electrons exist in a ground-state nickel(II) ion (Ni 2+ , Z=28)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. 0
+B. 2
+C. 4
+D. 8
+14. Which orbital box diagram violates Hund's Rule for a 2p 2 configuration? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: IB Chemistry SL 2020; Answer-Method: text-exclusive]
+A. ↑↓∣ ∣ 
+B. ↑∣↑∣ 
+C. ↑∣ ∣↑
+D. ↓∣↓∣ 
+15. What is the full ground-state configuration of a neutral zinc atom (Z=30)? [Type: MCQ; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. 1s 2 2s 2 2p 6 3s 2 3p 6 4s 2 3d 10
+B. 1s 2 2s 2 2p 6 3s 2 3p 6 4s 1 3d 10
+C. 1s 2 2s 2 2p 6 3s 2 3p 6 3d 12
+D. 1s 2 2s 2 2p 6 3s 2 3p 6 4s 2 3d 8 4p 2
+16. Write the full electron configuration of a ground-state aluminum atom (Z=13). [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. Write the condensed electron configuration of a potassium cation (K + , Z=19). [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+18. Calculate the total number of d electrons present in a ground-state iron atom (Fe, Z=26). [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+19. State the number of unpaired electrons in a ground-state manganese atom (Mn, Z=25). [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge IGCSE 0620/32; Answer-Method: text-exclusive]
+20. Which element has the ground-state configuration 1s 2 2s 2 2p 6 3s 2 3p 6 4s 2 3d 10 4p 5 ? [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+21. Write the ground-state electron configuration of a sulfide anion (S 2− , Z=16). [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+22. How many total s electrons are present in a ground-state calcium atom (Z=20)? [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+23. State the rule that prohibits two electrons in an atom from having all four quantum numbers identical. [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+24. Write the condensed electron configuration of a ground-state chromium atom (Cr, Z=24). [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+25. Identify the transition metal ion (+2 charge) with the configuration [Ar]3d 8 . [Type: Hybrid; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+26. **Fundamental rules governing electron configurations:** [Type: Theory; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: WAEC 2021 Q4; Answer-Method: text-exclusive]
+(a) State and explain the three fundamental rules used to build ground-state electron configurations:
+Aufbau Principle
+Pauli Exclusion Principle
+Hund's Rule of Maximum Multiplicity
+(b) Draw orbital box diagrams for the valence shell of carbon (Z=6), oxygen (Z=8), and nitrogen (Z=7).
+(c) Explain why nitrogen has a higher first ionization energy than oxygen despite oxygen having a higher nuclear charge.
+27. **Exceptional transition metal configurations and ionization sequence:** [Type: Theory; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+(a) Write the expected (Aufbau predicted) and actual (experimentally observed) ground-state configurations for chromium (Z=24) and copper (Z=29).
+(b) Explain why extra stability is associated with half-filled (d 5 ) and fully-filled (d 10 ) sub-levels in terms of exchange energy and spherical symmetry.
+(c) Write electron configurations for neutral iron (Fe), Fe 2+ ion, and Fe 3+ ion, explicitly highlighting why 4s electrons are removed before 3d electrons during cation formation.
+28. **Sequential electron configuration construction (Z=1 to Z=36):** [Type: Theory; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: NECO 2020 Q2; Answer-Method: text-exclusive]
+(a) Write full ground-state electron configurations for:
+Phosphorus (Z=15)
+Titanium (Z=22)
+Selenium (Z=34)
+Krypton (Z=36)
+(b) Identify which of these species are paramagnetic (contain unpaired electrons) and which are diamagnetic (all electrons paired).
+(c) Explain how magnetic susceptibility measurements experimentally verify Hund's rule.
+29. **Anionic and cationic electronic configurations:** [Type: Theory; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: IB Chemistry HL 2020; Answer-Method: text-exclusive]
+(a) Write condensed electron configurations for the following ions: Na + , Cl − , Sc 3+ , V 3+ , Br − .
+(b) Identify which ions in part (a) are isoelectronic with argon (Z=18).
+(c) Explain why transition metal cations containing partially filled d sub-levels produce brightly colored aqueous solution complexes (e.g., Cu 2+ blue, Fe 3+ yellow-brown).
+30. **Configuration error diagnosis and verification:** [Type: Theory; Subject: Chemistry; Topic: L2.6 Rules for Electron Configuration; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+(a) Diagnose the specific quantum rule violated in each invalid configuration:
+1s 2 2s 3 2p 4
+1s 2 2s 2 2p x2 2p y0 2p z0
+1s 2 2s 2 2p 6 3s 2 3p 6 3d 2 (for neutral Calcium, Z=20)
+(b) Correct each invalid configuration to express the true ground state.
+(c) State the total number of spherical (s) orbitals and dumbbell (p) orbitals that are completely filled in a ground-state argon atom.

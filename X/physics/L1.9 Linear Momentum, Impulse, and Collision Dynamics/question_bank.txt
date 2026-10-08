@@ -1,0 +1,115 @@
+1. A bullet of mass $0.050\text{ kg}$ is fired horizontally at $200\text{ m s}^{-1}$ into a stationary block of mass $0.950\text{ kg}$ on a frictionless table. The bullet embeds in the block. Calculate common post-impact speed and remaining kinetic energy. [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: JAMB 1999; Answer-Method: text-exclusive]
+    A. $10.0\text{ m s}^{-1}$; $E_k = 50.0\text{ J}$
+    B. $20.0\text{ m s}^{-1}$; $E_k = 100.0\text{ J}$
+    C. $10.0\text{ m s}^{-1}$; $E_k = 1000.0\text{ J}$
+    D. $5.00\text{ m s}^{-1}$; $E_k = 25.0\text{ J}$
+2. A force acts on a $2.0\text{ kg}$ particle as $\mathbf{F}(t) = (12t\mathbf{i} + 6t^2\mathbf{j})\text{ N}$. Calculate the magnitude of impulse $\mathbf{I} = \int_{0}^{2} \mathbf{F}\,dt$ delivered between $t = 0$ and $t = 2.0\text{ s}$. [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $24.0\text{ N s}$
+    B. $16.0\text{ N s}$
+    C. $28.8\text{ N s}$
+    D. $32.0\text{ N s}$
+3. Spheres $A$ and $B$ of equal mass $m$ undergo a head-on 1D elastic collision. Sphere $A$ moves with speed $v_0$ while $B$ is stationary. What are post-collision speeds $v_A'$ and $v_B'$? [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $v_A' = 0,\ v_B' = v_0$
+    B. $v_A' = v_0/2,\ v_B' = v_0/2$
+    C. $v_A' = -v_0,\ v_B' = v_0$
+    D. $v_A' = 0,\ v_B' = 2v_0$
+4. A particle of mass $M$ at rest splits into two fragments of masses $m_1$ and $m_2$. If $m_1$ moves with velocity $v_1$, what is the velocity $v_2$ of $m_2$? [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: JAMB 2008; Answer-Method: text-exclusive]
+    A. $-\frac{m_1}{m_2} v_1$
+    B. $-\frac{m_2}{m_1} v_1$
+    C. $\frac{m_1}{M} v_1$
+    D. $-\frac{M}{m_2} v_1$
+5. In a 2D elastic collision, mass $m_1 = 1.0\text{ kg}$ moving at $4.0\text{ m s}^{-1}$ strikes stationary $m_2 = 1.0\text{ kg}$. After impact, $m_1$ moves at $30^\circ$ to initial line. What is the angle between final velocity vectors? [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. $45^\circ$
+    B. $60^\circ$
+    C. $90^\circ$
+    D. $120^\circ$
+6. Area under a force-time ($F$ vs $t$) graph represents: [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. Acceleration
+    B. Work done
+    C. Change in linear momentum (Impulse)
+    D. Power dissipation rate
+7. A tennis ball ($m = 0.060\text{ kg}$) moving at $25.0\text{ m s}^{-1}$ is struck by a racket, returning along its path at $35.0\text{ m s}^{-1}$. Compute momentum change $\Delta p$. [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. $0.60\text{ kg m s}^{-1}$
+    B. $3.60\text{ kg m s}^{-1}$
+    C. $2.10\text{ kg m s}^{-1}$
+    D. $1.50\text{ kg m s}^{-1}$
+8. Which statement distinguishes elastic from inelastic collisions? [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Momentum is conserved in elastic collisions but lost in inelastic collisions.
+    B. Kinetic energy is conserved in elastic collisions, but converted to heat/deformation in inelastic collisions.
+    C. Total energy is conserved in elastic collisions but violated in inelastic collisions.
+    D. Coalescence occurs in elastic collisions.
+9. A rifle of mass $4.0\text{ kg}$ fires a bullet of mass $0.020\text{ kg}$ at muzzle speed $800\text{ m s}^{-1}$. Calculate rifle recoil speed. [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+    A. $4.0\text{ m s}^{-1}$
+    B. $16.0\text{ m s}^{-1}$
+    C. $2.0\text{ m s}^{-1}$
+    D. $8.0\text{ m s}^{-1}$
+10. In a 1D elastic collision between equal masses with relative approach speed $u_{\text{rel}}$, what is relative separation speed $v_{\text{rel}}$? [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $0$
+    B. $\frac{1}{2} u_{\text{rel}}$
+    C. $u_{\text{rel}}$
+    D. $2 u_{\text{rel}}$
+11. A $1200\text{ kg}$ car moving at $15.0\text{ m s}^{-1}$ collides and locks with a stationary $1800\text{ kg}$ truck. Compute percentage loss in kinetic energy. [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $40\%$
+    B. $60\%$
+    C. $75\%$
+    D. $25\%$
+12. A sandbag of mass $M$ hangs from a long rope. A bullet of mass $m$ fired horizontally embeds in the sandbag, swinging it to vertical height $h$. Initial bullet speed $v$ is: [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $v = \frac{m + M}{m} \sqrt{2gh}$
+    B. $v = \frac{m}{M} \sqrt{2gh}$
+    C. $v = \sqrt{2gh}$
+    D. $v = \frac{M}{m + M} \sqrt{2gh}$
+13. A force varies with time as $F(t) = F_0 \sin(\pi t / T)$ for $0 \le t \le T$. Calculate total impulse delivered. [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. $F_0 T$
+    B. $\frac{2 F_0 T}{\pi}$
+    C. $\frac{F_0 T}{\pi}$
+    D. $\frac{\pi F_0 T}{2}$
+14. Particle $m_1$ collides elastically head-on with stationary $m_2$. Under what mass condition does $m_1$ rebound backwards with maximum speed? [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. $m_1 = m_2$
+    B. $m_1 \gg m_2$
+    C. $m_1 \ll m_2$
+    D. Independent of mass ratio
+15. Linear momentum conservation in isolated systems is a direct theoretical consequence of: [Type: MCQ; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. Newton's Second and Third Laws of Motion
+    B. Newton's First Law and Hooke's Law
+    C. Conservation of Mechanical Energy
+    D. Kinetic energy conservation
+16. A $0.15\text{ kg}$ baseball moving at $40.0\text{ m s}^{-1}$ is struck by a bat, reversing direction at $50.0\text{ m s}^{-1}$. If contact lasts $1.2 \times 10^{-3}\text{ s}$, calculate average contact force. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+17. A railway wagon of mass $10000\text{ kg}$ moving at $4.0\text{ m s}^{-1}$ couples with a stationary $15000\text{ kg}$ wagon. Compute common post-coupling velocity. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+18. Object $A$ ($m_A = 2.0\text{ kg}$) moving along x-axis at $6.0\text{ m s}^{-1}$ strikes stationary $B$ ($m_B = 3.0\text{ kg}$). After impact, $A$ moves along y-axis at $2.0\text{ m s}^{-1}$. Calculate x-component velocity of $B$. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+19. A cannon of mass $1200\text{ kg}$ fires a $15.0\text{ kg}$ shell at $300\text{ m s}^{-1}$. Calculate cannon recoil speed. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+20. A constant force $F = 50.0\text{ N}$ acts for $\Delta t = 0.080\text{ s}$. Compute impulse magnitude. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+21. A $2.0\text{ kg}$ mass moving at $8.0\text{ m s}^{-1}$ undergoes a 1D elastic collision with a stationary $4.0\text{ kg}$ mass. Calculate post-collision velocity of $2.0\text{ kg}$ mass. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+22. A rocket ejects exhaust mass at relative speed $u_{\text{ex}} = 2500\text{ m s}^{-1}$. If burn rate is $\frac{dm}{dt} = 50.0\text{ kg s}^{-1}$, calculate thrust generated. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+23. A $0.50\text{ kg}$ ball dropped vertically from $5.0\text{ m}$ rebounds to $3.2\text{ m}$. Calculate floor impulse delivered. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+24. A $3.0\text{ kg}$ block moving at $10.0\text{ m s}^{-1}$ strikes a spring mounted on a stationary $7.0\text{ kg}$ block. Calculate common velocity at maximum spring compression. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+25. Compute kinetic energy lost during a completely inelastic collision between two $0.50\text{ kg}$ carts moving toward each other at $2.0\text{ m s}^{-1}$ and $4.0\text{ m s}^{-1}$. [Type: Hybrid; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+26. **Formal Mathematical Derivation of Momentum Conservation** [Type: Theory; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Consider two isolated interacting particles exerting contact forces $\mathbf{F}_{12}$ and $\mathbf{F}_{21}$. State Newton's Third Law in vector form.
+    (b) Applying Newton's Second Law in momentum form ($\mathbf{F} = \frac{d\mathbf{p}}{dt}$), prove formally that:
+    $$\frac{d}{dt}(\mathbf{p}_1 + \mathbf{p}_2) = 0$$
+    thereby deriving the Law of Conservation of Linear Momentum.
+    (c) Show that the Impulse-Momentum Theorem $\mathbf{I} = \int \mathbf{F}\,dt = \Delta \mathbf{p}$ holds for variable forces.
+27. **1D Elastic Collision Mechanics and Relative Speed Identity** [Type: Theory; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    Masses $m_1$ and $m_2$ collide elastically in 1D with initial speeds $u_1, u_2$.
+    (a) Write simultaneous momentum and kinetic energy conservation equations.
+    (b) Prove that relative speed of approach equals relative speed of separation:
+    $$u_1 - u_2 = -(v_1 - v_2)$$
+    (c) Derive explicit final velocity equations $v_1, v_2$.
+    (d) Calculate $v_1, v_2$ for $m_1 = 3.0\text{ kg}, u_1 = 8.0\text{ m s}^{-1}$ striking $m_2 = 1.0\text{ kg}, u_2 = -2.0\text{ m s}^{-1}$.
+28. **2D Oblique Collision Dynamics and Vector Analysis** [Type: Theory; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    Puck $A$ ($m_A = 0.20\text{ kg}$) sliding along x-axis at $u_A = 5.0\text{ m s}^{-1}$ strikes stationary puck $B$ ($m_B = 0.30\text{ kg}$). After collision, $A$ moves at $v_A = 3.0\text{ m s}^{-1}$ at $45^\circ$ above x-axis.
+    (a) Set up vector momentum equations along x and y axes.
+    (b) Calculate final speed $v_B$ and scattering angle $\phi$ below x-axis for puck $B$.
+    (c) Compute initial and final kinetic energy, classifying collision elasticity.
+29. **Ballistic Pendulum Mechanics and Energy Accounting** [Type: Theory; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+    A bullet ($m = 20.0\text{ g}$) fires into a pendulum bob ($M = 2.98\text{ kg}$) suspended by cords of length $L = 1.50\text{ m}$. Combined bob+bullet swings to maximum vertical displacement $h = 0.120\text{ m}$.
+    (a) Explain why mechanical energy is NOT conserved during impact, whereas momentum IS conserved.
+    (b) Calculate combined speed of bob+bullet immediately after impact. Take $g = 9.81\text{ m s}^{-2}$.
+    (c) Compute initial bullet velocity $v_0$.
+    (d) Determine percentage kinetic energy lost during collision.
+30. **Rocket Propulsion Dynamics and Variable Mass Systems** [Type: Theory; Subject: Physics; Topic: L1.9 Linear Momentum, Impulse, and Collision Dynamics; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A rocket of mass $m(t)$ in zero-gravity space ejects exhaust gas at relative speed $u_{\text{ex}}$.
+    (a) Apply momentum conservation across $t$ and $t+dt$ to derive Tsiolkovsky's rocket equation:
+    $$\Delta v = u_{\text{ex}} \ln\left(\frac{m_0}{m_f}\right)$$
+    (b) A single-stage rocket ($m_0 = 12000\text{ kg}$) contains $10000\text{ kg}$ of fuel. If $u_{\text{ex}} = 2800\text{ m s}^{-1}$, compute final velocity gained upon full burn.
+    (c) Explain the practical advantage of multi-stage rockets.

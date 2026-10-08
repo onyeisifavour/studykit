@@ -12,15 +12,19 @@ import threading
 import uuid
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import BackgroundTasks, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, Response
 
 from .. import config
+from .. import sim_assets
+from .. import sim_html
 from .. import dashboard_stats
 from .. import flashcard_builder
 from .. import library_scanner
 from .. import quiz_logger
+from .. import quiz_artifact
+from .. import quiz_instance
 from ..user_selections import normalize_ascii_math
 from ..quiz_service import QuizService, GenerationJob
 
@@ -108,6 +112,7 @@ def history() -> dict:
             'skipped':     sum(1 for q in log.questions if q.skipped),
             'avg_pct':     round(_log_overall(log) * 100),
             'skip_mode':   log.skip_mode,
+            'marking_pending': log.marking_pending,
         })
     return {'quizzes': logs}
 
@@ -123,6 +128,7 @@ def history_detail(quiz_id: str) -> dict:
         'subject':  dashboard_stats._subject_of(_log_topic(log)),
         'created_at': log.created_at,
         'skip_mode':  log.skip_mode,
+        'marking_pending': log.marking_pending,
         'questions': [{
             'number':         q.number,
             'question':       normalize_ascii_math(q.question),
@@ -131,7 +137,7 @@ def history_detail(quiz_id: str) -> dict:
             'q_type':         q.q_type,
             'is_simulation':  q.is_simulation,
             'topic':          q.topic,
-            'user_answer':    q.user_answer,
+            'user_answer':    normalize_ascii_math(q.user_answer),
             'correct_answer': normalize_ascii_math(q.correct_answer),
             'is_correct':     q.is_correct,
             'score':          q.score,
@@ -139,6 +145,199 @@ def history_detail(quiz_id: str) -> dict:
             'ai_feedback':    normalize_ascii_math(q.ai_feedback),
         } for q in log.questions],
     }
+
+
+@app.delete('/api/history/{quiz_id}')
+def history_delete(quiz_id: str) -> dict:
+    """
+    Removes one History entry. Only the log is deleted — any stored artifact
+    or instance built from this quiz is left alone so it can still be retaken.
+    """
+    try:
+        deleted = quiz_logger.delete_quiz_log(quiz_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    if not deleted:
+        raise HTTPException(status_code=404, detail='quiz not found')
+    return {'deleted': True, 'quiz_id': quiz_id}
+
+
+@app.post('/api/history/{quiz_id}/to-artifact')
+def history_to_artifact(quiz_id: str) -> dict:
+    """
+    Retake: turns a completed History entry into an immutable artifact so the
+    same quiz can be taken again. The history entry itself is not modified.
+    """
+    try:
+        artifact_id = quiz_artifact.artifact_from_history(quiz_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {'artifact_id': artifact_id, 'source_quiz_id': quiz_id}
+
+
+# ── Artifacts (immutable quiz sets) ───────────────────────────────────────────
+
+@app.get('/api/artifacts')
+def artifacts_list() -> dict:
+    return {'artifacts': quiz_artifact.list_artifacts()}
+
+
+@app.get('/api/artifacts/{artifact_id}')
+def artifacts_detail(artifact_id: str) -> dict:
+    rec = quiz_artifact.load_artifact(artifact_id)
+    if rec is None:
+        raise HTTPException(status_code=404, detail='artifact not found')
+    return {
+        'artifact_id':  rec.get('artifact_id', artifact_id),
+        'created_at':   rec.get('created_at', ''),
+        'source':       rec.get('source', ''),
+        'topics':       rec.get('topics', []),
+        'subject':      (rec.get('subjects') or ['Other'])[0],
+        'title':        (rec.get('topics') or ['Untitled quiz'])[0],
+        'total_questions': rec.get('total_questions', 0),
+        'questions': [{
+            'number':          q.get('number', 0),
+            'section':         q.get('section', ''),
+            'q_type':          q.get('type', ''),
+            'question_text':   normalize_ascii_math(str(q.get('question_text', ''))),
+            'options':         [normalize_ascii_math(str(o)) for o in (q.get('options') or [])],
+            'correct_answer':  normalize_ascii_math(str(q.get('correct_answer', ''))),
+            'correct_option_index': q.get('correct_option_index'),
+            'option_rationales':    [str(r) for r in (q.get('option_rationales') or [])],
+            'option_error_types':   [str(t) for t in (q.get('option_error_types') or [])],
+            'topic':           q.get('topic', ''),
+            'is_simulation':   bool(q.get('is_simulation', False)),
+            'sim_instruction': normalize_ascii_math(str(q.get('sim_instruction', ''))),
+        } for q in rec.get('questions', [])],
+    }
+
+
+@app.post('/api/artifacts/{artifact_id}/derive')
+def artifacts_derive(artifact_id: str, body: dict | None = None) -> dict:
+    """
+    Creates a new, independent artifact from an existing one. `numbers` is the
+    caller's full ordered wish-list of source question numbers — it drives
+    removal, subsetting and reordering at once. The result is renumbered 1..N.
+    Omit `numbers` to duplicate the whole set unchanged.
+    """
+    body = body or {}
+    numbers = body.get('numbers')
+    source = str(body.get('source') or 'edit')
+    try:
+        new_id = quiz_artifact.derive_artifact(
+            artifact_id, None if numbers is None else list(numbers), source=source)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {'artifact_id': new_id, 'created': new_id != artifact_id}
+
+
+@app.delete('/api/artifacts/{artifact_id}')
+def artifacts_delete(artifact_id: str) -> dict:
+    try:
+        deleted = quiz_artifact.delete_artifact(artifact_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    if not deleted:
+        raise HTTPException(status_code=404, detail='artifact not found')
+    return {'deleted': True, 'artifact_id': artifact_id}
+
+
+# ── Instances (mutable attempts) ──────────────────────────────────────────────
+
+@app.get('/api/instances')
+def instances_list() -> dict:
+    return {'instances': quiz_instance.list_instances()}
+
+
+def _instance_detail(instance_id: str) -> dict:
+    """Detail for an instance we have just written, so it must exist."""
+    rec = quiz_instance.detail(instance_id)
+    if rec is None:
+        raise HTTPException(status_code=404, detail='instance not found')
+    return rec
+
+
+@app.get('/api/instances/{instance_id}')
+def instances_detail(instance_id: str) -> dict:
+    return _instance_detail(instance_id)
+
+
+@app.post('/api/artifacts/{artifact_id}/start')
+def instances_start(artifact_id: str) -> dict:
+    """Begins a new attempt at an artifact. The artifact is only read."""
+    try:
+        rec = quiz_instance.start_instance(artifact_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    return _instance_detail(rec['instance_id'])
+
+
+@app.post('/api/quiz/{quiz_id}/adopt-instance')
+def quiz_adopt_instance(quiz_id: str) -> dict:
+    """Attaches an instance to a working note that already exists.
+
+    A pipeline-generated quiz already has a note holding the student's answers,
+    so Save State adopts that note rather than copying the quiz into a new one.
+    """
+    try:
+        rec = quiz_instance.adopt_note(quiz_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    return _instance_detail(rec['instance_id'])
+
+
+@app.post('/api/instances/{instance_id}/save-state')
+def instances_save_state(instance_id: str, body: dict | None = None) -> dict:
+    """Pauses the attempt, closing the running stretch as one time entry."""
+    body = body or {}
+    idx = body.get('current_index')
+    try:
+        quiz_instance.save_state(
+            instance_id, None if idx is None else int(idx))
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    return _instance_detail(instance_id)
+
+
+@app.post('/api/instances/{instance_id}/open')
+def instances_open(instance_id: str) -> dict:
+    """First time the quiz is actually opened: starts the clock."""
+    try:
+        quiz_instance.open_instance(instance_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return _instance_detail(instance_id)
+
+
+@app.post('/api/instances/{instance_id}/resume')
+def instances_resume(instance_id: str) -> dict:
+    """Restarts the clock on a paused attempt, keeping its position."""
+    try:
+        quiz_instance.resume_instance(instance_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return _instance_detail(instance_id)
+
+
+@app.post('/api/instances/{instance_id}/branch')
+def instances_branch(instance_id: str) -> dict:
+    """Forks the attempt: a clean slate from the same artifact, same content."""
+    try:
+        child = quiz_instance.branch_instance(instance_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    return _instance_detail(child['instance_id'])
+
+
+@app.delete('/api/instances/{instance_id}')
+def instances_delete(instance_id: str) -> dict:
+    try:
+        deleted = quiz_instance.delete_instance(instance_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    if not deleted:
+        raise HTTPException(status_code=404, detail='instance not found')
+    return {'deleted': True, 'instance_id': instance_id}
 
 
 def _question_card(q) -> dict:
@@ -150,8 +349,11 @@ def _question_card(q) -> dict:
         'quiz_type':       getattr(q, 'quiz_type', '') or getattr(q, 'q_type', ''),
         'is_simulation':   getattr(q, 'is_simulation', False),
         'question_text':   normalize_ascii_math(getattr(q, 'question_text', '')),
-        'options':         [normalize_ascii_math(o) for o in (getattr(q, 'options', []) or [])],
-        'correct_answer':  normalize_ascii_math(getattr(q, 'correct_answer', '')),
+'options':              [normalize_ascii_math(o) for o in (getattr(q, 'options', []) or [])],
+        'correct_answer':       normalize_ascii_math(getattr(q, 'correct_answer', '')),
+        'correct_option_index': getattr(q, 'correct_option_index', None),
+        'option_rationales':    list(getattr(q, 'option_rationales', []) or []),
+        'option_error_types':   list(getattr(q, 'option_error_types', []) or []),
         'sim_name':        getattr(q, 'sim_name', ''),
         'sim_instruction': normalize_ascii_math(getattr(q, 'sim_instruction', '')),
         'topic':           getattr(q, 'topic', ''),
@@ -337,22 +539,58 @@ def quiz_last() -> dict:
 def quiz_complete(body: dict) -> dict:
     """Marks + persists a finished quiz. Body:
     {'quiz_id'?, 'answers': [{number, user_choice, choice_meta, skipped}],
-     'evaluation_on': bool, 'skip_mode'?, 'topics'?}
+     'evaluation_on': bool, 'skip_mode'?, 'topics'?, 'mark_subjective'?,
+     'instance_id'?}
     Grades MCQs locally, Hybrids via the strict marker (AI fallback), Theory via
-    the parallel bucketed batches, and writes the History quiz log."""
+    the parallel bucketed batches, and writes the History quiz log.
+
+    'mark_subjective': False is the user's "Mark later" choice — History is
+    written straight away with every subjective question (Hybrid and Theory)
+    left pending. 'mark_theory' is accepted as a legacy alias for the same flag.
+    'instance_id' links the finished attempt to the saved state it came from.
+    """
     from .. import quiz_grader
     svc = _get_service()
     quiz_id = body.get('quiz_id') if isinstance(body.get('quiz_id'), str) else None
     answers = body.get('answers') or []
     evaluation_on = bool(body.get('evaluation_on', False))
     skip_mode = str(body.get('skip_mode') or 'zero')
+    mark_flag = body.get('mark_subjective')
+    if mark_flag is None:
+        mark_flag = body.get('mark_theory', True)
+    mark_subjective = bool(mark_flag)
     topics = body.get('topics')
     if not isinstance(topics, list) or not topics:
         topics = None
     try:
-        return quiz_grader.complete_quiz(
+        res = quiz_grader.complete_quiz(
             svc, quiz_id, answers, evaluation_on,
-            skip_mode=skip_mode, topics=topics)
+            skip_mode=skip_mode, topics=topics, mark_subjective=mark_subjective)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+    instance_id = body.get('instance_id')
+    if isinstance(instance_id, str) and instance_id:
+        try:
+            quiz_instance.finish_instance(
+                instance_id, res['history_quiz_id'],
+                marking_pending=res.get('marking_pending', False))
+        except ValueError:
+            pass  # the quiz itself finished fine; only the link failed
+    return res
+
+
+@app.post('/api/quiz/mark-pending')
+def quiz_mark_pending(body: dict) -> dict:
+    """Grades a quiz the student deferred with "Mark later", then patches its
+    existing History entry in place. Body: {'quiz_id'}"""
+    from .. import quiz_grader
+    svc = _get_service()
+    quiz_id = str(body.get('quiz_id') or '')
+    if not quiz_id:
+        raise HTTPException(status_code=400, detail='quiz_id is required')
+    try:
+        return quiz_grader.mark_pending_quiz(svc, quiz_id)
     except ValueError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
 
@@ -365,6 +603,55 @@ def quiz_note_get(quiz_id: str) -> dict:
     if note is None:
         raise HTTPException(status_code=404, detail='Quiz note not found.')
     return {'note': note, 'profile': qn.score_profile(note, str(note.get('skip_mode') or 'zero'))}
+
+
+@app.get('/api/quiz/note/{quiz_id}/cards')
+def quiz_note_cards(quiz_id: str) -> dict:
+    """The questions of a specific working note in the same card shape the
+    quiz screen already renders, plus the answers recorded so far.
+
+    This is how a saved state is reloaded: /api/quiz/last only rebuilds the
+    most recent generated sequence, so it cannot serve an arbitrary note.
+    """
+    from .. import quiz_note as qn
+    from ..question_generator import GeneratedQuestion
+    note = qn.load_note(quiz_id)
+    if note is None:
+        raise HTTPException(status_code=404, detail='Quiz note not found.')
+    questions = []
+    for raw in note.get('questions') or []:
+        if not isinstance(raw, dict):
+            continue
+        questions.append(_question_card(GeneratedQuestion(
+            index=int(raw.get('index', 0) or 0),
+            number=int(raw.get('number', 0) or 0),
+            section=str(raw.get('section') or ''),
+            q_type=str(raw.get('type') or raw.get('q_type') or ''),
+            quiz_type=str(raw.get('type') or raw.get('q_type') or ''),
+            is_simulation=bool(raw.get('is_simulation')),
+            question_text=str(raw.get('question_text') or ''),
+            options=list(raw.get('options') or []),
+            correct_answer=str(raw.get('correct_answer') or ''),
+            correct_option_index=qn._coerce_option_index(
+                raw.get('correct_option_index')),
+            option_rationales=list(raw.get('option_rationales') or []),
+            option_error_types=list(raw.get('option_error_types') or []),
+            sim_name=str(raw.get('sim_name') or ''),
+            sim_instruction=str(raw.get('sim_instruction') or ''),
+            topic=str(raw.get('topic') or ''),
+            pacing_stage=str(raw.get('pacing_stage') or ''),
+            objective_type=str(raw.get('objective_type') or ''),
+            position_rationale=str(raw.get('position_rationale') or ''),
+            source=str(raw.get('source') or ''),
+        )))
+    return {
+        'quiz_id': quiz_id,
+        'questions': questions,
+        'topics': list(note.get('topics') or []),
+        'subjects': list(note.get('subjects') or []),
+        'evaluation_on': note.get('evaluation_on'),
+        'skip_mode': note.get('skip_mode'),
+    }
 
 
 @app.get('/api/quiz/last/note')
@@ -648,11 +935,17 @@ class _SimLookupError(Exception):
 
 def _resolve_sim_html(sim_name: str) -> tuple[Path, Path]:
     """
-    Locates the folder for a simulation by name across the whole library tree
-    and returns (sim_folder, sim_html_path).
+    Locates the folder for a simulation and returns (sim_folder, sim_html_path).
 
     Both AI-generated and user-downloaded prebuilt sims land in the same place:
     `<topic>/simulations/<sim_name>/sim.html` — so one code path finds both.
+
+    `sim_name` may be a bare folder name, which is how older questions are
+    stored, or a path relative to the library root
+    (`subject/topic/simulations/name`). The path form is what disambiguates the
+    same folder name appearing in more than one topic, which happens once a
+    library holds a hundred simulations or more. A bare name that is unique
+    still resolves, so existing questions keep working.
 
     Raises _SimLookupError with a friendly message when it cannot be resolved.
     """
@@ -665,19 +958,41 @@ def _resolve_sim_html(sim_name: str) -> tuple[Path, Path]:
     except FileNotFoundError:
         raise _SimLookupError(f'Library root not found: {root}') from None
 
-    candidates: list[Path] = []
-    for topic_map in tree.subjects.values():
-        for topic in topic_map.values():
+    # Everything the scan found, as (folder, rel_path_from_root).
+    found: list[tuple[Path, str]] = []
+    root_path = Path(root).resolve()
+    for subject, topic_map in tree.subjects.items():
+        for topic_name, topic in topic_map.items():
             for sim in topic.simulations:
-                if sim.name.lower() == name.lower():
-                    candidates.append(sim.folder_path)
+                rel = sim.folder_path.resolve().relative_to(root_path).as_posix()
+                if not rel.startswith(f'{subject}/{topic_name}/'):
+                    # Defensive: never hand out a path that repeats its segments.
+                    rel = f'{subject}/{topic_name}/{sim.folder_path.name}'
+                found.append((sim.folder_path, rel))
+
+    # A path-form reference pins one exact folder. rel already ends with
+    # `simulations/<name>`, so a caller supplying the full path and a caller
+    # supplying only `<topic>/simulations/<name>` both land on the same entry.
+    if '/' in name:
+        want = name.strip('/').lower()
+        matches = [f for f in found if f[1].lower() == want]
+        if not matches:
+            tail = want.rsplit('/simulations/', 1)[-1] if '/simulations/' in want else want
+            matches = [f for f in found if f[0].name.lower() == tail]
+        if not matches:
+            raise _SimLookupError(f"No simulation at path '{name}' in the library.")
+        candidates = [m[0] for m in matches]
+    else:
+        candidates = [f[0] for f in found if f[0].name.lower() == name.lower()]
 
     if not candidates:
         raise _SimLookupError(f"No simulation named '{name or '(empty)'}' found in the library.")
     if len(candidates) > 1:
-        # Choose the first match deterministically (sorted subject/topic scan).
+        options = sorted(
+            f[1] for f in found if f[0] in candidates)
         raise _SimLookupError(
-            f"Simulation '{name}' exists in multiple topics; cannot disambiguate."
+            f"Simulation '{name}' exists in {len(candidates)} topics and cannot be "
+            f"disambiguated by name. Use one of these paths: " + ', '.join(options)
         )
 
     folder = candidates[0]
@@ -690,15 +1005,150 @@ def _resolve_sim_html(sim_name: str) -> tuple[Path, Path]:
     return folder, html
 
 
-@app.get('/api/sim/{sim_name}')
+def _use_library_root(root: Path):
+    """Points the sidecar at a library root, creating the config file if the
+    real one does not exist yet. Never overwrites an existing setting."""
+    if not config.get('library_root'):
+        config.save_library_root(str(root))
+
+
+def _sim_rel_folder(folder: Path) -> str:
+    """The sim folder's path relative to the library root, e.g.
+    'physics/Orbital Mechanics/simulations/orbital_mechanics_lab'."""
+    root = Path(config.get_library_root()).resolve()
+    try:
+        return folder.resolve().relative_to(root).as_posix()
+    except ValueError:
+        return folder.name
+
+
+@app.get('/api/sim/{sim_name:path}')
 def sim_get(sim_name: str):
-    """Serves the simulation's sim.html so the renderer can run it in an iframe."""
+    """
+    Serves the simulation's sim.html so the renderer can run it in an iframe.
+
+    `sim_name` is either a bare folder name (when it is unique in the library) or
+    a path relative to the library root, `<topic>/simulations/<sim_name>`, which
+    is what disambiguates two simulations that share a folder name. An ambiguous
+    bare name is a 404 listing every candidate path rather than a guess.
+
+    The file on disk is never modified. The response gets a <base href> so
+    relative asset paths resolve to /api/lib/…, and allowlisted CDN URLs are
+    rewritten to the local dependency cache so the sim keeps working offline.
+    """
     try:
         folder, html = _resolve_sim_html(sim_name)
     except _SimLookupError as exc:
+        sim_assets.log(f'sim 404: {exc}')
         raise HTTPException(status_code=404, detail=str(exc))
-    return HTMLResponse(html.read_text(encoding='utf-8'), headers={
+    try:
+        source = html.read_text(encoding='utf-8')
+    except OSError as exc:
+        sim_assets.log(f'sim unreadable: {html}: {exc}')
+        raise HTTPException(status_code=500, detail=f'Could not read {html.name}: {exc}')
+    served, _notes = sim_html.prepare(source, sim_html.base_href_for(_sim_rel_folder(folder)))
+    return HTMLResponse(served, headers={
         'Content-Type': 'text/html; charset=utf-8',
         'Cache-Control': 'no-store',
         'X-Content-Type-Options': 'nosniff',
     })
+
+
+def _safe_lib_path(rel: str) -> Path:
+    """
+    Resolves a /api/lib path to a real file, or raises HTTPException.
+
+    Only two places are reachable: inside a simulation folder, and the shared
+    X/vendor/ folder. The rest of the library — including every answer_bank.txt —
+    is deliberately not servable, so a quiz's answer key cannot be read out of
+    the sidecar by another process on the machine.
+    """
+    root = Path(config.get_library_root()).resolve()
+    if not str(root):
+        raise HTTPException(status_code=503, detail='Library root is not configured.')
+    parts = [p for p in (rel or '').split('/') if p not in ('', '.')]
+    if not parts or any(p == '..' for p in parts):
+        raise HTTPException(status_code=400, detail='Invalid asset path.')
+
+    candidate = (root / '/'.join(parts)).resolve()
+    if not candidate.is_relative_to(root):
+        raise HTTPException(status_code=403, detail='Asset path escapes the library.')
+
+    # X/vendor/… is the shared library folder.
+    vendor_root = (root / 'vendor').resolve()
+    if candidate.is_relative_to(vendor_root):
+        if not candidate.is_file():
+            raise HTTPException(status_code=404, detail=f'Not found: {rel}')
+        return candidate
+
+    # Otherwise the path must sit inside a simulation folder, which the scanner
+    # always places at <subject>/<topic>/simulations/<sim_name>/.
+    if len(parts) >= 4 and parts[2] == 'simulations':
+        sim_dir = (root / '/'.join(parts[:4])).resolve()
+        if candidate.is_relative_to(sim_dir) and candidate.is_file():
+            return candidate
+        raise HTTPException(status_code=404, detail=f'Not found: {rel}')
+
+    raise HTTPException(
+        status_code=403,
+        detail='Only files inside a simulations/ folder or X/vendor/ are served.')
+
+
+@app.get('/api/lib/{rel:path}')
+def sim_asset_get(rel: str):
+    """Serves a simulation's own files, and shared libraries from X/vendor/."""
+    path = _safe_lib_path(rel)
+    try:
+        body = path.read_bytes()
+    except OSError as exc:
+        sim_assets.log(f'asset 404: {rel}: {exc}')
+        raise HTTPException(status_code=404, detail=f'Not found: {rel}')
+    return Response(body, media_type=sim_assets.content_type_for(path.name), headers={
+        # Content is immutable for a given path in practice; let the browser keep it.
+        'Cache-Control': 'public, max-age=3600',
+        'X-Content-Type-Options': 'nosniff',
+    })
+
+
+@app.get('/api/sim-cache/{url:path}')
+def sim_cache_get(url: str, background: BackgroundTasks):
+    """
+    Serves a third-party dependency from the local cache.
+
+    On the first run the file is downloaded and stored; on every run after that
+    it is read from disk, so the simulation never needs the internet again. A
+    revalidation runs in the background when the cached copy has gone stale, and
+    is skipped entirely when offline.
+    """
+    if not url.startswith('https://'):
+        raise HTTPException(status_code=400, detail='Cache keys must be https URLs.')
+    try:
+        body, meta = sim_assets.get(url)
+    except sim_assets.SimAssetError as exc:
+        sim_assets.log(f'dependency unavailable: {url}: {exc}')
+        raise HTTPException(
+            status_code=502,
+            detail=(f'Could not obtain {url}. It is not in the local cache and could '
+                    f'not be downloaded. Open the simulation once while online to '
+                    f'cache it. ({exc})'))
+    # Only a stale entry costs a network round trip; a fresh one never dials out.
+    background.add_task(sim_assets.maybe_revalidate, url)
+    return Response(body, media_type=meta.get('content_type') or 'application/octet-stream',
+                    headers={
+                        'Cache-Control': 'public, max-age=86400',
+                        'X-Content-Type-Options': 'nosniff',
+                    })
+
+
+@app.get('/api/sim-cache-stats')
+def sim_cache_stats():
+    """Cache size and contents, for diagnostics."""
+    return sim_assets.stats()
+
+
+@app.delete('/api/sim-cache')
+def sim_cache_clear():
+    """Empties the dependency cache. Next run re-downloads what is needed."""
+    removed = sim_assets.clear()
+    sim_assets.log(f'cache cleared: {removed} entries removed')
+    return {'removed': removed}

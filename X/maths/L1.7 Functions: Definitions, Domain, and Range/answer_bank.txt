@@ -1,0 +1,65 @@
+1. C [Type: MCQ] [Answer-Method: text-exclusive]
+2. B [Type: MCQ] [Answer-Method: text-exclusive]
+3. A [Type: MCQ] [Answer-Method: text-exclusive]
+4. B [Type: MCQ] [Answer-Method: text-exclusive]
+5. C [Type: MCQ] [Answer-Method: text-exclusive]
+6. B [Type: MCQ] [Answer-Method: text-exclusive]
+7. B [Type: MCQ] [Answer-Method: text-exclusive]
+8. C [Type: MCQ] [Answer-Method: text-exclusive]
+9. C [Type: MCQ] [Answer-Method: text-exclusive]
+10. B [Type: MCQ] [Answer-Method: text-exclusive]
+11. C [Type: MCQ] [Answer-Method: text-exclusive]
+12. B [Type: MCQ] [Answer-Method: text-exclusive]
+13. A [Type: MCQ] [Answer-Method: text-exclusive]
+14. A [Type: MCQ] [Answer-Method: text-exclusive]
+15. B [Type: MCQ] [Answer-Method: text-exclusive]
+16. (−∞,−4)∪(4,∞) [Type: Hybrid] [Answer-Method: text-exclusive]
+17. y=4 [Type: Hybrid] [Answer-Method: text-exclusive]
+18. x=−4 [Type: Hybrid] [Answer-Method: text-exclusive]
+19. 7 [Type: Hybrid] [Answer-Method: text-exclusive]
+20. x<−3 or x>3 [Type: Hybrid] [Answer-Method: text-exclusive]
+21. 3<y<27 [Type: Hybrid] [Answer-Method: text-exclusive]
+22. 4 [Type: Hybrid] [Answer-Method: text-exclusive]
+23. 4 [Type: Hybrid] [Answer-Method: text-exclusive]
+24. (−∞,1]∪(3,∞) [Type: Hybrid] [Answer-Method: text-exclusive]
+25. 3 [Type: Hybrid] [Answer-Method: text-exclusive]
+26. (a) (−4,∞) (b) x=−4 causes division by zero; x=−5 causes negative radicand  
+−1
+
+​
+ . [Type: Theory] [Answer-Method: text-exclusive]
+27. (a) D 
+f
+​
+ :x≠2,R 
+f
+​
+ :y≠0; D 
+g
+​
+ :x≥3,R 
+g
+​
+ :y≥0 (b) (g∘f)(x)= 
+x−2
+1
+​
+ −3
+
+​
+  (c) 2<x≤ 
+3
+7
+​
+  [Type: Theory] [Answer-Method: text-exclusive]
+28. (a) x∈R∖{4} (b) (−∞,1]∪(2,∞) (c) Undefined at x=4 [Type: Theory] [Answer-Method: text-exclusive]
+29. (a) Ignored non-negativity of x 
+2
+  and maximum horizontal asymptote constraint y<1. (b) x 
+2
+ ≥0⟹f(x)≥0; x 
+2
+ <x 
+2
+ +1⟹f(x)<1. [Type: Theory] [Answer-Method: text-exclusive]
+30. (a) −1≤sinx≤1⟹1≤2−sinx≤3>0 for all x∈R. (b) [0,ln3] [Type: Theory] [Answer-Method: text-exclusive]

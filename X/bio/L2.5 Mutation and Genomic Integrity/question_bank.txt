@@ -1,0 +1,125 @@
+1. What single base substitution mutation in the β-globin gene (GAG→GTG) causes sickle cell anemia by substituting a hydrophobic valine for a hydrophilic glutamic acid? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Silent mutation
+B. Missense mutation
+C. Nonsense mutation
+D. Frameshift insertion
+
+2. What type of point mutation changes a codon specifying an amino acid into a stop codon, causing premature polypeptide termination? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Silent mutation
+B. Missense mutation
+C. Nonsense mutation
+D. Synonymous substitution
+
+3. Why do silent (synonymous) base substitutions have no effect on the primary structure of the encoded protein? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. They occur exclusively within non-coding promoter sequences.
+B. Due to the degeneracy of the genetic code, the mutated codon codes for the exact same amino acid.
+C. Spliceosomes remove substituted bases prior to translation.
+D. DNA ligase repairs the base before RNA Polymerase reads it.
+
+4. An insertion of two nucleotides into the coding exon of a gene causes what immediate effect during translation? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Inversion of chromosome arms
+B. Frameshift mutation altering the reading frame of all downstream codons
+C. Formation of a poly-A tail inside the exon
+D. Immediate conversion of DNA into RNA
+
+5. What RNA component guides the Cas9 endonuclease to its specific target genomic DNA sequence in the CRISPR-Cas9 genome editing system? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Messenger RNA (mRNA)
+B. Single guide RNA (sgRNA)
+C. Transfer RNA (tRNA)
+D. Ribosomal RNA (rRNA)
+
+6. What specific DNA sequence motif adjacent to the target site must be present for Cas9 to bind and introduce a double-strand break? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. Protospacer Adjacent Motif (PAM)
+B. TATA box
+C. Poly-A signal
+D. CpG island
+
+7. How does non-homologous end joining (NHEJ) repair of a CRISPR-Cas9 double-strand break usually lead to gene knockout? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By copying an intact donor DNA template with 100% fidelity
+B. By introducing small random insertions or deletions (indels) that cause frameshifts and premature stop codons
+C. By methylating histone tails near the break
+D. By converting the targeted chromosome into a circular plasmid
+
+8. What fundamental ethical distinction exists between somatic cell gene editing and germline gene editing? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Somatic editing affects only the individual patient and is not inherited, whereas germline editing alters gametes or embryos and is inherited by future generations.
+B. Germline editing uses RNA polymerases, whereas somatic editing uses Cas9.
+C. Somatic editing alters all cells in future offspring, whereas germline editing treats adults.
+D. Germline editing is restricted to bacterial cells.
+
+9. Which repair pathway allows researchers to introduce precise donor DNA sequences or corrective gene edits following a CRISPR-Cas9 double-strand break? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. Non-Homologous End Joining (NHEJ)
+B. Homology-Directed Repair (HDR)
+C. Mismatch Repair (MMR)
+D. Base Excision Repair (BER)
+
+10. What chromosomal structural mutation occurs when a chromosome segment breaks off, flips 180°, and re-attaches to the same chromosome? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. Deletion
+B. Duplication
+C. Inversion
+D. Translocation
+
+11. What structural outcome occurs during reciprocal translocation between two non-homologous chromosomes? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Exchange of chromosome segments between non-homologous chromosomes
+B. Loss of an entire chromosome arm
+C. Doubling of centromere count
+D. Conversion of autosomes into sex chromosomes
+
+12. Why are insertions or deletions of three consecutive nucleotides within a coding region usually less disruptive to overall protein function than two-nucleotide insertions? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Three-base indels retain the downstream reading frame while inserting or deleting a single amino acid.
+B. Three-base indels are repaired automatically by RNA primase.
+C. Two-base indels convert DNA into RNA immediately.
+D. Three-base indels prevent histone acetylation.
+
+13. What molecular disease mechanism explains how a single base substitution in the sickle cell allele causes red blood cell sickling under hypoxia? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Glutamic acid to valine change causes deoxygenated hemoglobin to aggregate into insoluble fibrous polymers.
+B. Valine substitution causes immediate destruction of the heme group.
+C. Premature stop codon prevents β-globin synthesis entirely.
+D. Inverted reading frame dissolves the red blood cell plasma membrane.
+
+14. What enzymatic activity does the Cas9 protein execute when bound to target DNA by sgRNA? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. RNA Primase activity
+B. Double-stranded DNA endonuclease activity
+C. DNA Methyltransferase activity
+D. Reverse Transcriptase activity
+
+15. What concern represents a primary biosafety and ethical risk associated with germline gene editing in humans? [Type: MCQ; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Off-target mutations introduced into embryonic genomes that are permanently transmitted to future generations
+B. Inability of edited embryonic cells to undergo mitosis
+C. Immediate destruction of cytosolic ribosomes
+D. Loss of all historical medical records
+
+16. Name the point mutation type where a base substitution changes one amino acid to another in the translated protein. [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. Identify the bacterial endonuclease enzyme utilized in CRISPR genome editing to create targeted double-strand breaks. [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+18. What type of point mutation results from base insertions or deletions in numbers not divisible by three? [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+19. State the exact amino acid substitution caused by the GAG→GTG mutation in sickle cell anemia (Amino acid A→Amino acid B). [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+20. Name the short 3-base sequence adjacent to target DNA required for Cas9 binding (abbreviation accepted). [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+21. Identify the repair pathway (NHEJ or HDR) utilized when precise gene replacement with a donor template is required in CRISPR editing. [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+22. What type of point mutation introduces a premature stop codon into mRNA? [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+23. State whether somatic cell gene modifications are heritable by the patient's biological offspring. [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+24. Name the chromosomal mutation where a segment of one chromosome breaks off and attaches to a non-homologous chromosome. [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+25. State the term for mutations that do not alter the amino acid sequence of a polypeptide due to genetic code redundancy. [Type: Hybrid; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+26. [DIAGRAM: Point mutation types showing Normal wild-type strand, Silent mutation, Missense mutation, Nonsense mutation, and Frameshift mutation]
+(a) Classify each mutation type based on its effect on the primary protein sequence.
+(b) Explain why frameshift insertions near the 5′ end of a gene coding region are generally more damaging to protein function than frameshift insertions near the 3′ end. [Type: Theory; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Explain the molecular etiology of sickle cell anemia. Trace the path from the single base substitution mutation in DNA to altered mRNA codon, changed primary amino acid structure, modified tertiary/quaternary folding, altered erythrocyte phenotype, and clinical symptoms. [Type: Theory; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Describe the mechanism of the CRISPR-Cas9 genome editing system.
+(a) Explain the roles of sgRNA, the PAM sequence, and Cas9 endonuclease in introducing a double-strand break at a specific genomic locus.
+(b) Compare Non-Homologous End Joining (NHEJ) and Homology-Directed Repair (HDR) in terms of repair mechanisms and biological outcomes. [Type: Theory; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+29. Compare somatic cell gene editing with germline cell gene editing. Discuss the medical potential and ethical concerns surrounding germline modifications in humans, including consent, off-target effects, and unintended multi-generational consequences. [Type: Theory; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+30. Chromosomal structural variations include deletions, duplications, inversions, and translocations.
+(a) Describe the structural change involved in a reciprocal translocation between Chromosome 9 and Chromosome 22 (the Philadelphia chromosome).
+(b) Explain how this translocation creates an oncogenic BCR−ABL fusion gene that drives uncontrolled cell division in chronic myeloid leukemia (CML). [Type: Theory; Subject: Biology; Topic: L2.5 Mutation and Genomic Integrity; Format: Non-Sim; Exam: AQA A-Level Biology; Answer-Method: text-exclusive]

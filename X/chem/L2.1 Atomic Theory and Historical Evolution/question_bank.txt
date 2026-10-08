@@ -1,0 +1,105 @@
+1. What primary experimental evidence disproved John Dalton's postulate that atoms are indivisible solid spheres? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Discovery of alpha particle scattering
+B. Observation of negatively charged cathode rays deflected by electric fields
+C. Hydrogen spectral line series emission
+D. Fractional distillation of liquid air
+2. In J.J. Thomson's "Plum Pudding" model, how was atomic structure conceptualized? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+A. Concentrated central nucleus surrounded by orbiting planetary electrons
+B. Uniform sphere of positive charge containing embedded negative electrons
+C. Quantized electron standing waves surrounding a proton core
+D. Indivisible solid neutral spheres of varying elemental masses
+3. In Rutherford's gold foil experiment, why did the vast majority of alpha particles pass straight through the gold leaf undeflected? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+A. Alpha particles were absorbed by gold nuclei
+B. Atomic volume consists overwhelmingly of empty space occupied by light electrons
+C. Gold atoms contain no positive charge
+D. Gold atoms are liquid at room temperature
+4. What unexpected observation during the alpha scattering experiment led Rutherford to conclude that an atom's positive charge is concentrated in a tiny nucleus? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Emission of green light scintillations
+B. Deflection of a tiny fraction ($1 \text{ in } 8000$) of alpha particles at angles greater than $90^\circ$
+C. Production of cathode rays
+D. Complete absorption of all alpha particles
+5. What fundamental limitation of Rutherford's nuclear model was resolved by Niels Bohr's atomic model? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. Classical electrodynamics predicted orbiting accelerating electrons would continuously radiate energy and spiral into the nucleus
+B. Rutherford's model could not explain the mass of neutrons
+C. Rutherford's model predicted indivisible atoms
+D. Rutherford's model placed positive charge in electrons
+6. How did Niels Bohr modify Rutherford's atomic model to account for discrete atomic emission spectra? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Posited that electrons occupy quantized, non-radiating stationary energy orbits
+B. Replaced electrons with positively charged particles
+C. Proposed that atomic nuclei contain neutrons
+D. Re-established Dalton's solid sphere model
+7. Which historical sequence correctly traces the chronological evolution of atomic models? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: NECO 2018; Answer-Method: text-exclusive]
+A. Dalton $\rightarrow$ Rutherford $\rightarrow$ Thomson $\rightarrow$ Bohr
+B. Dalton $\rightarrow$ Thomson $\rightarrow$ Rutherford $\rightarrow$ Bohr
+C. Thomson $\rightarrow$ Dalton $\rightarrow$ Bohr $\rightarrow$ Rutherford
+D. Bohr $\rightarrow$ Rutherford $\rightarrow$ Thomson $\rightarrow$ Dalton
+8. Which experimental apparatus was utilized by J.J. Thomson to determine the charge-to-mass ratio ($e/m$) of the electron? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+A. Alpha-particle zinc sulfide scintillation chamber
+B. Cathode-ray tube equipped with perpendicular electric and magnetic deflection fields
+C. Mass spectrometer
+D. Fractionating distillation column
+9. What was a major limitation of the Bohr atomic model? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: IB Chemistry SL 2019; Answer-Method: text-exclusive]
+A. It failed to account for mass conservation
+B. It could accurately predict emission line spectra only for hydrogen and single-electron species
+C. It denied the existence of atomic energy levels
+D. It predicted that electrons carry positive charge
+10. Dalton's postulate stating that "all atoms of a given element are identical in mass" was later modified due to the discovery of: [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. Isobars
+B. Isotopes
+C. Allotropes
+D. Isomers
+11. Why did Rutherford select gold foil for his alpha particle scattering experiment? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Gold is chemically unreactive with alpha particles
+B. Gold can be hammered into ultra-thin sheets only a few hundred atoms thick
+C. Gold contains no electrons
+D. Gold reflects light scintillations naturally
+12. According to Bohr's theory, when an electron transitions from an outer energy level ($n = 3$) to an inner level ($n = 1$), the atom: [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. Absorbs a photon of discrete energy
+B. Emits a photon of energy equal to the difference between the two levels
+C. Converts into an anion
+D. Destroys its positive nuclear charge
+13. What physical nature was attributed to cathode rays in J.J. Thomson's experiments? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. High-frequency electromagnetic radiation
+B. Streams of negatively charged subatomic particles moving from cathode to anode
+C. Positively charged helium nuclei
+D. Neutral gas atoms
+14. Which subatomic particle was discovered last historically (in 1932 by James Chadwick)? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. Electron
+B. Proton
+C. Neutron
+D. Alpha particle
+15. What phenomenon occurs when gas atoms absorb discrete quanta of thermal or electrical energy? [Type: MCQ; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. Nuclear decay
+B. Electron promotion from ground state to an excited state
+C. Complete loss of atomic mass
+D. Sublimation of protons
+16. Name the scientist who proposed the indivisible billiard-ball model of the atom in 1808. [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. What type of radioactive emission particles (charge and identity) were used by Rutherford in the gold foil experiment? [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+18. State the term given to the lowest possible energy state of an electron in an atom. [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge IGCSE 0620/32; Answer-Method: text-exclusive]
+19. Identify the scientist who discovered the neutron in 1932. [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+20. What detector screen material was used by Geiger and Marsden to observe alpha particle flashes in Rutherford's lab? [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+21. Which fundamental force holds negatively charged electrons in orbit around the positively charged nucleus in the Bohr model? [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+22. State the primary reason why Thomson's plum pudding model could not account for large-angle alpha particle scattering. [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+23. What term describes an electron that has absorbed energy and jumped to a higher principal quantum level? [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+24. Express the energy difference ($\Delta E$) of an emitted photon between two Bohr energy levels $E_1$ and $E_2$ in terms of Planck's constant ($h$) and frequency ($\nu$). [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+25. Name the experimental device that demonstrated cathode rays are deflected toward a positively charged electric plate. [Type: Hybrid; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: JAMB 2017; Answer-Method: text-exclusive]
+26. **Paradigm Shift from Dalton to Thomson** [Type: Theory; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: WAEC 2021 Q2; Answer-Method: text-exclusive]
+(a) List three main postulates of John Dalton's Atomic Theory (1808).
+(b) Describe J.J. Thomson's cathode-ray experiment and explain how it proved the existence of subatomic electrons.
+(c) Explain how Thomson's discovery forced the modification of Dalton's indivisible atom postulate.
+27. **Rutherford's Alpha Scattering Experiment** [Type: Theory; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: non-text-exclusive]
+(a) Draw or describe a labeled diagram placeholder for Rutherford's gold foil experimental setup.
+(b) State the three experimental observations made during alpha particle scattering and give the structural interpretation for each observation.
+(c) Explain the classical electrodynamic instability flaw in Rutherford's planetary nuclear model.
+28. **Bohr Model and Quantized Energy States** [Type: Theory; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: NECO 2020 Q1; Answer-Method: text-exclusive]
+(a) State the three primary postulates of Niels Bohr's atomic model of hydrogen.
+(b) Explain how electron transitions between quantized orbits give rise to line spectra rather than continuous spectra.
+(c) Calculate the wavelength ($\lambda$) of a photon emitted during an electron transition corresponding to $\Delta E = 3.03 \times 10^{-19}\ \text{J}$ [Planck's constant $h = 6.63 \times 10^{-34}\ \text{J}\cdot\text{s}$, speed of light $c = 3.00 \times 10^8\ \text{m/s}$].
+29. **Evolutionary Progression of Atomic Models** [Type: Theory; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: IB Chemistry SL 2021; Answer-Method: non-text-exclusive]
+(a) Construct a comparison table summarizing the core concept, key experimental basis, and major structural limitation for the Dalton, Thomson, Rutherford, and Bohr models.
+(b) Explain why scientific models are modified or replaced over time rather than abandoned completely.
+(c) Describe James Chadwick's 1932 experiment that identified the neutral neutron in beryllium bombardment.
+30. **Hydrogen Emission and Atomic Evidence** [Type: Theory; Subject: Chemistry; Topic: L2.1 Atomic Theory and Historical Evolution; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+(a) Distinguish clearly between an absorption spectrum and an emission spectrum.
+(b) Explain why multi-electron atoms produce complex emission spectra that cannot be accurately calculated using the simple Bohr equation.
+(c) Describe how modern quantum mechanics evolved from Bohr's model by introducing wave-particle duality and orbital probability regions.

@@ -1,0 +1,108 @@
+1. The defining SHM differential equation is $a = -\omega^2 x$. A mass $m = 50.0\text{ g}$ on a spring ($k = 0.50\text{ N m}^{-1}$) oscillates with amplitude $A = 0.30\text{ m}$. Calculate period $T$. [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+    A. $1.00\text{ s}$
+    B. $1.99\text{ s}$
+    C. $3.00\text{ s}$
+    D. $2.50\text{ s}$
+2. A simple pendulum $0.60\text{ m}$ long has period $1.50\text{ s}$. Calculate period of a similar pendulum $0.40\text{ m}$ long at the same location. [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: JAMB 1984; Answer-Method: text-exclusive]
+    A. $1.22\text{ s}$
+    B. $1.00\text{ s}$
+    C. $2.25\text{ s}$
+    D. $1.50\text{ s}$
+3. Malus's Law states $I = I_0 \cos^2\theta$. If analyzer axis is tilted at $\theta = 60^\circ$ relative to polarizer, what fraction of $I_0$ passes through? [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $50\%$
+    B. $25\%$
+    C. $75\%$
+    D. $12.5\%$
+4. Light in air ($n_1 = 1.00$) reflects off glass ($n_2 = 1.50$). Compute Brewster's angle $\theta_p$ ($\tan\theta_p = n_2 / n_1$). [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. $33.7^\circ$
+    B. $56.3^\circ$
+    C. $42.0^\circ$
+    D. $60.0^\circ$
+5. Total mechanical energy in SHM is $E_{\text{total}} = \frac{1}{2} k A^2$. At what displacement $x$ does kinetic energy equal potential energy ($E_k = E_p$)? [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. $x = A/2$
+    B. $x = A/\sqrt{2}$
+    C. $x = A/4$
+    D. $x = A/\sqrt{3}$
+6. A sound source emits power $P = 100\text{ W}$ spherically ($I = \frac{P}{4\pi r^2}$). If distance doubles from $r_1 = 5.0\text{ m}$ to $r_2 = 10.0\text{ m}$, intensity decreases by factor: [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $2\times$
+    B. $4\times$
+    C. $8\times$
+    D. $16\times$
+7. Wave speed $v = f \lambda$. If a wave travelling at $v = 420\text{ m s}^{-1}$ has wavelength $\lambda = 42.0\text{ m}$, calculate period $T$. [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: JAMB 2010; Answer-Method: text-exclusive]
+    A. $1.20\text{ s}$
+    B. $0.10\text{ s}$
+    C. $0.50\text{ s}$
+    D. $10.0\text{ s}$
+8. Which classification describes light waves? [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. Longitudinal mechanical wave requiring air.
+    B. Transverse non-mechanical electromagnetic wave capable of polarization.
+    C. Torsional mechanical wave.
+    D. Longitudinal non-mechanical wave.
+9. A pendulum bob of weight $0.10\text{ N}$ hangs from a string $0.50\text{ m}$ long. A horizontal force pulls bob until string makes $60^\circ$ with vertical. Calculate work done against gravity. [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: JAMB 2010; Answer-Method: text-exclusive]
+    A. $0.025\text{ J}$
+    B. $0.050\text{ J}$
+    C. $0.250\text{ J}$
+    D. $0.500\text{ J}$
+10. Wave intensity $I$ relates to amplitude $A$ as: [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $I \propto A$
+    B. $I \propto A^2$
+    C. $I \propto \sqrt{A}$
+    D. $I \propto A^3$
+11. Two pendulums $X$ and $Y$ make $400$ and $500$ oscillations in equal time. If period of $X$ is $1.50\text{ s}$, calculate period of $Y$. [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: WAEC 1996; Answer-Method: text-exclusive]
+    A. $0.83\text{ s}$
+    B. $1.20\text{ s}$
+    C. $1.50\text{ s}$
+    D. $1.88\text{ s}$
+12. Polarization is exhibited exclusively by: [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. Longitudinal waves only.
+    B. Transverse waves only.
+    C. Both longitudinal and transverse waves.
+    D. Stationary waves only.
+13. An SHM object has $a_{\max} = 16.0\text{ m s}^{-2}$ and $v_{\max} = 4.0\text{ m s}^{-1}$. Calculate amplitude $A$. [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    A. $1.00\text{ m}$
+    B. $2.00\text{ m}$
+    C. $0.50\text{ m}$
+    D. $4.00\text{ m}$
+14. Mechanical wave propagation transfers: [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+    A. Energy and momentum without net mass transport.
+    B. Mass particles continuously.
+    C. Matter and charge only.
+    D. Zero momentum.
+15. What is vibration frequency if watch balance wheel makes $90$ revolutions in $25\text{ s}$? [Type: MCQ; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: JAMB 2008; Answer-Method: text-exclusive]
+    A. $0.04\text{ Hz}$
+    B. $2.27\text{ Hz}$
+    C. $3.60\text{ Hz}$
+    D. $0.28\text{ Hz}$
+16. A mass $m = 0.20\text{ kg}$ on a spring ($k = 80.0\text{ N m}^{-1}$) oscillates with amplitude $A = 0.10\text{ m}$. Calculate maximum speed $v_{\max} = \omega A$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+17. Calculate length $L$ of a simple pendulum with period $T = 2.00\text{ s}$ ("seconds pendulum"). Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+18. Unpolarized light ($I_0 = 80.0\text{ W m}^{-2}$) passes through two polarizers angled at $30^\circ$. Calculate transmitted intensity $I$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+19. A sound wave ($f = 680\text{ Hz}, v = 340\text{ m s}^{-1}$) travels in air. Calculate phase difference $\Delta \phi$ between points separated by $\Delta x = 0.25\text{ m}$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+20. Compute Brewster's angle $\theta_p$ for light reflecting off glass ($n = 1.60$) submerged in water ($n = 1.33$). [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+21. An SHM equation is $x(t) = 0.05 \cos(10\pi t)$. Calculate frequency $f$ in Hz. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+22. Sound intensity at $r_1 = 2.0\text{ m}$ is $1.0 \times 10^{-4}\text{ W m}^{-2}$. Compute intensity at $r_2 = 5.0\text{ m}$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+23. Calculate maximum acceleration $a_{\max}$ of a $0.10\text{ kg}$ mass oscillating on a spring ($k = 250\text{ N m}^{-1}$) with $A = 0.040\text{ m}$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+24. Calculate speed of sound in seawater if frequency $1000\text{ Hz}$ gives wavelength $\lambda = 1.53\text{ m}$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+25. Compute potential energy stored in SHM mass ($m = 0.50\text{ kg}, \omega = 20\text{ rad s}^{-1}$) at displacement $x = 0.05\text{ m}$. [Type: Hybrid; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+26. **Formal Differential Proof of SHM Kinematics and Pendulum Period** [Type: Theory; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Show that $x(t) = A \cos(\omega t + \phi)$ satisfies differential equation $\frac{d^2 x}{dt^2} + \omega^2 x = 0$.
+    (b) Derive $v(t)$ and $a(t)$, showing $v(x) = \pm \omega \sqrt{A^2 - x^2}$.
+    (c) For a simple pendulum ($L, m$), set up torque equation $\tau = I \alpha$. Apply small-angle approximation ($\sin\theta \approx \theta$) to prove formally:
+    $$T = 2\pi\sqrt{\frac{L}{g}}$$
+27. **Energy Dynamics and Conservation in Oscillating Systems** [Type: Theory; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: non-text-exclusive]
+    (a) Derive $E_k(x)$ and $E_p(x)$ for mass $m$ on spring $k$.
+    (b) Prove total energy $E_{\text{total}} = \frac{1}{2} k A^2 = \frac{1}{2} m \omega^2 A^2$ is independent of position and time.
+    (c) Sketch $E_k, E_p, E_{\text{total}}$ against displacement $x$ between $-A$ and $+A$.
+    (d) A $0.25\text{ kg}$ block on spring ($k = 100\text{ N m}^{-1}$) is pulled to $x = 0.12\text{ m}$. Calculate speed when $x = 0.06\text{ m}$.
+28. **Wave Intensity, Inverse-Square Dilution, and Polarization** [Type: Theory; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    (a) Define wave intensity $I$, and prove $I_1 r_1^2 = I_2 r_2^2$ for spherical waves in isotropic media.
+    (b) Prove Malus's Law $I = I_0 \cos^2\theta$ by resolving electric field vector $\mathbf{E}_0$ parallel to polarizer axis.
+    (c) Derive Brewster's angle formula $\tan\theta_p = n_2 / n_1$ using Snell's law and $90^\circ$ reflection-refraction condition.
+29. **Experimental Determination of Acceleration Due to Gravity via Pendulums** [Type: Theory; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    (a) Describe processing pendulum $L$ and $T$ data to construct a $T^2$ vs $L$ graph.
+    (b) Show that gradient $S$ of $T^2$ vs $L$ line equals $S = \frac{4\pi^2}{g}$, and derive $g = \frac{4\pi^2}{S}$.
+    (c) State error sources (large amplitude swing, timing reaction) and mitigation protocols.
+30. **Mathematical Wave Propagation and Transverse Wave Mechanics** [Type: Theory; Subject: Physics; Topic: L2.1 Simple Harmonic Motion, Oscillating Systems, and Wave Propagation; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A transverse wave on a string is $y(x,t) = 0.04 \sin(20\pi t - 2.0\pi x)$ (SI units).
+    (a) Determine amplitude $A$, angular frequency $\omega$, frequency $f$, wavelength $\lambda$, and speed $v$.
+    (b) Calculate maximum transverse particle velocity $v_y = \frac{\partial y}{\partial t}$.
+    (c) Calculate phase difference between points separated by $\Delta x = 0.25\text{ m}$.

@@ -1,0 +1,108 @@
+1. Stress $\sigma = F/A$ and strain $\varepsilon = \Delta L / L_0$ in a wire stretched from $10.00\text{ cm}$ to $10.05\text{ cm}$ under stress $1.0 \times 10^7\text{ N m}^{-2}$ yield Young's Modulus $E$: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+    A. $2.0 \times 10^9\text{ N m}^{-2}$
+    B. $5.0 \times 10^8\text{ N m}^{-2}$
+    C. $2.0 \times 10^{11}\text{ N m}^{-2}$
+    D. $5.0 \times 10^4\text{ N m}^{-2}$
+2. A spring extends by $1.2\text{ cm}$ when a $1.0\text{ kg}$ load is suspended. Taking $g = 10.0\text{ m s}^{-2}$, compute spring constant $k$. [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: JAMB 2012; Answer-Method: text-exclusive]
+    A. $866\text{ N m}^{-1}$
+    B. $833\text{ N m}^{-1}$
+    C. $769\text{ N m}^{-1}$
+    D. $667\text{ N m}^{-1}$
+3. Capillary rise height $h = \frac{2\gamma \cos\theta}{\rho g r}$. If tube diameter is halved, how does $h$ change? [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. Halved ($h/2$)
+    B. Doubled ($2h$)
+    C. Quadrupled ($4h$)
+    D. Unchanged
+4. Elastic strain energy density stored per unit volume equals: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. $\frac{1}{2}\sigma \varepsilon$
+    B. $\sigma \varepsilon$
+    C. $\frac{1}{2} E \sigma^2$
+    D. $\frac{F \Delta L}{V^2}$
+5. An elastic hysteresis loop area formed during cyclic loading of rubber represents: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. Mechanical work recovered.
+    B. Thermal energy dissipated per unit volume per cycle.
+    C. Elastic limit stress.
+    D. Young's modulus gradient.
+6. Microscopic cohesive forces differ from adhesive forces because: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. Cohesive forces act between like molecules; adhesive forces act between unlike molecules.
+    B. Cohesive forces act in gases only; adhesive forces in solids.
+    C. Cohesive forces generate gravity; adhesive generate charge.
+    D. Cohesive forces are long-range nuclear forces.
+7. Mercury forms a convex meniscus in glass ($\theta > 90^\circ$) because: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. Cohesive forces between mercury atoms exceed adhesive forces between mercury and glass.
+    B. Adhesive forces exceed cohesive forces.
+    C. Mercury surface tension is zero.
+    D. Glass density exceeds mercury density.
+8. Beyond the proportional limit on a stress-strain curve: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. Strain ceases to be strictly linear with stress, though material may remain elastic up to elastic limit.
+    B. Fracture occurs instantly.
+    C. Young's modulus becomes infinite.
+    D. Plastic deformation vanishes.
+9. A wire ($L, r$) extends by $x$ under load $F$. A second wire of same material ($2L, 2r$) under load $F$ extends by: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $x' = x$
+    B. $x' = x/2$
+    C. $x' = 2x$
+    D. $x' = x/4$
+10. Kinetic-molecular models classify states of matter based on: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. Balance between intermolecular attractive forces and thermal kinetic energy.
+    B. Atomic mass density alone.
+    C. Electrical conductivity.
+    D. Gravitational potential gradients.
+11. Hanging $20\text{ g}$ produces spring length $14\text{ cm}$; hanging $30\text{ g}$ produces $16\text{ cm}$. Assuming Hooke's Law holds, calculate unstretched length. [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: JAMB 1983; Answer-Method: text-exclusive]
+    A. $9.33\text{ cm}$
+    B. $10.0\text{ cm}$
+    C. $10.67\text{ cm}$
+    D. $12.0\text{ cm}$
+12. Area under a force-extension ($F$ vs $x$) graph up to elastic limit represents: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. Elastic strain energy stored ($E_{el} = \frac{1}{2} F x$).
+    B. Young's Modulus.
+    C. Tensile Stress.
+    D. Spring force constant.
+13. Surface tension $\gamma$ is physically defined as: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. Force per unit length perpendicular to surface line ($\text{N m}^{-1}$).
+    B. Energy per unit area required to expand surface ($\text{J m}^{-2}$).
+    C. Both A and B are physically equivalent.
+    D. Neither A nor B.
+14. Plastic deformation in metals occurs microscopically due to: [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Reversible interatomic bond stretching.
+    B. Permanent slippage of atomic planes via dislocation movement across crystal lattices.
+    C. Thermal expansion of lattice sites.
+    D. Crack healing.
+15. A steel cable ($r = 5.0\text{ mm}$) supports an elevator of mass $1000\text{ kg}$. Calculate tensile stress $\sigma$. Take $g = 9.81\text{ m s}^{-2}$. [Type: MCQ; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $1.25 \times 10^8\text{ N m}^{-2}$
+    B. $1.25 \times 10^5\text{ N m}^{-2}$
+    C. $3.12 \times 10^7\text{ N m}^{-2}$
+    D. $6.24 \times 10^8\text{ N m}^{-2}$
+16. A wire of length $5.0\text{ m}$ extends by $0.040\text{ m}$ under load $0.80\text{ kg}$. Calculate extension under force $16.0\text{ N}$. Take $g = 10.0\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+17. Calculate elastic strain energy stored in a spring ($k = 400\text{ N m}^{-1}$) compressed by $0.080\text{ m}$. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+18. A copper wire ($L = 2.0\text{ m}, A = 1.0 \times 10^{-6}\text{ m}^2$) extends by $1.0\text{ mm}$. Calculate force $F$ if $E = 1.1 \times 10^{11}\text{ N m}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+19. Calculate capillary rise height $h$ of water ($\gamma = 0.072\text{ N m}^{-1}, \rho = 1000\text{ kg m}^{-3}, \theta = 0^\circ$) in a tube ($r = 0.30\text{ mm}$). Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+20. A steel rod ($E = 2.0 \times 10^{11}\text{ N m}^{-2}$) experiences stress $\sigma = 1.0 \times 10^8\text{ N m}^{-2}$. Calculate strain $\varepsilon$. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+21. A load of $50\text{ N}$ produces extension $2.0\text{ mm}$ in a wire. Compute strain energy stored. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+22. A glass tube ($r = 0.50\text{ mm}$) dipped in mercury ($\gamma = 0.48\text{ N m}^{-1}, \rho = 13600\text{ kg m}^{-3}, \theta = 140^\circ$) depresses by $h$. Compute depression depth $h$. Take $g = 9.81\text{ m s}^{-2}$. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+23. Compute work done stretching a rubber band from extension $0.05\text{ m}$ to $0.15\text{ m}$ ($k = 200\text{ N m}^{-1}$). [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+24. Calculate energy density $U$ in structural steel under strain $\varepsilon = 5.0 \times 10^{-4}$ ($E = 2.0 \times 10^{11}\text{ N m}^{-2}$). [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+25. Compute maximum load a steel wire of strength $4.0 \times 10^8\text{ N m}^{-2}$ and diameter $2.0\text{ mm}$ can support before snapping. [Type: Hybrid; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+26. **Formal Derivation of Capillary Rise Formula (Jurin's Law)** [Type: Theory; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Consider a glass capillary tube ($r$) dipped in liquid ($\gamma, \rho, \theta$). Draw a force equilibrium diagram.
+    (b) Equate upward surface tension force $F_{\text{up}} = 2\pi r \gamma \cos\theta$ to column weight $W = \pi r^2 h \rho g$ to prove Jurin's Law formally:
+    $$h = \frac{2\gamma \cos\theta}{\rho g r}$$
+    (c) Explain capillary action mechanisms in soil moisture transport and plant xylem systems.
+27. **Complete Analysis of Stress-Strain Curves and Energy Density** [Type: Theory; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: non-text-exclusive]
+    (a) Sketch stress-strain curves for ductile steel, brittle glass, and polymeric rubber on identical axes.
+    (b) Mark Proportional Limit, Elastic Limit, Yield Point, Ultimate Tensile Strength, and Fracture Point.
+    (c) Derive strain energy density formula $U = \frac{1}{2}\sigma \varepsilon = \frac{1}{2} E \varepsilon^2$ from work integral $W = \int F dx$.
+    (d) Calculate energy stored in a $2.0\text{ m}$ steel wire ($A = 2.0 \times 10^{-6}\text{ m}^2, E = 2.0 \times 10^{11}\text{ N m}^{-2}$) stretched by $1.5\text{ mm}$.
+28. **Microscopic Kinetic-Molecular Model of Phase Transformations** [Type: Theory; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    (a) Describe kinetic-molecular model representations of solid, liquid, and gas phases regarding spacing, potential energy curves, and kinetic energy.
+    (b) Relate interatomic potential energy curve $U(r)$ to Hookean spring stiffness near equilibrium spacing $r_0$.
+    (c) Explain thermal expansion as a direct physical result of asymmetry in interatomic potential energy wells.
+29. **Elastic Hysteresis and Dynamic Energy Dissipation** [Type: Theory; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    (a) Define elastic hysteresis loop and explain why loading curves diverge from unloading curves in vulcanized rubber.
+    (b) Explain practical significance of hysteresis loop area in rubber tire manufacturing and vibration damping mounts.
+    (c) A rubber band loaded with $20\text{ N}$ extends by $0.10\text{ m}$. During unloading, average force for same extension is $16\text{ N}$. Calculate energy dissipated per cycle.
+30. **Composite Wire Systems and Hookean Mechanics** [Type: Theory; Subject: Physics; Topic: L1.13 Elasticity, Molecular Properties, and Hookean Mechanics; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+    A composite wire consists of $1.8\text{ m}$ steel ($A_1 = 1.0 \times 10^{-6}\text{ m}^2, E_1 = 2.0 \times 10^{11}\text{ N m}^{-2}$) welded end-to-end to $1.2\text{ m}$ brass ($A_2 = 2.0 \times 10^{-6}\text{ m}^2, E_2 = 1.0 \times 10^{11}\text{ N m}^{-2}$). A load $F = 400\text{ N}$ is suspended.
+    (a) Compute tensile stress in steel and brass sections.
+    (b) Compute extension in steel and brass sections.
+    (c) Calculate total extension and effective force constant $k_{\text{eff}}$ of composite wire system.

@@ -1,0 +1,109 @@
+1. Naturally occurring chlorine consists of $75\%$ $^{35}\text{Cl}$ (isotopic mass $35.0\ \text{u}$) and $25\%$ $^{37}\text{Cl}$ (isotopic mass $37.0\ \text{u}$). What is the relative atomic mass ($A_\text{r}$) of chlorine? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. $35.0$
+B. $35.5$
+C. $36.0$
+D. $36.5$
+2. Why are isotopes of the same chemical element chemically identical in their reactions? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: JAMB 2020; Answer-Method: text-exclusive]
+A. They possess identical numbers of neutrons
+B. They possess identical outer-shell valence electron configurations
+C. They have identical mass numbers
+D. They have identical nuclear densities
+3. In a mass spectrum of monoatomic neon, three peaks appear at $m/z = 20$ (relative intensity $90.5\%$), $m/z = 21$ ($0.3\%$), and $m/z = 22$ ($9.2\%$). What is the weighted mean relative atomic mass ($A_\text{r}$) of neon? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+A. $20.00$
+B. $20.19$
+C. $21.00$
+D. $22.00$
+4. Element X has a relative atomic mass $A_\text{r} = 63.55$. It consists of two isotopes: $^{63}\text{X}$ ($63.0\ \text{u}$) and $^{65}\text{X}$ ($65.0\ \text{u}$). What is the percentage abundance of the lighter $^{63}\text{X}$ isotope? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. $27.5\%$
+B. $72.5\%$
+C. $50.0\%$
+D. $35.5\%$
+5. What information is recorded on the vertical axis (y-axis) of a mass spectrum? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge IGCSE 0620/41; Answer-Method: text-exclusive]
+A. Mass-to-charge ratio ($m/z$)
+B. Relative isotopic abundance / ion intensity
+C. Atomic number ($Z$)
+D. Ion kinetic energy
+6. Boron has two isotopes, $^{10}\text{B}$ and $^{11}\text{B}$, with relative atomic mass $A_\text{r} = 10.81$. What is the approximate ratio of abundance $^{10}\text{B} : ^{11}\text{B}$? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. $1 : 1$
+B. $1 : 4$
+C. $4 : 1$
+D. $3 : 1$
+7. Which physical property differs significantly between isotopes $^{1}\text{H}$ (protium) and $^{2}\text{H}$ (deuterium)? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: JAMB 2018; Answer-Method: text-exclusive]
+A. Reaction product formed with oxygen gas
+B. Density and boiling point of water formed ($\text{H}_2\text{O}$ vs $\text{D}_2\text{O}$)
+C. Valency in chemical bonding
+D. Number of protons in nucleus
+8. A mass spectrometer peak at $m/z = 32$ with intensity $100$ and $m/z = 34$ with intensity $4.4$ represents a diatomic molecule of an element. What element is present? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. Oxygen gas ($\text{O}_2$)
+B. Sulfur ($\text{S}$)
+C. Chlorine gas ($\text{Cl}_2$)
+D. Nitrogen gas ($\text{N}_2$)
+9. Why is the relative atomic mass ($A_\text{r}$) of most elements expressed as a non-integer decimal number on the periodic table? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. Protons lose mass over time
+B. $A_\text{r}$ represents a weighted average of isotopic masses based on natural percentage abundances
+C. Experimental measurements contain $1\%$ error always
+D. Electrons contribute decimal fractions to total mass
+10. An element M forms two isotopes $^{24}\text{M}$ ($79\%$) and $^{25}\text{M}$ ($10\%$). If $A_\text{r} = 24.31$, what is the mass number of its third isotope ($11\%$ abundance)? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+A. $23$
+B. $26$
+C. $27$
+D. $28$
+11. What is the mass-to-charge ratio ($m/z$) of a singly charged ion $^{81}\text{Br}^+$? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. $40.5$
+B. $81.0$
+C. $162.0$
+D. $35.0$
+12. Naturally occurring iridium consists of $^{191}\text{Ir}$ and $^{193}\text{Ir}$. If $A_\text{r} = 192.2$, which isotope is naturally more abundant? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: IB Chemistry SL 2020; Answer-Method: text-exclusive]
+A. $^{191}\text{Ir}$
+B. $^{193}\text{Ir}$
+C. Both have identical $50\%$ abundance
+D. Neither exists naturally
+13. How many peaks will appear in the high-resolution mass spectrum of molecular chlorine gas ($\text{Cl}_2$), composed of $^{35}\text{Cl}$ and $^{37}\text{Cl}$ isotopes? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge A-Level 9701/22; Answer-Method: text-exclusive]
+A. $2$ peaks
+B. $3$ peaks ($m/z = 70, 72, 74$)
+C. $4$ peaks
+D. $1$ peak
+14. Isotopes of an element differ in their atomic nucleus by: [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2017; Answer-Method: text-exclusive]
+A. Proton count only
+B. Neutron count only
+C. Electron count only
+D. Both proton and electron count
+15. What relative height ratio is expected for the molecular ion peaks at $m/z = 70, 72, 74$ for $\text{Cl}_2$ gas ($^{35}\text{Cl} : ^{37}\text{Cl} = 3 : 1$)? [Type: MCQ; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge A-Level 9701/11; Answer-Method: text-exclusive]
+A. $1 : 2 : 1$
+B. $9 : 6 : 1$
+C. $3 : 1 : 1$
+D. $1 : 1 : 1$
+16. State the definition of relative atomic mass ($A_\text{r}$). [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+17. Calculate $A_\text{r}$ of lithium given isotopic abundances: $^{6}\text{Li} = 7.5\%$ ($6.015\ \text{u}$) and $^{7}\text{Li} = 92.5\%$ ($7.016\ \text{u}$). [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+18. Bromine has two stable isotopes $^{79}\text{Br}$ and $^{81}\text{Br}$ in approximately $1 : 1$ ratio. What is the relative atomic mass of bromine? [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+19. Write the mathematical formula for calculating relative atomic mass $A_\text{r}$ from relative isotopic intensities $I_i$ and masses $m_i$. [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge IGCSE 0620/31; Answer-Method: text-exclusive]
+20. A mass spectrum of element X displays two peaks: $m/z = 107$ ($51.8\%$) and $m/z = 109$ ($48.2\%$). Identify element X from the periodic table. [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge A-Level 9701/12; Answer-Method: text-exclusive]
+21. What is the neutron count in the radioactive hydrogen isotope tritium ($^{3}\text{H}$)? [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+22. Silicon has three isotopes: $^{28}\text{Si}$ ($92.23\%$), $^{29}\text{Si}$ ($4.68\%$), and $^{30}\text{Si}$ ($3.09\%$). Calculate the relative atomic mass of silicon to two decimal places. [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: NECO 2019; Answer-Method: text-exclusive]
+23. Why do heavy water ($\text{D}_2\text{O}$) and ordinary water ($\text{H}_2\text{O}$) have different boiling points ($101.4\ ^\circ\text{C}$ vs $100.0\ ^\circ\text{C}$)? [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: IB Chemistry HL 2019; Answer-Method: text-exclusive]
+24. Calculate the percentage abundance of $^{107}\text{Ag}$ if $A_\text{r}(\text{Ag}) = 107.87$ and silver consists of $^{107}\text{Ag}$ ($106.91\ \text{u}$) and $^{109}\text{Ag}$ ($108.90\ \text{u}$). [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: null; Answer-Method: text-exclusive]
+25. State the property measured on the x-axis of a mass spectrometer chart recording. [Type: Hybrid; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: JAMB 2019; Answer-Method: text-exclusive]
+26. **Mass Spectrometry and Isotopic Calculations** [Type: Theory; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: WAEC 2021 Q3; Answer-Method: text-exclusive]
+(a) Define isotopes and explain why isotopes share identical chemical properties.
+(b) The mass spectrum of magnesium shows three isotopic peaks:
+Peak 1: $m/z = 24$, relative intensity $= 78.99$
+Peak 2: $m/z = 25$, relative intensity $= 10.00$
+Peak 3: $m/z = 26$, relative intensity $= 11.01$
+Calculate the relative atomic mass ($A_\text{r}$) of magnesium to two decimal places.
+(c) Explain how a mass spectrometer ionizes gas atoms and separates ions according to $m/z$ ratios.
+27. **Algebraic Isotopic Abundance Determination** [Type: Theory; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge IGCSE 0620/42; Answer-Method: text-exclusive]
+(a) Copper consists of two naturally occurring stable isotopes: $^{63}\text{Cu}$ (isotopic mass $62.93\ \text{u}$) and $^{65}\text{Cu}$ (isotopic mass $64.93\ \text{u}$). The accepted relative atomic mass of copper is $63.55$. Calculate the percentage abundance of each isotope.
+(b) Explain why the relative atomic mass of chlorine ($35.5$) cannot be rounded off to an integer value in chemical stoichiometry calculations.
+(c) Predict the relative peak heights of the molecular ion peaks in the mass spectrum of dichloromethane ($\text{CH}_2\text{Cl}_2$).
+28. **Physical Variations Between Isotopic Compounds** [Type: Theory; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: NECO 2020 Q2; Answer-Method: text-exclusive]
+(a) Compare protium ($^{1}\text{H}$), deuterium ($^{2}\text{H}$ or $\text{D}$), and tritium ($^{3}\text{H}$ or $\text{T}$) in terms of proton, neutron, and electron counts.
+(b) Calculate the molar mass of normal water ($\text{H}_2\text{O}$) and heavy water ($\text{D}_2\text{O}$).
+(c) Explain why heavy water has a higher density ($1.11\ \text{g/cm}^3$) than normal water ($1.00\ \text{g/cm}^3$) at $20\ ^\circ\text{C}$ and discuss its application in nuclear reactors as a neutron moderator.
+29. **Diatomic Mass Spectrometry Spectrum Analysis** [Type: Theory; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: Cambridge A-Level 9701/21; Answer-Method: text-exclusive]
+(a) Elemental bromine gas ($\text{Br}_2$) consists of two isotopes: $^{79}\text{Br}$ ($50.7\%$) and $^{81}\text{Br}$ ($49.3\%$). List all atomic ion peaks ($m/z$) and molecular ion peaks ($m/z$) observed in its mass spectrum.
+(b) Calculate the theoretical ratio of peak heights for the molecular ion peaks at $m/z = 158, 160, 162$.
+(c) Explain why the peak at $m/z = 160$ is twice as tall as the peaks at $m/z = 158$ or $m/z = 162$.
+30. **Synthesis of Mass Spectrometry and Nuclide Structure** [Type: Theory; Subject: Chemistry; Topic: L2.3 Isotopes and Relative Atomic Mass; Format: Non-Sim; Exam: IB Chemistry HL 2021; Answer-Method: text-exclusive]
+(a) An unknown element Z exhibits a mass spectrum with peaks at $m/z = 90\ (51.5\%), 91\ (11.2\%), 92\ (17.1\%), 94\ (17.4\%), 96\ (2.8\%)$. Calculate the relative atomic mass $A_\text{r}$ of element Z and identify the element from the periodic table.
+(b) Write the nuclear symbol $^{A}_{Z}\text{X}$ for the most abundant isotope of element Z.
+(c) Explain how isotopic abundance measurements on extraterrestrial meteorite samples help cosmochemists determine the origin of the Solar System.

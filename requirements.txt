@@ -1,3 +1,8 @@
 fastapi>=0.141
 uvicorn>=0.52
 requests>=2.34
+
+# Test-only: starlette's TestClient is built on httpx, and the offline
+# simulation-asset suite drives the sidecar through it. The app itself never
+# imports this.
+httpx2>=2.13

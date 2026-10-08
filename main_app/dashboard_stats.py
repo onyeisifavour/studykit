@@ -51,14 +51,17 @@ def _question_credit(log: quiz_logger.QuizLog, q: quiz_logger.QuestionRecord):
         MCQ        → 1.0 if correct else 0.0
         SUBJ/SIM   → the AI score (0–1), omitted if never scored
         skipped    → excluded under 'exclude', else counted as 0
+
+    Types go through quiz_logger's predicates so a note-level 'Theory' or
+    'Hybrid' record counts instead of silently falling through to None.
     """
     if q.skipped:
         if log.skip_mode == 'exclude':
             return None
         return 0.0, 1
-    if q.q_type == 'MCQ':
+    if quiz_logger.is_local_type(q.q_type):
         return (1.0 if q.is_correct else 0.0), 1
-    if q.q_type in ('SUBJ', 'SIM'):
+    if quiz_logger.is_ai_type(q.q_type):
         if q.score is None:
             return None
         return float(q.score), 1

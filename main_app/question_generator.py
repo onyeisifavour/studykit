@@ -76,6 +76,28 @@ class GeneratedQuestion:
     question_text:   str            # stem only (MCQ options stored separately)
     correct_answer:  str
     options:         list[str]      = field(default_factory=list)  # MCQ options
+
+    # Authoritative correct-option position for MCQ grading.
+    #
+    # Options are display text and may reword the correct answer, so matching
+    # `correct_answer` against option strings is unreliable. Grading prefers
+    # this index and falls back to text matching only when it is None (older
+    # manifests, and bank-copied questions that never went through the option
+    # generator). Set by the sim option generator; permuted alongside `options`
+    # by shuffle_mcq_options.
+    correct_option_index: Optional[int] = None
+
+    # Per-option "you likely <mistake>, which leads to this answer" text,
+    # aligned to `options`. The correct option's entry is always empty.
+    # Stored but not displayed in the quiz UI yet.
+    option_rationales:   list[str]    = field(default_factory=list)
+
+    # Per-option short label for the mistake the option encodes, aligned to
+    # `options`; the correct option is always 'correct'. The labels are the
+    # option agent's own wording, not a fixed vocabulary. Stored for future
+    # distractor-level analytics, not displayed yet.
+    option_error_types:  list[str]    = field(default_factory=list)
+
     is_simulation:   bool           = False
     sim_name:        str            = ''
     sim_instruction: str            = ''   # instruction shown before sim question group
@@ -405,6 +427,9 @@ def build_questions_from_sequence(
             question_text=q.get('text', ''),
             correct_answer=q.get('correct_answer', ''),
             options=q.get('options') or [],
+            correct_option_index=_coerce_index(q.get('correct_option_index')),
+            option_rationales=list(q.get('option_rationales') or []),
+            option_error_types=list(q.get('option_error_types') or []),
             is_simulation=is_sim,
             sim_name=q.get('sim_name', ''),
             sim_instruction=q.get('sim_instruction', ''),
@@ -423,6 +448,22 @@ def build_questions_from_sequence(
 # ── MCQ option shuffling ──────────────────────────────────────────────────────
 
 _OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+
+
+def _coerce_index(value) -> Optional[int]:
+    """
+    Normalises a correct-option index, rejecting bools, floats and negatives.
+
+    A missing or malformed index must become None rather than a wrong index, so
+    the caller falls back to text matching instead of mis-grading.
+    """
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value if value >= 0 else None
+    if isinstance(value, str) and value.strip().isdigit():
+        return int(value.strip())
+    return None
 
 
 def _relabel_option(text: str, letter: str) -> str:
@@ -464,7 +505,11 @@ def shuffle_mcq_options(questions: list) -> list:
         opts = list(getattr(q, 'options', []) or [])
         if len(opts) < 2:
             continue
-        correct = _option_correct_index(opts, getattr(q, 'correct_answer', ''))
+        # Prefer the authoritative index; fall back to matching the answer text
+        # for bank-copied questions and older manifests that predate it.
+        correct = _coerce_index(getattr(q, 'correct_option_index', None))
+        if correct is None or not (0 <= correct < len(opts)):
+            correct = _option_correct_index(opts, getattr(q, 'correct_answer', ''))
         if correct is None:
             continue
         joined = '\x1f'.join((o or '').strip() for o in opts)
@@ -473,6 +518,14 @@ def shuffle_mcq_options(questions: list) -> list:
         q.options = [_relabel_option(opts[i], _OPTION_LETTERS[k])
                      for k, i in enumerate(order)]
         new_pos = order.index(correct)
+        # The index must follow the options, and so must the per-option
+        # rationales and error types, or feedback would be attributed to the
+        # wrong choice.
+        q.correct_option_index = new_pos
+        for field in ('option_rationales', 'option_error_types'):
+            aligned = list(getattr(q, field, []) or [])
+            if len(aligned) == len(opts):
+                setattr(q, field, [aligned[i] for i in order])
         q.correct_answer = _relabel_option(opts[correct], _OPTION_LETTERS[new_pos])
     return questions
 
@@ -509,15 +562,19 @@ def shuffle_questions(
 
         for q in questions:
             if q.is_simulation and q.sim_name:
-                if q.sim_name not in sim_groups:
-                    sim_groups[q.sim_name] = []
-                    sim_order.append(q.sim_name)
-                sim_groups[q.sim_name].append(q)
+                # Keyed by topic as well as folder name: two topics can hold
+                # simulations with the same folder name, and grouping them
+                # together would put each sim's questions in one block.
+                key = f'{q.topic}\x00{q.sim_name}'
+                if key not in sim_groups:
+                    sim_groups[key] = []
+                    sim_order.append(key)
+                sim_groups[key].append(q)
             else:
                 blocks.append([q])
 
-        for name in sim_order:
-            blocks.append(sim_groups[name])
+        for key in sim_order:
+            blocks.append(sim_groups[key])
 
         random.shuffle(blocks)
         shuffled = [q for block in blocks for q in block]

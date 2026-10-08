@@ -1,0 +1,111 @@
+1. A glass plate $0.90\text{ cm}$ thick has refractive index $n = 1.50$. Calculate light speed $v$ inside glass ($c = 3.0 \times 10^8\text{ m s}^{-1}$) and critical angle $\sin\theta_c = 1/n$ into air. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+    A. $2.0 \times 10^8\text{ m s}^{-1}$; $\theta_c = 41.8^\circ$
+    B. $2.0 \times 10^8\text{ m s}^{-1}$; $\theta_c = 48.6^\circ$
+    C. $1.5 \times 10^8\text{ m s}^{-1}$; $\theta_c = 30.0^\circ$
+    D. $3.0 \times 10^8\text{ m s}^{-1}$; $\theta_c = 41.8^\circ$
+2. Object-to-image distance in a plane mirror is $40.0\text{ cm}$. If object distance decreases by $9.2\text{ cm}$, what is the new object distance from the mirror? [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: JAMB 2011; Answer-Method: text-exclusive]
+    A. $10.8\text{ cm}$
+    B. $15.5\text{ cm}$
+    C. $20.0\text{ cm}$
+    D. $30.8\text{ cm}$
+3. An object is placed $20.0\text{ cm}$ from a converging lens ($f = +10.0\text{ cm}$). Calculate image distance $v$ and linear magnification $m = -v/u$. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $v = +20.0\text{ cm}$; $m = -1.0$ (Real, inverted, same size)
+    B. $v = -20.0\text{ cm}$; $m = +1.0$ (Virtual, upright)
+    C. $v = +10.0\text{ cm}$; $m = -0.5$ (Real, diminished)
+    D. $v = +40.0\text{ cm}$; $m = -2.0$ (Real, magnified)
+4. Total Internal Reflection inside an optical fiber core ($n_1$) requires: [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. $n_1 > n_2$ AND incidence angle exceeds critical angle ($\theta_1 > \theta_c$).
+    B. $n_1 < n_2$ and $\theta_1 < \theta_c$.
+    C. Metallic cladding.
+    D. Light frequency matching resonance.
+5. White light disperses in a glass prism because: [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    A. Refractive index $n(\lambda)$ varies with wavelength; violet light refracts more than red light.
+    B. Red light travels slower than violet light.
+    C. Reflection selectively absorbs green.
+    D. Red light is absorbed completely.
+6. A concave mirror has focal length $f = 15.0\text{ cm}$. An object is placed $10.0\text{ cm}$ from pole. Determine image position $v$ and nature. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+    A. $v = -30.0\text{ cm}$; Virtual, upright, magnified ($m = +3.0$)
+    B. $v = +30.0\text{ cm}$; Real, inverted
+    C. $v = -6.0\text{ cm}$; Virtual, diminished
+    D. $v = +6.0\text{ cm}$; Real, magnified
+7. A diverging lens ($f = -20.0\text{ cm}$) forms an image of an object $30.0\text{ cm}$ away. Calculate image distance $v$. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $v = -12.0\text{ cm}$
+    B. $v = +12.0\text{ cm}$
+    C. $v = -60.0\text{ cm}$
+    D. $v = +60.0\text{ cm}$
+8. Which condition describes optical behavior at critical angle incidence ($\theta_1 = \theta_c$)? [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    A. Refracted ray emerges parallel to boundary ($\theta_2 = 90^\circ$).
+    B. Refraction angle is $0^\circ$.
+    C. Light absorption is $100\%$.
+    D. Reflection vanishes.
+9. Light in water ($n = 1.33$) strikes glass ($n = 1.50$) at $30^\circ$ incidence. Calculate refraction angle $\theta_2$ inside glass. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+    A. $26.3^\circ$
+    B. $34.2^\circ$
+    C. $19.5^\circ$
+    D. $45.0^\circ$
+10. Focal length $f$ and curvature radius $R$ for spherical mirrors satisfy: [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+    A. $f = R/2$
+    B. $f = 2R$
+    C. $f = R^2$
+    D. $f = \sqrt{R}$
+11. An optical fiber has core $n_1 = 1.52$ and cladding $n_2 = 1.48$. Compute critical angle $\theta_c$ at core-cladding boundary. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    A. $76.7^\circ$
+    B. $13.3^\circ$
+    C. $42.1^\circ$
+    D. $62.5^\circ$
+12. A virtual image formed by a single lens or mirror is always: [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+    A. Upright relative to object ($m > 0$).
+    B. Inverted relative to object ($m < 0$).
+    C. Formed on same side as outgoing real rays.
+    D. Larger than object always.
+13. A magnifying glass ($f = +5.0\text{ cm}$) forms an image at near point $D = 25.0\text{ cm}$. Compute angular magnification $M = 1 + D/f$. [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+    A. $6.0\times$
+    B. $5.0\times$
+    C. $4.0\times$
+    D. $1.2\times$
+14. Light travels at $v = 2.25 \times 10^8\text{ m s}^{-1}$ in water. Compute absolute refractive index $n_w$ ($c = 3.0 \times 10^8\text{ m s}^{-1}$). [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: JAMB 2010; Answer-Method: text-exclusive]
+    A. $1.33$
+    B. $1.50$
+    C. $1.25$
+    D. $1.66$
+15. Negative linear magnification ($m < 0$) indicates an image is: [Type: MCQ; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+    A. Real and inverted.
+    B. Virtual and upright.
+    C. Magnified and upright.
+    D. Diminished and virtual.
+16. An object placed $15.0\text{ cm}$ from a convex lens forms a real image $30.0\text{ cm}$ behind the lens. Calculate focal length $f$. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+17. Compute critical angle $\theta_c$ for diamond ($n = 2.42$) in air. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: IB Physics SL; Answer-Method: text-exclusive]
+18. A convex mirror ($R = 40.0\text{ cm}, f = -20.0\text{ cm}$) forms an image of a car $10.0\text{ m}$ away. Calculate image distance $v$. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: AP Physics 1; Answer-Method: text-exclusive]
+19. Light strikes a glass block ($n = 1.50$) at $45.0^\circ$ incidence. Compute refraction angle $\theta_2$. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+20. Two thin lenses ($f_1 = +10\text{ cm}, f_2 = +20\text{ cm}$) are placed in contact. Compute effective focal length $F$. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+21. Compute power $P = 1/f$ in dioptres ($D$) for a diverging lens ($f = -25.0\text{ cm}$). [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: Cambridge IGCSE 0625; Answer-Method: text-exclusive]
+22. A coin at bottom of a water tank ($depth = 2.00\text{ m}, n = 1.33$) appears elevated. Compute apparent depth $d' = d/n$. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: WAEC 2018; Answer-Method: text-exclusive]
+23. Calculate speed of red light ($n = 1.51$) inside dense flint glass ($c = 3.0 \times 10^8\text{ m s}^{-1}$). [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+24. Object height $h_o = 4.0\text{ cm}$ placed $12.0\text{ cm}$ from converging lens ($f = +8.0\text{ cm}$) forms image height $h_i$. Compute $h_i$. [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+25. Compute critical angle $\theta_c$ for total internal reflection inside water ($n = 1.33$) coated with ice ($n = 1.31$). [Type: Hybrid; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+26. **Formal Paraxial Derivation of Thin Lens Equation** [Type: Theory; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: Cambridge A-Level 9702; Answer-Method: text-exclusive]
+    (a) Using similar geometric triangles in paraxial ray-tracing diagrams for a thin converging lens, derive thin-lens formula:
+    $$\frac{1}{f} = \frac{1}{u} + \frac{1}{v}$$
+    (b) Derive linear magnification equation $m = \frac{h_i}{h_o} = -\frac{v}{u}$.
+    (c) State Cartesian sign conventions used for $u, v, f$.
+27. **Total Internal Reflection and Optical Fiber Telecommunications** [Type: Theory; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: IB Physics HL; Answer-Method: text-exclusive]
+    An optical step-index fiber has core $n_1 = 1.50$ and cladding $n_2 = 1.45$.
+    (a) Prove critical angle formula $\sin\theta_c = n_2 / n_1$, and compute $\theta_c$.
+    (b) Derive formula for maximum acceptance angle $\theta_a$ in air (Numerical Aperture $NA = \sin\theta_a = \sqrt{n_1^2 - n_2^2}$).
+    (c) Calculate $\theta_a$ for this fiber.
+    (d) Explain modal dispersion and pulse broadening in optical networks.
+28. **Prism Dispersion and Spectral Analysis** [Type: Theory; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: AP Physics C; Answer-Method: text-exclusive]
+    White light strikes an equilateral glass prism ($A = 60.0^\circ$).
+    (a) Derive expression for total angle of deviation $D = i_1 + i_2 - A$.
+    (b) Explain dispersion using Cauchy's relation $n(\lambda) = A + \frac{B}{\lambda^2}$, showing why violet bends more than red.
+    (c) Calculate minimum deviation $D_{\min}$ for red ($n_{\text{red}} = 1.513$) and violet ($n_{\text{violet}} = 1.532$).
+29. **Experimental Focal Length Determination for Optical Lenses** [Type: Theory; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+    (a) Describe an optics bench experiment using no-parallax methods to measure focal length of a converging lens.
+    (b) Explain how plotting $1/v$ against $1/u$ yields vertical intercept equal to $1/f$.
+    (c) A student obtains $1/v$ intercept at $0.050\text{ cm}^{-1}$. Determine $f$.
+30. **Two-Lens Optical Systems: Astronomical Telescope Mechanics** [Type: Theory; Subject: Physics; Topic: L2.2 Geometric Optics: Reflection, Refraction, and Thin-Lens Formations; Format: Non-Sim; Exam: NECO 2022; Answer-Method: non-text-exclusive]
+    An astronomical refracting telescope consists of objective ($f_o = +100\text{ cm}$) and eyepiece ($f_e = +5.0\text{ cm}$).
+    (a) Construct a ray diagram showing image formation of a distant star.
+    (b) Calculate total barrel length $L = f_o + f_e$.
+    (c) Calculate angular magnification $M = -f_o / f_e$.
+    (d) Explain chromatic aberration in refracting lenses and how achromatic doublets eliminate it.

@@ -1,0 +1,144 @@
+1. Gross Domestic Product (GDP) measures the total market value of all final goods and services produced: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. By domestically owned factors of production operating anywhere globally.
+B. Within the geographic boundaries of a nation during a specified time period.
+C. By citizens living strictly outside national borders.
+D. Less total government spending on social transfers.
+
+2. Gross National Income (GNI) differs fundamentally from Gross Domestic Product (GDP) by incorporating: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Net primary income from abroad (GNI=GDP+NPIA).
+B. Gross domestic capital fixed formation.
+C. Environmental resource degradation deductions.
+D. Subsidies paid exclusively to domestic exporters.
+
+3. If a country's Gross Domestic Product exceeds its Gross National Income (GDP>GNI), this indicates that: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Worker remittance inflows exceed corporate dividend outflows.
+B. Primary factor income paid to foreign asset owners exceeds factor income received from overseas.
+C. Net foreign trade is in a persistent surplus.
+D. The country is experiencing deflation.
+
+4. In the Output (Value Added) approach to measuring national product, double counting is avoided by summing: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Gross output values across all production stages.
+B. Total sales revenues of retail stores only.
+C. The value added (Gross Output minus Intermediate Consumption) at each production stage.
+D. Imports and domestic production values combined.
+
+5. The Income Approach to national income accounting sums all primary factor returns, including: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+A. Wages, rent, interest, profit, plus indirect taxes less subsidies.
+B. Government transfer payments, pensions, and unemployment benefits.
+C. Intermediate input purchases and capital depreciation.
+D. Consumer credit expenditures and bank deposits.
+
+6. According to the Expenditure Approach, the national income identity equation is expressed as: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Y=C+S+T
+B. Y=C+I+G+(X−M)
+C. Y=C+I+G+(M−X)
+D. Y=W+R+I+Π
+
+7. Why do the Output, Income, and Expenditure approaches yield identical theoretical totals in national income accounting? [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+A. Statutory price ceilings force price equality across sectors.
+B. Aggregate national production generates equivalent factor income which funds total final expenditure across the circular flow.
+C. Central banks adjust foreign currency reserves to balance accounting records.
+D. Imports strictly equal domestic savings in equilibrium.
+
+8. Real GDP isolates changes in physical production across time by adjusting nominal GDP using the: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Consumer Price Index (CPI)
+B. GDP Deflator
+C. Producer Price Index (PPI)
+D. Exchange rate index
+
+9. Calculate Real GDP if Nominal GDP is USD 600 billion and the GDP Deflator is 120. [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. USD 500 billion
+B. USD 620 billion
+C. USD 720 billion
+D. USD 500 million
+
+10. The formula to calculate the GDP Deflator price index is: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]
+A. (Nominal GDP / Real GDP) × 100
+B. (Real GDP / Nominal GDP) × 100
+C. Nominal GDP − Real GDP
+D. (GDP / GNI) × 100
+
+11. A primary limitation of GDP per capita as an indicator of societal material living standards is that it: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Includes government capital expenditure.
+B. Masks income distribution inequalities and omits non-market domestic activity.
+C. Measures physical output in inflation-adjusted units.
+D. Incorporates worker remittance inflows.
+
+12. Unpaid domestic childcare and household subsistence agriculture are excluded from standard GDP accounting because they: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+A. Do not generate negative environmental externalities.
+B. Represent non-market transactions lacking recorded market price signals.
+C. Are classified as intermediate capital goods.
+D. Exceed international import quotas.
+
+13. Green GDP adjusts standard GDP metrics by deducting estimated costs associated with: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+A. Natural resource depletion and environmental degradation.
+B. Government transfer payments and pensions.
+C. Foreign tariff duties on agricultural goods.
+D. Personal income tax exemptions.
+
+14. The Human Development Index (HDI) is a composite welfare metric published by the UN combining: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+A. Nominal GDP, trade surplus, and defense spending.
+B. Life expectancy at birth, education (years of schooling), and GNI per capita (PPP).
+C. Inflation rate, unemployment rate, and current account deficit.
+D. Gini coefficient, central bank interest rates, and population density.
+
+15. If Nominal GDP grows by 8% in a given year while inflation (GDP Deflator) grows by 3%, real output growth is approximately: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: WAEC 2019; Answer-Method: text-exclusive]
+A. 11%
+B. 5%
+C. 2.67%
+D. 24%
+
+16. Transfer payments (such as state unemployment benefits) are excluded when calculating GDP via the Income Approach because they: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+A. Are paid exclusively to foreign residents.
+B. Do not reflect active productive factor contribution to current economic output.
+C. Exceed capital depreciation values.
+D. Are subject to indirect taxes.
+
+17. In national income accounting, intermediate goods are defined as products that are: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+A. Purchased by final consumers for utility maximization.
+B. Used entirely as inputs in the production of other goods during the accounting period.
+C. Exported directly to foreign markets.
+D. Exempt from value-added tax calculations.
+
+18. If a flour mill purchases wheat for USD 50 and sells flour to a bakery for USD 80, and the bakery produces bread sold to consumers for USD 120, total Value Added across these stages is: [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. USD 120
+B. USD 250
+C. USD 70
+D. USD 200
+
+19. Which economic activity would be captured in the underground (informal) economy and typically missed by official GDP statistics? [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: NECO 2022; Answer-Method: text-exclusive]
+A. Unreported cash transactions conducted to evade taxation.
+B. Salaries paid to state high school teachers via bank transfers.
+C. Import duties collected at municipal ports.
+D. Dividends disbursed by listed public corporate entities.
+
+20. What describes Net Primary Income from Abroad (NPIA)? [Type: MCQ; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: JAMB 2021; Answer-Method: text-exclusive]
+A. Exports minus imports of goods (X−M).
+B. Factor income received by domestic residents from foreign assets minus factor income paid to foreign owners of domestic assets.
+C. Gross national capital formation minus depreciation.
+D. Government foreign aid disbursements minus loans.
+
+21. Given GDP = USD 450 billion and Net Primary Income from Abroad (NPIA) = -USD 20 billion, calculate Gross National Income (GNI). [Type: Hybrid; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+22. Calculate Real GDP if Nominal GDP is USD 880 billion and the GDP Deflator price index stands at 110. [Type: Hybrid; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+23. Calculate the GDP Deflator if Nominal GDP is USD 500 billion and Real GDP is USD 400 billion. [Type: Hybrid; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: NECO 2020; Answer-Method: text-exclusive]
+
+24. Given expenditure components: Consumer Spending (C=250), Investment (I=80), Government Spending (G=70), Exports (X=40), and Imports (M=50), calculate total national income (Y). [Type: Hybrid; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: JAMB 2022; Answer-Method: text-exclusive]
+
+25. Calculate total Value Added for a firm with Gross Output sales of USD 150,000 and Intermediate Input purchases of USD 90,000. [Type: Hybrid; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge IGCSE 0455; Answer-Method: text-exclusive]
+
+26. **Explain why the Output, Income, and Expenditure approaches to national income accounting yield identical aggregate totals, detailing the accounting identity underlying circular economic flows.** [Type: Theory; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: Cambridge International AS & A Level 9708; Answer-Method: text-exclusive]
+
+27. **An economy records the following national income statistics over two consecutive years:** [Type: Theory; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+Year 1: Nominal GDP = USD 400 billion, GDP Deflator = 100
+Year 2: Nominal GDP = USD 480 billion, GDP Deflator = 120
+(a) Calculate Real GDP for Year 1 and Year 2.
+(b) Calculate the percentage growth in Nominal GDP and Real GDP between Year 1 and Year 2.
+(c) Explain why failure to adjust nominal national income for price inflation distorts assessments of economic welfare over time.
+
+28. **Evaluate the utility and limitations of GDP per capita as an indicator of material living standards when making comparative international welfare assessments.** [Type: Theory; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: IB Economics; Answer-Method: text-exclusive]
+
+29. **Define Green GDP and the Human Development Index (HDI), analyzing how these alternative welfare frameworks address specific economic and social omissions inherent in standard GDP metrics.** [Type: Theory; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: AP Macroeconomics; Answer-Method: text-exclusive]
+
+30. **Distinguish between Gross Domestic Product (GDP) and Gross National Income (GNI). Discuss economic reasons why developing nations with high foreign direct investment outflows or heavy worker remittances display major divergences between GDP and GNI.** [Type: Theory; Subject: Economics; Topic: L1.14 Measuring Economic Activity: National Income Accounting; Format: Non-Sim; Exam: NECO 2021; Answer-Method: text-exclusive]

@@ -188,7 +188,10 @@ def resolve_readme(topic_files: list[dict], resolved_topic: str) -> Optional[dic
 
 # ── Agent response parsing ────────────────────────────────────────────────────
 
-def parse_sim_question_response(text: str) -> tuple[Optional[dict], Optional[str]]:
+def parse_sim_question_response(
+    text: str,
+    target_issue: str = '',
+) -> tuple[Optional[dict], Optional[str]]:
     """
     Parses and validates the sim-question-generator agent's JSON response.
 
@@ -199,7 +202,6 @@ def parse_sim_question_response(text: str) -> tuple[Optional[dict], Optional[str
           "question": {
             "text": str,
             "type": "MCQ" | "Hybrid" | "Theory",
-            "options": [str, ...],            # empty for non-MCQ
             "correct_answer": str,
             "subject": str,
             "topic": str,
@@ -270,12 +272,9 @@ def parse_sim_question_response(text: str) -> tuple[Optional[dict], Optional[str
     if not isinstance(answer, str) or not answer.strip():
         errs.append('question.correct_answer must be a non-empty string')
 
-    opts = q.get('options')
-    if opts is not None and (
-        not isinstance(opts, list) or not all(isinstance(o, str) for o in opts)
-    ):
-        errs.append('question.options must be a list of strings')
-
+    # Options are authored by the separate option-generator stage. The question
+    # agent is instructed not to emit them, but if it does anyway we accept the
+    # response and overwrite them with [] rather than failing the slot.
     for key in ('subject', 'topic', 'sim_name', 'sim_instruction'):
         value = q.get(key)
         if not isinstance(value, str) or not value.strip():
@@ -300,13 +299,16 @@ def parse_sim_question_response(text: str) -> tuple[Optional[dict], Optional[str
             'subject': q.get('subject'),
             'topic': q.get('topic'),
             'format': 'Sim',
-            'options': opts if isinstance(opts, list) else [],
+            'options': [],
             'correct_answer': answer,
             'sim_name': q.get('sim_name'),
             'sim_instruction': q.get('sim_instruction'),
         },
         'objective_type': obj,
         'source': 'sim_generated',
+        # Carried through so the option generator can target its distractors at
+        # the same diagnosed flaw this slot was allocated for.
+        'target_issue': target_issue,
         'match_confidence': conf,
         'selection_rationale': (
             parsed.get('selection_rationale')
@@ -430,6 +432,11 @@ def build_sim_prompt(
     return (
         "Author ONE simulation-based question for a diagnostic quiz slot.\n"
         "\n"
+        "You are writing the QUESTION and its ANSWER only. A separate "
+        "downstream agent authors the multiple-choice options, so do NOT "
+        "write, invent, or include any answer options, distractors, or "
+        "labels (A/B/C/D) anywhere in your output.\n"
+        "\n"
         "=== SLOT PROFILE ===\n"
         f"slot_number: {slot.get('slot_number')}\n"
         f"objective_type: {slot.get('objective_type', '')}\n"
@@ -447,8 +454,9 @@ def build_sim_prompt(
         '  "question": {\n'
         '    "text": "<question stem; exact numeric expectations from the README>",\n'
         '    "type": "<' + '/'.join(sorted(VALID_QUESTION_TYPES)) + '>",\n'
-        '    "options": ["A....", "B....", "C....", "D...."],\n'
-        '    "correct_answer": "<expected answer matching the README>",\n'
+        '    "correct_answer": "<the single correct answer the student must '
+        'produce, matching the README. State the answer itself, not a '
+        'letter and not any option text>",\n'
         '    "subject": "<subject name>",\n'
         '    "topic": "<topic name>",\n'
         '    "sim_name": "' + str(readme.get('name', '')) + '",\n'

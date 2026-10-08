@@ -1,0 +1,125 @@
+1. How do transcription activator proteins bound to enhancer DNA sequences increase the rate of gene transcription in eukaryotes? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By directly hydrolyzing core promoter TATA boxes
+B. By looping DNA to interact with coactivators and general transcription factors at the promoter, facilitating RNA Polymerase assembly
+C. By methylating cytosine residues along coding exons
+D. By cleaving 3′ poly-A tails from mRNA transcripts
+
+2. What effect does heavy DNA methylation of cytosine bases within promoter CpG islands typically have on gene expression? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Permanent transcriptional activation of the downstream gene
+B. Transcriptional gene silencing by recruiting histone deacetylases and condensing chromatin
+C. Acceleration of pre-mRNA splicing kinetics
+D. Induction of frameshift mutations in coding exons
+
+3. How does histone acetylation by Histone Acetyltransferase (HAT) enzymes promote transcriptionally active euchromatin formation? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. By adding positive charges to lysine tails, tightening DNA binding
+B. By neutralizing positive charges on lysine tails, reducing affinity for negatively charged DNA and opening chromatin structure
+C. By cleaving N-terminal histone tails from nucleosomes
+D. By converting histone proteins into RNA polymerases
+
+4. Which regulatory DNA element binds repressor proteins to down-regulate or silence gene transcription? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Enhancer
+B. Silencer
+C. Promoter
+D. TATA box
+
+5. What feature defines an epigenetic modification? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Heritable or long-term changes in gene expression that occur without altering the underlying DNA base sequence
+B. Permanent base substitution mutations in coding exons
+C. Insertion of viral DNA vectors into host chromosomes
+D. Complete destruction of nuclear chromatin by nucleases
+
+6. How can environmental factors, such as atmospheric air pollution or maternal dietary deficiencies, alter adult organism phenotypes? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By mutating all cytosolic tRNA anticodons
+B. By inducing altered patterns of DNA methylation and histone modifications that alter gene expression profiles
+C. By replacing DNA polymerases with bacterial enzymes
+D. By hydrolyzing ribosomal subunits inside somatic tissues
+
+7. What chromatin state is characterized by tightly condensed, transcriptionally inactive DNA wrapped around hypoacetylated histones? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Euchromatin
+B. Heterochromatin
+C. Polysome
+D. Spliceosome
+
+8. Which enzyme class removes acetyl groups from histone tails, leading to chromatin condensation and gene repression? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Histone Acetyltransferase (HAT)
+B. Histone Deacetylase (HDAC)
+C. DNA Methyltransferase (DNMT)
+D. RNA Polymerase II
+
+9. What is the impact of histone methylation on transcriptional activity? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Always causes immediate gene activation
+B. Always causes immediate gene silencing
+C. Context-dependent; can either activate or repress transcription depending on the specific lysine residue methylated
+D. Converts chromatin into double-stranded RNA
+
+10. What specific dinucleotide sequence context is the primary target for covalent DNA methylation in mammalian genomes? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. CpG dinucleotides (Cytosine preceding Guanine)
+B. ApT dinucleotides
+C. TpG dinucleotides
+D. UpC dinucleotides
+
+11. How do silencer sequences operate independently of their distance or orientation relative to the target promoter? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. By binding transcription repressors that recruit chromatin remodeling complexes to condense local promoter regions via DNA looping
+B. By destroying RNA polymerase enzymes in solution
+C. By cleaving 5′ cap structures off pre-mRNA
+D. By blocking tRNA entry at the ribosome A site
+
+12. Monoallelic gene expression resulting from parent-of-origin specific DNA methylation patterns is known as what biological phenomenon? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Genomic Imprinting
+B. Alternative Splicing
+C. Polyploidy
+D. Codominance
+
+13. Which enzyme maintains DNA methylation patterns on daughter strands following semi-conservative replication? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+A. Maintenance DNA Methyltransferase (DNMT1)
+B. DNA Polymerase I
+C. Histone Acetyltransferase
+D. RNA Primase
+
+14. How does maternal exposure to a low-protein diet during gestation affect gene expression in offspring? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Alters promoter DNA methylation of metabolic regulation genes, producing persistent metabolic phenotypes without DNA sequence changes
+B. Induces chromosomal non-disjunction during embryonic mitosis
+C. Prevents ribosome assembly in all embryonic cells
+D. Cleaves insulin receptor genes permanently
+
+15. What structural change occurs to a nucleosome when histones undergo hyperacetylation? [Type: MCQ; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Nucleosomes pack tightly into a 30 nm heterochromatin fiber.
+B. Nucleosomes uncoil into an open "beads-on-a-string" euchromatin conformation, exposing DNA to transcription factors.
+C. Nucleosomes detach from DNA and undergo proteasomal degradation.
+D. Nucleosomes bind RNA primers to initiate replication.
+
+16. Name the covalent epigenetic tag added to cytosine bases in DNA that leads to gene silencing. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. Identify the open, less condensed form of chromatin available for active transcription. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+18. Name the non-coding regulatory DNA sequences that increase transcription rates by binding activator proteins. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+19. State the chemical group added to histone lysine tails by HAT enzymes to open chromatin structure. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+20. What term describes phenotypic changes in gene function that do not involve alterations to the underlying DNA sequence? [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. Identify the enzyme class that removes methyl groups from methylated cytosine bases in DNA. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+22. State the effect (activation or silencing) of promoter hypermethylation on target gene expression. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+23. Name the protein complexes around which eukaryotic DNA winds to form nucleosomes. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+24. Name one environmental exposure known to alter epigenetic tagging in human somatic cells. [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+25. What electrical charge change occurs on basic histone lysine tails upon enzymatic acetylation? [Type: Hybrid; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+26. [DIAGRAM: Chromatin remodeling showing tightly wound heterochromatin converting to open euchromatin with acetyl tags on histones and methyl tags on DNA]
+(a) Contrast the structural properties and transcriptional availability of euchromatin versus heterochromatin.
+(b) Explain the biochemical mechanism by which histone acetylation reduces histone affinity for DNA, leading to gene activation. [Type: Theory; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Explain how promoters, enhancers, and silencers coordinate transcriptional regulation in eukaryotic cells. Describe the roles of transcription activators, repressors, and DNA looping in modulating RNA Polymerase II activity. [Type: Theory; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+28. Environmental factors can alter the epigenome.
+(a) Describe how environmental toxins or dietary factors alter cytosine methylation patterns at gene promoters.
+(b) Discuss the evidence that maternal nutrition during early development can exert transgenerational epigenetic impacts on offspring phenotype without changing DNA base sequences. [Type: Theory; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+29. Compare the biochemical modifications of DNA methylation versus histone acetylation. Include target sites, catalytic enzymes involved, chromatin structural outcomes, and transcriptional consequences in your answer. [Type: Theory; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+30. Hypermethylation of tumor suppressor gene promoters is frequently observed in human cancer cells.
+(a) Explain how promoter hypermethylation leads to loss of tumor suppressor protein expression.
+(b) Suggest how small-molecule inhibitors of DNA Methyltransferases (DNMT inhibitors) could act as therapeutic agents in oncology. [Type: Theory; Subject: Biology; Topic: L2.4 Gene Expression and Epigenetic Modification HL; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]

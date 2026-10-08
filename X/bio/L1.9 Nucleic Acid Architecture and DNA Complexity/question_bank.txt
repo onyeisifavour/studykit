@@ -1,0 +1,123 @@
+1. Which chemical combination constitutes a single monomeric unit of deoxyribonucleic acid (DNA)? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Ribose, Phosphate, Uracil
+B. 2′-Deoxyribose, Phosphate, Nitrogenous Base
+C. 2′-Deoxyribose, Hydrogen bond, Amino acid
+D. Ribose, 5′-Carbon, Peptide backbone
+
+2. How do purine and pyrimidine nitrogenous bases differ in their core chemical ring architecture? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Purines are double-ringed structures; pyrimidines are single-ringed structures.
+B. Purines contain sulfur; pyrimidines contain only carbon and hydrogen.
+C. Pyrimidines are double-ringed structures; purines are single-ringed structures.
+D. Purines bind only to ribose; pyrimidines bind only to deoxyribose.
+
+3. The DNA of a double-stranded eukaryotic genome contains 28% Cytosine. According to Chargaff's rules, what is the percentage of Adenine in this genome? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 22%
+B. 28%
+C. 44%
+D. 56%
+
+4. What type of covalent chemical bond links adjacent nucleotides together along a single polynucleotide strand? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+A. Peptide bond
+B. Phosphodiester bond
+C. Glycosidic bond
+D. Hydrogen bond
+
+5. What structural feature accounts for the antiparallel orientation of double-stranded DNA? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Both strands run in the 5′→3′ direction side-by-side.
+B. One strand runs 5′→3′ while the complementary strand runs in the 3′→5′ direction.
+C. Hydrogen bonds form only between identical nitrogenous bases.
+D. Phosphodiester bonds occur on the outside, while pentose sugars face the interior.
+
+6. Which base pair interaction is held together by three inter-strand hydrogen bonds? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. Adenine and Thymine
+B. Adenine and Uracil
+C. Guanine and Cytosine
+D. Guanine and Thymine
+
+7. Which pentose sugar carbon atom forms the covalent link to the nitrogenous base in a nucleic acid nucleotide? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 1′ carbon
+B. 2′ carbon
+C. 3′ carbon
+D. 5′ carbon
+
+8. How does structural RNA differ fundamentally from double-stranded DNA? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: WAEC 2022; Answer-Method: text-exclusive]
+A. RNA contains thymine instead of uracil.
+B. RNA contains 2′-deoxyribose sugar instead of ribose.
+C. RNA is predominantly single-stranded and contains ribose sugar and uracil.
+D. RNA lacks phosphodiester bonds along its backbone.
+
+9. Why does double-stranded DNA with a higher G≡C content require a higher thermal denaturation melting temperature (Tm)? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. G≡C base pairs form three hydrogen bonds, requiring more kinetic energy to disrupt than A=T pairs.
+B. Guanine forms covalent disulfide links with Cytosine.
+C. Deoxyribose sugars attached to Cytosine possess additional hydroxyl groups.
+D. G≡C pairs induce positive supercoiling that seals the major groove.
+
+10. A single-stranded DNA oligonucleotide contains 12 nucleotide bases. How many distinct base sequence permutations are theoretically possible? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. 4×12=48
+B. 12⁴=20,736
+C. 4¹²=16,777,216
+D. 20¹²
+
+11. Which carbon atom of a pentose sugar bears a free hydroxyl group (−OH) at the terminating 3′ end of a linear polynucleotide chain? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. 1′ carbon
+B. 3′ carbon
+C. 5′ carbon
+D. 2′ carbon
+
+12. What structural feature distinguishes ribose from 2′-deoxyribose? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Ribose has a hydroxyl group (−OH) attached to its 2′ carbon; 2′-deoxyribose has a hydrogen atom (−H).
+B. Ribose is a hexose sugar; 2′-deoxyribose is a pentose sugar.
+C. Ribose lacks a 5′ phosphate attachment site.
+D. 2′-deoxyribose forms a cyclic ring, whereas ribose exists only as a linear chain.
+
+13. What components make up the repeating backbone structure of a double-stranded DNA helix? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+A. Nitrogenous bases and hydrogen bonds
+B. Alternating deoxyribose sugars and phosphate groups
+C. Amino acids and peptide bonds
+D. Purines and pyrimidines
+
+14. What orientation do the nitrogenous base pairs occupy relative to the central long axis of the DNA double helix? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+A. Parallel to the outer sugar-phosphate backbone
+B. Perpendicular to the long helical axis, stacked in the interior
+C. Exposed on the outer surface of the double helix
+D. Interspersed randomly along the minor groove
+
+15. What feature enables DNA to store vast amounts of biological information in a compact molecular space? [Type: MCQ; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+A. The rigid structural invariant of its sugar-phosphate backbone
+B. The limitless combinatorial possibilities of its four nitrogenous base sequences
+C. The ability of adenine to pair with any of the other three bases
+D. The continuous hydrolysis of phosphodiester bonds during cellular resting states
+
+16. If the sense strand of DNA has the sequence 5′-GCCATACGATCG-3′, state the base sequence of the transcribed mRNA. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+17. State the chemical component shared between DNA and RNA monomers. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+18. Identify the pyrimidine nitrogenous base present in RNA that is absent from DNA. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: WAEC 2021; Answer-Method: text-exclusive]
+
+19. Name the bond formed between the 5′-phosphate group of an incoming nucleotide and the 3′-hydroxyl group of the existing polynucleotide chain. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+20. Calculate the number of hydrogen bonds in a double-stranded DNA fragment containing 20 Adenine-Thymine base pairs and 30 Guanine-Cytosine base pairs. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+21. State the term for a molecule composed of a nitrogenous base covalently linked to a pentose sugar, lacking a phosphate group. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+22. Which purine base forms complementary hydrogen bonding with Thymine in DNA? [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: WAEC 2020; Answer-Method: text-exclusive]
+
+23. State the directionality of nucleic acid strand elongation by polymerases. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+24. Name the structural arrangement where two complementary polynucleotide strands coil around a central axis in opposite polarities. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+25. Calculate the total number of distinct 4-base codon sequences possible in mRNA. [Type: Hybrid; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
+
+26. [DIAGRAM: Short section of double-stranded DNA showing pentose sugars, phosphate groups, and complementary base pairs labelled A, B, C, D]
+(a) Identify the components labelled A (sugar), B (phosphate), and C (base pair held by 3 hydrogen bonds).
+(b) Explain why the antiparallel arrangement of DNA strands is structurally necessary for complementary base pairing to occur. [Type: Theory; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+27. Tabulate three structural differences between DNA and RNA molecules. Discuss how the 2′-hydroxyl group on ribose affects the chemical stability of RNA relative to DNA in alkaline environments. [Type: Theory; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method:non-text-exclusive]
+
+28. Explain Chargaff's rules of base composition. Describe how experimental data regarding base ratios in diverse species enabled Watson and Crick to construct the double helix model. [Type: Theory; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: Cambridge International AS & A Level 9700; Answer-Method: text-exclusive]
+
+29. Explain how the linear sequence of four nitrogenous bases (A,T,C,G) provides an infinite information storage capacity for living organisms. Calculate the maximum number of amino acids coded by a double-stranded DNA coding region of 1,200 base pairs. [Type: Theory; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: AP Biology; Answer-Method: text-exclusive]
+
+30. Phosphodiester bond formation is an endergonic condensation reaction.
+(a) Describe how nucleoside triphosphates (dNTPs) provide the thermodynamic energy required for DNA strand elongation.
+(b) Explain why DNA synthesis can proceed only in the 5′→3′ direction. [Type: Theory; Subject: Biology; Topic: L1.9 Nucleic Acid Architecture and DNA Complexity; Format: Non-Sim; Exam: IB Biology; Answer-Method: text-exclusive]
