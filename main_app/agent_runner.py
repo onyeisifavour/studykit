@@ -47,6 +47,7 @@ from . import sequencer
 from .file_retriever import TagIndexError
 from .pipeline_errors import build_pipeline_error
 from .tag_mapping import enrich_slots
+from . import run_workspace
 
 
 # Agent name constants
@@ -97,7 +98,31 @@ PREQUIZ_AGENTS = [
     *ALL_BG_AGENTS,
 ]
 
+# The per-run generation agents. Unlike the pre-quiz chat, every quiz
+# generation starts these from scratch (see AgentRunner.start_generation) so
+# that no context from a previous quiz can leak into the next one.
+GENERATION_AGENTS = [
+    AGENT_QUOTA_PLANNER,
+    AGENT_2A_TOPIC_RESOLVER,
+    AGENT_2C_FALLBACK_BUILDER,
+    AGENT_SIM_GENERATOR,
+    AGENT_SIM_OPTION_GENERATOR,
+    AGENT_3B_CANDIDATE_SELECTOR,
+    AGENT_4A_PACING_ARC,
+    AGENT_5B_DIAGNOSTIC_AUDIT,
+    AGENT_5C_PREFERENCE_AUDIT,
+]
+
 OPENCODE_CONFIG = Path.home() / '.config' / 'opencode' / 'opencode.json'
+
+# Header for prompt-file handoffs. Every judgment stage writes its complete
+# prompt (instructions + inputs) to a file in the run workspace and attaches
+# only that path, so the opencode CLI never receives a multi-hundred-KB argv
+# element. The real task lives in the file, not in this message.
+PROMPT_FILE_INSTRUCTION = (
+    "The attached file contains your complete instructions and inputs. "
+    "Read it in full and follow it exactly. Return ONLY the JSON it asks for."
+)
 
 
 def check_registered_agents() -> list[str]:
@@ -133,6 +158,15 @@ class AgentRunner:
         self._bg_reports: dict[str, str] = {}
         self._bg_digest_sent: dict[str, bool] = {agent: False for agent in ALL_BG_AGENTS}
         self._lock = threading.Lock()
+        self._run_dir: Optional[Path] = None
+
+    def _ensure_run(self, metadata: Optional[dict] = None) -> Path:
+        if self._run_dir is None:
+            self._run_dir = run_workspace.new_run(metadata)
+        return self._run_dir
+
+    def _artifact(self, name: str, data) -> str:
+        return str(run_workspace.write(self._ensure_run(), name, data))
 
     # ── Main Chat ──────────────────────────────────────────────────────────────
 
@@ -363,8 +397,15 @@ class AgentRunner:
             on_result: callback with parsed manifest dict
             on_error: callback with error message
         """
-        message = self._format_quota_input(
-            background_reports, user_request, total_questions, prefs or {}
+        self._run_dir = run_workspace.new_run({
+            'topics': [],
+            'question_count': total_questions,
+        })
+        prompt_path = self._artifact(
+            '01_quota_prompt.md',
+            self._format_quota_input(
+                background_reports, user_request, total_questions, prefs,
+            ),
         )
 
         session_id = self._sessions.get(AGENT_QUOTA_PLANNER)
@@ -415,7 +456,8 @@ class AgentRunner:
         self._client.call(
             agent=AGENT_QUOTA_PLANNER,
             session_id=session_id,
-            user=message,
+            user=PROMPT_FILE_INSTRUCTION,
+            files=[prompt_path],
             on_success=_on_success,
             on_error=_on_error,
         )
@@ -612,7 +654,10 @@ class AgentRunner:
             self._client.call(
                 agent=AGENT_2C_FALLBACK_BUILDER,
                 session_id=self._sessions.get(AGENT_2C_FALLBACK_BUILDER),
-                user=self._format_2c_input(enriched, index_text, prefs),
+                user=PROMPT_FILE_INSTRUCTION,
+                files=[self._artifact('02c_prompt.md', self._format_2c_input(
+                    enriched, index_text, prefs
+                ))],
                 on_success=_on_2c_success,
                 on_error=_on_2c_error,
             )
@@ -712,7 +757,10 @@ class AgentRunner:
         self._client.call(
             agent=AGENT_2A_TOPIC_RESOLVER,
             session_id=self._sessions.get(AGENT_2A_TOPIC_RESOLVER),
-            user=self._format_2a_input(slots, concept_text, index_text, prefs),
+            user=PROMPT_FILE_INSTRUCTION,
+            files=[self._artifact('02a_prompt.md', self._format_2a_input(
+                slots, concept_text, index_text, prefs
+            ))],
             on_success=_on_2a_success,
             on_error=_on_2a_error,
         )
@@ -862,7 +910,10 @@ class AgentRunner:
             slot_num = slot.get('slot_number')
             resolved = (resolved_topics.get(slot_num, '')
                         or slot.get('topic', ''))
-            prompt = build_sim_prompt(slot, entry['readme'], '', resolved)
+            prompt_path = self._artifact(
+                f'08_sim/{slot_num}_prompt.md',
+                build_sim_prompt(slot, entry['readme'], '', resolved),
+            )
 
             def _on_success(text: str, new_session_id: str) -> None:
                 if new_session_id:
@@ -933,7 +984,8 @@ class AgentRunner:
             self._client.call(
                 agent=AGENT_SIM_GENERATOR,
                 session_id=session_id,
-                user=prompt,
+                user=PROMPT_FILE_INSTRUCTION,
+                files=[prompt_path],
                 on_success=_on_success,
                 on_error=_on_error,
             )
@@ -1037,7 +1089,13 @@ class AgentRunner:
             self._client.call(
                 agent=AGENT_SIM_OPTION_GENERATOR,
                 session_id=session_id,
-                user=build_option_prompt(item, diagnostic_text),
+                user=PROMPT_FILE_INSTRUCTION,
+                files=[
+                    self._artifact(
+                        f'09_options/{item.get("slot_number")}_prompt.md',
+                        build_option_prompt(item, diagnostic_text),
+                    ),
+                ],
                 on_success=_on_success,
                 on_error=_on_error,
             )
@@ -1156,12 +1214,16 @@ class AgentRunner:
                 ],
             ))
 
+        prompt_path = self._artifact(
+            '03b_prompt.md',
+            self._format_3b_input(slots_by_number, judge, background_reports),
+        )
+
         self._client.call(
             agent=AGENT_3B_CANDIDATE_SELECTOR,
             session_id=self._sessions.get(AGENT_3B_CANDIDATE_SELECTOR),
-            user=self._format_3b_input(
-                slots_by_number, judge, background_reports
-            ),
+            user=PROMPT_FILE_INSTRUCTION,
+            files=[prompt_path],
             on_success=_on_3b_success,
             on_error=_on_3b_error,
         )
@@ -1264,7 +1326,10 @@ class AgentRunner:
         self._client.call(
             agent=AGENT_4A_PACING_ARC,
             session_id=self._sessions.get(AGENT_4A_PACING_ARC),
-            user=self._format_4a_input(items, background_reports),
+            user=PROMPT_FILE_INSTRUCTION,
+            files=[self._artifact('04a_prompt.md', self._format_4a_input(
+                items, background_reports
+            ))],
             on_success=_on_4a_success,
             on_error=_on_4a_error,
         )
@@ -1557,7 +1622,10 @@ class AgentRunner:
             self._client.call(
                 agent=AGENT_5C_PREFERENCE_AUDIT,
                 session_id=self._sessions.get(AGENT_5C_PREFERENCE_AUDIT),
-                user=self._format_5c_input(_quiz_summary(), user_request),
+                user=PROMPT_FILE_INSTRUCTION,
+                files=[self._artifact('05c_prompt.md', self._format_5c_input(
+                    _quiz_summary(), user_request
+                ))],
                 on_success=_on_5c_success,
                 on_error=_on_5c_error,
             )
@@ -1566,7 +1634,10 @@ class AgentRunner:
                 self._client.call(
                     agent=AGENT_5B_DIAGNOSTIC_AUDIT,
                     session_id=self._sessions.get(AGENT_5B_DIAGNOSTIC_AUDIT),
-                    user=self._format_5b_input(_quiz_summary(), background_reports),
+                    user=PROMPT_FILE_INSTRUCTION,
+                    files=[self._artifact('05b_prompt.md', self._format_5b_input(
+                        _quiz_summary(), background_reports
+                    ))],
                     on_success=_on_5b_success,
                     on_error=_on_5b_error,
                 )
@@ -2047,6 +2118,24 @@ class AgentRunner:
         """True if the five pre-quiz chat agents still hold a session."""
         sessions = config.get_agent_sessions()
         return any(agent in sessions for agent in PREQUIZ_AGENTS)
+
+    def start_generation(self) -> None:
+        """Starts a fresh quiz generation.
+
+        Every generation gets its own set of pipeline sessions so no context
+        from a previous quiz (its candidate pools, authored questions, pacing
+        arc or audit state) can leak into the next one. The five pre-quiz chat
+        agents are deliberately left untouched — their sessions belong to the
+        chat, and their diagnostic reports are read immediately before this.
+        """
+        for agent in GENERATION_AGENTS:
+            self._sessions.pop(agent, None)
+        sessions = config.get_agent_sessions()
+        for agent in GENERATION_AGENTS:
+            sessions.pop(agent, None)
+        config.set_value('agent_sessions', sessions)
+        # A fresh generation also gets a fresh run workspace.
+        self._run_dir = None
 
     def clear_sessions(self) -> None:
         """Start a brand-new pre-quiz chat.

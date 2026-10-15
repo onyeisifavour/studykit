@@ -23,6 +23,7 @@ import re
 import shutil
 import sqlite3
 import subprocess
+import sys
 import threading
 import time
 from dataclasses import dataclass
@@ -39,6 +40,12 @@ DEFAULT_OPENROUTER_MODEL = "meta-llama/llama-3.1-70b-instruct"
 DEFAULT_CUSTOM_MODEL     = ""
 
 _TIMEOUT_SECS = 60
+_MAX_ARG_STRLEN = 131072
+_ARG_MAX = int(os.sysconf('SC_ARG_MAX')) if hasattr(os, 'sysconf') else 2097152
+# With --file attachments the argv limit no longer protects the prompt: the
+# model has to fit everything in its context window instead. 300 KB is a
+# deliberately conservative ceiling (~75k tokens); going over it is a smell.
+_DEFAULT_PAYLOAD_LIMIT_BYTES = 300 * 1024
 
 
 # ── Data classes ──────────────────────────────────────────────────────────────
@@ -314,6 +321,7 @@ class CLIBridgeClient:
         on_success: Optional[Callable[[str, str], None]]   = None,
         on_error:   Optional[Callable[[str], None]]        = None,
         max_tokens: int                                    = 2000,
+        files:        Optional[list[str]]                  = None,
     ) -> None:
         """
         Runs opencode in a background thread, capturing stdout/stderr.
@@ -342,6 +350,9 @@ class CLIBridgeClient:
                 # Plain pipes (not a PTY): opencode only emits clean
                 # --format json lines when stdout is not a TTY. stderr is
                 # captured separately to avoid merging streams.
+                warning = _check_attachment_payload(files, agent)
+                if warning:
+                    print(f'[payload] {warning}', file=sys.stderr)
                 last_error: Optional[str] = None
                 effective_session = session_id  # dropped if found stale
                 for attempt in range(5):
@@ -354,6 +365,8 @@ class CLIBridgeClient:
                         cmd.extend(['--agent', agent])
                         if effective_session:
                             cmd.extend(['-s', effective_session])
+                        for path in files or []:
+                            cmd.extend(['--file', os.path.abspath(path)])
                         # For agents, only send user message (system is built-in)
                         cmd.append(user)
                     else:
@@ -363,6 +376,7 @@ class CLIBridgeClient:
                         full_prompt = f"{system}\n\n---\n\n{user}" if system else user
                         cmd.append(full_prompt)
 
+                    _validate_command_size(cmd, agent)
                     proc = subprocess.Popen(
                         cmd,
                         stdout=subprocess.PIPE,
@@ -418,6 +432,73 @@ class CLIBridgeClient:
                     on_error(f"CLI bridge error: {exc}")
 
         threading.Thread(target=_run, daemon=True, name='cli-bridge').start()
+
+
+def _validate_command_size(cmd: list[str], agent: Optional[str]) -> None:
+    """Fail before execve with a useful diagnosis instead of E2BIG."""
+    sizes = [len(str(part).encode('utf-8')) for part in cmd]
+    largest = max(sizes, default=0)
+    if largest >= _MAX_ARG_STRLEN:
+        label = f"agent '{agent}'" if agent else 'legacy CLI call'
+        raise OSError(
+            f"{label} has a {largest:,}-byte command argument; Linux allows "
+            f"at most {_MAX_ARG_STRLEN:,}. Move bulk input to a --file attachment."
+        )
+    total = sum(sizes) + len(cmd)
+    if total >= _ARG_MAX:
+        raise OSError(
+            f"CLI command is {total:,} bytes; system ARG_MAX is {_ARG_MAX:,}. "
+            "Move bulk input to --file attachments."
+        )
+
+
+def payload_limit_bytes() -> int:
+    """Ceiling for the total size of --file attachments on one call."""
+    raw = os.environ.get('QUIZ_APP_PAYLOAD_LIMIT_BYTES', '').strip()
+    if raw:
+        try:
+            limit = int(raw)
+            if limit > 0:
+                return limit
+        except ValueError:
+            pass
+    return _DEFAULT_PAYLOAD_LIMIT_BYTES
+
+
+def attachment_total_bytes(files: Optional[list[str]]) -> int:
+    """Sum of the on-disk sizes of the attachments (missing files count 0)."""
+    total = 0
+    for path in files or []:
+        try:
+            total += os.path.getsize(path)
+        except OSError:
+            continue
+    return total
+
+
+def _check_attachment_payload(
+    files: Optional[list[str]],
+    agent: Optional[str],
+) -> Optional[str]:
+    """
+    Returns a warning when the attached payload exceeds the ceiling.
+
+    The argv guard protects execve, not the model's context window. Now that
+    bulk input travels as attachments, this is the check that catches an
+    accidental doubling (e.g. sending the same data twice) before the model
+    silently truncates or the call fails.
+    """
+    if not files:
+        return None
+    total = attachment_total_bytes(files)
+    limit = payload_limit_bytes()
+    if total <= limit:
+        return None
+    label = f"agent '{agent}'" if agent else 'legacy CLI call'
+    return (
+        f"{label} attached {total:,} bytes across {len(files)} file(s); "
+        f"limit is {limit:,} bytes. Large inputs risk context overflow."
+    )
 
 
 _THINK_CLOSE_RE = re.compile(

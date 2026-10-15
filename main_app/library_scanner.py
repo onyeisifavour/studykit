@@ -187,6 +187,9 @@ def load_topic_files(topic: TopicInfo) -> dict:
           'questions_text':  str,
           'answers_text':    str,
           'concept_block':   str,   ← raw JSON string
+          'question_bank_path': str | None,
+          'answer_bank_path':   str | None,
+          'concept_block_path': str | None,
           'sim_readmes': [
               {'name': str, 'content': str, 'folder_path': str},
               ...
@@ -199,6 +202,9 @@ def load_topic_files(topic: TopicInfo) -> dict:
         'questions_text': '',
         'answers_text':   '',
         'concept_block':  '',
+        'question_bank_path': str(topic.question_bank_path.resolve()) if topic.question_bank_path else None,
+        'answer_bank_path': str(topic.answer_bank_path.resolve()) if topic.answer_bank_path else None,
+        'concept_block_path': str(topic.concept_block_path.resolve()) if topic.concept_block_path else None,
         'sim_readmes':    [],
     }
 

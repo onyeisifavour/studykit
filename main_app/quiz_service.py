@@ -259,6 +259,11 @@ class QuizService:
         # current diagnostic picture, matching the Tkinter path.
         background_reports = self._agent_runner.resolve_pending_and_get_reports_sync(timeout=60.0)
 
+        # Every "Generate Quiz" click is independent: start a fresh set of
+        # pipeline sessions so nothing from a previous quiz leaks in. The
+        # pre-quiz chat agents are left intact (their reports were just read).
+        self._agent_runner.start_generation()
+
         def _ptrain(stage: str, detail: str):
             if progress:
                 progress(stage, detail)
