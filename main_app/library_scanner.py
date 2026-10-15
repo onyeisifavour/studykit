@@ -20,9 +20,12 @@ Expected structure:
 """
 
 import json
+import logging
 from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional
+
+_log = logging.getLogger(__name__)
 
 
 # ── Data classes ──────────────────────────────────────────────────────────────
@@ -225,11 +228,17 @@ def load_selected_topics(topic_paths: list[str]) -> list[dict]:
     Given a list of topic folder paths (from session config),
     loads and returns the file data for each.
     Skips paths that no longer exist or are invalid.
+
+    Skipped paths are logged. Silent skipping is what let a stale
+    ``library_root`` turn a non-empty selection into an empty topic set and
+    produce an opaque generation failure downstream.
     """
     results = []
+    skipped: list[tuple[str, str]] = []
     for path_str in topic_paths:
         folder = Path(path_str)
         if not folder.exists():
+            skipped.append((path_str, 'path does not exist'))
             continue
 
         subject = folder.parent.name
@@ -238,5 +247,15 @@ def load_selected_topics(topic_paths: list[str]) -> list[dict]:
 
         if topic.is_valid:
             results.append(load_topic_files(topic))
+        else:
+            skipped.append((path_str, 'no question/answer bank found'))
+
+    if skipped:
+        _log.warning(
+            'load_selected_topics: %d of %d selected topic(s) could not be '
+            'loaded (check library_root and the saved selection): %s',
+            len(skipped), len(topic_paths),
+            '; '.join(f'{p} ({why})' for p, why in skipped),
+        )
 
     return results

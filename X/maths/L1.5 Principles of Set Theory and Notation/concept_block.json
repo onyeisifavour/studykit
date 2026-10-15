@@ -1,0 +1,267 @@
+{
+  "type": "study_concept_block",
+  "topic": "L1.5 Principles of Set Theory and Notation",
+  "subject": "Maths",
+  "concepts": [
+    {
+      "name": "Set Notation and Membership",
+      "description": "Reading and writing sets in roster and set-builder notation, recognising the empty set and singleton sets, distinguishing element membership (∈) from subset containment (⊆), and extracting the elements defined by a rule over a number system.",
+      "core_skills": [
+        "Write a set in roster notation from a set-builder definition over the integers (e.g. {x∈Z | -2 ≤ x < 3} = {-2, -1, 0, 1, 2})",
+        "Write a set in set-builder notation from a verbal or inequality description (e.g. real numbers strictly greater than 5 or at most -2)",
+        "Identify the empty set among candidate definitions (e.g. {x∈R | x² + 1 = 0} = ∅)",
+        "Identify a singleton set (e.g. {x∈N | 2 < x < 4} = {3})",
+        "Distinguish element membership from subset containment and evaluate ∅∈{∅}",
+        "Determine the cardinality of a set defined by simultaneous conditions (x² - 9 = 0 and 2x = 6 → {3}, so |S| = 1)"
+      ],
+      "prerequisites": [
+        "Number systems (integers, rationals, reals)",
+        "Basic algebra (solving simple equations and inequalities)"
+      ],
+      "misconceptions": [
+        "The set {0} is the same as the empty set ∅",
+        "The set {∅} is empty because the empty set contains nothing",
+        "∅∈{∅} is false",
+        "A set-builder condition always produces solutions (e.g. x² + 1 = 0 has no real roots)",
+        "A roster listing includes values cut off by an open endpoint"
+      ],
+      "traps": [
+        "{x∈R | x² + 1 = 0} = ∅, while {x∈Q | x² - 4 = 0} = {-2, 2} is not empty",
+        "{∅} is not empty — it is a set containing one element (the empty set)",
+        "Simultaneous conditions forcing a singleton: x² - 9 = 0 gives ±3 but 2x = 6 forces x = 3, so |S| = 1",
+        "Singleton trap: {x∈N | 2 < x < 4} = {3}, but {x∈R | 2 < x < 4} is infinite"
+      ],
+      "depth_test": "Explain why {∅} is not empty and why {0} is not the empty set either, then determine whether ∅∈{∅} and ∅⊆{∅} are each true or false, justifying with the definitions of membership and subset."
+    },
+    {
+      "name": "Interval Notation and Real Number Line Algebra",
+      "description": "Converting between inequalities, set-builder notation, and interval notation; interpreting open and closed endpoints; performing union, intersection, and difference of intervals; and expressing complements of intervals as unions of disjoint intervals.",
+      "core_skills": [
+        "Convert an inequality such as -3 < x ≤ 5 to interval notation (-3, 5]",
+        "Convert an absolute-value inequality such as |x - 3| ≤ 2 to the closed interval [1, 5]",
+        "Decide endpoint membership: x = 5 belongs to (2, 5] because the right endpoint is closed",
+        "Find the intersection and union of intervals (e.g. (-2, 4] ∩ [1, 7) = [1, 4])",
+        "Express the complement of an interval as a union of disjoint intervals (e.g. R∖[-4, 3) = (-∞, -4) ∪ [3, ∞))",
+        "Evaluate compound interval operations such as (A ∪ B) ∩ C"
+      ],
+      "prerequisites": [
+        "Set Notation and Membership",
+        "Real number line and inequalities"
+      ],
+      "misconceptions": [
+        "Parentheses and brackets are interchangeable in interval notation",
+        "x = 5 is excluded from (2, 5] because 5 is an endpoint",
+        "The complement of a half-open interval is a single connected interval",
+        "The union of (-∞, 3] and (1, ∞) leaves a gap between the pieces"
+      ],
+      "traps": [
+        "(2, 5] includes 5 but excludes 2, so membership at the closed endpoint trips students",
+        "The complement of [-4, 3) is (-∞, -4) ∪ [3, ∞): two disjoint rays with -4 excluded and 3 included",
+        "Compound operations such as (A ∪ B) ∩ C require evaluating the union first, then intersecting with C",
+        "The absolute-value inequality |x - 3| ≤ 2 maps to [1, 5], not the open interval (1, 5)"
+      ],
+      "depth_test": "For A = [-4, 3), B = (1, 6], and C = [3, ∞), evaluate (A ∪ B) ∩ C and A∖B, and explain why the complement R∖A cannot be written as a single interval."
+    },
+    {
+      "name": "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+      "description": "Performing the fundamental set operations — union, intersection, set difference, complement, and symmetric difference — including expressing one operation in terms of others and simplifying expressions under subset relations.",
+      "core_skills": [
+        "Compute A ∪ B, A ∩ B, and A∖B for explicitly listed sets (e.g. A∖B for A = {2,4,6,8,10}, B = {3,6,9} gives {2,4,8,10})",
+        "Compute the complement of a set relative to a stated universal set",
+        "Express set difference using complement and intersection: A∖B = A ∩ B′",
+        "Compute the symmetric difference A △ B = (A∖B) ∪ (B∖A)",
+        "Simplify A ∩ B and A ∪ B when A ⊆ B (giving A and B respectively)",
+        "Evaluate the cardinality of the complement of a union"
+      ],
+      "prerequisites": [
+        "Set Notation and Membership"
+      ],
+      "misconceptions": [
+        "A∖B is the same as B∖A because order does not matter",
+        "The symmetric difference includes the shared elements (confusing it with union)",
+        "When A ⊆ B, A ∪ B = A and A ∩ B = B (swapping the correct simplifications)",
+        "The complement of a set can be defined without a universal set"
+      ],
+      "traps": [
+        "The symmetric difference excludes the intersection: {1,2,3,4} △ {3,4,5,6} = {1,2,5,6}",
+        "Under A ⊆ B, A ∪ B = B and A ∩ B = A; reversing these is a common error",
+        "Computing |(A ∪ B)′| requires finding the union first, then complementing within U",
+        "A∖B = A ∩ B′ uses the complement of B, not the complement of A"
+      ],
+      "depth_test": "Given A ⊆ B, explain and justify why A ∩ B = A and A ∪ B = B, and express A △ B purely in terms of union, intersection, and difference, explaining why the shared elements disappear."
+    },
+    {
+      "name": "Cardinality and the Principle of Inclusion–Exclusion",
+      "description": "Counting elements in unions of sets using the inclusion–exclusion principle for two and three sets, and applying it to survey problems to count categories such as exactly-two or none.",
+      "core_skills": [
+        "Apply |A ∪ B| = |A| + |B| - |A ∩ B| to find a union cardinality",
+        "Derive and apply the three-set formula |A ∪ B ∪ C| = |A| + |B| + |C| - |A ∩ B| - |B ∩ C| - |A ∩ C| + |A ∩ B ∩ C|",
+        "Compute the number of elements belonging to exactly two of three sets",
+        "Compute the number of elements belonging to none of the sets using the complement within the universal set",
+        "Determine the cardinality of a complement set"
+      ],
+      "prerequisites": [
+        "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+        "Basic arithmetic"
+      ],
+      "misconceptions": [
+        "|A ∪ B| = |A| + |B| always, ignoring the double-counted intersection",
+        "The triple intersection term is subtracted rather than added in the three-set formula",
+        "\"Exactly two\" is the same as the sum of all pairwise intersections",
+        "\"None\" can be found without subtracting the union from the universal total"
+      ],
+      "traps": [
+        "Three-set inclusion–exclusion adds back |A ∩ B ∩ C| after subtracting the pairwise intersections",
+        "\"Exactly two\" = sum of pairwise intersections - 3 × (triple intersection)",
+        "\"None\" = |U| - |A ∪ B ∪ C|",
+        "For the given survey data |A ∪ B ∪ C| = 22, while exactly two = 22 and none = 12 — distinct quantities that coincide numerically for 'at least one' and 'exactly two'"
+      ],
+      "depth_test": "In a survey of 100 students, derive the three-set inclusion–exclusion formula and use it to compute how many study exactly two subjects and how many study none, explaining why the triple intersection must be added back and how \"exactly two\" differs from the sum of pairwise intersections."
+    },
+    {
+      "name": "Subsets and Power Sets",
+      "description": "Understanding subset and proper-subset relations, constructing the power set by listing all subsets, and computing power-set cardinality 2^n, including sets with nested elements treated as single members.",
+      "core_skills": [
+        "List the complete power set P(A) of a small set, including ∅ and A itself",
+        "Compute |P(S)| = 2^n for a finite set with n elements",
+        "Compute the number of proper subsets as 2^n - 1 and recover n from that count (63 proper subsets → |K| = 6)",
+        "Evaluate iterated power sets such as |P(P(∅))| = 2",
+        "Count elements correctly when a set contains a nested set as one member (A = {a, b, c, {d, e}} has 4 elements → 16 subsets)",
+        "Apply the rule that the empty set is a subset of every set (∅ ⊂ A)"
+      ],
+      "prerequisites": [
+        "Set Notation and Membership"
+      ],
+      "misconceptions": [
+        "The power set omits ∅ or the set itself",
+        "|P(A)| = 2^{|A|} - 1 (confusing power-set cardinality with the number of proper subsets)",
+        "A nested set such as {d, e} inside A contributes two elements instead of one",
+        "∅ ⊂ A is false because the empty set has no elements"
+      ],
+      "traps": [
+        "For A = {1, 2}, P(A) must include ∅ and {1, 2}, not just the singleton subsets",
+        "63 proper subsets forces |K| = 6 because 2^6 - 1 = 63",
+        "|P(∅)| = 2^0 = 1, so |P(P(∅))| = 2^1 = 2",
+        "A = {a, b, c, {d, e}} has four elements, so its power set has 2^4 = 16 elements, not 2^5"
+      ],
+      "depth_test": "Explain why the power set of a 4-element set has 16 members, construct P(A) for A = {a, b, c, {d, e}} accounting for the nested set as a single element, and justify why 63 proper subsets forces |K| = 6."
+    },
+    {
+      "name": "De Morgan's Laws and Set Algebra Identities",
+      "description": "Applying and rigorously proving De Morgan's laws and distributive identities, and simplifying compound set expressions using set-algebra identities.",
+      "core_skills": [
+        "State and apply De Morgan's laws: (A ∪ B)′ = A′ ∩ B′ and (A ∩ B)′ = A′ ∪ B′",
+        "Prove De Morgan's law element-wise using logical equivalence (x ∈ (A ∪ B)′ ⟺ x ∉ A and x ∉ B)",
+        "Prove the distributive law A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)",
+        "Simplify compound set expressions using distribution and absorption (e.g. ((A ∩ B′) ∪ (A ∩ B)) ∪ (A′ ∩ B) = A ∪ B)"
+      ],
+      "prerequisites": [
+        "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference"
+      ],
+      "misconceptions": [
+        "(A ∩ B)′ = A′ ∩ B′ (failing to change the operator)",
+        "(A ∪ B)′ = A′ ∪ B′",
+        "Simplification can be done by guessing the answer rather than applying identities",
+        "A Venn diagram alone constitutes a rigorous proof"
+      ],
+      "traps": [
+        "De Morgan flips ∪ to ∩ (and vice versa) while complementing each set",
+        "Simplification: (A ∩ B′) ∪ (A ∩ B) = A by distribution, then A ∪ (A′ ∩ B) = A ∪ B by distribution/absorption",
+        "A proof must establish both inclusions or use element-wise logical equivalence for every element, not just a diagram"
+      ],
+      "depth_test": "Prove (A ∪ B)′ = A′ ∩ B′ element-wise and simplify ((A ∩ B′) ∪ (A ∩ B)) ∪ (A′ ∩ B), explaining each identity used and why a formal proof requires logical equivalence for a general element."
+    },
+    {
+      "name": "Recursive Power Set Cardinality and Binomial Structure",
+      "description": "Proving |P(S)| = 2^n by mathematical induction (the doubling argument per added element) and relating the 2^n subsets to the binomial coefficients by partitioning them according to subset size.",
+      "core_skills": [
+        "Define the power set formally as P(S) = {X | X ⊆ S}",
+        "Prove the doubling step |P(S ∪ {x})| = 2·|P(S)| by pairing subsets with and without the new element",
+        "Partition the 8 subsets of {1, 2, 3} by size k and verify that the counts sum to 2^3",
+        "Connect the count of subsets of each size to the binomial coefficients C(n, k)"
+      ],
+      "prerequisites": [
+        "Subsets and Power Sets"
+      ],
+      "misconceptions": [
+        "The induction proof can assume the result instead of deriving the doubling step",
+        "Adding one element to a set adds only one new subset",
+        "The binomial identity Σ C(n, k) = 2^n is unrelated to the power-set count",
+        "The base case |S| = 0 does not need to be handled"
+      ],
+      "traps": [
+        "The induction must establish the base case |S| = 0 (P(∅) has 1 = 2^0 element) and then the doubling step",
+        "For S = {1, 2, 3}, the subsets distribute by size as 1, 3, 3, 1 for k = 0, 1, 2, 3",
+        "Each existing subset spawns exactly one new subset (adjoin the new element) when an element is added"
+      ],
+      "depth_test": "Prove by induction that |P(S)| = 2^n, and for S = {1, 2, 3} list the subsets grouped by size and verify that their counts sum to 2^3, explaining why adding one element doubles the number of subsets."
+    },
+    {
+      "name": "Partitions and Disjoint Decomposition",
+      "description": "Defining a valid partition (non-empty blocks, pairwise disjoint, exhaustive) and proving that {A∖B, A∩B, B∖A} forms a disjoint decomposition of A ∪ B.",
+      "core_skills": [
+        "State the conditions for a valid partition: non-empty blocks, pairwise disjoint, union equal to the whole set",
+        "Test whether a proposed collection of subsets is a valid partition",
+        "Prove that A∖B, A∩B, and B∖A are pairwise disjoint",
+        "Prove A ∪ B = (A∖B) ∪ (A∩B) ∪ (B∖A) as a disjoint union"
+      ],
+      "prerequisites": [
+        "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference"
+      ],
+      "misconceptions": [
+        "A partition allows blocks that overlap",
+        "A partition need not cover every element of the set",
+        "The empty set may be included as a block in a partition",
+        "{A∖B, A∩B, B∖A} is not exhaustive because it appears to miss some elements"
+      ],
+      "traps": [
+        "Testing P₁ = {{1,3}, {2,4,6}, {5}} requires checking all three formal conditions, not just coverage",
+        "The three regions A∖B, A∩B, and B∖A are pairwise disjoint yet together cover A ∪ B",
+        "Pairwise disjointness must be shown for every pair, including A∖B versus B∖A"
+      ],
+      "depth_test": "State the three formal conditions for a partition, test whether {{1,3}, {2,4,6}, {5}} partitions {1,2,3,4,5,6}, and prove that {A∖B, A∩B, B∖A} are pairwise disjoint with union A ∪ B."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Set Notation and Membership",
+      "to": "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Set Notation and Membership",
+      "to": "Interval Notation and Real Number Line Algebra",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Set Notation and Membership",
+      "to": "Subsets and Power Sets",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+      "to": "Cardinality and the Principle of Inclusion–Exclusion",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+      "to": "De Morgan's Laws and Set Algebra Identities",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+      "to": "Partitions and Disjoint Decomposition",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Subsets and Power Sets",
+      "to": "Recursive Power Set Cardinality and Binomial Structure",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Interval Notation and Real Number Line Algebra",
+      "to": "Set Operations: Union, Intersection, Difference, Complement, and Symmetric Difference",
+      "type": "prerequisite"
+    }
+  ]
+}

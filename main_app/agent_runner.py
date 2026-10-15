@@ -44,6 +44,7 @@ from .manifest_validator import (
     validate_sequenced_quiz,
 )
 from . import sequencer
+from .file_retriever import TagIndexError
 from .pipeline_errors import build_pipeline_error
 from .tag_mapping import enrich_slots
 
@@ -86,6 +87,16 @@ PIPELINE_AGENTS = [
     AGENT_5C_PREFERENCE_AUDIT,
 ]
 
+# The five agents that make up one pre-quiz chat: the main chat plus the four
+# background models. They share a single lifetime — a new chat resets all five;
+# a continued session reuses all five. This is *not* a durable learner profile.
+# Quiz attempts, artifacts and history live in their own store and are never
+# touched by chat-session management.
+PREQUIZ_AGENTS = [
+    AGENT_MAIN_CHAT,
+    *ALL_BG_AGENTS,
+]
+
 OPENCODE_CONFIG = Path.home() / '.config' / 'opencode' / 'opencode.json'
 
 
@@ -120,6 +131,7 @@ class AgentRunner:
         self._pending: dict[str, list[dict]] = config.get_pending_messages()
         self._bg_busy: dict[str, bool] = {agent: False for agent in ALL_BG_AGENTS}
         self._bg_reports: dict[str, str] = {}
+        self._bg_digest_sent: dict[str, bool] = {agent: False for agent in ALL_BG_AGENTS}
         self._lock = threading.Lock()
 
     # ── Main Chat ──────────────────────────────────────────────────────────────
@@ -147,17 +159,20 @@ class AgentRunner:
             on_result: callback with response text
             on_error: callback with error message
         """
-        # Format message based on turn
+        # Format message based on turn. "First turn" means the agent has no
+        # session yet — NOT that the client sent an empty history. After a
+        # restart the UI transcript is empty while the session still exists, so
+        # a continued chat must stay a continuation instead of re-injecting the
+        # topic/preference preamble mid-conversation.
         from .prompts import MATH_NOTATION_SPEC
-        if teacher_message is None:
+        session_id = self._sessions.get(AGENT_MAIN_CHAT)
+        if session_id is None:
             # First turn: include topic context and preferences
             message = self._format_first_message(user_message, topic_files, prefs)
         else:
-            # Subsequent turns
-            message = f"Teacher message: {teacher_message}\nStudent message: {user_message}"
+            # Continuation turn
+            message = f"Student message: {user_message}"
         message = f"{message}\n\n{MATH_NOTATION_SPEC}"
-        
-        session_id = self._sessions.get(AGENT_MAIN_CHAT)
         
         def _on_success(text: str, new_session_id: str) -> None:
             # Store session ID
@@ -234,7 +249,7 @@ class AgentRunner:
             topic_digest: concentrated topic digest from concept blocks
         """
         digest_section = f"\n\nTopic Context:\n{topic_digest}" if topic_digest else ""
-        message = f"Teacher: {teacher_message}\nStudent: {student_message}{digest_section}"
+        message = f"Teacher: {teacher_message}\nStudent: {student_message}"
         
         for agent in ALL_BG_AGENTS:
             with self._lock:
@@ -251,9 +266,9 @@ class AgentRunner:
                     continue
             
             # Send message
-            self._send_to_background_model(agent, message)
+            self._send_to_background_model(agent, message, teacher_message=teacher_message, student_message=student_message, topic_digest=topic_digest)
 
-    def _send_to_background_model(self, agent: str, message: str) -> None:
+    def _send_to_background_model(self, agent: str, message: str, teacher_message: Optional[str] = None, student_message: str = "", topic_digest: str = "") -> None:
         """Send a single message to a background model."""
         with self._lock:
             self._bg_busy[agent] = True
@@ -287,10 +302,19 @@ class AgentRunner:
             })
             config.save_pending_messages(agent, self._pending[agent])
         
+        # Build message with digest gating
+        with self._lock:
+            include_digest = (topic_digest and not self._bg_digest_sent.get(agent, False))
+            if include_digest:
+                self._bg_digest_sent[agent] = True
+            digest_section = f"\n\nTopic Context:\n{topic_digest}" if include_digest else ""
+        final_message = f"Teacher: {teacher_message}\nStudent: {student_message}{digest_section}" if teacher_message is not None else f"Student: {student_message}{digest_section}"
+        if not teacher_message and not student_message:
+            final_message = message
         self._client.call(
             agent=agent,
             session_id=session_id,
-            user=message,
+            user=final_message,
             on_success=_on_success,
             on_error=_on_error,
         )
@@ -481,22 +505,36 @@ class AgentRunner:
                 on_error(msg)
 
         slots = quota_manifest.get('slot_allocations', [])
-        index_text = self._build_bank_tag_index(topic_files)
-        concept_text = self._build_concept_blocks_text(topic_files)
 
         # Fall back to the user's section preferences for any slot the quota
         # planner did not tag with an explicit Sim/Non-Sim format, so a sim-only
-        # quiz is never misrouted into the non-sim banks.
+        # quiz is never misrouted to bank retrieval.
         from .sim_generator import resolve_slot_formats
         resolve_slot_formats(quota_manifest, prefs)
 
         # Fully-sim quiz: every slot is format='Sim', so the pipeline never
-        # touches the question banks. Skip the fallback-builder (2c) call and
-        # the bank index preparation below by short-circuiting after 2a.
+        # touches the question banks. Skip the fallback-builder (2c) call by
+        # short-circuiting after 2a.
         real_slots = [s for s in slots if isinstance(s, dict)]
         sim_only = bool(real_slots) and all(
             str(s.get('format', 'Non-Sim')) == 'Sim' for s in real_slots
         )
+
+        # The bank index feeds the 2a/2c prompts. A non-sim quiz needs it; a
+        # sim-only quiz never reads it, so a tag-parsing failure is only fatal
+        # for the non-sim path.
+        try:
+            index_text = self._build_bank_tag_index(topic_files)
+        except TagIndexError as exc:
+            if not sim_only:
+                _report(build_pipeline_error(
+                    "The question-bank tags could not be read.",
+                    detail=str(exc),
+                ))
+                return
+            index_text = ""
+
+        concept_text = self._build_concept_blocks_text(topic_files)
 
         # ── Step 3: fallback construction (2c) ───────────────────────────────
         def _on_2c_success(text: str, new_session_id: str) -> None:
@@ -2005,12 +2043,31 @@ class AgentRunner:
 
     # ── Session Management ─────────────────────────────────────────────────────
 
+    def has_prequiz_session(self) -> bool:
+        """True if the five pre-quiz chat agents still hold a session."""
+        sessions = config.get_agent_sessions()
+        return any(agent in sessions for agent in PREQUIZ_AGENTS)
+
     def clear_sessions(self) -> None:
-        """Clear all agent sessions (new quiz session)."""
-        self._sessions.clear()
-        self._pending.clear()
-        self._bg_reports.clear()
+        """Start a brand-new pre-quiz chat.
+
+        Resets all five chat agents (main chat + the four background models),
+        the per-run generation agents, queued background messages and the
+        in-memory reports. The user's quiz attempts, artifacts and history live
+        in a separate store and are never touched here.
+        """
+        for agent in PIPELINE_AGENTS:
+            self._sessions.pop(agent, None)
+        for agent in PREQUIZ_AGENTS:
+            self._pending.pop(agent, None)
+            self._bg_reports.pop(agent, None)
         with self._lock:
-            self._bg_busy = {agent: False for agent in ALL_BG_AGENTS}
-        config.clear_agent_sessions()
-        config.clear_pending_messages()
+            for agent in ALL_BG_AGENTS:
+                self._bg_busy[agent] = False
+                self._bg_digest_sent[agent] = False
+
+        sessions = config.get_agent_sessions()
+        for agent in PIPELINE_AGENTS:
+            sessions.pop(agent, None)
+        config.set_value('agent_sessions', sessions)
+        config.set_value('pending_messages', {})

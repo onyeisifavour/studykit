@@ -314,6 +314,10 @@ export interface SettingsData {
   evaluation_on: boolean;
   last_skip_mode: string;
   question_count: number;
+  timer_mode: 'off' | 'perQ' | 'total';
+  timer_per_q: number;
+  timer_total: number;
+  total_expiry: 'end' | 'continue';
 }
 
 // ── Library scan ─────────────────────────────────────────────────────────────

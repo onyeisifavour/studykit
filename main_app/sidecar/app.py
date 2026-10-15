@@ -9,6 +9,7 @@ calls and returns the JSON shapes documented in UI_UX_DESIGN_HANDOFF.md §7.
 import json
 import re
 import threading
+import time
 import uuid
 from pathlib import Path
 
@@ -26,7 +27,11 @@ from .. import quiz_logger
 from .. import quiz_artifact
 from .. import quiz_instance
 from ..user_selections import normalize_ascii_math
-from ..quiz_service import QuizService, GenerationJob
+from ..quiz_service import (
+    QuizService,
+    GenerationJob,
+    topics_unavailable_error,
+)
 
 app = FastAPI(title="StudyKit sidecar", version="0.1.0")
 
@@ -50,6 +55,11 @@ def _invalidate_service() -> None:
 # In-memory registry of running generation jobs (transport layer only).
 _JOBS: dict[str, GenerationJob] = {}
 _JOBS_LOCK = threading.Lock()
+
+# Preference extraction is useful for generation, but it must not sit on the
+# critical path for showing the next chat bubble in Electron.
+_PREF_TASKS: set[threading.Thread] = set()
+_PREF_TASKS_LOCK = threading.Lock()
 
 # Stored API keys are never echoed back to the renderer. A masked placeholder
 # is returned so the Settings screen can show whether a key exists; on save,
@@ -364,6 +374,94 @@ def _question_card(q) -> dict:
     }
 
 
+def _track_preference_task(target) -> None:
+    def _run() -> None:
+        try:
+            target()
+        finally:
+            current = threading.current_thread()
+            with _PREF_TASKS_LOCK:
+                _PREF_TASKS.discard(current)
+
+    thread = threading.Thread(
+        target=_run,
+        daemon=True,
+        name='preference-extractor',
+    )
+    with _PREF_TASKS_LOCK:
+        _PREF_TASKS.add(thread)
+    thread.start()
+
+
+def _start_preference_extraction(message: str, reply: str, history: list) -> None:
+    """Update the user-selection manifest after the chat reply has returned."""
+    def _extract() -> None:
+        from ..user_selections import (
+            extract_manifest_diff,
+            load_manifest,
+            merge_manifest,
+            save_manifest,
+        )
+        from ..api_client import CLIBridgeClient
+
+        try:
+            current_manifest = load_manifest()
+            turn_index = len(history) + 1
+            conv_turns = (history or [])[-8:] + [
+                {'role': 'user', 'content': message},
+                {'role': 'assistant', 'content': reply},
+            ]
+            conv_text = json.dumps(conv_turns, indent=2)
+            diff = extract_manifest_diff(
+                conv_text,
+                current_manifest,
+                CLIBridgeClient(),
+                timeout=120.0,
+            )
+            if isinstance(diff, dict):
+                merged = merge_manifest(current_manifest, diff, turn_index=turn_index)
+                save_manifest(merged)
+            else:
+                import sys
+                print('preference-extractor: no usable diff from chat turn', file=sys.stderr)
+        except Exception as exc:
+            import sys
+            print(f'preference-extractor: failed after chat turn: {exc}', file=sys.stderr)
+
+    _track_preference_task(_extract)
+
+
+def _wait_for_preference_tasks(timeout: float = 15.0) -> None:
+    """Give in-flight chat preference extraction a short chance to finish."""
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        with _PREF_TASKS_LOCK:
+            for task in list(_PREF_TASKS):
+                if not task.is_alive():
+                    _PREF_TASKS.discard(task)
+            tasks = list(_PREF_TASKS)
+        if not tasks:
+            return
+        remaining = deadline - time.time()
+        if remaining <= 0:
+            return
+        for task in tasks:
+            task.join(min(0.25, remaining))
+
+
+@app.get('/api/quiz/chat/session')
+def quiz_chat_session() -> dict:
+    """Whether a previous pre-quiz chat exists and can be continued."""
+    return {'has_session': _get_service().has_prequiz_session()}
+
+
+@app.post('/api/quiz/chat/new')
+def quiz_chat_new() -> dict:
+    """Start a brand-new pre-quiz chat (resets the five chat agents)."""
+    _get_service().start_new_chat()
+    return {'ok': True}
+
+
 @app.post('/api/quiz/chat')
 def quiz_chat(body: dict) -> dict:
     """One pre-quiz chat turn. Returns the AI's text reply."""
@@ -393,32 +491,9 @@ def quiz_chat(body: dict) -> dict:
     if 'reply' not in holder:
         raise HTTPException(status_code=504, detail='Chat timed out.')
 
-    # ── Run extractor to update manifest ────────────────────────────────────
-    from ..user_selections import load_manifest, merge_manifest, save_manifest, extract_manifest_diff
-    from ..api_client import CLIBridgeClient
-
-    try:
-        current_manifest = load_manifest()
-        turn_index = len(history) + 1
-        # Build conversation text for the extractor (last few turns only to keep prompt small).
-        conv_turns = (history or [])[-8:] + [{'role': 'user', 'content': message}, {'role': 'assistant', 'content': holder['reply']}]
-        conv_text = json.dumps(conv_turns, indent=2)
-        cli = CLIBridgeClient()
-        diff = extract_manifest_diff(conv_text, current_manifest, cli, timeout=120.0)
-        if isinstance(diff, dict):
-            merged = merge_manifest(current_manifest, diff, turn_index=turn_index)
-            save_manifest(merged)
-            reply = {'reply': holder['reply'], 'selections': {k: v for k, v in merged.items() if not k.startswith('_')}}
-        else:
-            import sys
-            print('preference-extractor: no usable diff from chat turn', file=sys.stderr)
-            reply = {'reply': holder['reply']}
-    except Exception as exc:
-        import sys
-        print(f'preference-extractor: failed after chat turn: {exc}', file=sys.stderr)
-        reply = {'reply': holder['reply']}
-
-    return reply
+    reply = holder['reply']
+    _start_preference_extraction(message, reply, history)
+    return {'reply': reply}
 
 
 @app.post('/api/tutor/chat')
@@ -460,7 +535,13 @@ def tutor_chat(body: dict) -> dict:
 @app.post('/api/quiz/generate')
 def quiz_generate(body: dict) -> dict:
     """Starts an async quiz-generation job and returns its id immediately."""
+    _wait_for_preference_tasks()
     svc = _get_service()
+    # Reject before starting a job: an empty topic set can only ever fail, and
+    # it fails deep in the pipeline with a confusing message. Surface it here.
+    unavailable = topics_unavailable_error(svc.load_selected_topics())
+    if unavailable:
+        raise HTTPException(status_code=400, detail=unavailable)
     user_request = str(body.get('user_request') or 'Generate a quiz')
     total = body.get('question_count')
     job = GenerationJob(
@@ -858,6 +939,7 @@ def settings_get() -> dict:
         'evaluation_on':    config.get_evaluation_on(),
         'last_skip_mode':   config.get_last_skip_mode(),
         'question_count':   config.get_question_count(),
+        **config.get_timer_settings(),
     }
 
 
@@ -922,6 +1004,14 @@ def settings_save(body: dict) -> dict:
         config.save_last_skip_mode(str(body['last_skip_mode']))
     if 'question_count' in body:
         config.save_question_count(int(body['question_count']))
+    if 'timer_mode' in body or 'timer_per_q' in body or 'timer_total' in body or 'total_expiry' in body:
+        current = config.get_timer_settings()
+        config.save_timer_settings(
+            str(body.get('timer_mode', current['timer_mode'])),
+            int(body.get('timer_per_q', current['timer_per_q'])),
+            int(body.get('timer_total', current['timer_total'])),
+            str(body.get('total_expiry', current['total_expiry'])),
+        )
 
     _invalidate_service()
     return settings_get()

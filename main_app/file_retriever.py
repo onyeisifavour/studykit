@@ -23,10 +23,20 @@ from .answer_matcher import parse_answer_bank, parse_bank_with_tags
 TIER_ORDER = ('tier_1_exact', 'tier_2_topic_fallback', 'tier_3_type_relaxation')
 
 
+class TagIndexError(Exception):
+    """Raised when bank tags are present but could not be parsed at all."""
+
+
 def build_tag_index(topic_files: list[dict]) -> list[dict]:
     """
     Indexes every question in the loaded banks with its Subject/Topic/Type/
     Format tags. Falls back to the folder name when a tag is absent.
+
+    Raises TagIndexError when the banks contain questions but none of them
+    yielded a usable Type or Format tag. That means the tag recognizer does not
+    match the bank format (for example an unrecognised trailing tag key), and
+    every tier match would silently fail. Failing fast here reports the true
+    cause instead of surfacing as "all slots MISSING" much later.
     """
     index: list[dict] = []
     for tf in topic_files:
@@ -44,6 +54,12 @@ def build_tag_index(topic_files: list[dict]) -> list[dict]:
                 'source_topic':  topic,
                 'source_subject': subject,
             })
+
+    if index and not any(e['type'] or e['format'] for e in index):
+        raise TagIndexError(
+            "Bank tags could not be parsed; check the question-bank tag format."
+        )
+
     return index
 
 

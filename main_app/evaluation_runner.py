@@ -75,8 +75,8 @@ class EvaluationRunner:
 
             def _on_reply(reply: str) -> None:
                 # Fire the 4 background models in the background (don't wait).
-                # This mirrors the Tkinter chat_view.py trigger so the Electron
-                # path feeds the quota planner the same diagnostic reports.
+                # Feeds the quota planner the same diagnostic reports the
+                # profile agents accumulate across the chat.
                 topic_context = ''
                 try:
                     topic_context = prompts.build_multi_topic_concepts(

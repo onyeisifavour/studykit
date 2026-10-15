@@ -55,6 +55,33 @@ STAGES = {
     'auditing': 'Final checks',
 }
 
+#: Shown whenever a generation is attempted with no selected topics. A quiz
+#: always needs at least one selected topic (even a simulation-only quiz reads
+#: its topic's README), so this is a hard precondition, not a soft warning.
+NO_TOPICS_ERROR = (
+    'No topics selected. Open Settings and select at least one topic before '
+    'generating a quiz.'
+)
+
+NO_LOADABLE_TOPICS_ERROR = (
+    'Your selected topics could not be loaded. The library folder may have '
+    'moved, or the topic folders are missing their question/answer banks. '
+    'Re-scan the library in Settings and try again.'
+)
+
+
+def topics_unavailable_error(topic_files: Optional[list]) -> Optional[str]:
+    """Returns the right 'cannot generate' message, or None if topics are fine.
+
+    Distinguishes an empty selection from a selection that no longer resolves,
+    so the user gets an actionable message instead of an opaque pipeline error.
+    """
+    if topic_files:
+        return None
+    if not config.get_selected_topics():
+        return NO_TOPICS_ERROR
+    return NO_LOADABLE_TOPICS_ERROR
+
 
 def _topics_from_questions(questions: list) -> list[str]:
     """Collect a topic label list from GeneratedQuestion.topic fields."""
@@ -202,6 +229,14 @@ class QuizService:
         prefs: question section preferences (section_a_sim/nonsim,
                section_b_sim/nonsim). Defaults to the saved settings when None.
         """
+        # Fail fast and loudly: with no topic files the whole pipeline silently
+        # fabricates topics, every slot ends up MISSING, and the sequencer dies
+        # with an opaque "empty selected-items list" error much later.
+        unavailable = topics_unavailable_error(topic_files)
+        if unavailable:
+            _fail(on_error, 'planning', unavailable)
+            return
+
         if not self._agent_runner:
             self._legacy_generate(user_request, topic_files, history,
                                   total_questions, progress, on_result, on_error)
@@ -302,7 +337,11 @@ class QuizService:
                     if isinstance(spec, dict) and spec.get('slot_number') in non_sim_numbers
                 ],
             }
-            pool = file_retriever.retrieve_candidates(non_sim_spec_manifest, topic_files)
+            try:
+                pool = file_retriever.retrieve_candidates(non_sim_spec_manifest, topic_files)
+            except file_retriever.TagIndexError as exc:
+                _fail(on_error, 'finding', "The question-bank tags could not be read: " + str(exc))
+                return
             errors = validate_candidate_pool(pool)
             if errors:
                 _fail(on_error, 'finding', 'Candidate pool failed validation: ' + '; '.join(errors))
@@ -584,6 +623,18 @@ class QuizService:
 
     def selected_topic_paths(self) -> list[str]:
         return config.get_selected_topics()
+
+    # ── Pre-quiz chat session ─────────────────────────────────────────────────
+    def has_prequiz_session(self) -> bool:
+        """True if the five pre-quiz chat agents still hold a session."""
+        if self._agent_runner is None:
+            return False
+        return self._agent_runner.has_prequiz_session()
+
+    def start_new_chat(self) -> None:
+        """Start a brand-new pre-quiz chat (resets the five chat agents)."""
+        if self._agent_runner is not None:
+            self._agent_runner.clear_sessions()
 
     # ── Live evaluation ───────────────────────────────────────────────────────
     def evaluate_live(

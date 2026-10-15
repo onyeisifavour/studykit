@@ -56,6 +56,10 @@ export default function Settings({ active }: Props) {
         setSections(s.sections);
         setShuffle(s.shuffle);
         setEvalOn(s.evaluation_on);
+        setTmode(s.timer_mode);
+        setTPerQ(s.timer_per_q);
+        setTTotal(s.timer_total);
+        setTExpiry(s.total_expiry);
         setLibRoot(s.library_root);
         setSelPaths([...s.selected_topics]);
         setProviderMode(s.provider_mode === 'api' ? 'api' : 'cli_bridge');
@@ -110,6 +114,12 @@ export default function Settings({ active }: Props) {
   const setEval = (v: boolean) => {
     setEvalOn(v);
     persist({ evaluation_on: v });
+  };
+
+  const setTimer = (
+    patch: Partial<Pick<SettingsData, 'timer_mode' | 'timer_per_q' | 'timer_total' | 'total_expiry'>>,
+  ) => {
+    persist(patch);
   };
 
   const doScan = () => {
@@ -204,12 +214,13 @@ export default function Settings({ active }: Props) {
     );
   }
 
+  const qCount = settings?.question_count || 10;
   const tHint =
     tmode === 'off'
       ? 'No time limit. Time spent on each question is still recorded for review.'
       : tmode === 'perQ'
         ? `Per-question countdown of ${tPerQ}s — the quiz auto-advances when time runs out.`
-        : `Overall ${tTotal} min across 6 questions → ≈${Math.floor(tTotal * 60 / 6)}s per question; ${tExpiry === 'end' ? 'the quiz ends when the total runs out.' : 'it keeps going — the total is recorded, not enforced.'}`;
+        : `Overall ${tTotal} min across ${qCount} question${qCount === 1 ? '' : 's'} → ≈${Math.floor(tTotal * 60 / qCount)}s per question; ${tExpiry === 'end' ? 'the quiz ends when the total runs out.' : 'it keeps going — the total is recorded, not enforced.'}`;
 
   return (
     <section className={active ? 'screen active' : 'screen'} id="screen-settings">
@@ -317,9 +328,9 @@ export default function Settings({ active }: Props) {
                       <div className="set-row-sub">A countdown that moves the quiz on when it runs out</div>
                     </div>
                     <div className="seg">
-                      <button className={tmode === 'off' ? 'seg-btn on' : 'seg-btn'} onClick={() => setTmode('off')}>Off</button>
-                      <button className={tmode === 'perQ' ? 'seg-btn on' : 'seg-btn'} onClick={() => setTmode('perQ')}>Per question</button>
-                      <button className={tmode === 'total' ? 'seg-btn on' : 'seg-btn'} onClick={() => setTmode('total')}>Overall test</button>
+                      <button className={tmode === 'off' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTmode('off'); setTimer({ timer_mode: 'off' }); }}>Off</button>
+                      <button className={tmode === 'perQ' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTmode('perQ'); setTimer({ timer_mode: 'perQ' }); }}>Per question</button>
+                      <button className={tmode === 'total' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTmode('total'); setTimer({ timer_mode: 'total' }); }}>Overall test</button>
                     </div>
                   </div>
                   {tmode === 'perQ' && (
@@ -328,10 +339,23 @@ export default function Settings({ active }: Props) {
                         <div className="set-row-title">Seconds per question</div>
                         <div className="set-row-sub">The budget resets on every question</div>
                       </div>
-                      <div className="seg">
-                        {[30, 60, 90].map((s) => (
-                          <button key={s} className={tPerQ === s ? 'seg-btn on' : 'seg-btn'} onClick={() => setTPerQ(s)}>{s}s</button>
-                        ))}
+                      <div className="flex-c" style={{ alignItems: 'flex-end', gap: 8 }}>
+                        <div className="seg">
+                          {[30, 60, 90].map((s) => (
+                            <button key={s} className={tPerQ === s ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTPerQ(s); setTimer({ timer_per_q: s }); }}>{s}s</button>
+                          ))}
+                        </div>
+                        <input
+                          type="number"
+                          min={1}
+                          value={tPerQ}
+                          aria-label="Custom seconds per question"
+                          onChange={(e) => {
+                            const n = parseInt(e.target.value, 10);
+                            if (!Number.isNaN(n) && n >= 1) { setTPerQ(n); setTimer({ timer_per_q: n }); }
+                          }}
+                          style={{ width: 120, background: 'var(--bg)', border: '1px solid var(--bd2)', borderRadius: 'var(--r-sm)', padding: '8px 10px', color: 'var(--t1)' }}
+                        />
                       </div>
                     </div>
                   )}
@@ -342,10 +366,23 @@ export default function Settings({ active }: Props) {
                           <div className="set-row-title">Total test time</div>
                           <div className="set-row-sub">Split across questions as you go</div>
                         </div>
-                        <div className="seg">
-                          {[5, 10, 15].map((m) => (
-                            <button key={m} className={tTotal === m ? 'seg-btn on' : 'seg-btn'} onClick={() => setTTotal(m)}>{m} min</button>
-                          ))}
+                        <div className="flex-c" style={{ alignItems: 'flex-end', gap: 8 }}>
+                          <div className="seg">
+                            {[5, 10, 15].map((m) => (
+                              <button key={m} className={tTotal === m ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTTotal(m); setTimer({ timer_total: m }); }}>{m} min</button>
+                            ))}
+                          </div>
+                          <input
+                            type="number"
+                            min={1}
+                            value={tTotal}
+                            aria-label="Custom total minutes"
+                            onChange={(e) => {
+                              const n = parseInt(e.target.value, 10);
+                              if (!Number.isNaN(n) && n >= 1) { setTTotal(n); setTimer({ timer_total: n }); }
+                            }}
+                            style={{ width: 120, background: 'var(--bg)', border: '1px solid var(--bd2)', borderRadius: 'var(--r-sm)', padding: '8px 10px', color: 'var(--t1)' }}
+                          />
                         </div>
                       </div>
                       <div className="set-row">
@@ -354,8 +391,8 @@ export default function Settings({ active }: Props) {
                           <div className="set-row-sub">What happens at the deadline</div>
                         </div>
                         <div className="seg">
-                          <button className={tExpiry === 'end' ? 'seg-btn on' : 'seg-btn'} onClick={() => setTExpiry('end')}>End quiz</button>
-                          <button className={tExpiry === 'continue' ? 'seg-btn on' : 'seg-btn'} onClick={() => setTExpiry('continue')}>Keep going</button>
+                          <button className={tExpiry === 'end' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTExpiry('end'); setTimer({ total_expiry: 'end' }); }}>End quiz</button>
+                          <button className={tExpiry === 'continue' ? 'seg-btn on' : 'seg-btn'} onClick={() => { setTExpiry('continue'); setTimer({ total_expiry: 'continue' }); }}>Keep going</button>
                         </div>
                       </div>
                     </>

@@ -18,48 +18,207 @@ Keys used across the app:
     cli_model           str       — model name for CLI bridge (e.g. 'opencode/big-pickle')
     shuffle_enabled     bool      — shuffle quiz questions (False = keep arc order)
     keep_sim_together   bool      — keep same-sim questions adjacent when shuffling
+    question_count      int       — number of questions in a generated quiz
+    timer_mode          str       — 'off' | 'perQ' | 'total' quiz countdown mode
+    timer_per_q         int       — seconds per question when timer_mode='perQ'
+    timer_total         int       — overall minutes when timer_mode='total'
+    total_expiry        str       — 'end' | 'continue' when overall time runs out
+
+Durability
+----------
+Writes go through a temp file + `os.replace` while holding a process- and
+POSIX-wide lock, so a concurrent read can never see a truncated file. Every
+successful save also refreshes `config.json.bak` (last-known-good). If the live
+file is ever unreadable it is quarantined to `config.corrupt-<ts>.json` and the
+backup is restored, so settings and the learner-profile session pointers survive
+a bad write. Keep `agent_sessions`, `pending_messages` and `current_quiz_id`
+intact on every save — they are the durable profile, not per-run state.
 """
 
 import json
+import logging
+import os
+import tempfile
+import threading
+import time
 from pathlib import Path
+
+_log = logging.getLogger(__name__)
 
 _CONFIG_DIR  = Path.home() / '.quiz_app'
 _CONFIG_FILE = _CONFIG_DIR / 'config.json'
+#: Last-known-good mirror of the config, refreshed on every successful save.
+_CONFIG_BAK  = _CONFIG_DIR / 'config.json.bak'
+
+# Every read-modify-write cycle runs under this lock. The thread lock serialises
+# callers inside one process (the sidecar runs many worker threads); the flock
+# additionally serialises against other processes (e.g. a stray second sidecar).
+_THREAD_LOCK = threading.RLock()
+try:
+    import fcntl as _fcntl
+except Exception:  # pragma: no cover - non-POSIX
+    _fcntl = None
+
+
+class _ConfigLock:
+    """Re-entrant thread lock + best-effort cross-process advisory lock."""
+
+    def __init__(self) -> None:
+        self._fd: int | None = None
+
+    def __enter__(self) -> '_ConfigLock':
+        _THREAD_LOCK.acquire()
+        if _fcntl is not None:
+            try:
+                _CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+                self._fd = os.open(
+                    str(_CONFIG_FILE) + '.lock', os.O_CREAT | os.O_RDWR, 0o600
+                )
+                _fcntl.flock(self._fd, _fcntl.LOCK_EX)
+            except Exception:
+                self._close_fd()
+        return self
+
+    def __exit__(self, *exc) -> bool:
+        self._close_fd()
+        _THREAD_LOCK.release()
+        return False
+
+    def _close_fd(self) -> None:
+        if self._fd is not None:
+            try:
+                if _fcntl is not None:
+                    _fcntl.flock(self._fd, _fcntl.LOCK_UN)
+                os.close(self._fd)
+            except Exception:
+                pass
+            self._fd = None
+
+
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Writes `text` to `path` atomically (temp file + fsync + os.replace).
+
+    A reader never observes a half-written file, which is what used to let a
+    torn read wipe the config down to a single key.
+    """
+    _CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(dir=str(_CONFIG_DIR), prefix='.config-', suffix='.tmp')
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as fh:
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except Exception:
+        try:
+            os.unlink(tmp)
+        except Exception:
+            pass
+        raise
+
+
+def _recover_unlocked(exc: Exception) -> dict:
+    """Handles an unreadable config file.
+
+    Quarantines the broken bytes to `config.corrupt-<ts>.json` so a developer can
+    inspect exactly what went wrong, then restores the last-known-good backup if
+    one exists. The live file is reseeded so a single corruption does not
+    re-quarantine on every subsequent read. Never raises: the app keeps running.
+    """
+    stamp = time.strftime('%Y%m%d-%H%M%S')
+    quarantine = _CONFIG_DIR / f'config.corrupt-{stamp}.json'
+    try:
+        if _CONFIG_FILE.exists():
+            os.replace(str(_CONFIG_FILE), str(quarantine))
+    except Exception:
+        try:
+            quarantine.write_text(
+                _CONFIG_FILE.read_text(encoding='utf-8'), encoding='utf-8'
+            )
+        except Exception:
+            pass
+
+    recovered: dict = {}
+    source = 'empty config'
+    if _CONFIG_BAK.exists():
+        try:
+            data = json.loads(_CONFIG_BAK.read_text(encoding='utf-8'))
+            if isinstance(data, dict):
+                recovered = data
+                source = 'config.json.bak'
+        except Exception:
+            recovered = {}
+
+    _log.warning(
+        'config.json was unreadable (%s); quarantined to %s and recovered from %s',
+        exc, quarantine.name, source,
+    )
+
+    try:
+        _atomic_write_text(_CONFIG_FILE, json.dumps(recovered, indent=2))
+    except Exception:
+        pass
+    return recovered
+
+
+def _load_unlocked() -> dict:
+    if not _CONFIG_FILE.exists():
+        return {}
+    try:
+        data = json.loads(_CONFIG_FILE.read_text(encoding='utf-8'))
+        if not isinstance(data, dict):
+            raise ValueError('config root is not a JSON object')
+        return data
+    except Exception as exc:
+        return _recover_unlocked(exc)
+
+
+def _save_unlocked(data: dict) -> None:
+    payload = json.dumps(data, indent=2)
+    _atomic_write_text(_CONFIG_FILE, payload)
+    # Refresh the fallback copy only after the live file is safely in place.
+    try:
+        _atomic_write_text(_CONFIG_BAK, payload)
+    except Exception:
+        pass
 
 
 def load() -> dict:
-    """Loads and returns the full config dict. Returns {} if file missing/corrupt."""
-    if _CONFIG_FILE.exists():
-        try:
-            return json.loads(_CONFIG_FILE.read_text(encoding='utf-8'))
-        except Exception:
-            return {}
-    return {}
+    """Loads and returns the full config dict.
+
+    A missing file yields {}. An *unreadable* file is quarantined and recovered
+    from the last-known-good backup rather than silently becoming {}.
+    """
+    with _ConfigLock():
+        return _load_unlocked()
 
 
 def save(data: dict) -> None:
-    """Overwrites the config file with the given dict."""
-    _CONFIG_DIR.mkdir(parents=True, exist_ok=True)
-    _CONFIG_FILE.write_text(json.dumps(data, indent=2), encoding='utf-8')
+    """Overwrites the config file with the given dict (atomically)."""
+    with _ConfigLock():
+        _save_unlocked(data)
 
 
 def get(key: str, default=None):
     """Gets a single value by key."""
-    return load().get(key, default)
+    with _ConfigLock():
+        return _load_unlocked().get(key, default)
 
 
 def set_value(key: str, value) -> None:
     """Sets a single key and persists."""
-    cfg = load()
-    cfg[key] = value
-    save(cfg)
+    with _ConfigLock():
+        cfg = _load_unlocked()
+        cfg[key] = value
+        _save_unlocked(cfg)
 
 
 def update(updates: dict) -> None:
     """Merges multiple key-value pairs and persists."""
-    cfg = load()
-    cfg.update(updates)
-    save(cfg)
+    with _ConfigLock():
+        cfg = _load_unlocked()
+        cfg.update(updates)
+        _save_unlocked(cfg)
 
 
 # ── Typed convenience accessors ───────────────────────────────────────────────
@@ -270,6 +429,51 @@ def get_question_count() -> int:
 def save_question_count(count: int) -> None:
     """Save the number of questions the student wants."""
     set_value('question_count', count)
+
+
+def get_timer_settings() -> dict:
+    """Returns the shared quiz timing preferences.
+
+    Structure:
+        timer_mode:  'off' | 'perQ' | 'total' — how (if at all) a countdown
+                     is enforced
+        timer_per_q: int — seconds allowed per question when mode is 'perQ'
+        timer_total: int — minutes allowed for the whole quiz when mode is
+                     'total'
+        total_expiry: 'end' | 'continue' — what happens when the overall
+                     time runs out
+    """
+    mode = get('timer_mode', 'off')
+    if mode not in ('off', 'perQ', 'total'):
+        mode = 'off'
+    expiry = get('total_expiry', 'end')
+    if expiry not in ('end', 'continue'):
+        expiry = 'end'
+    return {
+        'timer_mode':  mode,
+        'timer_per_q': int(get('timer_per_q', 60) or 60),
+        'timer_total': int(get('timer_total', 10) or 10),
+        'total_expiry': expiry,
+    }
+
+
+def save_timer_settings(
+    timer_mode: str,
+    timer_per_q: int,
+    timer_total: int,
+    total_expiry: str,
+) -> None:
+    """Persists the shared quiz timing preferences."""
+    if timer_mode not in ('off', 'perQ', 'total'):
+        timer_mode = 'off'
+    if total_expiry not in ('end', 'continue'):
+        total_expiry = 'end'
+    update({
+        'timer_mode':  timer_mode,
+        'timer_per_q': max(1, int(timer_per_q)),
+        'timer_total': max(1, int(timer_total)),
+        'total_expiry': total_expiry,
+    })
 
 
 # ── Quota Manifest (Agent 1 output) ───────────────────────────────────────────

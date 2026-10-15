@@ -26,19 +26,79 @@ from typing import Optional
 
 # ── Tag stripping ─────────────────────────────────────────────────────────────
 
-# Matches tags in square brackets: [Type: MCQ; Subject: Physics; Topic: SI Units; Format: Non-Sim; Exam: NECO]
-_TAG_PATTERN = re.compile(r'\s*\[(?:Type|Subject|Topic|Format|Exam):\s*[^;\]]*(?:;\s*(?:Type|Subject|Topic|Format|Exam):\s*[^;\]]*)*\]\s*$')
+# Matches one or more adjacent bracket groups at the end of a line, e.g.
+# [Type: MCQ; Subject: Physics; Topic: SI Units; Format: Non-Sim; Exam: NECO]
+# It also covers the answer-bank form [Type: MCQ ] [Answer-Method: text-exclusive]
+# and any additional trailing keys such as Answer-Method.
+_TAG_RUN = re.compile(r'(?:\s*\[[^\[\]]*\])+\s*$')
+
+# A trailing bracket run only counts as tags when it carries at least one of the
+# core tag keys. This keeps content-only brackets such as [2 marks] or a leading
+# [FIGURE: ...] / [DIAGRAM: ...] from being stripped as metadata.
+_CORE_TAG_KEY = re.compile(r'\[(?i:Type|Subject|Topic|Format|Exam)\b')
+
+
+def _tag_run(text: str) -> Optional[str]:
+    """Returns the trailing bracket-tag run, or None if it is not a tag run."""
+    m = _TAG_RUN.search(text)
+    if not m:
+        return None
+    run = m.group(0)
+    if not _CORE_TAG_KEY.search(run):
+        return None
+    return run
 
 
 def strip_tags(text: str) -> str:
-    """Removes trailing [Type: ...; Subject: ...; Topic: ...; Format: ...; Exam: ...] tags from text."""
-    return _TAG_PATTERN.sub('', text).strip()
+    """Removes a trailing [Key: value; ...] tag run, if one is present."""
+    run = _tag_run(text)
+    if run is None:
+        return text.strip()
+    return text[: text.rfind(run)].strip()
 
 
 # ── Parsing ───────────────────────────────────────────────────────────────────
 
 # Matches lines like: "1.", "1)", "Q1.", "Q.1", "12."
 _Q_START = re.compile(r'^(?:Q\.?\s*)?(\d+)[.)]\s+(.*)', re.IGNORECASE)
+
+# A numbered entry can begin at the start of a line, or immediately after the
+# previous entry's trailing tag block, e.g.
+#   "... [Type: MCQ ] [Answer-Method: text-exclusive]2. B ..."
+# The second form is how a whole answer bank can end up on a single physical
+# line; the marker after "]" needs a break inserted before it.
+_ENTRY_BREAK = re.compile(
+    r'(?:(?<=^)|(?<=\]))[ \t]*(?:Q\.?\s*)?(\d+)[.)]\s+', re.MULTILINE
+)
+
+
+def _normalise_entry_breaks(text: str) -> str:
+    """
+    Inserts a newline before entry markers that share a physical line, so the
+    line-based parser can read banks whose entries were written end to end.
+
+    A mid-line marker only starts a new entry when it directly follows the
+    previous entry's trailing ``]`` and continues the numbering (1, 2, 3, ...).
+    Numbering runs are what separate real entries from stray numbers inside an
+    answer, such as "df = 3." in a Theory response.
+    """
+    pieces: list[str] = []
+    last = 0
+    last_num = 0
+    for m in _ENTRY_BREAK.finditer(text):
+        num = int(m.group(1))
+        line_start = text.rfind('\n', 0, m.start(1)) + 1
+        prefix = text[line_start:m.start(1)].strip()
+        at_line_start = prefix in ('', 'Q.', 'Q')
+        if not (at_line_start or last_num < num <= last_num + 2):
+            continue
+        if not at_line_start:
+            pieces.append(text[last:m.start(1)])
+            pieces.append('\n')
+            last = m.start(1)
+        last_num = num
+    pieces.append(text[last:])
+    return ''.join(pieces)
 
 
 def parse_numbered_bank(text: str) -> dict[int, str]:
@@ -52,7 +112,7 @@ def parse_numbered_bank(text: str) -> dict[int, str]:
     entries: dict[int, list[str]] = {}
     current_num: Optional[int] = None
 
-    for raw_line in text.splitlines():
+    for raw_line in _normalise_entry_breaks(text).splitlines():
         line = raw_line.rstrip()
         stripped = line.strip()
 
@@ -88,7 +148,7 @@ def parse_bank_with_tags(text: str) -> list[dict]:
     entries: dict[int, dict] = {}
     current_num: Optional[int] = None
 
-    for raw_line in text.splitlines():
+    for raw_line in _normalise_entry_breaks(text).splitlines():
         line = raw_line.rstrip()
         stripped = line.strip()
 
@@ -120,19 +180,31 @@ def parse_answer_bank(text: str) -> dict[int, str]:
 
 def extract_tags(text: str) -> dict[str, str]:
     """
-    Extracts tag values from [Type: ...; Subject: ...; Topic: ...; Format: ...; Exam: ...] format.
-    Returns dict of tag type to value, e.g. {'Type': 'MCQ', 'Subject': 'Physics', 'Topic': 'SI Units', 'Format': 'Non-Sim', 'Exam': 'NECO'}
+    Extracts tag values from a trailing [Key: value; ...] run.
+
+    Handles the question-bank form
+        [Type: MCQ; Subject: Physics; Topic: SI Units; Format: Non-Sim; Exam: NECO]
+    and the answer-bank form
+        [Type: MCQ ] [Answer-Method: text-exclusive]
+    plus any additional trailing keys such as Answer-Method.
+
+    Returns e.g. {'Type': 'MCQ', 'Subject': 'Physics', ...} or {} when the
+    trailing brackets are content rather than tags.
     """
-    match = _TAG_PATTERN.search(text)
-    if not match:
+    run = _tag_run(text)
+    if not run:
         return {}
-    tag_str = match.group(0).strip()[1:-1]  # Remove [ and ]
-    tags = {}
-    for part in tag_str.split(';'):
-        part = part.strip()
-        if ':' in part:
+    tags: dict[str, str] = {}
+    for group in re.findall(r'\[([^\[\]]*)\]', run):
+        for part in group.split(';'):
+            part = part.strip()
+            if ':' not in part:
+                continue
             key, value = part.split(':', 1)
-            tags[key.strip()] = value.strip()
+            key = key.strip()
+            if not re.match(r'^[A-Za-z][A-Za-z0-9_-]*$', key):
+                continue
+            tags[key] = value.strip()
     return tags
 
 

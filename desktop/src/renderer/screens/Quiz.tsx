@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useReducer, useRef } from 'react';
 import { ChatBubbles, ChatInput } from '../components/ChatComposer';
 import RichText from '../components/RichText';
-import { markPending, quizChat, quizGenerate, quizJobStatus, quizLast, quizCancel, quizEvaluate, completeQuiz, getSettings, saveSettings, getBaseUrl, getLiveBaseUrl, adoptInstance, getInstance, getQuizNoteCards, openInstance, resumeInstance, saveInstanceState } from '../api';
-import type { InstanceDetail, QuizCompleteResult, QuizQuestion } from '../types';
+import { markPending, quizChat, quizChatSession, newQuizChat, quizGenerate, quizJobStatus, quizLast, quizCancel, quizEvaluate, completeQuiz, getSettings, saveSettings, getBaseUrl, getLiveBaseUrl, adoptInstance, getInstance, getQuizNoteCards, openInstance, resumeInstance, saveInstanceState } from '../api';
+import type { InstanceDetail, QuizCompleteResult, QuizQuestion, SettingsData } from '../types';
 
 interface Props {
   onNavigate: (screen: string) => void;
@@ -130,6 +130,7 @@ export default function Quiz({ onNavigate, active, resumeReq }: Props) {
   const Q = useRef({
     state: 'chat' as 'chat' | 'pipeline' | 'peek' | 'cancelled' | 'active' | 'finish' | 'report',
     chatStarted: false,
+    hasPrevSession: false,
     chatMsgs: [{ r: 'ai', t: "Hi Favour! I'll help you design a personalised quiz. Which subjects or topics would you like to focus on today?" }] as ChatMsg[],
     chatHistory: [] as { role: string; content: string }[],
     realQs: [] as QuizQuestion[],
@@ -208,6 +209,15 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
       .catch(() => {});
     return () => { alive = false; };
   }, []);
+
+  // Whether a previous pre-quiz chat exists, so the start screen can offer
+  // (or disable) "Continue last session".
+  useEffect(() => {
+    if (!active) return;
+    quizChatSession()
+      .then((r) => { q().hasPrevSession = !!r.has_session; bump(); })
+      .catch(() => {});
+  }, [active]);
 
   // A sim only loads when explicitly launched; swapping questions clears it so
   // an old frame never keeps running off-screen. The base URL is revalidated at
@@ -368,6 +378,21 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
         if (typeof s.question_count === 'number' && s.question_count > 0) {
           q().qsp.count = s.question_count;
         }
+        if (typeof s.evaluation_on === 'boolean') {
+          q().qset.evalOn = s.evaluation_on;
+        }
+        if (s.timer_mode === 'off' || s.timer_mode === 'perQ' || s.timer_mode === 'total') {
+          q().qset.timerMode = s.timer_mode;
+        }
+        if (typeof s.timer_per_q === 'number' && s.timer_per_q > 0) {
+          q().qset.timerPerQ = s.timer_per_q;
+        }
+        if (typeof s.timer_total === 'number' && s.timer_total > 0) {
+          q().qset.timerTotal = s.timer_total;
+        }
+        if (s.total_expiry === 'end' || s.total_expiry === 'continue') {
+          q().qset.totalExpiry = s.total_expiry;
+        }
         bump();
       })
       .catch(() => {});
@@ -390,7 +415,18 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
     }).catch(() => {});
   };
 
-  const startChat = () => {
+  // "Start new chat" — begin fresh pre-quiz agents (new sessions on the backend).
+  const startNewChat = () => {
+    q().chatHistory = [];
+    q().hasPrevSession = false;
+    q().chatStarted = true;
+    bump();
+    newQuizChat().catch(() => {});
+  };
+
+  // "Continue last session" — keep chatting with the same five pre-quiz agents.
+  // Deliberately does NOT touch quiz state or call /api/quiz/last.
+  const continueLastSession = () => {
     q().chatStarted = true;
     bump();
   };
@@ -406,6 +442,7 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
       .then((res) => {
         c[c.length - 1] = { r: 'ai', t: res.reply };
         q().chatHistory.push({ role: 'assistant', content: res.reply });
+        q().hasPrevSession = true;
         q().sendBusy = false;
         bump();
       })
@@ -880,6 +917,13 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
 
   const setQset = (patch: Partial<QSet>) => {
     q().qset = { ...q().qset, ...patch };
+    const s: Partial<SettingsData> = {};
+    if ('evalOn' in patch) s.evaluation_on = !!q().qset.evalOn;
+    if ('timerMode' in patch) s.timer_mode = q().qset.timerMode;
+    if ('timerPerQ' in patch) s.timer_per_q = q().qset.timerPerQ;
+    if ('timerTotal' in patch) s.timer_total = q().qset.timerTotal;
+    if ('totalExpiry' in patch) s.total_expiry = q().qset.totalExpiry;
+    if (Object.keys(s).length) saveSettings(s).catch(() => {});
     bump();
   };
 
@@ -958,8 +1002,17 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
                   <div style={{ fontSize: 13.5, color: 'var(--t2)', maxWidth: 320, lineHeight: 1.6 }}>
                     Tell the AI your topics, question count, and any weak areas to prioritise.
                   </div>
-                  <button className="btn btn-primary btn-lg" onClick={startChat} style={{ marginTop: 4 }}>
-                    Start Chat
+                  <button className="btn btn-primary btn-lg" onClick={startNewChat} style={{ marginTop: 4 }}>
+                    Start new chat
+                  </button>
+                  <button
+                    className="btn btn-outline btn-lg"
+                    onClick={continueLastSession}
+                    disabled={!q().hasPrevSession}
+                    style={{ marginTop: 8 }}
+                    title="Keep chatting with the same pre-quiz agents from your last session"
+                  >
+                    Continue last session
                   </button>
                   <button
                     className="btn btn-outline btn-lg"
@@ -1618,15 +1671,14 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
             <input
               type="number"
               min={1}
-              max={50}
               value={q().qsp.count}
               onChange={(e) => {
                 const n = parseInt(e.target.value, 10);
-                if (!Number.isNaN(n) && n >= 1 && n <= 50) { q().qsp.count = n; bump(); persistQsp(); }
+                if (!Number.isNaN(n) && n >= 1) { q().qsp.count = n; bump(); persistQsp(); }
               }}
               style={{ width: '100%', background: 'var(--bg)', border: '1px solid var(--bd2)', borderRadius: 'var(--r-sm)', padding: '8px 10px', color: 'var(--t1)' }}
             />
-            <div style={{ fontSize: 11.5, color: 'var(--t3)', marginTop: 6 }}>Questions per quiz (1–50).</div>
+            <div style={{ fontSize: 11.5, color: 'var(--t3)', marginTop: 6 }}>Questions per quiz.</div>
           </div>
           <div>
             <div className="qsp-section-title">Selected topics</div>
@@ -1675,6 +1727,17 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
                     {s}s
                   </button>
                 ))}
+                <input
+                  type="number"
+                  min={1}
+                  value={qset.timerPerQ}
+                  aria-label="Custom seconds per question"
+                  onChange={(e) => {
+                    const n = parseInt(e.target.value, 10);
+                    if (!Number.isNaN(n) && n >= 1) setQset({ timerPerQ: n });
+                  }}
+                  style={{ width: 64, textAlign: 'center', background: 'var(--bg)', border: '1px solid var(--bd2)', borderRadius: 'var(--r-sm)', padding: '6px 8px', color: 'var(--t1)' }}
+                />
               </div>
             )}
             {qset.timerMode === 'total' && (
@@ -1685,6 +1748,17 @@ simDrag: null as { startW: number; startX: number; id: number } | null,
                       {m}m
                     </button>
                   ))}
+                  <input
+                    type="number"
+                    min={1}
+                    value={qset.timerTotal}
+                    aria-label="Custom total minutes"
+                    onChange={(e) => {
+                      const n = parseInt(e.target.value, 10);
+                      if (!Number.isNaN(n) && n >= 1) setQset({ timerTotal: n });
+                    }}
+                    style={{ width: 64, textAlign: 'center', background: 'var(--bg)', border: '1px solid var(--bd2)', borderRadius: 'var(--r-sm)', padding: '6px 8px', color: 'var(--t1)' }}
+                  />
                 </div>
                 <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--t2)', marginTop: 10 }}>When time runs out</div>
                 <div className="seg" style={{ width: '100%', marginTop: 6 }}>

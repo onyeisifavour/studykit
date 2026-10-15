@@ -1,0 +1,253 @@
+{
+  "type": "study_concept_block",
+  "topic": "L1.3 Indices, Exponents, and Power Laws",
+  "subject": "Maths",
+  "concepts": [
+    {
+      "name": "Power Laws of Exponents",
+      "description": "The fundamental rules for multiplying, dividing, and raising powers to powers, including zero and negative exponents, applied to simplify algebraic expressions.",
+      "core_skills": [
+        "Apply the product law a^m * a^n = a^(m+n) to combine powers with the same base.",
+        "Apply the quotient law a^m / a^n = a^(m-n) to divide powers with the same base.",
+        "Apply the power-of-a-power law (a^m)^n = a^(mn) and distribute exponents over products and quotients: (ab)^n = a^n b^n and (a/b)^n = a^n/b^n.",
+        "Simplify expressions by combining numeric coefficients separately from variable indices.",
+        "Recognise y^0 = 1 and eliminate zero-index factors from a simplified expression.",
+        "Simplify compound algebraic fractions involving negative and fractional powers (Q1, Q30a)."
+      ],
+      "prerequisites": [
+        "Arithmetic of integers and fractions",
+        "Definition of exponentiation as repeated multiplication"
+      ],
+      "misconceptions": [
+        "Adding indices when raising a power to a power instead of multiplying, e.g. treating (x^3)^2 as x^5.",
+        "Applying a power to a sum term-by-term, e.g. treating (a+b)^-1 as a^-1 + b^-1 (targeted by Q20).",
+        "Believing a term with exponent 0 must be retained (e.g. leaving y^0) rather than being equal to 1.",
+        "Multiplying the bases when combining powers instead of the exponents."
+      ],
+      "traps": [
+        "Combining coefficients and variable powers in the wrong order, e.g. multiplying coefficients twice and producing 72x^2y^0 instead of 12x^2 (Q1).",
+        "Negative exponents that must be moved across the fraction bar before indices can be combined (Q9, Q30a).",
+        "Nested brackets that combine power-of-a-power and quotient laws in a single expression (Q30a)."
+      ],
+      "depth_test": "Simplify (x^(-1/2) y^(2/3) / (x^(1/2) y^(-1/3)))^3 / ((x^(1/3) y^(-1/4))/(x^(-2/3) y^(1/2)))^(-2) to a single x^k y^m and justify each index law used (Q30a)."
+    },
+    {
+      "name": "Negative and Fractional Indices",
+      "description": "Evaluating and converting powers with negative and rational exponents, including the radical equivalence a^(p/q) = q-th root of a^p.",
+      "core_skills": [
+        "Evaluate a^(-n) as 1/a^n and (a/b)^(-n) as (b/a)^n.",
+        "Convert a^(p/q) to the q-th root of a^p and convert radicals back to fractional exponents (Q3).",
+        "Evaluate fractional powers of perfect powers, e.g. 16^(3/4), 27^(4/3), (0.0016)^(-3/4).",
+        "Express radicals and nested radicals using fractional exponents and simplify them.",
+        "Evaluate combined products and quotients of fractional-index terms (Q19)."
+      ],
+      "prerequisites": [
+        "Power Laws of Exponents",
+        "Roots and surds",
+        "Reciprocals and fractions"
+      ],
+      "misconceptions": [
+        "A negative exponent makes the value negative rather than producing a reciprocal (distractors such as 0.008 or 1/125 for (0.0016)^(-3/4)).",
+        "A fractional exponent means multiplying the base by the fraction, e.g. treating 16^(3/4) as 12.",
+        "The denominator of the fractional exponent is not treated as the root, e.g. reading a^(2/3) as a^(3/2).",
+        "a^(p/q) is only defined when p and q are both prime integers (Q8 distractor B)."
+      ],
+      "traps": [
+        "Decimal bases with hidden perfect-power structure, e.g. 0.0016 = (0.2)^4 so (0.0016)^(-3/4) = 125 (Q5).",
+        "A negative exponent combined with a fractional exponent requires applying both the reciprocal and the root.",
+        "Converting a nested radical such as the cube root of (a^2 * sqrt(a)) requires adding indices before taking the root (Q3).",
+        "Applying a root first versus a power first must give the same result only when the base is non-negative."
+      ],
+      "depth_test": "Evaluate (0.0016)^(-3/4) and explain why it is a positive whole number by identifying the hidden power (Q5); or convert the cube root of (a^2 * sqrt(a)) to a^p and justify the index arithmetic (Q3)."
+    },
+    {
+      "name": "Surds and Rationalization",
+      "description": "Simplifying surd expressions, rationalising denominators with conjugates, and simplifying nested radicals.",
+      "core_skills": [
+        "Simplify surds by extracting the largest square factor, e.g. sqrt(50) = 5*sqrt(2) (Q16).",
+        "Rationalize a denominator with a single or compound surd by multiplying by the conjugate.",
+        "Use the difference of squares identity (sqrt(a)-sqrt(b))(sqrt(a)+sqrt(b)) = a-b to remove surds.",
+        "Simplify nested radicals of the form sqrt(a + 2*sqrt(b)) = sqrt(p) + sqrt(q) by matching p+q = a and p*q = b (Q23).",
+        "Prove identities involving surds (Q27b)."
+      ],
+      "prerequisites": [
+        "Power Laws of Exponents",
+        "Negative and Fractional Indices",
+        "Expanding brackets and the difference of squares"
+      ],
+      "misconceptions": [
+        "Assuming sqrt(a+b) = sqrt(a) + sqrt(b) (false linearity of radicals).",
+        "Rationalizing by multiplying only the numerator, or forgetting the sign change in the conjugate.",
+        "Believing a surd sum like sqrt(7) + sqrt(5) can be combined into a single surd.",
+        "Treating sqrt(x^2) as always a finite radical expression without considering sign or the non-linearity (Q8 distractor D)."
+      ],
+      "traps": [
+        "The conjugate of (sqrt(7) - sqrt(10)) is (sqrt(7) + sqrt(10)), which yields a negative denominator, requiring careful sign handling (Q7 -> -2*sqrt(7) - 2*sqrt(10)).",
+        "A denominator with three surds such as 1/(sqrt(2)+sqrt(3)+sqrt(5)) requires applying conjugate pairings twice (Q27a).",
+        "Nested radicals require the correct p and q factors, so the wrong pairing must be rejected (Q23).",
+        "MCQ distractors preserve the wrong sign or scale the numerator only (Q7 options)."
+      ],
+      "depth_test": "Rationalize 1/(sqrt(2)+sqrt(3)+sqrt(5)) by applying conjugate pairings twice and state the result (Q27a); or prove sqrt(7 + 4*sqrt(3)) - sqrt(7 - 4*sqrt(3)) = 2*sqrt(3) (Q27b)."
+    },
+    {
+      "name": "Exponential Equations by Equating Bases",
+      "description": "Solving exponential equations by writing both sides as powers of a common base and equating the indices.",
+      "core_skills": [
+        "Rewrite numbers as powers of a common base, e.g. 8=2^3, 4=2^2, 81=3^4, 27=3^3.",
+        "Equate exponents once bases match and solve the resulting linear equation.",
+        "Convert a radical index containing the variable into a fractional exponent before equating (Q21).",
+        "Break a composite number into prime-power form to match exponents of multiple bases simultaneously (Q6)."
+      ],
+      "prerequisites": [
+        "Power Laws of Exponents",
+        "Negative and Fractional Indices",
+        "Solving linear equations"
+      ],
+      "misconceptions": [
+        "Applying the power to the whole exponent, e.g. reading 8^(x-1) as (8^x) - 1.",
+        "Equating bases without then equating the exponents, or equating exponents of different bases.",
+        "Forgetting to distribute the index when rewriting 4^(2x+3) as 2^(4x+6).",
+        "Treating an x-th root exponent linearly without converting to a fractional index (Q21)."
+      ],
+      "traps": [
+        "8^(x-1) = 4^(2x+3) gives x = -9, a negative solution that must be accepted (Q11).",
+        "The x-th root of 81 equals 27^(x-2) converts to 3^(4/x) = 3^(3x-6) and becomes a quadratic x = (3 +/- sqrt(21))/3, because the radical index is itself the variable (Q21).",
+        "A composite base 2500 = 2^2 * 5^4 requires matching exponents of two different prime bases at once (Q6)."
+      ],
+      "depth_test": "Solve 8^(x-1) = 4^(2x+3) and explain why converting both sides to base 2 is valid (Q11); or solve the x-th root of 81 = 27^(x-2) and explain the conversion to fractional indices (Q21)."
+    },
+    {
+      "name": "Exponential Equations Reducible to Quadratics",
+      "description": "Solving exponential equations that become quadratic under a substitution u = a^x (or u = x^(1/3)), then back-substituting and rejecting invalid roots.",
+      "core_skills": [
+        "Recognise a^(2x) as (a^x)^2 and set u = a^x.",
+        "Transform an exponential equation into a quadratic and solve it by factorisation.",
+        "Reject roots u <= 0 because a^x > 0 for all real x.",
+        "Back-substitute u = a^x and solve for x using logarithms when necessary (Q18).",
+        "Use the substitution u = x^(1/3) for equations with fractional-power variables (Q15)."
+      ],
+      "prerequisites": [
+        "Exponential Equations by Equating Bases",
+        "Power Laws of Exponents",
+        "Solving quadratic equations by factorisation",
+        "Logarithms (for exact-log answers)"
+      ],
+      "misconceptions": [
+        "Treating 9^(x+1) as 9^x + 9 or mishandling 9^(x+1) = 9 * 9^x so the quadratic substitution is missed.",
+        "Not recognising a^(2x) = (a^x)^2 and therefore failing to form a quadratic.",
+        "Accepting a negative value of u = a^x as a valid solution.",
+        "Forgetting to convert the u-solution back to a value of x."
+      ],
+      "traps": [
+        "Negative quadratic roots must be discarded because a^x > 0, so some algebraic roots are not valid for x.",
+        "5^(2x) - 5^(x+1) + 6 = 0 yields exact answers in log form, x = log_5 2 and x = log_5 3 (Q18).",
+        "x^(2/3) - 5x^(1/3) + 6 = 0 gives x = 8 and x = 27 through u = x^(1/3), with roots cubed back (Q15).",
+        "4^x + 2^(x+1) = 8 hides the substitution because 4^x = (2^x)^2 and 2^(x+1) = 2 * 2^x (Q24)."
+      ],
+      "depth_test": "Solve 5^(2x) - 5^(x+1) + 6 = 0, set up u = 5^x, and explain why only two real roots exist and why the answer must be left in log form (Q18)."
+    },
+    {
+      "name": "Simultaneous Exponential Equations and Special Exponential Forms",
+      "description": "Solving systems of simultaneous exponential equations using index laws, and solving equations of the form (expression)^(expression) = 1.",
+      "core_skills": [
+        "Solve simultaneous exponential systems by dividing or multiplying equations to eliminate a term using index laws (Q28a).",
+        "Convert a logarithmic result to exponential form when a common base is unavailable (Q28a gives x = ln 12 / ln 2).",
+        "Solve f(x)^(g(x)) = 1 by considering base = 1, base = -1 with an even exponent, and exponent = 0 with a non-zero base (Q28c).",
+        "Verify that candidate solutions satisfy the original equation."
+      ],
+      "prerequisites": [
+        "Exponential Equations by Equating Bases",
+        "Power Laws of Exponents",
+        "Simultaneous linear equations",
+        "Logarithms"
+      ],
+      "misconceptions": [
+        "Assuming f(x)^(g(x)) = 1 only when the exponent g(x) = 0, missing the base = 1 and base = -1 cases.",
+        "Taking logarithms of a system before using index laws to simplify it.",
+        "Dividing equations incorrectly and losing or reversing exponent signs."
+      ],
+      "traps": [
+        "(x^2 - 5x + 5)^(x^2 - 9x + 20) = 1 gives x in {1, 2, 3, 4, 5} arising from all three structural cases, including base = 1 and base = -1 with an even exponent (Q28c).",
+        "When the exponent is 0 the base must be non-zero, so a candidate making the base 0 must be rejected.",
+        "The simultaneous system 2^x * 3^y = 108 and 4^x * 3^(-y) = 16 requires dividing the equations to eliminate y before taking logarithms (Q28a)."
+      ],
+      "depth_test": "Solve (x^2 - 5x + 5)^(x^2 - 9x + 20) = 1 and enumerate all three structural cases (base 1, base -1 with even exponent, exponent 0) that generate the solution set (Q28c)."
+    },
+    {
+      "name": "Foundations of Exponent Laws and Irrational Exponents",
+      "description": "The derivation of the power laws from repeated multiplication, the definitions of a^0, a^(-n), a^(p/q) and irrational exponents, and the use of monotonicity to compare exponential values.",
+      "core_skills": [
+        "Derive the product and quotient laws from exponentiation as repeated multiplication (Q26a).",
+        "Justify a^0 = 1 using the quotient law and explain why 0^0 is indeterminate (Q26b).",
+        "Prove a^(-n) = 1/a^n and reconcile a^(p/q) with radical notation using consistency of the laws (Q26c).",
+        "Define a^r for irrational r as a limit or supremum of a^q over rational q (Q8, Q29a).",
+        "Use monotonicity of a^x for a > 1 to compare and order exponential expressions (Q4, Q29b, Q29c)."
+      ],
+      "prerequisites": [
+        "Power Laws of Exponents",
+        "Real numbers and the rational/irrational distinction",
+        "Limits (for the irrational-exponent definition and the monotonicity proof)"
+      ],
+      "misconceptions": [
+        "Power laws do not apply to irrational exponents such as 2^pi (Q8 distractor C).",
+        "a^(p/q) is only defined when p and q are both prime (Q8 distractor B).",
+        "sqrt(x^2) can always be written as a finite radical expression (Q8 distractor D).",
+        "0^0 = 1 by analogy with a^0 for non-zero a.",
+        "Comparing exponential values by comparing exponents alone when the bases differ."
+      ],
+      "traps": [
+        "Comparing 2^60, 3^48, 4^36, 5^24 requires rewriting each to a common exponent of 12 before comparison, where 3^48 is largest (Q4).",
+        "Monotonicity for a > 1 makes a^x increasing, so a negative irrational exponent such as (1/2)^(-sqrt(5)) must be rewritten as 2^(sqrt(5)) before ordering (Q29c).",
+        "The base must be greater than 1 for the increasing argument; for 0 < a < 1 the function is decreasing, which reverses inequalities."
+      ],
+      "depth_test": "Prove that f(x) = a^x is strictly increasing for a > 1 and use it to order 2^(sqrt(3)), 3^(sqrt(2)), 4^(2/3), (1/2)^(-sqrt(5)) (Q29b, Q29c); or derive a^0 = 1 from the quotient law and explain why 0^0 is indeterminate (Q26b)."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Negative and Fractional Indices",
+      "to": "Power Laws of Exponents",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Surds and Rationalization",
+      "to": "Power Laws of Exponents",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Surds and Rationalization",
+      "to": "Negative and Fractional Indices",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Exponential Equations by Equating Bases",
+      "to": "Power Laws of Exponents",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Exponential Equations by Equating Bases",
+      "to": "Negative and Fractional Indices",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Exponential Equations Reducible to Quadratics",
+      "to": "Exponential Equations by Equating Bases",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Simultaneous Exponential Equations and Special Exponential Forms",
+      "to": "Exponential Equations by Equating Bases",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Simultaneous Exponential Equations and Special Exponential Forms",
+      "to": "Power Laws of Exponents",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Foundations of Exponent Laws and Irrational Exponents",
+      "to": "Power Laws of Exponents",
+      "type": "prerequisite"
+    }
+  ]
+}

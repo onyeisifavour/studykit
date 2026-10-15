@@ -5,8 +5,8 @@ In-memory chronological event log for the active quiz session.
 Separate from quiz_logger.py (which handles structured file persistence).
 
 Consumed by:
-  - app.py          → format_for_summary() feeds the final summary API call
-  - evaluation_thread.py → get_question_context() loads per-question data for tutoring
+  - sidecar/app.py  → format_for_summary() feeds the final summary API call
+  - evaluation_runner.py → get_question_context() loads per-question data for tutoring
 """
 
 from dataclasses import dataclass, field
@@ -149,7 +149,7 @@ class SessionLog:
     def get_question_context(self, q_index: int) -> dict:
         """
         Returns all recorded data for one question as a flat dict.
-        Used by evaluation_thread.py to load question context for tutoring.
+        Used by evaluation_runner to load question context for tutoring.
         Returns {} if no data exists for that index.
         """
         group = [e for e in self._entries if e.q_index == q_index]

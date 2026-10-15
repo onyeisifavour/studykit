@@ -212,6 +212,14 @@ export function quizChat(body: {
   return post<ChatReply>('/api/quiz/chat', body);
 }
 
+export function quizChatSession(): Promise<{ has_session: boolean }> {
+  return get<{ has_session: boolean }>('/api/quiz/chat/session');
+}
+
+export function newQuizChat(): Promise<{ ok: boolean }> {
+  return post<{ ok: boolean }>('/api/quiz/chat/new', {});
+}
+
 export function quizGenerate(body: {
   user_request: string;
   history?: { role: string; content: string }[];

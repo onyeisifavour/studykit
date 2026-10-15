@@ -1,0 +1,203 @@
+{
+  "type": "study_concept_block",
+  "topic": "L1.4 Approximation, Standard Form, and Error Analysis",
+  "subject": "Maths",
+  "concepts": [
+    {
+      "name": "Significant Figures and Rounding",
+      "description": "Counting significant figures in measured values (including leading zeros, trailing zeros, and zeros between digits), rounding to a specified number of decimal places or significant figures, and distinguishing between truncation and rounding.",
+      "core_skills": [
+        "Identify the number of significant figures in a given measurement",
+        "Round numbers to a specified number of decimal places or significant figures",
+        "Distinguish between truncation and rounding and compute the difference between them"
+      ],
+      "prerequisites": [
+        "Place value and decimal representation"
+      ],
+      "misconceptions": [
+        "Leading zeros are counted as significant figures",
+        "Trailing zeros in a number without a decimal point are always significant",
+        "Truncation and rounding always give the same result"
+      ],
+      "traps": [
+        "Measurements like 0.004050 where leading zeros are not significant but trailing zero after decimal is significant",
+        "Rounding vs truncating to 2 decimal places can produce small differences"
+      ],
+      "depth_test": "Given a measurement such as 0.05040, identify the correct number of significant figures and explain why, distinguishing which digits are significant and which are not."
+    },
+    {
+      "name": "Standard Form (Scientific Notation)",
+      "description": "Writing numbers in the form A × 10^n where 1 ≤ |A| < 10 and n is an integer, including very large and very small numbers, and converting between standard form and ordinary decimal representation.",
+      "core_skills": [
+        "Convert large numbers to standard form A × 10^n with 1 ≤ |A| < 10",
+        "Convert small decimal numbers (less than 1) to standard form with negative exponents",
+        "Convert numbers from standard form back to ordinary decimal representation",
+        "Round numbers to specified significant figures when expressing in standard form"
+      ],
+      "prerequisites": [
+        "Powers of 10",
+        "Place value"
+      ],
+      "misconceptions": [
+        "The coefficient A must always be an integer",
+        "Numbers less than 1 cannot be written in standard form",
+        "A coefficient like 45.6 × 10^-9 is in proper standard form"
+      ],
+      "traps": [
+        "Normalizing coefficients so that 1 ≤ |A| < 10 (e.g., adjusting the exponent when moving the decimal point)",
+        "Rounding to 3 significant figures when converting very large numbers to standard form"
+      ],
+      "depth_test": "Convert a very small number like 0.0000000456 to proper normalized standard form A × 10^n with 1 ≤ |A| < 10, explaining why normalization is required."
+    },
+    {
+      "name": "Calculations in Standard Form",
+      "description": "Performing arithmetic operations on numbers expressed in standard form, including multiplication, division, addition, and subtraction, with proper normalization of the final answer.",
+      "core_skills": [
+        "Multiply and divide numbers in standard form using exponent rules",
+        "Add and subtract numbers in standard form by first expressing them with the same exponent",
+        "Normalize the final result to proper standard form A × 10^n with 1 ≤ |A| < 10"
+      ],
+      "prerequisites": [
+        "Standard Form (Scientific Notation)",
+        "Laws of indices/exponents",
+        "Basic arithmetic"
+      ],
+      "misconceptions": [
+        "When adding numbers in standard form, exponents can be added directly",
+        "When multiplying, coefficients and exponents are treated the same way",
+        "An unnormalized result like 12.75 × 10^3 is acceptable as final answer"
+      ],
+      "traps": [
+        "Adding/subtracting numbers with different powers of 10 requires rewriting with a common exponent",
+        "Adjusting both coefficient and exponent during normalization after addition/subtraction"
+      ],
+      "depth_test": "Evaluate (3.5 × 10^8) - (8.0 × 10^7) and explain the steps to obtain a normalized standard form answer, justifying why exponents must be aligned before subtracting."
+    },
+    {
+      "name": "Absolute, Relative, and Percentage Errors",
+      "description": "Defining and calculating absolute error (difference between measured/estimated and true value), relative error, and percentage error for single measurements or estimates.",
+      "core_skills": [
+        "Calculate absolute error given true and measured/estimated values",
+        "Calculate percentage (relative) error",
+        "Express percentage error to an appropriate number of decimal places"
+      ],
+      "prerequisites": [
+        "Basic arithmetic",
+        "Percentages"
+      ],
+      "misconceptions": [
+        "Absolute error is always positive in a certain form regardless of direction",
+        "Percentage error uses measured value in the denominator rather than true/accepted value",
+        "Sign of error is always ignored"
+      ],
+      "traps": [
+        "Correctly identifying true (actual) value versus measured/estimated value",
+        "Computing percentage error relative to the true value"
+      ],
+      "depth_test": "Given a true value and an estimated/measured value, calculate absolute and percentage error, and explain the distinction between absolute and relative error in terms of what each quantifies."
+    },
+    {
+      "name": "Error Propagation",
+      "description": "Using differential calculus/error propagation rules to determine how uncertainties combine when quantities are added, subtracted, multiplied, divided, or raised to powers. Includes fractional/relative error formulas.",
+      "core_skills": [
+        "Apply the rule that for sums/differences, absolute errors add",
+        "Apply the rule that for products/quotients, relative errors add",
+        "Apply the power rule: for Z = X^n, the relative error is n × (ΔX/X)",
+        "Calculate absolute error from relative error",
+        "Express the result in the form value ± Δvalue with appropriate units"
+      ],
+      "prerequisites": [
+        "Absolute, Relative, and Percentage Errors",
+        "Powers and algebra"
+      ],
+      "misconceptions": [
+        "When subtracting, relative errors add the same way as for products",
+        "Percentage error in radius is the same as percentage error in area of a circle",
+        "Errors always cancel out in combinations"
+      ],
+      "traps": [
+        "For volume V = (4/3)π r^3, percentage error in volume is 3× percentage error in radius",
+        "For division R = V/I, both numerator and denominator contribute their relative errors",
+        "For squares A = L^2, relative error doubles",
+        "For g = 4π^2 L/T^2, the relative error is ΔL/L + 2(ΔT/T)"
+      ],
+      "depth_test": "For g = 4π^2 L/T^2 with measured uncertainties in L and T, derive/state the formula for relative error in g and use it to compute the absolute and percentage error, explaining why the period contributes twice as much as length."
+    },
+    {
+      "name": "Error Bounds and Measurement Uncertainty",
+      "description": "Determining upper and lower bounds for measurements given to a certain precision, computing bounds for calculated quantities, and assessing the effect of intermediate rounding on accuracy.",
+      "core_skills": [
+        "State upper and lower bounds for a measurement given to a specified precision",
+        "Calculate upper and lower bounds for derived quantities (e.g., perimeter, area, volume)",
+        "Determine maximum possible (worst-case) error from bounds",
+        "Compare the effects of rounding at intermediate steps versus rounding only the final result"
+      ],
+      "prerequisites": [
+        "Approximation and rounding",
+        "Error analysis fundamentals"
+      ],
+      "misconceptions": [
+        "The bound is always exactly ±half the unit of precision",
+        "Lower bound is always measurement minus uncertainty",
+        "Intermediate rounding doesn't affect the final result"
+      ],
+      "traps": [
+        "For measurements to nearest centimeter, the true value lies in [x-0.5, x+0.5) cm",
+        "When multiplying, maximum occurs at upper bounds of factors that increase product",
+        "Repeated rounding at each intermediate step can accumulate errors (compounding drift)"
+      ],
+      "depth_test": "For a rectangle with length and width measured to nearest centimeter, find upper/lower bounds for perimeter and explain why intermediate rounding can lead to greater accumulated error than rounding only at the end."
+    },
+    {
+      "name": "Numerical Approximation Techniques",
+      "description": "Using approximation methods such as binomial approximation (1+x)^r ≈ 1 + rx for small |x|, linear approximation via differentials, and applying them to estimate values without calculators.",
+      "core_skills": [
+        "Apply binomial approximation (1+x)^r ≈ 1 + rx for |x| << 1",
+        "Reformulate expressions into the form (1+x)^r to apply binomial approximation",
+        "Use differential approximation to estimate small changes",
+        "Compute absolute and percentage error of an approximation"
+      ],
+      "prerequisites": [
+        "Powers and indices"
+      ],
+      "misconceptions": [
+        "Binomial approximation works for any x regardless of magnitude",
+        "The approximation error is negligible for all practical purposes",
+        "Linear approximation gives exact results"
+      ],
+      "traps": [
+        "Recasting numbers like 10001^3 into (10^4 + 1)^3 = 10^12(1 + 10^-4)^3 to get small x",
+        "For sqrt(100.4), writing as sqrt(100(1+0.004)) = 10(1+0.004)^(1/2)",
+        "Computing the true value to determine approximation error"
+      ],
+      "depth_test": "Use binomial approximation (1+x)^r ≈ 1 + rx to approximate 10001^3, compute the exact value, and determine both absolute and percentage error of the approximation."
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Standard Form (Scientific Notation)",
+      "to": "Calculations in Standard Form",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Absolute, Relative, and Percentage Errors",
+      "to": "Error Propagation",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Absolute, Relative, and Percentage Errors",
+      "to": "Error Bounds and Measurement Uncertainty",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Significant Figures and Rounding",
+      "to": "Standard Form (Scientific Notation)",
+      "type": "prerequisite"
+    },
+    {
+      "from": "Significant Figures and Rounding",
+      "to": "Error Bounds and Measurement Uncertainty",
+      "type": "prerequisite"
+    }
+  ]
+}

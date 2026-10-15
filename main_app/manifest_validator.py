@@ -214,13 +214,18 @@ def validate_candidate_pool(pool: Any) -> list[str]:
 
     Shape: { slot_number: [candidate_dict, ...] }
     An empty candidate list per slot is legitimate (the slot is flagged
-    MISSING downstream), so only structure is checked.
+    MISSING downstream), so only structure is checked for individual slots.
+    A pool that is non-empty but yields zero candidates across *every* slot is
+    not legitimate: it means the banks were never actually searched (topics not
+    selected, or a stale library path), which used to surface much later as an
+    opaque "empty selected-items list" error.
     """
     errors: list[str] = []
 
     if not isinstance(pool, dict):
         return ['Candidate pool must be a JSON object keyed by slot_number']
 
+    total_candidates = 0
     for key, candidates in pool.items():
         label = f'candidate_pool slot {key!r}'
         if isinstance(key, str) and key.isdigit():
@@ -231,6 +236,7 @@ def validate_candidate_pool(pool: Any) -> list[str]:
         if not isinstance(candidates, list):
             errors.append(f'{label} must be a list of candidates')
             continue
+        total_candidates += len(candidates)
         for j, cand in enumerate(candidates):
             if not isinstance(cand, dict):
                 errors.append(f'{label} candidate[{j}] must be an object')
@@ -242,6 +248,13 @@ def validate_candidate_pool(pool: Any) -> list[str]:
             tags = cand.get('tags')
             if not isinstance(tags, dict):
                 errors.append(f'{label} candidate[{j}].tags must be an object')
+
+    if pool and total_candidates == 0:
+        errors.append(
+            'Candidate pool is empty for every slot — no question banks were '
+            'searched. Check that topics are selected and the library path is '
+            'correct.'
+        )
 
     return errors
 

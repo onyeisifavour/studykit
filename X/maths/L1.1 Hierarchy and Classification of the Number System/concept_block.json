@@ -1,0 +1,279 @@
+{
+  "type": "study_concept_block",
+  "topic": "L1.1 Hierarchy and Classification of the Number System",
+  "subject": "Maths",
+  "concepts": [
+    {
+      "name": "Number System Hierarchy and Set Inclusion",
+      "description": "The nested hierarchy of number sets (N, Z, Q, R, C), the correct proper-subset chain, the convention for whether 0 belongs to N, and the relationship between whole numbers and natural numbers.",
+      "core_skills": [
+        "State the correct proper subset chain N subset Z subset Q subset R subset C.",
+        "Identify the irrational numbers as the set R \\ Q and distinguish them from rationals.",
+        "Determine membership of 0 in N under the ISO 80000-2 convention and relate it to the whole numbers W = N union {0}.",
+        "Use set operations (subset, union, intersection, set difference, complement) to describe relationships between number sets.",
+        "Construct an algebraic comparison of N, Z, Q, R, C against the four basic operations (+, -, x, /) regarding closure."
+      ],
+      "prerequisites": [
+        "Familiarity with natural numbers, integers, rational numbers and real numbers",
+        "Basic set notation and operations (element of, subset, union, intersection, set difference, complement)"
+      ],
+      "misconceptions": [
+        "That Z is a subset of N (integers inside naturals), as in the distractor Z subset N subset Q subset R subset C.",
+        "That Q comes before Z in the chain (N subset Q subset Z subset R subset C).",
+        "That R is a subset of Q (N subset Z subset R subset Q subset C).",
+        "That 0 is always excluded from the natural numbers regardless of convention.",
+        "That a set containing non-real elements (such as S union T where T = {x in C | x^2 + 4 = 0}) can be a subset of R or Q."
+      ],
+      "traps": [
+        "The position of 0 in N depends on convention; under ISO 80000-2, 0 is in N, and W = N union {0} was introduced separately.",
+        "Proper subset ordering matters: Q must sit between Z and R, and C must be the outermost set.",
+        "A union that includes complex roots of x^2 + 4 = 0 (namely 2i and -2i) cannot lie inside R or Q."
+      ],
+      "depth_test": "Explain why the whole numbers W = N union {0} were introduced even though 0 is included in N under ISO 80000-2, and justify why Q must be placed between Z and R in the chain N subset Z subset Q subset R subset C."
+    },
+    {
+      "name": "Closure Properties under Binary Operations",
+      "description": "Whether a number set is closed under a given operation (addition, subtraction, multiplication, division), how to prove closure, and how to disprove it with a single counterexample.",
+      "core_skills": [
+        "Determine whether sets such as N, Z, Q, R, the negative integers Z^-, the odd integers, the irrationals, the non-zero rationals, and sets of the form {a + b*sqrt(3)} are closed under +, -, x, /.",
+        "Disprove closure by providing one valid counterexample (for example (-2) x (-3) = 6 is not in Z^-).",
+        "Prove closure by showing the result remains in the set (for example rationalising the denominator of 1/(a + b*sqrt(3))).",
+        "Identify which specific set-operation pair fails closure (for example irrationals under addition, or Z \\ N under subtraction).",
+        "Recognise that division by zero is undefined and identify the property it violates."
+      ],
+      "prerequisites": [
+        "Number System Hierarchy and Set Inclusion",
+        "Rationalising surd denominators",
+        "Set membership and counterexample reasoning"
+      ],
+      "misconceptions": [
+        "That the irrational numbers are closed under addition (false, since sqrt(2) + (-sqrt(2)) = 0).",
+        "That the set Z \\ N is closed under subtraction (for example 2 - 5 = -3 is not in Z \\ N).",
+        "That the negative integers Z^- are closed under multiplication (the product of two negatives is positive).",
+        "That dividing by zero is a valid operation and that closure still holds.",
+        "That closure is judged on typical elements rather than on every possible pair of elements."
+      ],
+      "traps": [
+        "Closure under one operation does not imply closure under another.",
+        "When testing closure under division, zero divisors must be excluded before the test is valid.",
+        "A single counterexample is sufficient to disprove closure, but proving closure requires a general argument.",
+        "The product of two irrationals can be rational (for example sqrt(2) x sqrt(2) = 2), so 'irrational times irrational is irrational' is false."
+      ],
+      "depth_test": "Prove that Z^- is not closed under multiplication using a counterexample, then determine whether the odd integers ARE closed under multiplication and explain why."
+    },
+    {
+      "name": "Algebraic Structures: Fields, Identity and Inverse Elements",
+      "description": "Field axioms and group-like properties: finding identity elements for arbitrary binary operations, deciding whether an identity exists, and computing additive and multiplicative inverses for rational and complex numbers.",
+      "core_skills": [
+        "Find the identity element for a custom operation (for example for a*b = a + b - 5 the identity is 5, and for a*b = a + b + ab it is 0).",
+        "Determine whether an identity element exists for a given operation (for example a o b = a^2 + b^2 has no identity in R).",
+        "Compute additive and multiplicative inverses of complex numbers and use them to show Q and C are fields.",
+        "Explain why Z is not a field because it lacks multiplicative inverses except for +/-1.",
+        "Verify closure and associativity for a custom operation on a restricted set (G = R \\ {-1}, a*b = a + b + ab).",
+        "Derive the inverse a^-1 = -a/(1 + a) for the operation a*b = a + b + ab and explain why a = -1 is excluded."
+      ],
+      "prerequisites": [
+        "Closure Properties under Binary Operations",
+        "Arithmetic with fractions and complex numbers",
+        "Solving simple linear equations for an unknown identity element"
+      ],
+      "misconceptions": [
+        "That the identity element for a custom operation is always 0 or 1 (for a*b = a + b - 5 the identity is 5).",
+        "That every non-zero integer has a multiplicative inverse in Z.",
+        "That an identity element always exists for any binary operation (for a o b = a^2 + b^2 none exists).",
+        "That the non-zero integers Z* form a field with multiplicative inverses for every element.",
+        "Confusing the additive inverse with the multiplicative inverse of a complex number."
+      ],
+      "traps": [
+        "The identity depends on the operation, not just the set; always solve a*e = a for e.",
+        "For a o b = a^2 + b^2, the natural candidate e = 0 fails because a^2 + 0 = a^2 is not equal to a in general.",
+        "Values that make a denominator zero (a = -1) must be excluded so the inverse exists.",
+        "The multiplicative inverse of a + bi requires dividing by a^2 + b^2, not simply flipping signs."
+      ],
+      "depth_test": "For G = R \\ {-1} with a*b = a + b + ab, prove closure and associativity, find the identity and the inverse a^-1, and explain why a = -1 must be excluded. Alternatively, explain why Q is a field but Z is not."
+    },
+    {
+      "name": "Rational vs Irrational Classification and Irrationality Proofs",
+      "description": "Distinguishing rational from irrational numbers, placing a value in its most restrictive fundamental set, and proving irrationality by contradiction using the coprime assumption.",
+      "core_skills": [
+        "Classify a number as natural, integer, rational, or irrational in its most restrictive fundamental set.",
+        "Recognise that expressions containing pi or surds can still be rational, e.g. (pi + 1)/(3pi + 3) = 1/3.",
+        "Prove that sqrt(2) is irrational by contradiction while stating the assumption gcd(a, b) = 1.",
+        "Use the closure of Q under arithmetic to prove that 3 + 2*sqrt(2) is irrational given that sqrt(2) is irrational.",
+        "Show a number is irrational by demonstrating its decimal is non-terminating and non-recurring.",
+        "Simplify surd products to find the most restrictive set, e.g. sqrt(12) x sqrt(3) = 6, which is in N."
+      ],
+      "prerequisites": [
+        "Number System Hierarchy and Set Inclusion",
+        "Proof by contradiction",
+        "Coprime integers and the gcd",
+        "Basic surd manipulation"
+      ],
+      "misconceptions": [
+        "That any expression containing pi or a surd is automatically irrational (for example (pi + 1)/(3pi + 3) = 1/3, and sqrt(12) x sqrt(3) = 6).",
+        "That recurring or terminating decimals are irrational (they are rational).",
+        "That sqrt(2.25) is irrational (it equals 1.5).",
+        "That sqrt(2) + 1/sqrt(2) is rational (it is irrational).",
+        "That irrationality can be established just because an expression looks complicated without simplifying it."
+      ],
+      "traps": [
+        "A fraction of surds or pi may reduce to a rational number, so it must be simplified before classification.",
+        "The 'most restrictive' set matters: a value may belong to N rather than merely to R \\ Q.",
+        "In the contradiction proof, failing to state the coprime assumption gcd(a, b) = 1 breaks the argument.",
+        "Recurring decimals such as 0.345345... are rational, not irrational."
+      ],
+      "depth_test": "Prove that sqrt(2) is irrational, explicitly stating the coprime assumption, then use that result to prove that 3 + 2*sqrt(2) is irrational. Alternatively, show why (pi + 1)/(3pi + 3) is rational despite containing pi."
+    },
+    {
+      "name": "Recurring Decimals and Rational Fraction Representation",
+      "description": "Converting recurring and terminating decimals into exact irreducible fractions and understanding that decimal representations are not unique (for example 0.9 recurring equals 1).",
+      "core_skills": [
+        "Convert a simple recurring decimal to a fraction (for example 0.27 recurring = 27/99 = 3/11).",
+        "Set up algebraic equations to convert a mixed recurring decimal such as 2.1 36 recurring into 47/22.",
+        "Add recurring decimals as fractions and reduce to lowest terms (for example 0.27 recurring + 0.18 recurring = 5/11).",
+        "Prove algebraically that 0.9 recurring equals 1 using 10x - x = 9.",
+        "Explain why any terminating decimal has two equivalent recurring representations.",
+        "Convert a recurring decimal in another base (0.4 recurring in base 5 equals 1 in base 5)."
+      ],
+      "prerequisites": [
+        "Rational vs Irrational Classification and Irrationality Proofs",
+        "Arithmetic with fractions",
+        "Place value and number-base representation"
+      ],
+      "misconceptions": [
+        "That 0.9 recurring is slightly less than 1.",
+        "That every recurring decimal has only one representation.",
+        "That 0.27 recurring + 0.18 recurring cannot simplify to a neat fraction (it equals 5/11).",
+        "That an answer like 45/99 is acceptable without reducing to lowest terms.",
+        "That the non-recurring prefix in a mixed recurring decimal can be ignored when setting up the algebra."
+      ],
+      "traps": [
+        "For mixed recurring decimals, the multiplication must shift the non-recurring prefix as well as the recurring part (for example 2.1 36 recurring).",
+        "Final answers must be in lowest terms so that gcd(p, q) = 1.",
+        "Every terminating decimal has a dual repeating representation ending in trailing 9s.",
+        "The recurring-decimal-to-fraction technique generalises across bases, such as base 5."
+      ],
+      "depth_test": "Prove algebraically that 0.9 recurring equals 1, and convert 2.1 36 recurring into an irreducible fraction showing the full algebraic setup and the reduction."
+    },
+    {
+      "name": "Density of Rational and Irrational Numbers on the Real Line",
+      "description": "The density property of the rationals and irrationals on the real line, partitions of R into disjoint dense subsets, and constructing a number of a required type between two given numbers.",
+      "core_skills": [
+        "State that between any two distinct real numbers there are infinitely many rationals and infinitely many irrationals.",
+        "Explain why the integers are not dense on the real line.",
+        "Construct an irrational number between two rationals, such as 0.121010010001... between 0.12 and 0.13.",
+        "Prove that R can be partitioned into two disjoint dense subsets A = Q and B = R \\ Q.",
+        "Recognise when an equation has an empty real solution set (for example |x - 4| = -2)."
+      ],
+      "prerequisites": [
+        "Number System Hierarchy and Set Inclusion",
+        "Rational vs Irrational Classification and Irrationality Proofs",
+        "Recurring Decimals and Rational Fraction Representation"
+      ],
+      "misconceptions": [
+        "That between two distinct rationals there may be no irrational number.",
+        "That the integers are dense on the real line because every interval contains an integer.",
+        "That the irrationals are discrete points spaced at regular intervals.",
+        "That an absolute-value equation such as |x - 4| = -2 can have a real solution."
+      ],
+      "traps": [
+        "Constructing an irrational between two rationals requires a non-terminating, non-recurring pattern, not just any arbitrary number.",
+        "Both Q and its complement R \\ Q are dense, so a partition of R gives two dense subsets.",
+        "The empty set is a legitimate solution set, as in |x - 4| = -2."
+      ],
+      "depth_test": "Show that 0.121010010001... lies strictly between 0.12 and 0.13 and is irrational, then explain how the density property applies to both A = Q and B = R \\ Q in the partition of R."
+    },
+    {
+      "name": "Complex Numbers: Standard Form Arithmetic and Powers of i",
+      "description": "Arithmetic with complex numbers written as a + bi, simplifying powers of i using the period-4 cycle, and solving equations by equating real and imaginary parts.",
+      "core_skills": [
+        "Simplify powers of i using the period-4 cycle (for example i^15 + i^22 + i^101 = -1).",
+        "Evaluate expressions involving powers of (1 + i) and (1 - i) together with the square root of a negative number.",
+        "Solve complex linear equalities by equating real and imaginary parts (for example 2x - 3y = 7 and x + 4y = -2).",
+        "Solve quadratic equations with complex roots (for example z^2 + 2z + 5 = 0 gives z = -1 +/- 2i).",
+        "Apply i^2 = -1 and write sqrt(-k) as i*sqrt(k)."
+      ],
+      "prerequisites": [
+        "Necessity of Complex Numbers (Extension of the Real System)",
+        "Arithmetic with surds",
+        "Simultaneous linear equations"
+      ],
+      "misconceptions": [
+        "That large powers of i must be computed directly rather than reduced modulo 4.",
+        "That sqrt(-25) = -5 rather than 5i.",
+        "Mixing up real and imaginary parts when equating the two sides of a complex equality.",
+        "Making sign errors when cycling through powers of i."
+      ],
+      "traps": [
+        "Exponents must be reduced modulo 4 (for example i^101 = i^(4 x 25 + 1) = i).",
+        "A rational real term from (1 + i)^4/(1 - i)^2 must be combined with the imaginary part of sqrt(-25).",
+        "Extraneous solutions can appear if real and imaginary parts are not matched correctly."
+      ],
+      "depth_test": "Compute (1 + i)^4 / (1 - i)^2 + sqrt(-25) and state its real part, explaining each simplification step. Alternatively, solve (2x - 3y) + (x + 4y)i = 7 - 2i by equating real and imaginary parts."
+    },
+    {
+      "name": "Complex Numbers: Modulus, Argument, Polar Form and Geometry",
+      "description": "Geometric representation of complex numbers on the Argand plane, including modulus, principal argument, polar form, distance between points, and conjugate relationships.",
+      "core_skills": [
+        "Compute the modulus |z| = sqrt(a^2 + b^2).",
+        "Compute the principal argument Arg(z) in the interval (-pi, pi], accounting for the quadrant (for example -1 - i*sqrt(3) has Arg = -2pi/3).",
+        "Convert a complex number to polar form r(cos theta + i sin theta), for example -16i = 16(cos(-pi/2) + i sin(-pi/2)).",
+        "Calculate the distance between two points on the complex plane as |z1 - z2|.",
+        "Plot complex roots on an Argand diagram and describe their geometric relationship, such as complex conjugates.",
+        "Find the moduli and arguments of conjugate-pair solutions (for example z^2 + 2z + 5 = 0 gives |z| = sqrt(5))."
+      ],
+      "prerequisites": [
+        "Complex Numbers: Standard Form Arithmetic and Powers of i",
+        "Pythagoras' theorem and trigonometry",
+        "Coordinate geometry on the Cartesian plane"
+      ],
+      "misconceptions": [
+        "Choosing the wrong quadrant for the argument because the signs of a and b are ignored.",
+        "Reporting an argument outside the interval (-pi, pi].",
+        "Treating the argument of a pure imaginary number as 0 or pi instead of +/-pi/2.",
+        "Omitting the modulus r and writing only cos theta + i sin theta as the polar form.",
+        "Confusing the complex conjugate a - bi with the multiplicative inverse."
+      ],
+      "traps": [
+        "The principal argument interval (-pi, pi] excludes pi except at the negative real axis.",
+        "For the pure imaginary -16i, r = 16 and theta = -pi/2.",
+        "Distance between points uses |z1 - z2|, not the sum.",
+        "Complex conjugates are reflections in the real axis with equal modulus and opposite arguments."
+      ],
+      "depth_test": "Find the modulus and principal argument of z = -1 - i*sqrt(3), explain how the quadrant determines the correct Arg(z), and write its polar form."
+    },
+    {
+      "name": "Necessity of Complex Numbers (Extension of the Real System)",
+      "description": "The fundamental limitation of the real number system that motivates constructing the complex numbers, namely that negative real numbers have no real square root, and how C removes this deficiency.",
+      "core_skills": [
+        "Explain that the square root of a negative real number is undefined in R.",
+        "Recognise that equations such as x^2 + 4 = 0 have no real solutions and that their solutions lie in C.",
+        "State that a negative value has no real square root.",
+        "Identify that sets such as {x in C | x^2 + 4 = 0} contain non-real elements."
+      ],
+      "prerequisites": [
+        "Number System Hierarchy and Set Inclusion"
+      ],
+      "misconceptions": [
+        "That every polynomial equation must have real solutions.",
+        "That sqrt(-1) is undefined absolutely, rather than undefined in R and defined as i in C.",
+        "That an absolute-value equation such as |x - 4| = -2 has a real solution."
+      ],
+      "traps": [
+        "Distinguishing 'no solution in R' from 'no solution at all' - the solution may exist in C.",
+        "Equations with a negative discriminant produce complex conjugate roots rather than real roots."
+      ],
+      "depth_test": "Explain why x^2 + 4 = 0 has no real solution but does have solutions in C, state those solutions, and explain why the complex number set was constructed to extend R."
+    }
+  ],
+  "relationships": [
+    { "from": "Number System Hierarchy and Set Inclusion", "to": "Closure Properties under Binary Operations", "type": "prerequisite" },
+    { "from": "Number System Hierarchy and Set Inclusion", "to": "Rational vs Irrational Classification and Irrationality Proofs", "type": "prerequisite" },
+    { "from": "Number System Hierarchy and Set Inclusion", "to": "Necessity of Complex Numbers (Extension of the Real System)", "type": "prerequisite" },
+    { "from": "Closure Properties under Binary Operations", "to": "Algebraic Structures: Fields, Identity and Inverse Elements", "type": "prerequisite" },
+    { "from": "Rational vs Irrational Classification and Irrationality Proofs", "to": "Recurring Decimals and Rational Fraction Representation", "type": "prerequisite" },
+    { "from": "Rational vs Irrational Classification and Irrationality Proofs", "to": "Density of Rational and Irrational Numbers on the Real Line", "type": "prerequisite" },
+    { "from": "Necessity of Complex Numbers (Extension of the Real System)", "to": "Complex Numbers: Standard Form Arithmetic and Powers of i", "type": "prerequisite" },
+    { "from": "Complex Numbers: Standard Form Arithmetic and Powers of i", "to": "Complex Numbers: Modulus, Argument, Polar Form and Geometry", "type": "prerequisite" }
+  ]
+}

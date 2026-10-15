@@ -19,6 +19,7 @@ Requires the 'requests' package:  pip install requests --break-system-packages
 
 import json
 import os
+import re
 import shutil
 import sqlite3
 import subprocess
@@ -419,71 +420,34 @@ class CLIBridgeClient:
         threading.Thread(target=_run, daemon=True, name='cli-bridge').start()
 
 
-def _clean_student_reply(text: str) -> str:
+_THINK_CLOSE_RE = re.compile(
+    r'</(?:think|thinking|reasoning|analysis|scratchpad)\s*>',
+    re.IGNORECASE,
+)
+_THINK_TAG_RE = re.compile(
+    r'</?(?:think|thinking|reasoning|analysis|scratchpad)\s*>',
+    re.IGNORECASE,
+)
+
+
+def _strip_model_thinking(text: str) -> str:
     """
-    Strips internal chain-of-thought / protocol analysis out of an assistant
-    reply so the student only sees the conversational message.
+    Removes a model's inline chain-of-thought from a text part, keeping only
+    the student-facing answer.
 
-    The cli-bridge model ("opencode/big-pickle") sometimes folds its reasoning
-    into the same 'text' part as the real reply, either as a raw
-    "monologue + reply" concatenation or wrapped in a
-    '"Teacher message: ..." / "Student message: ..."' echo. Because opencode
-    classifies that as text (not 'reasoning'), a type filter cannot remove it;
-    we clean it here instead.
+    Some models fold their private reasoning into the same text part as the
+    answer, separated by a closing tag such as 'response'. Everything up to and
+    including the final such tag is scratch work and must never reach the UI.
+    Tags left without a matching partner are dropped as well.
 
-    Returns the cleaned reply, or the original string when no cleanup applies.
+    Returns the original text unchanged when no thinking is present.
     """
     if not text:
         return text
-
-    # 1) Strip "Teacher message:" / "Student message:" wrapper metadata.
-    cleaned = text
-    if 'Student message:' in cleaned:
-        # The student echo marks the start/end of the wrapper; drop it and any
-        # trailing echoed student input, keeping everything before "Student message:".
-        cleaned = cleaned.split('Student message:', 1)[0]
-    if cleaned.startswith('"Teacher message:'):
-        cleaned = cleaned[len('"Teacher message:'):]
-        cleaned = cleaned.rstrip().rstrip('"')
-    cleaned = cleaned.strip()
-
-    if not cleaned:
-        return text
-
-    # 2) Drop the internal-monologue preface, keeping the final student-facing
-    #    reply. The analysis block is the trailing section written about the
-    #    student in the third person / protocol terms; the actual reply is the
-    #    last second-person conversational passage beginning after it.
-    lines = [ln for ln in cleaned.splitlines() if ln.strip()]
-    if len(lines) <= 1:
-        return cleaned
-
-    # Find the first line of the final conversational reply. Internal analysis
-    # lines are those that describe the student or the plan ("The student ...",
-    # "Per the protocol ...", "Let me ...", "This triggers Branch ...").
-    internal_markers = (
-        'the student', 'per the protocol', 'let me', 'this triggers',
-        'this is strong', 'this shows', 'i have enough information',
-        'looking at the digest', 'let me acknowledge', "i'll present",
-        'i will', 'since the student', 'given the number',
-    )
-
-    # The reply is the last contiguous run of lines that do *not* look like
-    # internal analysis. Walk backwards to find where the reply starts.
-    reply_start = len(lines)
-    for i in range(len(lines) - 1, -1, -1):
-        line = lines[i].lstrip()
-        low = line.lower()
-        if any(low.startswith(m) for m in internal_markers):
-            reply_start = i + 1
-            break
-
-    if reply_start < len(lines):
-        reply = '\n'.join(lines[reply_start:]).strip()
-        if reply:
-            return reply
-
-    return cleaned
+    closes = list(_THINK_CLOSE_RE.finditer(text))
+    if closes:
+        text = text[closes[-1].end():]
+    return _THINK_TAG_RE.sub('', text).strip()
 
 
 def _read_session_text_from_db(session_id: str) -> str:
@@ -523,7 +487,9 @@ def _read_session_text_from_db(session_id: str) -> str:
                 t = part.get('text')
                 if isinstance(t, str) and t.strip():
                     texts.append(t)
-        return _clean_student_reply(texts[-1].strip()) if texts else ''
+        cleaned = [_strip_model_thinking(t) for t in texts]
+        cleaned = [t for t in cleaned if t]
+        return cleaned[-1] if cleaned else ''
     except Exception:
         return ''
 
@@ -531,14 +497,28 @@ def _read_session_text_from_db(session_id: str) -> str:
 def _extract_response_from_json(stdout: str) -> tuple[str, str]:
     """
     Parses opencode's --format json output.
-    Lines are JSON events; we look for the final assistant message text
-    and the session ID.
-    
+
+    Lines are JSON events. An agentic run emits one text part per step:
+    intermediate narration between tool calls, then the final answer. Only the
+    last text part is the student-facing reply, so earlier narration is
+    discarded. Any inline chain-of-thought is stripped from the chosen part.
+
     Returns (response_text, session_id).
     """
-    text_parts: list[str] = []
     session_id: Optional[str] = None
-    
+    order: list[str] = []
+    texts: dict[str, str] = {}
+    part_session: dict[str, Optional[str]] = {}
+
+    def _record(part_id: object, text: object, sid: Optional[str]) -> None:
+        if not isinstance(text, str) or not text.strip():
+            return
+        key = str(part_id) if part_id else f'_{len(order)}'
+        if key not in texts:
+            order.append(key)
+        texts[key] = text
+        part_session[key] = sid
+
     for line in stdout.strip().splitlines():
         line = line.strip()
         if not line:
@@ -557,23 +537,32 @@ def _extract_response_from_json(stdout: str) -> tuple[str, str]:
 
         # opencode JSON events put text inside event['part']['text']
         part = event.get('part')
+        sid = event.get('sessionID')
         if isinstance(part, dict) and part.get('type') == 'text':
-            t = part.get('text', '')
-            if t:
-                text_parts.append(t)
+            _record(part.get('id'), part.get('text', ''), part.get('sessionID') or sid)
 
         # Fallback: direct text field
         elif event.get('type') == 'text' and 'text' in event:
-            text_parts.append(event['text'])
+            _record(None, event['text'], sid)
 
         # Assistant message content
         elif event.get('role') == 'assistant':
             content = event.get('content', '')
             if isinstance(content, str):
-                text_parts.append(content)
+                _record(None, content, sid)
             elif isinstance(content, list):
                 for block in content:
                     if isinstance(block, dict) and block.get('type') == 'text':
-                        text_parts.append(block.get('text', ''))
+                        _record(None, block.get('text', ''), sid)
 
-    return _clean_student_reply('\n'.join(text_parts).strip()), session_id or ''
+    # Prefer text from the top-level session; child (subagent) sessions may be
+    # interleaved in the stream and their output is never the final reply.
+    candidates = [pid for pid in order if part_session.get(pid) in (None, session_id)]
+    if not candidates:
+        candidates = order
+
+    for pid in reversed(candidates):
+        cleaned = _strip_model_thinking(texts[pid])
+        if cleaned:
+            return cleaned, session_id or ''
+    return '', session_id or ''
